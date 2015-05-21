@@ -1,0 +1,57 @@
+SectionGuid	SectionID	QuestionnaireID	Order	Modifiable	ShortName	Name	PreCondition	OnNewRecordProcedureID	Comment	logTable	dataTable	OnNewRecord
+b10ace13-6497-4c26-a223-e23c21e7eaed	2	1	1	1			NULL	NULL	NULL	Log_H1	H1	NULL
+ed4ba91c-fba7-4823-a645-93bf567d053e	4	2	1	0	CV	Consentimiento Verbal	NULL	NULL	NULL	Log_H2CV	H2CV	NULL
+33b90b8c-04e5-4162-b1a1-3c1e5afeefed	5	2	2	0	REM	Revisión del Expediente Médico	Precondition.ConsentimientoVerbal	NULL	NULL	Log_H2REM	H2REM	NULL
+7ec05ce1-9f44-4bcb-ab83-25fed310ee68	6	2	3	1	C	Común	Precondition.ConsentimientoVerbal	NULL	NULL	Log_H2C	H2C	NULL
+33c35ddc-8a48-4525-b1b8-aee8a0211281	7	2	4	1	DRF	Diarrea y Respiratoria	Precondition.H2DRF	NULL	NULL	Log_H2DRF	H2DRF	NULL
+b257a0c4-fcb0-4d3a-bda3-2154e6c20789	8	2	5	1	N	Neuro	Precondition.H2N	NULL	Se dejará de hacer vigilancia de neuro a partir de la versión 11.	Log_H2N	H2N	NULL
+b0ad8046-fd23-43d3-8321-445870ce53a9	9	2	6	1	F	Febril	Precondition.H2F	NULL	NULL	Log_H2F	H2F	NULL
+b174b6bb-8ec4-4af2-8afd-174d9a564e86	10	2	7	0	CE	Consentimiento y Enrolamiento	Precondition.H2CE	NULL	UPDATE FOR IGSS	Log_H2CE	H2CE	NULL
+6c711d62-bcce-4614-888e-947ad416adb9	12	3	1	1	V	Muestras de ViCo	NULL	NULL	NULL	Log_H5V	H5V	NULL
+4fa9b83f-0d36-4a5f-8564-a4212fa012fd	13	3	2	1	H	Muestras del Hospital	Precondition.ViCoIDAsignado_And_ElegibleRespira_Or_ElegibleFebril	NULL	NULL	Log_H5H	H5H	NULL
+e50f7c9f-61b2-40f9-9169-065797f88ff9	316	4	1	1	L	L - Hx Común	Precondition.ViCoIDAsignado_And_ElegibleDiarrea_Or_ElegibleRespira_Or_ElegibleFebril	NULL	NULL	Log_H3L	H3L	NULL
+77ec0ce0-cbc9-4c4e-9ea3-55cdc5715617	15	4	2	1	C	C - Hx Diarrea	Precondition.ViCoIDAsignado_And_ElegibleDiarrea	NULL	NULL	Log_H3C	H3C	NULL
+52cf1d93-346a-408f-91f4-80f15ed6102d	16	4	3	1	D	D - Hx Respiratoria	Precondition.ViCoIDAsignado_And_ElegibleRespira	NULL	NULL	Log_H3D	H3D	NULL
+3a687976-c9f6-439f-a2e3-db73b64da659	18	4	4	1	K	K - Hx Febril	Precondition.ViCoIDAsignado_And_ElegibleFebril_Or_SospechosoFebril	NULL	IGSS NO	Log_H3K	H3K	NULL
+579549e5-ef8b-4848-af0d-49949ede3865	19	4	5	1	B	B - Hx de Tratamiento	Precondition.ViCoIDAsignado	NULL	NULL	Log_H3B	H3B	NULL
+b7c432ee-20b4-4d57-b963-c3d73a01be0a	20	4	6	1	A	A - Enfermedades Crónicas y Vacunas	Precondition.ViCoIDAsignado	NULL	NULL	Log_H3A	H3A	NULL
+006e4d99-22ff-4057-95eb-e4d2ed85036a	21	4	7	1	F	F - Factores de Riesgo	Precondition.ViCoIDAsignado_And_ElegibleDiarrea_Or_ElegibleRespira_Or_ElegibleFebril	NULL	NULL	Log_H3F	H3F	NULL
+b1036e8c-d8e4-45ee-990a-2adb685270bd	22	4	8	1	H	H - Examen Respiratoria por Dr	Precondition.ViCoIDAsignado_And_ElegibleRespira	NULL	NULL	Log_H3H	H3H	NULL
+818b75af-8459-4c13-9774-b79943890acf	23	4	9	1	G	G - Examen Diarrea	Precondition.ViCoIDAsignado_And_ElegibleDiarrea	NULL	NULL	Log_H3G	H3G	NULL
+f76f2bb3-a959-49bc-b6c6-1e7d41719895	24	4	10	1	J	J - Medidas	Precondition.ViCoIDAsignado_And_ElegibleDiarrea_Or_ElegibleRespira_Or_ElegibleFebril	NULL	NULL	Log_H3J	H3J	NULL
+99fddb31-1ddc-4cdc-ad80-eb51537b51ea	26	5	1	1			NULL	NULL	NULL	Log_HR6	HR6	NULL
+67cdca7f-63e4-4df2-b34e-85f97ee88148	31	8	1	0			NULL	NULL	NULL	Log_H7PDA	H7PDA	NULL
+e17d772e-dbac-4f8d-ae83-4e73b6a1ea6a	28	6	1	1			NULL	NULL	NULL	Log_HCP9	HCP9	NULL
+7990dbef-ce7a-4a6d-b2aa-9f0362cbff50	30	7	1	1			NULL	NULL	NULL	Log_HCP11	HCP11	NULL
+a676eff0-69cb-46bc-b78f-fae43691536a	202	202	1	0	CV	Consentimiento Verbal	NULL	NULL	NULL	Log_C1CV	C1CV	NULL
+34317757-c55b-42e3-9a99-5dab514ba9ac	203	202	2	1	C	Común	Precondition.ConsentimientoVerbal	NULL	NULL	Log_C1C	C1C	NULL
+491bff63-399e-4ed6-b490-17c81a80d9c2	204	202	3	1	F	Febril	Precondition.C1F	NULL	NULL	Log_C1F	C1F	NULL
+73bc0e38-2ed8-4da7-9da8-8f779665664b	205	202	4	0	CE	Consentimiento y Enrolamiento	Precondition.C1CE	NULL	NULL	Log_C1CE	C1CE	NULL
+e85818e6-feb0-448f-b6a1-84e698ba2186	206	203	1	1	V	Muestras de ViCo	NULL	NULL	NULL	Log_C5V	C5V	NULL
+196b62fd-5901-4bf6-9694-38dbe55d422e	317	204	1	1	L	L - Hx Común	Precondition.ViCoIDAsignado	NULL	NULL	Log_C2L	C2L	NULL
+af2c00c8-37e5-490f-9e5f-194b99b418cf	207	204	2	1	C	C - Hx Diarrea	Precondition.ViCoIDAsignado_And_ElegibleDiarrea	NULL	NULL	Log_C2C	C2C	NULL
+e92bfa18-b30c-43d4-9151-3165390cab5f	208	204	3	1	D	D - Hx Respiratoria	Precondition.ViCoIDAsignado_And_ElegibleRespira	NULL	NULL	Log_C2D	C2D	NULL
+026ed1d7-1872-48be-97db-aa1fcd4c5b4a	209	204	4	1	K	K - Hx Febril	Precondition.ViCoIDAsignado_And_ElegibleFebril_Or_SospechosoFebril	NULL	NULL	Log_C2K	C2K	NULL
+4c59740a-6a9c-4f41-9620-ece77fe4a8f4	210	204	5	1	B	B - Hx de Tratamiento	Precondition.ViCoIDAsignado	NULL	NULL	Log_C2B	C2B	NULL
+b77142b8-8a1f-41b2-8034-30c0e0a67bf9	211	204	6	1	A	A - Enfermedades Crónicas y Vacunas	Precondition.ViCoIDAsignado	NULL	NULL	Log_C2A	C2A	NULL
+62afef97-f842-4c80-a32d-947c3809168f	212	204	7	1	F	F - Factores de Riesgo	Precondition.ViCoIDAsignado	NULL	NULL	Log_C2F	C2F	NULL
+f6266986-65ac-4e54-8724-19e68dab85fc	213	204	8	1	G	G - Examen Diarrea	Precondition.ViCoIDAsignado_And_ElegibleDiarrea	NULL	NULL	Log_C2G	C2G	NULL
+cee7e045-fc29-43cf-a1d2-96d10e31b84e	214	204	9	1	J	J - Medidas	Precondition.ViCoIDAsignado	NULL	NULL	Log_C2J	C2J	NULL
+74f23a8c-5011-42ce-9684-6d4b3e06e902	215	205	1	1			NULL	NULL	NULL	Log_C7	C7	NULL
+4153a7b7-3217-4e64-9360-176360cc96b2	216	206	1	1			NULL	NULL	NULL	Log_HCP9	HCP9	NULL
+c2b826b4-0fc2-480d-a735-667b58ab9e7c	217	207	1	1			NULL	NULL	NULL	Log_HCP11	HCP11	NULL
+ac6fb33c-faf9-4fd8-a7ee-b54df1876a9e	302	302	1	0	CV	Consentimiento Verbal	NULL	NULL	NULL	Log_P1CV	P1CV	NULL
+ff3c2ce0-54e3-411b-8458-085f5e16002b	303	302	2	1	C	Común	Precondition.ConsentimientoVerbal	NULL	NULL	Log_P1C	P1C	NULL
+4df68b97-5700-4fab-81fe-51edc2f22c54	304	302	3	0	CE	Consentimiento y Enrolamiento	Precondition.P1CE	NULL	NULL	Log_P1CE	P1CE	NULL
+e477b160-3873-4b5c-9de5-e7f9988f618a	305	303	1	1	V	Muestras de ViCo	NULL	NULL	NULL	Log_P5V	P5V	NULL
+0fcb2899-f125-4312-a57d-baee33ed7ef3	318	304	1	1	L	L - Hx Común	Precondition.ViCoIDAsignado	NULL	NULL	Log_P2L	P2L	NULL
+637d767e-a72e-4bd2-bd8a-3b33a568adcc	306	304	2	1	C	C - Hx Diarrea	Precondition.ViCoIDAsignado_And_ElegibleDiarrea	NULL	NULL	Log_P2C	P2C	NULL
+341a9507-b0b9-4ce6-9903-0bad37b268f9	315	304	3	1	D	D - Hx Respiratoria	Precondition.ViCoIDAsignado_And_ElegibleRespira	NULL	NULL	Log_P2D	P2D	NULL
+3ca082ca-3a83-4f9a-89cf-7d4e03db65fa	307	304	4	1	B	B - Hx de Tratamiento	Precondition.ViCoIDAsignado	NULL	NULL	Log_P2B	P2B	NULL
+c40a230a-5dc3-4d9b-b17a-940cd8c41400	308	304	5	1	A	A - Enfermedades Crónicas y Vacunas	Precondition.ViCoIDAsignado	NULL	NULL	Log_P2A	P2A	NULL
+2370ad8c-79ca-46c1-907c-0d59db4fcd59	309	304	6	1	F	F - Factores de Riesgo	Precondition.ViCoIDAsignado	NULL	NULL	Log_P2F	P2F	NULL
+08c15498-1b58-4579-9e12-2da2ad15eecb	310	304	7	1	G	G - Examen Diarrea	Precondition.ViCoIDAsignado_And_ElegibleDiarrea	NULL	NULL	Log_P2G	P2G	NULL
+d0a06fb4-e357-4e58-912d-a46a9eb86d22	311	304	8	1	J	J - Medidas	Precondition.ViCoIDAsignado	NULL	NULL	Log_P2J	P2J	NULL
+f7df165c-99cf-4606-8931-c4b4e1a890f3	312	305	1	1			NULL	NULL	NULL	Log_P7	P7	NULL
+f3a239b2-2615-45f5-9257-6c0eff0cd3fc	313	306	1	1			NULL	NULL	NULL	Log_HCP9	HCP9	NULL
+1f0ce529-3cff-4567-9d2a-72624613b02d	314	307	1	1			NULL	NULL	NULL	Log_HCP11	HCP11	NULL

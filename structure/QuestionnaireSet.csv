@@ -1,0 +1,4 @@
+QuestionnaireSetGuid	QuestionnaireSetID	Order	ShortName	Name	PreCondition	SubjectSecondaryIDField	SubjectAlternativeSearchField	SubjectConfirmationFields	NewSubjectSectionID	OnNewSubjectProcedureID	Comment	logTable	dataTable	OnNewSubject
+9f2d479a-066b-4578-a00b-6d4d49d38b7b	1	1	H	Hospital	Precondition.H	nombreCompleto	nombreCompleto	nombres,apellidos,sexo,edadAnios,comunidad,telefonoNumero	2	1000	NULL	Log_Sujeto_Hospital	Sujeto_Hospital	NULL
+0b48c534-ae2e-4c9d-b92e-7ca72ff6fab1	2	2	CS	Centro de Salud	Precondition.CS	nombreCompleto	nombreCompleto	nombres,apellidos,sexo,edadAnios,comunidad,telefonoNumero	NULL	1000	NULL	Log_Sujeto_Centro	Sujeto_Centro	NULL
+ee6cd204-b5dc-4a17-a198-c2d755ed9a97	3	3	PS	Puesto de Salud	Precondition.PS	nombreCompleto	nombreCompleto	nombres,apellidos,sexo,edadAnios,comunidad,telefonoNumero	NULL	1000	NULL	Log_Sujeto_Puesto	Sujeto_Puesto	NULL
