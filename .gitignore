@@ -14,3 +14,11 @@
 # Ignore qm files
 *.qm*
 *.CAB
+
+# Ignore RStudio project files
+.Rproj.user
+.Rhistory
+
+# Ignore output files
+*.md
+*.html
