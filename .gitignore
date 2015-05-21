@@ -1,0 +1,16 @@
+# Ignore documents
+*.doc*
+*.xls*
+*.ppt*
+*.pdf
+*.od*
+
+# Ignore images
+*.png
+*.tif*
+*.jp*g
+*.gif
+
+# Ignore qm files
+*.qm*
+*.CAB
