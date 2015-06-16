@@ -11,3 +11,12 @@ Questions added for TAC adult pneumonia etiology study:
 - H5 Muestras 2.6.2
 - H3 D 3, 3.1, 3.2, 3.3, 3.4, 3.4.1, 3.4.1.1
 - H3 A 2.9, 2.10
+
+---
+
+# Improve log management
+## `aef9530a002a061cd6a4b980785e225f46617e8b`
+### odeleongt [nb]
+#### 2015-06-11 14:55:46 -0600
+Improve log management
+
