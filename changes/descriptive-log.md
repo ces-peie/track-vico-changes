@@ -50,3 +50,12 @@ The following question were deleted because we had never found any insects in pa
 #### 2015-06-17 06:28:49 -0600
 WASH QUESTIONS Changes to Questionarrie BLopez June 17 2015 I added 5 questions about WASH lines 605 to 60 SPELLING Blopes June 17 2015 Initial Spelling revisiton of all questions
 
+
+---
+
+# Add response options to wash questions
+## `d4764619bae99ddde35427894a3b85ac06b8b538`
+### blopez
+#### 2015-06-17 08:30:26 -0600
+Add response options to wash questions
+There was no stablished way to record response options, I added those to the comments column.
