@@ -321,10 +321,10 @@ c16ac7f5-a94a-461b-ad04-20b5a2493a23	Hospital	H5 Muestras	Muestras de ViCo	3.2.2
 a0238bd3-19c3-4d5f-8925-6a2be99ef45f	Hospital	H5 Muestras	Muestras de ViCo	3.3.1	¿Por qué no pudo conseguir una muestra de sangre entera?	NULL			muestraSangreEnteraColectaNoRazon	12	58	3	1	Question
 26ca9711-fed3-4a2d-a6e6-e9292c67656a	Hospital	H5 Muestras	Muestras de ViCo	3.3.2	Si la razón es "Otra"	NULL			NULL	12	59	3	1	Checkpoint
 851095c7-d1e1-42fb-8429-798f948d92b1	Hospital	H5 Muestras	Muestras de ViCo	3.3.2.1	Especifique la otra razón	NULL			muestraSangreEnteraColectaNoRazonOtra_esp	12	60	4	1	Question
-73eecac6-648d-42c1-a6ae-bf54a289c2d8	Hospital	H5 Muestras	Muestras de ViCo	3.4	¿Consiguió garrapatas, piojos o pulgas del paciente?	NULL			muestraInsectosColecta	12	61	2	1	Question
-d6e06929-99a5-4e23-8d80-4484c07da124	Hospital	H5 Muestras	Muestras de ViCo	3.5	Si colectó muestra de insectos	NULL			NULL	12	62	2	1	Checkpoint
-260d4b08-8dab-4377-be87-87baf00d2aba	Hospital	H5 Muestras	Muestras de ViCo	3.5.1	¿Qué tipo de insectos colectó?	NULL			muestraInsectoTipo	12	63	3	1	Question
-2f416fe3-42f7-4166-956f-7f399ef3dccd	Hospital	H5 Muestras	Muestras de ViCo	3.5.2	¿Cuántos insectos colectó?	NULL			muestraInsectosCantidad	12	64	3	1	Question
+														
+														
+														
+														
 80c0fc4c-7fe0-4b4b-880b-ce95a1680db8	Hospital	H5 Muestras	Muestras de ViCo	4	Si colectamos una muestra	NULL			NULL	12	65	1	1	Checkpoint
 f37c22eb-ddd6-4893-a7a6-caaead03001b	Hospital	H5 Muestras	Muestras de ViCo	4.1	(A la enfermera) ¿El paciente ha firmado consentimiento escrito para conservar sus muestras para usarlas en proyectos futuros con nuevas pruebas y para buscar otras causas de estas enfermedades?	NULL			consentimientoGuardarMuestras	12	66	2	1	Question
 327509c2-2472-4e42-b9d5-1d424af650b5	Hospital	H5 Muestras	Muestras del Hospital	1	Si es un paciente de Respiratorias	NULL			NULL	13	1	1	1	Checkpoint
@@ -350,14 +350,14 @@ ce23f3b9-2f7f-4d37-91db-da195ff6cf0d	Hospital	H5 Muestras	Muestras del Hospital	
 99d3907d-4dc9-491b-bf4a-ae839175d850	Hospital	H3 Informe del Caso	L - Hx Común	1	Vómitos	NULL			hxC_Vomitos	316	1	1	1	Question
 6750898d-4fbc-4148-8ed0-e569b9a15a1b	Hospital	H3 Informe del Caso	L - Hx Común	2	Si tiene vómitos	NULL			NULL	316	2	1	1	Checkpoint
 cb7776b5-5e1e-4edb-89c0-34f6434ca510	Hospital	H3 Informe del Caso	L - Hx Común	2.1	Pregunte al paciente: "¿En su peor día, cuántas veces vomitó?"	NULL			hxC_VomitosVeces	316	3	2	1	Question
-60d0c4ad-89e1-47e5-aeee-b2f83538354f	Hospital	H3 Informe del Caso	L - Hx Común	2.2	Pregunte al paciente: "¿De los ultimos ocho dias cuántos dias tuvo vómitos?"	NULL			hxC_Vomitos8Dias	316	4	2	1	Question
+60d0c4ad-89e1-47e5-aeee-b2f83538354f	Hospital	H3 Informe del Caso	L - Hx Común	2.2	Pregunte al paciente: "¿De los últimos ocho días cuántos días tuvo vómitos?"	NULL			hxC_Vomitos8Dias	316	4	2	1	Question
 f71aeaee-ab86-4009-b654-f5a1474d4290	Hospital	H3 Informe del Caso	L - Hx Común	2.3	Pregunte al paciente: "¿Actualmente tiene vómitos?"	NULL			hxC_VomitosActual	316	5	2	1	Question
 355940d5-56c3-4a3f-89a0-e4a99b0538e7	Hospital	H3 Informe del Caso	L - Hx Común	3	Escalofríos	NULL			hxC_Escalofrios	316	6	1	1	Question
-fee42ecb-64ad-4e22-a74b-2f585c580514	Hospital	H3 Informe del Caso	L - Hx Común	4	Si tiene escalofrios	NULL			NULL	316	7	1	1	Checkpoint
-e98f1d9b-400b-446c-893c-10ae64602495	Hospital	H3 Informe del Caso	L - Hx Común	4.1	¿Actualmente tiene escalofrios?	NULL			hxC_EscalofriosActual	316	8	2	1	Question
-0b268be0-9fa9-42fa-8f7e-63df4fb21260	Hospital	H3 Informe del Caso	L - Hx Común	4.2	¿Desde hace cuántos días empezó con escalofrios?	NULL			hxC_EscalofriosEmpezoHaceDias	316	9	2	1	Question
+fee42ecb-64ad-4e22-a74b-2f585c580514	Hospital	H3 Informe del Caso	L - Hx Común	4	Si tiene escalofríos	NULL			NULL	316	7	1	1	Checkpoint
+e98f1d9b-400b-446c-893c-10ae64602495	Hospital	H3 Informe del Caso	L - Hx Común	4.1	¿Actualmente tiene escalofríos?	NULL			hxC_EscalofriosActual	316	8	2	1	Question
+0b268be0-9fa9-42fa-8f7e-63df4fb21260	Hospital	H3 Informe del Caso	L - Hx Común	4.2	¿Desde hace cuántos días empezó con escalofríos?	NULL			hxC_EscalofriosEmpezoHaceDias	316	9	2	1	Question
 403cb3e5-b0c7-495c-9481-365c05f0a3b9	Hospital	H3 Informe del Caso	L - Hx Común	5	Tiene 2 años o mas	NULL			NULL	316	10	1	1	Checkpoint
-980e644d-d323-4ab0-82aa-2fc42e72953b	Hospital	H3 Informe del Caso	L - Hx Común	5.1	Calambres, retorción, o dolor abdominal o del estómago	NULL			hxC_Calambres	316	11	2	1	Question
+980e644d-d323-4ab0-82aa-2fc42e72953b	Hospital	H3 Informe del Caso	L - Hx Común	5.1	Calambres, retorcjón, o dolor abdominal o del estómago	NULL			hxC_Calambres	316	11	2	1	Question
 6fae7943-b8bc-4d0d-b633-8d3df0e2e96f	Hospital	H3 Informe del Caso	L - Hx Común	5.2	Nausea	NULL			hxC_Nausea	316	12	2	1	Question
 111ce372-fa49-4713-b0db-f77b27bbc22f	Hospital	H3 Informe del Caso	L - Hx Común	5.3	Dolor de cabeza	NULL			hxC_DolorCabeza	316	13	2	1	Question
 69837f08-3fc7-49cb-8d60-a2362997ef9d	Hospital	H3 Informe del Caso	L - Hx Común	5.4	Si tiene dolor de cabeza	NULL			NULL	316	14	2	1	Checkpoint
@@ -371,7 +371,7 @@ d2034f87-1f81-492c-ad1e-53748513c985	Hospital	H3 Informe del Caso	L - Hx Común	5
 420c234b-8f2f-4785-8939-12a42254fc0d	Hospital	H3 Informe del Caso	L - Hx Común	5.8	Malestar	NULL			hxC_Malestar	316	22	2	1	Question
 8092da4c-6565-45fe-a5d3-54084d8adbdd	Hospital	H3 Informe del Caso	L - Hx Común	5.9	Falta de apetito	NULL			hxC_FaltaApetito	316	23	2	1	Question
 b8f73496-a8c7-4ce7-afd0-5bb13d94a195	Hospital	H3 Informe del Caso	C - Hx Diarrea	1	Diga al paciente: "Gracias por su paciencia. Voy a hacerle algunas preguntas sobre los síntomas de su enfermedad actual de diarrea."	NULL			NULL	15	1	1	1	Info
-07599909-6816-443f-8e71-608291975dad	Hospital	H3 Informe del Caso	C - Hx Diarrea	2	Pregunte al paciente: "¿Actualmente tiene diarrea o asientos liquidos?"	NULL			hxD_diarreaActual	15	2	1	1	Question
+07599909-6816-443f-8e71-608291975dad	Hospital	H3 Informe del Caso	C - Hx Diarrea	2	Pregunte al paciente: "¿Actualmente tiene diarrea o asientos líquidos?"	NULL			hxD_diarreaActual	15	2	1	1	Question
 10ee7e71-5f4f-405b-b33f-550920e55f95	Hospital	H3 Informe del Caso	C - Hx Diarrea	3	Si actualmente no tiene diarrea	NULL			NULL	15	3	1	1	Checkpoint
 0bd6e7c5-b509-46e4-af0b-0f63b6192b7b	Hospital	H3 Informe del Caso	C - Hx Diarrea	3.1	Pregunte al paciente: "¿Hace cuántos días la tuvo?"	NULL			hxD_diarreaActualHaceDias	15	4	2	1	Question
 c038f16b-5ccd-4688-88dd-de0e56db2683	Hospital	H3 Informe del Caso	C - Hx Diarrea	4	Asientos con sangre	NULL			hxD_ConSangre	15	5	1	1	Question
@@ -381,11 +381,11 @@ c038f16b-5ccd-4688-88dd-de0e56db2683	Hospital	H3 Informe del Caso	C - Hx Diarrea
 5f75da5d-092e-4699-865a-d2ef87d9c873	Hospital	H3 Informe del Caso	C - Hx Diarrea	8	Algún médico le ha dicho que tiene una condición intestinal crónica como:  -colitis ulcerativa  -enfermedad inflamatoria gastrointestinal  -Crohn  -enfermedad celiaca  -intolerancia lactosa  -síndrome de mala absorción	NULL			hxD_condicionIntestinal	15	9	1	1	Question
 62752bcb-9dbc-4855-ac8a-692aa223dd86	Hospital	H3 Informe del Caso	C - Hx Diarrea	9	Si tiene alguna condición intestinal	NULL			NULL	15	10	1	1	Checkpoint
 16003992-8fef-4354-8954-aecbef0e77ce	Hospital	H3 Informe del Caso	C - Hx Diarrea	9.1	Especifique que condición intestinal crónica tenia	NULL			hxD_condicionIntestinal_esp	15	11	2	1	Question
-741488e3-c898-45b5-920f-d85a9247b03e	Hospital	H3 Informe del Caso	C - Hx Diarrea	10	Si el paciente tiene menor de 5 años	NULL			NULL	15	12	1	1	Checkpoint
-8d18323f-7a87-4fff-879d-06f23072bc1e	Hospital	H3 Informe del Caso	C - Hx Diarrea	10.1	Pregunte al padre/tutor: "¿Su hijo/a bebe ávidamente con sed mayor de lo usual?"	NULL			hxD_bebeConSed	15	13	2	1	Question
+741488e3-c898-45b5-920f-d85a9247b03e	Hospital	H3 Informe del Caso	C - Hx Diarrea	10	Si el paciente tiene menos de 5 años	NULL			NULL	15	12	1	1	Checkpoint
+8d18323f-7a87-4fff-879d-06f23072bc1e	Hospital	H3 Informe del Caso	C - Hx Diarrea	10.1	Pregunte al padre/tutor: "¿Su hijo/a bebe ávidamente con mayor sed  de lo usual?"	NULL			hxD_bebeConSed	15	13	2	1	Question
 d02af4e7-1848-46f3-8d20-9fbca3e13540	Hospital	H3 Informe del Caso	C - Hx Diarrea	10.2	Pregunte al padre/tutor: "¿Su hijo/a es mas irritable/incómodo/intranquilo de lo normal?"	NULL			hxD_irritableIncomodoIntranquilo	15	14	2	1	Question
 89122d75-5572-498e-8195-57a97f627bac	Hospital	H3 Informe del Caso	D - Hx Respiratoria	1	Diga al paciente: "Gracias por su paciencia. Voy a hacerle algunas preguntas sobre los síntomas de su enfermedad respiratoria actual."	NULL			NULL	16	1	1	1	Info
-dba9c4c8-0715-45ba-941c-6287cc2c79fe	Hospital	H3 Informe del Caso	D - Hx Respiratoria	2	¿Hace cuántos dias empezó el primer síntoma de su enfermedad respiratoria? (No incluya el día actual en la cuenta.)	NULL			respiraEmpezoHaceDias	16	2	1	1	Question
+dba9c4c8-0715-45ba-941c-6287cc2c79fe	Hospital	H3 Informe del Caso	D - Hx Respiratoria	2	¿Hace cuántos días empezó el primer síntoma de su enfermedad respiratoria? (No incluya el día actual en la cuenta.)	NULL			respiraEmpezoHaceDias	16	2	1	1	Question
 	Hospital	H3 Informe del Caso	D - Hx Respiratoria	3	Si el paciente es mayor de 18 años y está en Hospital de Cuilapa o Quetzaltenango		addition			16	3	1	1	Checkpoint
 	Hospital	H3 Informe del Caso	D - Hx Respiratoria	3.1	Pregunte: “¿Ha tenido diarrea en los últimos 7 días?"		addition	Si, No	diar_7d	16	4	2	1	Question
 	Hospital	H3 Informe del Caso	D - Hx Respiratoria	3.2	Pregunte: “¿Usted tiene malaria ahora?"		addition	Si, No, No sabe	malar_ahora	16	5	2	1	Question
@@ -404,7 +404,7 @@ d6a49450-cb43-4c6d-b3e4-fa83fb530277	Hospital	H3 Informe del Caso	D - Hx Respira
 beec6730-ebd6-4ada-ab33-c404caeca5f4	Hospital	H3 Informe del Caso	D - Hx Respiratoria	10	En los 14 días anteriores a esta hospitalización ¿estuvo usted hospitalizado por cualquier razón?	NULL			hosp14DiasAnt	16	18	1	1	Question
 23526d9f-d0ab-428a-bf23-921782f9aecd	Hospital	H3 Informe del Caso	K - Hx Febril	1	Diga al paciente: "Gracias por su paciencia. Voy a hacerle algunas preguntas sobre los síntomas de su enfermedad febril actual."	NULL			NULL	18	1	1	1	Info
 3b051cce-3e36-4d60-bff4-543d767d1c88	Hospital	H3 Informe del Caso	K - Hx Febril	2	Si el paciente es elegible para Febril	NULL			NULL	18	2	1	1	Checkpoint
-add48411-744d-4fa1-848f-9075166965f4	Hospital	H3 Informe del Caso	K - Hx Febril	2.1	¿Hace cuántos dias empezó el primer síntoma de su enfermedad febril? No incluya el día actual en la cuenta.	NULL			febrilEmpezoHaceDias	18	3	2	1	Question
+add48411-744d-4fa1-848f-9075166965f4	Hospital	H3 Informe del Caso	K - Hx Febril	2.1	¿Hace cuántos días empezó el primer síntoma de su enfermedad febril? No incluya el día actual en la cuenta.	NULL			febrilEmpezoHaceDias	18	3	2	1	Question
 2db533f1-05f9-4f0f-bdb1-d7c3751016b7	Hospital	H3 Informe del Caso	K - Hx Febril	3	Si el paciente tiene 2 años o más	NULL			NULL	18	4	1	1	Checkpoint
 49e9a7f0-2a44-47b4-8118-68e4c59bb943	Hospital	H3 Informe del Caso	K - Hx Febril	3.1	Dolor detrás de los ojos	NULL			hxF_DolorDetrasOjos	18	5	2	1	Question
 81c30168-d5dd-40dc-9859-cc3b0c587ec1	Hospital	H3 Informe del Caso	K - Hx Febril	3.2	Si tiene dolor detrás de los ojos	NULL			NULL	18	6	2	1	Checkpoint
@@ -483,7 +483,7 @@ dbb4a18e-6060-48a3-a871-22b3809158e8	Hospital	H3 Informe del Caso	B - Hx de Trat
 4dd10158-3370-4631-b45a-9986731376a9	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	4.2.3	Si está en Concepcion Chiquirichapa, Cantel, o La Esperanza	NULL			NULL	19	12	3	1	Checkpoint
 75f58c04-8856-45b6-9b8d-29932e68b2cf	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	4.2.3.1	¿Cuál fue el último establecimiento de salud que Ud. visitó en Quetzaltenango?	NULL			otroTratXelaViCo	19	13	4	1	Question
 492024b0-1026-46bf-9294-0e738693faea	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	5	¿En el mes anterior a esta hospitalización, tuvo alguna otra hospitalización de más de una noche?	NULL			otroHospitalMesAnterior	19	14	1	1	Question
-a98775e1-8b6b-4ba1-9af3-f6c692c5d3aa	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	6	Si el paciente tuvo otra hospitalizacion	NULL			NULL	19	15	1	1	Checkpoint
+a98775e1-8b6b-4ba1-9af3-f6c692c5d3aa	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	6	Si el paciente tuvo otra hospitalización	NULL			NULL	19	15	1	1	Checkpoint
 cfb5fc37-334d-4c06-9e96-ec2fb1aea359	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	6.1	¿En cuál hospital estuvo ingresado?	NULL			otroHospitalMesAnteriorNombre	19	16	2	1	Question
 7f11ffd9-2495-41a7-bb28-1cf01e3d54e4	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	6.2	Si el hospital es OTRO	NULL			NULL	19	17	2	1	Checkpoint
 9a8d3d0c-1b75-460a-acda-bba0525c6f93	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	6.2.1	Especifique el hospital:	NULL			otroHospitalMesAnteriorNombreEsp	19	18	3	1	Question
@@ -523,7 +523,7 @@ aa2d5654-9422-450c-a1b5-5d18f31e6404	Hospital	H3 Informe del Caso	A - Enfermedad
 49608fa0-cf05-4b01-8bf1-925950e24442	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.4.1	Pregunte al paciente si ha recibido la vacuna triple (DPT).	NULL			vacunaTripleSarampionRecibido	20	9	4	1	Question
 b25ac74e-d1ce-479b-af91-5f876b6cd98e	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.4.2	Si ha recibido la triple	NULL			NULL	20	10	4	1	Checkpoint
 d43ea845-e334-4d16-9737-959bd7b2f2be	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.4.2.1	¿Cuántas dosis de la triple ha recibido?	NULL			vacunaTripleSarampionDosis	20	11	5	1	Question
-f4b883b8-144d-4cbb-a9ac-dc454162c42e	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.5	Pregunte al paciente si ha recibido la vacuna para sarampión, paperas y rubela (SPR).	NULL			vacunaSarampionPaperasRubella	20	12	3	1	Question
+f4b883b8-144d-4cbb-a9ac-dc454162c42e	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.5	Pregunte al paciente si ha recibido la vacuna para sarampión, paperas y rubeola (SPR).	NULL			vacunaSarampionPaperasRubella	20	12	3	1	Question
 fb3d4bee-6804-4773-af8f-0112a333b570	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.6	Pregunte al paciente si ha recibido la vacuna contra rotavirus.	NULL			vacunaRotavirusRecibido	20	13	3	1	Question
 e5718962-4c7f-46d0-8cc5-9a65384dfacb	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.7	Si ha recibido vacuna contra rotavirus:	NULL			NULL	20	14	3	1	Checkpoint
 f03e2b7b-1aba-40f0-bc91-50c2436f1ef7	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.7.1	¿Cuántas dosis de la vacuna contra rotavirus ha recibido?	NULL			vacunaRotavirusDosis	20	15	4	1	Question
@@ -602,14 +602,19 @@ eacd63a4-3f90-47a6-9cba-36ceed1616c8	Hospital	H3 Informe del Caso	F - Factores d
 6e48836a-a531-4359-9fd9-18e70bef37f3	Hospital	H3 Informe del Caso	F - Factores de Riesgo	13	¿Cuántas personas viven en su casa?	NULL			casaCuantasPersonasViven	21	25	1	1	Question
 afb9fdce-7c77-4216-ba75-c91525dd8cff	Hospital	H3 Informe del Caso	F - Factores de Riesgo	14	¿En su casa, de dónde sacan el agua para beber? No lea las opciones; marque todas las que apliquen.	NULL				21	26	1	1	Question
 b2db5d57-eb53-4607-b34d-56d9fbb0bbad	Hospital	H3 Informe del Caso	F - Factores de Riesgo	15	¿De qué material está hecho el techo (la parte de arriba) de su casa?	NULL			casaMaterialTecho	21	27	1	1	Question
-2814abb0-6bf4-4883-909f-1458fa5ef0f7	Hospital	H3 Informe del Caso	F - Factores de Riesgo	16	¿Qué tipo de piso tienen en su casa?	NULL			casaMaterialPiso	21	28	1	1	Question
-a1bda73d-7007-4192-96f2-8617f506f3a6	Hospital	H3 Informe del Caso	F - Factores de Riesgo	17	¿Qué tipo de combustibles usa para cocinar (marque todo lo que aplica)?	NULL				21	29	1	1	Question
-30c684e7-525d-4077-a410-3bb6087cb728	Hospital	H3 Informe del Caso	F - Factores de Riesgo	18	Si marco las opciones leña, residuos de la cosecha (rastrojo)  y/o carbón, continúe:	NULL			NULL	21	30	1	1	Checkpoint
-a81c0ac1-6c62-48cd-b6dd-79efddbbb596	Hospital	H3 Informe del Caso	F - Factores de Riesgo	18.1	¿Que tipo de estufa utiliza usualmente para cocinar cuando usa leña, residuos de la cosecha o carbón?	NULL			estufa	21	31	2	1	Question
-7cda3351-2d09-4c7d-bbc4-d594b30299b9	Hospital	H3 Informe del Caso	F - Factores de Riesgo	18.2	Si estufa es Otro:	NULL			NULL	21	32	2	1	Checkpoint
-3c74f472-38e4-4069-b929-91796b9612b5	Hospital	H3 Informe del Caso	F - Factores de Riesgo	18.2.1	Especifique el tipo de estufa:	NULL			estufaOtro_esp	21	33	3	1	Question
-b6083195-e1bf-41ba-98a8-a1822a778754	Hospital	H3 Informe del Caso	F - Factores de Riesgo	18.3	¿En que lugar de la casa cocina usualmente cuando usa leña, residuos de la cosecha o carbón?	NULL			dondeCocina	21	34	2	1	Question
-b321ce42-91a6-43b7-b8d0-78973ff7f827	Hospital	H3 Informe del Caso	F - Factores de Riesgo	18.4	Si el lugar de la casa donde cocina usualmente cuando usa leña, residuos de la cosecha o carbón es OTRO	NULL			NULL	21	35	2	1	Checkpoint
+			F - Factores de Riesgo	 	¿Cuál es la fuente principal de abastecimiento de agua para beber o tomar que usa en su casa				fuenteAgua					
+			F - Factores de Riesgo	 	.¿Usa Esta Fuente De Agua Todo El Año o Solo Por Parte Del Año?				UsoFuenteAgua					
+			F - Factores de Riesgo	 	¿Usted trata el agua de alguna manera para hacerla  más segura para beber?				Tx Agua					
+			F - Factores de Riesgo	 	.¿Generalmente qué le hace al agua para hacerla más segura para beber?				ComoTrataAgua					
+			F - Factores de Riesgo	 	Qué tipo de servicio sanitario tiene en su casa?				TipoSanitario					
+2814abb0-6bf4-4883-909f-1458fa5ef0f7	Hospital	H3 Informe del Caso	F - Factores de Riesgo	 	¿Qué tipo de piso tienen en su casa?	NULL			casaMaterialPiso	21	28	1	1	Question
+a1bda73d-7007-4192-96f2-8617f506f3a6	Hospital	H3 Informe del Caso	F - Factores de Riesgo	 	¿Qué tipo de combustibles usa para cocinar (marque todo lo que aplica)?	NULL				21	29	1	1	Question
+30c684e7-525d-4077-a410-3bb6087cb728	Hospital	H3 Informe del Caso	F - Factores de Riesgo	 	Si marco las opciones leña, residuos de la cosecha (rastrojo)  y/o carbón, continúe:	NULL			NULL	21	30	1	1	Checkpoint
+a81c0ac1-6c62-48cd-b6dd-79efddbbb596	Hospital	H3 Informe del Caso	F - Factores de Riesgo	 	¿Que tipo de estufa utiliza usualmente para cocinar cuando usa leña, residuos de la cosecha o carbón?	NULL			estufa	21	31	2	1	Question
+7cda3351-2d09-4c7d-bbc4-d594b30299b9	Hospital	H3 Informe del Caso	F - Factores de Riesgo	 	Si estufa es Otro:	NULL			NULL	21	32	2	1	Checkpoint
+3c74f472-38e4-4069-b929-91796b9612b5	Hospital	H3 Informe del Caso	F - Factores de Riesgo		Especifique el tipo de estufa:	NULL			estufaOtro_esp	21	33	3	1	Question
+b6083195-e1bf-41ba-98a8-a1822a778754	Hospital	H3 Informe del Caso	F - Factores de Riesgo	25	¿En que lugar de la casa cocina usualmente cuando usa leña, residuos de la cosecha o carbón?	NULL			dondeCocina	21	34	2	1	Question
+b321ce42-91a6-43b7-b8d0-78973ff7f827	Hospital	H3 Informe del Caso	F - Factores de Riesgo	2	Si el lugar de la casa donde cocina usualmente cuando usa leña, residuos de la cosecha o carbón es OTRO	NULL			NULL	21	35	2	1	Checkpoint
 81d1f248-556a-4158-b4e5-58dcdad4a4f6	Hospital	H3 Informe del Caso	F - Factores de Riesgo	18.4.1	Especifique en qué lugar de la casa cocina usualmente cuando usa leña, residuos de la cosecha o carbón	NULL			dondeCocinaOtro_esp	21	36	3	1	Question
 a1ccc3e3-0597-49dc-96fd-90d5d94a0d57	Hospital	H3 Informe del Caso	F - Factores de Riesgo	18.5	¿Qué tan seguido cocinan en su casa con leña, residuos de la cosecha o carbón?	NULL			tanSeguidoCocinan	21	37	2	1	Question
 1e57ea39-c8a4-4dc0-b6db-9622e21197ee	Hospital	H3 Informe del Caso	F - Factores de Riesgo	19	Energía eléctrica	NULL			casaEnergiaElectrica	21	38	1	1	Question
@@ -790,7 +795,7 @@ d526fcf9-3cd2-4d40-98ec-97a632500d10	Hospital	H1 Sospechosos	H1 Sospechosos	NULL
 484dc888-d71a-4e99-a3bd-432445c7f9c1	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	Edad en días total	NULL			edadTotalDias	2	0	1	1	Variable
 8deb7f4d-2936-46aa-adfb-1a2c04607c7a	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	Edad en meses decimales	NULL			edadTotalMesesDecimal	2	0	1	1	Variable
 4cbbab15-6495-4ba8-bba6-15c4e285b1e6	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente está elegible para el estudio de diarrea?	NULL			elegibleDiarrea	2	0	1	1	Variable
-67f18549-8050-40ce-a52f-463cb42413dd	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	elegibleETI_MSP	NULL			elegibleETI_MSP	2	0	1	1	Variable
+67f18549-8050-40ce-a52f-463cb42413dd	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	Elegible ETI_MSP	NULL			elegibleETI_MSP	2	0	1	1	Variable
 1da16f2a-824b-4976-bc2c-acd49481b0ce	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente está elegible para el estudio de febril?	NULL			elegibleFebril	2	0	1	1	Variable
 ff84dbe9-ee58-4c91-8e94-f240de10fe7e	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	elegibleIRAG	NULL			elegibleIRAG	2	0	1	1	Variable
 4b75778c-74e6-4dac-9628-d92f79e78c03	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente está elegible para el estudio de neurologico?	NULL			elegibleNeuro	2	0	1	1	Variable
