@@ -20,3 +20,33 @@ Questions added for TAC adult pneumonia etiology study:
 #### 2015-06-11 14:55:46 -0600
 Improve log management
 
+
+---
+
+# Update descriptive-log
+## `7b541540704d663b0ca51b2005be27a476005327`
+### blopez
+#### 2015-06-16 09:21:17 -0600
+Update descriptive-log
+
+
+Changes to questionarie Beatriz López  Date June 16 2015
+
+The following question were deleted because we had never found any insects in patients during the 8 years of the study
+
+
+3.4 ¿Consiguió garrapatas, piojos o pulgas del paciente?
+3.5 Si colectó muestra de insectos
+
+3.5.1 ¿Qué tipo de insectos colectó?
+3.5.2¿Cuántos insectos colectó?
+
+
+---
+
+# WASH QUESTIONS Changes to Questionarrie BLopez June 17 2015 I added 5 questions about WASH lines 605 to 60 SPELLING Blopes June 17 2015 Initial Spelling revisiton of all questions
+## `1f9ddd26af9b480feffdf6d4a183618db22c31a3`
+### blopez
+#### 2015-06-17 06:28:49 -0600
+WASH QUESTIONS Changes to Questionarrie BLopez June 17 2015 I added 5 questions about WASH lines 605 to 60 SPELLING Blopes June 17 2015 Initial Spelling revisiton of all questions
+
