@@ -12,6 +12,55 @@ Questions added for TAC adult pneumonia etiology study:
 - H3 D 3, 3.1, 3.2, 3.3, 3.4, 3.4.1, 3.4.1.1
 - H3 A 2.9, 2.10
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 
 # Move blood culture questions from H5 to H7
