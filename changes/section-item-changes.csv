@@ -331,22 +331,6 @@ f37c22eb-ddd6-4893-a7a6-caaead03001b	Hospital	H5 Muestras	Muestras de ViCo	4.1	(
 ac4912f4-436b-490d-b5b1-d0303493716a	Hospital	H5 Muestras	Muestras del Hospital	1.1	¿El hospital tomó una radiografía del pecho?	NULL			radiografiaPechoColecta	13	2	2	1	Question
 ce9716f7-ba95-4381-91a8-775bc37ae2b8	Hospital	H5 Muestras	Muestras del Hospital	1.2	Si hay radiografía del pecho	NULL			NULL	13	3	2	1	Checkpoint
 537fdea7-da73-4f59-98f7-3d8a5b17ed01	Hospital	H5 Muestras	Muestras del Hospital	1.2.1	Anote el número de radiografía	NULL			radiografiaPechoNumero	13	4	3	1	Question
-aa4d2d00-b49d-4468-a9b8-95a34d59022b	Hospital	H5 Muestras	Muestras del Hospital	2	¿El hospital tomó un hemocultivo al paciente?	NULL			muestraSangreCultivoColecta	13	5	1	1	Question
-164f2991-236c-43fd-b0b4-4c3d4b72e0fe	Hospital	H5 Muestras	Muestras del Hospital	3	Si colectó hemocultivo	NULL			NULL	13	6	1	1	Checkpoint
-a14f3e56-c5b3-45c2-81ca-8a4bfceff9f2	Hospital	H5 Muestras	Muestras del Hospital	3.1	Fecha de toma de Muestra	NULL			HemoFechaTomaMuestra	13	7	2	1	Question
-072661b6-0a6c-4be1-8f26-18cfae369594	Hospital	H5 Muestras	Muestras del Hospital	3.2	Número de kit de hemocultivo (1)	NULL			muestraSangreCultivoNumeroKit1	13	8	2	1	Question
-d2a6a3ac-1150-4373-ab68-4c49a0a71093	Hospital	H5 Muestras	Muestras del Hospital	3.3	Número de Registro de Laboratorio (1)	NULL			muestraSangreCultivoRegistro1	13	9	2	1	Question
-c89c8586-2948-42cd-ad64-a07d67d079fd	Hospital	H5 Muestras	Muestras del Hospital	3.4	Número de kit de hemocultivo (2)	NULL			muestraSangreCultivoNumeroKit2	13	10	2	1	Question
-980bd482-4e99-4055-b731-18be56b1d69b	Hospital	H5 Muestras	Muestras del Hospital	3.5	Número de Registro de Laboratorio (2)	NULL			muestraSangreCultivoRegistro2	13	11	2	1	Question
-dd25382f-2957-427b-8be4-420eaf451bd0	Hospital	H5 Muestras	Muestras del Hospital	3.6	Resultado de hemocultivo	NULL			HemoHemoCrecimiento	13	12	2	1	Question
-7309c593-49c8-434e-9bea-debd33148b94	Hospital	H5 Muestras	Muestras del Hospital	3.7	Si hay crecimiento	NULL			NULL	13	13	2	1	Checkpoint
-88f92fb4-60cb-415a-a8e5-c05a567a55c6	Hospital	H5 Muestras	Muestras del Hospital	3.7.1	Resultado de Kit #1 Aerobica o pediatria	NULL			Aero1Resultado	13	14	3	1	Question
-4f7930b9-9e46-4130-bfe1-f8af26d25e20	Hospital	H5 Muestras	Muestras del Hospital	3.7.2	Si hubo crecimiento identificado	NULL			NULL	13	15	3	1	Checkpoint
-5bc5ca7b-c94d-44fb-aa2f-d41e5ccf6f29	Hospital	H5 Muestras	Muestras del Hospital	3.7.2.1	Kit #1 Aerobica o pediatria	NULL			Aero1	13	16	4	1	Question
-0ef2954a-8265-4a9b-b232-b0f5411e8be3	Hospital	H5 Muestras	Muestras del Hospital	3.7.3	Si hay kit de hemocultivo #2	NULL			NULL	13	17	3	1	Checkpoint
-74e57252-fdbe-4c23-ae96-d96c14caf807	Hospital	H5 Muestras	Muestras del Hospital	3.7.3.1	Resultado de Kit #2 Aerobica o pediatrica	NULL			Aero2Resultado	13	18	4	1	Question
-39be8e2b-b275-4eff-819f-a1ea6610d913	Hospital	H5 Muestras	Muestras del Hospital	3.7.3.2	Si hubo crecimiento identificado	NULL			NULL	13	19	4	1	Checkpoint
-ce23f3b9-2f7f-4d37-91db-da195ff6cf0d	Hospital	H5 Muestras	Muestras del Hospital	3.7.3.2.1	Kit #2 Aerobica	NULL			Aero2	13	20	5	1	Question
 99d3907d-4dc9-491b-bf4a-ae839175d850	Hospital	H3 Informe del Caso	L - Hx Común	1	Vómitos	NULL			hxC_Vomitos	316	1	1	1	Question
 6750898d-4fbc-4148-8ed0-e569b9a15a1b	Hospital	H3 Informe del Caso	L - Hx Común	2	Si tiene vómitos	NULL			NULL	316	2	1	1	Checkpoint
 cb7776b5-5e1e-4edb-89c0-34f6434ca510	Hospital	H3 Informe del Caso	L - Hx Común	2.1	Pregunte al paciente: "¿En su peor día, cuántas veces vomitó?"	NULL			hxC_VomitosVeces	316	3	2	1	Question
@@ -731,6 +715,22 @@ b893e6eb-fdb4-44f8-b5c9-19e6f53c0b4f	Hospital	H7 Egreso	H7 Egreso	15	Si diagnóst
 d84f8968-a332-49f1-a0a1-942f15b44470	Hospital	H7 Egreso	H7 Egreso	22.1	Resultado de prueba de Binax para Streptococcus	NULL			LCRStreptococcusBinax	31	42	2	1	Question
 90f24d90-16a5-4214-af44-45ee86947338	Hospital	H7 Egreso	H7 Egreso	22.11	Resultado de prueba de látex para Streptococcus	NULL			LCRStreptococcusLatex	31	43	2	1	Question
 f1578321-ecc0-4e1f-b834-fa2c22519fe9	Hospital	H7 Egreso	H7 Egreso	22.12	Resultado de prueba de látex para Haemophilus influenzae (Hib)	NULL			LCRHibLatex	31	44	2	1	Question
+aa4d2d00-b49d-4468-a9b8-95a34d59022b	Hospital	H7 Egreso	H7 Egreso	23	¿El hospital tomó un hemocultivo al paciente?	NULL			muestraSangreCultivoColecta	31	45	1	1	Question
+164f2991-236c-43fd-b0b4-4c3d4b72e0fe	Hospital	H7 Egreso	H7 Egreso	24	Si colectó hemocultivo	NULL			NULL	31	46	1	1	Checkpoint
+a14f3e56-c5b3-45c2-81ca-8a4bfceff9f2	Hospital	H7 Egreso	H7 Egreso	24.1	Fecha de toma de Muestra	NULL			HemoFechaTomaMuestra	31	47	2	1	Question
+072661b6-0a6c-4be1-8f26-18cfae369594	Hospital	H7 Egreso	H7 Egreso	24.2	Número de kit de hemocultivo (1)	NULL			muestraSangreCultivoNumeroKit1	31	48	2	1	Question
+d2a6a3ac-1150-4373-ab68-4c49a0a71093	Hospital	H7 Egreso	H7 Egreso	24.3	Número de Registro de Laboratorio (1)	NULL			muestraSangreCultivoRegistro1	31	49	2	1	Question
+c89c8586-2948-42cd-ad64-a07d67d079fd	Hospital	H7 Egreso	H7 Egreso	24.4	Número de kit de hemocultivo (2)	NULL			muestraSangreCultivoNumeroKit2	31	50	2	1	Question
+980bd482-4e99-4055-b731-18be56b1d69b	Hospital	H7 Egreso	H7 Egreso	24.5	Número de Registro de Laboratorio (2)	NULL			muestraSangreCultivoRegistro2	31	51	2	1	Question
+dd25382f-2957-427b-8be4-420eaf451bd0	Hospital	H7 Egreso	H7 Egreso	24.6	Resultado de hemocultivo	NULL			HemoHemoCrecimiento	31	52	2	1	Question
+7309c593-49c8-434e-9bea-debd33148b94	Hospital	H7 Egreso	H7 Egreso	24.7	Si hay crecimiento	NULL			NULL	31	53	2	1	Checkpoint
+88f92fb4-60cb-415a-a8e5-c05a567a55c6	Hospital	H7 Egreso	H7 Egreso	24.7.1	Resultado de Kit #1 Aerobica o pediatria	NULL			Aero1Resultado	31	54	3	1	Question
+4f7930b9-9e46-4130-bfe1-f8af26d25e20	Hospital	H7 Egreso	H7 Egreso	24.7.2	Si hubo crecimiento identificado	NULL			NULL	31	55	3	1	Checkpoint
+5bc5ca7b-c94d-44fb-aa2f-d41e5ccf6f29	Hospital	H7 Egreso	H7 Egreso	24.7.2.1	Kit #1 Aerobica o pediatria	NULL			Aero1	31	56	4	1	Question
+0ef2954a-8265-4a9b-b232-b0f5411e8be3	Hospital	H7 Egreso	H7 Egreso	24.7.3	Si hay kit de hemocultivo #2	NULL			NULL	31	57	3	1	Checkpoint
+74e57252-fdbe-4c23-ae96-d96c14caf807	Hospital	H7 Egreso	H7 Egreso	24.7.24.1	Resultado de Kit #2 Aerobica o pediatrica	NULL			Aero2Resultado	31	58	4	1	Question
+39be8e2b-b275-4eff-819f-a1ea6610d913	Hospital	H7 Egreso	H7 Egreso	24.7.24.2	Si hubo crecimiento identificado	NULL			NULL	31	59	4	1	Checkpoint
+ce23f3b9-2f7f-4d37-91db-da195ff6cf0d	Hospital	H7 Egreso	H7 Egreso	24.7.24.2.1	Kit #2 Aerobica	NULL			Aero2	31	60	5	1	Question
 8031d489-bb59-43ac-9880-21a34b4b1965	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	1	¿Fecha de este reporte?      (puede ser la fecha de la cita, la llamada, el reporte del ministerio de salud o la fecha de expiración de período de seguimiento)	NULL			seguimientoFechaReporte	28	1	1	1	Question
 882001cf-1092-44db-bd2e-48967028c8f3	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	2	¿Obtuvo usted alguna información sobre el paciente?	NULL			seguimientoObtuvoInformacion	28	2	1	1	Question
 cf164ff2-d24b-4c0e-8d72-13a4589decf3	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	3	Si NO obtuvo alguna información	NULL			NULL	28	3	1	1	Checkpoint
