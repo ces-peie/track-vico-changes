@@ -20,6 +20,12 @@ Questions added for TAC adult pneumonia etiology study:
 
 
 
+
+
+
+
+
+
 # Improve log management
 ## `aef9530a002a061cd6a4b980785e225f46617e8b`
 ### odeleongt [nb]
@@ -27,7 +33,10 @@ Questions added for TAC adult pneumonia etiology study:
 Improve log management
 
 
+
+
 ---
+
 
 # Update descriptive-log
 ## `7b541540704d663b0ca51b2005be27a476005327`
@@ -36,19 +45,28 @@ Improve log management
 Update descriptive-log
 
 
+
+
 Changes to questionarie Beatriz López  Date June 16 2015
 
+
 The following question were deleted because we had never found any insects in patients during the 8 years of the study
+
+
 
 
 3.4 ¿Consiguió garrapatas, piojos o pulgas del paciente?
 3.5 Si colectó muestra de insectos
 
+
 3.5.1 ¿Qué tipo de insectos colectó?
 3.5.2¿Cuántos insectos colectó?
 
 
+
+
 ---
+
 
 # WASH QUESTIONS Changes to Questionarrie BLopez June 17 2015 I added 5 questions about WASH lines 605 to 60 SPELLING Blopes June 17 2015 Initial Spelling revisiton of all questions
 ## `1f9ddd26af9b480feffdf6d4a183618db22c31a3`
@@ -57,7 +75,10 @@ The following question were deleted because we had never found any insects in pa
 WASH QUESTIONS Changes to Questionarrie BLopez June 17 2015 I added 5 questions about WASH lines 605 to 60 SPELLING Blopes June 17 2015 Initial Spelling revisiton of all questions
 
 
+
+
 ---
+
 
 # Add response options to wash questions
 ## `d4764619bae99ddde35427894a3b85ac06b8b538`
@@ -67,7 +88,10 @@ Add response options to wash questions
 There was no stablished way to record response options, I added those to the comments column.
 
 
+
+
 ---
+
 
 # Move blood culture questions from H5 to H7
 ## `40a0be000492c3c512f1abaa715fe19882dff8e4`
@@ -75,5 +99,35 @@ There was no stablished way to record response options, I added those to the com
 #### 2015-06-19 10:42:45 -0600
 Move blood culture questions from H5 to H7
 
+
 These questions were often skipped since they where asked when the blood culture assay had not been performed or the results were not yet available. We moved them to H7 to ask them when the patient discharge information is recorded.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+# QUESTIONS FOR PERTUSSIS SURVEILLANCE
+## `cf7e69dfd35539ec234ee8b8ba621276ffc78a80`
+### hmaldonado
+#### 2015-06-19 13:52:53 -0600
+QUESTIONS FOR PERTUSSIS SURVEILLANCE
+
+4 questions were added to record H2 revisi?n de expediente clinico
+The drafting of 3 questions related to whooping cough was modified
+H2 inscripci?n de diarrea y respiratoria
+
+Elegibility Methods are pending
