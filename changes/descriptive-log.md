@@ -16,16 +16,6 @@ Questions added for TAC adult pneumonia etiology study:
 ---
 
 
-
-
-
-
-
-
-
-
-
-
 # Improve log management
 ## `aef9530a002a061cd6a4b980785e225f46617e8b`
 ### odeleongt [nb]
@@ -34,45 +24,34 @@ Improve log management
 
 
 
-
 ---
 
 
-# Update descriptive-log
-## `7b541540704d663b0ca51b2005be27a476005327`
+# Remove insect questions
+## `1f9ddd26af9b480feffdf6d4a183618db22c31a3`
 ### blopez
 #### 2015-06-16 09:21:17 -0600
-Update descriptive-log
 
 
-
-
-Changes to questionarie Beatriz López  Date June 16 2015
-
+Changes to questionarie Beatriz L?pez  Date June 16 2015
 
 The following question were deleted because we had never found any insects in patients during the 8 years of the study
 
-
-
-
-3.4 ¿Consiguió garrapatas, piojos o pulgas del paciente?
-3.5 Si colectó muestra de insectos
-
-
-3.5.1 ¿Qué tipo de insectos colectó?
-3.5.2¿Cuántos insectos colectó?
-
+3.4 Â¿ConsiguiÃ³ garrapatas, piojos o pulgas del paciente?
+3.5 Si colectÃ³ muestra de insectos
+3.5.1 Â¿QuÃ© tipo de insectos colectÃ³?
+3.5.2 Â¿CuÃ¡ntos insectos colectÃ³?
 
 
 
 ---
 
 
-# WASH QUESTIONS Changes to Questionarrie BLopez June 17 2015 I added 5 questions about WASH lines 605 to 60 SPELLING Blopes June 17 2015 Initial Spelling revisiton of all questions
+# WASH QUESTIONS
 ## `1f9ddd26af9b480feffdf6d4a183618db22c31a3`
 ### blopez
 #### 2015-06-17 06:28:49 -0600
-WASH QUESTIONS Changes to Questionarrie BLopez June 17 2015 I added 5 questions about WASH lines 605 to 60 SPELLING Blopes June 17 2015 Initial Spelling revisiton of all questions
+Changes to Questionarrie BLopez June 17 2015 I added 5 questions about WASH lines 605 to 60 SPELLING Blopes June 17 2015 Initial Spelling revisiton of all questions
 
 
 
@@ -104,20 +83,6 @@ These questions were often skipped since they where asked when the blood culture
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 # QUESTIONS FOR PERTUSSIS SURVEILLANCE
@@ -128,6 +93,6 @@ QUESTIONS FOR PERTUSSIS SURVEILLANCE
 
 4 questions were added to record H2 revisi?n de expediente clinico
 The drafting of 3 questions related to whooping cough was modified
-H2 inscripci?n de diarrea y respiratoria
+H2 inscripciÃ³n de diarrea y respiratoria
 
 Elegibility Methods are pending
