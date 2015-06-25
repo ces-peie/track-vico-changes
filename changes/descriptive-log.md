@@ -96,3 +96,12 @@ The drafting of 3 questions related to whooping cough was modified
 H2 inscripción de diarrea y respiratoria
 
 Elegibility Methods are pending
+
+---
+
+# Merge branch 'changes/odeleon' into develop
+## `0a3742702aac3d5808dd3d540f30ae5c15d4889f`
+### odeleongt [nb]
+#### 2015-06-24 09:07:26 -0600
+Merge branch 'changes/odeleon' into develop
+
