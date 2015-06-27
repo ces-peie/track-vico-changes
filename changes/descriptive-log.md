@@ -105,3 +105,13 @@ Elegibility Methods are pending
 #### 2015-06-24 09:07:26 -0600
 Merge branch 'changes/odeleon' into develop
 
+
+---
+
+# Order and update stool sample questions
+## `73da759da7e486fdc12a2c85f01516a7fa6b0c74`
+### cjarquin
+#### 2015-06-26 19:52:30 -0600
+Order and update stool sample questions
+Changed the order of questions pertaining to stool sample collection, added specification of sample type collected in H3-Muestra
+
