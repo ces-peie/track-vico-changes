@@ -487,9 +487,6 @@ c04c6ef2-a7f8-4450-aa78-6c0f2b6f5428	Hospital	H3 Informe del Caso	B - Hx de Trat
 f0317520-c468-4b5e-a36f-f0bc0d8d9bd9	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.2.1	¿Qué antbiótico tomó?	NULL			medUltimas72HorasAntiBCual	19	26	3	1	Question
 067d4fb5-500d-4876-9828-d4211a746e33	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.2.2	¿Cuándo empezó a tomarlo?	NULL			medUltimas72HorasAntiBFecha	19	27	3	1	Question
 ab7c0278-8f4d-48e7-8809-02d51f004a69	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.2.3	¿Cuál fue el último lugar donde consiguió antibióticos?	NULL			medUltimas72HorasAntiBDonde	19	28	3	1	Question
-8ced974c-680e-44c7-bffa-6991454b54de	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.3	Zinc	NULL			medUltimas72HorasZinc	19	29	2	1	Question
-c2ff3597-bde7-4ab0-b2d0-2abc8b3ef2fe	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.4	Si en los últimos 3 días, ha tomado zinc	NULL			NULL	19	30	2	1	Checkpoint
-089a19c0-b795-44a2-a58c-08fb547dd0b0	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.4.1	¿Cuál fue el último lugar donde consiguió zinc?	NULL			medUltimas72HorasZincDonde	19	31	3	1	Question
 0c2fa902-bb73-485c-8939-6261ca18c004	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.5	Medicina para la fiebre o el dolor de cuerpo (ej., Panadol, acetaminofén, naproxena, diclofenaco, bromexol)	NULL			medUltimas72HorasAntipireticos	19	32	2	1	Question
 d3092a90-08b1-4828-bceb-4666d14a6f87	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.6	Si es un paciente de Respiratorio	NULL			NULL	19	33	2	1	Checkpoint
 e70999c8-bc07-487f-8c04-4979f33a06d4	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.6.1	Aciclovir, oseltamivir o famciclovir	NULL			medUltimas72HorasAntivirales	19	34	3	1	Question
