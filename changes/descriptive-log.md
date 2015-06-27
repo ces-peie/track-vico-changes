@@ -115,3 +115,13 @@ Merge branch 'changes/odeleon' into develop
 Order and update stool sample questions
 Changed the order of questions pertaining to stool sample collection, added specification of sample type collected in H3-Muestra
 
+
+---
+
+# Removed questions on zinc
+## `e65cb77e3f5c25f5245bf2e043eac9f1e432878e`
+### cjarquin
+#### 2015-06-26 19:52:30 -0600
+Removed questions on zinc
+Removed questions on zinc, B-Treatment
+
