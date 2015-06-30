@@ -265,13 +265,24 @@ b1877f2f-ef3e-4073-9110-e34cbc296407	Hospital	H2 Inscripción	Consentimiento y En
 223c1fae-a032-4afa-bb02-e8329fd43aa7	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.3.4	Si la enfermedad empezó hace 3 o menos días y elegibleIRAG es "Sí" y está en Santa Rosa	NULL			NULL	10	42	4	1	Checkpoint
 36d3bc25-4ef4-4e02-8f0e-c1c6fdc828c6	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.3.4.1	¡¡EL PACIENTE ES ELEGIBLE PARA VIGILANCIA DE INFLUENZA!!    Marque todas las etiquetas con marcador ROSADO.	NULL			NULL	10	43	5	1	Info
 31fbbd1e-6c99-45db-80da-fa39daaa8cad	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.3.5	Favor de tomar las muestras necesarias antes de proseguir, y anote la información en el formulario de Toma de Muestras	NULL			NULL	10	44	4	1	Info
-31cd0a3d-5bd1-45a3-9219-9ebc5feda582	Hospital	H5 Muestras	Muestras de ViCo	1	Si es un paciente de Diarrea	NULL			NULL	12	1	1	1	Checkpoint
-b0b98026-8ad4-4c7d-983e-7e7396b90d04	Hospital	H5 Muestras	Muestras de ViCo	1.1	¿Colectó alguna muestra de heces?	NULL			muestraHecesColecta	12	2	2	1	Question
-b96a997b-2d34-4f1b-8966-46d9b8dbea59	Hospital	H5 Muestras	Muestras de ViCo	1.2	Si NO colectó una muestra de heces	NULL			NULL	12	3	2	1	Checkpoint
-5ee171b9-ac00-4469-a52f-23e39da2c871	Hospital	H5 Muestras	Muestras de ViCo	1.2.1	¿Por qué no pudo colectar una muestra de heces?	NULL			MuestraHecesNoRazon	12	4	3	1	Question
+31cd0a3d-5bd1-45a3-9219-9ebc5feda582	Hospital	H5 Muestras	Muestras de ViCo	1	Si el paciente tiene enfermedad diarreica:	NULL			NULL	12	1	1	1	Checkpoint
+b0b98026-8ad4-4c7d-983e-7e7396b90d04	Hospital	H5 Muestras	Muestras de ViCo	1.1	¿Colectó alguna muestra de heces? La muestra entera es de mayor utilidad para detectar la posible causa de enfermedad.	NULL	modification	Opciones: Si, No	muestraHecesColecta	12	2	2	1	Question
+					¿Qué tipo de muestra de heces recolectó?		addition	Opciones: Muestra de heces entera, hisopo rectal, ambos						
+b96a997b-2d34-4f1b-8966-46d9b8dbea59	Hospital	H5 Muestras	Muestras de ViCo	1.2	Si NO colectó una muestra de heces (entera, hisopo, o ambos)	NULL	modification		NULL	12	3	2	1	Checkpoint
+5ee171b9-ac00-4469-a52f-23e39da2c871	Hospital	H5 Muestras	Muestras de ViCo	1.2.1	¿Por qué no pudo colectar una muestra de heces (entera, hisopo o ambos)?	NULL	modification		MuestraHecesNoRazon	12	4	3	1	Question
 17ff155f-a034-4f4c-b66a-22c6cc2a4e16	Hospital	H5 Muestras	Muestras de ViCo	1.2.2	Si la razón es "Otra"	NULL			NULL	12	5	3	1	Checkpoint
 5f36250a-325f-497c-82e2-173db295177c	Hospital	H5 Muestras	Muestras de ViCo	1.2.2.1	Especifique la otra razón	NULL			MuestraHecesNoRazonOtra_esp	12	6	4	1	Question
-5f3621b2-2d4a-437b-aad8-e7d69c67cb66	Hospital	H5 Muestras	Muestras de ViCo	1.3	Si colectó muestra de heces	NULL			NULL	12	7	2	1	Checkpoint
+5f3621b2-2d4a-437b-aad8-e7d69c67cb66	Hospital	H5 Muestras	Muestras de ViCo	1.3	Si colectó muestra de heces (hisopo o entera o ambos)	NULL	modification		NULL	12	7	2	1	Checkpoint
+3e6192db-626c-4352-a3b9-e6ef8920c1be	Hospital	H5 Muestras	Muestras de ViCo	1.3.4	¿Colectó una muestra de heces entera?	NULL	changed order		muestraHecesEnteraColecta	12	16	3	1	Question
+82e14caa-38c3-4104-bfa2-f19c8cf29bd4	Hospital	H5 Muestras	Muestras de ViCo	1.3.5	Si NO colectó muestra de heces entera	NULL	changed order		NULL	12	17	3	1	Checkpoint
+cacbf78d-1248-4b8d-949f-9382be537571	Hospital	H5 Muestras	Muestras de ViCo	1.3.5.1	¿Por qué no pudo colectar una muestra de heces entera?	NULL	changed order		muestraHecesEnteraNoRazon	12	18	4	1	Question
+d9032988-4276-4e62-899a-dada10f06039	Hospital	H5 Muestras	Muestras de ViCo	1.3.5.2	Si la razón es "Otra"	NULL	changed order		NULL	12	19	4	1	Checkpoint
+ecb5dc5a-cca3-4b16-925d-ebdd6e72200f	Hospital	H5 Muestras	Muestras de ViCo	1.3.5.2.1	Especifique la otra razón	NULL	changed order		muestraHecesEnteraNoRazonOtra_Esp	12	20	5	1	Question
+936dbeb2-c076-45e1-bda7-8dcd1c037941	Hospital	H5 Muestras	Muestras de ViCo	1.3.6	Si colectó muestra de heces entera	NULL	changed order		NULL	12	21	3	1	Checkpoint
+a935cdc5-6dbf-4960-89ee-1311c0cf4366	Hospital	H5 Muestras	Muestras de ViCo	1.3.6.1	¿Cuándo se obtuvo esta muestra entera?	NULL	changed order		muestraHecesEnteraFechaHora	12	22	4	1	Question
+4bffbe28-52d8-4852-ada2-0c55deda8d7e	Hospital	H5 Muestras	Muestras de ViCo	1.3.6.2	¿La muestra está líquida?	NULL	changed order		muestraHecesEnteraLiquida	12	23	4	1	Question
+f19f33de-3f39-4c58-8005-56db9780bc8e	Hospital	H5 Muestras	Muestras de ViCo	1.3.6.3	¿La muestra tiene apariencia de agua de arroz?	NULL	changed order		muestraHecesEnteraAguaArroz	12	24	4	1	Question
+1772c0e9-f352-4c01-b22e-ccda2a7a4152	Hospital	H5 Muestras	Muestras de ViCo	1.3.6.4	¿La muestra cubre el fondo del contedor plástico?	NULL	changed order		muestraHecesEnteraCubreFondo	12	25	4	1	Question
 4e727833-a275-4a24-b22a-6dee6a9fb6f5	Hospital	H5 Muestras	Muestras de ViCo	1.3.1	¿Colectó un hisopo tipo Cary Blair?	NULL			muestraHecesHisopoCaryBlairColecta	12	8	3	1	Question
 76a3f08f-f690-4fc8-961c-5dc61b7c13a7	Hospital	H5 Muestras	Muestras de ViCo	1.3.2	Si NO colectó hisopo tipo Cary Blair	NULL			NULL	12	9	3	1	Checkpoint
 475ea24b-f931-4131-a472-36cbd1519386	Hospital	H5 Muestras	Muestras de ViCo	1.3.2.1	¿Por qué no pudo colectar un hisopo tipo Cary Blair?	NULL			muestraHecesHisopoCaryBlairNoRazon	12	10	4	1	Question
@@ -279,17 +290,7 @@ b96a997b-2d34-4f1b-8966-46d9b8dbea59	Hospital	H5 Muestras	Muestras de ViCo	1.2	S
 26ea8957-d65b-4e80-8446-dfdb3061278b	Hospital	H5 Muestras	Muestras de ViCo	1.3.2.2.1	Especifique la otra razón	NULL			muestraHecesHisopoCaryBlairNoRazonOtra_esp	12	12	5	1	Question
 79658514-3747-4794-b30d-e17070013538	Hospital	H5 Muestras	Muestras de ViCo	1.3.3	Si colectó hisopo tipo Cary Blair	NULL			NULL	12	13	3	1	Checkpoint
 04495185-a46d-4ffd-a9e6-4af258bbca71	Hospital	H5 Muestras	Muestras de ViCo	1.3.3.1	¿Cuándo obtuvo el hisopo tipo Cary Blair?	NULL			muestraHecesHisopoCaryBlairFechaHora	12	14	4	1	Question
-14efa719-3c7a-4a52-b795-ef29e95bb05d	Hospital	H5 Muestras	Muestras de ViCo	1.3.3.2	¿Cómo obtuvó el hisopo Cary Blair?	NULL			muestraHecesHisopoCaryBlairTipo	12	15	4	1	Question
-3e6192db-626c-4352-a3b9-e6ef8920c1be	Hospital	H5 Muestras	Muestras de ViCo	1.3.4	¿Colectó una muestra de heces entera?	NULL			muestraHecesEnteraColecta	12	16	3	1	Question
-82e14caa-38c3-4104-bfa2-f19c8cf29bd4	Hospital	H5 Muestras	Muestras de ViCo	1.3.5	Si NO colectó muestra de heces entera	NULL			NULL	12	17	3	1	Checkpoint
-cacbf78d-1248-4b8d-949f-9382be537571	Hospital	H5 Muestras	Muestras de ViCo	1.3.5.1	¿Por qué no pudo colectar una muestra de heces entera?	NULL			muestraHecesEnteraNoRazon	12	18	4	1	Question
-d9032988-4276-4e62-899a-dada10f06039	Hospital	H5 Muestras	Muestras de ViCo	1.3.5.2	Si la razón es "Otra"	NULL			NULL	12	19	4	1	Checkpoint
-ecb5dc5a-cca3-4b16-925d-ebdd6e72200f	Hospital	H5 Muestras	Muestras de ViCo	1.3.5.2.1	Especifique la otra razón	NULL			muestraHecesEnteraNoRazonOtra_Esp	12	20	5	1	Question
-936dbeb2-c076-45e1-bda7-8dcd1c037941	Hospital	H5 Muestras	Muestras de ViCo	1.3.6	Si colectó muestra de heces entera	NULL			NULL	12	21	3	1	Checkpoint
-a935cdc5-6dbf-4960-89ee-1311c0cf4366	Hospital	H5 Muestras	Muestras de ViCo	1.3.6.1	¿Cuándo se obtuvo esta muestra entera?	NULL			muestraHecesEnteraFechaHora	12	22	4	1	Question
-4bffbe28-52d8-4852-ada2-0c55deda8d7e	Hospital	H5 Muestras	Muestras de ViCo	1.3.6.2	¿La muestra está líquida?	NULL			muestraHecesEnteraLiquida	12	23	4	1	Question
-f19f33de-3f39-4c58-8005-56db9780bc8e	Hospital	H5 Muestras	Muestras de ViCo	1.3.6.3	¿La muestra tiene apariencia de agua de arroz?	NULL			muestraHecesEnteraAguaArroz	12	24	4	1	Question
-1772c0e9-f352-4c01-b22e-ccda2a7a4152	Hospital	H5 Muestras	Muestras de ViCo	1.3.6.4	¿La muestra cubre el fondo del contedor plástico?	NULL			muestraHecesEnteraCubreFondo	12	25	4	1	Question
+14efa719-3c7a-4a52-b795-ef29e95bb05d	Hospital	H5 Muestras	Muestras de ViCo	1.3.3.2	¿Cómo obtuvó el hisopo Cary Blair?	NULL	add help text	Esto debe aplicar únicamente en el centro o puesto, donde la muestra no llega el mismo dia al laboratorio. En el hospital no aplica.	muestraHecesHisopoCaryBlairTipo	12	15	4	1	Question
 0fcfc818-bf37-406f-81b6-70c70d7f7895	Hospital	H5 Muestras	Muestras de ViCo	2	Si es un paciente de Respiratorias	NULL			NULL	12	26	1	1	Checkpoint
 2adfdfd7-118a-4605-ae50-b2dbd9a89cd4	Hospital	H5 Muestras	Muestras de ViCo	2.1	¿Colectó un hisopo orofaríngeo (OF)?	NULL			muestraFroteOPColecta	12	27	2	1	Question
 deece3da-bf56-40d8-a58a-126afa02195b	Hospital	H5 Muestras	Muestras de ViCo	2.2	Si NO colectó muestra de Frote OF	NULL			NULL	12	28	2	1	Checkpoint
@@ -486,9 +487,6 @@ c04c6ef2-a7f8-4450-aa78-6c0f2b6f5428	Hospital	H3 Informe del Caso	B - Hx de Trat
 f0317520-c468-4b5e-a36f-f0bc0d8d9bd9	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.2.1	¿Qué antbiótico tomó?	NULL			medUltimas72HorasAntiBCual	19	26	3	1	Question
 067d4fb5-500d-4876-9828-d4211a746e33	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.2.2	¿Cuándo empezó a tomarlo?	NULL			medUltimas72HorasAntiBFecha	19	27	3	1	Question
 ab7c0278-8f4d-48e7-8809-02d51f004a69	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.2.3	¿Cuál fue el último lugar donde consiguió antibióticos?	NULL			medUltimas72HorasAntiBDonde	19	28	3	1	Question
-8ced974c-680e-44c7-bffa-6991454b54de	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.3	Zinc	NULL			medUltimas72HorasZinc	19	29	2	1	Question
-c2ff3597-bde7-4ab0-b2d0-2abc8b3ef2fe	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.4	Si en los últimos 3 días, ha tomado zinc	NULL			NULL	19	30	2	1	Checkpoint
-089a19c0-b795-44a2-a58c-08fb547dd0b0	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.4.1	¿Cuál fue el último lugar donde consiguió zinc?	NULL			medUltimas72HorasZincDonde	19	31	3	1	Question
 0c2fa902-bb73-485c-8939-6261ca18c004	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.5	Medicina para la fiebre o el dolor de cuerpo (ej., Panadol, acetaminofén, naproxena, diclofenaco, bromexol)	NULL			medUltimas72HorasAntipireticos	19	32	2	1	Question
 d3092a90-08b1-4828-bceb-4666d14a6f87	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.6	Si es un paciente de Respiratorio	NULL			NULL	19	33	2	1	Checkpoint
 e70999c8-bc07-487f-8c04-4979f33a06d4	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.6.1	Aciclovir, oseltamivir o famciclovir	NULL			medUltimas72HorasAntivirales	19	34	3	1	Question
@@ -590,12 +588,26 @@ a72a822f-8836-45b2-9ce9-39fbbe65c455	Hospital	H3 Informe del Caso	F - Factores d
 eacd63a4-3f90-47a6-9cba-36ceed1616c8	Hospital	H3 Informe del Caso	F - Factores de Riesgo	12	En su casa, ¿Cuántos cuartos hay para dormir?	NULL			casaCuantosDormitorios	21	24	1	1	Question
 6e48836a-a531-4359-9fd9-18e70bef37f3	Hospital	H3 Informe del Caso	F - Factores de Riesgo	13	¿Cuántas personas viven en su casa?	NULL			casaCuantasPersonasViven	21	25	1	1	Question
 afb9fdce-7c77-4216-ba75-c91525dd8cff	Hospital	H3 Informe del Caso	F - Factores de Riesgo	14	¿En su casa, de dónde sacan el agua para beber? No lea las opciones; marque todas las que apliquen.	NULL				21	26	1	1	Question
-b2db5d57-eb53-4607-b34d-56d9fbb0bbad	Hospital	H3 Informe del Caso	F - Factores de Riesgo	15	¿De qué material está hecho el techo (la parte de arriba) de su casa?	NULL			casaMaterialTecho	21	27	1	1	Question
-			F - Factores de Riesgo	 	¿Cuál es la fuente principal de abastecimiento de agua para beber o tomar que usa en su casa			Opciones:  Chorro publico , Otro fuente por tubería, Pila publica/ tanque público,Pozo mecánico/manual (brocal),Rio/ acequia/ manantial,Agua de lluvia,Camión o tanque aguatero, Agua embotellada  Otro: ______________________Especifique	fuenteAgua					
-			F - Factores de Riesgo	 	.¿Usa Esta Fuente De Agua Todo El Año o Solo Por Parte Del Año?			Opciones: Todo El Año , Parte Del Año, No Sabe 	UsoFuenteAgua					
+			F - Factores de Riesgo	 	¿Usa esta fuente de agua todo el año o solo por parte del año?		modification	Opciones: Todo El Año , Parte Del Año, No Sabe 	UsoFuenteAgua					
 			F - Factores de Riesgo	 	¿Usted trata el agua de alguna manera para hacerla  más segura para beber?			Opciones: Si , No , No sabe	Tx Agua					
-			F - Factores de Riesgo	 	.¿Generalmente qué le hace al agua para hacerla más segura para beber?			Opciones: Hierven, Cloran, Filtro De Tela,Usa Filtro (Cerámica / Arena / Otros Filtros),Purifican ConLuz Solar,La Dejan Reposar 	ComoTrataAgua					
-			F - Factores de Riesgo	 	Qué tipo de servicio sanitario tiene en su casa?			Opciones:  Inodoro privado conectado al alcantarillado, Inodoro compartido ,Inodora conectado a fosa séptica, Letrina ,pozo ciego, escusado,Otro: ______________________Especifique	TipoSanitario					
+			F - Factores de Riesgo	 	¿Generalmente qué le hace al agua para hacerla más segura para beber?			Opciones: Hierven, Cloran, Filtro De Tela,Usa Filtro (Cerámica / Arena / Otros Filtros),Purifican ConLuz Solar,La Dejan Reposar 	ComoTrataAgua					
+			F - Factores de Riesgo	 	¿Qué tipo de facilidad de inodoro o letrina tienen en su casa, si hay, que usan más frecuentemente los miembros de su familia?		modification/addition	Opciones: Inodoro con jalador de agua/donde se hecha el agua o letrina, letrina de hoyo mejorada con ventilación, hoyo de letrina con losa, pozo ciego/hoyo de letrina sin losa/abierto, compostaje/inodoro seco o letrina seca, inodoro o letrina colgante, servicio o letrina de cubeta (donde las heces son removidas manualmente), no hay facilidades/arbustos/bolsa plástica, otro, no sabe, se negó a responder	TipoSanitario					
+					Si el tipo de facilidad es OTRO, especificar:		addition	Texto abierto						
+					Si usan “inodoro con jalador de agua/o donde se hecha el agua/letrina”		addition							
+					Cuando se hecha agua en el inodoro o letrina, ¿a dónde va a parar el agua?		addition	Opciones: A un sistema de desagüe con tubería, a un tanque/fosa séptica, a un hoyo de letrina, a cualquier otro lugar, no sabe						
+					Si usan “servicio o letrina de cubeta” o “no hay facilidades/arbusto/bolsa”		addition							
+					¿A dónde se van las heces cuando son desechadas? (marque todos los que apliquen)		addition	Opciones: En el drenaje o una zanja, se tiran a la basura, se entierran, se dejan al descubierto en el patio, se dejan al descubierto lejos de la casa, otro, no sabe, se negó a responder						
+					Si heces van a “otro”, especificar a dónde van las heces cuando son desechadas:		addition	Texto abierto						
+					Si contestó algo aparte de “no sabe” o “se negó a responder” a la pregunta “¿Qué tipo de facilidad de inodoro o letrina tienen en su casa, si hay, que usen más frecuentemente los miembros de su familia?”:		addition							
+					¿En dónde está localizado el inodoro/letrina/baño o el sitio donde se va para defecar (hacer popó)?		addition	Opciones: adentro o junto a la vivienda, en cualquier lugar del lote, afuera del lote, no sabe, se negó a responder						
+					¿Comparte usted el inodoro/letrina o sitio para defecar con otras viviendas?		addition	Opciones: si, no, no sabe, se negó a responder						
+					Si comparte el inodoro/letrina con otras viviendas, ¿Cuántas otras viviendas comparten el inodoro/letrina/sitio para defecar?		addition	campo abierto para número (valor entre 1-999) (999 puede ser no sabe)						
+					¿Puede cualquier miembro del público usar este inodoro/letrina/sitio de defecación?		addition	Opciones: si, no, no sabe, se negó a responder						
+					¿Alguna vez se limpia el inodoro/letrina?		addition	Opciones: si, no, no aplica (campo abierto para defecación), no sabe, se negó a responder						
+					Si alguna vez se limpia el inodoro/letrina: ¿Cuándo fue la última vez que se limpió el inodoro/letrina?		addition	Opciones: hoy, ayer, hace más de un día y menos de una semana, hace 1-4 semanas, hace más de un mes, no sabe/no recuerda, se negó a responder						
+					La última vez que el miembro más pequeño de su familia defecó, ¿qué se hizo para desechar las heces?		addition	Opciones: El niño usó el inodoro/letrina, se pusieron/enjuagaron en el inodoro o letrina, se pusieron adentro/enjuagaron en drenaje o zanja, no sabe, uso pañal desechable, se tiraron a la basura, se enterraron, se dejaron al descubierto en el patio, se dejaron al descubierto fuera de la propiedad, otro, se negó a responder						
+					Si respondió “otro”, especificar ¿qué se hizo para desechar las heces del miembro más pequeño de la familia la última vez que defecó?		addition	texto abierto						
+b2db5d57-eb53-4607-b34d-56d9fbb0bbad	Hospital	H3 Informe del Caso	F - Factores de Riesgo	15	¿De qué material está hecho el techo (la parte de arriba) de su casa?	NULL			casaMaterialTecho	21	27	1	1	Question
 2814abb0-6bf4-4883-909f-1458fa5ef0f7	Hospital	H3 Informe del Caso	F - Factores de Riesgo	 	¿Qué tipo de piso tienen en su casa?	NULL			casaMaterialPiso	21	28	1	1	Question
 a1bda73d-7007-4192-96f2-8617f506f3a6	Hospital	H3 Informe del Caso	F - Factores de Riesgo	 	¿Qué tipo de combustibles usa para cocinar (marque todo lo que aplica)?	NULL				21	29	1	1	Question
 30c684e7-525d-4077-a410-3bb6087cb728	Hospital	H3 Informe del Caso	F - Factores de Riesgo	 	Si marco las opciones leña, residuos de la cosecha (rastrojo)  y/o carbón, continúe:	NULL			NULL	21	30	1	1	Checkpoint

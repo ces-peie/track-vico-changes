@@ -96,3 +96,42 @@ The drafting of 3 questions related to whooping cough was modified
 H2 inscripción de diarrea y respiratoria
 
 Elegibility Methods are pending
+
+---
+
+# Merge branch 'changes/odeleon' into develop
+## `0a3742702aac3d5808dd3d540f30ae5c15d4889f`
+### odeleongt [nb]
+#### 2015-06-24 09:07:26 -0600
+Merge branch 'changes/odeleon' into develop
+
+
+---
+
+# Order and update stool sample questions
+## `73da759da7e486fdc12a2c85f01516a7fa6b0c74`
+### cjarquin
+#### 2015-06-26 19:52:30 -0600
+Order and update stool sample questions
+Changed the order of questions pertaining to stool sample collection, added specification of sample type collected in H3-Muestra
+
+
+---
+
+# Removed questions on zinc
+## `e65cb77e3f5c25f5245bf2e043eac9f1e432878e`
+### cjarquin
+#### 2015-06-26 19:52:30 -0600
+Removed questions on zinc
+Removed questions on zinc, B-Treatment
+
+
+---
+
+# Add and update TRAction questions
+## `a0c6c50501552363efbae86521495b293aa245cb`
+### cjarquin
+#### 2015-06-26 19:52:31 -0600
+Add and update TRAction questions
+Added questions from TRAction analysis on WASH, modified some of the questions Beatriz added.
+
