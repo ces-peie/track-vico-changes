@@ -265,74 +265,71 @@ b1877f2f-ef3e-4073-9110-e34cbc296407	Hospital	H2 Inscripción	Consentimiento y En
 223c1fae-a032-4afa-bb02-e8329fd43aa7	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.3.4	Si la enfermedad empezó hace 3 o menos días y elegibleIRAG es "Sí" y está en Santa Rosa	NULL			NULL	10	42	4	1	Checkpoint
 36d3bc25-4ef4-4e02-8f0e-c1c6fdc828c6	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.3.4.1	¡¡EL PACIENTE ES ELEGIBLE PARA VIGILANCIA DE INFLUENZA!!    Marque todas las etiquetas con marcador ROSADO.	NULL			NULL	10	43	5	1	Info
 31fbbd1e-6c99-45db-80da-fa39daaa8cad	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.3.5	Favor de tomar las muestras necesarias antes de proseguir, y anote la información en el formulario de Toma de Muestras	NULL			NULL	10	44	4	1	Info
-31cd0a3d-5bd1-45a3-9219-9ebc5feda582	Hospital	H5 Muestras	Muestras de ViCo	1	Si el paciente tiene enfermedad diarreica:	NULL			NULL	12	1	1	1	Checkpoint
-b0b98026-8ad4-4c7d-983e-7e7396b90d04	Hospital	H5 Muestras	Muestras de ViCo	1.1	¿Colectó alguna muestra de heces? La muestra entera es de mayor utilidad para detectar la posible causa de enfermedad.	NULL	modification	Opciones: Si, No	muestraHecesColecta	12	2	2	1	Question
-					¿Qué tipo de muestra de heces recolectó?		addition	Opciones: Muestra de heces entera, hisopo rectal, ambos						
-b96a997b-2d34-4f1b-8966-46d9b8dbea59	Hospital	H5 Muestras	Muestras de ViCo	1.2	Si NO colectó una muestra de heces (entera, hisopo, o ambos)	NULL	modification		NULL	12	3	2	1	Checkpoint
-5ee171b9-ac00-4469-a52f-23e39da2c871	Hospital	H5 Muestras	Muestras de ViCo	1.2.1	¿Por qué no pudo colectar una muestra de heces (entera, hisopo o ambos)?	NULL	modification		MuestraHecesNoRazon	12	4	3	1	Question
-17ff155f-a034-4f4c-b66a-22c6cc2a4e16	Hospital	H5 Muestras	Muestras de ViCo	1.2.2	Si la razón es "Otra"	NULL			NULL	12	5	3	1	Checkpoint
-5f36250a-325f-497c-82e2-173db295177c	Hospital	H5 Muestras	Muestras de ViCo	1.2.2.1	Especifique la otra razón	NULL			MuestraHecesNoRazonOtra_esp	12	6	4	1	Question
-5f3621b2-2d4a-437b-aad8-e7d69c67cb66	Hospital	H5 Muestras	Muestras de ViCo	1.3	Si colectó muestra de heces (hisopo o entera o ambos)	NULL	modification		NULL	12	7	2	1	Checkpoint
-3e6192db-626c-4352-a3b9-e6ef8920c1be	Hospital	H5 Muestras	Muestras de ViCo	1.3.4	¿Colectó una muestra de heces entera?	NULL	changed order		muestraHecesEnteraColecta	12	16	3	1	Question
-82e14caa-38c3-4104-bfa2-f19c8cf29bd4	Hospital	H5 Muestras	Muestras de ViCo	1.3.5	Si NO colectó muestra de heces entera	NULL	changed order		NULL	12	17	3	1	Checkpoint
-cacbf78d-1248-4b8d-949f-9382be537571	Hospital	H5 Muestras	Muestras de ViCo	1.3.5.1	¿Por qué no pudo colectar una muestra de heces entera?	NULL	changed order		muestraHecesEnteraNoRazon	12	18	4	1	Question
-d9032988-4276-4e62-899a-dada10f06039	Hospital	H5 Muestras	Muestras de ViCo	1.3.5.2	Si la razón es "Otra"	NULL	changed order		NULL	12	19	4	1	Checkpoint
-ecb5dc5a-cca3-4b16-925d-ebdd6e72200f	Hospital	H5 Muestras	Muestras de ViCo	1.3.5.2.1	Especifique la otra razón	NULL	changed order		muestraHecesEnteraNoRazonOtra_Esp	12	20	5	1	Question
-936dbeb2-c076-45e1-bda7-8dcd1c037941	Hospital	H5 Muestras	Muestras de ViCo	1.3.6	Si colectó muestra de heces entera	NULL	changed order		NULL	12	21	3	1	Checkpoint
-a935cdc5-6dbf-4960-89ee-1311c0cf4366	Hospital	H5 Muestras	Muestras de ViCo	1.3.6.1	¿Cuándo se obtuvo esta muestra entera?	NULL	changed order		muestraHecesEnteraFechaHora	12	22	4	1	Question
-4bffbe28-52d8-4852-ada2-0c55deda8d7e	Hospital	H5 Muestras	Muestras de ViCo	1.3.6.2	¿La muestra está líquida?	NULL	changed order		muestraHecesEnteraLiquida	12	23	4	1	Question
-f19f33de-3f39-4c58-8005-56db9780bc8e	Hospital	H5 Muestras	Muestras de ViCo	1.3.6.3	¿La muestra tiene apariencia de agua de arroz?	NULL	changed order		muestraHecesEnteraAguaArroz	12	24	4	1	Question
-1772c0e9-f352-4c01-b22e-ccda2a7a4152	Hospital	H5 Muestras	Muestras de ViCo	1.3.6.4	¿La muestra cubre el fondo del contedor plástico?	NULL	changed order		muestraHecesEnteraCubreFondo	12	25	4	1	Question
-4e727833-a275-4a24-b22a-6dee6a9fb6f5	Hospital	H5 Muestras	Muestras de ViCo	1.3.1	¿Colectó un hisopo tipo Cary Blair?	NULL			muestraHecesHisopoCaryBlairColecta	12	8	3	1	Question
-76a3f08f-f690-4fc8-961c-5dc61b7c13a7	Hospital	H5 Muestras	Muestras de ViCo	1.3.2	Si NO colectó hisopo tipo Cary Blair	NULL			NULL	12	9	3	1	Checkpoint
-475ea24b-f931-4131-a472-36cbd1519386	Hospital	H5 Muestras	Muestras de ViCo	1.3.2.1	¿Por qué no pudo colectar un hisopo tipo Cary Blair?	NULL			muestraHecesHisopoCaryBlairNoRazon	12	10	4	1	Question
-3e3f92a3-a8fe-432b-abd1-e4a90f500b0b	Hospital	H5 Muestras	Muestras de ViCo	1.3.2.2	Si la razón es "Otra"	NULL			NULL	12	11	4	1	Checkpoint
-26ea8957-d65b-4e80-8446-dfdb3061278b	Hospital	H5 Muestras	Muestras de ViCo	1.3.2.2.1	Especifique la otra razón	NULL			muestraHecesHisopoCaryBlairNoRazonOtra_esp	12	12	5	1	Question
-79658514-3747-4794-b30d-e17070013538	Hospital	H5 Muestras	Muestras de ViCo	1.3.3	Si colectó hisopo tipo Cary Blair	NULL			NULL	12	13	3	1	Checkpoint
-04495185-a46d-4ffd-a9e6-4af258bbca71	Hospital	H5 Muestras	Muestras de ViCo	1.3.3.1	¿Cuándo obtuvo el hisopo tipo Cary Blair?	NULL			muestraHecesHisopoCaryBlairFechaHora	12	14	4	1	Question
-14efa719-3c7a-4a52-b795-ef29e95bb05d	Hospital	H5 Muestras	Muestras de ViCo	1.3.3.2	¿Cómo obtuvó el hisopo Cary Blair?	NULL	add help text	Esto debe aplicar únicamente en el centro o puesto, donde la muestra no llega el mismo dia al laboratorio. En el hospital no aplica.	muestraHecesHisopoCaryBlairTipo	12	15	4	1	Question
-0fcfc818-bf37-406f-81b6-70c70d7f7895	Hospital	H5 Muestras	Muestras de ViCo	2	Si es un paciente de Respiratorias	NULL			NULL	12	26	1	1	Checkpoint
-2adfdfd7-118a-4605-ae50-b2dbd9a89cd4	Hospital	H5 Muestras	Muestras de ViCo	2.1	¿Colectó un hisopo orofaríngeo (OF)?	NULL			muestraFroteOPColecta	12	27	2	1	Question
-deece3da-bf56-40d8-a58a-126afa02195b	Hospital	H5 Muestras	Muestras de ViCo	2.2	Si NO colectó muestra de Frote OF	NULL			NULL	12	28	2	1	Checkpoint
-c979910b-0f91-472a-8821-b32da0483c9d	Hospital	H5 Muestras	Muestras de ViCo	2.2.1	¿Por qué no se tomo un hisopo OF?	NULL			muestraFroteOPNoRazon	12	29	3	1	Question
-e7217d7f-96a7-45f9-9b4a-c0bc59870d27	Hospital	H5 Muestras	Muestras de ViCo	2.2.2	Si la razón es "Otra"	NULL			NULL	12	30	3	1	Checkpoint
-f6588dd0-578c-4309-8aba-61bae3762761	Hospital	H5 Muestras	Muestras de ViCo	2.2.2.1	Especifique la otra razón	NULL			muestraFroteOPNoRazonOtra_esp	12	31	4	1	Question
-8b626d66-6580-4bf6-842a-e2917b0d86f9	Hospital	H5 Muestras	Muestras de ViCo	2.3	Si colectó muestra de Frote OF	NULL			NULL	12	32	2	1	Checkpoint
-32f3a363-358e-409b-836d-31b343b748a9	Hospital	H5 Muestras	Muestras de ViCo	2.3.1	¿Cuándo tomó el hisopo OF?	NULL			muestraFroteOPFechaHora	12	33	3	1	Question
-85043b25-2494-4152-bdd2-187e8fbb8723	Hospital	H5 Muestras	Muestras de ViCo	2.4	¿Colectó un hisopo nasofaríngeo (NF)?	NULL			muestraFroteNP	12	34	2	1	Question
-2c81ac3d-dd1d-40e8-b713-7383e9bc5c76	Hospital	H5 Muestras	Muestras de ViCo	2.5	Si NO colectó muestra de Frote NF	NULL			NULL	12	35	2	1	Checkpoint
-468029bb-6de5-40a5-926d-1e00b57be964	Hospital	H5 Muestras	Muestras de ViCo	2.5.1	¿Por qué no se tomo el hisopo NF?	NULL			muestraFroteNPNoRazon	12	36	3	1	Question
-53f3d961-2e99-4eaf-8dc7-dd6d9832b16f	Hospital	H5 Muestras	Muestras de ViCo	2.5.2	Si la razón es "Otra"	NULL			NULL	12	37	3	1	Checkpoint
-e31b2827-a829-47e7-9387-f85afeef3862	Hospital	H5 Muestras	Muestras de ViCo	2.5.2.1	Especifique la otra razón	NULL			muestraFroteNPNoRazonOtra_esp	12	38	4	1	Question
-e54b51fc-aa27-4187-9713-07c353a60169	Hospital	H5 Muestras	Muestras de ViCo	2.6	Si colecta muestra de Frote NF	NULL			NULL	12	39	2	1	Checkpoint
-083428dd-df0a-460e-ab63-272d0c5d0f55	Hospital	H5 Muestras	Muestras de ViCo	2.6.1	¿Cuándo tomó el hisopo NF?	NULL			muestraFroteNPFechaHora	12	40	3	1	Question
-	Hospital	H5 Muestras	Muestras de ViCo	2.6.2	Enfermera: ¿El paciente estaba recibiendo antibióticos antes de tomar las muestras?	NULL	addition		abx_npop	12		3	1	Question
-903da773-71f5-428b-8ca6-ddfa4148fd31	Hospital	H5 Muestras	Muestras de ViCo	2.6.2	Si elegibleIRAG es "Sí" y está en Santa Rosa	NULL			NULL	12	41	3	1	Checkpoint
-2a6d9c24-5a9f-4ceb-bbc9-2110305feced	Hospital	H5 Muestras	Muestras de ViCo	2.6.2.1	Este paciente es elegible para el estudio de IRAG.    Marque todas las etiquetas con marcador ROSADO.	NULL			NULL	12	42	4	1	Info
-50eb5d26-0429-44aa-8146-0ef86d4f462a	Hospital	H5 Muestras	Muestras de ViCo	2.7	Si el paciente tiene 18 años de edad o más	NULL			NULL	12	43	2	1	Checkpoint
-585f03e4-08a3-49fb-846c-38a16326e129	Hospital	H5 Muestras	Muestras de ViCo	2.7.1	¿Colectó una muestra de orina?	NULL			muestraOrinaColecta	12	44	3	1	Question
-94f11908-a821-4716-aefa-1a80105a30ac	Hospital	H5 Muestras	Muestras de ViCo	2.7.2	Si NO colectó muestra de Orina	NULL			NULL	12	45	3	1	Checkpoint
-6b01664a-ff7d-4be1-b19a-8f4bca0904a9	Hospital	H5 Muestras	Muestras de ViCo	2.7.2.1	¿Por qué no colectó una muestra de orina?	NULL			muestraOrinaNoRazon	12	46	4	1	Question
-df1f2687-49b6-4ca3-970e-b166ac7062db	Hospital	H5 Muestras	Muestras de ViCo	2.7.2.2	Si la razón es "Otra"	NULL			NULL	12	47	4	1	Checkpoint
-f439f6db-9bf0-4aa4-87f9-a5c18d4197f1	Hospital	H5 Muestras	Muestras de ViCo	2.7.2.2.1	Especifique la otra razón	NULL			muestraOrinaNoRazonOtra_esp	12	48	5	1	Question
-1781f683-9547-413e-843b-975971843a73	Hospital	H5 Muestras	Muestras de ViCo	2.7.3	Si colectó muestra de Orina	NULL			NULL	12	49	3	1	Checkpoint
-da5a08ea-7503-4219-9631-c3802fb0bb50	Hospital	H5 Muestras	Muestras de ViCo	2.7.3.1	¿Cuándo se obtuvo la muestra de orina?	NULL			muestraOrinaFechaHora	12	50	4	1	Question
-abf5bec4-0e3a-4a23-83c0-ae13529beec0	Hospital	H5 Muestras	Muestras de ViCo	2.7.3.2	¿Cuántos mililitros de orina produjo el paciente?	NULL			muestraOrinaNumeroML	12	51	4	1	Question
-867eed83-0413-4a49-91a8-dea5d67daeca	Hospital	H5 Muestras	Muestras de ViCo	3	Si es un paciente Febril	NULL			NULL	12	52	1	1	Checkpoint
-0171a331-082d-4651-970a-e97eb6180712	Hospital	H5 Muestras	Muestras de ViCo	3.1	¿Consiguió una muestra de sangre entera del paciente?	NULL			muestraSangreEnteraColecta	12	53	2	1	Question
-df77a478-a84e-45b2-ac3b-3b794755838b	Hospital	H5 Muestras	Muestras de ViCo	3.2	Si colectó muestra de sangre entera	NULL			NULL	12	54	2	1	Checkpoint
-1d0785ff-4e7d-4256-a1d2-38d1107ebaec	Hospital	H5 Muestras	Muestras de ViCo	3.2.1	¿Esta muestra de sangre entera fue tomada por usted o el hospital?	NULL			muestraSangreEnteraFuente	12	55	3	1	Question
-c16ac7f5-a94a-461b-ad04-20b5a2493a23	Hospital	H5 Muestras	Muestras de ViCo	3.2.2	¿Cuándo fue tomada la muestra de sangre entera?	NULL			muestraSangreEnteraFechaHora	12	56	3	1	Question
-1b96ac32-68a4-4f94-a27a-060280b812f6	Hospital	H5 Muestras	Muestras de ViCo	3.3	Si NO consiguió muestra de sangre entera	NULL			NULL	12	57	2	1	Checkpoint
-a0238bd3-19c3-4d5f-8925-6a2be99ef45f	Hospital	H5 Muestras	Muestras de ViCo	3.3.1	¿Por qué no pudo conseguir una muestra de sangre entera?	NULL			muestraSangreEnteraColectaNoRazon	12	58	3	1	Question
-26ca9711-fed3-4a2d-a6e6-e9292c67656a	Hospital	H5 Muestras	Muestras de ViCo	3.3.2	Si la razón es "Otra"	NULL			NULL	12	59	3	1	Checkpoint
-851095c7-d1e1-42fb-8429-798f948d92b1	Hospital	H5 Muestras	Muestras de ViCo	3.3.2.1	Especifique la otra razón	NULL			muestraSangreEnteraColectaNoRazonOtra_esp	12	60	4	1	Question
-														
-														
-														
-														
-80c0fc4c-7fe0-4b4b-880b-ce95a1680db8	Hospital	H5 Muestras	Muestras de ViCo	4	Si colectamos una muestra	NULL			NULL	12	65	1	1	Checkpoint
-f37c22eb-ddd6-4893-a7a6-caaead03001b	Hospital	H5 Muestras	Muestras de ViCo	4.1	(A la enfermera) ¿El paciente ha firmado consentimiento escrito para conservar sus muestras para usarlas en proyectos futuros con nuevas pruebas y para buscar otras causas de estas enfermedades?	NULL			consentimientoGuardarMuestras	12	66	2	1	Question
+31cd0a3d-5bd1-45a3-9219-9ebc5feda582	Hospital	H5 Muestras	Muestras de ViCo	1	Si el paciente tiene enfermedad diarreica:	NULL	modification		NULL	12	1	1	1	Checkpoint
+b0b98026-8ad4-4c7d-983e-7e7396b90d04	Hospital	H5 Muestras	Muestras de ViCo	1.1	¿Colectó alguna muestra de heces?	La muestra entera es de mayor utilidad para detectar la posible causa de enfermedad.	modification	Opciones: Si, No	muestraHecesColecta	12	2	2	1	Question
+				1.1.1	Si colectó una muestra de heces (entera, hisopo, o ambos)	NULL	addition			12	3	3	1	Checkpoint
+				1.1.1.1	¿Qué tipo de muestra de heces recolectó?	NULL	addition	Opciones: Muestra de heces entera, hisopo rectal, ambos	muestraHecesColectaTipo	12	4	4	1	Question
+b96a997b-2d34-4f1b-8966-46d9b8dbea59	Hospital	H5 Muestras	Muestras de ViCo	1.2	Si NO colectó una muestra de heces (entera, hisopo, o ambos)	NULL	modification		NULL	12	5	2	1	Checkpoint
+5ee171b9-ac00-4469-a52f-23e39da2c871	Hospital	H5 Muestras	Muestras de ViCo	1.2.1	¿Por qué no pudo colectar una muestra de heces (entera, hisopo o ambos)?	NULL	modification		MuestraHecesNoRazon	12	6	3	1	Question
+17ff155f-a034-4f4c-b66a-22c6cc2a4e16	Hospital	H5 Muestras	Muestras de ViCo	1.2.2	Si la razón es "Otra"	NULL			NULL	12	7	3	1	Checkpoint
+5f36250a-325f-497c-82e2-173db295177c	Hospital	H5 Muestras	Muestras de ViCo	1.2.2.1	Especifique la otra razón	NULL			MuestraHecesNoRazonOtra_esp	12	8	4	1	Question
+5f3621b2-2d4a-437b-aad8-e7d69c67cb66	Hospital	H5 Muestras	Muestras de ViCo	1.3	Si colectó muestra de heces (hisopo o entera o ambos)	NULL	modification		NULL	12	9	2	1	Checkpoint
+3e6192db-626c-4352-a3b9-e6ef8920c1be	Hospital	H5 Muestras	Muestras de ViCo	1.3.1	¿Colectó una muestra de heces entera?	NULL	changed order		muestraHecesEnteraColecta	12	10	3	1	Question
+82e14caa-38c3-4104-bfa2-f19c8cf29bd4	Hospital	H5 Muestras	Muestras de ViCo	1.3.2	Si NO colectó muestra de heces entera	NULL	changed order		NULL	12	11	3	1	Checkpoint
+cacbf78d-1248-4b8d-949f-9382be537571	Hospital	H5 Muestras	Muestras de ViCo	1.3.2.1	¿Por qué no pudo colectar una muestra de heces entera?	NULL	changed order		muestraHecesEnteraNoRazon	12	12	4	1	Question
+d9032988-4276-4e62-899a-dada10f06039	Hospital	H5 Muestras	Muestras de ViCo	1.3.2.2	Si la razón es "Otra"	NULL	changed order		NULL	12	13	4	1	Checkpoint
+ecb5dc5a-cca3-4b16-925d-ebdd6e72200f	Hospital	H5 Muestras	Muestras de ViCo	1.3.2.2.1	Especifique la otra razón	NULL	changed order		muestraHecesEnteraNoRazonOtra_Esp	12	14	5	1	Question
+936dbeb2-c076-45e1-bda7-8dcd1c037941	Hospital	H5 Muestras	Muestras de ViCo	1.3.3	Si colectó muestra de heces entera	NULL	changed order		NULL	12	15	3	1	Checkpoint
+a935cdc5-6dbf-4960-89ee-1311c0cf4366	Hospital	H5 Muestras	Muestras de ViCo	1.3.3.1	¿Cuándo se obtuvo esta muestra entera?	NULL	changed order		muestraHecesEnteraFechaHora	12	16	4	1	Question
+4bffbe28-52d8-4852-ada2-0c55deda8d7e	Hospital	H5 Muestras	Muestras de ViCo	1.3.3.2	¿La muestra está líquida?	NULL	changed order		muestraHecesEnteraLiquida	12	17	4	1	Question
+f19f33de-3f39-4c58-8005-56db9780bc8e	Hospital	H5 Muestras	Muestras de ViCo	1.3.3.3	¿La muestra tiene apariencia de agua de arroz?	NULL	changed order		muestraHecesEnteraAguaArroz	12	18	4	1	Question
+1772c0e9-f352-4c01-b22e-ccda2a7a4152	Hospital	H5 Muestras	Muestras de ViCo	1.3.3.4	¿La muestra cubre el fondo del contedor plástico?	NULL	changed order		muestraHecesEnteraCubreFondo	12	19	4	1	Question
+4e727833-a275-4a24-b22a-6dee6a9fb6f5	Hospital	H5 Muestras	Muestras de ViCo	1.3.4	¿Colectó un hisopo tipo Cary Blair?	NULL			muestraHecesHisopoCaryBlairColecta	12	20	3	1	Question
+76a3f08f-f690-4fc8-961c-5dc61b7c13a7	Hospital	H5 Muestras	Muestras de ViCo	1.3.5	Si NO colectó hisopo tipo Cary Blair	NULL			NULL	12	21	3	1	Checkpoint
+475ea24b-f931-4131-a472-36cbd1519386	Hospital	H5 Muestras	Muestras de ViCo	1.3.5.1	¿Por qué no pudo colectar un hisopo tipo Cary Blair?	NULL			muestraHecesHisopoCaryBlairNoRazon	12	22	4	1	Question
+3e3f92a3-a8fe-432b-abd1-e4a90f500b0b	Hospital	H5 Muestras	Muestras de ViCo	1.3.5.2	Si la razón es "Otra"	NULL			NULL	12	23	4	1	Checkpoint
+26ea8957-d65b-4e80-8446-dfdb3061278b	Hospital	H5 Muestras	Muestras de ViCo	1.3.5.2.1	Especifique la otra razón	NULL			muestraHecesHisopoCaryBlairNoRazonOtra_esp	12	24	5	1	Question
+79658514-3747-4794-b30d-e17070013538	Hospital	H5 Muestras	Muestras de ViCo	1.3.6	Si colectó hisopo tipo Cary Blair	NULL			NULL	12	25	3	1	Checkpoint
+04495185-a46d-4ffd-a9e6-4af258bbca71	Hospital	H5 Muestras	Muestras de ViCo	1.3.6.1	¿Cuándo obtuvo el hisopo tipo Cary Blair?	NULL			muestraHecesHisopoCaryBlairFechaHora	12	26	4	1	Question
+14efa719-3c7a-4a52-b795-ef29e95bb05d	Hospital	H5 Muestras	Muestras de ViCo	1.3.6.2	¿Cómo obtuvó el hisopo Cary Blair?	NULL	add help text	Esto debe aplicar únicamente en el centro o puesto, donde la muestra no llega el mismo dia al laboratorio. En el hospital no aplica.	muestraHecesHisopoCaryBlairTipo	12	27	4	1	Question
+0fcfc818-bf37-406f-81b6-70c70d7f7895	Hospital	H5 Muestras	Muestras de ViCo	2	Si es un paciente de Respiratorias	NULL			NULL	12	28	1	1	Checkpoint
+2adfdfd7-118a-4605-ae50-b2dbd9a89cd4	Hospital	H5 Muestras	Muestras de ViCo	2.1	¿Colectó un hisopo orofaríngeo (OF)?	NULL			muestraFroteOPColecta	12	29	2	1	Question
+deece3da-bf56-40d8-a58a-126afa02195b	Hospital	H5 Muestras	Muestras de ViCo	2.2	Si NO colectó muestra de Frote OF	NULL			NULL	12	30	2	1	Checkpoint
+c979910b-0f91-472a-8821-b32da0483c9d	Hospital	H5 Muestras	Muestras de ViCo	2.2.1	¿Por qué no se tomo un hisopo OF?	NULL			muestraFroteOPNoRazon	12	31	3	1	Question
+e7217d7f-96a7-45f9-9b4a-c0bc59870d27	Hospital	H5 Muestras	Muestras de ViCo	2.2.2	Si la razón es "Otra"	NULL			NULL	12	32	3	1	Checkpoint
+f6588dd0-578c-4309-8aba-61bae3762761	Hospital	H5 Muestras	Muestras de ViCo	2.2.2.1	Especifique la otra razón	NULL			muestraFroteOPNoRazonOtra_esp	12	33	4	1	Question
+8b626d66-6580-4bf6-842a-e2917b0d86f9	Hospital	H5 Muestras	Muestras de ViCo	2.3	Si colectó muestra de Frote OF	NULL			NULL	12	34	2	1	Checkpoint
+32f3a363-358e-409b-836d-31b343b748a9	Hospital	H5 Muestras	Muestras de ViCo	2.3.1	¿Cuándo tomó el hisopo OF?	NULL			muestraFroteOPFechaHora	12	35	3	1	Question
+85043b25-2494-4152-bdd2-187e8fbb8723	Hospital	H5 Muestras	Muestras de ViCo	2.4	¿Colectó un hisopo nasofaríngeo (NF)?	NULL			muestraFroteNP	12	36	2	1	Question
+2c81ac3d-dd1d-40e8-b713-7383e9bc5c76	Hospital	H5 Muestras	Muestras de ViCo	2.5	Si NO colectó muestra de Frote NF	NULL			NULL	12	37	2	1	Checkpoint
+468029bb-6de5-40a5-926d-1e00b57be964	Hospital	H5 Muestras	Muestras de ViCo	2.5.1	¿Por qué no se tomo el hisopo NF?	NULL			muestraFroteNPNoRazon	12	38	3	1	Question
+53f3d961-2e99-4eaf-8dc7-dd6d9832b16f	Hospital	H5 Muestras	Muestras de ViCo	2.5.2	Si la razón es "Otra"	NULL			NULL	12	39	3	1	Checkpoint
+e31b2827-a829-47e7-9387-f85afeef3862	Hospital	H5 Muestras	Muestras de ViCo	2.5.2.1	Especifique la otra razón	NULL			muestraFroteNPNoRazonOtra_esp	12	40	4	1	Question
+e54b51fc-aa27-4187-9713-07c353a60169	Hospital	H5 Muestras	Muestras de ViCo	2.6	Si colecta muestra de Frote NF	NULL			NULL	12	41	2	1	Checkpoint
+083428dd-df0a-460e-ab63-272d0c5d0f55	Hospital	H5 Muestras	Muestras de ViCo	2.6.1	¿Cuándo tomó el hisopo NF?	NULL			muestraFroteNPFechaHora	12	42	3	1	Question
+	Hospital	H5 Muestras	Muestras de ViCo	2.6.2	Enfermera: ¿El paciente estaba recibiendo antibióticos antes de tomar las muestras?	NULL	addition		abx_npop	12	43	3	1	Question
+903da773-71f5-428b-8ca6-ddfa4148fd31	Hospital	H5 Muestras	Muestras de ViCo	2.6.2	Si elegibleIRAG es "Sí" y está en Santa Rosa	NULL			NULL	12	44	3	1	Checkpoint
+2a6d9c24-5a9f-4ceb-bbc9-2110305feced	Hospital	H5 Muestras	Muestras de ViCo	2.6.2.1	Este paciente es elegible para el estudio de IRAG.    Marque todas las etiquetas con marcador ROSADO.	NULL			NULL	12	45	4	1	Info
+50eb5d26-0429-44aa-8146-0ef86d4f462a	Hospital	H5 Muestras	Muestras de ViCo	2.7	Si el paciente tiene 18 años de edad o más	NULL			NULL	12	46	2	1	Checkpoint
+585f03e4-08a3-49fb-846c-38a16326e129	Hospital	H5 Muestras	Muestras de ViCo	2.7.1	¿Colectó una muestra de orina?	NULL			muestraOrinaColecta	12	47	3	1	Question
+94f11908-a821-4716-aefa-1a80105a30ac	Hospital	H5 Muestras	Muestras de ViCo	2.7.2	Si NO colectó muestra de Orina	NULL			NULL	12	48	3	1	Checkpoint
+6b01664a-ff7d-4be1-b19a-8f4bca0904a9	Hospital	H5 Muestras	Muestras de ViCo	2.7.2.1	¿Por qué no colectó una muestra de orina?	NULL			muestraOrinaNoRazon	12	49	4	1	Question
+df1f2687-49b6-4ca3-970e-b166ac7062db	Hospital	H5 Muestras	Muestras de ViCo	2.7.2.2	Si la razón es "Otra"	NULL			NULL	12	50	4	1	Checkpoint
+f439f6db-9bf0-4aa4-87f9-a5c18d4197f1	Hospital	H5 Muestras	Muestras de ViCo	2.7.2.2.1	Especifique la otra razón	NULL			muestraOrinaNoRazonOtra_esp	12	51	5	1	Question
+1781f683-9547-413e-843b-975971843a73	Hospital	H5 Muestras	Muestras de ViCo	2.7.3	Si colectó muestra de Orina	NULL			NULL	12	52	3	1	Checkpoint
+da5a08ea-7503-4219-9631-c3802fb0bb50	Hospital	H5 Muestras	Muestras de ViCo	2.7.3.1	¿Cuándo se obtuvo la muestra de orina?	NULL			muestraOrinaFechaHora	12	53	4	1	Question
+abf5bec4-0e3a-4a23-83c0-ae13529beec0	Hospital	H5 Muestras	Muestras de ViCo	2.7.3.2	¿Cuántos mililitros de orina produjo el paciente?	NULL			muestraOrinaNumeroML	12	54	4	1	Question
+867eed83-0413-4a49-91a8-dea5d67daeca	Hospital	H5 Muestras	Muestras de ViCo	3	Si es un paciente Febril	NULL			NULL	12	55	1	1	Checkpoint
+0171a331-082d-4651-970a-e97eb6180712	Hospital	H5 Muestras	Muestras de ViCo	3.1	¿Consiguió una muestra de sangre entera del paciente?	NULL			muestraSangreEnteraColecta	12	56	2	1	Question
+df77a478-a84e-45b2-ac3b-3b794755838b	Hospital	H5 Muestras	Muestras de ViCo	3.2	Si colectó muestra de sangre entera	NULL			NULL	12	57	2	1	Checkpoint
+1d0785ff-4e7d-4256-a1d2-38d1107ebaec	Hospital	H5 Muestras	Muestras de ViCo	3.2.1	¿Esta muestra de sangre entera fue tomada por usted o el hospital?	NULL			muestraSangreEnteraFuente	12	58	3	1	Question
+c16ac7f5-a94a-461b-ad04-20b5a2493a23	Hospital	H5 Muestras	Muestras de ViCo	3.2.2	¿Cuándo fue tomada la muestra de sangre entera?	NULL			muestraSangreEnteraFechaHora	12	59	3	1	Question
+1b96ac32-68a4-4f94-a27a-060280b812f6	Hospital	H5 Muestras	Muestras de ViCo	3.3	Si NO consiguió muestra de sangre entera	NULL			NULL	12	60	2	1	Checkpoint
+a0238bd3-19c3-4d5f-8925-6a2be99ef45f	Hospital	H5 Muestras	Muestras de ViCo	3.3.1	¿Por qué no pudo conseguir una muestra de sangre entera?	NULL			muestraSangreEnteraColectaNoRazon	12	61	3	1	Question
+26ca9711-fed3-4a2d-a6e6-e9292c67656a	Hospital	H5 Muestras	Muestras de ViCo	3.3.2	Si la razón es "Otra"	NULL			NULL	12	62	3	1	Checkpoint
+851095c7-d1e1-42fb-8429-798f948d92b1	Hospital	H5 Muestras	Muestras de ViCo	3.3.2.1	Especifique la otra razón	NULL			muestraSangreEnteraColectaNoRazonOtra_esp	12	63	4	1	Question
+80c0fc4c-7fe0-4b4b-880b-ce95a1680db8	Hospital	H5 Muestras	Muestras de ViCo	4	Si colectamos una muestra	NULL			NULL	12	64	1	1	Checkpoint
+f37c22eb-ddd6-4893-a7a6-caaead03001b	Hospital	H5 Muestras	Muestras de ViCo	4.1	(A la enfermera) ¿El paciente ha firmado consentimiento escrito para conservar sus muestras para usarlas en proyectos futuros con nuevas pruebas y para buscar otras causas de estas enfermedades?	NULL			consentimientoGuardarMuestras	12	65	2	1	Question
 327509c2-2472-4e42-b9d5-1d424af650b5	Hospital	H5 Muestras	Muestras del Hospital	1	Si es un paciente de Respiratorias	NULL			NULL	13	1	1	1	Checkpoint
 ac4912f4-436b-490d-b5b1-d0303493716a	Hospital	H5 Muestras	Muestras del Hospital	1.1	¿El hospital tomó una radiografía del pecho?	NULL			radiografiaPechoColecta	13	2	2	1	Question
 ce9716f7-ba95-4381-91a8-775bc37ae2b8	Hospital	H5 Muestras	Muestras del Hospital	1.2	Si hay radiografía del pecho	NULL			NULL	13	3	2	1	Checkpoint
