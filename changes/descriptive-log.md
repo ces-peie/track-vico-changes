@@ -1,4 +1,4 @@
-> # Descriptive log of changes to the qm ViCo questionnaire
+﻿> # Descriptive log of changes to the qm ViCo questionnaire
 
 # Questions added for TAC adult pneumonia etiology study
 ## `272770f818311c3a523eaae62b70ab97acda61d4`
@@ -134,4 +134,20 @@ Removed questions on zinc, B-Treatment
 #### 2015-06-26 19:52:31 -0600
 Add and update TRAction questions
 Added questions from TRAction analysis on WASH, modified some of the questions Beatriz added.
+
+
+---
+
+# Modifications to H3 Immunization and chronic disease
+## `94f947e2de5a1dcc6dba74905ddb13995b8b0eaa`
+### hmaldonado
+#### 2015-06-30 19:17:43 -0600
+Modifications to H3 Immunization and chronic disease
+
+1. Modifications according to IRB review
+2. Add questions of vaccines:  BCG, Oral polio vaccine
+3. Delete question of Difteria, Pertussis and Tetanus Vaccine, this vaccine is  no more available in Guatemala for children under 5 years, only for booster
+4. Add questions of rotavirus vaccine type:  rotarix, rotate
+5. Add question of breastfeeding and steroid use
+6. Delete question about HIV/other immunodeficiency (other questions were added from TAC questions for HIV and other immunodeficiency status)
 
