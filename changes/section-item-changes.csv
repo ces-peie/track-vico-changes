@@ -548,7 +548,7 @@ aabe04c1-d089-4cd7-89c4-dbe65bc93c84	Hospital	H3 Informe del Caso	A - Enfermedad
 d7acc947-6a14-4169-b012-01783ecd8f30	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.7	Enfermedad del riñón (ej., insuficiencia o fallo renal)	NULL			enfermedadesCronicasEnfermRinion	20	50	2	1	Question
 	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.8	Pregunte: “¿Algún médico le ha dicho si tiene o padece de infección por VIH/SIDA?"		addition	I do not see instructions for this section. Are they similar to the new questions?	vih	20	51	2	1	Question
 	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.9	Pregunte: “¿Algún médico le ha dicho si tiene o padece de Inmunodeficiencia?"		addition	I do not see instructions for this section. Are they similar to the new questions?	inmunodef	20	52	2	1	Question
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.10	Pregunte:  “¿Ha tomado algún tratamiento de esteroides por más de 7 días (esteroides son: metilprednisolona, prednisolona, prednisona)?		addition		esteroidesUso	20	53	2		Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.1	Pregunte:  “¿Ha tomado algún tratamiento de esteroides por más de 7 días (esteroides son: metilprednisolona, prednisolona, prednisona)?		addition		esteroidesUso	20	53	2		Question
 ca27db26-0d30-44a0-b484-fdc264eaf0bf	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.11	Si el paciente es mayor o igual a 18 años de edad	NULL		Should have been 2.10?	NULL	20	54	2	1	Checkpoint
 28e03753-94cb-4c42-967c-d62a8fa0f2cb	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.11.1	Enfermedad de los pulmones (ej. EPOC, enfisema, enfermedad crónica y obstructiva de los pulmones)	NULL	move	Only asked if patient > 18 years	enfermedadesCronicasEnfermPulmones	20	55	2	1	Question
 7894dfc0-747f-4a38-8ede-4bace42102ae	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.11.2	Hipertensión	NULL			enfermedadesCronicasHipertension	20	56	3	1	Question
@@ -759,47 +759,6 @@ dd25382f-2957-427b-8be4-420eaf451bd0	Hospital	H7 Egreso	H7 Egreso	24.6	Resultado
 74e57252-fdbe-4c23-ae96-d96c14caf807	Hospital	H7 Egreso	H7 Egreso	24.7.24.1	Resultado de Kit #2 Aerobica o pediatrica	NULL			Aero2Resultado	31	58	4	1	Question
 39be8e2b-b275-4eff-819f-a1ea6610d913	Hospital	H7 Egreso	H7 Egreso	24.7.24.2	Si hubo crecimiento identificado	NULL			NULL	31	59	4	1	Checkpoint
 ce23f3b9-2f7f-4d37-91db-da195ff6cf0d	Hospital	H7 Egreso	H7 Egreso	24.7.24.2.1	Kit #2 Aerobica	NULL			Aero2	31	60	5	1	Question
-8031d489-bb59-43ac-9880-21a34b4b1965	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	1	¿Fecha de este reporte?      (puede ser la fecha de la cita, la llamada, el reporte del ministerio de salud o la fecha de expiración de período de seguimiento)	NULL			seguimientoFechaReporte	28	1	1	1	Question
-882001cf-1092-44db-bd2e-48967028c8f3	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	2	¿Obtuvo usted alguna información sobre el paciente?	NULL			seguimientoObtuvoInformacion	28	2	1	1	Question
-cf164ff2-d24b-4c0e-8d72-13a4589decf3	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	3	Si NO obtuvo alguna información	NULL			NULL	28	3	1	1	Checkpoint
-9f391873-1703-4eb2-adff-16429e8033e0	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	3.1	¿Por qué no obtuvo alguna información sobre el paciente?	NULL			seguimientoObtuvoInformacionNoRazon	28	4	2	1	Question
-211e316b-1361-4c42-84fc-4957e4ab531b	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	3.2	Si la razón es "Otra"	NULL			NULL	28	5	2	1	Checkpoint
-526a707c-d8c9-461d-b130-b37dc6f0e5de	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	3.2.1	Especifique	NULL			seguimientoObtuvoInformacionNoRazonOtra_esp	28	6	3	1	Question
-225e53f4-13f1-4057-8337-d603720dfea8	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4	Si obtuvo alguna información	NULL			NULL	28	7	1	1	Checkpoint
-b40d88c2-5fc3-4a6c-8733-32d6a5e81357	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.1	¿Cómo contactó al paciente?	NULL			seguimientoTipoContacto	28	8	2	1	Question
-f6097d40-c2b3-469e-81a6-018d010e7c2c	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.2	¿Cuál es el estado vital del paciente?	NULL			seguimientoPacienteCondicion	28	9	2	1	Question
-7a59762c-6ba2-4b9d-a61d-2c8451fa803e	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.3	Si el paciente se murió	NULL			NULL	28	10	2	1	Checkpoint
-f7b5a4c4-0245-416c-848c-3e913914934f	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.3.1	¿Cuál es la fecha de fallecimiento?	NULL			seguimientoPacienteMuerteFecha	28	11	3	1	Question
-84fde658-efc8-4555-9dcf-8ec873262007	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.4	¿De quién obtuvo la información del estado vital?	NULL			seguimientoPacienteCondicionManera	28	12	2	1	Question
-6a88fea5-209b-42ce-bfd5-d43c8fa52447	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.5	¿El paciente fue admitido al hospital después de su último contacto con nosotros?	NULL			seguimientoAdmitidoHospital	28	13	2	1	Question
-ee46d3c8-5df0-47e8-99f8-f4c0c9e373be	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.6	Si fue admitido al hospital	NULL			NULL	28	14	2	1	Checkpoint
-79b4a2aa-170f-45ee-b720-a1f3179a0a22	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.6.1	¿En qué fecha fue admitido al hospital?	NULL			seguimientoAdmitidoFecha	28	15	3	1	Question
-82971d37-46f4-4891-9086-31447deb3afc	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.6.2	¿Fue admitido por la misma enfermedad?	NULL			seguimientoAdmitidoMisma	28	16	3	1	Question
-02d08cab-5543-40bc-937b-2cd5afdcc9d5	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.6.3	Si NO fue la misma enfermedad	NULL			NULL	28	17	3	1	Checkpoint
-fe37720a-f3d5-49ac-9ed0-b89727e8e118	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.6.3.1	¿Por qué enfermedad fue admitido al hospital?	NULL			seguimientoAdmitidoEnfermedad	28	18	4	1	Question
-7c72d2ba-575e-4499-83f9-0984cf76be57	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.6.3.2	Si la enfermedad es OTRA	NULL			NULL	28	19	4	1	Checkpoint
-eacb6aa8-1f8f-49f8-818a-984e2205f64f	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.6.3.2.1	Especifique la otra enfermedad:	NULL			seguimientoAdmitidoEnfermedadEsp	28	20	5	1	Question
-feff881a-53d5-4454-a926-0ea9191b1dc1	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.7	¿Recibió tabletas de zinc o una receta para tomar zinc durante su reciente hospitalización o visita al servico de salud?	NULL			seguimientoZinc	28	21	2	1	Question
-7695a234-ea55-400d-be73-353731462993	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.8	Si recibió zinc	NULL			NULL	28	22	2	1	Checkpoint
-93885861-2112-4d9e-9ba4-60baeade528e	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.8.1	¿Cuántas tabletas recibió?	NULL			seguimientoZincTabletas	28	23	3	1	Question
-629218c3-2328-4e67-8348-44d20a944682	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.8.2	¿Cuántas tabletas le quedan al dia de hoy?	NULL			seguimientoZincTabletasQuedan	28	24	3	1	Question
-311aa311-6a65-4963-8ed2-f727ee4e656f	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.8.3	¿Cuántas tabletas tomó, en total?	NULL			seguimientoZincTabletasTomo	28	25	3	1	Question
-dc3d6a37-005c-404a-9f3a-f94442dde5d5	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.8.4	¿Cuántas tabletas tomó por día?	NULL			seguimientoZincTabletasPorDia	28	26	3	1	Question
-1e2d35e5-06a4-4524-bbfb-d6ff45321779	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.8.5	¿Por cuántos días tomó las tabletas?	NULL			seguimientoZincTabletasDiasTomo	28	27	3	1	Question
-b48ba821-3e6f-4a5d-addb-090a406eb95a	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.8.6	Si no tomó las tabletas por los 10 días	NULL			NULL	28	28	3	1	Checkpoint
-877e9c5e-d7a0-4ecb-b93c-80ca22bb2a64	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.8.6.1	¿Por qué no tomó las tabletas de zinc por los 10 días?	NULL			seguimientoZincTabletasNoRazon	28	29	4	1	Question
-f3767ee6-5672-4a68-9240-ea72554f008c	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.8.6.2	Si la razón de zinc es OTRA	NULL			NULL	28	30	4	1	Checkpoint
-5af4768e-819c-464a-bdf5-b3373232813d	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.8.6.2.1	Especifique la otra razón:	NULL			seguimientoZincTabletasNoRazonEs	28	31	5	1	Question
-a09cc23c-9ba9-498d-947c-609e6aff8f0c	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.9	Si tuvo contacto con el paciente (pero no por teléfono)	NULL			NULL	28	32	2	1	Checkpoint
-a655bcd8-89f5-4b14-85ff-ffc46e8e4c73	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.9.1	Si se le había tomado sangre entera aguda	NULL			NULL	28	33	3	1	Checkpoint
-42481e76-7518-4fc6-a5cd-def844a7858c	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.9.1.1	¿Se tomó una muestra de sangre?	NULL			seguimientoMuestraSangreColecta	28	34	4	1	Question
-34e18e0e-3678-4d61-b3a1-d07a8e15a96f	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.9.1.2	Si se tomó una muestra de sangre durante la visita de seguimiento	NULL			NULL	28	35	4	1	Checkpoint
-3a4f9251-4c2b-44b6-a810-7371b6b0a8ea	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.9.1.2.1	¿Cuántos ml de sangre se tomaron?	NULL			seguimientoMuestraSangreML	28	36	5	1	Question
-7fafe9ae-6d75-4bfa-b67f-ac3c89dd44b8	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.9.1.3	Si NO se tomó una muestra de sangre durante la visita de seguimiento	NULL			NULL	28	37	4	1	Checkpoint
-c44e9e82-c546-44be-aeb4-8cc3864e8dff	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.9.1.3.1	¿Por qúe no se tomó una muestra de sangre?	NULL			seguimientoMuestraSangreColectaNoRazon	28	38	5	1	Question
-15639075-5e69-4187-9e27-b860d627d9ee	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.9.1.3.2	Si la razón es "Otra"	NULL			NULL	28	39	5	1	Checkpoint
-ca2bb836-2679-4d89-8740-1edf63065f7e	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	4.9.1.3.2.1	Especifique la otra razón por la cual no se tomó la muestra	NULL			seguimientoMuestraSangreColectaNoRazon_esp	28	40	6	1	Question
-85670bcf-4765-4852-b210-1727c2a790ef	Hospital	HCP9 Seguimiento	HCP9 Seguimiento	5	Observaciones	NULL			SeguimientoObservaciones	28	41	1	1	Question
 abfc073e-b1ce-495b-9403-398f28642edf	Hospital	HCP11 Terminacion	HCP11 Terminacion	1	Fecha de terminación del proyecto (fecha de defunción, si es aplicable)	NULL			fechaTerminacionProyecto	30	1	1	1	Question
 739d59e2-1270-4f93-9af1-7bd0625b4da7	Hospital	HCP11 Terminacion	HCP11 Terminacion	2	¿Cómo terminó? (Marque solamente una opción)	NULL			terminoManeraCorrectaNoRazon	30	2	1	1	Question
 8390f40e-8ec1-4df3-83c6-216a0409f36e	Hospital	HCP11 Terminacion	HCP11 Terminacion	3	Si Otro evento	NULL			NULL	30	3	1	1	Checkpoint
