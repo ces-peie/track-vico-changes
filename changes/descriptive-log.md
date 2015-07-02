@@ -1,4 +1,4 @@
-> # Descriptive log of changes to the qm ViCo questionnaire
+﻿> # Descriptive log of changes to the qm ViCo questionnaire
 
 # Questions added for TAC adult pneumonia etiology study
 ## `272770f818311c3a523eaae62b70ab97acda61d4`
@@ -159,3 +159,12 @@ Modifications to H3 Immunization and chronic disease
 ### odeleongt
 #### 2015-07-02 07:31:28 -0600
 Fixes to change definitions
+
+---
+
+# Remove follow up questions (HCP9 Seguimiento)
+## `19a2d527b59b2545b5db031ef4a08feab16ce530`
+### odeleongt
+#### 2015-07-02 09:32:04 -0600
+Remove follow up questions (HCP9 Seguimiento)
+This questionnaire section was inactive by design.
