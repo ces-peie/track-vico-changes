@@ -1,4 +1,4 @@
-﻿> # Descriptive log of changes to the qm ViCo questionnaire
+> # Descriptive log of changes to the qm ViCo questionnaire
 
 # Questions added for TAC adult pneumonia etiology study
 ## `272770f818311c3a523eaae62b70ab97acda61d4`
@@ -151,3 +151,11 @@ Modifications to H3 Immunization and chronic disease
 5. Add question of breastfeeding and steroid use
 6. Delete question about HIV/other immunodeficiency (other questions were added from TAC questions for HIV and other immunodeficiency status)
 
+
+---
+
+# Fix change definitions
+## `79f0d6a2b424f9d667a699054b87f15621e853c3`
+### odeleongt
+#### 2015-07-02 07:31:28 -0600
+Fixes to change definitions
