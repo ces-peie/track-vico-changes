@@ -818,7 +818,7 @@ d526fcf9-3cd2-4d40-98ec-97a632500d10	Hospital	H1 Sospechosos	H1 Sospechosos	NULL
 484dc888-d71a-4e99-a3bd-432445c7f9c1	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	Edad en días total	NULL			edadTotalDias	2	0	1	1	Variable
 8deb7f4d-2936-46aa-adfb-1a2c04607c7a	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	Edad en meses decimales	NULL			edadTotalMesesDecimal	2	0	1	1	Variable
 4cbbab15-6495-4ba8-bba6-15c4e285b1e6	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente está elegible para el estudio de diarrea?	NULL			elegibleDiarrea	2	0	1	1	Variable
-67f18549-8050-40ce-a52f-463cb42413dd	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	Elegible ETI_MSP	NULL			elegibleETI_MSP	2	0	1	1	Variable
+67f18549-8050-40ce-a52f-463cb42413dd	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	elegibleETI_MSP	NULL			elegibleETI_MSP	2	0	1	1	Variable
 1da16f2a-824b-4976-bc2c-acd49481b0ce	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente está elegible para el estudio de febril?	NULL			elegibleFebril	2	0	1	1	Variable
 ff84dbe9-ee58-4c91-8e94-f240de10fe7e	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	elegibleIRAG	NULL			elegibleIRAG	2	0	1	1	Variable
 4b75778c-74e6-4dac-9628-d92f79e78c03	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente está elegible para el estudio de neurologico?	NULL			elegibleNeuro	2	0	1	1	Variable
