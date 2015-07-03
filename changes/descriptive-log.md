@@ -1,4 +1,4 @@
-﻿> # Descriptive log of changes to the qm ViCo questionnaire
+> # Descriptive log of changes to the qm ViCo questionnaire
 
 # Questions added for TAC adult pneumonia etiology study
 ## `272770f818311c3a523eaae62b70ab97acda61d4`
@@ -168,3 +168,20 @@ Fixes to change definitions
 #### 2015-07-02 09:32:04 -0600
 Remove follow up questions (HCP9 Seguimiento)
 This questionnaire section was inactive by design.
+
+---
+
+# Remove questions for neurological syndromes
+## `d1eca38bc69c589b49727f9c44eba337a6db51d0`
+### odeleongt
+#### 2015-07-03 09:15:15 -0600
+Remove questions for neurological syndromes
+Questions removed from the sections:
+
+- H1 Sospechosos
+- Revisión del expediente médico
+- H2 Inscripción
+- H7 Egreso
+
+and related variables
+
