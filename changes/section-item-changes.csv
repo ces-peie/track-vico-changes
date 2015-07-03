@@ -35,27 +35,21 @@ d3f3af07-c1eb-4959-9e9f-8266eb8de978	Hospital	H1 Sospechosos	H1 Sospechosos	12.3
 8bfdd574-ba74-4d1a-bfc8-0412ecf71c22	Hospital	H1 Sospechosos	H1 Sospechosos	12.5.1	Seleccione la indicación de enfermedad febril	NULL			indicacionFebril	2	34	3	1	Question
 ac1a66f6-ba24-4175-971b-04347697d4fe	Hospital	H1 Sospechosos	H1 Sospechosos	12.5.2	Si seleccionó 'otra' como una indicación de enfermedad febril	NULL			NULL	2	35	3	1	Checkpoint
 25adc6f6-a1b8-457b-909f-0670e3dadcd2	Hospital	H1 Sospechosos	H1 Sospechosos	12.5.2.1	Especifique qué otra indicación de enfermedad febril tiene el paciente	NULL			indicacionFebril_otra	2	36	4	1	Question
-8007bb22-fe9b-44ee-b1a4-c0c609c03e9b	Hospital	H1 Sospechosos	H1 Sospechosos	13	Nunca preguntar (Neuro)	NULL			NULL	2	37	1	1	Checkpoint
-185aa2b2-5caa-46db-8cf2-3d9e8a881e88	Hospital	H1 Sospechosos	H1 Sospechosos	13.1	¿El paciente presenta indicaciones de enfermedad neurológica?	NULL			presentaIndicacionNeuro	2	38	2	1	Question
-e5aaf92e-0d9f-493c-8722-2f4780ebb7ff	Hospital	H1 Sospechosos	H1 Sospechosos	13.2	Si tiene indicaciones de enfermedad neurológica	NULL			NULL	2	39	2	1	Checkpoint
-a924b7ca-1541-40a6-ae1c-24725d9c0ec6	Hospital	H1 Sospechosos	H1 Sospechosos	13.2.1	Seleccione la indicación de enfermedad neurológica	NULL			indicacionNeuro	2	40	3	1	Question
-60dab2f3-543b-4d90-b8b6-ce784bfd1ffd	Hospital	H1 Sospechosos	H1 Sospechosos	13.2.2	Si seleccionó 'otra' como una indicación de enfermedad neurológica	NULL			NULL	2	41	3	1	Checkpoint
-98ff2f5a-7e12-4644-b859-b03fd17f9f49	Hospital	H1 Sospechosos	H1 Sospechosos	13.2.2.1	Especifique qué otra indicación de enfermedad neurológica tiene el paciente	NULL			indicacionNeuro_otra	2	42	4	1	Question
-13776da1-b290-49e6-a1b0-546d1cc9016a	Hospital	H1 Sospechosos	H1 Sospechosos	14	¿El paciente está actualmente admitido o el médico ha dicho que será admitido al hospital?	NULL			actualAdmitido	2	43	1	1	Question
-1348115c-2c4d-46d3-8f99-fe5fec71d098	Hospital	H1 Sospechosos	H1 Sospechosos	15	Si NO está admitido	NULL			NULL	2	44	1	1	Checkpoint
-eb21fca5-faa8-44d1-b067-2161a360f7e3	Hospital	H1 Sospechosos	H1 Sospechosos	15.1	Anote la fecha en que el paciente salió del hospital o se murió	NULL			h1FechaEgreso	2	45	2	1	Question
-c02bb30a-3e3a-40d7-a274-799f3d97cde2	Hospital	H1 Sospechosos	H1 Sospechosos	15.2	Anote el tipo de egreso del paciente	NULL			h1TipoEgreso	2	46	2	1	Question
-7372a42b-47bd-430d-b348-29a7918927f1	Hospital	H1 Sospechosos	H1 Sospechosos	15.3	Si el paciente fue transferido	NULL			NULL	2	47	2	1	Checkpoint
-bcaea797-ca6f-46aa-865a-a57c71179ba4	Hospital	H1 Sospechosos	H1 Sospechosos	15.3.1	¿A cuál hospital fue transferido?	NULL			h1TipoEgresoTransferido	2	48	3	1	Question
-6e20cd9c-e4c3-432b-a793-bafc670c14a5	Hospital	H1 Sospechosos	H1 Sospechosos	15.3.2	Si el hospital es OTRO	NULL			NULL	2	49	3	1	Checkpoint
-f4dfe9dd-e3fb-4353-adc4-0c8e88338775	Hospital	H1 Sospechosos	H1 Sospechosos	15.3.2.1	Especifique el hospital:	NULL			h1TipoEgresoTransferido_esp	2	50	4	1	Question
-2c249a4e-2cc7-493f-adb9-55347f9d72cd	Hospital	H1 Sospechosos	H1 Sospechosos	15.4	Si el paciente no se murió	NULL			NULL	2	51	2	1	Checkpoint
-2950cea5-00d0-4ac1-99e4-4f381e0881ef	Hospital	H1 Sospechosos	H1 Sospechosos	15.4.1	¿En qué condición estaba el paciente cuando salió del hospital?	NULL			condicionEgreso	2	52	3	1	Question
-c20d22b8-c130-4954-bb09-2ba4a79f2f67	Hospital	H1 Sospechosos	H1 Sospechosos	15.5	El paciente no está admitido por lo que no será incluido en ViCo.	NULL			NULL	2	53	2	1	Info
-8e21fc63-4bc1-43ae-b453-9a4b0706ab88	Hospital	H1 Sospechosos	H1 Sospechosos	16	Si NO tiene ninguna indicación de alguna enfermedad	NULL			NULL	2	54	1	1	Checkpoint
-168582ad-3138-46c6-b126-626176ad040c	Hospital	H1 Sospechosos	H1 Sospechosos	16.1	El paciente no tiene ninguna indicación de alguna enfermedad por lo que no será incluido en ViCo.	NULL			NULL	2	55	2	1	Info
-85f96203-b18d-4420-8a14-fc60ad8e8694	Hospital	H1 Sospechosos	H1 Sospechosos	17	Si NO viene del área de captación	NULL			NULL	2	56	1	1	Checkpoint
-c26ba102-234a-4ab2-85a5-e3dd148c259e	Hospital	H1 Sospechosos	H1 Sospechosos	17.1	El paciente NO viene del área de captación por lo que no será incluido en ViCo.  .	NULL			NULL	2	57	2	1	Info
+13776da1-b290-49e6-a1b0-546d1cc9016a	Hospital	H1 Sospechosos	H1 Sospechosos	13	¿El paciente está actualmente admitido o el médico ha dicho que será admitido al hospital?	NULL			actualAdmitido	2	37	1	1	Question
+1348115c-2c4d-46d3-8f99-fe5fec71d098	Hospital	H1 Sospechosos	H1 Sospechosos	14	Si NO está admitido	NULL			NULL	2	38	1	1	Checkpoint
+eb21fca5-faa8-44d1-b067-2161a360f7e3	Hospital	H1 Sospechosos	H1 Sospechosos	14.1	Anote la fecha en que el paciente salió del hospital o se murió	NULL			h1FechaEgreso	2	39	2	1	Question
+c02bb30a-3e3a-40d7-a274-799f3d97cde2	Hospital	H1 Sospechosos	H1 Sospechosos	14.2	Anote el tipo de egreso del paciente	NULL			h1TipoEgreso	2	40	2	1	Question
+7372a42b-47bd-430d-b348-29a7918927f1	Hospital	H1 Sospechosos	H1 Sospechosos	14.3	Si el paciente fue transferido	NULL			NULL	2	41	2	1	Checkpoint
+bcaea797-ca6f-46aa-865a-a57c71179ba4	Hospital	H1 Sospechosos	H1 Sospechosos	14.3.1	¿A cuál hospital fue transferido?	NULL			h1TipoEgresoTransferido	2	42	3	1	Question
+6e20cd9c-e4c3-432b-a793-bafc670c14a5	Hospital	H1 Sospechosos	H1 Sospechosos	14.3.2	Si el hospital es OTRO	NULL			NULL	2	43	3	1	Checkpoint
+f4dfe9dd-e3fb-4353-adc4-0c8e88338775	Hospital	H1 Sospechosos	H1 Sospechosos	14.3.2.1	Especifique el hospital:	NULL			h1TipoEgresoTransferido_esp	2	44	4	1	Question
+2c249a4e-2cc7-493f-adb9-55347f9d72cd	Hospital	H1 Sospechosos	H1 Sospechosos	14.4	Si el paciente no se murió	NULL			NULL	2	45	2	1	Checkpoint
+2950cea5-00d0-4ac1-99e4-4f381e0881ef	Hospital	H1 Sospechosos	H1 Sospechosos	14.4.1	¿En qué condición estaba el paciente cuando salió del hospital?	NULL			condicionEgreso	2	46	3	1	Question
+c20d22b8-c130-4954-bb09-2ba4a79f2f67	Hospital	H1 Sospechosos	H1 Sospechosos	14.5	El paciente no está admitido por lo que no será incluido en ViCo.	NULL			NULL	2	47	2	1	Info
+8e21fc63-4bc1-43ae-b453-9a4b0706ab88	Hospital	H1 Sospechosos	H1 Sospechosos	15	Si NO tiene ninguna indicación de alguna enfermedad	NULL			NULL	2	48	1	1	Checkpoint
+168582ad-3138-46c6-b126-626176ad040c	Hospital	H1 Sospechosos	H1 Sospechosos	15.1	El paciente no tiene ninguna indicación de alguna enfermedad por lo que no será incluido en ViCo.	NULL			NULL	2	49	2	1	Info
+85f96203-b18d-4420-8a14-fc60ad8e8694	Hospital	H1 Sospechosos	H1 Sospechosos	16	Si NO viene del área de captación	NULL			NULL	2	50	1	1	Checkpoint
+c26ba102-234a-4ab2-85a5-e3dd148c259e	Hospital	H1 Sospechosos	H1 Sospechosos	16.1	El paciente NO viene del área de captación por lo que no será incluido en ViCo.  .	NULL			NULL	2	51	2	1	Info
 90b1b4ce-094a-4749-b8ba-b0420f86a86a	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	Número del expediente del paciente	NULL			numeroExpedientePaciente	2	0	1	1	Variable
 2fd1c169-0504-4aeb-94bf-1bd9bcf8fb53	Hospital	H2 Inscripción	Consentimiento Verbal	1	¿Recibió consentimiento verbal del paciente o tutor?	Debe indicar si el paciente o persona responsable de éste dio el CONSENTIMIENTO VERBAL para ser incluido en el estudio.			consentimientoVerbal	4	1	1	1	Question
 57a2bced-efc2-47ad-8777-df31ce18f491	Hospital	H2 Inscripción	Consentimiento Verbal	2	Si no recibió consentimiento verbal	NULL			NULL	4	2	1	1	Checkpoint
@@ -83,16 +77,11 @@ dbe5777d-6333-4fe6-b223-cff54f8d593f	Hospital	H2 Inscripción	Revisión del Expedi
 2051521b-2fc3-4f49-ada7-9f82b7d0878b	Hospital	H2 Inscripción	Revisión del Expediente Médico	9.1	Anote si una tasa de respiración por minuto fue registrada en las primeras 24 horas de admisión	Debe indicar si al paciente se le tomó la taza de respiración EN LAS PRIMERAS 24 HORAS DE ADMISIÓN.			medidaRespiraPorMinutoPrimeras24Horas	5	18	2	1	Question
 52af0bfe-358b-4d91-9615-8a88c2b9e132	Hospital	H2 Inscripción	Revisión del Expediente Médico	9.2	Si fue registrada la respiración por minuto en las primeras 24 horas de admisión	NULL			NULL	5	19	2	1	Checkpoint
 2de9dfbf-eab4-4e8b-837c-71fbc3bf2637	Hospital	H2 Inscripción	Revisión del Expediente Médico	9.2.1	Anote la respiración por minuto más alta registrada durante las primeras 24 horas de admisión	Debe buscar en el registro medico cuál es la respiración por minuto mas alta registrada durante las primeras 24 horas de admisión.			respiraPorMinutoPrimaras24Horas	5	20	3	1	Question
-c5107aa0-50c6-4032-9909-a1c88ad28637	Hospital	H2 Inscripción	Revisión del Expediente Médico	10	Nunca preguntar (Neuro)	NULL			NULL	5	21	1	1	Checkpoint
-aba5b0ad-bd66-473b-9dff-4a646620b5bb	Hospital	H2 Inscripción	Revisión del Expediente Médico	10.1	¿Se hizo una punción lumbar? (esperar máximo 3 días)	NULL			puncionLumbar	5	22	2	1	Question
-5d20088d-de49-4625-9831-01891ad06996	Hospital	H2 Inscripción	Revisión del Expediente Médico	10.2	¿Se hizo una tomografía de la cabeza?	NULL			tomografiaCabeza	5	23	2	1	Question
-ace36089-6828-4e3e-bfab-d2950e93c001	Hospital	H2 Inscripción	Revisión del Expediente Médico	10.3	Si hay una tomografía de la cabeza	NULL			NULL	5	24	2	1	Checkpoint
-8372b1fd-2bc7-4832-aec1-bb0e5a813df7	Hospital	H2 Inscripción	Revisión del Expediente Médico	10.3.1	¿Cómo salió el resultado de la tomografía? (Conclusión)	NULL			tomografiaCabezaResultado	5	25	3	1	Question
-	Hospital	H2 Inscripción	Revisión del Expediente Médico	11	Anote si está registrado que el paciente presento apnea	Debe buscar en el registro medico si el paciente tiene historia de apnea	addition		historiaApnea	5	26	1	1	Question
-	Hospital	H2 Inscripción	Revisión del Expediente Médico	12	Anote si está registrado que el paciente ha presentado cianosis (incluye cianosis durante un episodio de tos o tos cianotizante)	Debe buscar en el registro medico si el paciente presento cianosis durante un acceso de tos	addition		Historiacianosis	5	27	1	1	Question
-	Hospital	H2 Inscripción	Revisión del Expediente Médico	13	Anote si está registrado que el paciente ha tenido “tos paroxística” o en “accesos”	Debe buscar en el registro medico si el paciente ha tenido “tos paroxística” o en “accesos”	addition		HistoriaParoxismos	5	28	1	1	Question
-	Hospital	H2 Inscripción	Revisión del Expediente Médico	14	Anote si está registrado en el expediente que el paciente presenta Estridor Inspiratorio	Debe buscar en el registro medico si el paciente ha presentado Estridor Inspiratorio	addition		HistoriaWhoop	5	29	1	1	Question
-	Hospital	H2 Inscripción	Revisión del Expediente Médico	15	Anote si está registrado en el expediente que el paciente presenta Vómito postusivo	Debe buscar en el registro medico si el paciente ha presentado Vomitos Postusivo	addition		historiaVomitoPostusivo	5	30	1	1	Question
+	Hospital	H2 Inscripción	Revisión del Expediente Médico	10	Anote si está registrado que el paciente presento apnea	Debe buscar en el registro medico si el paciente tiene historia de apnea	addition		historiaApnea	5	21	1	1	Question
+	Hospital	H2 Inscripción	Revisión del Expediente Médico	11	Anote si está registrado que el paciente ha presentado cianosis (incluye cianosis durante un episodio de tos o tos cianotizante)	Debe buscar en el registro medico si el paciente presento cianosis durante un acceso de tos	addition		Historiacianosis	5	22	1	1	Question
+	Hospital	H2 Inscripción	Revisión del Expediente Médico	12	Anote si está registrado que el paciente ha tenido “tos paroxística” o en “accesos”	Debe buscar en el registro medico si el paciente ha tenido “tos paroxística” o en “accesos”	addition		HistoriaParoxismos	5	23	1	1	Question
+	Hospital	H2 Inscripción	Revisión del Expediente Médico	13	Anote si está registrado en el expediente que el paciente presenta Estridor Inspiratorio	Debe buscar en el registro medico si el paciente ha presentado Estridor Inspiratorio	addition		HistoriaWhoop	5	24	1	1	Question
+	Hospital	H2 Inscripción	Revisión del Expediente Médico	14	Anote si está registrado en el expediente que el paciente presenta Vómito postusivo	Debe buscar en el registro medico si el paciente ha presentado Vomitos Postusivo	addition		historiaVomitoPostusivo	5	25	1	1	Question
 d7623536-9081-4369-a78a-e1dc212e99a5	Hospital	H2 Inscripción	Común	1	Ahora va a entrevistar al paciente, o a su padre/tutor si es menor de edad. Por favor, diga al paciente o a su padre/tutor que quiere hacerle varias preguntas que serviran para ver si es elegible para participar en este estudio.	NULL			NULL	6	1	1	1	Info
 56a4cb22-7971-4b04-a1f3-342e75fb42d2	Hospital	H2 Inscripción	Común	2	Verifique los primeros nombres del paciente	Debe ingresar los dos nombres del paciente si los tiene disponibles			nombres	6	2	1	1	Question
 aab11c20-46ce-4131-b32b-c33392284e78	Hospital	H2 Inscripción	Común	3	Verifique los apellidos del paciente	Debe ingresar los dos apellidos del paciente si los tiene disponibles.			apellidos	6	3	1	1	Question
@@ -202,23 +191,6 @@ b45cdc1b-9218-4764-a9dc-3410e1992a2b	Hospital	H2 Inscripción	Diarrea y Respirato
 6b1f717f-8c00-451e-903a-4228c2665851	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.3.2.1	Especifique la otra razón	NULL			oximetroPulsoNoRazon_esp	7	66	5	1	Question
 712a1ff5-5d21-483f-a99b-75ab74213698	Hospital	H2 Inscripción	Diarrea y Respiratoria	4	Si sospechoso IRAG es sí	NULL			NULL	7	67	1	1	Checkpoint
 2dbb15e8-6cad-4cb8-b277-6d93c26f356b	Hospital	H2 Inscripción	Diarrea y Respiratoria	4.1	¿Hace cuántos días empezó con su enfermedad?	NULL			enfermedadEmpezoHaceDias	7	68	2	1	Question
-5d540244-9176-427b-a5a6-8716594f85a3	Hospital	H2 Inscripción	Neuro	1	TODA la información que se solicita en esta sección deberá ser obtenida del expediente médico. NO se debe hacer por observación.	NULL			NULL	8	1	1	1	Info
-41bcf446-7159-4643-bb63-08d7e86bd108	Hospital	H2 Inscripción	Neuro	2	Signo de Kerning	NULL			sintomasNeuroKerning	8	2	1	1	Question
-c97e347c-c745-48d8-b909-a9ca6de615a9	Hospital	H2 Inscripción	Neuro	3	Signo de Brudzinski	NULL			sintomasNeuroBrudzinski	8	3	1	1	Question
-1f0897b9-87ce-4754-9ce9-6c08964bbbd6	Hospital	H2 Inscripción	Neuro	4	Rigidez de cuello	NULL			sintomasNeuroCuelloRigido	8	4	1	1	Question
-c3255419-8683-44e5-8c7d-06530d06a027	Hospital	H2 Inscripción	Neuro	5	Menor de 1 año	NULL			NULL	8	5	1	1	Checkpoint
-edbb7241-223a-4f80-af99-f9e04808daa9	Hospital	H2 Inscripción	Neuro	5.1	Fontanela abombada	NULL			sintomasNeuroFontanelaAbombada	8	6	2	1	Question
-d928adb0-dc98-4ea4-b780-a4e7374fe77c	Hospital	H2 Inscripción	Neuro	5.2	Llanto inconsolable	NULL			sintomasNeuroLllantoInconsolable	8	7	2	1	Question
-ca51903a-eb69-4515-9d89-73cb626e46dd	Hospital	H2 Inscripción	Neuro	5.3	Decaimiento	NULL			sintomasNeuroDecaimiento	8	8	2	1	Question
-412d914f-4cba-464b-afb3-aa5a2663c194	Hospital	H2 Inscripción	Neuro	5.4	Disminución de la succión	NULL			sintomasNeuroDisminucionSuccion	8	9	2	1	Question
-e2424570-a452-4104-8abf-67388f3d4789	Hospital	H2 Inscripción	Neuro	6	¿Tuvo el paciente algún grado de alteración de la conciencia?	NULL			gradoAlteracionConciencia24Horas	8	10	1	1	Question
-07f83266-75ff-4888-b752-dda52afd0612	Hospital	H2 Inscripción	Neuro	7	¿Tuvo el paciente alguna convulsión?	NULL			convulsionPerdidaConciencia	8	11	1	1	Question
-58c85abe-7d33-43e9-86c9-b11b33c5b8bb	Hospital	H2 Inscripción	Neuro	8	Si tuvo alguna convulsión	NULL			NULL	8	12	1	1	Checkpoint
-f6145d44-f1a8-406a-974d-2c9aa820584b	Hospital	H2 Inscripción	Neuro	8.1	¿La convulsión fue de origen febril?	NULL			convulsionOrigenFebril	8	13	2	1	Question
-9122c471-1995-4b14-9904-3a29c36fe593	Hospital	H2 Inscripción	Neuro	9	¿Tuvo el paciente petequias?	NULL			sintomasNeuroPetequias	8	14	1	1	Question
-57788bb2-53e7-463a-bedc-eeb013ecbf8c	Hospital	H2 Inscripción	Neuro	10	¿Tuvo el paciente rash purpúrico?	NULL			sintomasNeuroRashPurpurico	8	15	1	1	Question
-7cbff357-19e2-4e2c-bf58-c58a2e90baf9	Hospital	H2 Inscripción	Neuro	11	¿El paciente luce tóxico?	NULL			sintomasNeuroLuceToxico	8	16	1	1	Question
-07764944-690a-4cc4-ac28-477b5ada936b	Hospital	H2 Inscripción	Neuro	12	¿Hay algún indicio de algún otro signo meníngeo?	NULL			otroSignoMeningeo	8	17	1	1	Question
 abf8cfb6-8af4-430e-b756-61c2c141e804	Hospital	H2 Inscripción	Febril	1	Debe consultar con el médico para asegurar que no haya otra causa obvia de la fiebre.	NULL			NULL	9	1	1	1	Info
 5bb450d7-2598-4cc4-92d5-f743de430b1c	Hospital	H2 Inscripción	Febril	2	¿Tiene el paciente uno de los siguientes diagnósticos?	NULL			fiebreDiagnostico	9	2	1	1	Question
 8f4706b3-34a3-4d9a-89cc-c11bc41e7466	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	1	¡Después de este punto no se pueden modificar los datos de los criterios de inclusión!	NULL			NULL	10	1	1	1	Info
@@ -226,45 +198,37 @@ ae2bf8f2-d05e-4e31-a7d1-af12e4a21275	Hospital	H2 Inscripción	Consentimiento y En
 cb701896-c455-4f31-a88c-00fecde38f29	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	2.1	El paciente es elegible para el estudio de Diarrea.	NULL			NULL	10	3	2	1	Info
 e014bfa7-6d08-4e89-bd81-c745fddd39bc	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	3	Respiratoria solamente	NULL			NULL	10	4	1	1	Checkpoint
 4d4c7899-065d-4db3-ae9f-630c881215ee	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	3.1	El paciente es elegible para el estudio de Respiratoria.	NULL			NULL	10	5	2	1	Info
-2e00bb45-8f10-48f4-9edd-86ff32eba858	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	4	Neurológica solamente	NULL			NULL	10	6	1	1	Checkpoint
-c6b919af-d29d-4952-bce6-5afe28da13c4	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	4.1	El paciente es elegible para el estudio de Neurológicas.	NULL			NULL	10	7	2	1	Info
-e57e6680-f7d7-4176-a0b4-7e2732f57776	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	5	Febril solamente	NULL			NULL	10	8	1	1	Checkpoint
-1203812a-fd8f-4eba-a14b-e48463c205d0	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	5.1	El paciente es elegible para el estudio de Febril.	NULL			NULL	10	9	2	1	Info
-eeceb80a-61fe-4031-bfaa-d5b70f8e5fe4	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	6	Diarrea y Respiratoria	NULL			NULL	10	10	1	1	Checkpoint
-f1af1ffd-087e-4ab3-ba0f-fa8bac466fe7	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	6.1	El paciente es elegible para los estudios de Diarrea y Respiratoria.	NULL			NULL	10	11	2	1	Info
-4c29a022-ef1a-437b-9a22-da3fd38b4854	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7	Diarrea y Neurológica	NULL			NULL	10	12	1	1	Checkpoint
-c208f58e-a247-42b0-9dee-dd194d8cd6f9	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.1	El paciente es elegible para los estudios de Diarrea y Neurológica.	NULL			NULL	10	13	2	1	Info
-e6cbafdb-43ba-4bc7-af7e-de5f65ce0b35	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	8	Respiratoria y Neurológica	NULL			NULL	10	14	1	1	Checkpoint
-cadecee8-d57c-46ca-85d6-fa080be88a0c	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	8.1	El paciente es elegible para los estudios de Respiratoria y Neurológica.	NULL			NULL	10	15	2	1	Info
-94862acc-500e-4352-b222-9d3d31e175c3	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	9	Diarrea y Respiratoria y Neurológica	NULL			NULL	10	16	1	1	Checkpoint
-328573ee-3086-4a85-8626-7a27eb106190	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	9.1	El paciente es elegible para los estudios de Diarrea, Respiratoria y Neurológica.	NULL			NULL	10	17	2	1	Info
-4c963605-1f14-40e0-822a-fe6690d62063	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	10	Si el paciente NO es elegible para Diarrea ni Respiratoria ni Neurológicas ni Febriles	NULL			NULL	10	18	1	1	Checkpoint
-9bdfcd51-ef30-45a4-b8df-59bcd2efb70c	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	10.1	El paciente NO cumple con los criterios de inclusión.    Agradezca a la persona por el tiempo y la información que compartió con nosotros.    Hágale saber que afortunadamente no tiene el tipo de enfermedad que estamos estudiando.	NULL			NULL	10	19	2	1	Info
-228e44d1-9e19-4e1a-8711-2f987e3097a6	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11	Si el paciente es elegible para al menos uno de los estudios	NULL			NULL	10	20	1	1	Checkpoint
-af4fcedd-c78c-4ff6-8b44-12e04bba8e8b	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.1	El paciente CUMPLE con los criterios de inclusión.     En este momento debe proporcionarle al paciente el Consentimiento (y si aplica, Asentimiento) escrito para que lo lean y lo firmen si están de acuerdo.	NULL			NULL	10	21	2	1	Info
-1d46e4f1-3fae-41c0-ab42-f035c4176e77	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.2	Anote si el paciente o su padre/tutor dio su consentimiento escrito	Debe indicar si el paciente o persona responsable de éste dio el CONSENTIMIENTO para ser incluido en el estudio.			consentimientoEscrito	10	22	2	1	Question
-3af56594-9c89-4985-b66b-31c19ad09f76	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.3	Si el paciente tiene entre 7 y 17 años	NULL			NULL	10	23	2	1	Checkpoint
-00b73e13-1ede-4a09-b848-d29470185f20	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.3.1	Anote si el paciente dio su asentimiento escrito	Debe indicar si el paciente dio su ASENTIMIENTO para ser incluido en el estudio.			asentimientoEscrito	10	24	3	1	Question
-bb3020db-c749-42c8-afcc-e329a402a153	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.3.2	Si asentimiento escrito NO APLICA	NULL			NULL	10	25	3	1	Checkpoint
-42943d10-beaf-44b2-9e11-f18e675523c2	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.3.2.1	Especifique la razón por la que el asentimiento NO aplicó	Debe especifique la razón por la que asentimiento NO aplicó			asentimientoEscritoNARazon	10	26	4	1	Question
-fb9e370f-39d3-4c85-8952-add695ef76c9	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.4	Si no dio consentimiento o asentimiento escrito	NULL			NULL	10	27	2	1	Checkpoint
-b9b03e37-f852-464f-a49d-5d42754984a3	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.4.1	Especifique razón(es) por la que NO dio consentimiento o asentimiento	Debe especifique la razón por la que asentimiento NO no se dio consentimienot o asentimiento:				10	28	3	1	Question
-dd6c8eec-e900-469e-a959-8581f4685618	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.4.2	Si una razón por la que no se dio consentimiento es "Otra"	NULL			NULL	10	29	3	1	Checkpoint
-6605eac7-390c-4577-a832-d7dfe0f6c105	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.4.2.1	Especifique la otra razón	NULL			ConsentimientoEscritoNoRazonOtraRazon_esp	10	30	4	1	Question
-90c4eb7e-3bd7-4e78-8488-25d0c511dfc3	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5	Si dió consentimiento (y asentimiento cuando aplica) escrito	NULL			NULL	10	31	2	1	Checkpoint
-ffa58dfc-41f7-4594-9df5-0febc6452ba8	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.1	Anote si el paciente quedo inscrito en el estudio	Debe indicar si se INSCRIBE AL PACIENTE DENTRO DEL ESTUDIO.			pacienteInscritoViCo	10	32	3	1	Question
-2ed90478-c5dd-4475-bd09-7fd68d6be718	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.2	Si NO inscribió al paciente	NULL			NULL	10	33	3	1	Checkpoint
-6dc64b03-01f7-4bbd-b5ba-bfff2b4e2c7a	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.2.1	Especifique la razón por la que NO se inscribe al paciente	Indique la razón por la que el paciente NO SE INSCRIBE en el estudio.			pacienteInscritoViCoNoRazon	10	34	4	1	Question
-c9374de3-4c97-47f8-a74f-de70c36da49b	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.2.2	Si la razón por la que NO se inscribe al paciente es 'Otra'	NULL			NULL	10	35	4	1	Checkpoint
-bfef3016-1e17-4551-8c5b-7d90a6257421	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.2.2.1	Especifique la razón por la que NO se  inscribe	Especifique la razón por la que el paciente NO SE INSCRIBE en el estudio.			pacienteInscritoViCoNoRazon_Otra	10	36	5	1	Question
-b1877f2f-ef3e-4073-9110-e34cbc296407	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.3	Si se inscribe el paciente	NULL			NULL	10	37	3	1	Checkpoint
-5fccc63b-c15f-4772-be8c-3ad9b769be8d	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.3.1	Ingrese el código de la etiqueta que identificará al paciente y sus muestras	Ingrese el código de la etiqueta que identificará paciente y sus muestras.			SASubjectID	10	38	4	1	Question
-39e66470-4f79-4d1f-8020-9bf3d58f00cb	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.3.2	¿Hay un número teléfonico a donde podamos contactarle?	NULL			telefonoTiene	10	39	4	1	Question
-13a18606-4cee-4011-94e0-6c6e9ed2afe1	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.3.3	Si tiene un número teléfonico:	NULL			NULL	10	40	4	1	Checkpoint
-73813a83-8607-48dc-9f29-af610f2cbfb8	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.3.3.1	Número de teléfono:	NULL			telefonoNumero	10	41	5	1	Question
-223c1fae-a032-4afa-bb02-e8329fd43aa7	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.3.4	Si la enfermedad empezó hace 3 o menos días y elegibleIRAG es "Sí" y está en Santa Rosa	NULL			NULL	10	42	4	1	Checkpoint
-36d3bc25-4ef4-4e02-8f0e-c1c6fdc828c6	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.3.4.1	¡¡EL PACIENTE ES ELEGIBLE PARA VIGILANCIA DE INFLUENZA!!    Marque todas las etiquetas con marcador ROSADO.	NULL			NULL	10	43	5	1	Info
-31fbbd1e-6c99-45db-80da-fa39daaa8cad	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	11.5.3.5	Favor de tomar las muestras necesarias antes de proseguir, y anote la información en el formulario de Toma de Muestras	NULL			NULL	10	44	4	1	Info
+e57e6680-f7d7-4176-a0b4-7e2732f57776	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	4	Febril solamente	NULL			NULL	10	6	1	1	Checkpoint
+1203812a-fd8f-4eba-a14b-e48463c205d0	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	4.1	El paciente es elegible para el estudio de Febril.	NULL			NULL	10	7	2	1	Info
+eeceb80a-61fe-4031-bfaa-d5b70f8e5fe4	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	5	Diarrea y Respiratoria	NULL			NULL	10	8	1	1	Checkpoint
+f1af1ffd-087e-4ab3-ba0f-fa8bac466fe7	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	5.1	El paciente es elegible para los estudios de Diarrea y Respiratoria.	NULL			NULL	10	9	2	1	Info
+4c963605-1f14-40e0-822a-fe6690d62063	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	6	Si el paciente NO es elegible para Diarrea ni Respiratoria ni Febriles	NULL			NULL	10	10	1	1	Checkpoint
+9bdfcd51-ef30-45a4-b8df-59bcd2efb70c	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	6.1	El paciente NO cumple con los criterios de inclusión.    Agradezca a la persona por el tiempo y la información que compartió con nosotros.    Hágale saber que afortunadamente no tiene el tipo de enfermedad que estamos estudiando.	NULL			NULL	10	11	2	1	Info
+228e44d1-9e19-4e1a-8711-2f987e3097a6	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7	Si el paciente es elegible para al menos uno de los estudios	NULL			NULL	10	12	1	1	Checkpoint
+af4fcedd-c78c-4ff6-8b44-12e04bba8e8b	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.1	El paciente CUMPLE con los criterios de inclusión.     En este momento debe proporcionarle al paciente el Consentimiento (y si aplica, Asentimiento) escrito para que lo lean y lo firmen si están de acuerdo.	NULL			NULL	10	13	2	1	Info
+1d46e4f1-3fae-41c0-ab42-f035c4176e77	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.2	Anote si el paciente o su padre/tutor dio su consentimiento escrito	Debe indicar si el paciente o persona responsable de éste dio el CONSENTIMIENTO para ser incluido en el estudio.			consentimientoEscrito	10	14	2	1	Question
+3af56594-9c89-4985-b66b-31c19ad09f76	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.3	Si el paciente tiene entre 7 y 17 años	NULL			NULL	10	15	2	1	Checkpoint
+00b73e13-1ede-4a09-b848-d29470185f20	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.3.1	Anote si el paciente dio su asentimiento escrito	Debe indicar si el paciente dio su ASENTIMIENTO para ser incluido en el estudio.			asentimientoEscrito	10	16	3	1	Question
+bb3020db-c749-42c8-afcc-e329a402a153	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.3.2	Si asentimiento escrito NO APLICA	NULL			NULL	10	17	3	1	Checkpoint
+42943d10-beaf-44b2-9e11-f18e675523c2	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.3.2.1	Especifique la razón por la que el asentimiento NO aplicó	Debe especifique la razón por la que asentimiento NO aplicó			asentimientoEscritoNARazon	10	18	4	1	Question
+fb9e370f-39d3-4c85-8952-add695ef76c9	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.4	Si no dio consentimiento o asentimiento escrito	NULL			NULL	10	19	2	1	Checkpoint
+b9b03e37-f852-464f-a49d-5d42754984a3	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.4.1	Especifique razón(es) por la que NO dio consentimiento o asentimiento	Debe especifique la razón por la que asentimiento NO no se dio consentimienot o asentimiento:				10	20	3	1	Question
+dd6c8eec-e900-469e-a959-8581f4685618	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.4.2	Si una razón por la que no se dio consentimiento es "Otra"	NULL			NULL	10	21	3	1	Checkpoint
+6605eac7-390c-4577-a832-d7dfe0f6c105	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.4.2.1	Especifique la otra razón	NULL			ConsentimientoEscritoNoRazonOtraRazon_esp	10	22	4	1	Question
+90c4eb7e-3bd7-4e78-8488-25d0c511dfc3	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.5	Si dió consentimiento (y asentimiento cuando aplica) escrito	NULL			NULL	10	23	2	1	Checkpoint
+ffa58dfc-41f7-4594-9df5-0febc6452ba8	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.5.1	Anote si el paciente quedo inscrito en el estudio	Debe indicar si se INSCRIBE AL PACIENTE DENTRO DEL ESTUDIO.			pacienteInscritoViCo	10	24	3	1	Question
+2ed90478-c5dd-4475-bd09-7fd68d6be718	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.5.2	Si NO inscribió al paciente	NULL			NULL	10	25	3	1	Checkpoint
+6dc64b03-01f7-4bbd-b5ba-bfff2b4e2c7a	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.5.2.1	Especifique la razón por la que NO se inscribe al paciente	Indique la razón por la que el paciente NO SE INSCRIBE en el estudio.			pacienteInscritoViCoNoRazon	10	26	4	1	Question
+c9374de3-4c97-47f8-a74f-de70c36da49b	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.5.2.2	Si la razón por la que NO se inscribe al paciente es 'Otra'	NULL			NULL	10	27	4	1	Checkpoint
+bfef3016-1e17-4551-8c5b-7d90a6257421	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.5.2.2.1	Especifique la razón por la que NO se  inscribe	Especifique la razón por la que el paciente NO SE INSCRIBE en el estudio.			pacienteInscritoViCoNoRazon_Otra	10	28	5	1	Question
+b1877f2f-ef3e-4073-9110-e34cbc296407	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.5.3	Si se inscribe el paciente	NULL			NULL	10	29	3	1	Checkpoint
+5fccc63b-c15f-4772-be8c-3ad9b769be8d	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.5.3.1	Ingrese el código de la etiqueta que identificará al paciente y sus muestras	Ingrese el código de la etiqueta que identificará paciente y sus muestras.			SASubjectID	10	30	4	1	Question
+39e66470-4f79-4d1f-8020-9bf3d58f00cb	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.5.3.2	¿Hay un número teléfonico a donde podamos contactarle?	NULL			telefonoTiene	10	31	4	1	Question
+13a18606-4cee-4011-94e0-6c6e9ed2afe1	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.5.3.3	Si tiene un número teléfonico:	NULL			NULL	10	32	4	1	Checkpoint
+73813a83-8607-48dc-9f29-af610f2cbfb8	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.5.3.3.1	Número de teléfono:	NULL			telefonoNumero	10	33	5	1	Question
+223c1fae-a032-4afa-bb02-e8329fd43aa7	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.5.3.4	Si la enfermedad empezó hace 3 o menos días y elegibleIRAG es "Sí" y está en Santa Rosa	NULL			NULL	10	34	4	1	Checkpoint
+36d3bc25-4ef4-4e02-8f0e-c1c6fdc828c6	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.5.3.4.1	¡¡EL PACIENTE ES ELEGIBLE PARA VIGILANCIA DE INFLUENZA!!    Marque todas las etiquetas con marcador ROSADO.	NULL			NULL	10	35	5	1	Info
+31fbbd1e-6c99-45db-80da-fa39daaa8cad	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.5.3.5	Favor de tomar las muestras necesarias antes de proseguir, y anote la información en el formulario de Toma de Muestras	NULL			NULL	10	36	4	1	Info
 31cd0a3d-5bd1-45a3-9219-9ebc5feda582	Hospital	H5 Muestras	Muestras de ViCo	1	Si el paciente tiene enfermedad diarreica:	NULL	modification		NULL	12	1	1	1	Checkpoint
 b0b98026-8ad4-4c7d-983e-7e7396b90d04	Hospital	H5 Muestras	Muestras de ViCo	1.1	¿Colectó alguna muestra de heces?	La muestra entera es de mayor utilidad para detectar la posible causa de enfermedad.	modification	Opciones: Si, No	muestraHecesColecta	12	2	2	1	Question
 				1.1.1	Si colectó una muestra de heces (entera, hisopo, o ambos)	NULL	addition			12	3	3	1	Checkpoint
@@ -711,18 +675,6 @@ c7113641-8406-4682-9881-c6eee444dbf2	Hospital	H7 Egreso	H7 Egreso	18	Resultados 
 05f64ef0-4f8d-44c3-ba08-30285520b4a3	Hospital	H7 Egreso	H7 Egreso	19	Gota gruesa	NULL			gotaGruesa	31	27	1	1	Question
 adc99447-44e7-42f4-b00c-e0167cefe529	Hospital	H7 Egreso	H7 Egreso	20	Immunocomb (Dengue) IgM	NULL			ImunoDengIgM	31	28	1	1	Question
 87263e45-99b3-460b-a8a6-1eb447fff97f	Hospital	H7 Egreso	H7 Egreso	21	Immunocomb (Dengue) IgG	NULL			ImunoDengIgG	31	29	1	1	Question
-5b7febd0-eb61-443b-b894-59d85caf5685	Hospital	H7 Egreso	H7 Egreso	22	Nunca (Neuro)	NULL			NULL	31	30	1	1	Checkpoint
-f05f4626-c268-4b04-b028-4f1f296f6de7	Hospital	H7 Egreso	H7 Egreso	22.1	Fecha de punción lumbar	NULL			LCRFecha	31	31	2	1	Question
-4f14c918-5fd7-4dc3-a662-c68c843de728	Hospital	H7 Egreso	H7 Egreso	22.2	Apariencia de LCR	NULL			LCRApariencia	31	32	2	1	Question
-5e6971f8-64a7-46f3-a215-8b01e7a5726c	Hospital	H7 Egreso	H7 Egreso	22.3	Si apariencia de LCR es Otra	NULL			NULL	31	33	2	1	Checkpoint
-6078cc8c-3036-4c45-8b75-ff4660378eaa	Hospital	H7 Egreso	H7 Egreso	22.3.1	Especifique:	NULL			LCRAparienciaOtraEsp	31	34	3	1	Question
-ebc6f66d-af29-42e5-a3a8-3644a6d9fabb	Hospital	H7 Egreso	H7 Egreso	22.4	Conteo de globulos blancos en LCR (celulas/µl)	NULL			LCRconteoGlobulosBlancos	31	35	2	1	Question
-999f2c37-9aa2-4c40-9ef5-2d0aa8c51c23	Hospital	H7 Egreso	H7 Egreso	22.5	Nivel de glucosa en LCR	NULL			LCRGlucosa	31	36	2	1	Question
-3160c393-9617-4160-a700-2a09625e9811	Hospital	H7 Egreso	H7 Egreso	22.6	Nivel de proteina en LCR	NULL			LCRProteina	31	37	2	1	Question
-d7278b4e-cc26-48ac-886e-c4e3fe5e4642	Hospital	H7 Egreso	H7 Egreso	22.7	Gram	NULL			LCRGram	31	38	2	1	Question
-be59f01d-4272-44f3-a56d-d7815ea6d61a	Hospital	H7 Egreso	H7 Egreso	22.8	¿Hubo crecimiento de alguna bacteria en el cultivo?	NULL			LCRCrecioBacteria	31	39	2	1	Question
-7fd79c7f-64fe-4d6c-ae7a-80c6466843e9	Hospital	H7 Egreso	H7 Egreso	22.9	Si hubo crecimiento	NULL			NULL	31	40	2	1	Checkpoint
-174cba13-cb2d-4587-b5dc-e8cdd18dff46	Hospital	H7 Egreso	H7 Egreso	22.9.1	¿Qué bacteria creció?	NULL			LCRBact	31	41	3	1	Question
 fe240240-c2c3-409a-9518-6ec0c77080da	Hospital	H7 Egreso	H7 Egreso	4	Si fue transferido a otro hospital	NULL			NULL	31	4	1	1	Checkpoint
 97828915-f45c-433f-8f0b-4f53130c529f	Hospital	H7 Egreso	H7 Egreso	4.1	¿Cuál hospital?	NULL			egresoTipoTransferidoHospital	31	5	2	1	Question
 a2961f9b-330c-439a-9d01-7a52bab749fa	Hospital	H7 Egreso	H7 Egreso	4.2	Si el hospital es OTRO	NULL			NULL	31	6	2	1	Checkpoint
@@ -740,25 +692,22 @@ d1dbdb8f-be02-4819-b2c7-3e276989d1c2	Hospital	H7 Egreso	H7 Egreso	12	Diagnóstico
 53355026-c648-46ab-9177-c43579aaffc3	Hospital	H7 Egreso	H7 Egreso	13.1	Especifique	NULL			egresoDiagnostico1_esp	31	18	2	1	Question
 7660ed1a-5083-4f71-8410-b8c63148ad78	Hospital	H7 Egreso	H7 Egreso	14	Diagnóstico al declararlo de alta #2	NULL			egresoDiagnostico2	31	19	1	1	Question
 b893e6eb-fdb4-44f8-b5c9-19e6f53c0b4f	Hospital	H7 Egreso	H7 Egreso	15	Si diagnóstico #2 es "Otro"	NULL			NULL	31	20	1	1	Checkpoint
-d84f8968-a332-49f1-a0a1-942f15b44470	Hospital	H7 Egreso	H7 Egreso	22.1	Resultado de prueba de Binax para Streptococcus	NULL			LCRStreptococcusBinax	31	42	2	1	Question
-90f24d90-16a5-4214-af44-45ee86947338	Hospital	H7 Egreso	H7 Egreso	22.11	Resultado de prueba de látex para Streptococcus	NULL			LCRStreptococcusLatex	31	43	2	1	Question
-f1578321-ecc0-4e1f-b834-fa2c22519fe9	Hospital	H7 Egreso	H7 Egreso	22.12	Resultado de prueba de látex para Haemophilus influenzae (Hib)	NULL			LCRHibLatex	31	44	2	1	Question
-aa4d2d00-b49d-4468-a9b8-95a34d59022b	Hospital	H7 Egreso	H7 Egreso	23	¿El hospital tomó un hemocultivo al paciente?	NULL			muestraSangreCultivoColecta	31	45	1	1	Question
-164f2991-236c-43fd-b0b4-4c3d4b72e0fe	Hospital	H7 Egreso	H7 Egreso	24	Si colectó hemocultivo	NULL			NULL	31	46	1	1	Checkpoint
-a14f3e56-c5b3-45c2-81ca-8a4bfceff9f2	Hospital	H7 Egreso	H7 Egreso	24.1	Fecha de toma de Muestra	NULL			HemoFechaTomaMuestra	31	47	2	1	Question
-072661b6-0a6c-4be1-8f26-18cfae369594	Hospital	H7 Egreso	H7 Egreso	24.2	Número de kit de hemocultivo (1)	NULL			muestraSangreCultivoNumeroKit1	31	48	2	1	Question
-d2a6a3ac-1150-4373-ab68-4c49a0a71093	Hospital	H7 Egreso	H7 Egreso	24.3	Número de Registro de Laboratorio (1)	NULL			muestraSangreCultivoRegistro1	31	49	2	1	Question
-c89c8586-2948-42cd-ad64-a07d67d079fd	Hospital	H7 Egreso	H7 Egreso	24.4	Número de kit de hemocultivo (2)	NULL			muestraSangreCultivoNumeroKit2	31	50	2	1	Question
-980bd482-4e99-4055-b731-18be56b1d69b	Hospital	H7 Egreso	H7 Egreso	24.5	Número de Registro de Laboratorio (2)	NULL			muestraSangreCultivoRegistro2	31	51	2	1	Question
-dd25382f-2957-427b-8be4-420eaf451bd0	Hospital	H7 Egreso	H7 Egreso	24.6	Resultado de hemocultivo	NULL			HemoHemoCrecimiento	31	52	2	1	Question
-7309c593-49c8-434e-9bea-debd33148b94	Hospital	H7 Egreso	H7 Egreso	24.7	Si hay crecimiento	NULL			NULL	31	53	2	1	Checkpoint
-88f92fb4-60cb-415a-a8e5-c05a567a55c6	Hospital	H7 Egreso	H7 Egreso	24.7.1	Resultado de Kit #1 Aerobica o pediatria	NULL			Aero1Resultado	31	54	3	1	Question
-4f7930b9-9e46-4130-bfe1-f8af26d25e20	Hospital	H7 Egreso	H7 Egreso	24.7.2	Si hubo crecimiento identificado	NULL			NULL	31	55	3	1	Checkpoint
-5bc5ca7b-c94d-44fb-aa2f-d41e5ccf6f29	Hospital	H7 Egreso	H7 Egreso	24.7.2.1	Kit #1 Aerobica o pediatria	NULL			Aero1	31	56	4	1	Question
-0ef2954a-8265-4a9b-b232-b0f5411e8be3	Hospital	H7 Egreso	H7 Egreso	24.7.3	Si hay kit de hemocultivo #2	NULL			NULL	31	57	3	1	Checkpoint
-74e57252-fdbe-4c23-ae96-d96c14caf807	Hospital	H7 Egreso	H7 Egreso	24.7.24.1	Resultado de Kit #2 Aerobica o pediatrica	NULL			Aero2Resultado	31	58	4	1	Question
-39be8e2b-b275-4eff-819f-a1ea6610d913	Hospital	H7 Egreso	H7 Egreso	24.7.24.2	Si hubo crecimiento identificado	NULL			NULL	31	59	4	1	Checkpoint
-ce23f3b9-2f7f-4d37-91db-da195ff6cf0d	Hospital	H7 Egreso	H7 Egreso	24.7.24.2.1	Kit #2 Aerobica	NULL			Aero2	31	60	5	1	Question
+aa4d2d00-b49d-4468-a9b8-95a34d59022b	Hospital	H7 Egreso	H7 Egreso	22	¿El hospital tomó un hemocultivo al paciente?	NULL			muestraSangreCultivoColecta	31	30	1	1	Question
+164f2991-236c-43fd-b0b4-4c3d4b72e0fe	Hospital	H7 Egreso	H7 Egreso	23	Si colectó hemocultivo	NULL			NULL	31	31	1	1	Checkpoint
+a14f3e56-c5b3-45c2-81ca-8a4bfceff9f2	Hospital	H7 Egreso	H7 Egreso	23.1	Fecha de toma de Muestra	NULL			HemoFechaTomaMuestra	31	32	2	1	Question
+072661b6-0a6c-4be1-8f26-18cfae369594	Hospital	H7 Egreso	H7 Egreso	23.2	Número de kit de hemocultivo (1)	NULL			muestraSangreCultivoNumeroKit1	31	33	2	1	Question
+d2a6a3ac-1150-4373-ab68-4c49a0a71093	Hospital	H7 Egreso	H7 Egreso	23.3	Número de Registro de Laboratorio (1)	NULL			muestraSangreCultivoRegistro1	31	34	2	1	Question
+c89c8586-2948-42cd-ad64-a07d67d079fd	Hospital	H7 Egreso	H7 Egreso	23.4	Número de kit de hemocultivo (2)	NULL			muestraSangreCultivoNumeroKit2	31	35	2	1	Question
+980bd482-4e99-4055-b731-18be56b1d69b	Hospital	H7 Egreso	H7 Egreso	23.5	Número de Registro de Laboratorio (2)	NULL			muestraSangreCultivoRegistro2	31	36	2	1	Question
+dd25382f-2957-427b-8be4-420eaf451bd0	Hospital	H7 Egreso	H7 Egreso	23.6	Resultado de hemocultivo	NULL			HemoHemoCrecimiento	31	37	2	1	Question
+7309c593-49c8-434e-9bea-debd33148b94	Hospital	H7 Egreso	H7 Egreso	23.7	Si hay crecimiento	NULL			NULL	31	38	2	1	Checkpoint
+88f92fb4-60cb-415a-a8e5-c05a567a55c6	Hospital	H7 Egreso	H7 Egreso	23.7.1	Resultado de Kit #1 Aerobica o pediatria	NULL			Aero1Resultado	31	39	3	1	Question
+4f7930b9-9e46-4130-bfe1-f8af26d25e20	Hospital	H7 Egreso	H7 Egreso	23.7.2	Si hubo crecimiento identificado	NULL			NULL	31	40	3	1	Checkpoint
+5bc5ca7b-c94d-44fb-aa2f-d41e5ccf6f29	Hospital	H7 Egreso	H7 Egreso	23.7.2.1	Kit #1 Aerobica o pediatria	NULL			Aero1	31	41	4	1	Question
+0ef2954a-8265-4a9b-b232-b0f5411e8be3	Hospital	H7 Egreso	H7 Egreso	23.7.3	Si hay kit de hemocultivo #2	NULL			NULL	31	42	3	1	Checkpoint
+74e57252-fdbe-4c23-ae96-d96c14caf807	Hospital	H7 Egreso	H7 Egreso	23.7.24.1	Resultado de Kit #2 Aerobica o pediatrica	NULL			Aero2Resultado	31	43	4	1	Question
+39be8e2b-b275-4eff-819f-a1ea6610d913	Hospital	H7 Egreso	H7 Egreso	23.7.24.2	Si hubo crecimiento identificado	NULL			NULL	31	44	4	1	Checkpoint
+ce23f3b9-2f7f-4d37-91db-da195ff6cf0d	Hospital	H7 Egreso	H7 Egreso	23.7.24.2.1	Kit #2 Aerobica	NULL			Aero2	31	45	5	1	Question
 abfc073e-b1ce-495b-9403-398f28642edf	Hospital	HCP11 Terminacion	HCP11 Terminacion	1	Fecha de terminación del proyecto (fecha de defunción, si es aplicable)	NULL			fechaTerminacionProyecto	30	1	1	1	Question
 739d59e2-1270-4f93-9af1-7bd0625b4da7	Hospital	HCP11 Terminacion	HCP11 Terminacion	2	¿Cómo terminó? (Marque solamente una opción)	NULL			terminoManeraCorrectaNoRazon	30	2	1	1	Question
 8390f40e-8ec1-4df3-83c6-216a0409f36e	Hospital	HCP11 Terminacion	HCP11 Terminacion	3	Si Otro evento	NULL			NULL	30	3	1	1	Checkpoint
@@ -780,7 +729,6 @@ d526fcf9-3cd2-4d40-98ec-97a632500d10	Hospital	H1 Sospechosos	H1 Sospechosos	NULL
 67f18549-8050-40ce-a52f-463cb42413dd	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	elegibleETI_MSP	NULL			elegibleETI_MSP	2	0	1	1	Variable
 1da16f2a-824b-4976-bc2c-acd49481b0ce	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente está elegible para el estudio de febril?	NULL			elegibleFebril	2	0	1	1	Variable
 ff84dbe9-ee58-4c91-8e94-f240de10fe7e	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	elegibleIRAG	NULL			elegibleIRAG	2	0	1	1	Variable
-4b75778c-74e6-4dac-9628-d92f79e78c03	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente está elegible para el estudio de neurologico?	NULL			elegibleNeuro	2	0	1	1	Variable
 00d9025c-e938-40f6-b980-6f2387518f69	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente está elegible para el estudio de respiratorio?	NULL			elegibleRespira	2	0	1	1	Variable
 51feeee0-785d-4470-878d-c32e6e216f72	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente está elegible para el estudio de IMCI?	NULL			elegibleRespiraIMCI	2	0	1	1	Variable
 bc775c4a-c016-432a-afb0-98a4aa11e64d	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente está elegible para el estudio de respiratorio de ViCo tradicional?	NULL			elegibleRespiraViCo	2	0	1	1	Variable
@@ -806,8 +754,6 @@ a4eca30d-0f93-47a6-afbd-9bdbc39855bb	Hospital	H1 Sospechosos	H1 Sospechosos	NULL
 603158c2-6afd-445a-ade8-7b65c51abc2d	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	Nombre Completo	NULL			nombreCompleto	2	0	1	1	Variable
 a9964afb-a476-4869-a1d4-7353c64b6ef4	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	Fecha y hora en la que el paciente fue inscrito.	NULL			pacienteInscritoViCoFecha	2	0	1	1	Variable
 4f97c38b-0c43-4bc9-8626-b70d0fab7f69	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente tiene signos de peligro?	NULL			signosPeligro	2	0	1	1	Variable
-7d59b586-02cb-4322-b552-a8141b844527	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente tiene signos o síntomas de encefalopatia?	NULL			sintomasNeuroEncefalopatia	2	0	1	1	Variable
-df1f1dac-2e86-46ca-aefa-5e517c5c9988	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente tiene signos o síntomas de Irritación Meningeal?	NULL			sintomasNeuroIrritacionMeningeal	2	0	1	1	Variable
 2e3b3d37-b9d0-40f4-881b-1dac3f51fc1d	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente tiene algún signo o síntoma de una enfermedad respiratoria?	NULL			sintomasRespira	2	0	1	1	Variable
 6e75684e-767e-43e9-af10-148dfeed1333	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente tiene conteo globulos blancos anormal?	NULL			sintomasRespiraCGB	2	0	1	1	Variable
 7192a848-cd0e-4bcb-9e32-9f7001846c34	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente tiene fiebre documentada?	NULL			sintomasRespiraFiebre	2	0	1	1	Variable
@@ -820,7 +766,6 @@ f41f7821-0823-418a-a6d6-42e6a3a4d833	Hospital	H1 Sospechosos	H1 Sospechosos	NULL
 536a2f5b-6940-440f-9680-3f5cfe064cfd	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	sospechosoETI_MSP	NULL			sospechosoETI_MSP	2	0	1	1	Variable
 b6bacbe6-ea73-418a-8033-146e27626678	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente es un caso sopechoso del estudio de febril?	NULL			sospechosoFebril	2	0	1	1	Variable
 5a9d4fa4-daa5-4b70-bd78-1611c888b5a3	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	sospechosoIRAG	NULL			sospechosoIRAG	2	0	1	1	Variable
-03573ff2-1d90-4d49-9496-4f826c310ea0	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente es un caso sopechoso del estudio de neurologico?	NULL			sospechosoNeuro	2	0	1	1	Variable
 94c89955-b44d-407a-8e5b-b8687479a27e	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	La temperatura documentada más alta en las primeras 24 horas de admision.	NULL			temperaturaPrimeras24HorasCombin	2	0	1	1	Variable
 2969b383-3212-468d-8291-b5765df73982	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente recibió ventilación mecánica?	NULL			ventilacionMecanica	2	0	1	1	Variable
 02c75e0d-6955-4a19-b2bf-4160a162ae70	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	1	¿Recibió consentimiento verbal del paciente o tutor?	Debe indicar si el paciente o persona responsable de éste dio el CONSENTIMIENTO VERBAL para ser incluido en el estudio.			consentimientoVerbal	202	1	1	1	Question
@@ -1377,7 +1322,6 @@ b554c98c-d1c5-4dd3-a041-e49e1944de16	Centro de Salud	C1 Sospechosos	Consentimien
 ca8f4e81-7595-427e-9a73-58dd6d436235	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	elegibleETI_MSP	NULL			elegibleETI_MSP	202	0	1	1	Variable
 7fe2d65b-20ee-4873-884b-8134ef9fdf06	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente está elegible para el estudio de febril?	NULL			elegibleFebril	202	0	1	1	Variable
 f4690da3-a5f6-4679-bf73-1206024e63a8	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	elegibleIRAG	NULL			elegibleIRAG	202	0	1	1	Variable
-8d2ddb96-79a1-4a05-a629-6ce91d558128	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente está elegible para el estudio de neurologico?	NULL			elegibleNeuro	202	0	1	1	Variable
 9f156981-ec37-432f-bc08-7271fae83fe7	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente está elegible para el estudio de respiratorio?	NULL			elegibleRespira	202	0	1	1	Variable
 38e102b0-0571-4e10-bb3b-811bc551c638	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente está elegible para el estudio de IMCI?	NULL			elegibleRespiraIMCI	202	0	1	1	Variable
 43078312-9013-433c-b6af-2b97e46ea42b	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente está elegible para el estudio de respiratorio de ViCo tradicional?	NULL			elegibleRespiraViCo	202	0	1	1	Variable
@@ -1414,7 +1358,6 @@ e5ce4ebe-63f6-4d49-a5a4-9e61df6cf5ca	Centro de Salud	C1 Sospechosos	Consentimien
 758dc69f-8aa7-4a4f-b4b1-bb5c764d2a39	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	sospechosoETI_MSP	NULL			sospechosoETI_MSP	202	0	1	1	Variable
 8f4c2de7-6eab-4472-b234-521a5fe74f4f	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente es un caso sopechoso del estudio de febril?	NULL			sospechosoFebril	202	0	1	1	Variable
 cdcbab8d-5a0e-47f7-bbb4-67803e2ca6af	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	sospechosoIRAG	NULL			sospechosoIRAG	202	0	1	1	Variable
-7adbf7ea-c04b-465c-a885-16556f63c353	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente es un caso sopechoso del estudio de neurologico?	NULL			sospechosoNeuro	202	0	1	1	Variable
 43d089aa-9a25-4abc-a1fd-a0cb055764ae	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	La temperatura documentada más alta en las primeras 24 horas de admision.	NULL			temperaturaPrimeras24HorasCombin	202	0	1	1	Variable
 187b0c1e-7d75-436b-a6b3-70cf66dd9fab	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente recibió ventilación mecánica?	NULL			ventilacionMecanica	202	0	1	1	Variable
 18c2e9da-bab4-4d40-8617-8a338534165b	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	1	¿Recibió consentimiento verbal del paciente o tutor?	Debe indicar si el paciente o persona responsable de éste dio el CONSENTIMIENTO VERBAL para ser incluido en el estudio.			consentimientoVerbal	302	1	1	1	Question
@@ -1859,7 +1802,6 @@ ed47ea54-bf3e-4668-8649-d3d4575894fc	Puesto de Salud	P1 Sospechosos	Consentimien
 92d1eaea-6c6d-46cc-9deb-87f01c8890e8	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	elegibleETI_MSP	NULL			elegibleETI_MSP	302	0	1	1	Variable
 1deb5667-fbfa-429c-b581-f06e4dcc2295	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente está elegible para el estudio de febril?	NULL			elegibleFebril	302	0	1	1	Variable
 f4a2ff49-54f1-4806-a122-e507f1e73085	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	elegibleIRAG	NULL			elegibleIRAG	302	0	1	1	Variable
-bda09b55-9a02-409d-a87e-58c39a9a5fe3	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente está elegible para el estudio de neurologico?	NULL			elegibleNeuro	302	0	1	1	Variable
 d912528c-14b9-4b23-9a90-3e9a0dda454f	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente está elegible para el estudio de respiratorio?	NULL			elegibleRespira	302	0	1	1	Variable
 8ae6d334-9220-4400-a2b2-c1b04e439a88	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente está elegible para el estudio de IMCI?	NULL			elegibleRespiraIMCI	302	0	1	1	Variable
 04c12310-94b0-427e-8c6e-3ce98166e4f5	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente está elegible para el estudio de respiratorio de ViCo tradicional?	NULL			elegibleRespiraViCo	302	0	1	1	Variable
@@ -1896,6 +1838,5 @@ f2b31b60-05b9-4ad1-9cea-431785264f71	Puesto de Salud	P1 Sospechosos	Consentimien
 114fc5e3-462c-4ef6-ac49-eee33545572a	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	sospechosoETI_MSP	NULL			sospechosoETI_MSP	302	0	1	1	Variable
 9678fce1-f983-409f-88fc-5563b34031bf	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente es un caso sopechoso del estudio de febril?	NULL			sospechosoFebril	302	0	1	1	Variable
 ee16006a-2659-440f-8d67-92b3169c02f4	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	sospechosoIRAG	NULL			sospechosoIRAG	302	0	1	1	Variable
-e8363408-9205-4109-812d-d7fe1d8bca7e	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente es un caso sopechoso del estudio de neurologico?	NULL			sospechosoNeuro	302	0	1	1	Variable
 ca5e6be2-19a9-470f-aaf9-a42b6e168744	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	La temperatura documentada más alta en las primeras 24 horas de admision.	NULL			temperaturaPrimeras24HorasCombin	302	0	1	1	Variable
 b7c66894-8507-4561-9c87-adeaacee4c89	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente recibió ventilación mecánica?	NULL			ventilacionMecanica	302	0	1	1	Variable
