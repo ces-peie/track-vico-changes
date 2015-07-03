@@ -159,3 +159,29 @@ Modifications to H3 Immunization and chronic disease
 ### odeleongt
 #### 2015-07-02 07:31:28 -0600
 Fixes to change definitions
+
+---
+
+# Remove follow up questions (HCP9 Seguimiento)
+## `19a2d527b59b2545b5db031ef4a08feab16ce530`
+### odeleongt
+#### 2015-07-02 09:32:04 -0600
+Remove follow up questions (HCP9 Seguimiento)
+This questionnaire section was inactive by design.
+
+---
+
+# Remove questions for neurological syndromes
+## `d1eca38bc69c589b49727f9c44eba337a6db51d0`
+### odeleongt
+#### 2015-07-03 09:15:15 -0600
+Remove questions for neurological syndromes
+Questions removed from the sections:
+
+- H1 Sospechosos
+- Revisión del expediente médico
+- H2 Inscripción
+- H7 Egreso
+
+and related variables
+
