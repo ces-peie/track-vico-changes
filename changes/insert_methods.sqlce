@@ -1,0 +1,1237 @@
+/*
+
+*/
+
+
+-- Delete all methods in the questionnaire, to avoid duplications when inserting the updated versions
+DELETE Method;
+
+/*
+Follow the SQL operations to insert EVERY method into the questionnaire.
+Use the following template to insert new methods (modify the <markers> as appropriate)
+	INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), <Method name>, 'UserMethod', <.NET code for the method>)
+*/
+
+
+-- CreateSubject initializes some basic variables
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'CreateSubject', 'UserMethod', '        Public Shared Sub CreateSubject()
+
+            CurrentSubject("elegibleDiarrea") = 2
+
+            CurrentSubject("elegibleRespira") = 2
+            CurrentSubject("elegibleRespiraIMCI") = 2
+            CurrentSubject("elegibleRespiraViCo") = 2
+
+            CurrentSubject("sospechosoIRAG") = 2
+            CurrentSubject("elegibleIRAG") = 2
+            CurrentSubject("sospechosoETI_MSP") = 2
+            CurrentSubject("elegibleETI_MSP") = 2
+
+            CurrentSubject("elegibleNeuro") = 2
+            CurrentSubject("sospechosoNeuro") = 2
+
+            CurrentSubject("elegibleFebril") = 2
+            CurrentSubject("sospechosoFebril") = 2
+
+
+            CurrentSubject("pacienteInscritoViCo") = 2
+        End Sub');
+
+-- Method to validate the VICo subject ID
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'esIDValido', 'UserMethod', '    Public Shared Function esIDValido(ByVal InputValue As String) As Boolean
+
+        '' Check the length of the ID
+        If InputValue.Length <> 11 Then
+            MessageBox.Show("El ID debe tener 11 caracteres de la forma" & vbCrLf & "##-#-####-#", "ID Incorrecto")
+            Return False
+        End If
+
+        '' Check if the characters in the TextBoxes are only digits.
+        If Not IsNumeric(InputValue.Substring(0, 2)) OrElse Not IsNumeric(InputValue.Substring(3, 1)) OrElse Not IsNumeric(InputValue.Substring(5, 4)) OrElse Not IsNumeric(InputValue.Substring(10, 1)) Then
+            MessageBox.Show("El ID solamente debe tener dígitos.", "ID Incorrecto")
+            Return False
+        End If
+
+
+        '' Verifiy the check digit
+		''-----------------------------------------------------------------------
+        Dim acumulator As Integer = 0
+        Dim factor As Integer = 1
+
+        For idx As Integer = InputValue.Length - 3 To 5 Step -1
+            acumulator += factor * Integer.Parse(InputValue(idx))
+            factor += 2
+        Next
+
+        acumulator = acumulator Mod 10
+		''-----------------------------------------------------------------------
+		
+        If Not acumulator = Integer.Parse(InputValue.Substring(10,1)) Then
+            MessageBox.Show("El dígito verificador es incorrecto.", "ID Incorrecto")
+            Return False
+        End If
+
+        '' Verifiy the site code
+        If Not CurrentSite.Code = InputValue.Substring(0,4) Then
+            MessageBox.Show("El código del sitio es incorrecto." & vbCrLf & "Use " & CurrentSite.Code, "ID Incorrecto")
+            Return False
+        End If
+
+		'' Validar si el id no ha sido utilizado
+		If DA.Data.ExecuteScalar(String.Format("SELECT COUNT(*) FROM S_{0} WHERE SASubjectID = ''{1}''", CurrentQuestionnaireSet.QuestionnaireSetID, InputValue)) > 0 Then
+			MessageBox.Show("Este ID ya fue asignado a otro paciente.", "ID Incorrecto")
+			Return False
+		End If
+
+		'' Agregar el código de nombre
+		If CurrentSubject("nombres") IsNot Nothing AndAlso CurrentSubject("apellidos") IsNot Nothing Then
+			Dim name As String = ""
+			Dim lastName As String = ""
+
+			name = CStr(CurrentSubject("nombres")).Trim
+			lastName = CStr(CurrentSubject("apellidos")).Trim
+
+			Dim nameComponent As String = ""
+			Dim lastNameComponent As String = ""
+
+
+			If name IsNot Nothing Then _
+				If name.Length <= 1 Then nameComponent = name Else nameComponent = name.Substring(0, 2)
+
+			If lastName IsNot Nothing Then _
+				If lastName.Length <= 1 Then lastNameComponent = lastName Else lastNameComponent = lastName.Substring(lastName.Length - 2, 2)
+
+
+			CurrentSubject("codigoNombre") = nameComponent + "-" + lastNameComponent
+
+		End If
+	
+        Return True
+
+    End Function
+');	
+
+
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'ElegibleRespiraIMCI', 'UserMethod', '        Public Shared Sub ElegibleRespiraIMCI()
+
+            If CurrentSubject("edadAnios") Is Nothing OrElse (CurrentSubject("edadAnios") = 0 AndAlso CurrentSubject("edadMeses") Is Nothing) Is Nothing Then
+                CurrentSubject("elegibleRespiraIMCI") = 2
+                Exit Sub
+            End If
+
+
+            Dim H2CSection As New Global.QM.PDA.BO.Section(6)
+
+
+            If (CurrentSubject("edadAnios") = 0 AndAlso CurrentSubject("edadMeses") < 2) _
+                AndAlso _
+                ( _
+                    (CurrentSubject("sintomasRespiraTaquipnea") = 1 OrElse CurrentSubject("sintomasRespiraNinioCostillasHundidas") = 1) _
+                    OrElse _
+                    ( _
+                        (CurrentSubject("sintomasRespiraTos") = 1 OrElse CurrentSubject("sintomasRespiraDificultadRespirar") = 1) _
+                        AndAlso _
+                        ( _
+                                   CurrentSubject("sintomasRespiraNinioEstridor") = 1 _
+                            OrElse CurrentSubject("hipoxemia") = 1 _
+                            OrElse H2CSection("ninioCianosisObs") = 1 _
+                            OrElse H2CSection("ninioBeberMamar") = 2 _
+                            OrElse H2CSection("ninioVomitaTodo") = 1 _
+                            OrElse H2CSection("ninioTuvoConvulsiones") = 1 _
+                            OrElse H2CSection("ninioTuvoConvulsionesObs") = 1 _
+                            OrElse H2CSection("ninioTieneLetargiaObs") = 1 _
+                            OrElse H2CSection("ninioDesmayoObs") = 1 _
+                            OrElse H2CSection("ninioCabeceoObs") = 1 _
+                            OrElse H2CSection("ninioMovimientoObs") = 2 _
+                            OrElse H2CSection("ninioMovimientoObs") = 3 _
+                        ) _
+                    ) _
+                ) _
+            Then
+                CurrentSubject("elegibleRespiraIMCI") = 1
+
+            ElseIf _
+                ( _
+                    (CurrentSubject("edadAnios") = 0 AndAlso CurrentSubject("edadMeses") >= 2) _
+                    OrElse _
+                    (CurrentSubject("edadAnios") > 0 AndAlso CurrentSubject("edadAnios") < 5) _
+                ) _
+                AndAlso _
+                (CurrentSubject("sintomasRespiraTos") = 1 OrElse CurrentSubject("sintomasRespiraDificultadRespirar") = 1) _
+                AndAlso _
+                ( _
+                           CurrentSubject("sintomasRespiraTaquipnea") = 1 _
+                    OrElse CurrentSubject("sintomasRespiraNinioCostillasHundidas") = 1 _
+                    OrElse CurrentSubject("sintomasRespiraNinioEstridor") = 1 _
+                    OrElse CurrentSubject("hipoxemia") = 1 _
+                    OrElse H2CSection("ninioCianosisObs") = 1 _
+                    OrElse H2CSection("ninioBeberMamar") = 2 _
+                    OrElse H2CSection("ninioVomitaTodo") = 1 _
+                    OrElse H2CSection("ninioTuvoConvulsiones") = 1 _
+                    OrElse H2CSection("ninioTuvoConvulsionesObs") = 1 _
+                    OrElse H2CSection("ninioTieneLetargiaObs") = 1 _
+                    OrElse H2CSection("ninioDesmayoObs") = 1 _
+                    OrElse H2CSection("ninioCabeceoObs") = 1 _
+                ) _
+            Then
+                CurrentSubject("elegibleRespiraIMCI") = 1
+            Else
+                CurrentSubject("elegibleRespiraIMCI") = 2
+            End If
+
+        End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_CriteriaIRAG', 'UserMethod', '        Public Shared Sub EV_CriteriaIRAG()
+
+            If CurrentSubject("edadAnios") Is Nothing OrElse CurrentSubject("indicacionRespira") Is Nothing Then
+                CurrentSubject("sospechosoIRAG") = 2
+                Exit Sub
+            End If
+
+            If (CurrentSubject("edadAnios") < 5 And (CurrentSubject("indicacionRespira") = 5 Or CurrentSubject("indicacionRespira") = 26) _
+                And CurrentSubject("elegibleRespira") = 1) _
+                Or _
+                (CurrentSubject("edadAnios") >= 5 _
+                    And (CurrentSubject("temperaturaPrimeras24Horas") >= 38) _
+                    And (CurrentSubject("sintomasRespiraTos") = 1 Or CurrentSubject("sintomasRespiraDolorGarganta") = 1) _
+                    And (CurrentSubject("sintomasRespiraFaltaAire") = 1 Or CurrentSubject("sintomasRespiraDificultadRespirar") = 1) _
+                    And CurrentSubject("elegibleRespira") = 1 _
+                ) _
+            Then
+                CurrentSubject("sospechosoIRAG") = 1
+            Else
+                CurrentSubject("sospechosoIRAG") = 2
+            End If
+
+            Action_H2_EV_inscribirIRAG()
+
+        End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_FiebreOHistoriaFiebre', 'UserMethod', '        Public Shared Sub EV_FiebreOHistoriaFiebre()
+
+            If CurrentSubject("sintomasRespiraFiebre") = 1 OrElse _
+                (CurrentSubject("sintomasFiebre") = 1 AndAlso CurrentSubject("sintomasFiebreDias") >= 0 AndAlso CurrentSubject("sintomasFiebreDias") < 7) _
+            Then
+                CurrentSubject("fiebreOHistoriaFiebre") = 1
+            Else
+                CurrentSubject("fiebreOHistoriaFiebre") = 2
+            End If
+
+        End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_CasoSeveroRespiratorio', 'UserMethod', 'Public Shared Sub Action_Study_CasoSeveroRespiratorio()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_Catchment', 'UserMethod', 'Public Shared Sub Action_Study_Catchment()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_CuidadoIntensivo', 'UserMethod', 'Public Shared Sub Action_Study_CuidadoIntensivo()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_DuracionEstancia', 'UserMethod', 'Public Shared Sub Action_Study_DuracionEstancia()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_EdadTotalAniosDecimal', 'UserMethod', 'Public Shared Sub Action_Study_EdadTotalAniosDecimal()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_EdadTotalDias', 'UserMethod', 'Public Shared Sub Action_Study_EdadTotalDias()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_EdadTotalMesesDecimal', 'UserMethod', 'Public Shared Sub Action_Study_EdadTotalMesesDecimal()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_ElegibleZinc', 'UserMethod', 'Public Shared Sub Action_Study_ElegibleZinc()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_epiWeekAdmision', 'UserMethod', 'Public Shared Sub Action_Study_epiWeekAdmision()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_FechaHoraAdmision', 'UserMethod', 'Public Shared Sub Action_Study_FechaHoraAdmision()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_Hipoxemia', 'UserMethod', 'Public Shared Sub Action_Study_Hipoxemia()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_MoribundoSospechoso', 'UserMethod', 'Public Shared Sub Action_Study_MoribundoSospechoso()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_MoribundoSospechosoFecha', 'UserMethod', 'Public Shared Sub Action_Study_MoribundoSospechosoFecha()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_MoribundoViCoFecha', 'UserMethod', 'Public Shared Sub Action_Study_MoribundoViCoFecha()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_MuerteCualPaso', 'UserMethod', 'Public Shared Sub Action_Study_MuerteCualPaso()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_MuerteHospital', 'UserMethod', 'Public Shared Sub Action_Study_MuerteHospital()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_MuerteSospechoso', 'UserMethod', 'Public Shared Sub Action_Study_MuerteSospechoso()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_MuerteSospechosoFecha', 'UserMethod', 'Public Shared Sub Action_Study_MuerteSospechosoFecha()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_MuerteViCo', 'UserMethod', 'Public Shared Sub Action_Study_MuerteViCo()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_MuerteViCoFecha', 'UserMethod', 'Public Shared Sub Action_Study_MuerteViCoFecha()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_SeguimientoPacienteCondicion', 'UserMethod', 'Public Shared Sub Action_Study_SeguimientoPacienteCondicion()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_SignosPeligro', 'UserMethod', 'Public Shared Sub Action_Study_SignosPeligro()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_TemperaturaPrimeras24HorasCombin', 'UserMethod', 'Public Shared Sub Action_Study_TemperaturaPrimeras24HorasCombin()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_VentilacionMecanica', 'UserMethod', 'Public Shared Sub Action_Study_VentilacionMecanica()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_pacienteInscritoViCoFecha', 'UserMethod', 'Public Shared Sub Action_Study_pacienteInscritoViCoFecha()
+    CurrentSubject("pacienteInscritoViCoFecha") = Today()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_Study_sintomasFiebreDias', 'UserMethod', 'Public Shared Sub Action_Study_sintomasFiebreDias()
+    Dim PDAInsertDate As Object = CurrentSection("PDAInsertDate")
+    Dim sintomasFiebreFechaInicio As Object = CurrentSection("sintomasFiebreFechaInicio")
+    If PDAInsertDate Is Nothing Or sintomasFiebreFechaInicio Is Nothing Then
+        CurrentSubject("sintomasFiebreDias") = Nothing
+    Else
+        CurrentSubject("sintomasFiebreDias") = (CDate(PDAInsertDate).Date - CDate(sintomasFiebreFechaInicio)).Days
+    End If
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_H1_SalaIngreso', 'UserMethod', 'Public Shared Sub Action_H1_SalaIngreso()
+    If CurrentSubject("salaIngreso") = 6 And CurrentSubject("fechaHoraAdmision") Is Nothing Then
+        CurrentSubject("fechaHoraAdmision") = CurrentSection("PDAInsertDate")
+    End If
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_H1_ConcatenateNames', 'UserMethod', 'Public Shared Sub Action_H1_ConcatenateNames()
+    CurrentSubject("nombreCompleto") = CurrentSubject("nombres") + ";" + CurrentSubject("apellidos")
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_H2_EV_sospechosoNeuro', 'UserMethod', 'Public Shared Sub Action_H2_EV_sospechosoNeuro()
+    If CurrentSubject("departamento") Is Nothing _
+            OrElse (CurrentSubject("temperaturaPrimeras24Horas") Is Nothing AndAlso CurrentSubject("sintomasFiebre") Is Nothing) _
+            OrElse (CurrentSubject("puncionLumbar") Is Nothing) _
+     Then
+        CurrentSubject("sospechosoNeuro") = 2
+        Action_H2_EV_CriteriaNeuro()
+        Exit Sub
+    End If
+    If CurrentSubject("puncionLumbar") = 1 Then
+        CurrentSubject("sospechosoNeuro") = 1
+    Else
+        CurrentSubject("sospechosoNeuro") = 2
+    End If
+    Action_H2_EV_CriteriaNeuro()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_H2_EV_CriteriaNeuro', 'UserMethod', 'Public Shared Sub Action_H2_EV_CriteriaNeuro()
+    Action_H2_EV_sospechosoFebril()
+End Sub
+');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_H2_EV_CriteriaRespira', 'UserMethod', 'Public Shared Sub Action_H2_EV_CriteriaRespira()
+    Action_H2_EV_CriteriaRespiraViCo()
+    ElegibleRespiraIMCI()
+    If CurrentSubject("elegibleRespiraViCo") = 1 OrElse CurrentSubject("elegibleRespiraIMCI") = 1 Then
+        CurrentSubject("elegibleRespira") = 1
+    Else
+        CurrentSubject("elegibleRespira") = 2
+    End If
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_H2_EV_CriteriaRespiraViCo', 'UserMethod', 'Public Shared Sub Action_H2_EV_CriteriaRespiraViCo()
+    If CurrentSubject("departamento") Is Nothing Or CurrentSubject("sintomasRespira") Is Nothing Then
+        If CurrentSubject("elegibleRespiraViCo") <> 2 Then
+            MsgBox("IMPORTANTE:¡¡Con este cambio ahora el paciente NO es elegible para el estudio de RESPIRATORIO!!")
+        End If
+        CurrentSubject("elegibleRespiraViCo") = 2
+        Exit Sub
+    End If
+    If ((CurrentSubject.SiteCode.StartsWith("06") And (CurrentSubject("departamento") = 6 OrElse CurrentSubject("departamento") = 21 OrElse CurrentSubject("departamento") = 22)) _
+        Or _
+        (CurrentSubject.SiteCode.StartsWith("09") And (CurrentSubject("departamento") = 9 And (CurrentSubject("municipio") = 901 Or CurrentSubject("municipio") = 902 Or CurrentSubject("municipio") = 903 Or CurrentSubject("municipio") = 909 Or CurrentSubject("municipio") = 910 Or CurrentSubject("municipio") = 911 Or CurrentSubject("municipio") = 913 Or CurrentSubject("municipio") = 914 Or CurrentSubject("municipio") = 916 Or CurrentSubject("municipio") = 923))) _
+        ) _
+        AndAlso (CurrentSubject("sintomasRespira") = 1) _
+            AndAlso (CurrentSubject("sintomasRespiraFiebre") = 1 OrElse CurrentSubject("sintomasRespiraHipotermia") = 1 OrElse CurrentSubject("sintomasFiebre") = 1 _
+                OrElse CurrentSubject("sintomasRespiraCGB") = 1 OrElse CurrentSubject("diferencialAnormal") = 1) Then
+        If CurrentSubject("elegibleRespiraViCo") = 2 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente es ELEGIBLE para el estudio de RESPIRATORIO!")
+        End If
+        CurrentSubject("elegibleRespiraViCo") = 1
+    Else
+        If CurrentSubject("elegibleRespiraViCo") = 1 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente NO es elegible para el estudio de RESPIRATORIO!")
+        End If
+        CurrentSubject("elegibleRespiraViCo") = 2
+    End If
+    Action_H2_EV_sospechosoFebril()
+    EV_CriteriaIRAG()
+    Action_Study_CasoSeveroRespiratorio()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_H2_EV_inscribirIRAG', 'UserMethod', 'Public Shared Sub Action_H2_EV_inscribirIRAG()
+    If CurrentSubject("sospechosoIRAG") Is Nothing Or CurrentSubject("enfermedadEmpezoHaceDias") Is Nothing Then
+        If CurrentSubject("elegibleIRAG") <> 2 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente NO es elegible para el estudio de IRAG!")
+        End If
+        CurrentSubject("elegibleIRAG") = 2
+        Exit Sub
+    End If
+    If CurrentSubject("sospechosoIRAG") = 1 And CurrentSubject("enfermedadEmpezoHaceDias") <= 3 Then
+        CurrentSubject("elegibleIRAG") = 1
+    Else
+        CurrentSubject("elegibleIRAG") = 2
+    End If
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_H2_EV_CriteriaDiarrea', 'UserMethod', 'Public Shared Sub Action_H2_EV_CriteriaDiarrea()
+    If CurrentSubject.SiteCode = "01-1" OrElse (CurrentSubject("departamento") Is Nothing And CurrentSubject("diarreaComenzoHaceDias") Is Nothing And CurrentSubject("diarreaMaximoAsientos1Dia") Is Nothing And CurrentSubject("diarreaOtroEpisodioSemanaAnterior") Is Nothing And CurrentSubject("edadAnios") Is Nothing) Then
+        If CurrentSubject("elegibleDiarrea") <> 2 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente NO es elegible para el estudio de DIARREA!")
+        End If
+        CurrentSubject("elegibleDiarrea") = 2
+        Exit Sub
+    End If
+    If ( _
+        (CurrentSubject.SiteCode.StartsWith("06") And CurrentSubject("departamento") = 6) _
+        Or _
+        (CurrentSubject.SiteCode.StartsWith("09") And CurrentSubject("departamento") = 9 And (CurrentSubject("municipio") = 901 Or CurrentSubject("municipio") = 902 Or CurrentSubject("municipio") = 903 Or CurrentSubject("municipio") = 909 Or CurrentSubject("municipio") = 910 Or CurrentSubject("municipio") = 911 Or CurrentSubject("municipio") = 913 Or CurrentSubject("municipio") = 914 Or CurrentSubject("municipio") = 916 Or CurrentSubject("municipio") = 923)) _
+        ) _
+        And CurrentSubject("diarreaComenzoHaceDias") <= 14 And CurrentSubject("diarreaMaximoAsientos1Dia") >= 3 And CurrentSubject("diarreaOtroEpisodioSemanaAnterior") = 2 _
+        And CurrentSubject("edadAnios") < 5 _
+    Then
+        If CurrentSubject("elegibleDiarrea") = 2 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente es ELEGIBLE para el estudio de DIARREA!")
+        End If
+        CurrentSubject("elegibleDiarrea") = 1
+    Else
+        If CurrentSubject("elegibleDiarrea") = 1 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente NO es elegible para el estudio de DIARREA!")
+        End If
+        CurrentSubject("elegibleDiarrea") = 2
+    End If
+    Action_H2_EV_sospechosoFebril()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_H2_EV_CriteriaFebril', 'UserMethod', 'Public Shared Sub Action_H2_EV_CriteriaFebril()
+    If _
+         CurrentSubject.SiteCode = "01-1" OrElse CurrentSubject("departamento") Is Nothing OrElse (CurrentSubject("elegibleDiarrea") = 1 Or CurrentSubject("elegibleRespira") = 1 Or CurrentSubject("elegibleNeuro") = 1) OrElse CurrentSubject("fiebreDiagnostico") Is Nothing Then
+        If CurrentSubject("elegibleFebril") <> 2 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente NO es elegible para el estudio de FEBRIL!")
+        End If
+        CurrentSubject("elegibleFebril") = 2
+        Exit Sub
+    End If
+    If CurrentSubject("sospechosoFebril") = 1 _
+            AndAlso CurrentSubject("elegibleDiarrea") = 2 _
+            AndAlso CurrentSubject("elegibleRespira") = 2 _
+            AndAlso CurrentSubject("elegibleNeuro") = 2 _
+            AndAlso CurrentSubject("fiebreDiagnostico") = 0 _
+        Then
+        If CurrentSubject("elegibleFebril") = 2 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente es ELEGIBLE para el estudio de FEBRIL!")
+        End If
+        CurrentSubject("elegibleFebril") = 1
+    Else
+        If CurrentSubject("elegibleFebril") = 1 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente NO es elegible para el estudio de FEBRIL!")
+        End If
+        CurrentSubject("elegibleFebril") = 2
+    End If
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_H2_EV_sospechosoFebril', 'UserMethod', 'Public Shared Sub Action_H2_EV_sospechosoFebril()
+    If CurrentSubject("departamento") Is Nothing _
+            OrElse (CurrentSubject("temperaturaPrimeras24Horas") Is Nothing AndAlso CurrentSubject("sintomasFiebre") Is Nothing) _
+    Then
+        CurrentSubject("sospechosoFebril") = 2
+        Exit Sub
+    End If
+    If (CurrentSubject.SiteCode.StartsWith("06") And (CurrentSubject("departamento") = 6 Or CurrentSubject("departamento") = 21 Or CurrentSubject("departamento") = 22)) _
+        AndAlso (CurrentSubject("temperaturaPrimeras24Horas") >= 38.0 Or (CurrentSubject("sintomasFiebre") = 1 And CurrentSubject("sintomasFiebreDias") < 7)) _
+    Then
+        CurrentSubject("sospechosoFebril") = 1
+    Else
+        CurrentSubject("sospechosoFebril") = 2
+    End If
+    Action_H2_EV_CriteriaFebril()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_H2_EV_SintomasRespira', 'UserMethod', 'Public Shared Sub Action_H2_EV_SintomasRespira()
+    If (CurrentSubject("sintomasRespiraTos") = 1 _
+        OrElse CurrentSubject("sintomasRespiraEsputo") = 1 _
+        OrElse CurrentSubject("sintomasRespiraHemoptisis") = 1 _
+        OrElse CurrentSubject("sintomasRespiraDolorPechoRespirar") = 1 _
+        OrElse CurrentSubject("sintomasRespiraDificultadRespirar") = 1 _
+        OrElse CurrentSubject("sintomasRespiraFaltaAire") = 1 _
+        OrElse CurrentSubject("sintomasRespiraDolorGarganta") = 1 _
+        OrElse CurrentSubject("sintomasRespiraTaquipnea") = 1 _
+        OrElse CurrentSubject("sintomasRespiraNinioCostillasHundidas") = 1 _
+        OrElse CurrentSubject("resultadoAnormalExamenPulmones") = 1 _
+        ) _
+    Then
+        CurrentSubject("sintomasRespira") = 1
+    Else
+        CurrentSubject("sintomasRespira") = 2
+    End If
+    Action_H2_EV_CriteriaRespira()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_H2_EV_Departamento', 'UserMethod', 'Public Shared Sub Action_H2_EV_Departamento()
+    Action_H2_EV_CriteriaDiarrea()
+    Action_H2_EV_CriteriaRespira()
+    Action_H2_EV_sospechosoNeuro()
+    Action_H2_EV_sospechosoFebril()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_H2_EV_CriteriaCGB', 'UserMethod', 'Public Shared Sub Action_H2_EV_CriteriaCGB()
+    If CurrentSubject("conteoGlobulosBlancos") Is Nothing Or CurrentSubject("edadAnios") Is Nothing Then
+        CurrentSubject("sintomasRespiraCGB") = 2
+        Action_H2_EV_CriteriaRespira()
+        Exit Sub
+    End If
+    If (CurrentSubject("edadAnios") >= 5 And (CurrentSubject("conteoGlobulosBlancos") < 3000 Or CurrentSubject("conteoGlobulosBlancos") > 11000)) _
+     Or (CurrentSubject("edadAnios") < 5 And (CurrentSubject("conteoGlobulosBlancos") < 5500 Or CurrentSubject("conteoGlobulosBlancos") > 15000)) Then
+        CurrentSubject("sintomasRespiraCGB") = 1
+    Else
+        CurrentSubject("sintomasRespiraCGB") = 2
+    End If
+    Action_H2_EV_CriteriaRespira()
+    Action_H2_EV_sospechosoNeuro()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_H2_EV_Taquipnea', 'UserMethod', 'Public Shared Sub Action_H2_EV_Taquipnea()
+    If (CurrentSubject("edadAnios") >= 5 _
+          AndAlso _
+        (CurrentSubject("respiraPorMinutoPrimaras24Horas") >= 20 OrElse CurrentSubject("respiraPorMinuto") >= 20) _
+       ) _
+ _
+    OrElse _
+       (CurrentSubject("edadAnios") < 5 _
+          AndAlso _
+        CurrentSubject("edadAnios") >= 1 _
+          AndAlso _
+        (CurrentSubject("respiraPorMinutoPrimaras24Horas") >= 40 OrElse CurrentSubject("respiraPorMinuto") >= 40) _
+       ) _
+ _
+    OrElse _
+       (CurrentSubject("edadAnios") = 0 _
+          AndAlso _
+        CurrentSubject("edadMeses") IsNot Nothing _
+          AndAlso _
+        CurrentSubject("edadMeses") >= 2 _
+          AndAlso _
+        CurrentSubject("edadMeses") <= 11 _
+          AndAlso _
+        (CurrentSubject("respiraPorMinutoPrimaras24Horas") >= 50 OrElse CurrentSubject("respiraPorMinuto") >= 50) _
+       ) _
+ _
+    OrElse _
+       (CurrentSubject("edadAnios") = 0 _
+          AndAlso _
+        CurrentSubject("edadMeses") IsNot Nothing _
+          AndAlso _
+        CurrentSubject("edadMeses") < 2 _
+          AndAlso _
+        (CurrentSubject("respiraPorMinutoPrimaras24Horas") >= 60 OrElse CurrentSubject("respiraPorMinuto") >= 60) _
+       ) _
+ _
+    Then
+        CurrentSubject("sintomasRespiraTaquipnea") = 1
+    Else
+        CurrentSubject("sintomasRespiraTaquipnea") = 2
+    End If
+    Action_H2_EV_SintomasRespira()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_H2_EV_Temperatura', 'UserMethod', 'Public Shared Sub Action_H2_EV_Temperatura()
+    If CurrentSubject("temperaturaPrimeras24Horas") >= 38.0 Then
+        CurrentSubject("sintomasRespiraFiebre") = 1
+        CurrentSubject("sintomasRespiraHipotermia") = 2
+    ElseIf (CurrentSubject("temperaturaPrimeras24Horas") IsNot Nothing And CurrentSubject("temperaturaPrimeras24Horas") < 35.5) Then
+        CurrentSubject("sintomasRespiraFiebre") = 2
+        CurrentSubject("sintomasRespiraHipotermia") = 1
+    ElseIf CurrentSubject("temperaturaPrimeras24Horas") < 38.0 And CurrentSubject("temperaturaPrimeras24Horas") >= 35.5 Then
+        CurrentSubject("sintomasRespiraFiebre") = 2
+        CurrentSubject("sintomasRespiraHipotermia") = 2
+    Else
+        CurrentSubject("sintomasRespiraFiebre") = Nothing
+        CurrentSubject("sintomasRespiraHipotermia") = Nothing
+    End If
+    EV_FiebreOHistoriaFiebre()
+    Action_H2_EV_CriteriaRespira()
+    Action_H2_EV_sospechosoNeuro()
+    Action_H2_EV_sospechosoFebril()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_H3A_EV_EnfermedadesCronicas', 'UserMethod', 'Public Shared Sub Action_H3A_EV_EnfermedadesCronicas()
+    If CurrentSection("enfermedadesCronicasAsma") = 1 Or CurrentSection("enfermedadesCronicasDiabetes") = 1 Or CurrentSection("enfermedadesCronicasCancer") = 1 Or CurrentSection("enfermedadesCronicasEnfermCorazon") = 1 Or CurrentSection("enfermedadesCronicasEnfermHigado") = 1 Or CurrentSection("enfermedadesCronicasEnfermRinion") = 1 Or CurrentSection("enfermedadesCronicasVIHSIDA") = 1 Or CurrentSection("enfermedadesCronicasOtras") = 1 Or CurrentSection("enfermedadesCronicasHipertension") = 1 Or CurrentSection("enfermedadesCronicasEnfermPulmones") = 1 Then
+        CurrentSection("enfermedadesCronicasAlguna") = 1
+    Else
+        CurrentSection("enfermedadesCronicasAlguna") = 2
+    End If
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_C1_ConcatenateNames', 'UserMethod', 'Public Shared Sub Action_C1_ConcatenateNames()
+    CurrentSubject("nombreCompleto") = CurrentSubject("nombres") + ";" + CurrentSubject("apellidos")
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_C1_EV_CriteriaDiarrea', 'UserMethod', 'Public Shared Sub Action_C1_EV_CriteriaDiarrea()
+    If CurrentSubject("municipio") Is Nothing And CurrentSubject("diarreaComenzoHaceDias") Is Nothing And CurrentSubject("diarreaMaximoAsientos1Dia") Is Nothing And CurrentSubject("diarreaOtroEpisodioSemanaAnterior") Is Nothing And CurrentSubject("edadAnios") Is Nothing Then
+        If CurrentSubject("elegibleDiarrea") <> 2 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente NO es elegible para el estudio de DIARREA!")
+        End If
+        CurrentSubject("elegibleDiarrea") = 2
+        Exit Sub
+    End If
+    If ( _
+            (CurrentSubject.SiteCode.StartsWith("06") And CurrentSubject("municipio") = 614) _
+            OrElse _
+            (CurrentSubject.SiteCode.StartsWith("09") And (CurrentSubject("municipio") = 911 Or CurrentSubject("municipio") = 914 Or CurrentSubject("municipio") = 923)) _
+        ) _
+        AndAlso CurrentSubject("diarreaComenzoHaceDias") <= 14 _
+        AndAlso CurrentSubject("diarreaMaximoAsientos1Dia") >= 3 _
+        AndAlso CurrentSubject("diarreaOtroEpisodioSemanaAnterior") = 2 _
+        AndAlso CurrentSubject("edadAnios") < 5 _
+    Then
+        If CurrentSubject("elegibleDiarrea") = 2 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente es ELEGIBLE para el estudio de DIARREA!")
+        End If
+        CurrentSubject("elegibleDiarrea") = 1
+    Else
+        If CurrentSubject("elegibleDiarrea") = 1 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente NO es elegible para el estudio de DIARREA!")
+        End If
+        CurrentSubject("elegibleDiarrea") = 2
+    End If
+    Action_C1_EV_sospechosoFebril()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_C1_EV_CriteriaRespira', 'UserMethod', 'Public Shared Sub Action_C1_EV_CriteriaRespira()
+    If (CurrentSubject("municipio") = 614 Or CurrentSubject("municipio") = 911 Or CurrentSubject("municipio") = 914 Or CurrentSubject("municipio") = 923) _
+            AndAlso _
+            CurrentSubject("temperaturaPrimeras24Horas") > 38 _
+            AndAlso (CurrentSection("sintomasRespiraTos14Dias") = 1 OrElse CurrentSection("sintomasRespiraGarganta14Dias") = 1) Then
+        If CurrentSubject("elegibleRespira") = 2 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente es ELEGIBLE para el estudio de RESPIRATORIO!")
+        End If
+        CurrentSubject("elegibleRespira") = 1
+    Else
+        If CurrentSubject("elegibleRespira") = 1 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente NO es elegible para el estudio de RESPIRATORIO!")
+        End If
+        CurrentSubject("elegibleRespira") = 2
+    End If
+    Action_C1_EV_sospechosoFebril()
+    Action_C1_EV_CriteriaETI_MSP()
+    Action_Study_CasoSeveroRespiratorio()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_C1_EV_CriteriaETI_MSP', 'UserMethod', 'Public Shared Sub Action_C1_EV_CriteriaETI_MSP()
+    If CurrentSubject("elegibleRespira") = 1 Then
+        CurrentSubject("sospechosoETI_MSP") = 1
+    Else
+        CurrentSubject("sospechosoETI_MSP") = 2
+    End If
+    Action_C1_EV_inscribirETI_MSP()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_C1_EV_inscribirETI_MSP', 'UserMethod', 'Public Shared Sub Action_C1_EV_inscribirETI_MSP()
+    If CurrentSubject("sospechosoETI_MSP") = 1 AndAlso CurrentSubject("enfermedadEmpezoHaceDias") IsNot Nothing AndAlso CurrentSubject("enfermedadEmpezoHaceDias") <= 3 Then
+        CurrentSubject("elegibleETI_MSP") = 1
+    Else
+        CurrentSubject("elegibleETI_MSP") = 2
+    End If
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_C1_EV_sospechosoFebril', 'UserMethod', 'Public Shared Sub Action_C1_EV_sospechosoFebril()
+    If CurrentSubject("municipio") Is Nothing _
+            OrElse (CurrentSubject("temperaturaPrimeras24Horas") Is Nothing AndAlso CurrentSubject("sintomasFiebre") Is Nothing) _
+    Then
+        CurrentSubject("sospechosoFebril") = 2
+        Exit Sub
+    End If
+    If ( _
+            (CurrentSubject.SiteCode.StartsWith("06") And (CurrentSubject("municipio") = 614)) _
+        ) _
+        AndAlso (CurrentSubject("temperaturaPrimeras24Horas") >= 38.0 Or (CurrentSubject("sintomasFiebre") = 1 And CurrentSubject("sintomasFiebreDias") < 7)) _
+    Then
+        CurrentSubject("sospechosoFebril") = 1
+    Else
+        CurrentSubject("sospechosoFebril") = 2
+    End If
+    Action_C1_EV_CriteriaFebril()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_C1_EV_CriteriaFebril', 'UserMethod', 'Public Shared Sub Action_C1_EV_CriteriaFebril()
+    If CurrentSubject("municipio") Is Nothing OrElse (CurrentSubject("elegibleDiarrea") = 1 Or CurrentSubject("elegibleRespira") = 1 Or CurrentSubject("elegibleNeuro") = 1) OrElse CurrentSubject("fiebreDiagnostico") Is Nothing Then
+        If CurrentSubject("elegibleFebril") <> 2 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente NO es elegible para el estudio de FEBRIL!")
+        End If
+        CurrentSubject("elegibleFebril") = 2
+        Exit Sub
+    End If
+    If CurrentSubject("sospechosoFebril") = 1 _
+            AndAlso CurrentSubject("elegibleDiarrea") = 2 _
+            AndAlso CurrentSubject("elegibleRespira") = 2 _
+            AndAlso CurrentSubject("elegibleNeuro") = 2 _
+            AndAlso CurrentSubject("fiebreDiagnostico") = 0 _
+        Then
+        If CurrentSubject("elegibleFebril") = 2 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente es ELEGIBLE para el estudio de FEBRIL!")
+        End If
+        CurrentSubject("elegibleFebril") = 1
+    Else
+        If CurrentSubject("elegibleFebril") = 1 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente NO es elegible para el estudio de FEBRIL!")
+        End If
+        CurrentSubject("elegibleFebril") = 2
+    End If
+End Sub
+');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_C1_EV_Municipio', 'UserMethod', 'Public Shared Sub Action_C1_EV_Municipio()
+    Action_C1_EV_CriteriaDiarrea()
+    Action_C1_EV_CriteriaRespira()
+    Action_C1_EV_CriteriaFebril()
+    Action_Study_Catchment()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_C1_EV_Temperatura', 'UserMethod', 'Public Shared Sub Action_C1_EV_Temperatura()
+    If CurrentSubject("temperaturaPrimeras24Horas") >= 38.0 Then
+        CurrentSubject("sintomasRespiraFiebre") = 1
+        CurrentSubject("sintomasRespiraHipotermia") = 2
+    ElseIf (CurrentSubject("temperaturaPrimeras24Horas") IsNot Nothing And CurrentSubject("temperaturaPrimeras24Horas") < 35.5) Then
+        CurrentSubject("sintomasRespiraFiebre") = 2
+        CurrentSubject("sintomasRespiraHipotermia") = 1
+    ElseIf CurrentSubject("temperaturaPrimeras24Horas") < 38.0 And CurrentSubject("temperaturaPrimeras24Horas") >= 35.5 Then
+        CurrentSubject("sintomasRespiraFiebre") = 2
+        CurrentSubject("sintomasRespiraHipotermia") = 2
+    Else
+        CurrentSubject("sintomasRespiraFiebre") = Nothing
+        CurrentSubject("sintomasRespiraHipotermia") = Nothing
+    End If
+    EV_FiebreOHistoriaFiebre()
+    Action_C1_EV_CriteriaRespira()
+    Action_C1_EV_CriteriaFebril()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_C1_EV_Fiebre', 'UserMethod', 'Public Shared Sub Action_C1_EV_Fiebre()
+    EV_FiebreOHistoriaFiebre()
+    Action_C1_EV_CriteriaFebril()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_C1_c_sintomasRespiraTos14Dias', 'UserMethod', 'Public Shared Sub Action_C1_c_sintomasRespiraTos14Dias()
+    If CurrentSection("sintomasRespiraTosDias") <= 14 Then
+        CurrentSection("sintomasRespiraTos14Dias") = 1
+    Else
+        CurrentSection("sintomasRespiraTos14Dias") = 2
+    End If
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_C1_c_sintomasRespiraGarganta14Dias', 'UserMethod', 'Public Shared Sub Action_C1_c_sintomasRespiraGarganta14Dias()
+    If CurrentSection("sintomasRespiraGargantaDias") <= 14 Then
+        CurrentSection("sintomasRespiraGarganta14Dias") = 1
+    Else
+        CurrentSection("sintomasRespiraGarganta14Dias") = 2
+    End If
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_C2A_EV_EnfermedadesCronicas', 'UserMethod', 'Public Shared Sub Action_C2A_EV_EnfermedadesCronicas()
+    If CurrentSection("enfermedadesCronicasAsma") = 1 _
+            Or CurrentSection("enfermedadesCronicasDiabetes") = 1 _
+            Or CurrentSection("enfermedadesCronicasCancer") = 1 _
+            Or CurrentSection("enfermedadesCronicasEnfermCorazon") = 1 _
+            Or CurrentSection("enfermedadesCronicasEnfermHigado") = 1 _
+            Or CurrentSection("enfermedadesCronicasEnfermRinion") = 1 _
+            Or CurrentSection("enfermedadesCronicasVIHSIDA") = 1 _
+            Or CurrentSection("enfermedadesCronicasOtras") = 1 _
+            Or CurrentSection("enfermedadesCronicasHipertension") = 1 _
+            Or CurrentSection("enfermedadesCronicasEnfermPulmones") = 1 _
+    Then
+        CurrentSection("enfermedadesCronicasAlguna") = 1
+    Else
+        CurrentSection("enfermedadesCronicasAlguna") = 2
+    End If
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_P1_ConcatenateNames', 'UserMethod', 'Public Shared Sub Action_P1_ConcatenateNames()
+    CurrentSubject("nombreCompleto") = CurrentSubject("nombres") + ";" + CurrentSubject("apellidos")
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_P1_EV_CriteriaDiarrea', 'UserMethod', 'Public Shared Sub Action_P1_EV_CriteriaDiarrea()
+    If CurrentSubject("municipio") Is Nothing And CurrentSubject("diarreaComenzoHaceDias") Is Nothing And CurrentSubject("diarreaMaximoAsientos1Dia") Is Nothing And CurrentSubject("diarreaOtroEpisodioSemanaAnterior") Is Nothing And CurrentSubject("edadAnios") Is Nothing Then
+        If CurrentSubject("elegibleDiarrea") <> 2 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente NO es elegible para el estudio de DIARREA!")
+        End If
+        CurrentSubject("elegibleDiarrea") = 2
+        Exit Sub
+    End If
+    If ( _
+            (CurrentSubject.SiteCode.StartsWith("06") And CurrentSubject("municipio") = 614) _
+            OrElse _
+            (CurrentSubject.SiteCode.StartsWith("09") And (CurrentSubject("municipio") = 911 Or CurrentSubject("municipio") = 914 Or CurrentSubject("municipio") = 923)) _
+        ) _
+        AndAlso CurrentSubject("diarreaComenzoHaceDias") <= 14 _
+        AndAlso CurrentSubject("diarreaMaximoAsientos1Dia") >= 3 _
+        AndAlso CurrentSubject("diarreaOtroEpisodioSemanaAnterior") = 2 _
+        AndAlso CurrentSubject("edadAnios") < 5 _
+    Then
+        If CurrentSubject("elegibleDiarrea") = 2 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente es ELEGIBLE para el estudio de DIARREA!")
+        End If
+        CurrentSubject("elegibleDiarrea") = 1
+    Else
+        If CurrentSubject("elegibleDiarrea") = 1 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente NO es elegible para el estudio de DIARREA!")
+        End If
+        CurrentSubject("elegibleDiarrea") = 2
+    End If
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_P1_EV_CriteriaRespira', 'UserMethod', 'Public Shared Sub Action_P1_EV_CriteriaRespira()
+    If (CurrentSubject("municipio") = 614 Or CurrentSubject("municipio") = 911 Or CurrentSubject("municipio") = 914 Or CurrentSubject("municipio") = 923) _
+            AndAlso CurrentSubject("temperaturaPrimeras24Horas") > 38 _
+            AndAlso (CurrentSection("sintomasRespiraTos14Dias") = 1 OrElse CurrentSection("sintomasRespiraGarganta14Dias") = 1) Then
+        If CurrentSubject("elegibleRespira") = 2 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente es ELEGIBLE para el estudio de RESPIRATORIO!")
+        End If
+        CurrentSubject("elegibleRespira") = 1
+    Else
+        If CurrentSubject("elegibleRespira") = 1 Then
+            MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente NO es elegible para el estudio de RESPIRATORIO!")
+        End If
+        CurrentSubject("elegibleRespira") = 2
+    End If
+    Action_Study_CasoSeveroRespiratorio()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_P1_EV_Fiebre', 'UserMethod', 'Public Shared Sub Action_P1_EV_Fiebre()
+    EV_FiebreOHistoriaFiebre()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_P1_EV_Municipio', 'UserMethod', 'Public Shared Sub Action_P1_EV_Municipio()
+    Action_P1_EV_CriteriaDiarrea()
+    Action_P1_EV_CriteriaRespira()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_P1_EV_Temperatura', 'UserMethod', 'Public Shared Sub Action_P1_EV_Temperatura()
+    If CurrentSubject("temperaturaPrimeras24Horas") >= 38.0 Then
+        CurrentSubject("sintomasRespiraFiebre") = 1
+        CurrentSubject("sintomasRespiraHipotermia") = 2
+    ElseIf (CurrentSubject("temperaturaPrimeras24Horas") IsNot Nothing And CurrentSubject("temperaturaPrimeras24Horas") < 35.5) Then
+        CurrentSubject("sintomasRespiraFiebre") = 2
+        CurrentSubject("sintomasRespiraHipotermia") = 1
+    ElseIf CurrentSubject("temperaturaPrimeras24Horas") < 38.0 And CurrentSubject("temperaturaPrimeras24Horas") >= 35.5 Then
+        CurrentSubject("sintomasRespiraFiebre") = 2
+        CurrentSubject("sintomasRespiraHipotermia") = 2
+    Else
+        CurrentSubject("sintomasRespiraFiebre") = Nothing
+        CurrentSubject("sintomasRespiraHipotermia") = Nothing
+    End If
+    EV_FiebreOHistoriaFiebre()
+    Action_P1_EV_CriteriaRespira()
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_P1_c_sintomasRespiraTos14Dias', 'UserMethod', 'Public Shared Sub Action_P1_c_sintomasRespiraTos14Dias()
+    If CurrentSection("sintomasRespiraTosDias") <= 14 Then
+        CurrentSection("sintomasRespiraTos14Dias") = 1
+    Else
+        CurrentSection("sintomasRespiraTos14Dias") = 2
+    End If
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_P1_c_sintomasRespiraGarganta14Dias', 'UserMethod', 'Public Shared Sub Action_P1_c_sintomasRespiraGarganta14Dias()
+    If CurrentSection("sintomasRespiraGargantaDias") <= 14 Then
+        CurrentSection("sintomasRespiraGarganta14Dias") = 1
+    Else
+        CurrentSection("sintomasRespiraGarganta14Dias") = 2
+    End If
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_P2A_EV_EnfermedadesCronicas', 'UserMethod', 'Public Shared Sub Action_P2A_EV_EnfermedadesCronicas()
+    If CurrentSection("enfermedadesCronicasAsma") = 1 _
+            Or CurrentSection("enfermedadesCronicasDiabetes") = 1 _
+            Or CurrentSection("enfermedadesCronicasCancer") = 1 _
+            Or CurrentSection("enfermedadesCronicasEnfermCorazon") = 1 _
+            Or CurrentSection("enfermedadesCronicasEnfermHigado") = 1 _
+            Or CurrentSection("enfermedadesCronicasEnfermRinion") = 1 _
+            Or CurrentSection("enfermedadesCronicasEnfermPulmones") = 1 _
+            Or CurrentSection("enfermedadesCronicasVIHSIDA") = 1 _
+            Or CurrentSection("enfermedadesCronicasOtras") = 1 _
+            Or CurrentSection("enfermedadesCronicasHipertension") = 1 _
+            Then
+        CurrentSection("enfermedadesCronicasAlguna") = 1
+    Else
+        CurrentSection("enfermedadesCronicasAlguna") = 2
+    End If
+End Sub');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_Study_NumeroTelefonico', 'UserMethod', 'Public Shared Function EV_Study_NumeroTelefonico(ByVal inputValue As String) As Boolean
+    Dim tempcounter As Integer = 0
+    Dim character As Char
+    Dim invalidCharacter As Boolean = False
+    Dim invalidDigitInFirstPosition As Boolean = False
+    If inputValue.Length = 0 Then Return True
+    For idx As Integer = 0 To (inputValue.Length - 1)
+        character = inputValue.Chars(idx)
+        Select Case True
+            Case Char.IsDigit(character)
+                If (character = "1"c Or character = "0"c) And idx = 0 Then '' Digits 1 or 0 can''t be in the first position
+                    invalidDigitInFirstPosition = True
+                    Exit For
+                Else
+                    tempcounter += 1
+                End If
+            Case character = " "c
+            Case character = "-"c
+            Case Else : invalidCharacter = True : Exit For
+        End Select
+    Next
+    If invalidDigitInFirstPosition Then
+        MessageBox.Show("El número telefónico no puede empezar con 1 ni 0.")
+        Return False
+    ElseIf invalidCharacter Then
+        MessageBox.Show("Solo se permite el ingreso de dígitos y guiones.")
+        Return False
+    ElseIf tempcounter <> 8 Then
+        MessageBox.Show("El número telefónico debe tener exáctamente 8 dígitos.")
+        Return False
+    Else
+        Return True
+    End If
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_Study_FechaNacimiento', 'UserMethod', 'Public Shared Function EV_Study_FechaNacimiento(ByVal inputValue As DateTime) As Boolean
+    Dim admissionDate As DateTime = CurrentSubject("fechaHoraAdmision")
+    Dim absMinDate As New DateTime(admissionDate.Year - 130, admissionDate.Month, admissionDate.Day)
+    If inputValue < absMinDate Then
+        MessageBox.Show(absMinDate.ToShortDateString)
+        Return False
+    End If
+    If inputValue > admissionDate Then
+        MessageBox.Show(admissionDate.ToShortDateString)
+        Return False
+    End If
+    Dim promptUnderDate As New DateTime(admissionDate.Year - 85, admissionDate.Month, admissionDate.Day)
+    If inputValue < promptUnderDate AndAlso Not MessageBox.Show(inputValue) Then Return False
+    Dim edadAnios As Integer = CurrentSubject("edadAnios")
+    Dim edadMeses As Integer = CurrentSubject("edadMeses")
+    Dim edadDias As Integer = CurrentSubject("edadDias")
+    Dim msgProvidedAge As String
+    If edadAnios > 0 Then
+        msgProvidedAge = CStr(edadAnios) & " años"
+    ElseIf edadMeses > 0 Then
+        msgProvidedAge = CStr(edadMeses) & " meses"
+    Else
+        msgProvidedAge = CStr(edadDias) & " días"
+    End If
+    Dim estimatedYears As Integer = admissionDate.Year - inputValue.Year - CInt(IIf(inputValue.DayOfYear > admissionDate.DayOfYear, 1, 0))
+    Dim estimatedMonths As Integer = Nothing
+    Dim estimatedDays As Integer = Nothing
+    Dim msgEstimatedAge As String
+    If estimatedYears = 0 Then
+        estimatedMonths = admissionDate.Month - inputValue.Month + (admissionDate.Year - inputValue.Year) * 12 - CInt(IIf(inputValue.Day > admissionDate.Day, 1, 0))
+        If estimatedMonths = 0 Then
+            estimatedDays = admissionDate.Subtract(inputValue).Days
+            msgEstimatedAge = CStr(estimatedDays) & " días"
+        Else
+            msgEstimatedAge = CStr(estimatedMonths) & " meses"
+        End If
+    Else
+        msgEstimatedAge = CStr(estimatedYears) & " años"
+    End If
+    If edadAnios <> estimatedYears OrElse edadMeses <> estimatedMonths OrElse edadDias <> estimatedDays Then
+        Dim message As String = "La edad del paciente no concuerda con su fecha de nacimiento." & vbCrLf & vbCrLf & "Edad proveida:" & msgProvidedAge & vbCrLf & "Edad calculada:" & msgEstimatedAge & vbCrLf & vbCrLf & "Si está seguro que la fecha de nacimiento que ingresó es correcta precione SI, si desea corregirla presione NO."
+        Dim userAnswer As DialogResult = MessageBox.Show(message, "Fecha de nacimiento", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)
+        If userAnswer = DialogResult.Yes Then
+            CurrentSubject("edadAnios") = estimatedYears
+            CurrentSubject("edadMeses") = estimatedMonths
+            CurrentSubject("edadDias") = estimatedDays
+        Else
+            Return False
+        End If
+    End If
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_H_NumeroDeAfiliacionIGSS', 'UserMethod', 'Public Shared Function EV_H_NumeroDeAfiliacionIGSS(ByVal inputValue As String) As Boolean
+    Dim tempcounter As Integer = 0
+    Dim character As Char
+    Dim invalidCharacter As Boolean = False
+    If inputValue.Length = 0 Then Return True
+    For idx As Integer = 0 To (inputValue.Length - 1)
+        character = inputValue.Chars(idx)
+        Select Case True
+            Case Char.IsDigit(character) : tempcounter += 1
+            Case character = "-"c
+            Case Else : invalidCharacter = True : Exit For
+        End Select
+    Next
+    If invalidCharacter Then
+        MessageBox.Show("Solo se permite el ingreso de dígitos y guiones.")
+        Return False
+    ElseIf tempcounter < 8 Then
+        MessageBox.Show("El número de afiliación debe tener al menos 8 digitos.")
+        Return False
+    ElseIf tempcounter > 15 Then
+        MessageBox.Show("El número de afiliación debe tener menos de 16 digitos.")
+        Return False
+    Else
+        Return True
+    End If
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_H1_FechaHoraAdmisionHospital', 'UserMethod', 'Public Shared Function EV_H1_FechaHoraAdmisionHospital(ByVal inputValue As DateTime) As Boolean
+    If inputValue > Now Then
+        MessageBox.Show(Now.ToShortDateString & " " & Now.ToShortTimeString)
+        Return False
+    End If
+    If Not CurrentSubject("fechaDeNacimiento") Is Nothing Then
+        Dim birthDate As DateTime = CurrentSubject("fechaDeNacimiento")
+        If inputValue < birthDate Then
+            MessageBox.Show("fecha de nacimiento: " & birthDate.ToShortDateString)
+            Return False
+        End If
+    End If
+    If inputValue < Today.Subtract(New TimeSpan(7, 0, 0, 0)) Then Return MessageBox.Show(inputValue)
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_H1_FechaH1Egreso', 'UserMethod', 'Public Shared Function EV_H1_FechaH1Egreso(ByVal inputvalue As DateTime) As Boolean
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_H2REM_sintomasFiebreFechaInicio', 'UserMethod', 'Public Shared Function EV_H2REM_sintomasFiebreFechaInicio(ByVal inputValue As DateTime) As Boolean
+    If Not CurrentSubject("fechaHoraAdmision") Is Nothing Then
+        Dim fechaHoraAdmision As DateTime = CDate(CurrentSubject("fechaHoraAdmision")).Date
+        If inputValue > fechaHoraAdmision Then
+            MessageBox.Show("fecha de admisión " & fechaHoraAdmision.ToShortDateString)
+            Return False
+        End If
+    End If
+    If inputValue < Today - New TimeSpan(60, 0, 0, 0) Then
+        MessageBox.Show(Today.ToShortDateString)
+        Return False
+    End If
+    If inputValue < Today - New TimeSpan(14, 0, 0, 0) Then Return MessageBox.Show(inputValue)
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_H2REM_FechaLCR', 'UserMethod', 'Public Shared Function EV_H2REM_FechaLCR(ByVal inputvalue As DateTime) As Boolean
+    If inputvalue > Today Then
+        MessageBox.Show(Today.ToShortDateString)
+        Return False
+    End If
+    If Not CurrentSubject("fechaHoraAdmision") Is Nothing Then
+        Dim admissionDate As DateTime = CDate(CurrentSubject("fechaHoraAdmision")).Date
+        If inputvalue < admissionDate Then
+            MessageBox.Show("fecha de admisión " & admissionDate.ToShortDateString)
+            Return False
+        End If
+    End If
+    If inputvalue < Today.Subtract(New TimeSpan(7, 0, 0, 0)) Then Return MessageBox.Show(inputvalue)
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_H3G_FechaExamenFisico', 'UserMethod', 'Public Shared Function EV_H3G_FechaExamenFisico(ByVal inputvalue As DateTime) As Boolean
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_H3H_FechaExamenFisico', 'UserMethod', 'Public Shared Function EV_H3H_FechaExamenFisico(ByVal inputvalue As DateTime) As Boolean
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_H5_FechaHoraObtencionMuestra', 'UserMethod', 'Public Shared Function EV_H5_FechaHoraObtencionMuestra(ByVal inputvalue As DateTime) As Boolean
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_H6_FechaTomaPlaca', 'UserMethod', 'Public Shared Function EV_H6_FechaTomaPlaca(ByVal inputvalue As DateTime) As Boolean
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_H7_FechaHoraH7Egreso', 'UserMethod', 'Public Shared Function EV_H7_FechaHoraH7Egreso(ByVal inputvalue As DateTime) As Boolean
+    Dim admissionDate As DateTime = CurrentSubject("fechaHoraAdmision")
+    If Not (CurrentSubject("fechaHoraAdmision") Is Nothing) AndAlso inputvalue < admissionDate Then
+        MessageBox.Show("fecha y hora de admisión " & admissionDate.ToShortDateString & " " & admissionDate.ToShortTimeString)
+        Return False
+    End If
+    If inputvalue > Now Then
+        MessageBox.Show(Now.ToShortDateString)
+        Return False
+    End If
+    If inputvalue < Today.Subtract(New TimeSpan(7, 0, 0, 0)) Then Return MessageBox.Show(inputvalue)
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_H7_FechaHoraH7Informe', 'UserMethod', 'Public Shared Function EV_H7_FechaHoraH7Informe(ByVal inputvalue As DateTime) As Boolean
+    Dim admissionDate As DateTime = CurrentSubject("fechaHoraAdmision")
+    If Not (CurrentSubject("fechaHoraAdmision") Is Nothing) AndAlso inputvalue < admissionDate Then
+        MessageBox.Show("fecha y hora de admisión " & admissionDate.ToShortDateString & " " & admissionDate.ToShortTimeString)
+        Return False
+    End If
+    Dim egresoDate As DateTime = CurrentSection("egresoMuerteFecha")
+    If Not (CurrentSection("egresoMuerteFecha") Is Nothing) AndAlso inputvalue < egresoDate Then
+        MessageBox.Show("fecha y hora de egreso " & egresoDate.ToShortDateString & " " & egresoDate.ToShortTimeString)
+        Return False
+    End If
+    If inputvalue > Now Then
+        MessageBox.Show(Now.ToShortDateString)
+        Return False
+    End If
+    If inputvalue < Today.Subtract(New TimeSpan(7, 0, 0, 0)) Then Return MessageBox.Show(inputvalue)
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_H7_TemperaturaPrimeras24HorasAlta', 'UserMethod', 'Public Shared Function EV_H7_TemperaturaPrimeras24HorasAlta(ByVal inputvalue As Decimal) As Boolean
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_H11_FechaTerminacion', 'UserMethod', 'Public Shared Function EV_H11_FechaTerminacion(ByVal inputvalue As DateTime) As Boolean
+    Dim admissionDate As DateTime = CurrentSubject("fechaHoraAdmision")
+    If Not (CurrentSubject("fechaHoraAdmision") Is Nothing) AndAlso inputvalue < admissionDate.Date Then
+        MessageBox.Show("fecha y hora de admisión " & admissionDate.ToShortDateString & " " & admissionDate.ToShortTimeString)
+        Return False
+    End If
+    If inputvalue > Today Then
+        MessageBox.Show(Today.ToShortDateString)
+        Return False
+    End If
+    If inputvalue < Today.Subtract(New TimeSpan(30, 0, 0, 0)) Then Return MessageBox.Show(inputvalue)
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_C1_FechaHoraAdmision', 'UserMethod', 'Public Shared Function EV_C1_FechaHoraAdmision(ByVal inputValue As DateTime) As Boolean
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_C2G_FechaExamenFisico', 'UserMethod', 'Public Shared Function EV_C2G_FechaExamenFisico(ByVal inputvalue As DateTime) As Boolean
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_C5_FechaHoraObtencionMuestra', 'UserMethod', 'Public Shared Function EV_C5_FechaHoraObtencionMuestra(ByVal inputvalue As DateTime) As Boolean
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_HCP9_FechaReporte', 'UserMethod', 'Public Shared Function EV_HCP9_FechaReporte(ByVal inputvalue As DateTime) As Boolean
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_HCP9_FechaMuerte', 'UserMethod', 'Public Shared Function EV_HCP9_FechaMuerte(ByVal inputvalue As DateTime) As Boolean
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'EV_HCP9_FechaHospital', 'UserMethod', 'Public Shared Function EV_HCP9_FechaHospital(ByVal inputvalue As DateTime) As Boolean
+    Return True
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'H', 'UserMethod', 'Public Shared Function H() As Boolean
+    Return CurrentSite.Code = "06-1" _
+        Or CurrentSite.Code = "09-1" _
+        Or CurrentSite.Code = "01-1"
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'H2', 'UserMethod', 'Public Shared Function H2() As Boolean
+    Dim departamento As Integer = CurrentSubject("departamento")
+    Return _
+        CurrentSubject("actualAdmitido") = 1 _
+        And _
+        ( _
+            CurrentSubject("presentaIndicacionDiarrea") = 1 _
+            Or CurrentSubject("presentaIndicacionRespira") = 1 _
+            Or CurrentSubject("presentaIndicacionNeuro") = 1 _
+            Or CurrentSubject("presentaIndicacionFebril") = 1 _
+        ) _
+        And _
+        ( _
+            CurrentSubject("presentaIndicacionNeuro") = 1 _
+            Or _
+            (CurrentSubject.SiteCode = "06-1" And (departamento = 6 Or departamento = 21 Or departamento = 22)) _
+            Or _
+            (CurrentSubject.SiteCode = "09-1" And departamento = 9) _
+        )
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'ConsentimientoVerbal', 'UserMethod', 'Public Shared Function ConsentimientoVerbal() As Boolean
+    Return CurrentSubject("consentimientoVerbal") = 1
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'H2DRF', 'UserMethod', 'Public Shared Function H2DRF() As Boolean
+    Dim H2CSection As New Global.QM.PDA.BO.Section(6)
+    Return _
+        H2CSection.IsComplete _
+        And _
+        ( _
+            CurrentSubject("presentaIndicacionDiarrea") = 1 _
+            Or CurrentSubject("presentaIndicacionRespira") = 1 _
+        )
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'H2N', 'UserMethod', 'Public Shared Function H2N() As Boolean
+    Dim H2CSection As New Global.QM.PDA.BO.Section(6)
+    Dim H2DRFSection As New Global.QM.PDA.BO.Section(7)
+    Return False
+    Return _
+        H2CSection.IsComplete _
+        AndAlso _
+        (Not H2DRF() OrElse H2DRFSection.IsComplete) _
+        AndAlso _
+        CurrentSubject("sospechosoNeuro") = 1
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'H2F', 'UserMethod', 'Public Shared Function H2F() As Boolean
+    Dim H2DRFSection As New Global.QM.PDA.BO.Section(7)
+    Dim H2NSection As New Global.QM.PDA.BO.Section(8)
+    Return _
+        (Not H2DRF() OrElse H2DRFSection.IsComplete) _
+        AndAlso _
+        CurrentSubject("fiebreOHistoriaFiebre") = 1 _
+        AndAlso _
+        ( _
+            CurrentSubject("elegibleDiarrea") = 2 _
+            AndAlso CurrentSubject("elegibleRespira") = 2 _
+            AndAlso CurrentSubject("elegibleNeuro") = 2 _
+        ) _
+        AndAlso _
+        ( _
+            (CurrentSubject("sospechosoNeuro") = 1 And H2NSection.IsComplete) _
+            Or _
+            (CurrentSubject("sospechosoNeuro") = 2) _
+         ) 
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'H2CE', 'UserMethod', 'Public Shared Function H2CE() As Boolean
+    Dim H2REMSection As New Global.QM.PDA.BO.Section(5)
+    Dim H2CSection As New Global.QM.PDA.BO.Section(6)
+    Dim H2DRFSection As New Global.QM.PDA.BO.Section(7)
+    Dim H2NSection As New Global.QM.PDA.BO.Section(8)
+    Dim H2FSection As New Global.QM.PDA.BO.Section(9)
+    Return _
+        CurrentSubject("consentimientoVerbal") = 1 _
+        AndAlso H2REMSection.IsComplete _
+        AndAlso H2CSection.IsComplete _
+        AndAlso (Not H2DRF() OrElse H2DRFSection.IsComplete) _
+        AndAlso (Not H2N() OrElse H2NSection.IsComplete) _
+        AndAlso (Not H2F() OrElse H2FSection.IsComplete)
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'CS', 'UserMethod', 'Public Shared Function CS() As Boolean
+    Return CurrentSite.Code = "06-2" _
+        Or CurrentSite.Code = "09-2" _
+        Or CurrentSite.Code = "09-3" _
+        Or CurrentSite.Code = "09-4"
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'C1CE', 'UserMethod', 'Public Shared Function C1CE() As Boolean
+    Dim C1CSection As New Global.QM.PDA.BO.Section(203)
+    Dim C1FSection As New Global.QM.PDA.BO.Section(204)
+    Return _
+        ( _
+                CurrentSubject("consentimientoVerbal") = 1 _
+            And _
+                C1CSection.IsComplete _
+            And _
+            ( _
+                CurrentSubject.SiteCode <> "06-2" _
+                    OrElse _
+                ( _
+                    CurrentSubject.SiteCode = "06-2" _
+                And _
+                    ( _
+                        (CurrentSubject("elegibleDiarrea") = 2 _
+                            And CurrentSubject("elegibleRespira") = 2 _
+                            And CurrentSubject("elegibleNeuro") = 2 _
+                            And _
+                                    ( _
+                                        (CurrentSubject("sintomasFiebre") = 1 AndAlso CurrentSubject("sintomasFiebreDias") < 7) _
+                                            Or _
+                                        (CurrentSubject("temperaturaPrimeras24Horas") >= 38) _
+                                    ) _
+                            And C1FSection.IsComplete _
+                        ) _
+                        Or _
+                        (CurrentSubject("elegibleDiarrea") = 1 _
+                            Or CurrentSubject("elegibleRespira") = 1 _
+                            Or CurrentSubject("elegibleNeuro") = 1 _
+                        ) _
+                        Or _
+                        (CurrentSubject("elegibleDiarrea") = 2 _
+                            And CurrentSubject("elegibleRespira") = 2 _
+                            And CurrentSubject("elegibleNeuro") = 2 _
+                            And _
+                            ( _
+                                ( _
+                                    (CurrentSubject("sintomasFiebre") Is Nothing Or CurrentSubject("sintomasFiebre") <> 1) _
+                                    Or _
+                                    (CurrentSubject("sintomasFiebreDias") Is Nothing OrElse CurrentSubject("sintomasFiebreDias") >= 7) _
+                                ) _
+                                    And _
+                                (CurrentSubject("temperaturaPrimeras24Horas") Is Nothing OrElse CurrentSubject("temperaturaPrimeras24Horas") < 38) _
+                            ) _
+                        ) _
+                    ) _
+                ) _
+            ) _
+        )
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'C1F', 'UserMethod', 'Public Shared Function C1F() As Boolean
+    Dim C1CSection As New Global.QM.PDA.BO.Section(203)
+    Return CurrentSubject.SiteCode = "06-2" _
+       And C1CSection.IsComplete _
+       And CurrentSubject("elegibleDiarrea") = 2 _
+       And CurrentSubject("elegibleRespira") = 2 _
+       And CurrentSubject("elegibleNeuro") = 2 _
+       And ((CurrentSubject("sintomasFiebre") = 1 And CurrentSubject("sintomasFiebreDias") < 7) Or CurrentSubject("temperaturaPrimeras24Horas") >= 38)
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'PS', 'UserMethod', 'Public Shared Function PS() As Boolean
+    Return CurrentSite.Code = "06-3" _
+        Or CurrentSite.Code = "06-4" _
+        Or CurrentSite.Code = "06-5" _
+        Or CurrentSite.Code = "06-6" _
+        Or CurrentSite.Code = "06-7" _
+        Or CurrentSite.Code = "09-5"
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'P1CE', 'UserMethod', 'Public Shared Function P1CE() As Boolean
+    Dim P1CSection As New Global.QM.PDA.BO.Section(303)
+    Return _
+            CurrentSubject("consentimientoVerbal") = 1 _
+        And _
+           P1CSection.IsComplete
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'ViCoIDAsignado', 'UserMethod', 'Public Shared Function ViCoIDAsignado() As Boolean
+    Return Not String.IsNullOrEmpty(CurrentSubject("SASubjectID"))
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'ViCoIDAsignado_And_ElegibleDiarrea', 'UserMethod', 'Public Shared Function ViCoIDAsignado_And_ElegibleDiarrea() As Boolean
+    Return ViCoIDAsignado() AndAlso CurrentSubject("elegibleDiarrea") = 1
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'ViCoIDAsignado_And_ElegibleRespira', 'UserMethod', 'Public Shared Function ViCoIDAsignado_And_ElegibleRespira() As Boolean
+    Return ViCoIDAsignado() AndAlso CurrentSubject("elegibleRespira") = 1
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'ViCoIDAsignado_And_ElegibleRespira_Or_ElegibleFebr', 'UserMethod', 'Public Shared Function ViCoIDAsignado_And_ElegibleRespira_Or_ElegibleFebr() As Boolean
+    Return ViCoIDAsignado() AndAlso (CurrentSubject("elegibleRespira") = 1 OrElse CurrentSubject("elegibleFebril") = 1)
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'ViCoIDAsignado_And_ElegibleFebril_Or_SospechosoFeb', 'UserMethod', 'Public Shared Function ViCoIDAsignado_And_ElegibleFebril_Or_SospechosoFeb() As Boolean
+    Return (Not String.IsNullOrEmpty(CurrentSubject("SASubjectID")) AndAlso (CurrentSubject("elegibleFebril") = 1 Or CurrentSubject("sospechosoFebril") = 1 Or CurrentSubject("fiebreOHistoriaFiebre") = 1) _
+                AndAlso (Not (CurrentSubject.SiteCode.StartsWith("09-2")) And Not (CurrentSubject.SiteCode.StartsWith("01-1")) And Not (CurrentSubject.SiteCode.StartsWith("09-3")) And Not (CurrentSubject.SiteCode.StartsWith("09-4"))))
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'ViCoIDAsignado_And_ElegibleDiarrea_Or_ElegibleResp', 'UserMethod', 'Public Shared Function ViCoIDAsignado_And_ElegibleDiarrea_Or_ElegibleResp() As Boolean
+    Return ViCoIDAsignado() AndAlso (CurrentSubject("elegibleDiarrea") = 1 OrElse CurrentSubject("elegibleRespira") = 1 OrElse CurrentSubject("elegibleFebril") = 1)
+End Function');
+INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'HCP9', 'UserMethod', 'Public Shared Function HCP9() As Boolean
+    Dim version As String = CurrentSubject("PDAInsertVersion")
+    Dim mayorVersion As String = version.Split("."c)(0)
+    Dim mayorVersionInt As Integer = Integer.Parse(mayorVersion)
+    Return mayorVersion <= 10 AndAlso ViCoIDAsignado()
+End Function');
