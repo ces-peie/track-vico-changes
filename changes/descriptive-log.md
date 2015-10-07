@@ -185,3 +185,28 @@ Questions removed from the sections:
 
 and related variables
 
+
+---
+
+# Changes in eligibility criteria
+## `02dd4f28db11c362f1d61e5da6a9c9b5caf91b3a`
+### jmccracken, odeleon, jdgarcia
+#### 2015-10-07 22:13:21 -0600
+Changes in eligibility criteria to update according to the modified protocol
+
+1. Expand the geographic criteria for respiratory and diarrheal cases at the Quetzaltenango Hospital to include the entire department.
+
+> Since 2014 until the deployment of version 12.1, patients coming from Quetzaltenango municipalities outside of the catchment area have been recorded as coming from the Quetzaltenango municipality. Their true municipality was recorded as open text under the *municipality* variable. These patients from outside the original catchment area may come from any of the following municipalities (IGN codes listed): 904, 905, 906, 907, 908, 912, 915, 917, 918, 919, 920, 921, 922, 924.
+
+2. Add geographic criteria to the IMCI definition used for respiratory syndrome screening in the hospitals. Previously there was no geographic criteria for this definition, now it is limited to patients coming from:
+
+- The department of Quetzaltenango to the Quetzaltenango hospital   
+- The departments of Santa Rosa, Jalapa y Jutiapa to the Cuilapa hospital
+
+3. Modified the geographic criteria for the outpatient surveillance to only include patients coming from Cantel or Nueva Santa Rosa.
+
+4. Removed criteria for diarrheal syndrome surveillance at hospitals, health centers and health posts:
+
+- Having had diarrhea in the week before the onset of the current episode **previously excluded** patients from the surveillance. Now patients having this criterion can be enrolled.  
+- It was **previously required** to be age less than 5 years to be enrolled, now people all ages can be enrolled.
+
