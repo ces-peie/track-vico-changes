@@ -123,7 +123,11 @@ INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'ElegibleResp
             Dim H2CSection As New Global.QM.PDA.BO.Section(6)
 
 
-            If (CurrentSubject("edadAnios") = 0 AndAlso CurrentSubject("edadMeses") < 2) _
+            If ((CurrentSubject.SiteCode.StartsWith("06") And (CurrentSubject("departamento") = 6 OrElse CurrentSubject("departamento") = 21 OrElse CurrentSubject("departamento") = 22)) _
+			Or _
+			(CurrentSubject.SiteCode.StartsWith("09") And CurrentSubject("departamento") = 9) _
+			) _
+			AndAlso (CurrentSubject("edadAnios") = 0 AndAlso CurrentSubject("edadMeses") < 2) _
                 AndAlso _
                 ( _
                     (CurrentSubject("sintomasRespiraTaquipnea") = 1 OrElse CurrentSubject("sintomasRespiraNinioCostillasHundidas") = 1) _
@@ -132,7 +136,7 @@ INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'ElegibleResp
                         (CurrentSubject("sintomasRespiraTos") = 1 OrElse CurrentSubject("sintomasRespiraDificultadRespirar") = 1) _
                         AndAlso _
                         ( _
-                                   CurrentSubject("sintomasRespiraNinioEstridor") = 1 _
+                            CurrentSubject("sintomasRespiraNinioEstridor") = 1 _
                             OrElse CurrentSubject("hipoxemia") = 1 _
                             OrElse H2CSection("ninioCianosisObs") = 1 _
                             OrElse H2CSection("ninioBeberMamar") = 2 _
@@ -151,7 +155,11 @@ INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'ElegibleResp
                 CurrentSubject("elegibleRespiraIMCI") = 1
 
             ElseIf _
-                ( _
+                ((CurrentSubject.SiteCode.StartsWith("06") And (CurrentSubject("departamento") = 6 OrElse CurrentSubject("departamento") = 21 OrElse CurrentSubject("departamento") = 22)) _
+				Or _
+				(CurrentSubject.SiteCode.StartsWith("09") And CurrentSubject("departamento") = 9) _
+				) _
+				AndAlso ( _
                     (CurrentSubject("edadAnios") = 0 AndAlso CurrentSubject("edadMeses") >= 2) _
                     OrElse _
                     (CurrentSubject("edadAnios") > 0 AndAlso CurrentSubject("edadAnios") < 5) _
@@ -160,7 +168,7 @@ INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'ElegibleResp
                 (CurrentSubject("sintomasRespiraTos") = 1 OrElse CurrentSubject("sintomasRespiraDificultadRespirar") = 1) _
                 AndAlso _
                 ( _
-                           CurrentSubject("sintomasRespiraTaquipnea") = 1 _
+                    CurrentSubject("sintomasRespiraTaquipnea") = 1 _
                     OrElse CurrentSubject("sintomasRespiraNinioCostillasHundidas") = 1 _
                     OrElse CurrentSubject("sintomasRespiraNinioEstridor") = 1 _
                     OrElse CurrentSubject("hipoxemia") = 1 _
@@ -323,7 +331,7 @@ INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_H2_EV
     End If
     If ((CurrentSubject.SiteCode.StartsWith("06") And (CurrentSubject("departamento") = 6 OrElse CurrentSubject("departamento") = 21 OrElse CurrentSubject("departamento") = 22)) _
         Or _
-        (CurrentSubject.SiteCode.StartsWith("09") And (CurrentSubject("departamento") = 9 And (CurrentSubject("municipio") = 901 Or CurrentSubject("municipio") = 902 Or CurrentSubject("municipio") = 903 Or CurrentSubject("municipio") = 909 Or CurrentSubject("municipio") = 910 Or CurrentSubject("municipio") = 911 Or CurrentSubject("municipio") = 913 Or CurrentSubject("municipio") = 914 Or CurrentSubject("municipio") = 916 Or CurrentSubject("municipio") = 923))) _
+        (CurrentSubject.SiteCode.StartsWith("09") And CurrentSubject("departamento") = 9) _
         ) _
         AndAlso (CurrentSubject("sintomasRespira") = 1) _
             AndAlso (CurrentSubject("sintomasRespiraFiebre") = 1 OrElse CurrentSubject("sintomasRespiraHipotermia") = 1 OrElse CurrentSubject("sintomasFiebre") = 1 _
@@ -367,10 +375,10 @@ INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_H2_EV
     If ( _
         (CurrentSubject.SiteCode.StartsWith("06") And CurrentSubject("departamento") = 6) _
         Or _
-        (CurrentSubject.SiteCode.StartsWith("09") And CurrentSubject("departamento") = 9 And (CurrentSubject("municipio") = 901 Or CurrentSubject("municipio") = 902 Or CurrentSubject("municipio") = 903 Or CurrentSubject("municipio") = 909 Or CurrentSubject("municipio") = 910 Or CurrentSubject("municipio") = 911 Or CurrentSubject("municipio") = 913 Or CurrentSubject("municipio") = 914 Or CurrentSubject("municipio") = 916 Or CurrentSubject("municipio") = 923)) _
+        (CurrentSubject.SiteCode.StartsWith("09") And CurrentSubject("departamento") = 9) _
         ) _
-        And CurrentSubject("diarreaComenzoHaceDias") <= 14 And CurrentSubject("diarreaMaximoAsientos1Dia") >= 3 And CurrentSubject("diarreaOtroEpisodioSemanaAnterior") = 2 _
-        And CurrentSubject("edadAnios") < 5 _
+        And CurrentSubject("diarreaComenzoHaceDias") <= 14 _
+		And CurrentSubject("diarreaMaximoAsientos1Dia") >= 3 _
     Then
         If CurrentSubject("elegibleDiarrea") = 2 Then
             MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente es ELEGIBLE para el estudio de DIARREA!")
@@ -549,12 +557,10 @@ INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_C1_EV
     If ( _
             (CurrentSubject.SiteCode.StartsWith("06") And CurrentSubject("municipio") = 614) _
             OrElse _
-            (CurrentSubject.SiteCode.StartsWith("09") And (CurrentSubject("municipio") = 911 Or CurrentSubject("municipio") = 914 Or CurrentSubject("municipio") = 923)) _
+            (CurrentSubject.SiteCode.StartsWith("09") And CurrentSubject("municipio") = 914) _
         ) _
         AndAlso CurrentSubject("diarreaComenzoHaceDias") <= 14 _
         AndAlso CurrentSubject("diarreaMaximoAsientos1Dia") >= 3 _
-        AndAlso CurrentSubject("diarreaOtroEpisodioSemanaAnterior") = 2 _
-        AndAlso CurrentSubject("edadAnios") < 5 _
     Then
         If CurrentSubject("elegibleDiarrea") = 2 Then
             MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente es ELEGIBLE para el estudio de DIARREA!")
@@ -569,7 +575,7 @@ INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_C1_EV
     Action_C1_EV_sospechosoFebril()
 End Sub');
 INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_C1_EV_CriteriaRespira', 'UserMethod', 'Public Shared Sub Action_C1_EV_CriteriaRespira()
-    If (CurrentSubject("municipio") = 614 Or CurrentSubject("municipio") = 911 Or CurrentSubject("municipio") = 914 Or CurrentSubject("municipio") = 923) _
+    If (CurrentSubject("municipio") = 614 Or CurrentSubject("municipio") = 914) _
             AndAlso _
             CurrentSubject("temperaturaPrimeras24Horas") > 38 _
             AndAlso (CurrentSection("sintomasRespiraTos14Dias") = 1 OrElse CurrentSection("sintomasRespiraGarganta14Dias") = 1) Then
@@ -719,12 +725,10 @@ INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_P1_EV
     If ( _
             (CurrentSubject.SiteCode.StartsWith("06") And CurrentSubject("municipio") = 614) _
             OrElse _
-            (CurrentSubject.SiteCode.StartsWith("09") And (CurrentSubject("municipio") = 911 Or CurrentSubject("municipio") = 914 Or CurrentSubject("municipio") = 923)) _
+            (CurrentSubject.SiteCode.StartsWith("09") And CurrentSubject("municipio") = 914) _
         ) _
         AndAlso CurrentSubject("diarreaComenzoHaceDias") <= 14 _
         AndAlso CurrentSubject("diarreaMaximoAsientos1Dia") >= 3 _
-        AndAlso CurrentSubject("diarreaOtroEpisodioSemanaAnterior") = 2 _
-        AndAlso CurrentSubject("edadAnios") < 5 _
     Then
         If CurrentSubject("elegibleDiarrea") = 2 Then
             MsgBox("IMPORTANTE:¡Con este cambio ahora el paciente es ELEGIBLE para el estudio de DIARREA!")
@@ -738,7 +742,7 @@ INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_P1_EV
     End If
 End Sub');
 INSERT INTO Method (MethodGuid, Name, Type, Code) VALUES (NewId(), 'Action_P1_EV_CriteriaRespira', 'UserMethod', 'Public Shared Sub Action_P1_EV_CriteriaRespira()
-    If (CurrentSubject("municipio") = 614 Or CurrentSubject("municipio") = 911 Or CurrentSubject("municipio") = 914 Or CurrentSubject("municipio") = 923) _
+    If (CurrentSubject("municipio") = 614 Or CurrentSubject("municipio") = 914) _
             AndAlso CurrentSubject("temperaturaPrimeras24Horas") > 38 _
             AndAlso (CurrentSection("sintomasRespiraTos14Dias") = 1 OrElse CurrentSection("sintomasRespiraGarganta14Dias") = 1) Then
         If CurrentSubject("elegibleRespira") = 2 Then
