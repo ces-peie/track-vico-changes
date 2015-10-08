@@ -185,3 +185,18 @@ Questions removed from the sections:
 
 and related variables
 
+
+---
+
+# Update febrile syndrome questions
+## `6bba9fd726c46921e5103c2eae692016d224d7d1`
+### odeleongt [nb]
+#### 2015-10-08 17:26:26 -0600
+Update febrile syndrome questions
+
+- We changed the text 'irritación de la piel' to '"rash" o "sarpullido"' to improve accuracy of the medical presentation we are interested in
+- The question about having "rash" or "sarpullido" will be now stored as the new variable "hxF_Rash" (stored as "hxF_IrritacionPiel" before rewording)
+- Improve question wording in questionnaire "H3 Informe del Caso" section "K - Hx Febril"  
+- Remove questions in questionnaire "H3 Informe del Caso" section "K - Hx Febril" related to neck stiffness, facio-muscular weakness and photographs of skin irritation  
+- We added questions about hepatomegaly and splenomegaly on section "H2 Comun". These are clinical signs of some causes of acute febrile illness
+
