@@ -123,6 +123,9 @@ db0a6276-4c24-4b38-b6a3-bbb557f28300	Hospital	H2 Inscripción	Común	17.3	PREGUNTE
 2b5be6da-7977-42ae-ac7d-65dcd170e387	Hospital	H2 Inscripción	Común	17.9.1	OBSERVE:  El movimiento del niño	NULL			ninioMovimientoObs	6	39	3	1	Question
 f228f283-8b10-415b-8f93-58728f6143ac	Hospital	H2 Inscripción	Común	18	Si no anotó una temperatura en las primeras 24 horas de admisión y el paciente fue admitido hace menos de 24 horas.	NULL			NULL	6	40	1	1	Checkpoint
 00611f42-441d-4a74-9e40-54962c1af32f	Hospital	H2 Inscripción	Común	18.1	Tome la temperatura (ºC) del paciente	Si la temperatura no fue registrada y no han pasado mas de 24 horas de admision debe tomar la temperatura del pacinete y anotarla en su PDA.			temperaturaPrimeras24Horas	6	41	2	1	Question
+	Hospital	H2 Inscripción	Común	19	Si tiene temperatura registrada mayor de 38°C o historia de fiebre					6	42	1	1	Checkpoint
+	Hospital	H2 Inscripción	Común	19.1	Enfermera: Verifique el expediente y anote si el paciente tiene:  Hepatomegalia			Condición:  CurrentSubject("temperaturaPrimeras24Horas") >= 38.0 Or (CurrentSubject("sintomasFiebre") = 1 	hepatomegalia	6	43	2	1	Question
+	Hospital	H2 Inscripción	Común	19.2	Enfermera: Verifique el expediente y anote si el paciente tiene:  Esplenomegalia.			Condición:  CurrentSubject("temperaturaPrimeras24Horas") >= 38.0 Or (CurrentSubject("sintomasFiebre") = 1 	esplenomegalia	6	43	2	1	Question
 b3472323-8813-4f4c-92f2-ffd958c83db0	Hospital	H2 Inscripción	Diarrea y Respiratoria	1	Si paciente tiene menos de 5 años	NULL			NULL	7	1	1	1	Checkpoint
 2e0f799e-9515-4883-b564-fe113a2059dd	Hospital	H2 Inscripción	Diarrea y Respiratoria	1.1	¿Ha tenido diarrea o asientos líquidos en los últimos 14 días?	Debe pregunterle al paciente si ha tenido diarrea o asientos en los últimos 7 días.			diarreaUltimos14Dias	7	2	2	1	Question
 25be849d-8abc-43e6-b04e-3d72f8e2e93e	Hospital	H2 Inscripción	Diarrea y Respiratoria	1.2	Si ha tenido diarrea en los últimos 14 días	NULL			NULL	7	3	2	1	Checkpoint
@@ -373,16 +376,12 @@ eb17f5e7-7937-4921-b122-a2e5f5a61382	Hospital	H3 Informe del Caso	K - Hx Febril	
 d54be662-1d5f-45a2-8983-ccd1bb5e28c1	Hospital	H3 Informe del Caso	K - Hx Febril	3.8	Si tiene dificultad para caminar	NULL			NULL	18	18	2	1	Checkpoint
 6a082a39-2417-4798-b076-35ad2fa6512b	Hospital	H3 Informe del Caso	K - Hx Febril	3.8.1	¿Actualmente tiene dificultad para caminar?	NULL			hxF_DificultadCaminarActual	18	19	3	1	Question
 26ffdc7f-2d3c-43e2-8a33-da8e72e7e291	Hospital	H3 Informe del Caso	K - Hx Febril	3.8.2	¿Desde hace cuántos días empezó con dificultad para caminar?	NULL			hxF_DificultadCaminarHaceDias	18	20	3	1	Question
-e85cac5f-ca13-4bc7-a4d1-332c4fed2e57	Hospital	H3 Informe del Caso	K - Hx Febril	4	Irritación en la piel	NULL			hxF_IrritacionPiel	18	21	1	1	Question
-187902b6-9fbd-4d47-85c4-c9bea0e47e52	Hospital	H3 Informe del Caso	K - Hx Febril	5	Si tenia irritación	NULL			NULL	18	22	1	1	Checkpoint
-372ac5f5-0dda-4476-a11b-cab97fb72103	Hospital	H3 Informe del Caso	K - Hx Febril	5.1	¿Actualmente tiene irritación en la piel?	NULL			hxF_IrritacionPielActual	18	23	2	1	Question
-eed72bf2-d52e-4312-9e07-f0682723ba5c	Hospital	H3 Informe del Caso	K - Hx Febril	5.2	Si actualmente tiene la irritación	NULL			NULL	18	24	2	1	Checkpoint
-485e840a-9033-4983-956e-3cfc699f5d34	Hospital	H3 Informe del Caso	K - Hx Febril	5.2.1	¿Se pudo tomar una foto de la irritación?	NULL			hxF_IrritacionPielFoto	18	25	3	1	Question
-bc9617bb-de9b-479a-bd8b-29b1f63c3d4c	Hospital	H3 Informe del Caso	K - Hx Febril	5.2.2	Si se pudo tomar una foto de la irritación	NULL			NULL	18	26	3	1	Checkpoint
-d6d61122-91bc-4eea-bde8-56ce70b3907d	Hospital	H3 Informe del Caso	K - Hx Febril	5.2.2.1	Anote el número de la fotografía que aparece en la pantalla de su cámara.	NULL			hxF_IrritacionPielFotoID	18	27	4	1	Question
-335ba999-5712-40c5-80a3-3c729ae120ff	Hospital	H3 Informe del Caso	K - Hx Febril	5.3	¿Desde hace cuántos días empezó con irritación en la piel?	NULL			hxF_IrritacionPielHaceDias	18	28	2	1	Question
-818c6960-c469-4d43-9884-3ef677314291	Hospital	H3 Informe del Caso	K - Hx Febril	5.4	¿Dónde tiene o tenía la irritación?	NULL			hxF_IrritacionPielDonde	18	29	2	1	Question
-cdba9021-1bd2-48dd-80e6-3f9e1c63c00b	Hospital	H3 Informe del Caso	K - Hx Febril	5.5	Observe la irritación y clasifíquela, o pida la descripción al paciente y trate de clasificarla	NULL			hxF_IrritacionPielDescripcion	18	30	2	1	Question
+e85cac5f-ca13-4bc7-a4d1-332c4fed2e57	Hospital	H3 Informe del Caso	K - Hx Febril	4	¿En los últimos 3 dias ha tenido "rash" o "sarpullido" con picazón?	NULL			hxF_Rash	18	21	1	1	Question
+187902b6-9fbd-4d47-85c4-c9bea0e47e52	Hospital	H3 Informe del Caso	K - Hx Febril	5	Si tenia "rash" o "sarpullido"	NULL			NULL	18	22	1	1	Checkpoint
+372ac5f5-0dda-4476-a11b-cab97fb72103	Hospital	H3 Informe del Caso	K - Hx Febril	5.1	¿Actualmente tiene "rash" o "sarpullido" en la piel?	NULL			hxF_IrritacionPielActual	18	23	2	1	Question
+335ba999-5712-40c5-80a3-3c729ae120ff	Hospital	H3 Informe del Caso	K - Hx Febril	5.3	¿Desde hace cuántos días empezó con "rash" o "sarpullido" en la piel?	NULL			hxF_IrritacionPielHaceDias	18	28	2	1	Question
+818c6960-c469-4d43-9884-3ef677314291	Hospital	H3 Informe del Caso	K - Hx Febril	5.4	¿Dónde tiene o tenía el "rash" o "sarpullido"?	NULL			hxF_IrritacionPielDonde	18	29	2	1	Question
+cdba9021-1bd2-48dd-80e6-3f9e1c63c00b	Hospital	H3 Informe del Caso	K - Hx Febril	5.5	Observe el "rash" o "sarpullido" y clasifíquel0, o pida la descripción al paciente y trate de clasificarlo	NULL			hxF_IrritacionPielDescripcion	18	30	2	1	Question
 ef77d740-0783-4781-ae3a-d5d39a0b88c7	Hospital	H3 Informe del Caso	K - Hx Febril	6	Dolor en las articulaciones	NULL			hxF_DolorArticulaciones	18	31	1	1	Question
 ffde14a0-1d2b-4bdc-8f81-d4b063e39eb6	Hospital	H3 Informe del Caso	K - Hx Febril	7	Si tiene dolor en las articulaciones	NULL			NULL	18	32	1	1	Checkpoint
 27ef60ef-72dc-489f-8bd3-b09342fa09f1	Hospital	H3 Informe del Caso	K - Hx Febril	7.1	¿Actualmente tiene dolor en las articulaciones?	NULL			hxF_DolorArticulacionesActual	18	33	2	1	Question
@@ -393,33 +392,25 @@ bd0d6732-2c80-48cc-bd85-3bf39b55fa52	Hospital	H3 Informe del Caso	K - Hx Febril	
 a4469593-6d55-4b0a-b2eb-7c46ceda7adc	Hospital	H3 Informe del Caso	K - Hx Febril	9.2	¿Desde hace cuántos días empezó con ojos rojos?	NULL			sintomasEnfermaFebrilOjosRojosHaceDias	18	38	2	1	Question
 c7b354a2-33dd-4a69-adbb-9200b9af9ee2	Hospital	H3 Informe del Caso	K - Hx Febril	10	Ojos amarillos	NULL			hxF_OjosAmarillos	18	39	1	1	Question
 b8a4f784-9041-4100-b957-69357b6e59aa	Hospital	H3 Informe del Caso	K - Hx Febril	11	Si tiene ojos amarillos	NULL			NULL	18	40	1	1	Checkpoint
-19e6605d-4ed3-4bec-b9fd-2aa6259d1883	Hospital	H3 Informe del Caso	K - Hx Febril	11.1	Observe si el paciente actualmente tiene ojos amarillos	NULL			hxF_OjosAmarillosActual	18	41	2	1	Question
-25c9c15f-1357-4983-8fcd-44b985dd7884	Hospital	H3 Informe del Caso	K - Hx Febril	11.2	¿Desde hace cuántos días empezó con ojos amarillos?	NULL			hxF_OjosAmarillosHaceDias	18	42	2	1	Question
-595fb04d-cbaf-47a6-80ed-74a2da93cb3a	Hospital	H3 Informe del Caso	K - Hx Febril	12	Sudoración profusa	NULL			hxF_SudoracionProfusa	18	43	1	1	Question
-ad96772f-1d5e-4b6f-a202-e57e3ee0efb6	Hospital	H3 Informe del Caso	K - Hx Febril	13	Si tiene sudoración profusa	NULL			NULL	18	44	1	1	Checkpoint
-4a4a2614-13c2-4357-837b-be57c6b23dbc	Hospital	H3 Informe del Caso	K - Hx Febril	13.1	¿Actualmente tiene sudoración profusa?	NULL			hxF_SudoracionProfusaActual	18	45	2	1	Question
-97153d79-e014-4e26-b1dc-eaab5f8bbb91	Hospital	H3 Informe del Caso	K - Hx Febril	13.2	¿Desde hace cuántos días empezó con sudoración profusa?	NULL			hxF_SudoracionProfusaHaceDias	18	46	2	1	Question
-378474dc-f51f-486b-93fe-352c033f22ca	Hospital	H3 Informe del Caso	K - Hx Febril	14	Orina oscura	NULL			hxF_OrinaOscura	18	47	1	1	Question
-3b6f743b-0101-437a-aec9-0db0a488d8a4	Hospital	H3 Informe del Caso	K - Hx Febril	15	Si tiene orina oscura	NULL			NULL	18	48	1	1	Checkpoint
-a6a32776-d956-4fd5-bbb3-2885f3332c84	Hospital	H3 Informe del Caso	K - Hx Febril	15.1	¿Actualmente tiene orina oscura?	NULL			hxF_OrinaOscuraActual	18	49	2	1	Question
-4407ebd6-c739-4b66-b963-b9bcd3e607b0	Hospital	H3 Informe del Caso	K - Hx Febril	15.2	¿Desde hace cuántos días empezó con orina oscura?	NULL			hxF_OrinaOscuraHaceDias	18	50	2	1	Question
-bd253011-8f6f-4927-b79a-7eae0680cb60	Hospital	H3 Informe del Caso	K - Hx Febril	16	Rigidez en la nuca	NULL			hxF_RigidezNuca	18	51	1	1	Question
-f777ea72-57d7-441b-8db3-9802ceda513c	Hospital	H3 Informe del Caso	K - Hx Febril	17	Si tiene rigidez en la nuca	NULL			NULL	18	52	1	1	Checkpoint
-874e511b-1fda-42d5-bbcd-267c1d81062f	Hospital	H3 Informe del Caso	K - Hx Febril	17.1	¿Actualmente tiene rigidez en la nuca?	NULL			hxF_RigidezNucaActual	18	53	2	1	Question
-8403871c-e8f3-4ff0-b0cf-fa14702d06e4	Hospital	H3 Informe del Caso	K - Hx Febril	17.2	¿Desde hace cuántos días empezó con rigidez en la nuca?	NULL			hxF_RigidezNucaHaceDias	18	54	2	1	Question
-2fcfab5d-5f92-4866-a241-8f77ab774f9b	Hospital	H3 Informe del Caso	K - Hx Febril	18	Debilidad facial/muscular	NULL			hxF_DebilidadFacial	18	55	1	1	Question
-146017d0-b882-464d-ad14-1aee74472893	Hospital	H3 Informe del Caso	K - Hx Febril	19	Si tiene Debilidad facial/muscular	NULL			NULL	18	56	1	1	Checkpoint
-eb345aa5-997a-4e36-bdf7-46c358a6a4d8	Hospital	H3 Informe del Caso	K - Hx Febril	19.1	¿Actualmente tiene debilidad facial/muscular?	NULL			hxF_DebilidadFacialActual	18	57	2	1	Question
-2177156e-a0fb-4472-980e-815ded88538e	Hospital	H3 Informe del Caso	K - Hx Febril	19.2	¿Desde hace cuántos días empezó con debilidad facial/muscular?	NULL			hxF_DebilidadFacialHaceDias	18	58	2	1	Question
-908b597e-8f59-4135-be2f-9e5762cdf28d	Hospital	H3 Informe del Caso	K - Hx Febril	20	Costras	NULL			hxF_Costras	18	59	1	1	Question
-5d840854-0c0f-4932-b00f-73e9ce62a458	Hospital	H3 Informe del Caso	K - Hx Febril	21	Si tiene costras	NULL			NULL	18	60	1	1	Checkpoint
-75a04660-ba56-45d5-9e36-6576a7300dac	Hospital	H3 Informe del Caso	K - Hx Febril	21.1	¿Actualmente tiene costras?	NULL			hxF_CostrasActual	18	61	2	1	Question
-66d7a6d6-62b7-4977-9024-3eb6678d259a	Hospital	H3 Informe del Caso	K - Hx Febril	21.2	¿Desde hace cuántos días empezó con costras?	NULL			hxF_CostrasHaceDias	18	62	2	1	Question
-9d31e704-ad79-4775-bc36-386896605edd	Hospital	H3 Informe del Caso	K - Hx Febril	22	Sangrado inusual	NULL			hxF_SangradoInusual	18	63	1	1	Question
-ed397462-057b-441c-aae0-c7225ff3d0a5	Hospital	H3 Informe del Caso	K - Hx Febril	23	Si tenia sangrado inusual	NULL			NULL	18	64	1	1	Checkpoint
-f8774d28-251c-4fd8-b763-634e2b05635c	Hospital	H3 Informe del Caso	K - Hx Febril	23.1	¿Actualmente tiene sangrado inusual?	NULL			hxF_SangradoInusualActual	18	65	2	1	Question
-db934f34-5167-422b-b8c8-9f3fe2047141	Hospital	H3 Informe del Caso	K - Hx Febril	23.2	¿Desde hace cuántos días empezó con el sangrado?	NULL			hxF_SangradoInusualHaceDias	18	66	2	1	Question
-ca35443c-d837-4580-8ea2-d6f2a257d830	Hospital	H3 Informe del Caso	K - Hx Febril	23.3	Anote donde estaba sangrando	NULL			hxF_SangradoInusualDonde	18	67	2	1	Question
+25c9c15f-1357-4983-8fcd-44b985dd7884	Hospital	H3 Informe del Caso	K - Hx Febril	11.2	Pregunte: "¿Desde hace cuántos días empezó con ojos amarillos?"	NULL			hxF_OjosAmarillosHaceDias	18	41	2	1	Question
+19e6605d-4ed3-4bec-b9fd-2aa6259d1883	Hospital	H3 Informe del Caso	K - Hx Febril	12	Observe si el paciente actualmente tiene ojos amarillos	NULL			hxF_OjosAmarillosActual	18	42	1	1	Question
+595fb04d-cbaf-47a6-80ed-74a2da93cb3a	Hospital	H3 Informe del Caso	K - Hx Febril	13	Sudoración profusa	NULL			hxF_SudoracionProfusa	18	43	1	1	Question
+ad96772f-1d5e-4b6f-a202-e57e3ee0efb6	Hospital	H3 Informe del Caso	K - Hx Febril	14	Si tiene sudoración profusa	NULL			NULL	18	44	1	1	Checkpoint
+4a4a2614-13c2-4357-837b-be57c6b23dbc	Hospital	H3 Informe del Caso	K - Hx Febril	14.1	¿Actualmente tiene sudoración profusa?	NULL			hxF_SudoracionProfusaActual	18	45	2	1	Question
+97153d79-e014-4e26-b1dc-eaab5f8bbb91	Hospital	H3 Informe del Caso	K - Hx Febril	14.2	¿Desde hace cuántos días empezó con sudoración profusa?	NULL			hxF_SudoracionProfusaHaceDias	18	46	2	1	Question
+378474dc-f51f-486b-93fe-352c033f22ca	Hospital	H3 Informe del Caso	K - Hx Febril	15	Orina oscura (como Coca Cola)	NULL			hxF_OrinaOscura	18	47	1	1	Question
+3b6f743b-0101-437a-aec9-0db0a488d8a4	Hospital	H3 Informe del Caso	K - Hx Febril	16	Si tiene orina oscura	NULL			NULL	18	48	1	1	Checkpoint
+a6a32776-d956-4fd5-bbb3-2885f3332c84	Hospital	H3 Informe del Caso	K - Hx Febril	16.1	¿Actualmente tiene orina oscura?	NULL			hxF_OrinaOscuraActual	18	49	2	1	Question
+4407ebd6-c739-4b66-b963-b9bcd3e607b0	Hospital	H3 Informe del Caso	K - Hx Febril	16.2	¿Desde hace cuántos días empezó con orina oscura?	NULL			hxF_OrinaOscuraHaceDias	18	50	2	1	Question
+908b597e-8f59-4135-be2f-9e5762cdf28d	Hospital	H3 Informe del Caso	K - Hx Febril	17	Costras	NULL			hxF_Costras	18	51	1	1	Question
+5d840854-0c0f-4932-b00f-73e9ce62a458	Hospital	H3 Informe del Caso	K - Hx Febril	18	Si tiene costras	NULL			NULL	18	52	1	1	Checkpoint
+75a04660-ba56-45d5-9e36-6576a7300dac	Hospital	H3 Informe del Caso	K - Hx Febril	18.1	¿Actualmente tiene costras?	NULL			hxF_CostrasActual	18	53	2	1	Question
+66d7a6d6-62b7-4977-9024-3eb6678d259a	Hospital	H3 Informe del Caso	K - Hx Febril	18.2	¿Desde hace cuántos días empezó con costras?	NULL			hxF_CostrasHaceDias	18	54	2	1	Question
+9d31e704-ad79-4775-bc36-386896605edd	Hospital	H3 Informe del Caso	K - Hx Febril	19	Sangrado inusual	NULL			hxF_SangradoInusual	18	55	1	1	Question
+ed397462-057b-441c-aae0-c7225ff3d0a5	Hospital	H3 Informe del Caso	K - Hx Febril	20	Si tenia sangrado inusual	NULL			NULL	18	56	1	1	Checkpoint
+f8774d28-251c-4fd8-b763-634e2b05635c	Hospital	H3 Informe del Caso	K - Hx Febril	20.1	¿Actualmente tiene sangrado inusual?	NULL			hxF_SangradoInusualActual	18	57	2	1	Question
+db934f34-5167-422b-b8c8-9f3fe2047141	Hospital	H3 Informe del Caso	K - Hx Febril	20.2	¿Desde hace cuántos días empezó con el sangrado?	NULL			hxF_SangradoInusualHaceDias	18	58	2	1	Question
+ca35443c-d837-4580-8ea2-d6f2a257d830	Hospital	H3 Informe del Caso	K - Hx Febril	20.3	Anote donde estaba sangrando	NULL			hxF_SangradoInusualDonde	18	59	2	1	Question
 72f6a4b2-20d8-4a45-9203-69f75209ffdf	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	1	Si se encontró al paciente en la emergencia	NULL			NULL	19	1	1	1	Checkpoint
 d94b7bfa-58ab-482a-a2d5-34b60a50a4c7	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	1.1	Verificar la fecha y hora de admisión a este hospital	Debe seleccionar la FECHA Y HORA en que el paciente fue ADMITIDO al hosital.			fechaHoraAdmision	19	2	2	1	Question
 b96cfd50-24f7-4a87-af40-ff4239ebc0b5	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	1.2	Verificar el número de registro del hospital	NULL			registroTemporal	19	3	2	1	Question
