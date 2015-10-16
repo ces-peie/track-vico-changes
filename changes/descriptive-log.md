@@ -1,4 +1,4 @@
-> # Descriptive log of changes to the qm ViCo questionnaire
+﻿> # Descriptive log of changes to the qm ViCo questionnaire
 
 # Questions added for TAC adult pneumonia etiology study
 ## `272770f818311c3a523eaae62b70ab97acda61d4`
@@ -199,4 +199,19 @@ Update febrile syndrome questions
 - Improve question wording in questionnaire "H3 Informe del Caso" section "K - Hx Febril"  
 - Remove questions in questionnaire "H3 Informe del Caso" section "K - Hx Febril" related to neck stiffness, facio-muscular weakness and photographs of skin irritation  
 - We added questions about hepatomegaly and splenomegaly on section "H2 Comun". These are clinical signs of some causes of acute febrile illness
+
+
+---
+
+# Update risk-factors section
+## `934d7b02901de21d33a6ac0060bab4817c300f4c`
+### odeleongt
+#### 2015-10-16 13:53:00 -0600
+Update risk-factors section
+
+- Refine questions regarding "having traveled to another place" and recording where the person traveled to (country, department or municipality)  
+- Added questions regarding interaction with ticks, rats or mice, and other animals in the house or workplace  
+- Added question about using bed nets (pabellones)
+- Expanded questions on breastfeeding
+- Removed question about having clothes dryer
 
