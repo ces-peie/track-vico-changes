@@ -20,20 +20,20 @@ afd4ba8d-c220-452f-9e92-5815c3e43cac	Hospital	H1 Sospechosos	H1 Sospechosos	11.2
 8acce1d4-5f5d-4dcf-b95d-0a0130f6036c	Hospital	H1 Sospechosos	H1 Sospechosos	11.2.1	Enfermera: Anote la edad del paciente en días al momento de la admisión.	Si el bebe tiene mas de 28 dias, debe poner su edad como 1 mes.			edadDias	2	19	3	1	Question
 a4dc47f6-4558-48a8-ab98-6adafcc9530c	Hospital	H1 Sospechosos	H1 Sospechosos	12	Si la PDA está en Hospital de Cuilapa o Xela	NULL			NULL	2	20	1	1	Checkpoint
 2b83d1ff-ebdb-4fb9-82df-369f0adf02f5	Hospital	H1 Sospechosos	H1 Sospechosos	12.1	Enfermera: ¿El paciente presenta indicaciones de enfermedad respiratoria aguda?	Debe indicar si EL PACIENTE PRESENTÓ SINTOMAS RESPIRATORIOS.			presentaIndicacionRespira	2	21	2	1	Question
-a1e2178d-1cff-450c-9196-8651cbd4a088	Hospital	H1 Sospechosos	H1 Sospechosos	12.2	Si tiene indicaciones de enfermedad respiratoria	NULL			NULL	2	22	2	1	Checkpoint
+a1e2178d-1cff-450c-9196-8651cbd4a088	Hospital	H1 Sospechosos	H1 Sospechosos	12.2	Si tiene indicaciones de enfermedad respiratoria aguda	NULL			NULL	2	22	2	1	Checkpoint
 72448c35-ab2d-4b0c-a94f-a8bbb6554b66	Hospital	H1 Sospechosos	H1 Sospechosos	12.2.1	Enfermera: Seleccione la indicación de enfermedad respiratoria aguda	Seleccione del listado que se le presenta uno de los SÍNTOMAS RESPIRATORIOS que haya padecido el paciente.			indicacionRespira	2	23	3	1	Question
-575ab07d-80b1-46f4-a7f3-21c3789894a9	Hospital	H1 Sospechosos	H1 Sospechosos	12.2.2	Si seleccionó 'otra' como una indicación de enfermedad respiratoria	NULL			NULL	2	24	3	1	Checkpoint
+575ab07d-80b1-46f4-a7f3-21c3789894a9	Hospital	H1 Sospechosos	H1 Sospechosos	12.2.2	Si seleccionó 'otra' como una indicación de enfermedad respiratoria aguda	NULL			NULL	2	24	3	1	Checkpoint
 293967d8-8913-4d7c-a034-4de4615b6742	Hospital	H1 Sospechosos	H1 Sospechosos	12.2.2.1	Enfermera: Especifique qué otra indicación de enfermedad respiratoria aguda tiene el paciente	Especifique la indicación de Respiratoria.			indicacionRespira_otra	2	25	4	1	Question
 5a83ce4d-f091-45e3-a662-6528736e5d45	Hospital	H1 Sospechosos	H1 Sospechosos	12.3	Si paciente tiene menos de 5 años	NULL			NULL	2	26	2	1	Checkpoint
 1eb7c978-451c-4405-877a-cddb941f064d	Hospital	H1 Sospechosos	H1 Sospechosos	12.3.1	Enfermera: ¿El paciente presenta indicaciones de diarrea?	Debe contestar si EL PACIENTE PRESENTÓ INDICACIONES DE DIARREA.			presentaIndicacionDiarrea	2	27	3	1	Question
-d3f3af07-c1eb-4959-9e9f-8266eb8de978	Hospital	H1 Sospechosos	H1 Sospechosos	12.3.2	Si tiene indicaciones de diarrea	NULL			NULL	2	28	3	1	Checkpoint
+d3f3af07-c1eb-4959-9e9f-8266eb8de978	Hospital	H1 Sospechosos	H1 Sospechosos	12.3.2	Si tiene indicaciones de enfermedad diarreica aguda	NULL			NULL	2	28	3	1	Checkpoint
 18343583-bc7b-4fad-8cf2-405282123a21	Hospital	H1 Sospechosos	H1 Sospechosos	12.3.2.1	Enfermera: Seleccione la indicación de enfermedad diarreica aguda	Seleccione del listado que se le presenta una de las INDICACIONES DE DIARREA que haya padecido el paciente			indicacionDiarrea	2	29	4	1	Question
-8382122f-985f-4388-8faa-b985f8d7f552	Hospital	H1 Sospechosos	H1 Sospechosos	12.3.2.2	Si seleccionó 'otra' como una indicación de diarrea	NULL			NULL	2	30	4	1	Checkpoint
+8382122f-985f-4388-8faa-b985f8d7f552	Hospital	H1 Sospechosos	H1 Sospechosos	12.3.2.2	Si seleccionó 'otra' como una indicación de enfermedad diarreica aguda	NULL			NULL	2	30	4	1	Checkpoint
 8c3efdc7-ea57-4ce9-a502-44e28a574cb7	Hospital	H1 Sospechosos	H1 Sospechosos	12.3.2.2.1	Enfermera: Especifique qué otra indicación de enfermedad diarreica aguda tiene el paciente	Especifique la indicación de diarrea.			indicacionDiarrea_otra	2	31	5	1	Question
 5d860450-7024-40c0-9a03-f2858f8ee587	Hospital	H1 Sospechosos	H1 Sospechosos	12.4	Enfermera: ¿El paciente presenta indicaciones de enfermedad febril aguda?	NULL			presentaIndicacionFebril	2	32	2	1	Question
-3a4dcb8e-c673-475e-bd19-6806d13137ef	Hospital	H1 Sospechosos	H1 Sospechosos	12.5	Si tiene indicaciones de enfermedad febril	NULL			NULL	2	33	2	1	Checkpoint
+3a4dcb8e-c673-475e-bd19-6806d13137ef	Hospital	H1 Sospechosos	H1 Sospechosos	12.5	Si tiene indicaciones de enfermedad febril aguda	NULL			NULL	2	33	2	1	Checkpoint
 8bfdd574-ba74-4d1a-bfc8-0412ecf71c22	Hospital	H1 Sospechosos	H1 Sospechosos	12.5.1	Enfermera: Seleccione la indicación de enfermedad febril aguda	NULL			indicacionFebril	2	34	3	1	Question
-ac1a66f6-ba24-4175-971b-04347697d4fe	Hospital	H1 Sospechosos	H1 Sospechosos	12.5.2	Si seleccionó 'otra' como una indicación de enfermedad febril	NULL			NULL	2	35	3	1	Checkpoint
+ac1a66f6-ba24-4175-971b-04347697d4fe	Hospital	H1 Sospechosos	H1 Sospechosos	12.5.2	Si seleccionó 'otra' como una indicación de enfermedad febril aguda	NULL			NULL	2	35	3	1	Checkpoint
 25adc6f6-a1b8-457b-909f-0670e3dadcd2	Hospital	H1 Sospechosos	H1 Sospechosos	12.5.2.1	Enfermera: Especifique qué otra indicación de enfermedad febril aguda tiene el paciente	NULL			indicacionFebril_otra	2	36	4	1	Question
 13776da1-b290-49e6-a1b0-546d1cc9016a	Hospital	H1 Sospechosos	H1 Sospechosos	13	Enfermera: ¿El paciente está actualmente admitido o el médico ha dicho que será admitido al hospital?	NULL			actualAdmitido	2	37	1	1	Question
 1348115c-2c4d-46d3-8f99-fe5fec71d098	Hospital	H1 Sospechosos	H1 Sospechosos	14	Si NO está admitido	NULL			NULL	2	38	1	1	Checkpoint
@@ -63,7 +63,7 @@ fb14a645-9983-4349-84ab-21d64c22c67a	Hospital	H2 Inscripción	Consentimiento Verb
 deeff627-bf53-49ba-8a5e-4c168b5e1f4a	Hospital	H2 Inscripción	Revisión del Expediente Médico	3	Enfermera: Anote si una temperatura fue registrada en las primeras 24 horas de admisión	Debe indicar si al paciente se le tomó la temperatura medida EN LAS PRIMERAS 24 HORAS DE ADMISIÓN.			medirTemperaturaCPrimeras24Horas	5	4	1	1	Question
 8bac5c97-70fc-4728-a5ed-0e30432c3f43	Hospital	H2 Inscripción	Revisión del Expediente Médico	4	Si fue registrada una temperatura en las primeras 24 horas de admisión	NULL			NULL	5	5	1	1	Checkpoint
 01277398-ab7b-4b6d-aca9-adf2effccc1a	Hospital	H2 Inscripción	Revisión del Expediente Médico	4.1	Enfermera: Anote la temperatura (ºC) más alta registrada durante las primeras 24 horas de admisión	Si la temperatura no fue registrada y no han pasado mas de 24 horas de admision debe tomar la temperatura del pacinete y anotarla en su PDA.			temperaturaPrimeras24Horas	5	6	2	1	Question
-a8223a91-951e-4d67-80b1-44e0dcfb228c	Hospital	H2 Inscripción	Revisión del Expediente Médico	5	Si tiene indicación de diarrea, es menor de 5 años y está en Hospital de Cuilapa o Xela	NULL			NULL	5	7	1	1	Checkpoint
+a8223a91-951e-4d67-80b1-44e0dcfb228c	Hospital	H2 Inscripción	Revisión del Expediente Médico	5	Si tiene indicación de enfermedad diarreica aguda y está en Hospital de Cuilapa o Xela	NULL			NULL	5	7	1	1	Checkpoint
 58971af3-0c7b-41fa-8708-5f0257ba155e	Hospital	H2 Inscripción	Revisión del Expediente Médico	5.1	Enfermera: Anote si el niño ingresó con Plan B (rehidratación oral o por via nasogástrica) o Plan C (rehidratación con suero intravenoso)	NULL			ingresoPlanBPlanC	5	8	2	1	Question
 315acb9d-a801-46f6-9435-cbefedc8905d	Hospital	H2 Inscripción	Revisión del Expediente Médico	5.2	Enfermera: Anote si el grado de deshidratación del niño fue registrado	NULL			gradoDeshidratacionRegistrado	5	9	2	1	Question
 7d7fd28e-7596-4d12-a12c-3e44d77ff510	Hospital	H2 Inscripción	Revisión del Expediente Médico	5.3	Si está anotado el grado de deshidratación	NULL			NULL	5	10	2	1	Checkpoint
@@ -132,7 +132,7 @@ b3472323-8813-4f4c-92f2-ffd958c83db0	Hospital	H2 Inscripción	Diarrea y Respirato
 5c4a6373-275f-4c82-b026-6a08bd7b1912	Hospital	H2 Inscripción	Diarrea y Respiratoria	1.2.1	Pregunte: ¿Hace cuántos días comenzó con diarrea o asientos liquidos?	Debe ingresar en la casilla desde HACE CUÁNTOS DÍAS el paciente COMENZÓ CON DIARREA			diarreaComenzoHaceDias	7	4	3	1	Question
 eb49a68d-46b7-4bb6-823b-cfd6d1e5ac0f	Hospital	H2 Inscripción	Diarrea y Respiratoria	1.2.2	Pregunte: ¿En su peor día, cuántas deposiciones o asientos líquidos tuvo en un período de 24 horas (1 día)?	Debe ingresar en la casilla la cantidad MÁXIMA DE ASIENTOS que el paciente tuvo EN 1 DÍA.  Las cantidades válidas pueden ser de 1 a 50 veces.			diarreaMaximoAsientos1Dia	7	5	3	1	Question
 7de9e42a-3601-4ed6-835d-fbdd1b0f7559	Hospital	H2 Inscripción	Diarrea y Respiratoria	1.2.3	Pregunte: ¿En la semana anterior al inicio de esta enfermedad de diarrea tuvo algún otro episodio de diarrea?	Debe pregunterle al paciente si en la semana anterior al inicio de su diarrea, tuvo algún otro episodio de diarrea.			diarreaOtroEpisodioSemanaAnterior	7	6	3	1	Question
-dd36948f-4cd6-40aa-b07d-7246f7a44493	Hospital	H2 Inscripción	Diarrea y Respiratoria	2	Si no tiene una indicación de Respiratorio	NULL			NULL	7	7	1	1	Checkpoint
+dd36948f-4cd6-40aa-b07d-7246f7a44493	Hospital	H2 Inscripción	Diarrea y Respiratoria	2	Si no tiene una indicación de enfermedad respiratoria aguda	NULL			NULL	7	7	1	1	Checkpoint
 b9e8d670-df37-4407-8bde-3f789f68be7c	Hospital	H2 Inscripción	Diarrea y Respiratoria	2.1	Pregunte: ¿Ha tenido tos, dolor de garganta, dificultad para respirar  o le cuesta más trabajo respirar?	NULL			sintomasRespiraTamizaje	7	8	2	1	Question
 1b11995e-ed60-4ecb-a4ea-2616d77bd37b	Hospital	H2 Inscripción	Diarrea y Respiratoria	3	Si ha tenido tos, dificultad para respirar, o dolor de garganta o indicaciones de enfermedad respiratoria en H1	NULL			NULL	7	9	1	1	Checkpoint
 85cddba0-dd0f-41bc-97e3-f95d84b28d5f	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.1	Tos	Debe pregunterle al paciente si ha tenido tos.			sintomasRespiraTos	7	10	2	1	Question
@@ -143,13 +143,13 @@ fb0eea68-9e62-469f-b417-19d5cf75a5bf	Hospital	H2 Inscripción	Diarrea y Respirato
 85560c08-60a9-4d49-8424-0e9d2518c3a6	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.2.2.2	Pregunte: ¿Ha tenido ataques de tos (ataques súbitos e intensos de tos)?	NULL			pertussisParoxismos	7	15	4	1	Question
 a3d5c587-db2c-46c3-a67d-aeca82c09cb1	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.2.2.3	Pregunte: ¿Al final del ataque de tos ha tenido un gallo o silbido?	NULL			pertussisWhoop	7	16	4	1	Question
 b02043bf-f5b9-483b-b635-67b1c6a6f2f7	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.3	Pregunte: ¿Dificultad para respirar o le cuesta más trabajo respirar?	Debe pregunterle al paciente si ha tenido dificultad para respirar durante su efermedad.			sintomasRespiraDificultadRespirar	7	17	2	1	Question
-c280e02d-75d8-469e-96cf-b9a1263e874e	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.4	Tiene dificultad para respirar	NULL			NULL	7	18	2	1	Checkpoint
+c280e02d-75d8-469e-96cf-b9a1263e874e	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.4	Si Tiene dificultad para respirar	NULL			NULL	7	18	2	1	Checkpoint
 84d690ee-c7d2-4a77-befa-12b5ca637fd4	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.4.1	Pregunte: ¿Hace cuántos días empezó con dificultad para respirar?	NULL			sintomasRespiraDificultadDias	7	19	3	1	Question
 daa9b021-5c37-4cf3-b6d0-6861ede7149f	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.5	Esputo o flema	Debe pregunterle al paciente si produce esputo.			sintomasRespiraEsputo	7	20	2	1	Question
 e7b44fd5-520b-4591-b67f-83cc0a40599f	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.6	Esputo o flema con sangre	NULL			sintomasRespiraHemoptisis	7	21	2	1	Question
 d2634f53-f2b1-42c8-b8cf-4c954e4af95d	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.7	Si el paciente tiene 2 años de edad o más	NULL			NULL	7	22	2	1	Checkpoint
 892a6483-e825-4cc8-864e-1739384fbb39	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.7.1	Dolor de garganta	Debe pregunterle al paciente si le ha dolido la garganta durante su enfermedad.			sintomasRespiraDolorGarganta	7	23	3	1	Question
-763b01d8-50b6-42af-bee8-31e8f0caf665	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.7.2	Tiene dolor de garganta	NULL			NULL	7	24	3	1	Checkpoint
+763b01d8-50b6-42af-bee8-31e8f0caf665	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.7.2	Si tiene dolor de garganta	NULL			NULL	7	24	3	1	Checkpoint
 6d376a75-74bf-4bef-b328-c722c5d6f581	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.7.2.1	Pregunte: ¿Hace cuántos días empezó con dolor de garganta?	NULL			sintomasRespiraGargantaDias	7	25	4	1	Question
 8aec0044-7589-473c-b848-22aaa0fc53db	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.7.3	Falta de aire	Debe pregunterle al paciente si le hay faltado el aire durante su enfermedad.			sintomasRespiraFaltaAire	7	26	3	1	Question
 f25f5fab-e87d-4235-9ca8-1fcd860af953	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.7.4	Dolor de pecho al respirar	Debe pregunterle al paciente si le da dolor de pecho al respirar durante su enfermedad.			sintomasRespiraDolorPechoRespirar	7	27	3	1	Question
@@ -162,7 +162,7 @@ da418d7e-145b-40fc-8aa4-f88be433e78d	Hospital	H2 Inscripción	Diarrea y Respirato
 77ccf0a8-11dd-4f42-928e-005ee90cc1e3	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.1	Enfermera: ¿Se pudo medir la tasa de respiracion por minuto?	NULL			medidaRespiraPorMinuto	7	34	2	1	Question
 ff32896d-a567-4e4c-84bd-f25a8cad3822	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.11	Si se pudo medir la tasa de respiración	NULL			NULL	7	35	2	1	Checkpoint
 ed4e796d-3ffc-4fa1-a340-6cc6130f49a1	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.11.1	Enfermera: Anote la tasa de respiración calculada: (Use el cronómetro de la PDA para esta medición)	NULL			respiraPorMinuto	7	36	3	1	Question
-6f9d99f6-f448-4057-9b0d-0ac37193698e	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12	Si el paciente tiene indicaciones de respiratoria o está elegible para el estudio de respiratoria:	NULL			NULL	7	37	2	1	Checkpoint
+6f9d99f6-f448-4057-9b0d-0ac37193698e	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12	Si el paciente tiene enfermedad respiratoria aguda	NULL			NULL	7	37	2	1	Checkpoint
 aef34af7-5aec-4524-8033-dcdd962ece91	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.1	Enfermera: ¿Se puede medir la oximetría de pulso?	NULL			medirOximetroPulso	7	38	3	1	Question
 68e58c91-0d25-4f74-aa27-d3e87005f41c	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.2	Si se pudo medir la oximetría de pulso	NULL			NULL	7	39	3	1	Checkpoint
 5f9f5e6a-28ba-473a-b8e3-ad4de5c78c40	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.2.1	Enfermera: Anote la saturación de oxígeno	NULL			oximetroPulso	7	40	4	1	Question
@@ -192,20 +192,20 @@ a08a2e15-baad-4a02-a773-0e529a325d4a	Hospital	H2 Inscripción	Diarrea y Respirato
 b45cdc1b-9218-4764-a9dc-3410e1992a2b	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.3.1	Enfermera: ¿Por qué no se pudo medir la oximetría de pulso?	NULL			oximetroPulsoNoRazon	7	64	4	1	Question
 88d4a8f3-29a2-41fe-aee5-73243718b560	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.3.2	Si la razón no se pudo medir la oxímetria de pulso es 'otro'	NULL			NULL	7	65	4	1	Checkpoint
 6b1f717f-8c00-451e-903a-4228c2665851	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.3.2.1	Enfermera: Especifique la otra razón	NULL			oximetroPulsoNoRazon_esp	7	66	5	1	Question
-712a1ff5-5d21-483f-a99b-75ab74213698	Hospital	H2 Inscripción	Diarrea y Respiratoria	4	Si sospechoso IRAG es sí	NULL			NULL	7	67	1	1	Checkpoint
+712a1ff5-5d21-483f-a99b-75ab74213698	Hospital	H2 Inscripción	Diarrea y Respiratoria	4	Si sospechoso IRAG(Infección respiratoria aguda grave) es sí	NULL			NULL	7	67	1	1	Checkpoint
 2dbb15e8-6cad-4cb8-b277-6d93c26f356b	Hospital	H2 Inscripción	Diarrea y Respiratoria	4.1	Pregunte: ¿Hace cuántos días empezó con su enfermedad?	NULL			enfermedadEmpezoHaceDias	7	68	2	1	Question
 abf8cfb6-8af4-430e-b756-61c2c141e804	Hospital	H2 Inscripción	Febril	1	Enfermera: Debe consultar con el médico para asegurar que no haya otra causa obvia de la fiebre.	NULL			NULL	9	1	1	1	Info
 5bb450d7-2598-4cc4-92d5-f743de430b1c	Hospital	H2 Inscripción	Febril	2	Enfermera: ¿Tiene el paciente uno de los siguientes diagnósticos?	NULL			fiebreDiagnostico	9	2	1	1	Question
 8f4706b3-34a3-4d9a-89cc-c11bc41e7466	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	1	¡Después de este punto no se pueden modificar los datos de los criterios de inclusión!	NULL			NULL	10	1	1	1	Info
-ae2bf8f2-d05e-4e31-a7d1-af12e4a21275	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	2	Diarrea solamente	NULL			NULL	10	2	1	1	Checkpoint
-cb701896-c455-4f31-a88c-00fecde38f29	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	2.1	El paciente es elegible para el estudio de Diarrea.	NULL			NULL	10	3	2	1	Info
-e014bfa7-6d08-4e89-bd81-c745fddd39bc	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	3	Respiratoria solamente	NULL			NULL	10	4	1	1	Checkpoint
-4d4c7899-065d-4db3-ae9f-630c881215ee	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	3.1	El paciente es elegible para el estudio de Respiratoria.	NULL			NULL	10	5	2	1	Info
-e57e6680-f7d7-4176-a0b4-7e2732f57776	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	4	Febril solamente	NULL			NULL	10	6	1	1	Checkpoint
-1203812a-fd8f-4eba-a14b-e48463c205d0	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	4.1	El paciente es elegible para el estudio de Febril.	NULL			NULL	10	7	2	1	Info
-eeceb80a-61fe-4031-bfaa-d5b70f8e5fe4	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	5	Diarrea y Respiratoria	NULL			NULL	10	8	1	1	Checkpoint
-f1af1ffd-087e-4ab3-ba0f-fa8bac466fe7	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	5.1	El paciente es elegible para los estudios de Diarrea y Respiratoria.	NULL			NULL	10	9	2	1	Info
-4c963605-1f14-40e0-822a-fe6690d62063	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	6	Si el paciente NO es elegible para Diarrea ni Respiratoria ni Febriles	NULL			NULL	10	10	1	1	Checkpoint
+ae2bf8f2-d05e-4e31-a7d1-af12e4a21275	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	2	Enfermedad diarreica aguda solamente	NULL			NULL	10	2	1	1	Checkpoint
+cb701896-c455-4f31-a88c-00fecde38f29	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	2.1	El paciente es elegible para el estudio de Enfermedad diarreica aguda.	NULL			NULL	10	3	2	1	Info
+e014bfa7-6d08-4e89-bd81-c745fddd39bc	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	3	Enfermedad Respiratoria aguda solamente	NULL			NULL	10	4	1	1	Checkpoint
+4d4c7899-065d-4db3-ae9f-630c881215ee	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	3.1	El paciente es elegible para el estudio de Enfermedad respiratoria aguda.	NULL			NULL	10	5	2	1	Info
+e57e6680-f7d7-4176-a0b4-7e2732f57776	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	4	Enfermedad Febril aguda solamente	NULL			NULL	10	6	1	1	Checkpoint
+1203812a-fd8f-4eba-a14b-e48463c205d0	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	4.1	El paciente es elegible para el estudio de Enfermedad febril aguda.	NULL			NULL	10	7	2	1	Info
+eeceb80a-61fe-4031-bfaa-d5b70f8e5fe4	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	5	Enfermedad diarreica aguda y enfermedad respiratoria aguda	NULL			NULL	10	8	1	1	Checkpoint
+f1af1ffd-087e-4ab3-ba0f-fa8bac466fe7	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	5.1	El paciente es elegible para los estudios de Enfermedad diarreica y enfermedad respiratoria aguda.	NULL			NULL	10	9	2	1	Info
+4c963605-1f14-40e0-822a-fe6690d62063	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	6	Si el paciente NO es elegible para el estudio de enfermedad diarreica aguda ni enfermedad respiratoria aguda ni enfermedad febrile aguda	NULL			NULL	10	10	1	1	Checkpoint
 9bdfcd51-ef30-45a4-b8df-59bcd2efb70c	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	6.1	El paciente NO cumple con los criterios de inclusión.    Agradezca a la persona por el tiempo y la información que compartió con nosotros.    Hágale saber que afortunadamente no tiene el tipo de enfermedad que estamos estudiando.	NULL			NULL	10	11	2	1	Info
 228e44d1-9e19-4e1a-8711-2f987e3097a6	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7	Si el paciente es elegible para al menos uno de los estudios	NULL			NULL	10	12	1	1	Checkpoint
 af4fcedd-c78c-4ff6-8b44-12e04bba8e8b	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.1	El paciente CUMPLE con los criterios de inclusión.     En este momento debe proporcionarle al paciente el Consentimiento (y si aplica, Asentimiento) escrito para que lo lean y lo firmen si están de acuerdo.	NULL			NULL	10	13	2	1	Info
@@ -232,7 +232,7 @@ b1877f2f-ef3e-4073-9110-e34cbc296407	Hospital	H2 Inscripción	Consentimiento y En
 223c1fae-a032-4afa-bb02-e8329fd43aa7	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.5.3.4	Si la enfermedad empezó hace 3 o menos días y elegibleIRAG es "Sí" y está en Santa Rosa	NULL			NULL	10	34	4	1	Checkpoint
 36d3bc25-4ef4-4e02-8f0e-c1c6fdc828c6	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.5.3.4.1	¡¡EL PACIENTE ES ELEGIBLE PARA VIGILANCIA DE INFLUENZA!!    Marque todas las etiquetas con marcador ROSADO.	NULL			NULL	10	35	5	1	Info
 31fbbd1e-6c99-45db-80da-fa39daaa8cad	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.5.3.5	Favor de tomar las muestras necesarias antes de proseguir, y anote la información en el formulario de Toma de Muestras	NULL			NULL	10	36	4	1	Info
-31cd0a3d-5bd1-45a3-9219-9ebc5feda582	Hospital	H5 Muestras	Muestras de ViCo	1	Si el paciente tiene enfermedad diarreica:	NULL	modification		NULL	12	1	1	1	Checkpoint
+31cd0a3d-5bd1-45a3-9219-9ebc5feda582	Hospital	H5 Muestras	Muestras de ViCo	1	Si el paciente tiene enfermedad diarreica aguda:	NULL	modification		NULL	12	1	1	1	Checkpoint
 b0b98026-8ad4-4c7d-983e-7e7396b90d04	Hospital	H5 Muestras	Muestras de ViCo	1.1	Enfermera: ¿Colectó alguna muestra de heces?	La muestra entera es de mayor utilidad para detectar la posible causa de enfermedad.	modification	Opciones: Si, No	muestraHecesColecta	12	2	2	1	Question
 				1.1.1	Si colectó una muestra de heces (entera, hisopo, o ambos)	NULL	addition			12	3	3	1	Checkpoint
 				1.1.1.1	¿Qué tipo de muestra de heces recolectó?	NULL	addition	Opciones: Muestra de heces entera, hisopo rectal, ambos	muestraHecesColectaTipo	12	4	4	1	Question
@@ -259,7 +259,7 @@ f19f33de-3f39-4c58-8005-56db9780bc8e	Hospital	H5 Muestras	Muestras de ViCo	1.3.3
 79658514-3747-4794-b30d-e17070013538	Hospital	H5 Muestras	Muestras de ViCo	1.3.6	Si colectó hisopo tipo Cary Blair	NULL			NULL	12	25	3	1	Checkpoint
 04495185-a46d-4ffd-a9e6-4af258bbca71	Hospital	H5 Muestras	Muestras de ViCo	1.3.6.1	Enfermera: ¿Cuándo obtuvo el hisopo tipo Cary Blair?	NULL			muestraHecesHisopoCaryBlairFechaHora	12	26	4	1	Question
 14efa719-3c7a-4a52-b795-ef29e95bb05d	Hospital	H5 Muestras	Muestras de ViCo	1.3.6.2	Enfermera: ¿Cómo obtuvó el hisopo Cary Blair?	NULL	add help text	Esto debe aplicar únicamente en el centro o puesto, donde la muestra no llega el mismo dia al laboratorio. En el hospital no aplica.	muestraHecesHisopoCaryBlairTipo	12	27	4	1	Question
-0fcfc818-bf37-406f-81b6-70c70d7f7895	Hospital	H5 Muestras	Muestras de ViCo	2	Si es un paciente de Respiratorias	NULL			NULL	12	28	1	1	Checkpoint
+0fcfc818-bf37-406f-81b6-70c70d7f7895	Hospital	H5 Muestras	Muestras de ViCo	2	Si es un paciente de enfermedad respiratoria aguda	NULL			NULL	12	28	1	1	Checkpoint
 2adfdfd7-118a-4605-ae50-b2dbd9a89cd4	Hospital	H5 Muestras	Muestras de ViCo	2.1	Enfermera: ¿Colectó un hisopo orofaríngeo (OF)?	NULL			muestraFroteOPColecta	12	29	2	1	Question
 deece3da-bf56-40d8-a58a-126afa02195b	Hospital	H5 Muestras	Muestras de ViCo	2.2	Si NO colectó muestra de Frote OF	NULL			NULL	12	30	2	1	Checkpoint
 c979910b-0f91-472a-8821-b32da0483c9d	Hospital	H5 Muestras	Muestras de ViCo	2.2.1	Enfermera: ¿Por qué no se tomo un hisopo OF?	NULL			muestraFroteOPNoRazon	12	31	3	1	Question
@@ -286,7 +286,7 @@ f439f6db-9bf0-4aa4-87f9-a5c18d4197f1	Hospital	H5 Muestras	Muestras de ViCo	2.7.2
 1781f683-9547-413e-843b-975971843a73	Hospital	H5 Muestras	Muestras de ViCo	2.7.3	Si colectó muestra de Orina	NULL			NULL	12	52	3	1	Checkpoint
 da5a08ea-7503-4219-9631-c3802fb0bb50	Hospital	H5 Muestras	Muestras de ViCo	2.7.3.1	Enfermera: ¿Cuándo se obtuvo la muestra de orina?	NULL			muestraOrinaFechaHora	12	53	4	1	Question
 abf5bec4-0e3a-4a23-83c0-ae13529beec0	Hospital	H5 Muestras	Muestras de ViCo	2.7.3.2	¿Cuántos mililitros de orina produjo el paciente?	NULL			muestraOrinaNumeroML	12	54	4	1	Question
-867eed83-0413-4a49-91a8-dea5d67daeca	Hospital	H5 Muestras	Muestras de ViCo	3	Si es un paciente Febril	NULL			NULL	12	55	1	1	Checkpoint
+867eed83-0413-4a49-91a8-dea5d67daeca	Hospital	H5 Muestras	Muestras de ViCo	3	Si es un paciente de enfermedad febril aguda	NULL			NULL	12	55	1	1	Checkpoint
 0171a331-082d-4651-970a-e97eb6180712	Hospital	H5 Muestras	Muestras de ViCo	3.1	Enfermera: ¿Consiguió una muestra de sangre entera del paciente?	NULL			muestraSangreEnteraColecta	12	56	2	1	Question
 df77a478-a84e-45b2-ac3b-3b794755838b	Hospital	H5 Muestras	Muestras de ViCo	3.2	Si colectó muestra de sangre entera	NULL			NULL	12	57	2	1	Checkpoint
 1d0785ff-4e7d-4256-a1d2-38d1107ebaec	Hospital	H5 Muestras	Muestras de ViCo	3.2.1	Enfermera: ¿Esta muestra de sangre entera fue tomada por usted o el hospital?	NULL			muestraSangreEnteraFuente	12	58	3	1	Question
@@ -318,7 +318,7 @@ e98f1d9b-400b-446c-893c-10ae64602495	Hospital	H3 Informe del Caso	L - Hx Común	4
 4f715fda-8965-4018-aa42-934229d7ac2b	Hospital	H3 Informe del Caso	L - Hx Común	5.4.1	Pregunte: ¿Actualmente tiene dolor de cabeza?	NULL			hxC_DolorCabezaActual	316	15	3	1	Question
 d589de8c-766d-4707-b5ef-0710ae72b041	Hospital	H3 Informe del Caso	L - Hx Común	5.4.2	Pregunte: ¿Desde hace cuántos días empezó con dolor de cabeza?	NULL			hxC_DolorCabezaEmpezoHaceDias	316	16	3	1	Question
 89f7ee2c-1d91-4350-a611-f2252be7f74a	Hospital	H3 Informe del Caso	L - Hx Común	5.5	¿Dolor de cuerpo o de músculos?	NULL			hxC_DolorMusculos	316	17	2	1	Question
-638c4a9a-28ef-4b88-8ca8-28450626229f	Hospital	H3 Informe del Caso	L - Hx Común	5.6	Si tiene Dolor de músculos	NULL			NULL	316	18	2	1	Checkpoint
+638c4a9a-28ef-4b88-8ca8-28450626229f	Hospital	H3 Informe del Caso	L - Hx Común	5.6	Si tiene Dolor de cuerpo o de músculos	NULL			NULL	316	18	2	1	Checkpoint
 70a54063-fdd6-46d0-9f9c-2bee9a25956e	Hospital	H3 Informe del Caso	L - Hx Común	5.6.1	Pregunte: ¿Actualmente tiene dolor de cuerpo o de músculos?	NULL			hxC_DolorMusculosActual	316	19	3	1	Question
 2f525cc7-403d-47f0-9065-9de988af5d09	Hospital	H3 Informe del Caso	L - Hx Común	5.6.2	Pregunte: ¿Desde hace cuántos días empezó con dolor de cuerpo o de músculos?	NULL			hxC_DolorMusculosEmpezoHaceDias	316	20	3	1	Question
 d2034f87-1f81-492c-ad1e-53748513c985	Hospital	H3 Informe del Caso	L - Hx Común	5.7	Debilidad generalizada?	NULL			hxC_DebilidadGeneral	316	21	2	1	Question
