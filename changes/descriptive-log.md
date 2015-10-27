@@ -226,3 +226,13 @@ Update instructions in the question texts
 
 Update instructions in the questions througout the questionnaire to more clearly state what is expected from the interviewer (ask something to the patient, observe the patient, check the expedient, etc)
 
+
+---
+
+# Update messages
+## `35a3661445257844c50c1507dfb0aa6ed84634dc`
+### Juan Garcia
+#### 2015-10-27 14:19:00 -0600
+Update messages
+
+Update messages.   
