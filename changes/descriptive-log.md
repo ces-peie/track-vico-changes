@@ -215,3 +215,14 @@ Update risk-factors section
 - Expanded questions on breastfeeding
 - Removed question about having clothes dryer
 
+
+---
+
+# Update instructions in the question texts
+## `0a18f3debaf413816ca456a57e10e916c22b003d`
+### Juan Garcia
+#### 2015-10-27 09:55:22 -0600
+Update instructions in the question texts
+
+Update instructions in the questions througout the questionnaire to more clearly state what is expected from the interviewer (ask something to the patient, observe the patient, check the expedient, etc)
+
