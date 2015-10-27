@@ -236,3 +236,14 @@ Update instructions in the questions througout the questionnaire to more clearly
 Update messages
 
 Update messages.   
+
+---
+
+# First spelling revision
+## `99f6090b96405c7c928a00318977625b7387e48a`
+### Juan Garcia
+#### 2015-10-27 16:37:26 -0600
+First spelling revision
+
+Riview and fix misspellings
+
