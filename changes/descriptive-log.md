@@ -247,3 +247,16 @@ First spelling revision
 
 Riview and fix misspellings
 
+
+---
+
+# Second spelling revision
+## `6c7d6d6d40129eeea6c924a3915045de7743e243`
+### odeleongt
+#### 2015-10-28 09:42:52 -0600
+Second spelling revision
+
+Riview and fix misspellings (second pass)
+
+
+
