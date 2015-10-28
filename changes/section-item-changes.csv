@@ -19,7 +19,7 @@ a7d9542d-bf16-429f-90ee-0af7ef7c56e5	Hospital	H1 Sospechosos	H1 Sospechosos	11.1
 afd4ba8d-c220-452f-9e92-5815c3e43cac	Hospital	H1 Sospechosos	H1 Sospechosos	11.2	Si meses igual 0	NULL			NULL	2	18	2	1	Checkpoint
 8acce1d4-5f5d-4dcf-b95d-0a0130f6036c	Hospital	H1 Sospechosos	H1 Sospechosos	11.2.1	Enfermera: Anote la edad del paciente en días al momento de la admisión.	Si el bebe tiene mas de 28 días, debe poner su edad como 1 mes.			edadDias	2	19	3	1	Question
 a4dc47f6-4558-48a8-ab98-6adafcc9530c	Hospital	H1 Sospechosos	H1 Sospechosos	12	Si la PDA está en Hospital de Cuilapa o Xela	NULL			NULL	2	20	1	1	Checkpoint
-2b83d1ff-ebdb-4fb9-82df-369f0adf02f5	Hospital	H1 Sospechosos	H1 Sospechosos	12.1	Enfermera: ¿El paciente presenta indicaciones de enfermedad respiratoria aguda?	Debe indicar si EL PACIENTE PRESENTÓ SINTOMAS RESPIRATORIOS.			presentaIndicacionRespira	2	21	2	1	Question
+2b83d1ff-ebdb-4fb9-82df-369f0adf02f5	Hospital	H1 Sospechosos	H1 Sospechosos	12.1	Enfermera: ¿El paciente presenta indicaciones de enfermedad respiratoria aguda?	Debe indicar si EL PACIENTE PRESENTÓ SÍNTOMAS RESPIRATORIOS.			presentaIndicacionRespira	2	21	2	1	Question
 a1e2178d-1cff-450c-9196-8651cbd4a088	Hospital	H1 Sospechosos	H1 Sospechosos	12.2	Si tiene indicaciones de enfermedad respiratoria aguda	NULL			NULL	2	22	2	1	Checkpoint
 72448c35-ab2d-4b0c-a94f-a8bbb6554b66	Hospital	H1 Sospechosos	H1 Sospechosos	12.2.1	Enfermera: Seleccione la indicación de enfermedad respiratoria aguda	Seleccione del listado que se le presenta uno de los SÍNTOMAS RESPIRATORIOS que haya padecido el paciente.			indicacionRespira	2	23	3	1	Question
 575ab07d-80b1-46f4-a7f3-21c3789894a9	Hospital	H1 Sospechosos	H1 Sospechosos	12.2.2	Si seleccionó 'otra' como una indicación de enfermedad respiratoria aguda	NULL			NULL	2	24	3	1	Checkpoint
@@ -64,7 +64,7 @@ deeff627-bf53-49ba-8a5e-4c168b5e1f4a	Hospital	H2 Inscripción	Revisión del Expedi
 8bac5c97-70fc-4728-a5ed-0e30432c3f43	Hospital	H2 Inscripción	Revisión del Expediente Médico	4	Si fue registrada una temperatura en las primeras 24 horas de admisión	NULL			NULL	5	5	1	1	Checkpoint
 01277398-ab7b-4b6d-aca9-adf2effccc1a	Hospital	H2 Inscripción	Revisión del Expediente Médico	4.1	Enfermera: Anote la temperatura (ºC) más alta registrada durante las primeras 24 horas de admisión	Si la temperatura no fue registrada y no han pasado mas de 24 horas de admisión debe tomar la temperatura del paciente y anotarla en su PDA.			temperaturaPrimeras24Horas	5	6	2	1	Question
 a8223a91-951e-4d67-80b1-44e0dcfb228c	Hospital	H2 Inscripción	Revisión del Expediente Médico	5	Si tiene indicación de enfermedad diarreica aguda y está en Hospital de Cuilapa o Xela	NULL			NULL	5	7	1	1	Checkpoint
-58971af3-0c7b-41fa-8708-5f0257ba155e	Hospital	H2 Inscripción	Revisión del Expediente Médico	5.1	Enfermera: Anote si el niño ingresó con Plan B (rehidratación oral o por via nasogástrica) o Plan C (rehidratación con suero intravenoso)	NULL			ingresoPlanBPlanC	5	8	2	1	Question
+58971af3-0c7b-41fa-8708-5f0257ba155e	Hospital	H2 Inscripción	Revisión del Expediente Médico	5.1	Enfermera: Anote si el niño ingresó con Plan B (rehidratación oral o por vía nasogástrica) o Plan C (rehidratación con suero intravenoso)	NULL			ingresoPlanBPlanC	5	8	2	1	Question
 315acb9d-a801-46f6-9435-cbefedc8905d	Hospital	H2 Inscripción	Revisión del Expediente Médico	5.2	Enfermera: Anote si el grado de deshidratación del niño fue registrado	NULL			gradoDeshidratacionRegistrado	5	9	2	1	Question
 7d7fd28e-7596-4d12-a12c-3e44d77ff510	Hospital	H2 Inscripción	Revisión del Expediente Médico	5.3	Si está anotado el grado de deshidratación	NULL			NULL	5	10	2	1	Checkpoint
 931bc3ec-e549-4c2d-a379-319271601fbc	Hospital	H2 Inscripción	Revisión del Expediente Médico	5.3.1	Enfermera: Anote el grado de deshidratación registrado en el expediente	NULL			gradoDeshidratacion	5	11	3	1	Question
@@ -81,14 +81,14 @@ dbe5777d-6333-4fe6-b223-cff54f8d593f	Hospital	H2 Inscripción	Revisión del Expedi
 	Hospital	H2 Inscripción	Revisión del Expediente Médico	11	Enfermera: Anote si está registrado que el paciente ha presentado cianosis (incluye cianosis durante un episodio de tos o tos cianotizante)	Debe buscar en el registro medico si el paciente presento cianosis durante un acceso de tos	addition		Historiacianosis	5	22	1	1	Question
 	Hospital	H2 Inscripción	Revisión del Expediente Médico	12	Enfermera: Anote si está registrado que el paciente ha tenido “tos paroxística” o en “accesos”	Debe buscar en el registro medico si el paciente ha tenido “tos paroxística” o en “accesos”	addition		HistoriaParoxismos	5	23	1	1	Question
 	Hospital	H2 Inscripción	Revisión del Expediente Médico	13	Enfermera: Anote si está registrado en el expediente que el paciente presenta Estridor Inspiratorio	Debe buscar en el registro medico si el paciente ha presentado Estridor Inspiratorio	addition		HistoriaWhoop	5	24	1	1	Question
-	Hospital	H2 Inscripción	Revisión del Expediente Médico	14	Enfermera: Anote si está registrado en el expediente que el paciente presenta Vómito postusivo	Debe buscar en el registro medico si el paciente ha presentado Vomitos Postusivo	addition		historiaVomitoPostusivo	5	25	1	1	Question
+	Hospital	H2 Inscripción	Revisión del Expediente Médico	14	Enfermera: Anote si está registrado en el expediente que el paciente presenta Vómito postusivo	Debe buscar en el registro medico si el paciente ha presentado Vómitos Postusivo	addition		historiaVomitoPostusivo	5	25	1	1	Question
 d7623536-9081-4369-a78a-e1dc212e99a5	Hospital	H2 Inscripción	Común	1	Ahora va a entrevistar al paciente, o a su padre/tutor si es menor de edad. Por favor, diga al paciente o a su padre/tutor que quiere hacerle varias preguntas que servirán para ver si es elegible para participar en este estudio.	NULL			NULL	6	1	1	1	Info
 56a4cb22-7971-4b04-a1f3-342e75fb42d2	Hospital	H2 Inscripción	Común	2	Enfermera: Verifique los primeros nombres del paciente	Debe ingresar los dos nombres del paciente si los tiene disponibles			nombres	6	2	1	1	Question
 aab11c20-46ce-4131-b32b-c33392284e78	Hospital	H2 Inscripción	Común	3	Enfermera: Verifique los apellidos del paciente	Debe ingresar los dos apellidos del paciente si los tiene disponibles.			apellidos	6	3	1	1	Question
 700cbb98-cfa9-40f5-a18d-656cdcd6c0f1	Hospital	H2 Inscripción	Común	4	Si la PDA está en IGSS Zona 9	NULL			NULL	6	4	1	1	Checkpoint
 384a7a14-3197-4003-b349-8663becb8136	Hospital	H2 Inscripción	Común	4.1	Enfermera: Verifique el número de afiliación al IGSS	NULL			IGSSAfiliacion	6	5	2	1	Question
 bfdad356-60d7-4bf0-88d7-fa4c0645e27b	Hospital	H2 Inscripción	Común	5	Si se encontró al paciente en la emergencia	NULL			NULL	6	6	1	1	Checkpoint
-298158ed-c3c4-4c2f-86c7-84a487ddb24d	Hospital	H2 Inscripción	Común	5.1	Enfermera: Verificar la fecha y hora de admisión a este hospital	Debe seleccionar la FECHA Y HORA en que el paciente fue ADMITIDO al hosital.			fechaHoraAdmision	6	7	2	1	Question
+298158ed-c3c4-4c2f-86c7-84a487ddb24d	Hospital	H2 Inscripción	Común	5.1	Enfermera: Verificar la fecha y hora de admisión a este hospital	Debe seleccionar la FECHA Y HORA en que el paciente fue ADMITIDO al hospital.			fechaHoraAdmision	6	7	2	1	Question
 1f077d30-4f61-4d76-9d5d-9fc0b9fb2f04	Hospital	H2 Inscripción	Común	5.2	Enfermera: Verificar el número de registro del hospital	NULL			registroTemporal	6	8	2	1	Question
 0fbf19e3-3d9e-42a4-afcd-8b3bb810b127	Hospital	H2 Inscripción	Común	6	Enfermera: Verifique la edad en años al momento de la admisión.	Debe ingresar la Edad (en AÑOS) del paciente y el valor debe estar comprendido entre 0 y 100 años.			edadAnios	6	9	1	1	Question
 1ce47b1a-d799-4a05-9990-0f54bd48f366	Hospital	H2 Inscripción	Común	7	Si edad en años es igual a 0	NULL			NULL	6	10	1	1	Checkpoint
@@ -184,15 +184,15 @@ c95821c0-7a78-48c7-a1c9-d4dc6055a6d1	Hospital	H2 Inscripción	Diarrea y Respirato
 b93e111f-a991-473b-bbab-d0f71cfb726c	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.2.5.2.4.2.3	Recuerde reanudar el oxígeno suplementario después de haber obtenido la oximetría de pulso.	NULL			NULL	7	56	8	1	Info
 a08a2e15-baad-4a02-a773-0e529a325d4a	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.2.5.2.4.3	Si NO se pudo medir la oximetría de pulso sin el oxígeno suplementario	NULL			NULL	7	57	7	1	Checkpoint
 0c2ada53-dc68-4104-9112-c62a75a48b4d	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.2.5.2.4.3.1	Enfermera: ¿Por qué no se pudo medir la oximetría de pulso?	NULL			oximetroPulsoSinOxiNoRazon	7	58	8	1	Question
-9b09d234-0dbe-40bb-b038-cdc2a896bffd	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.2.5.2.4.3.2	Si la razón no se pudo medir la oxímetria de pulso es 'otro'	NULL			NULL	7	59	8	1	Checkpoint
+9b09d234-0dbe-40bb-b038-cdc2a896bffd	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.2.5.2.4.3.2	Si la razón no se pudo medir la oximetría de pulso es 'otro'	NULL			NULL	7	59	8	1	Checkpoint
 5557d653-170e-4fbd-ba05-0211392a920d	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.2.5.2.4.3.2.1	Enfermera: Especifique la otra razón	NULL			oximetroPulsoSinOxiNoRazon_esp	7	60	9	1	Question
 38f666d0-a4dd-4aee-9e4c-2111473818a5	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.2.5.2.5	Si NO fue posible quitar el oxígeno	NULL			NULL	7	61	6	1	Checkpoint
 1262160e-e8ae-4fa1-ad50-3d16d4f85665	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.2.5.2.5.1	Enfermera: ¿Por qué no fue posible quitar el oxígeno?	NULL			quitarOxigenoNoRazon	7	62	7	1	Question
-83e7e8b1-ad9b-4c88-8d41-148b5bdc48bf	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.3	Si NO se pudo medir la oxímetria de pulso	NULL			NULL	7	63	3	1	Checkpoint
+83e7e8b1-ad9b-4c88-8d41-148b5bdc48bf	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.3	Si NO se pudo medir la oximetría de pulso	NULL			NULL	7	63	3	1	Checkpoint
 b45cdc1b-9218-4764-a9dc-3410e1992a2b	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.3.1	Enfermera: ¿Por qué no se pudo medir la oximetría de pulso?	NULL			oximetroPulsoNoRazon	7	64	4	1	Question
-88d4a8f3-29a2-41fe-aee5-73243718b560	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.3.2	Si la razón no se pudo medir la oxímetria de pulso es 'otro'	NULL			NULL	7	65	4	1	Checkpoint
+88d4a8f3-29a2-41fe-aee5-73243718b560	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.3.2	Si la razón no se pudo medir la oximetría de pulso es 'otro'	NULL			NULL	7	65	4	1	Checkpoint
 6b1f717f-8c00-451e-903a-4228c2665851	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12.3.2.1	Enfermera: Especifique la otra razón	NULL			oximetroPulsoNoRazon_esp	7	66	5	1	Question
-712a1ff5-5d21-483f-a99b-75ab74213698	Hospital	H2 Inscripción	Diarrea y Respiratoria	4	Si sospechoso IRAG(Infección respiratoria aguda grave) es sí	NULL			NULL	7	67	1	1	Checkpoint
+712a1ff5-5d21-483f-a99b-75ab74213698	Hospital	H2 Inscripción	Diarrea y Respiratoria	4	Si sospechoso IRAG (Infección respiratoria aguda grave) es sí	NULL			NULL	7	67	1	1	Checkpoint
 2dbb15e8-6cad-4cb8-b277-6d93c26f356b	Hospital	H2 Inscripción	Diarrea y Respiratoria	4.1	Pregunte: ¿Hace cuántos días empezó con su enfermedad?	NULL			enfermedadEmpezoHaceDias	7	68	2	1	Question
 abf8cfb6-8af4-430e-b756-61c2c141e804	Hospital	H2 Inscripción	Febril	1	Enfermera: Debe consultar con el médico para asegurar que no haya otra causa obvia de la fiebre.	NULL			NULL	9	1	1	1	Info
 5bb450d7-2598-4cc4-92d5-f743de430b1c	Hospital	H2 Inscripción	Febril	2	Enfermera: ¿Tiene el paciente uno de los siguientes diagnósticos?	NULL			fiebreDiagnostico	9	2	1	1	Question
@@ -205,7 +205,7 @@ e57e6680-f7d7-4176-a0b4-7e2732f57776	Hospital	H2 Inscripción	Consentimiento y En
 1203812a-fd8f-4eba-a14b-e48463c205d0	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	4.1	El paciente es elegible para el estudio de Enfermedad febril aguda.	NULL			NULL	10	7	2	1	Info
 eeceb80a-61fe-4031-bfaa-d5b70f8e5fe4	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	5	Enfermedad diarreica aguda y enfermedad respiratoria aguda	NULL			NULL	10	8	1	1	Checkpoint
 f1af1ffd-087e-4ab3-ba0f-fa8bac466fe7	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	5.1	El paciente es elegible para los estudios de Enfermedad diarreica y enfermedad respiratoria aguda.	NULL			NULL	10	9	2	1	Info
-4c963605-1f14-40e0-822a-fe6690d62063	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	6	Si el paciente NO es elegible para el estudio de enfermedad diarreica aguda ni enfermedad respiratoria aguda ni enfermedad febrile aguda	NULL			NULL	10	10	1	1	Checkpoint
+4c963605-1f14-40e0-822a-fe6690d62063	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	6	Si el paciente NO es elegible para el estudio de enfermedad diarreica aguda ni enfermedad respiratoria aguda ni enfermedad febril aguda	NULL			NULL	10	10	1	1	Checkpoint
 9bdfcd51-ef30-45a4-b8df-59bcd2efb70c	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	6.1	El paciente NO cumple con los criterios de inclusión.    Agradezca a la persona por el tiempo y la información que compartió con nosotros.    Hágale saber que afortunadamente no tiene el tipo de enfermedad que estamos estudiando.	NULL			NULL	10	11	2	1	Info
 228e44d1-9e19-4e1a-8711-2f987e3097a6	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7	Si el paciente es elegible para al menos uno de los estudios	NULL			NULL	10	12	1	1	Checkpoint
 af4fcedd-c78c-4ff6-8b44-12e04bba8e8b	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.1	El paciente CUMPLE con los criterios de inclusión.     En este momento debe proporcionarle al paciente el Consentimiento (y si aplica, Asentimiento) escrito para que lo lean y lo firmen si están de acuerdo.	NULL			NULL	10	13	2	1	Info
@@ -381,7 +381,7 @@ e85cac5f-ca13-4bc7-a4d1-332c4fed2e57	Hospital	H3 Informe del Caso	K - Hx Febril	
 372ac5f5-0dda-4476-a11b-cab97fb72103	Hospital	H3 Informe del Caso	K - Hx Febril	5.1	Pregunte: ¿Actualmente tiene “rash” o “salpullido” con picazón?	NULL			hxF_IrritacionPielActual	18	23	2	1	Question
 335ba999-5712-40c5-80a3-3c729ae120ff	Hospital	H3 Informe del Caso	K - Hx Febril	5.3	Pregunte: ¿Desde hace cuántos días empezó con “rash” o “sarpullido” con picazón?	NULL			hxF_IrritacionPielHaceDias	18	28	2	1	Question
 818c6960-c469-4d43-9884-3ef677314291	Hospital	H3 Informe del Caso	K - Hx Febril	5.4	¿Dónde tiene o tenía el "rash" o "sarpullido"?	NULL			hxF_IrritacionPielDonde	18	29	2	1	Question
-cdba9021-1bd2-48dd-80e6-3f9e1c63c00b	Hospital	H3 Informe del Caso	K - Hx Febril	5.5	Enfermera: Observe el “rash” o “sarpullido” y clasifíquela , o pida la descripción al paciente y trate de clasificarla	NULL			hxF_IrritacionPielDescripcion	18	30	2	1	Question
+cdba9021-1bd2-48dd-80e6-3f9e1c63c00b	Hospital	H3 Informe del Caso	K - Hx Febril	5.5	Enfermera: Observe el “rash” o “sarpullido” y clasificarlo , o pida la descripción al paciente y trate de clasificarlo	NULL			hxF_IrritacionPielDescripcion	18	30	2	1	Question
 ef77d740-0783-4781-ae3a-d5d39a0b88c7	Hospital	H3 Informe del Caso	K - Hx Febril	6	Dolor en las articulaciones	NULL			hxF_DolorArticulaciones	18	31	1	1	Question
 ffde14a0-1d2b-4bdc-8f81-d4b063e39eb6	Hospital	H3 Informe del Caso	K - Hx Febril	7	Si tiene dolor en las articulaciones	NULL			NULL	18	32	1	1	Checkpoint
 27ef60ef-72dc-489f-8bd3-b09342fa09f1	Hospital	H3 Informe del Caso	K - Hx Febril	7.1	Pregunte: ¿Actualmente tiene dolor en las articulaciones?	NULL			hxF_DolorArticulacionesActual	18	33	2	1	Question
@@ -462,7 +462,7 @@ aa2d5654-9422-450c-a1b5-5d18f31e6404	Hospital	H3 Informe del Caso	A - Enfermedad
 48837e67-9455-43a1-bba3-99f1b6df85f9	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.5	Pregunte al padre/tutor: ¿Ha recibido su hijo/hija la vacuna Pentavalente (DPT/Hib, Hepatitis B)?	NULL			vacunaPentavalenteRecibido	20	9	3	1	Question
 3de45995-c9ae-49ba-abd7-bea9dd60104d	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.6	Si ha recibido Pentavalente (DPT/Hib, Hepatitis B)	NULL			NULL	20	10	3	1	Checkpoint
 4cbaa555-25dc-4b56-bf59-bdc958e40ea1	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.6.1	Pregunte: ¿Cuántas dosis de la vacuna  de la Pentavalente (DPT/Hib, Hepatitis B) ha recibido su hijo/hija?	NULL			vacunaPentavalenteDosis	20	11	4	1	Question
-f4b883b8-144d-4cbb-a9ac-dc454162c42e	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.7	Pregunte al padre/tutor: ¿Ha recibido su hijo/hija la vacuna para sarampión, paperas y rubéola(SPR)?	NULL			vacunaSarampionPaperasRubella	20	12	3	1	Question
+f4b883b8-144d-4cbb-a9ac-dc454162c42e	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.7	Pregunte al padre/tutor: ¿Ha recibido su hijo/hija la vacuna para sarampión, paperas y rubeola (SPR)?	NULL			vacunaSarampionPaperasRubella	20	12	3	1	Question
 fb3d4bee-6804-4773-af8f-0112a333b570	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.8	Pregunte al padre/tutor: ¿Ha recibido su hijo/hija la vacuna contra rotavirus?	NULL			vacunaRotavirusRecibido	20	13	3	1	Question
 e5718962-4c7f-46d0-8cc5-9a65384dfacb	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.9	Si ha recibido vacuna contra rotavirus:	NULL			NULL	20	14	3	1	Checkpoint
 f03e2b7b-1aba-40f0-bc91-50c2436f1ef7	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.9.1	Pregunte: ¿Cuántas dosis de la vacuna contra rotavirus ha recibido?	NULL			vacunaRotavirusDosis	20	15	4	1	Question
@@ -481,7 +481,7 @@ e339ce0b-0183-4f1d-99dd-3acf3ded852a	Hospital	H3 Informe del Caso	A - Enfermedad
 f2a5cc19-5bd7-40f4-8076-99250fab10f0	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.5	Si ha recibido Pentavalente (DPT/Hib, Hepatitis B)	NULL			NULL	20	28	3	1	Checkpoint
 e547d43d-a66c-4399-82d9-5d297f5a4c1c	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.6.1	Enfermera: ¿Cuántas dosis de la vacuna  de la Pentavalente (DPT/Hib, Hepatitis B) ha recibido?	NULL			vacunaPentavalenteDosis	20	29	4	1	Question
 9f6d1954-6002-4a14-99b2-cde8d405fb9d	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.7	Si no ha recibido Pentavalente	NULL			NULL	20	30	3	1	Checkpoint
-b7e98ea4-079f-4a26-b809-30ad1bbe11f9	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.8	Enfermera: Anote de la ficha o carnet si el paciente ha recibido la vacuna para sarampión, paperas y rubela (SPR).	NULL			vacunaSarampionPaperasRubella	20	31	3	1	Question
+b7e98ea4-079f-4a26-b809-30ad1bbe11f9	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.8	Enfermera: Anote de la ficha o carnet si el paciente ha recibido la vacuna para sarampión, paperas y rubeola (SPR).	NULL			vacunaSarampionPaperasRubella	20	31	3	1	Question
 bc1478b2-7bd2-4688-b33b-35ad89c8da05	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.9	Enfermera: Anote de la ficha o carnet si el paciente ha recibido la vacuna contra rotavirus.	NULL			vacunaRotavirusRecibido	20	32	3	1	Question
 99a4b978-40a7-486a-9aac-898824009e5e	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.10	Si ha recibido vacuna contra rotavirus:	NULL			NULL	20	33	3	1	Checkpoint
 2c01b056-b02c-4a7a-89e1-2b035fb4cfe9	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.10.1	Enfermera: ¿Cuántas dosis de la vacuna contra rotavirus ha recibido?	NULL			vacunaRotavirusDosis	20	34	4	1	Question
@@ -739,9 +739,9 @@ ff84dbe9-ee58-4c91-8e94-f240de10fe7e	Hospital	H1 Sospechosos	H1 Sospechosos	NULL
 51feeee0-785d-4470-878d-c32e6e216f72	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente está elegible para el estudio de IMCI?	NULL			elegibleRespiraIMCI	2	0	1	1	Variable
 bc775c4a-c016-432a-afb0-98a4aa11e64d	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente está elegible para el estudio de respiratorio de ViCo tradicional?	NULL			elegibleRespiraViCo	2	0	1	1	Variable
 b3448ac2-cd82-49c1-9060-ef093b001690	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente está elegible para el estudio de zinc?	NULL			elegibleZinc	2	0	1	1	Variable
-51317b6a-7f05-459d-a687-983d811e227b	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	Semana epidemiologica de admisión o presentación del paciente	NULL			epiWeekAdmision	2	0	1	1	Variable
-a4abe068-f15c-4fb9-b65f-bde3c846686b	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	Año epidemiologica de admisión o presentación del paciente	NULL			epiYearAdmision	2	0	1	1	Variable
-d3a49c88-5cdf-49ab-b0a0-b40726507d4f	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	El año y semana epidemiologica de admisión o presentación del paciente	NULL			epiYearWeekAdmision	2	0	1	1	Variable
+51317b6a-7f05-459d-a687-983d811e227b	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	Semana epidemiológica de admisión o presentación del paciente	NULL			epiWeekAdmision	2	0	1	1	Variable
+a4abe068-f15c-4fb9-b65f-bde3c846686b	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	Año epidemiológica de admisión o presentación del paciente	NULL			epiYearAdmision	2	0	1	1	Variable
+d3a49c88-5cdf-49ab-b0a0-b40726507d4f	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	El año y semana epidemiológica de admisión o presentación del paciente	NULL			epiYearWeekAdmision	2	0	1	1	Variable
 855d636b-5c6b-4431-ac6a-63ed57906f8c	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	La fecha de admisión o presentación del paciente	NULL			fechaAdmision	2	0	1	1	Variable
 0274c1ea-9c99-47d6-aa64-7adaba455306	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente tiene fiebre documentada o una historia de fiebre o calentura que empezó menos de hace 7 días?	NULL			fiebreOHistoriaFiebre	2	0	1	1	Variable
 0132e096-934a-41f7-85ab-7776868951a7	Hospital	H1 Sospechosos	H1 Sospechosos	NULL	¿El paciente tiene hipoxemia?	NULL			hipoxemia	2	0	1	1	Variable
@@ -798,7 +798,7 @@ a3f39fd9-fef7-49c9-885d-9fc32e23793e	Centro de Salud	C1 Sospechosos	Común	3.8	¿C
 aa27e152-f2d2-47bb-832c-67b1905add4b	Centro de Salud	C1 Sospechosos	Común	3.1	Si paciente tiene menos de 5 años	NULL			NULL	203	16	2	1	Checkpoint
 86b74ecd-e64e-4b31-9da9-c18fba7cd77e	Centro de Salud	C1 Sospechosos	Común	3.10.1	¿Ha tenido diarrea o asientos líquidos en los últimos 14 días?	Debe preguntarle al paciente si ha tenido diarrea o asientos en los últimos 7 días.			diarreaUltimos14Dias	203	17	3	1	Question
 25d8a717-6c50-42b2-8617-c37b1d4de178	Centro de Salud	C1 Sospechosos	Común	3.10.2	Si ha tenido diarrea en los últimos 14 días	NULL			NULL	203	18	3	1	Checkpoint
-1f045e9c-1456-43da-aa08-d4538c552d87	Centro de Salud	C1 Sospechosos	Común	3.10.2.1	¿Hace cuántos días comenzó con diarrea o asientos liquidos?	Debe ingresar en la casilla desde HACE CUÁNTOS DÍAS el paciente COMENZÓ CON DIARREA			diarreaComenzoHaceDias	203	19	4	1	Question
+1f045e9c-1456-43da-aa08-d4538c552d87	Centro de Salud	C1 Sospechosos	Común	3.10.2.1	¿Hace cuántos días comenzó con diarrea o asientos líquidos?	Debe ingresar en la casilla desde HACE CUÁNTOS DÍAS el paciente COMENZÓ CON DIARREA			diarreaComenzoHaceDias	203	19	4	1	Question
 20abb91d-3e66-4267-9b24-6ebca24c50bc	Centro de Salud	C1 Sospechosos	Común	3.10.2.2	¿En su peor día, cuántas deposiciones o asientos líquidos tuvo en un período de 24 horas (1 día)?	Debe ingresar en la casilla la cantidad MÁXIMA DE ASIENTOS que el paciente tuvo EN 1 DÍA.  Las cantidades válidas pueden ser de 1 a 50 veces.			diarreaMaximoAsientos1Dia	203	20	4	1	Question
 41ad570d-696d-4222-8055-9dd274c525cb	Centro de Salud	C1 Sospechosos	Común	3.10.2.3	¿En la semana anterior al inicio de esta enfermedad de diarrea tuvo algún otro episodio de diarrea?	Debe preguntarle al paciente si en la semana anterior al inicio de su diarrea, tuvo algún otro episodio de diarrea.			diarreaOtroEpisodioSemanaAnterior	203	21	4	1	Question
 8650e4a5-69e2-4b7a-ab16-f29195fdb778	Centro de Salud	C1 Sospechosos	Común	3.11	¿Ha tenido tos, dolor de garganta, dificultad para respirar  o le cuesta más trabajo respirar?	Indique si el paciente tiene una indicación sospechosa de ETI como gripe, catarro, resfriado, congestión nasal, fiebre, tos, o dolor de garganta.			sintomasRespiraTamizajeCentro	203	22	2	1	Question
@@ -806,19 +806,19 @@ aa27e152-f2d2-47bb-832c-67b1905add4b	Centro de Salud	C1 Sospechosos	Común	3.1	Si
 9c61ce3e-5759-4568-8c85-1d0b307f6314	Centro de Salud	C1 Sospechosos	Común	3.12.1	Tos	Debe preguntarle al paciente si ha tenido tos.			sintomasRespiraTos	203	24	3	1	Question
 09d259bb-0e24-42d4-8918-ab040f941e9f	Centro de Salud	C1 Sospechosos	Común	3.12.2	Si tiene tos	NULL			NULL	203	25	3	1	Checkpoint
 8c6bc04c-8c5b-4395-aff7-c43e911ee20b	Centro de Salud	C1 Sospechosos	Común	3.12.2.1	¿Hace cuántos días empezó la tos?	NULL			sintomasRespiraTosDias	203	26	4	1	Question
-f3f7aa8d-4c30-476d-a690-c5df16d4b337	Centro de Salud	C1 Sospechosos	Común	3.12.2.2	Si ha tenido tos >14 dias	NULL			NULL	203	27	4	1	Checkpoint
+f3f7aa8d-4c30-476d-a690-c5df16d4b337	Centro de Salud	C1 Sospechosos	Común	3.12.2.2	Si ha tenido tos >14 días	NULL			NULL	203	27	4	1	Checkpoint
 a571d41f-4c0d-47c4-9439-64859d63990d	Centro de Salud	C1 Sospechosos	Común	3.12.2.2.1	¿Actualmente o en los últimos 14 días, tiene o tenía tos?	NULL			sintomasRespiraTos14Dias	203	28	5	1	Question
-0005ff0e-b291-4cf6-a741-5d3f0105ee2e	Centro de Salud	C1 Sospechosos	Común	3.12.2.3	Si tiene o tenia tos en los últmos 14 días	NULL			NULL	203	29	4	1	Checkpoint
+0005ff0e-b291-4cf6-a741-5d3f0105ee2e	Centro de Salud	C1 Sospechosos	Común	3.12.2.3	Si tiene o tenia tos en los últimos 14 días	NULL			NULL	203	29	4	1	Checkpoint
 7fa880ed-4c2b-46aa-899e-41cc25a667ab	Centro de Salud	C1 Sospechosos	Común	3.12.2.3.1	¿Actualmente tiene tos?	NULL			sintomasRespiraTosActual	203	30	5	1	Question
 d93f3d17-1491-4aac-836f-be740171829f	Centro de Salud	C1 Sospechosos	Común	3.12.2.3.2	Si tiene tos actualmente	NULL			NULL	203	31	5	1	Checkpoint
-0c0e42e5-2706-4062-a5dc-0f7eb3c4202f	Centro de Salud	C1 Sospechosos	Común	3.12.2.3.2.1	Si tos empezó iqual o mas que 7 dias	NULL			NULL	203	32	6	1	Checkpoint
+0c0e42e5-2706-4062-a5dc-0f7eb3c4202f	Centro de Salud	C1 Sospechosos	Común	3.12.2.3.2.1	Si tos empezó igual o mas que 7 días	NULL			NULL	203	32	6	1	Checkpoint
 2cfca5f4-4a3a-4751-b9d9-5871a695c5b5	Centro de Salud	C1 Sospechosos	Común	3.12.2.3.2.1.1	¿Durante esta enfermedad, ha tenido una tos tan fuerte que se vomitó?	NULL			pertussisVomito	203	33	7	1	Question
-5ed5ea75-f3f6-43d2-b162-59a11e00d99f	Centro de Salud	C1 Sospechosos	Común	3.12.2.3.2.1.2	¿Ha tenido paroxysmos (exacerbaciónes o ataques súbito e intenso) de tos?	NULL			pertussisParoxismos	203	34	7	1	Question
+5ed5ea75-f3f6-43d2-b162-59a11e00d99f	Centro de Salud	C1 Sospechosos	Común	3.12.2.3.2.1.2	¿Ha tenido paroxismos (exacerbaciones o ataques súbito e intenso) de tos?	NULL			pertussisParoxismos	203	34	7	1	Question
 f694e0c9-28f3-42e5-bfcc-7c79ae855107	Centro de Salud	C1 Sospechosos	Común	3.12.2.3.2.1.3	¿Ha tenido tos chiflado?	NULL			pertussisWhoop	203	35	7	1	Question
 62fab1e9-00fc-4017-b4e1-bc6a00e8d629	Centro de Salud	C1 Sospechosos	Común	3.12.3	Dolor de garganta	Debe preguntarle al paciente si le ha dolido la garganta durante su enfermedad.			sintomasRespiraDolorGarganta	203	36	3	1	Question
 342004ae-6126-4fe3-944b-ac30f2e30844	Centro de Salud	C1 Sospechosos	Común	3.12.4	Tiene dolor de garganta	NULL			NULL	203	37	3	1	Checkpoint
 c77e588f-1c93-41db-81e6-bcdc391fa7aa	Centro de Salud	C1 Sospechosos	Común	3.12.4.1	¿Hace cuántos días empezó con dolor de garganta?	NULL			sintomasRespiraGargantaDias	203	38	4	1	Question
-cdf73e94-1a43-4cd7-a646-76d7b95d1445	Centro de Salud	C1 Sospechosos	Común	3.12.4.2	Si ha tenido dolor de garganta >14 dias	NULL			NULL	203	39	4	1	Checkpoint
+cdf73e94-1a43-4cd7-a646-76d7b95d1445	Centro de Salud	C1 Sospechosos	Común	3.12.4.2	Si ha tenido dolor de garganta >14 días	NULL			NULL	203	39	4	1	Checkpoint
 95d4e9b1-1743-4ba1-89c8-4d6e2322a396	Centro de Salud	C1 Sospechosos	Común	3.12.4.2.1	¿Actualmente o en los últimos 14 días, tiene o tenía dolor de garganta?	Indique si el paciente ha tenido alguna queja de dolor de garganta en los últimos 14 días.			sintomasRespiraGarganta14Dias	203	40	5	1	Question
 ccf52177-a8c1-41df-b286-b2cad8058b65	Centro de Salud	C1 Sospechosos	Común	3.12.5	Dificultad para respirar o le cuesta más trabajo respirar	Debe preguntarle al paciente si ha tenido dificultad para respirar durante su enfermedad.			sintomasRespiraDificultadRespirar	203	41	3	1	Question
 90eb19f4-caeb-43f0-8df6-ccb351c11375	Centro de Salud	C1 Sospechosos	Común	3.12.6	Tiene dificultad para respirar	NULL			NULL	203	42	3	1	Checkpoint
@@ -826,7 +826,7 @@ fd998204-4fc5-47ff-9995-37c5dbe2d588	Centro de Salud	C1 Sospechosos	Común	3.12.6
 f215abb8-7a6c-4976-b417-7d64a3edc7de	Centro de Salud	C1 Sospechosos	Común	3.13	Fiebre o calentura	NULL			sintomasFiebre	203	44	2	1	Question
 09c042e9-c38f-437b-9e00-08cfcc77634d	Centro de Salud	C1 Sospechosos	Común	3.14	Si tiene fiebre o calentura	NULL			NULL	203	45	2	1	Checkpoint
 47a845f1-7c99-4bbe-a811-ea5d93675050	Centro de Salud	C1 Sospechosos	Común	3.14.1	¿Hace cuántos días empezó la fiebre o calentura?	NULL			sintomasFiebreDias	203	46	3	1	Question
-5b2e2c6d-b583-4616-bf57-300b8910c7ed	Centro de Salud	C1 Sospechosos	Común	3.15	Temperatura documentada	Anote la temperatura documentada en el registro del paciente. Si no le han tomado la temperatura al paciente tomesela usted y anótela aquí.			temperaturaPrimeras24Horas	203	47	2	1	Question
+5b2e2c6d-b583-4616-bf57-300b8910c7ed	Centro de Salud	C1 Sospechosos	Común	3.15	Temperatura documentada	Anote la temperatura documentada en el registro del paciente. Si no le han tomado la temperatura al paciente tómesela usted y anótela aquí.			temperaturaPrimeras24Horas	203	47	2	1	Question
 a16a2e03-e97d-42d0-9870-d64faadbca5f	Centro de Salud	C1 Sospechosos	Común	3.16	Si paciente tiene < 5 años	NULL			NULL	203	48	2	1	Checkpoint
 c92c1987-cdb8-44fb-98a0-a91471dc1b96	Centro de Salud	C1 Sospechosos	Común	3.16.1	PREGUNTE: "¿Su hijo/hija lo vomita todo?"	NULL			ninioVomitaTodo	203	49	3	1	Question
 9f343766-c2d8-4011-93ca-41f7a6ddcb9e	Centro de Salud	C1 Sospechosos	Común	3.16.2	PREGUNTE: "¿Su hijo/hija es capaz de beber o mamar?"	Debe preguntarle si el niño/niña ha tenido problemas para comer, beber, o mamar durante su enfermedad.			ninioBeberMamar	203	50	3	1	Question
@@ -843,16 +843,16 @@ c2c1fdc4-79cd-4fd0-88af-c9b63e66e118	Centro de Salud	C1 Sospechosos	Común	3.17.1
 ca0ae357-b243-440a-ae1a-512a0d276965	Centro de Salud	C1 Sospechosos	Común	3.17.1.3	OBSERVE: ¿El niño está desmayado?	NULL			ninioDesmayoObs	203	61	4	1	Question
 5e148e9f-15be-4c4e-8458-d87029e106d6	Centro de Salud	C1 Sospechosos	Común	3.17.1.4	OBSERVE: ¿Tiene estridor?	NULL			sintomasRespiraNinioEstridor	203	62	4	1	Question
 51e5515c-fe06-48e9-904d-50ea2890028e	Centro de Salud	C1 Sospechosos	Común	3.17.1.5	OBSERVE: ¿Se le hunden las costillas cuando respira?	NULL			sintomasRespiraNinioCostillasHundidas	203	63	4	1	Question
-570cb26f-271e-4d60-bd6a-9b8509ad3535	Centro de Salud	C1 Sospechosos	Común	3.17.2	¿Se pudo medir la tasa de respiracion por minuto?	NULL			medidaRespiraPorMinuto	203	64	3	1	Question
+570cb26f-271e-4d60-bd6a-9b8509ad3535	Centro de Salud	C1 Sospechosos	Común	3.17.2	¿Se pudo medir la tasa de respiración por minuto?	NULL			medidaRespiraPorMinuto	203	64	3	1	Question
 22813ce5-086e-41c8-aef9-153f1dff7fdb	Centro de Salud	C1 Sospechosos	Común	3.17.3	Si se pudo medir la tasa de respiración	NULL			NULL	203	65	3	1	Checkpoint
 7a14f895-a6e9-4e31-9571-799fa3581678	Centro de Salud	C1 Sospechosos	Común	3.17.3.1	Anote la tasa de respiración calculada: (Use el cronómetro de la PDA para esta medición)	NULL			respiraPorMinuto	203	66	4	1	Question
-b792944d-432d-4d8d-9b82-2969f599c8ae	Centro de Salud	C1 Sospechosos	Común	3.18	¿Se puede medir la oxímetria de pulso?	NULL			medirOximetroPulso	203	67	2	1	Question
-2fadd714-82af-4a3e-8c3c-4e7e62f2694c	Centro de Salud	C1 Sospechosos	Común	3.19	Si se pudo medir la oxímetria de pulso	NULL			NULL	203	68	2	1	Checkpoint
+b792944d-432d-4d8d-9b82-2969f599c8ae	Centro de Salud	C1 Sospechosos	Común	3.18	¿Se puede medir la oximetría de pulso?	NULL			medirOximetroPulso	203	67	2	1	Question
+2fadd714-82af-4a3e-8c3c-4e7e62f2694c	Centro de Salud	C1 Sospechosos	Común	3.19	Si se pudo medir la oximetría de pulso	NULL			NULL	203	68	2	1	Checkpoint
 f74a0c73-27ab-4a64-8894-0f917d2e1705	Centro de Salud	C1 Sospechosos	Común	3.19.1	Anote la saturación de oxígeno	NULL			oximetroPulso	203	69	3	1	Question
 524cf674-c6cc-41b0-8bc7-437177e95cd7	Centro de Salud	C1 Sospechosos	Común	3.19.2	Anote la la fecha y hora cuando la saturación de oxígeno fue medida	NULL			oximetroPulsoFechaHoraTomo	203	70	3	1	Question
-e24e849c-046a-4411-8523-aeddc93cf11b	Centro de Salud	C1 Sospechosos	Común	3.2	Si no se pudo medir la oxímetria de pulso	NULL			NULL	203	71	2	1	Checkpoint
-7bb35b77-49fc-492b-8ab8-1b9b9c5c657f	Centro de Salud	C1 Sospechosos	Común	3.20.1	¿Por qué no se pudo medir la oxímetria de pulso?	NULL			oximetroPulsoNoRazon	203	72	3	1	Question
-dd94ebb4-fe9d-4662-8c1e-e6fc35206511	Centro de Salud	C1 Sospechosos	Común	3.20.2	Si la razón por la cual no se pudo medir la oxímetria de pulso es 'otro'	NULL			NULL	203	73	3	1	Checkpoint
+e24e849c-046a-4411-8523-aeddc93cf11b	Centro de Salud	C1 Sospechosos	Común	3.2	Si no se pudo medir la oximetría de pulso	NULL			NULL	203	71	2	1	Checkpoint
+7bb35b77-49fc-492b-8ab8-1b9b9c5c657f	Centro de Salud	C1 Sospechosos	Común	3.20.1	¿Por qué no se pudo medir la oximetría de pulso?	NULL			oximetroPulsoNoRazon	203	72	3	1	Question
+dd94ebb4-fe9d-4662-8c1e-e6fc35206511	Centro de Salud	C1 Sospechosos	Común	3.20.2	Si la razón por la cual no se pudo medir la oximetría de pulso es 'otro'	NULL			NULL	203	73	3	1	Checkpoint
 0d260731-55ba-4975-ac64-e7394a3123d8	Centro de Salud	C1 Sospechosos	Común	3.20.2.1	Especifique la otra razón	NULL			oximetroPulsoNoRazon_esp	203	74	4	1	Question
 3361d4a9-1b47-449d-af4c-393f87b85cf9	Centro de Salud	C1 Sospechosos	Común	3.21	Si sospechosoETI_MSP es sí	NULL			NULL	203	75	2	1	Checkpoint
 8df7a7e6-50da-4059-8bc5-f8f90957ad0f	Centro de Salud	C1 Sospechosos	Común	3.21.1	¿Hace cuántos días empezó con su enfermedad?	NULL			enfermedadEmpezoHaceDias	203	76	3	1	Question
@@ -860,7 +860,7 @@ dd94ebb4-fe9d-4662-8c1e-e6fc35206511	Centro de Salud	C1 Sospechosos	Común	3.20.2
 e47849ee-cfc6-4ec5-bdba-87ff26c32846	Centro de Salud	C1 Sospechosos	Común	4.1	El paciente no es del área de captación de ViCo y no vamos a incluirlo en ViCo.	NULL			NULL	203	78	2	1	Info
 ab08d47f-8933-4d45-9e2a-1bb79165689d	Centro de Salud	C1 Sospechosos	Febril	1	Debe consultar con el médico para asegurar que no haya otra causa obvia de la fiebre.	NULL			NULL	204	1	1	1	Info
 d1349f81-3ff5-496e-a7b2-a4fe2c4e9c69	Centro de Salud	C1 Sospechosos	Febril	2	¿Tiene el paciente uno de los siguientes diagnósticos?	NULL			fiebreDiagnostico	204	2	1	1	Question
-f3ea4bf9-4274-4829-986a-5c4d673d02dd	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	1	¡Despues de este punto no se pueden modificar los datos de los criterios de inclusión!	NULL			NULL	205	1	1	1	Info
+f3ea4bf9-4274-4829-986a-5c4d673d02dd	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	1	¡Después de este punto no se pueden modificar los datos de los criterios de inclusión!	NULL			NULL	205	1	1	1	Info
 05e9b1db-85c5-4236-9cc2-e00106b47ca0	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	2	Diarrea solamente	NULL			NULL	205	2	1	1	Checkpoint
 dd64a9b0-5fd7-4ee2-8a0a-cc9230fc4b64	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	2.1	El paciente es elegible para el estudio de Diarrea.	NULL			NULL	205	3	2	1	Info
 29817734-2648-4b34-9360-7453c53eac1e	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	3	Respiratoria solamente	NULL			NULL	205	4	1	1	Checkpoint
@@ -870,7 +870,7 @@ e897130f-f28f-41ac-b5f8-71340014be37	Centro de Salud	C1 Sospechosos	Consentimien
 0d48098f-871e-49c1-a32f-6a86b6f8f8aa	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	5	Diarrea Y Respiratoria	NULL			NULL	205	8	1	1	Checkpoint
 a03aad57-9ab3-4399-ad4d-7b16be5b2be2	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	5.1	El paciente es elegible para los estudios de Diarrea y Respiratoria.	NULL			NULL	205	9	2	1	Info
 500e01d9-df4c-4746-9d0c-9a9de0dfefc6	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	6	Si el paciente NO es elegible para Diarrea o Respiratoria o Febriles	NULL			NULL	205	10	1	1	Checkpoint
-a1725020-2835-4da5-b7ae-fe1a6dcd35b1	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	6.1	El paciente NO cumple con los criterios de inclusión.  Agradezca a la persona por el tiempo y la información que compartió con nosotros.  Hágale saber que afortunada- mente no tiene el tipo de enfer- medad que estamos estudiando.	NULL			NULL	205	11	2	1	Info
+a1725020-2835-4da5-b7ae-fe1a6dcd35b1	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	6.1	El paciente NO cumple con los criterios de inclusión.  Agradezca a la persona por el tiempo y la información que compartió con nosotros.  Hágale saber que afortunada- mente no tiene el tipo de enfermedad que estamos estudiando.	NULL			NULL	205	11	2	1	Info
 6dea21e2-f177-48bf-90be-650d6d21c68c	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7	Si el paciente es elegible para al menos uno de los estudios	NULL			NULL	205	12	1	1	Checkpoint
 76f3beef-0158-4454-96ab-edf996734d35	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.1	El paciente CUMPLE con los criterios de inclusión.  En este momento debe proporcionarle al paciente el Consentimiento (y, si aplica, Asentimiento) escrito para que lo lean y lo firmen si están de acuerdo.	NULL			NULL	205	13	2	1	Info
 d68cc5c5-b61f-4405-b9fd-87b99d1d30bc	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.2	Anote si el paciente o su padre/tutor dio su consentimiento escrito	Debe indicar si el paciente o persona responsable de éste dio el CONSENTIMIENTO para ser incluido en el estudio.			consentimientoEscrito	205	14	2	1	Question
@@ -878,11 +878,11 @@ d68cc5c5-b61f-4405-b9fd-87b99d1d30bc	Centro de Salud	C1 Sospechosos	Consentimien
 b58a0737-09b7-4289-afa6-3df1902d41f7	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.3.1	Anote si el paciente dio su asentimiento escrito	Debe indicar si el paciente dio su ASENTIMIENTO para ser incluido en el estudio.			asentimientoEscrito	205	16	3	1	Question
 2288838b-33a5-4bf1-94e9-a9e0c39c96b2	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.3.2	Si asentimiento escrito NO APLICA	NULL			NULL	205	17	3	1	Checkpoint
 555bcc82-eccc-4128-9cab-c1b8f50ac545	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.3.2.1	Especifique la razón por la que el asentimiento NO aplicó	Debe especifique la razón por la que asentimiento NO aplicó			asentimientoEscritoNARazon	205	18	4	1	Question
-fa56ed94-f1a8-4eaf-8679-c3868d5c8a3a	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.4	Si no dió consentimiento o asentimiento escrito	NULL			NULL	205	19	2	1	Checkpoint
+fa56ed94-f1a8-4eaf-8679-c3868d5c8a3a	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.4	Si no dio consentimiento o asentimiento escrito	NULL			NULL	205	19	2	1	Checkpoint
 1250ca84-b159-44f6-a4cc-d71e523b827a	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.4.1	Especifique razón(es) por la que NO dio consentimiento o asentimiento	Debe especifique la razón por la que asentimiento NO no se dio consentimiento o asentimiento:				205	20	3	1	Question
 fe903e9a-b1ab-4b1a-97d7-31e8dce19bb3	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.4.2	Si una razón por la que no se dio consentimiento es "Otra"	NULL			NULL	205	21	3	1	Checkpoint
 e0b23d7f-ddd1-44f2-a2d9-ef9301654508	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.4.2.1	Especifique la otra razón	NULL			ConsentimientoEscritoNoRazonOtraRazon_esp	205	22	4	1	Question
-f2928d2e-b65e-4457-890d-e2ca8df22329	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.5	Si dió consentimiento (y asentimiento cuando aplica) escrito	NULL			NULL	205	23	2	1	Checkpoint
+f2928d2e-b65e-4457-890d-e2ca8df22329	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.5	Si dio consentimiento (y asentimiento cuando aplica) escrito	NULL			NULL	205	23	2	1	Checkpoint
 2cf925c0-4aa3-4a2f-b5f6-a0214b0b571c	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.5.1	Anote si el paciente quedó inscrito en el estudio	Debe indicar si se INSCRIBE AL PACIENTE DENTRO DEL ESTUDIO.			pacienteInscritoViCo	205	24	3	1	Question
 62cd59b8-cb71-4e10-afed-065fdc791b8d	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.5.2	Si NO inscribió al paciente	NULL			NULL	205	25	3	1	Checkpoint
 bfec9404-a4f8-4688-b5cd-c825f1569221	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.5.2.1	Especifique la razón por la que NO se inscribe al paciente	Indique la razón por la que el paciente NO SE INSCRIBE en el estudio.			pacienteInscritoViCoNoRazon	205	26	4	1	Question
@@ -890,10 +890,10 @@ bfec9404-a4f8-4688-b5cd-c825f1569221	Centro de Salud	C1 Sospechosos	Consentimien
 8a4c613e-45e5-4824-a48e-794bbb45b8cb	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.5.2.2.1	Especifique la razón por la que NO se  inscribe	Especifique la razón por la que el paciente NO SE INSCRIBE en el estudio.			pacienteInscritoViCoNoRazon_Otra	205	28	5	1	Question
 078bd64d-f29f-4e9d-99b1-630edc49db62	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.5.3	Si se inscribe al paciente	NULL			NULL	205	29	3	1	Checkpoint
 592a13d7-0aff-41db-a7c9-b00b85d4417b	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.5.3.1	Ingrese el código de la etiqueta que identificará al paciente y sus muestras	Ingrese el código de la etiqueta que identificará paciente y sus muestras.			SASubjectID	205	30	4	1	Question
-2acb4ed7-235d-42dc-84c3-37f5f80f8c2e	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.5.3.2	¿Hay un número teléfonico a donde podamos contactarle?	NULL			telefonoTiene	205	31	4	1	Question
+2acb4ed7-235d-42dc-84c3-37f5f80f8c2e	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.5.3.2	¿Hay un número telefónico a donde podamos contactarle?	NULL			telefonoTiene	205	31	4	1	Question
 d699424c-e5f9-474f-9439-0365f3f1cb21	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.5.3.3	Si tiene un número telefónico	NULL			NULL	205	32	4	1	Checkpoint
 8e8ecefc-cc88-4352-8c7d-709f1eeb4b43	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.5.3.3.1	Número de teléfono:	NULL			telefonoNumero	205	33	5	1	Question
-4e3631d0-2a4f-46d7-9adf-20f565258bad	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.5.3.4	Si la enfermedad empezó hace 3 dias o menos, y elegibleETI_MSP es "Sí" y la PDA está en Santa Rosa	NULL			NULL	205	34	4	1	Checkpoint
+4e3631d0-2a4f-46d7-9adf-20f565258bad	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.5.3.4	Si la enfermedad empezó hace 3 días o menos, y elegibleETI_MSP es "Sí" y la PDA está en Santa Rosa	NULL			NULL	205	34	4	1	Checkpoint
 347d6abe-2775-4bcf-a1e1-8ac8dccf8a79	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.5.3.4.1	¡¡EL PACIENTE ES ELEGIBLE PARA VIGILANCIA DE INFLUENZA!!  Marque todas las etiquetas con marcador ROSADO.	NULL			NULL	205	35	5	1	Info
 ae0d3f60-0a58-4360-8dbc-1876fe988568	Centro de Salud	C1 Sospechosos	Consentimiento y Enrolamiento	7.5.3.5	Favor de tomar las muestras necesarias antes de proseguir, y anote la información en el formulario de Toma de Muestras	NULL			NULL	205	36	4	1	Info
 53c9b4ca-faa5-414d-9b92-c1faf355f1ab	Centro de Salud	C5 Muestras	Muestras de ViCo	1	Si es un paciente de Diarrea	NULL			NULL	206	1	1	1	Checkpoint
@@ -910,7 +910,7 @@ c36ef44c-6c9e-4f70-a092-a83076ec6e3a	Centro de Salud	C5 Muestras	Muestras de ViC
 1cb7d9fe-a4ed-42aa-be3c-da40e646a4b9	Centro de Salud	C5 Muestras	Muestras de ViCo	1.3.2.2.1	Especifique la otra razón	NULL			muestraHecesHisopoCaryBlairNoRazonOtra_esp	206	12	5	1	Question
 20997e9d-0c31-4061-85ca-04c5d83d74ac	Centro de Salud	C5 Muestras	Muestras de ViCo	1.3.3	Si colectó hisopo tipo Cary Blair	NULL			NULL	206	13	3	1	Checkpoint
 7d1ced88-2ba9-4073-82dc-94df33581da5	Centro de Salud	C5 Muestras	Muestras de ViCo	1.3.3.1	¿Cuándo obtuvo el hisopo tipo Cary Blair?	NULL			muestraHecesHisopoCaryBlairFechaHora	206	14	4	1	Question
-d331c3d6-9b6e-47c2-99d1-dc2ea94d2b36	Centro de Salud	C5 Muestras	Muestras de ViCo	1.3.3.2	¿Cómo obtuvó el hisopo Cary Blair?	NULL			muestraHecesHisopoCaryBlairTipo	206	15	4	1	Question
+d331c3d6-9b6e-47c2-99d1-dc2ea94d2b36	Centro de Salud	C5 Muestras	Muestras de ViCo	1.3.3.2	¿Cómo obtuvo el hisopo Cary Blair?	NULL			muestraHecesHisopoCaryBlairTipo	206	15	4	1	Question
 0650d387-723f-4b69-8a5a-33748b67875a	Centro de Salud	C5 Muestras	Muestras de ViCo	1.3.4	¿Colectó una muestra de heces entera?	NULL			muestraHecesEnteraColecta	206	16	3	1	Question
 c87d19a1-a160-4b63-a143-2a614f41234a	Centro de Salud	C5 Muestras	Muestras de ViCo	1.3.5	Si NO colectó muestra de heces entera	NULL			NULL	206	17	3	1	Checkpoint
 7e597a75-5030-49f1-bd8e-6690a495714d	Centro de Salud	C5 Muestras	Muestras de ViCo	1.3.5.1	¿Por qué no pudo colectar una muestra de heces entera?	NULL			muestraHecesEnteraNoRazon	206	18	4	1	Question
@@ -920,7 +920,7 @@ c87d19a1-a160-4b63-a143-2a614f41234a	Centro de Salud	C5 Muestras	Muestras de ViC
 dff4d706-a461-4310-8613-92bca3c41a43	Centro de Salud	C5 Muestras	Muestras de ViCo	1.3.6.1	¿Cuándo se obtuvo esta muestra entera?	NULL			muestraHecesEnteraFechaHora	206	22	4	1	Question
 d708f171-c64d-4e53-b559-d18c3a2ba838	Centro de Salud	C5 Muestras	Muestras de ViCo	1.3.6.2	¿La muestra está líquida?	NULL			muestraHecesEnteraLiquida	206	23	4	1	Question
 c7fcfbcc-34f4-4ff1-9219-9c09e48b39a8	Centro de Salud	C5 Muestras	Muestras de ViCo	1.3.6.3	¿La muestra tiene apariencia de agua de arroz?	NULL			muestraHecesEnteraAguaArroz	206	24	4	1	Question
-d25d01ee-aa96-4ab8-a050-6b1a5375dea3	Centro de Salud	C5 Muestras	Muestras de ViCo	1.3.6.4	¿La muestra cubre el fondo del contedor plástico?	NULL			muestraHecesEnteraCubreFondo	206	25	4	1	Question
+d25d01ee-aa96-4ab8-a050-6b1a5375dea3	Centro de Salud	C5 Muestras	Muestras de ViCo	1.3.6.4	¿La muestra cubre el fondo del contenedor plástico?	NULL			muestraHecesEnteraCubreFondo	206	25	4	1	Question
 c5dde481-e519-45c4-a5c8-388ac5f17db4	Centro de Salud	C5 Muestras	Muestras de ViCo	2	Si es un paciente de Respiratorias	NULL			NULL	206	26	1	1	Checkpoint
 a2c10ba9-8859-4b45-b490-ef1fb52ffe42	Centro de Salud	C5 Muestras	Muestras de ViCo	2.1	¿Colectó un hisopo nasofaríngeo (NF)?	NULL			muestraFroteNP	206	27	2	1	Question
 b648345a-35dd-441a-89e8-18491985ded0	Centro de Salud	C5 Muestras	Muestras de ViCo	2.2	Si NO colectó muestra de Frote NF	NULL			NULL	206	28	2	1	Checkpoint
