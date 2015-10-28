@@ -458,7 +458,7 @@ aa2d5654-9422-450c-a1b5-5d18f31e6404	Hospital	H3 Informe del Caso	A - Enfermedad
 	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.2	¿Ha recibido su hijo/hija la vacuna BCG?	NULL	addition		vacunaBcgRecibido	20	5	3	1	Question
 	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.3	¿Ha recibido su hijo/hija la vacuna de Polio Oral (OPV)	NULL	addition		vacunaPolioRecibido	20	6	3	1	Question
 	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.4	Si ha recibido Polio Oral	NULL	addition		NULL	20	7	3	1	Checkpoint
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.4.1	¿Cuántas dosis de la vacuna Polio Oral ha recibido su hijo/hija?	NULL	addition		vacunaPolioDosis	20	8	3	1	Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.4.1	¿Cuántas dosis de la vacuna Polio Oral ha recibido su hijo/hija?	NULL	addition		vacunaPolioDosis	20	8	4	1	Question
 48837e67-9455-43a1-bba3-99f1b6df85f9	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.5	Pregunte al padre/tutor: ¿Ha recibido su hijo/hija la vacuna Pentavalente (DPT/Hib, Hepatitis B)?	NULL			vacunaPentavalenteRecibido	20	9	3	1	Question
 3de45995-c9ae-49ba-abd7-bea9dd60104d	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.6	Si ha recibido Pentavalente (DPT/Hib, Hepatitis B)	NULL			NULL	20	10	3	1	Checkpoint
 4cbaa555-25dc-4b56-bf59-bdc958e40ea1	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.6.1	Pregunte: ¿Cuántas dosis de la vacuna  de la Pentavalente (DPT/Hib, Hepatitis B) ha recibido su hijo/hija?	NULL			vacunaPentavalenteDosis	20	11	4	1	Question
@@ -505,7 +505,7 @@ d7acc947-6a14-4169-b012-01783ecd8f30	Hospital	H3 Informe del Caso	A - Enfermedad
 	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.9	Pregunte: “¿Algún médico le ha dicho si tiene o padece de Inmunodeficiencia?"	NULL	addition	I do not see instructions for this section. Are they similar to the new questions?	inmunodef	20	52	2	1	Question
 	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.1	Pregunte:  “¿Ha tomado algún tratamiento de esteroides por más de 7 días (esteroides son: metilprednisolona, prednisolona, prednisona)?	NULL	addition		esteroidesUso	20	53	2	1	Question
 ca27db26-0d30-44a0-b484-fdc264eaf0bf	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.11	Si el paciente es mayor o igual a 18 años de edad	NULL		Should have been 2.10?	NULL	20	54	2	1	Checkpoint
-28e03753-94cb-4c42-967c-d62a8fa0f2cb	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.11.1	Enfermedad de los pulmones (ej. EPOC, enfisema, enfermedad crónica y obstructiva de los pulmones)	NULL	move	Only asked if patient > 18 years	enfermedadesCronicasEnfermPulmones	20	55	2	1	Question
+28e03753-94cb-4c42-967c-d62a8fa0f2cb	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.11.1	Enfermedad de los pulmones (ej. EPOC, enfisema, enfermedad crónica y obstructiva de los pulmones)	NULL	move	Only asked if patient > 18 years	enfermedadesCronicasEnfermPulmones	20	55	3	1	Question
 7894dfc0-747f-4a38-8ede-4bace42102ae	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.11.2	Hipertensión	NULL			enfermedadesCronicasHipertension	20	56	3	1	Question
 7df5a835-5c32-41cf-815a-1a1d395c9f19	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.13	Otras enfermedades crónicas	NULL			enfermedadesCronicasOtras	20	57	2	1	Question
 cad66797-1a0f-4568-8afe-89cb9cd6e158	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.14	Si una de las respuestas es SI	NULL			NULL	20	58	2	1	Checkpoint
@@ -542,7 +542,7 @@ b770e87b-3cf1-4c0b-8d72-31bd1f332d77	Hospital	H3 Informe del Caso	F - Factores d
 	Hospital	H3 Informe del Caso	F - Factores de Riesgo	11	Si tiene animales en su trabajo	NULL		@claseContactoAnimalesTrabajo = 888	NULL	21	22	1	1	Question
 	Hospital	H3 Informe del Caso	F - Factores de Riesgo	11.1	Pregunte: ¿Qué clase de animales tiene en su trabajo?	NULL			claseContactoAnimalesTrabajo	21	23	2	1	Question
 	Hospital	H3 Informe del Caso	F - Factores de Riesgo	11.2	Si claseanimalestrabajo es igual a otro:	NULL			NULL	21	24	2	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	11.2.1	Especifique la clase de animal	NULL			claseContactoAnimalesTrabajo_Esp	2	25	3	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	11.2.1	Especifique la clase de animal	NULL			claseContactoAnimalesTrabajo_Esp	21	25	3	1	Question
 af241e49-409d-443f-b7c4-bb4af6ee3daf	Hospital	H3 Informe del Caso	F - Factores de Riesgo	12	Si el paciente es menor de 18 años	NULL			NULL	21	26	1	1	Checkpoint
 7d1b6abf-6010-4022-af8b-c1e8ee1c2bea	Hospital	H3 Informe del Caso	F - Factores de Riesgo	12.1	Pregunte al padre/tutor: "¿Cuál fue el último grado escolar que Ud. completó?"	NULL			parentescoGradoEscolarCompleto	21	27	2	1	Question
 1905e912-29ed-4d9b-9708-31cf25dbd5d6	Hospital	H3 Informe del Caso	F - Factores de Riesgo	13	Si el paciente es mayor o igual a 18 años	NULL			NULL	21	28	1	1	Checkpoint
