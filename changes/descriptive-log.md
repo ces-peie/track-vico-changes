@@ -1,4 +1,4 @@
-ï»¿> # Descriptive log of changes to the qm ViCo questionnaire
+?»¿> # Descriptive log of changes to the qm ViCo questionnaire
 
 # Questions added for TAC adult pneumonia etiology study
 ## `272770f818311c3a523eaae62b70ab97acda61d4`
@@ -245,7 +245,7 @@ Update messages.
 #### 2015-10-27 16:37:26 -0600
 First spelling revision
 
-Riview and fix misspellings
+Review and fix misspellings
 
 
 ---
@@ -256,7 +256,18 @@ Riview and fix misspellings
 #### 2015-10-28 09:42:52 -0600
 Second spelling revision
 
-Riview and fix misspellings (second pass)
+Review and fix misspellings (second pass)
 
+
+
+---
+
+# Fix question order, level and number
+## `072bfd567cd4e712a2b55b121816cfb007856146`
+### odeleongt
+#### 2015-10-28 11:43:50 -0600
+Fix question order, level and number
+
+Specifications for order and level of questions was fixed (fbdc165b3d8e78850e75611a2dae3fcfd27828cb), and code was added to automatically update question numbers based on this information.
 
 

@@ -58,8 +58,8 @@ fb14a645-9983-4349-84ab-21d64c22c67a	Hospital	H2 Inscripción	Consentimiento Verb
 2180f77e-5569-4292-a152-b91bfb5438a3	Hospital	H2 Inscripción	Consentimiento Verbal	2.2.1	Enfermera: Especifique la otra razón	NULL			consentimientoVerbalNoRazon_esp	4	5	3	1	Question
 93aad632-4336-4a67-827f-3562816be7d1	Hospital	H2 Inscripción	Consentimiento Verbal	2.3	El paciente no va a participar en el estudio de ViCo.   Agradezca a la persona por el tiempo y la información que compartió con nosotros.	NULL			NULL	4	6	2	1	Info
 	Hospital	H2 Inscripción	Revisión del Expediente Médico	1	Enfermera: Anote si una temperatura fue registrada al ingreso al hospital	NULL	addition		tempmax_ingr_reg	5	1	1	1	Question
-	Hospital	H2 Inscripción	Revisión del Expediente Médico	2	Si fue registrada una temperatura al ingreso al hospital		addition			5	2	1	1	Checkpoint
-	Hospital	H2 Inscripción	Revisión del Expediente Médico	2.1	Enfermera: Anote la temperatura máxima del paciente al ingreso al hospital		addition		tempmax_ingr	5	3	2	1	Question
+	Hospital	H2 Inscripción	Revisión del Expediente Médico	2	Si fue registrada una temperatura al ingreso al hospital	NULL	addition			5	2	1	1	Checkpoint
+	Hospital	H2 Inscripción	Revisión del Expediente Médico	2.1	Enfermera: Anote la temperatura máxima del paciente al ingreso al hospital	NULL	addition		tempmax_ingr	5	3	2	1	Question
 deeff627-bf53-49ba-8a5e-4c168b5e1f4a	Hospital	H2 Inscripción	Revisión del Expediente Médico	3	Enfermera: Anote si una temperatura fue registrada en las primeras 24 horas de admisión	Debe indicar si al paciente se le tomó la temperatura medida EN LAS PRIMERAS 24 HORAS DE ADMISIÓN.			medirTemperaturaCPrimeras24Horas	5	4	1	1	Question
 8bac5c97-70fc-4728-a5ed-0e30432c3f43	Hospital	H2 Inscripción	Revisión del Expediente Médico	4	Si fue registrada una temperatura en las primeras 24 horas de admisión	NULL			NULL	5	5	1	1	Checkpoint
 01277398-ab7b-4b6d-aca9-adf2effccc1a	Hospital	H2 Inscripción	Revisión del Expediente Médico	4.1	Enfermera: Anote la temperatura (ºC) más alta registrada durante las primeras 24 horas de admisión	Si la temperatura no fue registrada y no han pasado mas de 24 horas de admisión debe tomar la temperatura del paciente y anotarla en su PDA.			temperaturaPrimeras24Horas	5	6	2	1	Question
@@ -123,9 +123,9 @@ db0a6276-4c24-4b38-b6a3-bbb557f28300	Hospital	H2 Inscripción	Común	17.3	PREGUNTE
 2b5be6da-7977-42ae-ac7d-65dcd170e387	Hospital	H2 Inscripción	Común	17.9.1	OBSERVE:  El movimiento del niño	NULL			ninioMovimientoObs	6	39	3	1	Question
 f228f283-8b10-415b-8f93-58728f6143ac	Hospital	H2 Inscripción	Común	18	Si no anotó una temperatura en las primeras 24 horas de admisión y el paciente fue admitido hace menos de 24 horas.	NULL			NULL	6	40	1	1	Checkpoint
 00611f42-441d-4a74-9e40-54962c1af32f	Hospital	H2 Inscripción	Común	18.1	Enfermera: Tome la temperatura (ºC) del paciente	Si la temperatura no fue registrada y no han pasado mas de 24 horas de admisión debe tomar la temperatura del paciente y anotarla en su PDA.			temperaturaPrimeras24Horas	6	41	2	1	Question
-	Hospital	H2 Inscripción	Común	19	Si tiene temperatura registrada mayor de 38°C o historia de fiebre					6	42	1	1	Checkpoint
-	Hospital	H2 Inscripción	Común	19.1	Enfermera: Verifique el expediente y anote si el paciente tiene:  Hepatomegalia			Condición:  CurrentSubject("temperaturaPrimeras24Horas") >= 38.0 Or (CurrentSubject("sintomasFiebre") = 1 	hepatomegalia	6	43	2	1	Question
-	Hospital	H2 Inscripción	Común	19.2	Enfermera: Verifique el expediente y anote si el paciente tiene:  Esplenomegalia.			Condición:  CurrentSubject("temperaturaPrimeras24Horas") >= 38.0 Or (CurrentSubject("sintomasFiebre") = 1 	esplenomegalia	6	43	2	1	Question
+	Hospital	H2 Inscripción	Común	19	Si tiene temperatura registrada mayor de 38°C o historia de fiebre	NULL				6	42	1	1	Checkpoint
+	Hospital	H2 Inscripción	Común	19.1	Enfermera: Verifique el expediente y anote si el paciente tiene:  Hepatomegalia	NULL		Condición:  CurrentSubject("temperaturaPrimeras24Horas") >= 38.0 Or (CurrentSubject("sintomasFiebre") = 1 	hepatomegalia	6	43	2	1	Question
+	Hospital	H2 Inscripción	Común	19.2	Enfermera: Verifique el expediente y anote si el paciente tiene:  Esplenomegalia.	NULL		Condición:  CurrentSubject("temperaturaPrimeras24Horas") >= 38.0 Or (CurrentSubject("sintomasFiebre") = 1 	esplenomegalia	6	43	2	1	Question
 b3472323-8813-4f4c-92f2-ffd958c83db0	Hospital	H2 Inscripción	Diarrea y Respiratoria	1	Si paciente tiene menos de 5 años	NULL			NULL	7	1	1	1	Checkpoint
 2e0f799e-9515-4883-b564-fe113a2059dd	Hospital	H2 Inscripción	Diarrea y Respiratoria	1.1	Pregunte: ¿Ha tenido diarrea o asientos líquidos en los últimos 14 días?	Debe preguntarle al paciente si ha tenido diarrea o asientos en los últimos 7 días.			diarreaUltimos14Dias	7	2	2	1	Question
 25be849d-8abc-43e6-b04e-3d72f8e2e93e	Hospital	H2 Inscripción	Diarrea y Respiratoria	1.2	Si ha tenido diarrea en los últimos 14 días	NULL			NULL	7	3	2	1	Checkpoint
@@ -159,7 +159,7 @@ da418d7e-145b-40fc-8aa4-f88be433e78d	Hospital	H2 Inscripción	Diarrea y Respirato
 7bcd1661-38b7-4d3f-9332-4cc1a6034aab	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.9	Si el paciente es menor de 2 años	NULL			NULL	7	31	2	1	Checkpoint
 27076f5c-8f36-4a9d-a112-231f51693c7b	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.9.1	Pregunte: ¿Su hijo/hija para de respirar cuando esta mamando o bebiendo?	NULL			sintomasRespiraNinioPausaRepedimente	7	32	3	1	Question
 3e6423e7-f901-473d-9c5d-bd720f6ebb12	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.9.2	OBSERVE: ¿Tiene aleteo nasal?	NULL			sintomasRespiraNinioAleteoNasal	7	33	3	1	Question
-77ccf0a8-11dd-4f42-928e-005ee90cc1e3	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.1	Enfermera: ¿Se pudo medir la tasa de respiración por minuto?	NULL			medidaRespiraPorMinuto	7	34	2	1	Question
+77ccf0a8-11dd-4f42-928e-005ee90cc1e3	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.10	Enfermera: ¿Se pudo medir la tasa de respiración por minuto?	NULL			medidaRespiraPorMinuto	7	34	2	1	Question
 ff32896d-a567-4e4c-84bd-f25a8cad3822	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.11	Si se pudo medir la tasa de respiración	NULL			NULL	7	35	2	1	Checkpoint
 ed4e796d-3ffc-4fa1-a340-6cc6130f49a1	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.11.1	Enfermera: Anote la tasa de respiración calculada: (Use el cronómetro de la PDA para esta medición)	NULL			respiraPorMinuto	7	36	3	1	Question
 6f9d99f6-f448-4057-9b0d-0ac37193698e	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12	Si el paciente tiene enfermedad respiratoria aguda	NULL			NULL	7	37	2	1	Checkpoint
@@ -234,8 +234,8 @@ b1877f2f-ef3e-4073-9110-e34cbc296407	Hospital	H2 Inscripción	Consentimiento y En
 31fbbd1e-6c99-45db-80da-fa39daaa8cad	Hospital	H2 Inscripción	Consentimiento y Enrolamiento	7.5.3.5	Favor de tomar las muestras necesarias antes de proseguir, y anote la información en el formulario de Toma de Muestras	NULL			NULL	10	36	4	1	Info
 31cd0a3d-5bd1-45a3-9219-9ebc5feda582	Hospital	H5 Muestras	Muestras de ViCo	1	Si el paciente tiene enfermedad diarreica aguda:	NULL	modification		NULL	12	1	1	1	Checkpoint
 b0b98026-8ad4-4c7d-983e-7e7396b90d04	Hospital	H5 Muestras	Muestras de ViCo	1.1	Enfermera: ¿Colectó alguna muestra de heces?	La muestra entera es de mayor utilidad para detectar la posible causa de enfermedad.	modification	Opciones: Si, No	muestraHecesColecta	12	2	2	1	Question
-				1.1.1	Si colectó una muestra de heces (entera, hisopo, o ambos)	NULL	addition			12	3	3	1	Checkpoint
-				1.1.1.1	¿Qué tipo de muestra de heces recolectó?	NULL	addition	Opciones: Muestra de heces entera, hisopo rectal, ambos	muestraHecesColectaTipo	12	4	4	1	Question
+	Hospital	H5 Muestras	Muestras de ViCo	1.1.1	Si colectó una muestra de heces (entera, hisopo, o ambos)	NULL	addition			12	3	3	1	Checkpoint
+	Hospital	H5 Muestras	Muestras de ViCo	1.1.1.1	¿Qué tipo de muestra de heces recolectó?	NULL	addition	Opciones: Muestra de heces entera, hisopo rectal, ambos	muestraHecesColectaTipo	12	4	4	1	Question
 b96a997b-2d34-4f1b-8966-46d9b8dbea59	Hospital	H5 Muestras	Muestras de ViCo	1.2	Si NO colectó una muestra de heces (entera, hisopo, o ambos)	NULL	modification		NULL	12	5	2	1	Checkpoint
 5ee171b9-ac00-4469-a52f-23e39da2c871	Hospital	H5 Muestras	Muestras de ViCo	1.2.1	Enfermera: ¿Por qué no pudo colectar una muestra de heces (entera, hisopo o ambos)?	NULL	modification		MuestraHecesNoRazon	12	6	3	1	Question
 17ff155f-a034-4f4c-b66a-22c6cc2a4e16	Hospital	H5 Muestras	Muestras de ViCo	1.2.2	Si la razón es "Otra"	NULL			NULL	12	7	3	1	Checkpoint
@@ -275,8 +275,8 @@ e31b2827-a829-47e7-9387-f85afeef3862	Hospital	H5 Muestras	Muestras de ViCo	2.5.2
 e54b51fc-aa27-4187-9713-07c353a60169	Hospital	H5 Muestras	Muestras de ViCo	2.6	Si colecta muestra de Frote NF	NULL			NULL	12	41	2	1	Checkpoint
 083428dd-df0a-460e-ab63-272d0c5d0f55	Hospital	H5 Muestras	Muestras de ViCo	2.6.1	Enfermera: ¿Cuándo tomó el hisopo NF?	NULL			muestraFroteNPFechaHora	12	42	3	1	Question
 	Hospital	H5 Muestras	Muestras de ViCo	2.6.2	Enfermera: ¿El paciente estaba recibiendo antibióticos antes de tomar las muestras?	NULL	addition		abx_npop	12	43	3	1	Question
-903da773-71f5-428b-8ca6-ddfa4148fd31	Hospital	H5 Muestras	Muestras de ViCo	2.6.2	Si elegibleIRAG es "Sí" y está en Santa Rosa	NULL			NULL	12	44	3	1	Checkpoint
-2a6d9c24-5a9f-4ceb-bbc9-2110305feced	Hospital	H5 Muestras	Muestras de ViCo	2.6.2.1	Este paciente es elegible para el estudio de IRAG.    Marque todas las etiquetas con marcador ROSADO.	NULL			NULL	12	45	4	1	Info
+903da773-71f5-428b-8ca6-ddfa4148fd31	Hospital	H5 Muestras	Muestras de ViCo	2.6.3	Si elegibleIRAG es "Sí" y está en Santa Rosa	NULL			NULL	12	44	3	1	Checkpoint
+2a6d9c24-5a9f-4ceb-bbc9-2110305feced	Hospital	H5 Muestras	Muestras de ViCo	2.6.3.1	Este paciente es elegible para el estudio de IRAG.    Marque todas las etiquetas con marcador ROSADO.	NULL			NULL	12	45	4	1	Info
 50eb5d26-0429-44aa-8146-0ef86d4f462a	Hospital	H5 Muestras	Muestras de ViCo	2.7	Si el paciente tiene 18 años de edad o más	NULL			NULL	12	46	2	1	Checkpoint
 585f03e4-08a3-49fb-846c-38a16326e129	Hospital	H5 Muestras	Muestras de ViCo	2.7.1	Enfermera: ¿Colectó una muestra de orina?	NULL			muestraOrinaColecta	12	47	3	1	Question
 94f11908-a821-4716-aefa-1a80105a30ac	Hospital	H5 Muestras	Muestras de ViCo	2.7.2	Si NO colectó muestra de Orina	NULL			NULL	12	48	3	1	Checkpoint
@@ -340,13 +340,13 @@ c038f16b-5ccd-4688-88dd-de0e56db2683	Hospital	H3 Informe del Caso	C - Hx Diarrea
 d02af4e7-1848-46f3-8d20-9fbca3e13540	Hospital	H3 Informe del Caso	C - Hx Diarrea	10.2	Pregunte al padre/tutor: "¿Su hijo/a está ahora más irritable/incómodo/intranquilo de lo normal?"	NULL			hxD_irritableIncomodoIntranquilo	15	14	2	1	Question
 89122d75-5572-498e-8195-57a97f627bac	Hospital	H3 Informe del Caso	D - Hx Respiratoria	1	Diga al paciente: "Gracias por su paciencia. Voy a hacerle algunas preguntas sobre los síntomas de su enfermedad respiratoria actual."	NULL			NULL	16	1	1	1	Info
 dba9c4c8-0715-45ba-941c-6287cc2c79fe	Hospital	H3 Informe del Caso	D - Hx Respiratoria	2	¿Hace cuántos días empezó el primer síntoma de su enfermedad respiratoria? (No incluya el día actual en la cuenta.)	NULL			respiraEmpezoHaceDias	16	2	1	1	Question
-	Hospital	H3 Informe del Caso	D - Hx Respiratoria	3	Si el paciente es mayor de 18 años y está en Hospital de Cuilapa o Quetzaltenango		addition			16	3	1	1	Checkpoint
-	Hospital	H3 Informe del Caso	D - Hx Respiratoria	3.1	Pregunte: “¿Ha tenido diarrea en los últimos 7 días?"		addition	Si, No	diar_7d	16	4	2	1	Question
-	Hospital	H3 Informe del Caso	D - Hx Respiratoria	3.2	Pregunte: “¿Usted tiene malaria ahora?"		addition	Si, No, No sabe	malar_ahora	16	5	2	1	Question
-	Hospital	H3 Informe del Caso	D - Hx Respiratoria	3.3	Enfermera: Anote si en el examen pulmonar está registrada disminución del murmullo vesicular		addition		murmullo	16	6	2	1	Question
-	Hospital	H3 Informe del Caso	D - Hx Respiratoria	3.4	Pregunte: “¿Ha tomado antibióticos durante 24 horas antes de su ingreso al hospital?"		addition		abx_24h	16	7	2	1	Question
-	Hospital	H3 Informe del Caso	D - Hx Respiratoria	3.4.1	Si ha tomado antibióticos		addition			16	8	3	1	Checkpoint
-	Hospital	H3 Informe del Caso	D - Hx Respiratoria	3.4.1.1	Pregunte: “¿Podría decirnos que antibiótico fue el que tomó?"		addition	See list of ABX?	abx_24hcual	16	9	4	1	Question
+	Hospital	H3 Informe del Caso	D - Hx Respiratoria	3	Si el paciente es mayor de 18 años y está en Hospital de Cuilapa o Quetzaltenango	NULL	addition			16	3	1	1	Checkpoint
+	Hospital	H3 Informe del Caso	D - Hx Respiratoria	3.1	Pregunte: “¿Ha tenido diarrea en los últimos 7 días?"	NULL	addition	Si, No	diar_7d	16	4	2	1	Question
+	Hospital	H3 Informe del Caso	D - Hx Respiratoria	3.2	Pregunte: “¿Usted tiene malaria ahora?"	NULL	addition	Si, No, No sabe	malar_ahora	16	5	2	1	Question
+	Hospital	H3 Informe del Caso	D - Hx Respiratoria	3.3	Enfermera: Anote si en el examen pulmonar está registrada disminución del murmullo vesicular	NULL	addition		murmullo	16	6	2	1	Question
+	Hospital	H3 Informe del Caso	D - Hx Respiratoria	3.4	Pregunte: “¿Ha tomado antibióticos durante 24 horas antes de su ingreso al hospital?"	NULL	addition		abx_24h	16	7	2	1	Question
+	Hospital	H3 Informe del Caso	D - Hx Respiratoria	3.4.1	Si ha tomado antibióticos	NULL	addition			16	8	3	1	Checkpoint
+	Hospital	H3 Informe del Caso	D - Hx Respiratoria	3.4.1.1	Pregunte: “¿Podría decirnos que antibiótico fue el que tomó?"	NULL	addition	See list of ABX?	abx_24hcual	16	9	4	1	Question
 937ec304-c2e4-4120-adfe-bd3bb67282b5	Hospital	H3 Informe del Caso	D - Hx Respiratoria	4	Goteo de la nariz	NULL			hxR_GoteaNariz	16	10	1	1	Question
 3b30e2b6-188c-4220-9100-1373747d3892	Hospital	H3 Informe del Caso	D - Hx Respiratoria	5	Estornudos	NULL			hxR_Estornudos	16	11	1	1	Question
 742808a9-116c-4d64-9c6d-d0987271eb68	Hospital	H3 Informe del Caso	D - Hx Respiratoria	6	OBSERVE: ¿El paciente tiene quejido?	NULL			hxR_Quejido	16	12	1	1	Question
@@ -379,9 +379,9 @@ d54be662-1d5f-45a2-8983-ccd1bb5e28c1	Hospital	H3 Informe del Caso	K - Hx Febril	
 e85cac5f-ca13-4bc7-a4d1-332c4fed2e57	Hospital	H3 Informe del Caso	K - Hx Febril	4	Pregunte: ¿En los últimos 3 días ha tenido o tiene: “rash” o “sarpullido” con picazón?	NULL			hxF_Rash	18	21	1	1	Question
 187902b6-9fbd-4d47-85c4-c9bea0e47e52	Hospital	H3 Informe del Caso	K - Hx Febril	5	Si tenia "rash" o "sarpullido"	NULL			NULL	18	22	1	1	Checkpoint
 372ac5f5-0dda-4476-a11b-cab97fb72103	Hospital	H3 Informe del Caso	K - Hx Febril	5.1	Pregunte: ¿Actualmente tiene “rash” o “salpullido” con picazón?	NULL			hxF_IrritacionPielActual	18	23	2	1	Question
-335ba999-5712-40c5-80a3-3c729ae120ff	Hospital	H3 Informe del Caso	K - Hx Febril	5.3	Pregunte: ¿Desde hace cuántos días empezó con “rash” o “sarpullido” con picazón?	NULL			hxF_IrritacionPielHaceDias	18	28	2	1	Question
-818c6960-c469-4d43-9884-3ef677314291	Hospital	H3 Informe del Caso	K - Hx Febril	5.4	¿Dónde tiene o tenía el "rash" o "sarpullido"?	NULL			hxF_IrritacionPielDonde	18	29	2	1	Question
-cdba9021-1bd2-48dd-80e6-3f9e1c63c00b	Hospital	H3 Informe del Caso	K - Hx Febril	5.5	Enfermera: Observe el “rash” o “sarpullido” y clasificarlo , o pida la descripción al paciente y trate de clasificarlo	NULL			hxF_IrritacionPielDescripcion	18	30	2	1	Question
+335ba999-5712-40c5-80a3-3c729ae120ff	Hospital	H3 Informe del Caso	K - Hx Febril	5.2	Pregunte: ¿Desde hace cuántos días empezó con “rash” o “sarpullido” con picazón?	NULL			hxF_IrritacionPielHaceDias	18	28	2	1	Question
+818c6960-c469-4d43-9884-3ef677314291	Hospital	H3 Informe del Caso	K - Hx Febril	5.3	¿Dónde tiene o tenía el "rash" o "sarpullido"?	NULL			hxF_IrritacionPielDonde	18	29	2	1	Question
+cdba9021-1bd2-48dd-80e6-3f9e1c63c00b	Hospital	H3 Informe del Caso	K - Hx Febril	5.4	Enfermera: Observe el “rash” o “sarpullido” y clasificarlo , o pida la descripción al paciente y trate de clasificarlo	NULL			hxF_IrritacionPielDescripcion	18	30	2	1	Question
 ef77d740-0783-4781-ae3a-d5d39a0b88c7	Hospital	H3 Informe del Caso	K - Hx Febril	6	Dolor en las articulaciones	NULL			hxF_DolorArticulaciones	18	31	1	1	Question
 ffde14a0-1d2b-4bdc-8f81-d4b063e39eb6	Hospital	H3 Informe del Caso	K - Hx Febril	7	Si tiene dolor en las articulaciones	NULL			NULL	18	32	1	1	Checkpoint
 27ef60ef-72dc-489f-8bd3-b09342fa09f1	Hospital	H3 Informe del Caso	K - Hx Febril	7.1	Pregunte: ¿Actualmente tiene dolor en las articulaciones?	NULL			hxF_DolorArticulacionesActual	18	33	2	1	Question
@@ -392,7 +392,7 @@ bd0d6732-2c80-48cc-bd85-3bf39b55fa52	Hospital	H3 Informe del Caso	K - Hx Febril	
 a4469593-6d55-4b0a-b2eb-7c46ceda7adc	Hospital	H3 Informe del Caso	K - Hx Febril	9.2	Pregunte: ¿Desde hace cuántos días empezó con ojos rojos?	NULL			sintomasEnfermaFebrilOjosRojosHaceDias	18	38	2	1	Question
 c7b354a2-33dd-4a69-adbb-9200b9af9ee2	Hospital	H3 Informe del Caso	K - Hx Febril	10	Ojos amarillos	NULL			hxF_OjosAmarillos	18	39	1	1	Question
 b8a4f784-9041-4100-b957-69357b6e59aa	Hospital	H3 Informe del Caso	K - Hx Febril	11	Si tiene ojos amarillos	NULL			NULL	18	40	1	1	Checkpoint
-25c9c15f-1357-4983-8fcd-44b985dd7884	Hospital	H3 Informe del Caso	K - Hx Febril	11.2	Pregunte: "¿Desde hace cuántos días empezó con ojos amarillos?"	NULL			hxF_OjosAmarillosHaceDias	18	41	2	1	Question
+25c9c15f-1357-4983-8fcd-44b985dd7884	Hospital	H3 Informe del Caso	K - Hx Febril	11.1	Pregunte: "¿Desde hace cuántos días empezó con ojos amarillos?"	NULL			hxF_OjosAmarillosHaceDias	18	41	2	1	Question
 19e6605d-4ed3-4bec-b9fd-2aa6259d1883	Hospital	H3 Informe del Caso	K - Hx Febril	12	Enfermera: Observe si el paciente actualmente tiene ojos amarillos	NULL			hxF_OjosAmarillosActual	18	42	1	1	Question
 595fb04d-cbaf-47a6-80ed-74a2da93cb3a	Hospital	H3 Informe del Caso	K - Hx Febril	13	Sudoración profusa	NULL			hxF_SudoracionProfusa	18	43	1	1	Question
 ad96772f-1d5e-4b6f-a202-e57e3ee0efb6	Hospital	H3 Informe del Caso	K - Hx Febril	14	Si tiene sudoración profusa	NULL			NULL	18	44	1	1	Checkpoint
@@ -439,11 +439,11 @@ c04c6ef2-a7f8-4450-aa78-6c0f2b6f5428	Hospital	H3 Informe del Caso	B - Hx de Trat
 f0317520-c468-4b5e-a36f-f0bc0d8d9bd9	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.2.1	Pregunte: ¿Qué antibiótico tomó?	NULL			medUltimas72HorasAntiBCual	19	26	3	1	Question
 067d4fb5-500d-4876-9828-d4211a746e33	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.2.2	Pregunte: ¿Cuándo empezó a tomarlo?	NULL			medUltimas72HorasAntiBFecha	19	27	3	1	Question
 ab7c0278-8f4d-48e7-8809-02d51f004a69	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.2.3	Pregunte: ¿Cuál fue el último lugar donde consiguió antibióticos?	NULL			medUltimas72HorasAntiBDonde	19	28	3	1	Question
-0c2fa902-bb73-485c-8939-6261ca18c004	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.5	Medicina para la fiebre o el dolor de cuerpo (ej., Panadol, acetaminofén, naproxena, diclofenaco, bromexol)	NULL			medUltimas72HorasAntipireticos	19	32	2	1	Question
-d3092a90-08b1-4828-bceb-4666d14a6f87	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.6	Si es un paciente de Respiratorio	NULL			NULL	19	33	2	1	Checkpoint
-e70999c8-bc07-487f-8c04-4979f33a06d4	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.6.1	Aciclovir, oseltamivir o famciclovir	NULL			medUltimas72HorasAntivirales	19	34	3	1	Question
-d663d46f-f430-4103-8420-e117fdb76e28	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.7	Si es un paciente de Febril	NULL			NULL	19	35	2	1	Checkpoint
-5fa1e12a-64a9-4b52-ae7d-dcf59b642d6d	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.7.1	Medicina contra la malaria	NULL			medUltimas72HorasAntimalaricos	19	36	3	1	Question
+0c2fa902-bb73-485c-8939-6261ca18c004	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.3	Medicina para la fiebre o el dolor de cuerpo (ej., Panadol, acetaminofén, naproxena, diclofenaco, bromexol)	NULL			medUltimas72HorasAntipireticos	19	32	2	1	Question
+d3092a90-08b1-4828-bceb-4666d14a6f87	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.4	Si es un paciente de Respiratorio	NULL			NULL	19	33	2	1	Checkpoint
+e70999c8-bc07-487f-8c04-4979f33a06d4	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.4.1	Aciclovir, oseltamivir o famciclovir	NULL			medUltimas72HorasAntivirales	19	34	3	1	Question
+d663d46f-f430-4103-8420-e117fdb76e28	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.5	Si es un paciente de Febril	NULL			NULL	19	35	2	1	Checkpoint
+5fa1e12a-64a9-4b52-ae7d-dcf59b642d6d	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	8.5.1	Medicina contra la malaria	NULL			medUltimas72HorasAntimalaricos	19	36	3	1	Question
 8ada6125-7bdd-49fe-9da2-76cc19150ef6	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	9	Si paciente es menor de 5 años y elegible para estudio de diarrea	NULL			NULL	19	37	1	1	Checkpoint
 2db87b9a-faa8-46c3-820d-88f7923dc68e	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	9.1	Pregunte al padre/tutor: "¿Su hijo ha tomado sueros, sales, o soluciones de rehidratación en los últimos TRES días?"	NULL			tomadoSuerosSalesUltimas72hora	19	38	2	1	Question
 a4e9bddf-22c2-46ac-9903-d02f3e528d18	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	9.2	Si ha tomado sueros o sales	NULL			NULL	19	39	2	1	Checkpoint
@@ -454,11 +454,11 @@ aac4d511-0862-432d-870c-2141a4cb9a8b	Hospital	H3 Informe del Caso	B - Hx de Trat
 6466bdda-fe0a-45c7-b2bc-889b2b17e915	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1	Si el paciente es menor de 5 años de edad	NULL			NULL	20	1	1	1	Checkpoint
 aa2d5654-9422-450c-a1b5-5d18f31e6404	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.1	Pregunte al padre/tutor: "¿Tiene con Ud. el carnet de vacunación del niño/a?"	NULL			tieneFichaVacunacion	20	2	2	1	Question
 0aacfd8f-49f4-445a-9de6-6368a1eaa833	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2	Si NO tiene la ficha de vacunación	NULL			NULL	20	3	2	1	Checkpoint
-5d74bb3e-f1aa-4f44-9094-bcf6511ecd95	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas		Diga al padre/tutor: Está ficha de vacunación es muy importante. ¿Podría traer la ficha de vacunación lo antes posible?	NULL			NULL	20	4	3	1	Info
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.2	¿Ha recibido su hijo/hija la vacuna BCG?	NULL	addition		vacunaBcgRecibido	20	5	3		Question
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.3	¿Ha recibido su hijo/hija la vacuna de Polio Oral (OPV)	NULL	addition		vacunaPolioRecibido	20	6	3		Question
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.4	Si ha recibido Polio Oral	NULL	addition		NULL	20	7	3		Checkpoint
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.4.1	¿Cuántas dosis de la vacuna Polio Oral ha recibido su hijo/hija?	NULL	addition		vacunaPolioDosis	20	8	3		Question
+5d74bb3e-f1aa-4f44-9094-bcf6511ecd95	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.1	Diga al padre/tutor: Está ficha de vacunación es muy importante. ¿Podría traer la ficha de vacunación lo antes posible?	NULL			NULL	20	4	3	1	Info
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.2	¿Ha recibido su hijo/hija la vacuna BCG?	NULL	addition		vacunaBcgRecibido	20	5	3	1	Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.3	¿Ha recibido su hijo/hija la vacuna de Polio Oral (OPV)	NULL	addition		vacunaPolioRecibido	20	6	3	1	Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.4	Si ha recibido Polio Oral	NULL	addition		NULL	20	7	3	1	Checkpoint
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.4.1	¿Cuántas dosis de la vacuna Polio Oral ha recibido su hijo/hija?	NULL	addition		vacunaPolioDosis	20	8	4	1	Question
 48837e67-9455-43a1-bba3-99f1b6df85f9	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.5	Pregunte al padre/tutor: ¿Ha recibido su hijo/hija la vacuna Pentavalente (DPT/Hib, Hepatitis B)?	NULL			vacunaPentavalenteRecibido	20	9	3	1	Question
 3de45995-c9ae-49ba-abd7-bea9dd60104d	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.6	Si ha recibido Pentavalente (DPT/Hib, Hepatitis B)	NULL			NULL	20	10	3	1	Checkpoint
 4cbaa555-25dc-4b56-bf59-bdc958e40ea1	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.6.1	Pregunte: ¿Cuántas dosis de la vacuna  de la Pentavalente (DPT/Hib, Hepatitis B) ha recibido su hijo/hija?	NULL			vacunaPentavalenteDosis	20	11	4	1	Question
@@ -473,26 +473,26 @@ ba162f10-e0e2-4b9b-8ffd-423529a39a8c	Hospital	H3 Informe del Caso	A - Enfermedad
 7e2b30f7-f686-41a1-afad-33a478f2c9eb	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.12.2	Pregunte: ¿Cuando recibió la primera dosis?	NULL			vacunaNeumococoPrimeraDosis	20	20	4	1	Question
 cdb6d8c4-c4f5-4283-b572-272511b2cba4	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.12.3	Pregunte: ¿Cuando recibió la última dosis?	NULL			vacunaNeumococoUltimaDosis	20	21	4	1	Question
 27d78635-28de-486c-978e-d79ea8abb81b	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3	Si tiene la ficha o carnet de vacunación	NULL			NULL	20	22	2	1	Checkpoint
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.1	Anote de la ficha o carnet si el paciente ha recibido la vacuna BCG	NULL	addition		vacunaBcgRecibido	20	23	3		Question
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.2	Anote de la ficha o carnet si el paciente ha recibido la vacuna Polio Oral (OPV)	NULL	addition		vacunaPolioRecibido	20	24	3		Question
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.3	Si ha recibido Polio Oral	NULL	addition		NULL	20	25	3		Checkpoint
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.3.1	Anote de la ficha o carnet cuantas dosis de Polio Oral (OPV) ha recibido	NULL	addition		vacunaPolioDosis	20	26	4		Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.1	Anote de la ficha o carnet si el paciente ha recibido la vacuna BCG	NULL	addition		vacunaBcgRecibido	20	23	3	1	Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.2	Anote de la ficha o carnet si el paciente ha recibido la vacuna Polio Oral (OPV)	NULL	addition		vacunaPolioRecibido	20	24	3	1	Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.3	Si ha recibido Polio Oral	NULL	addition		NULL	20	25	3	1	Checkpoint
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.3.1	Anote de la ficha o carnet cuantas dosis de Polio Oral (OPV) ha recibido	NULL	addition		vacunaPolioDosis	20	26	4	1	Question
 e339ce0b-0183-4f1d-99dd-3acf3ded852a	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.4	Enfermera: Anote de la ficha o carnet si el paciente ha recibido la vacuna Pentavalente (DPT/Hib, Hepatitis B).	NULL			vacunaPentavalenteRecibido	20	27	3	1	Question
 f2a5cc19-5bd7-40f4-8076-99250fab10f0	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.5	Si ha recibido Pentavalente (DPT/Hib, Hepatitis B)	NULL			NULL	20	28	3	1	Checkpoint
-e547d43d-a66c-4399-82d9-5d297f5a4c1c	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.6.1	Enfermera: ¿Cuántas dosis de la vacuna  de la Pentavalente (DPT/Hib, Hepatitis B) ha recibido?	NULL			vacunaPentavalenteDosis	20	29	4	1	Question
-9f6d1954-6002-4a14-99b2-cde8d405fb9d	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.7	Si no ha recibido Pentavalente	NULL			NULL	20	30	3	1	Checkpoint
-b7e98ea4-079f-4a26-b809-30ad1bbe11f9	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.8	Enfermera: Anote de la ficha o carnet si el paciente ha recibido la vacuna para sarampión, paperas y rubeola (SPR).	NULL			vacunaSarampionPaperasRubella	20	31	3	1	Question
-bc1478b2-7bd2-4688-b33b-35ad89c8da05	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.9	Enfermera: Anote de la ficha o carnet si el paciente ha recibido la vacuna contra rotavirus.	NULL			vacunaRotavirusRecibido	20	32	3	1	Question
-99a4b978-40a7-486a-9aac-898824009e5e	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.10	Si ha recibido vacuna contra rotavirus:	NULL			NULL	20	33	3	1	Checkpoint
-2c01b056-b02c-4a7a-89e1-2b035fb4cfe9	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.10.1	Enfermera: ¿Cuántas dosis de la vacuna contra rotavirus ha recibido?	NULL			vacunaRotavirusDosis	20	34	4	1	Question
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.10.2	Anote de la ficha o carnet si la vacuna contra Rotavirus que recibio fue Rotarix	NULL	ADDITION		vacunaRotavirusRotarix	20	35	4		Question
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.10.3	Anote de la ficha o carnet si la vacuna contra Rotavirus que recibio fue Rotateq	NULL	ADDITION		vacunaRotavirusRotateq	20	36	4		Question
-fa14c54c-fc6c-480d-9e55-50db6d318176	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.11	Enfermera: Anote de la ficha o carnet si el paciente ha recibido la vacuna contra neumococo (Prevenar)	NULL			vacunaNeumococoPrevenar	20	37	3	1	Question
-da840411-0ec4-481a-ab89-ea0db08f6f6f	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.12	Enfermera: Anote de la ficha o carnet si el paciente ha recibido la vacuna contra neumococo (Synflorix)	NULL			vacunaNeumococoSynflorix	20	38	3	1	Question
-14bf8607-b6d5-4054-b055-49970fb5bb87	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.13	Si recibió la vacuna contra neumococo	NULL			NULL	20	39	3	1	Checkpoint
-444050d7-c238-4730-b10f-9cb5bea0c701	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.13.1	Enfermera: ¿Cuantas dosis de la vacuna para neumococo recibió?	NULL			vacunaNeumococoDosis	20	40	4	1	Question
-84d82f15-8b80-4fce-beaf-9defdbc141a0	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.13.2	Enfermera: ¿Cuando recibió la primera dosis?	NULL			vacunaNeumococoPrimeraDosis	20	41	4	1	Question
-e5cde10a-7d1e-4bc3-843f-bf1163a06f28	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.13.3	Enfermera: ¿Cuando recibió la última dosis?	NULL			vacunaNeumococoUltimaDosis	20	42	4	1	Question
+e547d43d-a66c-4399-82d9-5d297f5a4c1c	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.5.1	Enfermera: ¿Cuántas dosis de la vacuna  de la Pentavalente (DPT/Hib, Hepatitis B) ha recibido?	NULL			vacunaPentavalenteDosis	20	29	4	1	Question
+9f6d1954-6002-4a14-99b2-cde8d405fb9d	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.6	Si no ha recibido Pentavalente	NULL			NULL	20	30	3	1	Checkpoint
+b7e98ea4-079f-4a26-b809-30ad1bbe11f9	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.7	Enfermera: Anote de la ficha o carnet si el paciente ha recibido la vacuna para sarampión, paperas y rubeola (SPR).	NULL			vacunaSarampionPaperasRubella	20	31	3	1	Question
+bc1478b2-7bd2-4688-b33b-35ad89c8da05	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.8	Enfermera: Anote de la ficha o carnet si el paciente ha recibido la vacuna contra rotavirus.	NULL			vacunaRotavirusRecibido	20	32	3	1	Question
+99a4b978-40a7-486a-9aac-898824009e5e	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.9	Si ha recibido vacuna contra rotavirus:	NULL			NULL	20	33	3	1	Checkpoint
+2c01b056-b02c-4a7a-89e1-2b035fb4cfe9	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.9.1	Enfermera: ¿Cuántas dosis de la vacuna contra rotavirus ha recibido?	NULL			vacunaRotavirusDosis	20	34	4	1	Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.9.2	Anote de la ficha o carnet si la vacuna contra Rotavirus que recibio fue Rotarix	NULL	ADDITION		vacunaRotavirusRotarix	20	35	4	1	Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.9.3	Anote de la ficha o carnet si la vacuna contra Rotavirus que recibio fue Rotateq	NULL	ADDITION		vacunaRotavirusRotateq	20	36	4	1	Question
+fa14c54c-fc6c-480d-9e55-50db6d318176	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.10	Enfermera: Anote de la ficha o carnet si el paciente ha recibido la vacuna contra neumococo (Prevenar)	NULL			vacunaNeumococoPrevenar	20	37	3	1	Question
+da840411-0ec4-481a-ab89-ea0db08f6f6f	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.11	Enfermera: Anote de la ficha o carnet si el paciente ha recibido la vacuna contra neumococo (Synflorix)	NULL			vacunaNeumococoSynflorix	20	38	3	1	Question
+14bf8607-b6d5-4054-b055-49970fb5bb87	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.12	Si recibió la vacuna contra neumococo	NULL			NULL	20	39	3	1	Checkpoint
+444050d7-c238-4730-b10f-9cb5bea0c701	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.12.1	Enfermera: ¿Cuantas dosis de la vacuna para neumococo recibió?	NULL			vacunaNeumococoDosis	20	40	4	1	Question
+84d82f15-8b80-4fce-beaf-9defdbc141a0	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.12.2	Enfermera: ¿Cuando recibió la primera dosis?	NULL			vacunaNeumococoPrimeraDosis	20	41	4	1	Question
+e5cde10a-7d1e-4bc3-843f-bf1163a06f28	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.12.3	Enfermera: ¿Cuando recibió la última dosis?	NULL			vacunaNeumococoUltimaDosis	20	42	4	1	Question
 556235cc-8bd1-49f1-9af5-db9f746b260a	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2	Si elegible para Diarrea, Respiratorias o Febriles	NULL			NULL	20	43	1	1	Checkpoint
 5fd12e2c-2266-4cac-9dc1-dd8c8908f89d	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.1	Pregunte: ¿El paciente ha recibido la vacuna para influenza estacional en los últimos 6 meses?	NULL			vacunaInfluenzaSeisMeses	20	44	2	1	Question
 3f6914f2-634d-44b9-a62f-7720a9232f7b	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.2	Asma	NULL			enfermedadesCronicasAsma	20	45	2	1	Question
@@ -501,22 +501,22 @@ a6504427-fd5d-4625-9865-d936d71a9e71	Hospital	H3 Informe del Caso	A - Enfermedad
 80976c97-df97-4275-984a-2a8c44d83668	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.5	Enfermedad del corazón (ej., ataque, infarto o fallo)	NULL			enfermedadesCronicasEnfermCorazon	20	48	2	1	Question
 aabe04c1-d089-4cd7-89c4-dbe65bc93c84	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.6	Enfermedad del hígado (ej., cirrosis, hepatitis crónica)	NULL			enfermedadesCronicasEnfermHigado	20	49	2	1	Question
 d7acc947-6a14-4169-b012-01783ecd8f30	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.7	Enfermedad del riñón (ej., insuficiencia o fallo renal)	NULL			enfermedadesCronicasEnfermRinion	20	50	2	1	Question
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.8	Pregunte: ¿Le ha dicho a Ud. algún médico que tiene historial de enfermedades crónicas tales como: VIH/SIDA u otra inmunodeficiencia?		addition	I do not see instructions for this section. Are they similar to the new questions?	vih	20	51	2	1	Question
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.9	Pregunte: “¿Algún médico le ha dicho si tiene o padece de Inmunodeficiencia?"		addition	I do not see instructions for this section. Are they similar to the new questions?	inmunodef	20	52	2	1	Question
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.1	Pregunte:  “¿Ha tomado algún tratamiento de esteroides por más de 7 días (esteroides son: metilprednisolona, prednisolona, prednisona)?		addition		esteroidesUso	20	53	2		Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.8	Pregunte: ¿Le ha dicho a Ud. algún médico que tiene historial de enfermedades crónicas tales como: VIH/SIDA u otra inmunodeficiencia?	NULL	addition	I do not see instructions for this section. Are they similar to the new questions?	vih	20	51	2	1	Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.9	Pregunte: “¿Algún médico le ha dicho si tiene o padece de Inmunodeficiencia?"	NULL	addition	I do not see instructions for this section. Are they similar to the new questions?	inmunodef	20	52	2	1	Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.10	Pregunte:  “¿Ha tomado algún tratamiento de esteroides por más de 7 días (esteroides son: metilprednisolona, prednisolona, prednisona)?	NULL	addition		esteroidesUso	20	53	2	1	Question
 ca27db26-0d30-44a0-b484-fdc264eaf0bf	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.11	Si el paciente es mayor o igual a 18 años de edad	NULL		Should have been 2.10?	NULL	20	54	2	1	Checkpoint
-28e03753-94cb-4c42-967c-d62a8fa0f2cb	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.11.1	Enfermedad de los pulmones (ej. EPOC, enfisema, enfermedad crónica y obstructiva de los pulmones)	NULL	move	Only asked if patient > 18 years	enfermedadesCronicasEnfermPulmones	20	55	2	1	Question
+28e03753-94cb-4c42-967c-d62a8fa0f2cb	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.11.1	Enfermedad de los pulmones (ej. EPOC, enfisema, enfermedad crónica y obstructiva de los pulmones)	NULL	move	Only asked if patient > 18 years	enfermedadesCronicasEnfermPulmones	20	55	3	1	Question
 7894dfc0-747f-4a38-8ede-4bace42102ae	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.11.2	Hipertensión	NULL			enfermedadesCronicasHipertension	20	56	3	1	Question
-7df5a835-5c32-41cf-815a-1a1d395c9f19	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.13	Otras enfermedades crónicas	NULL			enfermedadesCronicasOtras	20	57	2	1	Question
-cad66797-1a0f-4568-8afe-89cb9cd6e158	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.14	Si una de las respuestas es SI	NULL			NULL	20	58	2	1	Checkpoint
-7ff1b75b-5c61-4323-ba60-37947c6369a2	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.14.1	Enfermera: Proporcione información adicional sobre la enfermedad crónica del paciente	NULL			enfermedadesCronicasInfoAdicional	20	59	3	1	Question
-566d2717-8207-4848-9e68-e3a7c33994d6	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.15	Si el paciente es menor de 2 años de edad	NULL			NULL	20	60	2	1	Checkpoint
-5b660701-1fdf-4eeb-83d7-fff390a45a5d	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.15.1	Pregunte al padre/tutor: "¿Su bebé fue prematuro (nació antes de tiempo)?"	NULL			enfermedadesCronicasNacimientoPrematuro	20	61	3	1	Question
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.15.2	Pregunte al padre/tutor: "¿El bebé recibió lactancia materna exclusiva durante los primeros 6 meses de vida?"	NULL	addition	This is a very well known risk factor for gastrointestinal and respiratory disease (hmaldonado)	lactanciaMaternaExclusiva	20	62	3	1	Question
-57197664-e00e-40a2-a14e-8c97d9a07b7e	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.16	Si el paciente es una mujer con 11 años o mayor	NULL			NULL	20	63	2	1	Checkpoint
-917cead0-f7aa-4909-889b-0c7d894f8b47	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.16.1	Pregunte: ¿Está usted embarazada?	NULL			embarazada	20	64	3	1	Question
-c392d6e2-1059-47a3-b4ba-b38ebf41515c	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.16.2	Si está embarazada	NULL			NULL	20	65	3	1	Checkpoint
-a0c6a351-2ce8-4500-93b0-0e8bd0209fa8	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.16.2.1	Pregunte: ¿Cuántos meses tiene usted de embarazo?	NULL			embarazadaMeses	20	66	4	1	Question
+7df5a835-5c32-41cf-815a-1a1d395c9f19	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.12	Otras enfermedades crónicas	NULL			enfermedadesCronicasOtras	20	57	2	1	Question
+cad66797-1a0f-4568-8afe-89cb9cd6e158	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.13	Si una de las respuestas es SI	NULL			NULL	20	58	2	1	Checkpoint
+7ff1b75b-5c61-4323-ba60-37947c6369a2	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.13.1	Enfermera: Proporcione información adicional sobre la enfermedad crónica del paciente	NULL			enfermedadesCronicasInfoAdicional	20	59	3	1	Question
+566d2717-8207-4848-9e68-e3a7c33994d6	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.14	Si el paciente es menor de 2 años de edad	NULL			NULL	20	60	2	1	Checkpoint
+5b660701-1fdf-4eeb-83d7-fff390a45a5d	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.14.1	Pregunte al padre/tutor: "¿Su bebé fue prematuro (nació antes de tiempo)?"	NULL			enfermedadesCronicasNacimientoPrematuro	20	61	3	1	Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.14.2	Pregunte al padre/tutor: "¿El bebé recibió lactancia materna exclusiva durante los primeros 6 meses de vida?"	NULL	addition	This is a very well known risk factor for gastrointestinal and respiratory disease (hmaldonado)	lactanciaMaternaExclusiva	20	62	3	1	Question
+57197664-e00e-40a2-a14e-8c97d9a07b7e	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.15	Si el paciente es una mujer con 11 años o mayor	NULL			NULL	20	63	2	1	Checkpoint
+917cead0-f7aa-4909-889b-0c7d894f8b47	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.15.1	Pregunte: ¿Está usted embarazada?	NULL			embarazada	20	64	3	1	Question
+c392d6e2-1059-47a3-b4ba-b38ebf41515c	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.15.2	Si está embarazada	NULL			NULL	20	65	3	1	Checkpoint
+a0c6a351-2ce8-4500-93b0-0e8bd0209fa8	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.15.2.1	Pregunte: ¿Cuántos meses tiene usted de embarazo?	NULL			embarazadaMeses	20	66	4	1	Question
 64e72dfe-9b03-4053-bf4c-bb0e1755769d	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	NULL		NULL			enfermedadesCronicasAlguna	20	0	1	1	Variable
 d963c116-4dd1-4a40-b743-f82c73d94105	Hospital	H3 Informe del Caso	F - Factores de Riesgo	1	Diga al paciente: "Quisiera hacerle unas preguntas sobre cosas a las que pudo haber estado expuesto/a."	NULL			NULL	21	1	1	1	Info
 88e30432-a9b6-4fac-83aa-05e71d74c4ce	Hospital	H3 Informe del Caso	F - Factores de Riesgo	2	Pregunte: ¿En el mes pasado antes que se enfermara, usted viajó a otro lugar?	NULL			pacienteNocheFueraCasa	21	2	1	1	Question
@@ -525,10 +525,10 @@ cf66d9de-698b-4ad8-a060-143eb4aa9b2d	Hospital	H3 Informe del Caso	F - Factores d
 3aff0bc1-1945-4ebe-8308-07221d1ded1d	Hospital	H3 Informe del Caso	F - Factores de Riesgo	3.2	Si sabe dónde estuvo	NULL			NULL	21	5	2	1	Checkpoint
 bfe26aff-d0d7-4116-a1f7-81b68de1ccb5	Hospital	H3 Informe del Caso	F - Factores de Riesgo	3.2.1	Si estuvo en otro país	NULL			NULL	21	6	3	1	Checkpoint
 95c5f8fa-fb7d-443a-bd4c-f2855c2219b1	Hospital	H3 Informe del Caso	F - Factores de Riesgo	3.2.1.1	Pregunte: ¿Cuál país visitó?	NULL			paisVisito	21	7	4	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	3.2.2	Si estuvo en otro departamento				pacienteVisitoOtroDepartamento	21	8	3	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	3.2.2.1	Pregunte ¿Cuál departamento visitó?				departamentoVisito	21	9	4	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	3.2.3	Si estuvo en otro municipio				pacienteVisitoOtroMunicipio	21	10	3	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	3.2.3.1	Pregunte: ¿Cuál municipio visitó?				municipioVisito	21	11	4	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	3.2.2	Si estuvo en otro departamento	NULL			pacienteVisitoOtroDepartamento	21	8	3	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	3.2.2.1	Pregunte ¿Cuál departamento visitó?	NULL			departamentoVisito	21	9	4	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	3.2.3	Si estuvo en otro municipio	NULL			pacienteVisitoOtroMunicipio	21	10	3	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	3.2.3.1	Pregunte: ¿Cuál municipio visitó?	NULL			municipioVisito	21	11	4	1	Question
 b770e87b-3cf1-4c0b-8d72-31bd1f332d77	Hospital	H3 Informe del Caso	F - Factores de Riesgo	4	Pregunte: En las últimas 2 semanas ¿Lo ha picado alguna garrapata?	NULL			pacientePicoGarrapata	21	12	1	1	Question
 	Hospital	H3 Informe del Caso	F - Factores de Riesgo	5	Pregunte: En las últimas 2 semanas ¿Lo ha picado alguna pulga?	NULL			picoPulga	21	13	1	1	Question
 	Hospital	H3 Informe del Caso	F - Factores de Riesgo	6	Pregunte: En las últimas 2 semanas ¿Ha visto ratones o ratas dentro de su casa?”	NULL			ratonesCasa	21	14	1	1	Question
@@ -542,7 +542,7 @@ b770e87b-3cf1-4c0b-8d72-31bd1f332d77	Hospital	H3 Informe del Caso	F - Factores d
 	Hospital	H3 Informe del Caso	F - Factores de Riesgo	11	Si tiene animales en su trabajo	NULL		@claseContactoAnimalesTrabajo = 888	NULL	21	22	1	1	Question
 	Hospital	H3 Informe del Caso	F - Factores de Riesgo	11.1	Pregunte: ¿Qué clase de animales tiene en su trabajo?	NULL			claseContactoAnimalesTrabajo	21	23	2	1	Question
 	Hospital	H3 Informe del Caso	F - Factores de Riesgo	11.2	Si claseanimalestrabajo es igual a otro:	NULL			NULL	21	24	2	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	11.2.1	Especifique la clase de animal	NULL			claseContactoAnimalesTrabajo_Esp	2	25	3	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	11.2.1	Especifique la clase de animal	NULL			claseContactoAnimalesTrabajo_Esp	21	25	3	1	Question
 af241e49-409d-443f-b7c4-bb4af6ee3daf	Hospital	H3 Informe del Caso	F - Factores de Riesgo	12	Si el paciente es menor de 18 años	NULL			NULL	21	26	1	1	Checkpoint
 7d1b6abf-6010-4022-af8b-c1e8ee1c2bea	Hospital	H3 Informe del Caso	F - Factores de Riesgo	12.1	Pregunte al padre/tutor: "¿Cuál fue el último grado escolar que Ud. completó?"	NULL			parentescoGradoEscolarCompleto	21	27	2	1	Question
 1905e912-29ed-4d9b-9708-31cf25dbd5d6	Hospital	H3 Informe del Caso	F - Factores de Riesgo	13	Si el paciente es mayor o igual a 18 años	NULL			NULL	21	28	1	1	Checkpoint
@@ -553,37 +553,37 @@ b1bf002d-045f-4832-8e31-99234cb92d45	Hospital	H3 Informe del Caso	F - Factores d
 5c1319a1-7edc-4e35-b65c-23978473d6e8	Hospital	H3 Informe del Caso	F - Factores de Riesgo	14.1.2	Pregunte: ¿Aparte de usted (el paciente), alguien en su casa fuma?	NULL			casaAlguienFuma	21	33	3	1	Question
 a72a822f-8836-45b2-9ce9-39fbbe65c455	Hospital	H3 Informe del Caso	F - Factores de Riesgo	15	Si tiene menos de 2 años	NULL			NULL	21	34	1	1	Checkpoint
 	Hospital	H3 Informe del Caso	F - Factores de Riesgo	15.1	Pregunte al padre/tutor: "¿El niño recibió pecho?"	NULL			pecho	21	35	2	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	15.2	Si el niño recibió pecho				NULL	21	36	2	1	Checkpoint
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	15.2	Si el niño recibió pecho	NULL			NULL	21	36	2	1	Checkpoint
 	Hospital	H3 Informe del Caso	F - Factores de Riesgo	15.2.1	Pregunte al padre/tutor: "¿Hasta qué edad el niño recibió pecho?” (Anotar en meses)	NULL			pechoMeses	21	37	3	1	Question
 	Hospital	H3 Informe del Caso	F - Factores de Riesgo	15.2.2	Pregunte al padre/tutor: "¿Hasta qué edad el niño recibió pecho de forma exclusiva?” (Anotar en meses)	NULL			pechoExclusiva	21	38	3	1	Question
 1518641b-eec2-4879-84cf-7e09ace3adde	Hospital	H3 Informe del Caso	F - Factores de Riesgo	16	Diga al paciente: "Gracias por su información. Ahora quisiera hacerle algunas preguntas sobre varias condiciones en su hogar. Estas son preguntas que hacemos a cada participante. Vamos a empezar con preguntas de su casa."	NULL			NULL	21	39	1	1	Info
 eacd63a4-3f90-47a6-9cba-36ceed1616c8	Hospital	H3 Informe del Caso	F - Factores de Riesgo	17	Pregunte: En su casa, ¿Cuántos cuartos hay para dormir?	NULL			casaCuantosDormitorios	21	40	1	1	Question
 6e48836a-a531-4359-9fd9-18e70bef37f3	Hospital	H3 Informe del Caso	F - Factores de Riesgo	18	Pregunte: ¿Cuántas personas viven en su casa?	NULL			casaCuantasPersonasViven	21	41	1	1	Question
 afb9fdce-7c77-4216-ba75-c91525dd8cff	Hospital	H3 Informe del Caso	F - Factores de Riesgo	19	Pregunte: ¿En su casa, de dónde sacan el agua para beber? No lea las opciones; marque todas las que apliquen.	NULL				21	42	1	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	20	Pregunte: ¿Usa esta fuente de agua todo el año o solo por parte del año?		modification	Opciones: Todo El Año , Parte Del Año, No Sabe 	UsoFuenteAgua	21	43	1	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	21	Pregunte: ¿Usted trata el agua de alguna manera para hacerla  más segura para beber?			Opciones: Si , No , No sabe	Tx Agua	21	44	1	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	22	Pregunte: ¿Generalmente qué le hace al agua para hacerla más segura para beber?			Opciones: Hierven, Cloran, Filtro De Tela,Usa Filtro (Cerámica / Arena / Otros Filtros),Purifican ConLuz Solar,La Dejan Reposar 	ComoTrataAgua	21	45	1	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	23	¿Qué tipo de facilidad de inodoro o letrina tienen en su casa, si hay, que usan más frecuentemente los miembros de su familia?		modification/addition	Opciones: Inodoro con jalador de agua/donde se hecha el agua o letrina, letrina de hoyo mejorada con ventilación, hoyo de letrina con losa, pozo ciego/hoyo de letrina sin losa/abierto, compostaje/inodoro seco o letrina seca, inodoro o letrina colgante, servicio o letrina de cubeta (donde las heces son removidas manualmente), no hay facilidades/arbustos/bolsa plástica, otro, no sabe, se negó a responder	TipoSanitario	21	46	1	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	24	Si el tipo de facilidad es OTRO, especificar:		addition			21	47	1	1	Checkpoint
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	20	Pregunte: ¿Usa esta fuente de agua todo el año o solo por parte del año?	NULL	modification	Opciones: Todo El Año , Parte Del Año, No Sabe 	UsoFuenteAgua	21	43	1	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	21	Pregunte: ¿Usted trata el agua de alguna manera para hacerla  más segura para beber?	NULL		Opciones: Si , No , No sabe	Tx Agua	21	44	1	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	22	Pregunte: ¿Generalmente qué le hace al agua para hacerla más segura para beber?	NULL		Opciones: Hierven, Cloran, Filtro De Tela,Usa Filtro (Cerámica / Arena / Otros Filtros),Purifican ConLuz Solar,La Dejan Reposar 	ComoTrataAgua	21	45	1	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	23	¿Qué tipo de facilidad de inodoro o letrina tienen en su casa, si hay, que usan más frecuentemente los miembros de su familia?	NULL	modification/addition	Opciones: Inodoro con jalador de agua/donde se hecha el agua o letrina, letrina de hoyo mejorada con ventilación, hoyo de letrina con losa, pozo ciego/hoyo de letrina sin losa/abierto, compostaje/inodoro seco o letrina seca, inodoro o letrina colgante, servicio o letrina de cubeta (donde las heces son removidas manualmente), no hay facilidades/arbustos/bolsa plástica, otro, no sabe, se negó a responder	TipoSanitario	21	46	1	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	24	Si el tipo de facilidad es OTRO, especificar:	NULL	addition			21	47	1	1	Checkpoint
 	Hospital	H3 Informe del Caso	F - Factores de Riesgo	24.1	Especifique el tipo de facilidad de inodoro o letrina que tienen en su casa	El que usan más frecuentemente	addition	Texto abierto		21	48	2	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	25	Si usan “inodoro con jalador de agua/o donde se hecha el agua/letrina”		addition			21	49	1	1	Checkpoint
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	25.1	Cuando se hecha agua en el inodoro o letrina, ¿a dónde va a parar el agua?		addition	Opciones: A un sistema de desagüe con tubería, a un tanque/fosa séptica, a un hoyo de letrina, a cualquier otro lugar, no sabe		21	50	2	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	26	Si usan “servicio o letrina de cubeta” o “no hay facilidades/arbusto/bolsa”		addition			21	51	1	1	Checkpoint
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	26.1	¿A dónde se van las heces cuando son desechadas? (marque todos los que apliquen)		addition	Opciones: En el drenaje o una zanja, se tiran a la basura, se entierran, se dejan al descubierto en el patio, se dejan al descubierto lejos de la casa, otro, no sabe, se negó a responder		21	52	2	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	26.2	Si heces van a “otro”, especificar a dónde van las heces cuando son desechadas.		addition			21	53	2	1	Checkpoint
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	26.2.1	Especifique a dónde van las heces cuando son desechadas.		addition	Texto abierto		21	54	3	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27	Si contestó algo aparte de “no sabe” o “se negó a responder” a la pregunta “¿Qué tipo de facilidad de inodoro o letrina tienen en su casa, si hay, que usen más frecuentemente los miembros de su familia?”:		addition			21	55	1	1	Checkpoint
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.1	Pregunte: ¿En dónde está localizado el inodoro/letrina/baño o el sitio donde se va para defecar (hacer popó)?		addition	Opciones: adentro o junto a la vivienda, en cualquier lugar del lote, afuera del lote, no sabe, se negó a responder		21	56	2	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.2	Pregunte: ¿Comparte usted el inodoro/letrina o sitio para defecar con otras viviendas?		addition	Opciones: si, no, no sabe, se negó a responder		21	57	2	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.3	Si comparte el inodoro/letrina con otras viviendas		addition			21	58	2	1	Checkpoint
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.3.1	Pregunte: ¿Con cuántas otras viviendas comparten el inodoro/letrina/sitio para defecar?		addition	campo abierto para número (valor entre 1-999) (999 puede ser no sabe)		21	59	3	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.3.2	Pregunte: ¿Puede cualquier miembro del público usar este inodoro/letrina/sitio de defecación?		addition	Opciones: si, no, no sabe, se negó a responder		21	60	3	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.4	Pregunte: ¿Alguna vez se limpia el inodoro/letrina?		addition	Opciones: si, no, no aplica (campo abierto para defecación), no sabe, se negó a responder		21	61	2	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.5	Si alguna vez se limpia el inodoro/letrina:		addition			21	62	2	1	Checkpoint
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.5.1	Pregunte: ¿Cuándo fue la última vez que se limpió el inodoro/letrina?		addition	Opciones: hoy, ayer, hace más de un día y menos de una semana, hace 1-4 semanas, hace más de un mes, no sabe/no recuerda, se negó a responder		21	63	3	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.6	Pregunte: La última vez que el miembro más pequeño de su familia defecó, ¿qué se hizo para desechar las heces?		addition	Opciones: El niño usó el inodoro/letrina, se pusieron/enjuagaron en el inodoro o letrina, se pusieron adentro/enjuagaron en drenaje o zanja, no sabe, uso pañal desechable, se tiraron a la basura, se enterraron, se dejaron al descubierto en el patio, se dejaron al descubierto fuera de la propiedad, otro, se negó a responder		21	64	2	1	Question
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.7	Si respondió “otro”, especificar		addition			21	65	2	1	Checkpoint
-	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.7.1	Pregunte: ¿Qué se hizo para desechar las heces del miembro más pequeño de la familia la última vez que defecó?		addition	texto abierto		21	66	3	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	25	Si usan “inodoro con jalador de agua/o donde se hecha el agua/letrina”	NULL	addition			21	49	1	1	Checkpoint
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	25.1	Cuando se hecha agua en el inodoro o letrina, ¿a dónde va a parar el agua?	NULL	addition	Opciones: A un sistema de desagüe con tubería, a un tanque/fosa séptica, a un hoyo de letrina, a cualquier otro lugar, no sabe		21	50	2	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	26	Si usan “servicio o letrina de cubeta” o “no hay facilidades/arbusto/bolsa”	NULL	addition			21	51	1	1	Checkpoint
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	26.1	¿A dónde se van las heces cuando son desechadas? (marque todos los que apliquen)	NULL	addition	Opciones: En el drenaje o una zanja, se tiran a la basura, se entierran, se dejan al descubierto en el patio, se dejan al descubierto lejos de la casa, otro, no sabe, se negó a responder		21	52	2	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	26.2	Si heces van a “otro”, especificar a dónde van las heces cuando son desechadas.	NULL	addition			21	53	2	1	Checkpoint
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	26.2.1	Especifique a dónde van las heces cuando son desechadas.	NULL	addition	Texto abierto		21	54	3	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27	Si contestó algo aparte de “no sabe” o “se negó a responder” a la pregunta “¿Qué tipo de facilidad de inodoro o letrina tienen en su casa, si hay, que usen más frecuentemente los miembros de su familia?”:	NULL	addition			21	55	1	1	Checkpoint
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.1	Pregunte: ¿En dónde está localizado el inodoro/letrina/baño o el sitio donde se va para defecar (hacer popó)?	NULL	addition	Opciones: adentro o junto a la vivienda, en cualquier lugar del lote, afuera del lote, no sabe, se negó a responder		21	56	2	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.2	Pregunte: ¿Comparte usted el inodoro/letrina o sitio para defecar con otras viviendas?	NULL	addition	Opciones: si, no, no sabe, se negó a responder		21	57	2	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.3	Si comparte el inodoro/letrina con otras viviendas	NULL	addition			21	58	2	1	Checkpoint
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.3.1	Pregunte: ¿Con cuántas otras viviendas comparten el inodoro/letrina/sitio para defecar?	NULL	addition	campo abierto para número (valor entre 1-999) (999 puede ser no sabe)		21	59	3	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.3.2	Pregunte: ¿Puede cualquier miembro del público usar este inodoro/letrina/sitio de defecación?	NULL	addition	Opciones: si, no, no sabe, se negó a responder		21	60	3	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.4	Pregunte: ¿Alguna vez se limpia el inodoro/letrina?	NULL	addition	Opciones: si, no, no aplica (campo abierto para defecación), no sabe, se negó a responder		21	61	2	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.5	Si alguna vez se limpia el inodoro/letrina:	NULL	addition			21	62	2	1	Checkpoint
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.5.1	Pregunte: ¿Cuándo fue la última vez que se limpió el inodoro/letrina?	NULL	addition	Opciones: hoy, ayer, hace más de un día y menos de una semana, hace 1-4 semanas, hace más de un mes, no sabe/no recuerda, se negó a responder		21	63	3	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.6	Pregunte: La última vez que el miembro más pequeño de su familia defecó, ¿qué se hizo para desechar las heces?	NULL	addition	Opciones: El niño usó el inodoro/letrina, se pusieron/enjuagaron en el inodoro o letrina, se pusieron adentro/enjuagaron en drenaje o zanja, no sabe, uso pañal desechable, se tiraron a la basura, se enterraron, se dejaron al descubierto en el patio, se dejaron al descubierto fuera de la propiedad, otro, se negó a responder		21	64	2	1	Question
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.7	Si respondió “otro”, especificar	NULL	addition			21	65	2	1	Checkpoint
+	Hospital	H3 Informe del Caso	F - Factores de Riesgo	27.7.1	Pregunte: ¿Qué se hizo para desechar las heces del miembro más pequeño de la familia la última vez que defecó?	NULL	addition	texto abierto		21	66	3	1	Question
 b2db5d57-eb53-4607-b34d-56d9fbb0bbad	Hospital	H3 Informe del Caso	F - Factores de Riesgo	28	Pregunte: ¿De qué material está hecho el techo (la parte de arriba) de su casa?	NULL			casaMaterialTecho	21	67	1	1	Question
 2814abb0-6bf4-4883-909f-1458fa5ef0f7	Hospital	H3 Informe del Caso	F - Factores de Riesgo	29	Pregunte: ¿Qué tipo de piso tienen en su casa?	NULL			casaMaterialPiso	21	68	1	1	Question
 a1bda73d-7007-4192-96f2-8617f506f3a6	Hospital	H3 Informe del Caso	F - Factores de Riesgo	30	Pregunte: ¿Qué tipo de combustibles usa para cocinar (marque todo lo que aplica)?	NULL				21	69	1	1	Question
@@ -623,7 +623,7 @@ efda3dc8-9caa-42ee-85a8-3e95ca54003c	Hospital	H3 Informe del Caso	H - Examen Res
 6e2f36ef-3290-4e39-b783-a17758807452	Hospital	H3 Informe del Caso	H - Examen Respiratoria por Dr	3.9	Si el niño es menor de 5 años	NULL			NULL	22	12	2	1	Checkpoint
 e229f7db-af3c-451d-bcea-64b2456be086	Hospital	H3 Informe del Caso	H - Examen Respiratoria por Dr	3.9.1	Enfermera: Anote si el niño tiene tiraje costal	NULL			respiraExamenFisicoMedicoTirajePecho	22	13	3	1	Question
 d680e30e-a897-439d-8d1b-d7e5fa06a4b7	Hospital	H3 Informe del Caso	H - Examen Respiratoria por Dr	3.9.2	Enfermera: Anote si el niño tiene estridor	NULL			respiraExamenFisicoMedicoEstridor	22	14	3	1	Question
-c8401940-466f-407e-9924-e48d612dd5f3	Hospital	H3 Informe del Caso	H - Examen Respiratoria por Dr	3.1	Si el niño es menor de 2 meses	NULL			NULL	22	15	2	1	Checkpoint
+c8401940-466f-407e-9924-e48d612dd5f3	Hospital	H3 Informe del Caso	H - Examen Respiratoria por Dr	3.10	Si el niño es menor de 2 meses	NULL			NULL	22	15	2	1	Checkpoint
 89b6b6b7-31f4-4c12-831f-279bd3af6c1d	Hospital	H3 Informe del Caso	H - Examen Respiratoria por Dr	3.10.1	Enfermera: Anote si el niño tiene respiración ruidoso	NULL			respiraExamenFisicoMedicoRespiraRuidoso	22	16	3	1	Question
 3f1f64ed-d34a-4b08-afcb-e3f9709a3468	Hospital	H3 Informe del Caso	H - Examen Respiratoria por Dr	3.10.2	Enfermera: Anote si el niño tiene la fontanela abombada	NULL			respiraExamenFisicoMedicoMolleraHinchada	22	17	3	1	Question
 cab98c80-1ea1-4ada-92e7-849177c50eeb	Hospital	H3 Informe del Caso	H - Examen Respiratoria por Dr	3.11	Si el paciente tiene 12 años o menos	NULL			NULL	22	18	2	1	Checkpoint
@@ -711,9 +711,9 @@ dd25382f-2957-427b-8be4-420eaf451bd0	Hospital	H7 Egreso	H7 Egreso	23.6	Enfermera
 4f7930b9-9e46-4130-bfe1-f8af26d25e20	Hospital	H7 Egreso	H7 Egreso	23.7.2	Si hubo crecimiento identificado	NULL			NULL	31	40	3	1	Checkpoint
 5bc5ca7b-c94d-44fb-aa2f-d41e5ccf6f29	Hospital	H7 Egreso	H7 Egreso	23.7.2.1	Enfermera: Kit #1 Aerobica o pediatria	NULL			Aero1	31	41	4	1	Question
 0ef2954a-8265-4a9b-b232-b0f5411e8be3	Hospital	H7 Egreso	H7 Egreso	23.7.3	Si hay kit de hemocultivo #2	NULL			NULL	31	42	3	1	Checkpoint
-74e57252-fdbe-4c23-ae96-d96c14caf807	Hospital	H7 Egreso	H7 Egreso	23.7.24.1	Enfermera: Resultado de Kit #2 Aerobica o pediatrica	NULL			Aero2Resultado	31	43	4	1	Question
-39be8e2b-b275-4eff-819f-a1ea6610d913	Hospital	H7 Egreso	H7 Egreso	23.7.24.2	Si hubo crecimiento identificado	NULL			NULL	31	44	4	1	Checkpoint
-ce23f3b9-2f7f-4d37-91db-da195ff6cf0d	Hospital	H7 Egreso	H7 Egreso	23.7.24.2.1	Enfermera: Kit #2 Aerobica	NULL			Aero2	31	45	5	1	Question
+74e57252-fdbe-4c23-ae96-d96c14caf807	Hospital	H7 Egreso	H7 Egreso	23.7.3.1	Enfermera: Resultado de Kit #2 Aerobica o pediatrica	NULL			Aero2Resultado	31	43	4	1	Question
+39be8e2b-b275-4eff-819f-a1ea6610d913	Hospital	H7 Egreso	H7 Egreso	23.7.3.2	Si hubo crecimiento identificado	NULL			NULL	31	44	4	1	Checkpoint
+ce23f3b9-2f7f-4d37-91db-da195ff6cf0d	Hospital	H7 Egreso	H7 Egreso	23.7.3.2.1	Enfermera: Kit #2 Aerobica	NULL			Aero2	31	45	5	1	Question
 abfc073e-b1ce-495b-9403-398f28642edf	Hospital	HCP11 Terminacion	HCP11 Terminacion	1	Enfermera: Fecha de terminación del proyecto (fecha de defunción, si es aplicable)	NULL			fechaTerminacionProyecto	30	1	1	1	Question
 739d59e2-1270-4f93-9af1-7bd0625b4da7	Hospital	HCP11 Terminacion	HCP11 Terminacion	2	Enfermera: ¿Cómo terminó? (Marque solamente una opción)	NULL			terminoManeraCorrectaNoRazon	30	2	1	1	Question
 8390f40e-8ec1-4df3-83c6-216a0409f36e	Hospital	HCP11 Terminacion	HCP11 Terminacion	3	Si Otro evento	NULL			NULL	30	3	1	1	Checkpoint
