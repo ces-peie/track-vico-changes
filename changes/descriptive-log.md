@@ -1,4 +1,4 @@
-ï»¿> # Descriptive log of changes to the qm ViCo questionnaire
+# Descriptive log of changes to the qm ViCo questionnaire
 
 # Questions added for TAC adult pneumonia etiology study
 ## `272770f818311c3a523eaae62b70ab97acda61d4`
@@ -33,14 +33,14 @@ Improve log management
 #### 2015-06-16 09:21:17 -0600
 
 
-Changes to questionarie Beatriz L?pez  Date June 16 2015
+Changes to questionarie Beatriz López  Date June 16 2015
 
 The following question were deleted because we had never found any insects in patients during the 8 years of the study
 
-3.4 Â¿ConsiguiÃ³ garrapatas, piojos o pulgas del paciente?
-3.5 Si colectÃ³ muestra de insectos
-3.5.1 Â¿QuÃ© tipo de insectos colectÃ³?
-3.5.2 Â¿CuÃ¡ntos insectos colectÃ³?
+3.4 ¿Consiguió garrapatas, piojos o pulgas del paciente?
+3.5 Si colectó muestra de insectos
+3.5.1 ¿Qué tipo de insectos colectó?
+3.5.2 ¿Cuántos insectos colectó?
 
 
 
@@ -93,7 +93,7 @@ QUESTIONS FOR PERTUSSIS SURVEILLANCE
 
 4 questions were added to record H2 revisi?n de expediente clinico
 The drafting of 3 questions related to whooping cough was modified
-H2 inscripciÃ³n de diarrea y respiratoria
+H2 inscripción de diarrea y respiratoria
 
 Elegibility Methods are pending
 
@@ -179,8 +179,8 @@ Remove questions for neurological syndromes
 Questions removed from the sections:
 
 - H1 Sospechosos
-- RevisiÃ³n del expediente mÃ©dico
-- H2 InscripciÃ³n
+- Revisión del expediente mÃ©dico
+- H2 Inscripción
 - H7 Egreso
 
 and related variables
@@ -245,7 +245,7 @@ Update messages.
 #### 2015-10-27 16:37:26 -0600
 First spelling revision
 
-Riview and fix misspellings
+Review and fix misspellings
 
 
 ---
@@ -256,7 +256,29 @@ Riview and fix misspellings
 #### 2015-10-28 09:42:52 -0600
 Second spelling revision
 
-Riview and fix misspellings (second pass)
+Review and fix misspellings (second pass)
 
+
+
+---
+
+# Fix question order, level and number
+## `072bfd567cd4e712a2b55b121816cfb007856146`
+### odeleongt
+#### 2015-10-28 11:43:50 -0600
+Fix question order, level and number
+
+Specifications for order and level of questions was fixed (fbdc165b3d8e78850e75611a2dae3fcfd27828cb), and code was added to automatically update question numbers based on this information.
+
+
+---
+
+# Third spelling revision
+## `597684b296f63476b8b51bd4d93a2be8ddd8ef87`
+### blopez
+#### 2015-10-29 07:28:25 -0600
+Third spelling revision
+
+Review and fix misspellings (third pass)
 
 
