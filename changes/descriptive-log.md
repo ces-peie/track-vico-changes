@@ -1,4 +1,4 @@
-?ªø> # Descriptive log of changes to the qm ViCo questionnaire
+> # Descriptive log of changes to the qm ViCo questionnaire
 
 # Questions added for TAC adult pneumonia etiology study
 ## `272770f818311c3a523eaae62b70ab97acda61d4`
@@ -33,7 +33,7 @@ Improve log management
 #### 2015-06-16 09:21:17 -0600
 
 
-Changes to questionarie Beatriz L?pez  Date June 16 2015
+Changes to questionarie Beatriz LÛpez  Date June 16 2015
 
 The following question were deleted because we had never found any insects in patients during the 8 years of the study
 
@@ -179,7 +179,7 @@ Remove questions for neurological syndromes
 Questions removed from the sections:
 
 - H1 Sospechosos
-- Revisi√≥n del expediente m√©dico
+- RevisiÛn del expediente mÈdico
 - H2 Inscripci√≥n
 - H7 Egreso
 
@@ -269,5 +269,16 @@ Review and fix misspellings (second pass)
 Fix question order, level and number
 
 Specifications for order and level of questions was fixed (fbdc165b3d8e78850e75611a2dae3fcfd27828cb), and code was added to automatically update question numbers based on this information.
+
+
+---
+
+# Third spelling revision
+## `597684b296f63476b8b51bd4d93a2be8ddd8ef87`
+### blopez
+#### 2015-10-29 07:28:25 -0600
+Third spelling revision
+
+Review and fix misspellings (third pass)
 
 

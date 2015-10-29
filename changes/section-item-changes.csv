@@ -54,7 +54,7 @@ c26ba102-234a-4ab2-85a5-e3dd148c259e	Hospital	H1 Sospechosos	H1 Sospechosos	16.1
 2fd1c169-0504-4aeb-94bf-1bd9bcf8fb53	Hospital	H2 Inscripción	Consentimiento Verbal	1	Enfermera: ¿Recibió consentimiento verbal del paciente o tutor?	Debe indicar si el paciente o persona responsable de éste dio el CONSENTIMIENTO VERBAL para ser incluido en el estudio.			consentimientoVerbal	4	1	1	1	Question
 57a2bced-efc2-47ad-8777-df31ce18f491	Hospital	H2 Inscripción	Consentimiento Verbal	2	Si no recibió consentimiento verbal	NULL			NULL	4	2	1	1	Checkpoint
 85b0c76d-cb83-4346-9028-9813e20c9920	Hospital	H2 Inscripción	Consentimiento Verbal	2.1	Enfermera: Especifique razón(es) por la que NO se dio consentimiento	Especifique la razón por la que NO se  dio consentimiento.				4	3	2	1	Question
-fb14a645-9983-4349-84ab-21d64c22c67a	Hospital	H2 Inscripción	Consentimiento Verbal	2.2	Si una razón por la que no no se dio consentimiento es 'Otra'	NULL			NULL	4	4	2	1	Checkpoint
+fb14a645-9983-4349-84ab-21d64c22c67a	Hospital	H2 Inscripción	Consentimiento Verbal	2.2	Si una razón por la que  no se dio consentimiento es 'Otra'	NULL			NULL	4	4	2	1	Checkpoint
 2180f77e-5569-4292-a152-b91bfb5438a3	Hospital	H2 Inscripción	Consentimiento Verbal	2.2.1	Enfermera: Especifique la otra razón	NULL			consentimientoVerbalNoRazon_esp	4	5	3	1	Question
 93aad632-4336-4a67-827f-3562816be7d1	Hospital	H2 Inscripción	Consentimiento Verbal	2.3	El paciente no va a participar en el estudio de ViCo.   Agradezca a la persona por el tiempo y la información que compartió con nosotros.	NULL			NULL	4	6	2	1	Info
 	Hospital	H2 Inscripción	Revisión del Expediente Médico	1	Enfermera: Anote si una temperatura fue registrada al ingreso al hospital	NULL	addition		tempmax_ingr_reg	5	1	1	1	Question
@@ -364,7 +364,7 @@ add48411-744d-4fa1-848f-9075166965f4	Hospital	H3 Informe del Caso	K - Hx Febril	
 81c30168-d5dd-40dc-9859-cc3b0c587ec1	Hospital	H3 Informe del Caso	K - Hx Febril	3.2	Si tiene dolor detrás de los ojos	NULL			NULL	18	6	2	1	Checkpoint
 5fe05ac9-eea1-4d8b-a05d-246d2024d063	Hospital	H3 Informe del Caso	K - Hx Febril	3.2.1	Pregunte: ¿Actualmente tiene dolor detrás de los ojos?	NULL			hxF_DolorDetrasOjosActual	18	7	3	1	Question
 f9a7326d-e78b-41e9-96d4-c713c2a4a262	Hospital	H3 Informe del Caso	K - Hx Febril	3.2.2	Pregunte: ¿Desde hace cuántos días empezó con dolor detrás de los ojos?	NULL			hxF_DolorDetrasOjosHaceDias	18	8	3	1	Question
-d5eb721f-f3a6-4db5-a025-59d9e64b69b7	Hospital	H3 Informe del Caso	K - Hx Febril	3.3	Dolor en los camotes	NULL			hxF_DolorCamotes	18	9	2	1	Question
+d5eb721f-f3a6-4db5-a025-59d9e64b69b7	Hospital	H3 Informe del Caso	K - Hx Febril	3.3	Dolor en los camotes (pantorilla) 	NULL			hxF_DolorCamotes	18	9	2	1	Question
 0fb868f8-c9e9-4091-8224-c85be9f24bc8	Hospital	H3 Informe del Caso	K - Hx Febril	3.4	Si tiene dolor en los camotes	NULL			NULL	18	10	2	1	Checkpoint
 24483dfc-d651-4d9d-8936-38d005c34676	Hospital	H3 Informe del Caso	K - Hx Febril	3.4.1	¿Actualmente tiene dolor en los camotes?	NULL			hxF_DolorCamotesActual	18	11	3	1	Question
 8a98bee3-5b0e-44ea-8496-07e9e322d8d7	Hospital	H3 Informe del Caso	K - Hx Febril	3.4.2	Pregunte: ¿Desde hace cuántos días empezó con dolor en los camotes?	NULL			hxF_DolorCamotesHaceDias	18	12	3	1	Question
@@ -469,15 +469,15 @@ f03e2b7b-1aba-40f0-bc91-50c2436f1ef7	Hospital	H3 Informe del Caso	A - Enfermedad
 a53aed21-0d1a-4231-bc61-3cae08b64f48	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.10	Pregunte al padre/tutor: ¿Ha recibido su hijo/hija la vacuna contra neumococo (Prevenar)?	NULL			vacunaNeumococoPrevenar	20	16	3	1	Question
 ba162f10-e0e2-4b9b-8ffd-423529a39a8c	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.11	Pregunte al padre/tutor: ¿Ha recibido su hijo/hija la vacuna contra neumococo (Synflorix)?	NULL			vacunaNeumococoSynflorix	20	17	3	1	Question
 961494a7-6240-4c4f-b287-4328ddfb91e6	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.12	Si recibió la vacuna contra neumococo	NULL			NULL	20	18	3	1	Checkpoint
-492eab65-7e02-4e7c-a9be-acf7008090bc	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.12.1	Pregunte: ¿Cuantas dosis de la vacuna para neumococo recibió?	NULL			vacunaNeumococoDosis	20	19	4	1	Question
-7e2b30f7-f686-41a1-afad-33a478f2c9eb	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.12.2	Pregunte: ¿Cuando recibió la primera dosis?	NULL			vacunaNeumococoPrimeraDosis	20	20	4	1	Question
-cdb6d8c4-c4f5-4283-b572-272511b2cba4	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.12.3	Pregunte: ¿Cuando recibió la última dosis?	NULL			vacunaNeumococoUltimaDosis	20	21	4	1	Question
+492eab65-7e02-4e7c-a9be-acf7008090bc	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.12.1	Pregunte: ¿Cuántas dosis de la vacuna para neumococo recibió?	NULL			vacunaNeumococoDosis	20	19	4	1	Question
+7e2b30f7-f686-41a1-afad-33a478f2c9eb	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.12.2	Pregunte: ¿Cuándo recibió la primera dosis?	NULL			vacunaNeumococoPrimeraDosis	20	20	4	1	Question
+cdb6d8c4-c4f5-4283-b572-272511b2cba4	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.12.3	Pregunte: ¿Cuándo recibió la última dosis?	NULL			vacunaNeumococoUltimaDosis	20	21	4	1	Question
 27d78635-28de-486c-978e-d79ea8abb81b	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3	Si tiene la ficha o carnet de vacunación	NULL			NULL	20	22	2	1	Checkpoint
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.1	Anote de la ficha o carnet si el paciente ha recibido la vacuna BCG	NULL	addition		vacunaBcgRecibido	20	23	3	1	Question
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.2	Anote de la ficha o carnet si el paciente ha recibido la vacuna Polio Oral (OPV)	NULL	addition		vacunaPolioRecibido	20	24	3	1	Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.1	Anote de la ficha o carné si el paciente ha recibido la vacuna BCG	NULL	addition		vacunaBcgRecibido	20	23	3	1	Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.2	Anote de la ficha o carné si el paciente ha recibido la vacuna Polio Oral (OPV)	NULL	addition		vacunaPolioRecibido	20	24	3	1	Question
 	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.3	Si ha recibido Polio Oral	NULL	addition		NULL	20	25	3	1	Checkpoint
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.3.1	Anote de la ficha o carnet cuantas dosis de Polio Oral (OPV) ha recibido	NULL	addition		vacunaPolioDosis	20	26	4	1	Question
-e339ce0b-0183-4f1d-99dd-3acf3ded852a	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.4	Enfermera: Anote de la ficha o carnet si el paciente ha recibido la vacuna Pentavalente (DPT/Hib, Hepatitis B).	NULL			vacunaPentavalenteRecibido	20	27	3	1	Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.3.1	Anote de la ficha o carné cuantas dosis de Polio Oral (OPV) ha recibido	NULL	addition		vacunaPolioDosis	20	26	4	1	Question
+e339ce0b-0183-4f1d-99dd-3acf3ded852a	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.4	Enfermera: Anote de la ficha o carne si el paciente ha recibido la vacuna Pentavalente (DPT/Hib, Hepatitis B).	NULL			vacunaPentavalenteRecibido	20	27	3	1	Question
 f2a5cc19-5bd7-40f4-8076-99250fab10f0	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.5	Si ha recibido Pentavalente (DPT/Hib, Hepatitis B)	NULL			NULL	20	28	3	1	Checkpoint
 e547d43d-a66c-4399-82d9-5d297f5a4c1c	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.5.1	Enfermera: ¿Cuántas dosis de la vacuna  de la Pentavalente (DPT/Hib, Hepatitis B) ha recibido?	NULL			vacunaPentavalenteDosis	20	29	4	1	Question
 9f6d1954-6002-4a14-99b2-cde8d405fb9d	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.6	Si no ha recibido Pentavalente	NULL			NULL	20	30	3	1	Checkpoint
@@ -485,10 +485,10 @@ b7e98ea4-079f-4a26-b809-30ad1bbe11f9	Hospital	H3 Informe del Caso	A - Enfermedad
 bc1478b2-7bd2-4688-b33b-35ad89c8da05	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.8	Enfermera: Anote de la ficha o carnet si el paciente ha recibido la vacuna contra rotavirus.	NULL			vacunaRotavirusRecibido	20	32	3	1	Question
 99a4b978-40a7-486a-9aac-898824009e5e	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.9	Si ha recibido vacuna contra rotavirus:	NULL			NULL	20	33	3	1	Checkpoint
 2c01b056-b02c-4a7a-89e1-2b035fb4cfe9	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.9.1	Enfermera: ¿Cuántas dosis de la vacuna contra rotavirus ha recibido?	NULL			vacunaRotavirusDosis	20	34	4	1	Question
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.9.2	Anote de la ficha o carnet si la vacuna contra Rotavirus que recibio fue Rotarix	NULL	ADDITION		vacunaRotavirusRotarix	20	35	4	1	Question
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.9.3	Anote de la ficha o carnet si la vacuna contra Rotavirus que recibio fue Rotateq	NULL	ADDITION		vacunaRotavirusRotateq	20	36	4	1	Question
-fa14c54c-fc6c-480d-9e55-50db6d318176	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.10	Enfermera: Anote de la ficha o carnet si el paciente ha recibido la vacuna contra neumococo (Prevenar)	NULL			vacunaNeumococoPrevenar	20	37	3	1	Question
-da840411-0ec4-481a-ab89-ea0db08f6f6f	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.11	Enfermera: Anote de la ficha o carnet si el paciente ha recibido la vacuna contra neumococo (Synflorix)	NULL			vacunaNeumococoSynflorix	20	38	3	1	Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.9.2	Anote de la ficha o carné si la vacuna contra Rotavirus que recibio fue Rotarix	NULL	ADDITION		vacunaRotavirusRotarix	20	35	4	1	Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.9.3	Anote de la ficha o carneé si la vacuna contra Rotavirus que recibio fue Rotateq	NULL	ADDITION		vacunaRotavirusRotateq	20	36	4	1	Question
+fa14c54c-fc6c-480d-9e55-50db6d318176	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.10	Enfermera: Anote de la ficha o carneé si el paciente ha recibido la vacuna contra neumococo (Prevenar)	NULL			vacunaNeumococoPrevenar	20	37	3	1	Question
+da840411-0ec4-481a-ab89-ea0db08f6f6f	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.11	Enfermera: Anote de la ficha o carneé si el paciente ha recibido la vacuna contra neumococo (Synflorix)	NULL			vacunaNeumococoSynflorix	20	38	3	1	Question
 14bf8607-b6d5-4054-b055-49970fb5bb87	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.12	Si recibió la vacuna contra neumococo	NULL			NULL	20	39	3	1	Checkpoint
 444050d7-c238-4730-b10f-9cb5bea0c701	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.12.1	Enfermera: ¿Cuantas dosis de la vacuna para neumococo recibió?	NULL			vacunaNeumococoDosis	20	40	4	1	Question
 84d82f15-8b80-4fce-beaf-9defdbc141a0	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.12.2	Enfermera: ¿Cuando recibió la primera dosis?	NULL			vacunaNeumococoPrimeraDosis	20	41	4	1	Question
@@ -707,13 +707,13 @@ c89c8586-2948-42cd-ad64-a07d67d079fd	Hospital	H7 Egreso	H7 Egreso	23.4	Enfermera
 980bd482-4e99-4055-b731-18be56b1d69b	Hospital	H7 Egreso	H7 Egreso	23.5	Enfermera: Número de Registro de Laboratorio (2)	NULL			muestraSangreCultivoRegistro2	31	36	2	1	Question
 dd25382f-2957-427b-8be4-420eaf451bd0	Hospital	H7 Egreso	H7 Egreso	23.6	Enfermera: Resultado de hemocultivo	NULL			HemoHemoCrecimiento	31	37	2	1	Question
 7309c593-49c8-434e-9bea-debd33148b94	Hospital	H7 Egreso	H7 Egreso	23.7	Si hay crecimiento	NULL			NULL	31	38	2	1	Checkpoint
-88f92fb4-60cb-415a-a8e5-c05a567a55c6	Hospital	H7 Egreso	H7 Egreso	23.7.1	Enfermera: Resultado de Kit #1 Aerobica o pediatria	NULL			Aero1Resultado	31	39	3	1	Question
+88f92fb4-60cb-415a-a8e5-c05a567a55c6	Hospital	H7 Egreso	H7 Egreso	23.7.1	Enfermera: Resultado de Kit #1 Aeróbica o pediatría	NULL			Aero1Resultado	31	39	3	1	Question
 4f7930b9-9e46-4130-bfe1-f8af26d25e20	Hospital	H7 Egreso	H7 Egreso	23.7.2	Si hubo crecimiento identificado	NULL			NULL	31	40	3	1	Checkpoint
-5bc5ca7b-c94d-44fb-aa2f-d41e5ccf6f29	Hospital	H7 Egreso	H7 Egreso	23.7.2.1	Enfermera: Kit #1 Aerobica o pediatria	NULL			Aero1	31	41	4	1	Question
+5bc5ca7b-c94d-44fb-aa2f-d41e5ccf6f29	Hospital	H7 Egreso	H7 Egreso	23.7.2.1	Enfermera: Kit #1 Aerobica o pediatría	NULL			Aero1	31	41	4	1	Question
 0ef2954a-8265-4a9b-b232-b0f5411e8be3	Hospital	H7 Egreso	H7 Egreso	23.7.3	Si hay kit de hemocultivo #2	NULL			NULL	31	42	3	1	Checkpoint
-74e57252-fdbe-4c23-ae96-d96c14caf807	Hospital	H7 Egreso	H7 Egreso	23.7.3.1	Enfermera: Resultado de Kit #2 Aerobica o pediatrica	NULL			Aero2Resultado	31	43	4	1	Question
+74e57252-fdbe-4c23-ae96-d96c14caf807	Hospital	H7 Egreso	H7 Egreso	23.7.3.1	Enfermera: Resultado de Kit #2 Aeróbica o pediátrica	NULL			Aero2Resultado	31	43	4	1	Question
 39be8e2b-b275-4eff-819f-a1ea6610d913	Hospital	H7 Egreso	H7 Egreso	23.7.3.2	Si hubo crecimiento identificado	NULL			NULL	31	44	4	1	Checkpoint
-ce23f3b9-2f7f-4d37-91db-da195ff6cf0d	Hospital	H7 Egreso	H7 Egreso	23.7.3.2.1	Enfermera: Kit #2 Aerobica	NULL			Aero2	31	45	5	1	Question
+ce23f3b9-2f7f-4d37-91db-da195ff6cf0d	Hospital	H7 Egreso	H7 Egreso	23.7.3.2.1	Enfermera: Kit #2 Aeróbica	NULL			Aero2	31	45	5	1	Question
 abfc073e-b1ce-495b-9403-398f28642edf	Hospital	HCP11 Terminacion	HCP11 Terminacion	1	Enfermera: Fecha de terminación del proyecto (fecha de defunción, si es aplicable)	NULL			fechaTerminacionProyecto	30	1	1	1	Question
 739d59e2-1270-4f93-9af1-7bd0625b4da7	Hospital	HCP11 Terminacion	HCP11 Terminacion	2	Enfermera: ¿Cómo terminó? (Marque solamente una opción)	NULL			terminoManeraCorrectaNoRazon	30	2	1	1	Question
 8390f40e-8ec1-4df3-83c6-216a0409f36e	Hospital	HCP11 Terminacion	HCP11 Terminacion	3	Si Otro evento	NULL			NULL	30	3	1	1	Checkpoint
@@ -948,7 +948,7 @@ eea51ce9-60b8-48ba-8ab5-1a131a1c9075	Centro de Salud	C5 Muestras	Muestras de ViC
 540f7f03-c05e-475a-af42-080f8534c9b7	Centro de Salud	C2 Informe del Caso	L - Hx Común	1	Vómitos	NULL			hxC_Vomitos	317	1	1	1	Question
 5433c899-50da-448a-ad1c-a71961d76377	Centro de Salud	C2 Informe del Caso	L - Hx Común	2	Si tiene vómitos	NULL			NULL	317	2	1	1	Checkpoint
 b65db8a0-db7c-4592-84b0-8de7533a6aee	Centro de Salud	C2 Informe del Caso	L - Hx Común	2.1	Pregunte al paciente: "¿En su peor día, cuántas veces vomitó?"	NULL			hxC_VomitosVeces	317	3	2	1	Question
-379f7b2b-e9fc-42d2-a2b8-3ba6f817cc25	Centro de Salud	C2 Informe del Caso	L - Hx Común	2.2	Pregunte al paciente: "¿De los últimos ocho dias cuántos dias tuvo vómitos?"	NULL			hxC_Vomitos8Dias	317	4	2	1	Question
+379f7b2b-e9fc-42d2-a2b8-3ba6f817cc25	Centro de Salud	C2 Informe del Caso	L - Hx Común	2.2	Pregunte al paciente: "¿De los últimos ocho días cuántos días tuvo vómitos?"	NULL			hxC_Vomitos8Dias	317	4	2	1	Question
 38cb4607-d04a-400b-85d7-6eb7fa7e01d1	Centro de Salud	C2 Informe del Caso	L - Hx Común	2.3	Pregunte al paciente: "¿Actualmente tiene vómitos?"	NULL			hxC_VomitosActual	317	5	2	1	Question
 bfb2524c-0753-423b-bd0d-a53e969193de	Centro de Salud	C2 Informe del Caso	L - Hx Común	3	Escalofríos	NULL			hxC_Escalofrios	317	6	1	1	Question
 f5639dcd-adda-41fb-bbdc-3e57a960b1d4	Centro de Salud	C2 Informe del Caso	L - Hx Común	4	Si tiene escalofríos	NULL			NULL	317	7	1	1	Checkpoint
@@ -983,7 +983,7 @@ c7b99c63-0fe8-4c5d-b2ae-684ad150dedf	Centro de Salud	C2 Informe del Caso	C - Hx 
 d8ce7c32-2ad6-4e9e-9758-46111b421848	Centro de Salud	C2 Informe del Caso	C - Hx Diarrea	10.1	Pregunte al padre/tutor: "¿Su hijo/a bebe ávidamente con sed mayor de lo usual?"	NULL			hxD_bebeConSed	207	13	2	1	Question
 0b1bfec2-88ee-4956-bc40-6d56479ab936	Centro de Salud	C2 Informe del Caso	C - Hx Diarrea	10.2	Pregunte al padre/tutor: "¿Su hijo/a está más irritable/incómodo/intranquilo de lo normal?"	NULL			hxD_irritableIncomodoIntranquilo	207	14	2	1	Question
 143c2d16-1adc-45bd-be3b-f8233d78a5bd	Centro de Salud	C2 Informe del Caso	D - Hx Respiratoria	1	Diga al paciente: "Gracias por su paciencia. Voy a hacerle algunas preguntas sobre los síntomas de su enfermedad respiratoria actual."	NULL			NULL	208	1	1	1	Info
-88bc6e4e-2041-461d-9562-c93dd89c8362	Centro de Salud	C2 Informe del Caso	D - Hx Respiratoria	2	¿Hace cuántos dias empezó el primer síntoma de su enfermedad respiratoria? (No incluya el día actual en la cuenta.)	NULL			respiraEmpezoHaceDias	208	2	1	1	Question
+88bc6e4e-2041-461d-9562-c93dd89c8362	Centro de Salud	C2 Informe del Caso	D - Hx Respiratoria	2	¿Hace cuántos días empezó el primer síntoma de su enfermedad respiratoria? (No incluya el día actual en la cuenta.)	NULL			respiraEmpezoHaceDias	208	2	1	1	Question
 89874610-f82f-402d-adb1-834c1646ae8c	Centro de Salud	C2 Informe del Caso	D - Hx Respiratoria	3	Esputo o flema	Debe preguntarle al paciente si produce esputo.			sintomasRespiraEsputo	208	3	1	1	Question
 1a0ab60c-f2a3-4508-8794-fe05ba689f16	Centro de Salud	C2 Informe del Caso	D - Hx Respiratoria	4	Esputo con sangre	NULL			sintomasRespiraHemoptisis	208	4	1	1	Question
 0928e47b-f39f-4c5f-9df7-c17334a36aca	Centro de Salud	C2 Informe del Caso	D - Hx Respiratoria	5	Si el paciente es igual o mayor de 2 años	NULL			NULL	208	5	1	1	Checkpoint
@@ -996,7 +996,7 @@ c178c6ca-0bc1-4dcf-b9a5-b8ec32ce954f	Centro de Salud	C2 Informe del Caso	D - Hx 
 bd5c0bb9-df35-4e47-b011-92a4e2f2a7d3	Centro de Salud	C2 Informe del Caso	D - Hx Respiratoria	9.1	¿Pausa repetidamente para respirar cuando esta amamantando o bebiendo?	NULL			sintomasRespiraNinioPausaRepedimente	208	12	2	1	Question
 c6966487-921f-4ce7-95ca-98fe22417a50	Centro de Salud	C2 Informe del Caso	D - Hx Respiratoria	9.2	¿Tiene aleteo nasal?	NULL			sintomasRespiraNinioAleteoNasal	208	13	2	1	Question
 d5113ce0-6cf3-4198-b93e-1c9066332c4a	Centro de Salud	C2 Informe del Caso	K - Hx Febril	1	Diga al paciente: "Gracias por su paciencia. Voy a hacerle algunas preguntas sobre los síntomas de su enfermedad febril actual."	NULL			NULL	209	1	1	1	Info
-694b8211-b24c-4e10-86d8-9a0bce2ec42e	Centro de Salud	C2 Informe del Caso	K - Hx Febril	2	¿Hace cuántos dias empezó el primer síntoma de su enfermedad febril? No incluya el día actual en la cuenta.	NULL			febrilEmpezoHaceDias	209	2	1	1	Question
+694b8211-b24c-4e10-86d8-9a0bce2ec42e	Centro de Salud	C2 Informe del Caso	K - Hx Febril	2	¿Hace cuántos días empezó el primer síntoma de su enfermedad febril? No incluya el día actual en la cuenta.	NULL			febrilEmpezoHaceDias	209	2	1	1	Question
 c015230c-f03a-4025-8bf1-1ce5abbd1f9a	Centro de Salud	C2 Informe del Caso	K - Hx Febril	3	Si el paciente tiene 2 años o más	NULL			NULL	209	3	1	1	Checkpoint
 9e0fb14f-5024-44b5-8749-e153b9abf45d	Centro de Salud	C2 Informe del Caso	K - Hx Febril	3.1	Dolor de cabeza	NULL			hxF_DolorCabeza	209	4	2	1	Question
 855f8f79-aa2b-4c8b-8c75-a95ddbedde88	Centro de Salud	C2 Informe del Caso	K - Hx Febril	3.2	Si tiene dolor de cabeza	NULL			NULL	209	5	2	1	Checkpoint
@@ -1010,7 +1010,7 @@ c015230c-f03a-4025-8bf1-1ce5abbd1f9a	Centro de Salud	C2 Informe del Caso	K - Hx 
 d7701c45-d308-4cf5-9e3f-0ed4dc48d3ff	Centro de Salud	C2 Informe del Caso	K - Hx Febril	3.6	Si tiene Dolor de músculos	NULL			NULL	209	13	2	1	Checkpoint
 a8b4e54f-e48b-48b1-8141-8ccb55f2bd47	Centro de Salud	C2 Informe del Caso	K - Hx Febril	3.6.1	¿Actualmente tiene dolor de músculos?	NULL			hxF_DolorMusculosActual	209	14	3	1	Question
 348db0f3-7205-4939-a7de-a4a2c3d322d7	Centro de Salud	C2 Informe del Caso	K - Hx Febril	3.6.2	¿Desde hace cuántos días empezó con dolor de músculos?	NULL			hxF_DolorMusculosHaceDias	209	15	3	1	Question
-6842f4c4-fc4d-4bb5-b42a-d2520a35c444	Centro de Salud	C2 Informe del Caso	K - Hx Febril	3.7	Dolor en los camotes	NULL			hxF_DolorCamotes	209	16	2	1	Question
+6842f4c4-fc4d-4bb5-b42a-d2520a35c444	Centro de Salud	C2 Informe del Caso	K - Hx Febril	3.7	Dolor en los camotes (pantorilla)	NULL			hxF_DolorCamotes	209	16	2	1	Question
 99653447-b429-4dea-bdb5-19e48d55dc13	Centro de Salud	C2 Informe del Caso	K - Hx Febril	3.8	Si tiene dolor en los camotes	NULL			NULL	209	17	2	1	Checkpoint
 5c74ca4c-0f9b-422d-ae67-6a9e88d5e7f1	Centro de Salud	C2 Informe del Caso	K - Hx Febril	3.8.1	¿Actualmente tiene dolor en los camotes?	NULL			hxF_DolorCamotesActual	209	18	3	1	Question
 02e116c0-6502-4b4b-89b7-4f955af33e85	Centro de Salud	C2 Informe del Caso	K - Hx Febril	3.8.2	¿Desde hace cuántos días empezó con dolor en los camotes?	NULL			hxF_DolorCamotesHaceDias	209	19	3	1	Question
@@ -1029,7 +1029,7 @@ c03f61a9-0753-4569-98c3-95a5c8545b5b	Centro de Salud	C2 Informe del Caso	K - Hx 
 01ebb9ca-44a7-4db3-984e-631851e222d8	Centro de Salud	C2 Informe del Caso	K - Hx Febril	4	Irritación en la piel	NULL			hxF_IrritacionPiel	209	32	1	1	Question
 f6bc75eb-8557-40f9-937a-f8c3c33426a4	Centro de Salud	C2 Informe del Caso	K - Hx Febril	5	Si tenia irritación	NULL			NULL	209	33	1	1	Checkpoint
 fe834bfb-4cad-484e-b99c-aec4b3ccb70c	Centro de Salud	C2 Informe del Caso	K - Hx Febril	5.1	¿Actualmente tiene irritación en la piel?	NULL			hxF_IrritacionPielActual	209	34	2	1	Question
-4007cfde-2c43-4278-a283-cf7662955499	Centro de Salud	C2 Informe del Caso	K - Hx Febril	5.2	Si actualmente tiene la irtitacion	NULL			NULL	209	35	2	1	Checkpoint
+4007cfde-2c43-4278-a283-cf7662955499	Centro de Salud	C2 Informe del Caso	K - Hx Febril	5.2	Si actualmente tiene la irritación	NULL			NULL	209	35	2	1	Checkpoint
 1df9649b-9ec5-4b4a-b4ce-13c6b065df70	Centro de Salud	C2 Informe del Caso	K - Hx Febril	5.2.1	¿Se pudo tomar una foto de la irritación?	NULL			hxF_IrritacionPielFoto	209	36	3	1	Question
 043edcc2-940c-4f9d-b0fd-9d9a341fcfce	Centro de Salud	C2 Informe del Caso	K - Hx Febril	5.2.2	Si se pudo tomar una foto de la irritación	NULL			NULL	209	37	3	1	Checkpoint
 92b1dda5-e3a6-43f7-a9af-d191435fb38b	Centro de Salud	C2 Informe del Caso	K - Hx Febril	5.2.2.1	Anote el número de la fotografía que aparece en la pantalla de su cámara.	NULL			hxF_IrritacionPielFotoID	209	38	4	1	Question
@@ -1073,8 +1073,8 @@ ea7cfc19-5215-4326-95a0-c2b0e44bc7be	Centro de Salud	C2 Informe del Caso	K - Hx 
 4ade826e-8b6a-45fe-bdba-7fde80038c99	Centro de Salud	C2 Informe del Caso	K - Hx Febril	23.1	¿Actualmente tiene sangrado inusual?	NULL			hxF_SangradoInusualActual	209	76	2	1	Question
 29e5fc42-1424-428a-b831-d1f01a668d2a	Centro de Salud	C2 Informe del Caso	K - Hx Febril	23.2	¿Desde hace cuántos días empezó con el sangrado?	NULL			hxF_SangradoInusualHaceDias	209	77	2	1	Question
 e676796f-c4a4-44fc-a537-60861a5d2102	Centro de Salud	C2 Informe del Caso	K - Hx Febril	23.3	Anote dónde estaba sangrando	NULL			hxF_SangradoInusualDonde	209	78	2	1	Question
-08528c0f-36d1-4607-b35e-42b420e10d65	Centro de Salud	C2 Informe del Caso	B - Hx de Tratamiento	1	Diga al paciente: "Para las siguientes preguntas me gustaría que pensara desde el primer dia que iniciaron las molestias de esta enfermedad."	NULL			NULL	210	1	1	1	Info
-08d79f5f-2c6c-471a-9652-e0b3299bab13	Centro de Salud	C2 Informe del Caso	B - Hx de Tratamiento	2	¿Buscó tratamiento para esta enfermedad en algún lugar (como centro o puesto de salud, farmacia, tienda) o con alguna persona (como médico privado, comadrona, amiga) antes de venir aqui al centro?	NULL			buscoTratamientoAntes	210	2	1	1	Question
+08528c0f-36d1-4607-b35e-42b420e10d65	Centro de Salud	C2 Informe del Caso	B - Hx de Tratamiento	1	Diga al paciente: "Para las siguientes preguntas me gustaría que pensara desde el primer día que iniciaron las molestias de esta enfermedad."	NULL			NULL	210	1	1	1	Info
+08d79f5f-2c6c-471a-9652-e0b3299bab13	Centro de Salud	C2 Informe del Caso	B - Hx de Tratamiento	2	¿Buscó tratamiento para esta enfermedad en algún lugar (como centro o puesto de salud, farmacia, tienda) o con alguna persona (como médico privado, comadrona, amiga) antes de venir aquí al centro?	NULL			buscoTratamientoAntes	210	2	1	1	Question
 43b2b823-63bc-41ab-9c33-f2d886d53f9f	Centro de Salud	C2 Informe del Caso	B - Hx de Tratamiento	3	Si el paciente buscó tratamiento en algún lugar antes de venir al centro	NULL			NULL	210	3	1	1	Checkpoint
 c7126f3f-606e-4adb-be37-396ea2f82ad9	Centro de Salud	C2 Informe del Caso	B - Hx de Tratamiento	3.1	Cuando comenzó su enfermedad, ¿a dónde o a quién fue a buscar tratamiento? (marque todos los que aplican)	Indica qué tipo de establecimiento o persona es este.			otroTrat	210	4	2	1	Question
 47d0ec75-d35c-493b-a4a3-b1fb49e50004	Centro de Salud	C2 Informe del Caso	B - Hx de Tratamiento	3.2	Si es de un puesto de salud o centro de salud	NULL			NULL	210	5	2	1	Checkpoint
@@ -1090,8 +1090,8 @@ eb9aa201-a372-4732-afac-68edabf7b425	Centro de Salud	C2 Informe del Caso	B - Hx 
 02bcb386-c5f5-4a85-aae2-44e3c29c332a	Centro de Salud	C2 Informe del Caso	B - Hx de Tratamiento	5.2.1	Especifique el hospital:	NULL			otroHospitalMesAnteriorNombreEsp	210	15	3	1	Question
 b676863a-de5b-4aa1-8cff-7d9cdc840d00	Centro de Salud	C2 Informe del Caso	B - Hx de Tratamiento	5.3	¿Cuántas noches duró esa otra hospitalización?	NULL			otroHospitalMesAnteriorNoches	210	16	2	1	Question
 381212cb-a44d-42d0-ab5a-8b55a6e58a66	Centro de Salud	C2 Informe del Caso	B - Hx de Tratamiento	5.4	¿Cuántos días antes de esta admisión pasaron desde que egresó de esa otra hospitalización?	NULL			otroHospitalMesAnteriorDiasAntes	210	17	2	1	Question
-aba8858d-56b6-47d3-bcd5-045c9dbebdaf	Centro de Salud	C2 Informe del Caso	B - Hx de Tratamiento	6	¿Ha tomado algún medicamento en los últimos 3 dias (72 horas)?	NULL			tomadoMedicamentoUltimas72hora	210	18	1	1	Question
-c3c1b93a-20d3-47f1-b764-29defb2358f1	Centro de Salud	C2 Informe del Caso	B - Hx de Tratamiento	7	Si ha tomado algún medicamento en las últimas 3 dias (72 horas)	NULL			NULL	210	19	1	1	Checkpoint
+aba8858d-56b6-47d3-bcd5-045c9dbebdaf	Centro de Salud	C2 Informe del Caso	B - Hx de Tratamiento	6	¿Ha tomado algún medicamento en los últimos 3 días (72 horas)?	NULL			tomadoMedicamentoUltimas72hora	210	18	1	1	Question
+c3c1b93a-20d3-47f1-b764-29defb2358f1	Centro de Salud	C2 Informe del Caso	B - Hx de Tratamiento	7	Si ha tomado algún medicamento en las últimas 3 días (72 horas)	NULL			NULL	210	19	1	1	Checkpoint
 f48e056c-fd69-4f79-ad64-6c32996d7602	Centro de Salud	C2 Informe del Caso	B - Hx de Tratamiento	7.1	Antibióticos	NULL			medUltimas72HorasAntiB	210	20	2	1	Question
 fa71b67c-b98b-49c4-a260-1bc45fb97853	Centro de Salud	C2 Informe del Caso	B - Hx de Tratamiento	7.2	Si en los últimos 3 días, ha tomado antibióticos	NULL			NULL	210	21	2	1	Checkpoint
 9b5d7cf3-3d6c-4d59-82f7-068c25a26b3b	Centro de Salud	C2 Informe del Caso	B - Hx de Tratamiento	7.2.1	¿Cuál fue el último lugar donde consiguió antibióticos?	NULL			medUltimas72HorasAntiBDonde	210	22	3	1	Question
@@ -1121,7 +1121,7 @@ f3d504eb-8ed3-4731-9d3f-c4e49acf8c98	Centro de Salud	C2 Informe del Caso	A - Enf
 7155b497-2b3c-47cb-8d53-41f828a9199a	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.4.1	Pregunte al paciente si ha recibido la vacuna triple (DPT).	NULL			vacunaTripleSarampionRecibido	211	9	4	1	Question
 a33948ba-00fb-4044-be2c-4a3c25d45748	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.4.2	Si ha recibido la triple	NULL			NULL	211	10	4	1	Checkpoint
 ed2d686d-8f52-48e9-b003-1842f8dbe895	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.4.2.1	¿Cuántas dosis de la triple ha recibido?	NULL			vacunaTripleSarampionDosis	211	11	5	1	Question
-d80b5454-e207-43cc-9a21-6aaa0b6ce3d5	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.5	Pregunte al paciente si ha recibido la vacuna para sarampión, paperas y rubela (SPR).	NULL			vacunaSarampionPaperasRubella	211	12	3	1	Question
+d80b5454-e207-43cc-9a21-6aaa0b6ce3d5	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.5	Pregunte al paciente si ha recibido la vacuna para sarampión, paperas y rebela (SPR).	NULL			vacunaSarampionPaperasRubella	211	12	3	1	Question
 6c9a2d00-fa75-481f-9ddd-f0b2b4f0cd14	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.6	Pregunte al paciente si ha recibido la vacuna contra rotavirus.	NULL			vacunaRotavirusRecibido	211	13	3	1	Question
 2502b4aa-3dfe-40f5-885a-50797fb34a98	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.7	Si ha recibido vacuna contra rotavirus:	NULL			NULL	211	14	3	1	Checkpoint
 a9a715b7-6fe1-4429-8bf3-fbb287b9aa9a	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.7.1	¿Cuántas dosis de la vacuna contra rotavirus ha recibido?	NULL			vacunaRotavirusDosis	211	15	4	1	Question
@@ -1133,19 +1133,19 @@ a7a5f556-9850-4cca-bee1-dd620423bc32	Centro de Salud	C2 Informe del Caso	A - Enf
 95289f19-e79c-4558-890a-6fb2d26e8c50	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.3.1	Anote de la ficha si el paciente ha recibido la vacuna triple (DPT).	NULL			vacunaTripleSarampionRecibido	211	21	4	1	Question
 17c34902-aef2-4e8f-8e53-93aa9525a845	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.3.2	Si ha recibido la triple	NULL			NULL	211	22	4	1	Checkpoint
 47c7d939-fd44-4c0c-aef8-77de2ced9ab6	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.3.2.1	¿Cuántas dosis de la triple ha recibido?	NULL			vacunaTripleSarampionDosis	211	23	5	1	Question
-5f61a397-8015-4ff8-ab8a-1704401314ba	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.4	Anote de la ficha si el paciente ha recibido la vacuna para sarampión, paperas y rubela (SPR).	NULL			vacunaSarampionPaperasRubella	211	24	3	1	Question
+5f61a397-8015-4ff8-ab8a-1704401314ba	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.4	Anote de la ficha si el paciente ha recibido la vacuna para sarampión, paperas y rubeola (SPR).	NULL			vacunaSarampionPaperasRubella	211	24	3	1	Question
 a2b20000-151b-4661-be0c-3f6bfd88679c	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.5	Anote de la ficha si el paciente ha recibido la vacuna contra rotavirus.	NULL			vacunaRotavirusRecibido	211	25	3	1	Question
 636f1074-f1a9-46a4-9ce2-caeb1cd310c4	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.6	Si ha recibido vacuna contra rotavirus:	NULL			NULL	211	26	3	1	Checkpoint
 2d6149cd-4432-4ea4-95c3-110448c78fd6	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.6.1	¿Cuántas dosis de la vacuna contra rotavirus ha recibido?	NULL			vacunaRotavirusDosis	211	27	4	1	Question
-1b77f98b-a208-4d9d-99d3-9c4c6d2cb4b3	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2	¿El paciente ha recibido la vacuna para influenza estacional en los ultimos 6 meses?	NULL			vacunaInfluenzaSeisMeses	211	28	1	1	Question
+1b77f98b-a208-4d9d-99d3-9c4c6d2cb4b3	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2	¿El paciente ha recibido la vacuna para influenza estacional en los últimos 6 meses?	NULL			vacunaInfluenzaSeisMeses	211	28	1	1	Question
 72fa35d4-477d-4507-a45e-1c0b7c17d3d6	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	3	Asma	NULL			enfermedadesCronicasAsma	211	29	1	1	Question
 bfda6be3-9f92-4f35-beed-0586bbc1d152	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	4	Diabetes	NULL			enfermedadesCronicasDiabetes	211	30	1	1	Question
 a3a818c2-5055-4988-b7ce-5a09fe0f5f7b	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	5	Cáncer	NULL			enfermedadesCronicasCancer	211	31	1	1	Question
 4a02e96e-9986-4001-be4a-f452183f2c9e	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	6	Enfermedad del corazón (ej., ataque, infarto o fallo)	NULL			enfermedadesCronicasEnfermCorazon	211	32	1	1	Question
-eb171898-5cb6-4fc0-a3d6-18bcca6cbb9d	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	7	Enfermedad del hígado (ej., cirrosis, hepatitis cronica)	NULL			enfermedadesCronicasEnfermHigado	211	33	1	1	Question
+eb171898-5cb6-4fc0-a3d6-18bcca6cbb9d	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	7	Enfermedad del hígado (ej., cirrosis, hepatitis crónica)	NULL			enfermedadesCronicasEnfermHigado	211	33	1	1	Question
 16132cc9-2b4f-462c-bd80-6fa4f1a612e7	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	8	Enfermedad del riñón (ej., insuficiencia o fallo renal)	NULL			enfermedadesCronicasEnfermRinion	211	34	1	1	Question
 e742740d-f5ac-44bd-be76-19bcd6e33728	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	9	Enfermedad de los pulmones (ej. EPOC, enfisema, enfermedad crónica y obstructiva de los pulmones)	NULL			enfermedadesCronicasEnfermPulmones	211	35	1	1	Question
-b939b85f-3e66-46fb-ba83-cf1c04efef5f	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	10	VIH/SIDA u otra imunodeficiencia	NULL			enfermedadesCronicasVIHSIDA	211	36	1	1	Question
+b939b85f-3e66-46fb-ba83-cf1c04efef5f	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	10	VIH/SIDA u otra inmunodeficiencia	NULL			enfermedadesCronicasVIHSIDA	211	36	1	1	Question
 061d4308-27d7-4285-918d-3e2ea6aacfa4	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	11	Si el paciente es mayor o igual a 18 años de edad	NULL			NULL	211	37	1	1	Checkpoint
 ef7a7374-bc97-4047-a8ca-286189b4fe31	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	11.1	Hipertensión	NULL			enfermedadesCronicasHipertension	211	38	2	1	Question
 d79540af-c0da-47ee-9416-1be357114258	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	12	Otras enfermedades crónicas	NULL			enfermedadesCronicasOtras	211	39	1	1	Question
@@ -1156,18 +1156,18 @@ b01bf06b-c485-4a52-896e-4b07b0677c08	Centro de Salud	C2 Informe del Caso	A - Enf
 b26a1cda-c9b6-49ac-af82-56bfa8341b24	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	15	Si el paciente es una mujer con 11 años o mayor	NULL			NULL	211	44	1	1	Checkpoint
 380515e1-a603-46d1-969c-9c588b5e04af	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	15.1	¿Está usted embarazada?	NULL			embarazada	211	45	2	1	Question
 ae136559-c7c8-4667-9d2d-253b92bbc809	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	15.2	Si está embarazada	NULL			NULL	211	46	2	1	Checkpoint
-0cea717f-b5ae-4064-a759-80fdc1f71c5a	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	15.2.1	¿Cuántos meses tiene usted de emberazo?	NULL			embarazadaMeses	211	47	3	1	Question
+0cea717f-b5ae-4064-a759-80fdc1f71c5a	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	15.2.1	¿Cuántos meses tiene usted de embarazo?	NULL			embarazadaMeses	211	47	3	1	Question
 1b12a4c3-2c17-45c4-a81d-366cb1fd4127	Centro de Salud	C2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	NULL		NULL			enfermedadesCronicasAlguna	211	0	1	1	Variable
 7edb7245-bb87-46da-b700-66f44232ab21	Centro de Salud	C2 Informe del Caso	F - Factores de Riesgo	1	Diga al paciente: "Quisiera hacerle unas preguntas sobre cosas a las que pudo haber estado expuesto/a."	NULL			NULL	212	1	1	1	Info
 e1d68351-c5fb-4939-8d40-2eaaf094238e	Centro de Salud	C2 Informe del Caso	F - Factores de Riesgo	2	En el mes antes de que se enfermó ¿Durmió alguna noche fuera de su casa?	NULL			pacienteNocheFueraCasa	212	2	1	1	Question
 085ffcb0-1cf2-4100-824c-050b26230147	Centro de Salud	C2 Informe del Caso	F - Factores de Riesgo	3	Si ha pasado 1 noche fuera de su casa	NULL			NULL	212	3	1	1	Checkpoint
 7d200cfa-999a-4f13-a29d-7cede190647c	Centro de Salud	C2 Informe del Caso	F - Factores de Riesgo	3.1	En el mes antes del que se enfermó. ¿Nos pude decir dónde estuvo? Seleccione la respuesta adecuada.	NULL			pacienteVisitoOtroLugar	212	4	2	1	Question
 6415e79b-ee98-4c80-a327-ef207ab0d830	Centro de Salud	C2 Informe del Caso	F - Factores de Riesgo	3.2	Si sabe dónde estuvo	NULL			NULL	212	5	2	1	Checkpoint
-91fb654f-b328-4fca-a90d-b9887f397bb3	Centro de Salud	C2 Informe del Caso	F - Factores de Riesgo	3.2.1	Si estuvo en otro pais	NULL			NULL	212	6	3	1	Checkpoint
-311e6a5a-db0c-4c33-95e5-4e9f19f98d70	Centro de Salud	C2 Informe del Caso	F - Factores de Riesgo	3.2.1.1	¿Cuál otro pais?	NULL			pacienteVisitoOtroPais	212	7	4	1	Question
+91fb654f-b328-4fca-a90d-b9887f397bb3	Centro de Salud	C2 Informe del Caso	F - Factores de Riesgo	3.2.1	Si estuvo en otro país	NULL			NULL	212	6	3	1	Checkpoint
+311e6a5a-db0c-4c33-95e5-4e9f19f98d70	Centro de Salud	C2 Informe del Caso	F - Factores de Riesgo	3.2.1.1	¿Cuál otro país?	NULL			pacienteVisitoOtroPais	212	7	4	1	Question
 33b1185a-b3b8-46c5-995e-a1d9909f5ce2	Centro de Salud	C2 Informe del Caso	F - Factores de Riesgo	3.3	¿Hace cuántos días regresó de su viaje? (Ingrese "99" si no sabe)	NULL			pacienteVisitoRegresoDias	212	8	2	1	Question
 28d03c22-393c-4fb1-acc5-65c782e48bc2	Centro de Salud	C2 Informe del Caso	F - Factores de Riesgo	4	En el mes antes de que se enfermó ¿Lo mordió algún animal?	NULL			pacienteMordioAnimal	212	9	1	1	Question
-f4f33840-cc05-442e-bc99-5771a12ef8eb	Centro de Salud	C2 Informe del Caso	F - Factores de Riesgo	5	Si lo mordió algun animal	NULL			NULL	212	10	1	1	Checkpoint
+f4f33840-cc05-442e-bc99-5771a12ef8eb	Centro de Salud	C2 Informe del Caso	F - Factores de Riesgo	5	Si lo mordió algún animal	NULL			NULL	212	10	1	1	Checkpoint
 6c79a1c4-fdd8-4e36-bdd7-24c764e054b1	Centro de Salud	C2 Informe del Caso	F - Factores de Riesgo	5.1	En el mes antes de que se enfermó. ¿Qué animal le mordió?	NULL			pacienteMordioAnimalQue	212	11	2	1	Question
 5f7a4a61-bf52-40b7-b7b1-326a7a93ada3	Centro de Salud	C2 Informe del Caso	F - Factores de Riesgo	6	En el mes antes de que se enfermó ¿Lo picó alguna garrapata?	NULL			pacientePicoGarrapata	212	12	1	1	Question
 e1c690d7-f6bb-484a-830b-d8d83f4f1ac1	Centro de Salud	C2 Informe del Caso	F - Factores de Riesgo	7	Si el paciente es menor de 18 años	NULL			NULL	212	13	1	1	Checkpoint
@@ -1287,10 +1287,10 @@ d0d3b02c-475f-457f-8903-7bc3d3824d8f	Centro de Salud	HCP9 Seguimiento	HCP9 Segui
 bb6790f9-bd23-43e8-b536-92952cd279b7	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.6.3.1	¿Por qué enfermedad fue admitido al hospital?	NULL			seguimientoAdmitidoEnfermedad	216	18	4	1	Question
 50e5abac-c0c4-4971-bf58-cdc0019c7b62	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.6.3.2	Si la enfermedad es OTRA	NULL			NULL	216	19	4	1	Checkpoint
 8f54cde2-9b4c-4123-aacc-328b389527a7	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.6.3.2.1	Especifique la otra enfermedad:	NULL			seguimientoAdmitidoEnfermedadEsp	216	20	5	1	Question
-2612e1cf-ccb7-4da1-92e5-33ae0c55b648	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.7	¿Recibió tabletas de zinc o una receta para tomar zinc durante su reciente hospitalización o visita al servico de salud?	NULL			seguimientoZinc	216	21	2	1	Question
+2612e1cf-ccb7-4da1-92e5-33ae0c55b648	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.7	¿Recibió tabletas de zinc o una receta para tomar zinc durante su reciente hospitalización o visita al servio de salud?	NULL			seguimientoZinc	216	21	2	1	Question
 f7ef1004-e052-448c-92cc-fca063a5dbf3	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.8	Si recibió zinc	NULL			NULL	216	22	2	1	Checkpoint
 1efb67bb-8619-44b0-82ff-4c6a9d382dfc	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.8.1	¿Cuántas tabletas recibió?	NULL			seguimientoZincTabletas	216	23	3	1	Question
-af57836d-c0e0-4430-ae7c-fd5c7a47969a	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.8.2	¿Cuántas tabletas le quedan al dia de hoy?	NULL			seguimientoZincTabletasQuedan	216	24	3	1	Question
+af57836d-c0e0-4430-ae7c-fd5c7a47969a	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.8.2	¿Cuántas tabletas le quedan al día de hoy?	NULL			seguimientoZincTabletasQuedan	216	24	3	1	Question
 2837fc4c-8931-45e3-9df1-6fd57d448dba	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.8.3	¿Cuántas tabletas tomó, en total?	NULL			seguimientoZincTabletasTomo	216	25	3	1	Question
 93d03e26-f107-48fd-8fdb-490c8cf4c345	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.8.4	¿Cuántas tabletas tomó por día?	NULL			seguimientoZincTabletasPorDia	216	26	3	1	Question
 9cbfef8f-a8fd-4457-92d1-b18f38179757	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.8.5	¿Por cuántos días tomó las tabletas?	NULL			seguimientoZincTabletasDiasTomo	216	27	3	1	Question
@@ -1304,7 +1304,7 @@ dbb5f456-8ddf-458e-9f6b-0cf22a2b846a	Centro de Salud	HCP9 Seguimiento	HCP9 Segui
 74f0b920-6b9a-4779-82c7-37f2b53b3c46	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.9.1.2	Si se tomó una muestra de sangre durante la visita de seguimiento	NULL			NULL	216	35	4	1	Checkpoint
 4e7b1e19-d495-4010-b8a5-96762d6e61e3	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.9.1.2.1	¿Cuántos ml de sangre se tomaron?	NULL			seguimientoMuestraSangreML	216	36	5	1	Question
 21433275-0ee2-438f-b988-9d1a48f11557	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.9.1.3	Si NO se tomó una muestra de sangre durante la visita de seguimiento	NULL			NULL	216	37	4	1	Checkpoint
-372b3171-b5c9-464c-991b-a24a33b1804d	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.9.1.3.1	¿Por qúe no se tomó una muestra de sangre?	NULL			seguimientoMuestraSangreColectaNoRazon	216	38	5	1	Question
+372b3171-b5c9-464c-991b-a24a33b1804d	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.9.1.3.1	¿Por qué no se tomó una muestra de sangre?	NULL			seguimientoMuestraSangreColectaNoRazon	216	38	5	1	Question
 df95ffb9-6aae-4266-921a-aa5db823533e	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.9.1.3.2	Si la razón es "Otra"	NULL			NULL	216	39	5	1	Checkpoint
 26b7b83c-1b05-42e8-b487-c7464c09236a	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.9.1.3.2.1	Especifique la otra razón por la cual no se tomó la muestra	NULL			seguimientoMuestraSangreColectaNoRazon_esp	216	40	6	1	Question
 63f64d82-7e39-44e7-8bbd-aee6b51750b6	Centro de Salud	HCP9 Seguimiento	HCP9 Seguimiento	5	Observaciones	NULL			SeguimientoObservaciones	216	41	1	1	Question
@@ -1340,14 +1340,14 @@ a9794954-1fc0-4042-a3d0-8a48b8cb6201	Centro de Salud	C1 Sospechosos	Consentimien
 66f2f779-55a9-48d9-aa9a-ee46d634fbfe	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente tiene hipoxemia?	NULL			hipoxemia	202	0	1	1	Variable
 b693d570-f085-40a3-bd18-53f213d8ed35	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente encontramos en un Hospital?	NULL			hospital	202	0	1	1	Variable
 dff5c57f-51fa-4474-b88e-080cf85196f4	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	El mes de calendario de admisión o presentación del paciente	NULL			mesAdmision	202	0	1	1	Variable
-140acbe1-ff89-476d-8197-4241c2e1cb59	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿La condición del paciente sopechoso (no inscrito en ViCo) es moribundo (al punto de morirse)?	NULL			moribundoSospechoso	202	0	1	1	Variable
-67446440-8280-4c3b-b94c-12128368b40a	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	La fecha cuando indicamos que este paciente sopechoso (no inscrito en ViCo) es moribundo	NULL			moribundoSospechosoFecha	202	0	1	1	Variable
+140acbe1-ff89-476d-8197-4241c2e1cb59	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿La condición del paciente sospechoso (no inscrito en ViCo) es moribundo (al punto de morirse)?	NULL			moribundoSospechoso	202	0	1	1	Variable
+67446440-8280-4c3b-b94c-12128368b40a	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	La fecha cuando indicamos que este paciente sospechoso (no inscrito en ViCo) es moribundo	NULL			moribundoSospechosoFecha	202	0	1	1	Variable
 bfe29679-d7cd-48c3-b504-3b9e3205edb6	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿La condición del paciente inscrito en ViCo es moribundo (al punto de morirse)?	NULL			moribundoViCo	202	0	1	1	Variable
 890f4d90-e748-4e80-9a4d-03af6024a8ff	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	La fecha cuando indicamos que este paciente de ViCo es moribundo:	NULL			moribundoViCoFecha	202	0	1	1	Variable
 ca01505a-5f58-4192-a413-e345d22c1311	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿En cuál paso del proceso de ViCo este paciente se murió?	NULL			muerteCualPaso	202	0	1	1	Variable
 e8c7c3cc-9558-4d50-a672-a48e7d65971e	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿Este paciente se murió en el hospital?	NULL			muerteHospital	202	0	1	1	Variable
-6390649b-e837-4cbe-9e26-17a894a0ec95	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente sopechoso (no inscrito en ViCo) se murió?	NULL			muerteSospechoso	202	0	1	1	Variable
-c14ba13a-881d-4185-8eb1-797012e36c14	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	La fecha cuando este paciente sopechoso (no inscrito en ViCo) se murió	NULL			muerteSospechosoFecha	202	0	1	1	Variable
+6390649b-e837-4cbe-9e26-17a894a0ec95	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente sospechoso (no inscrito en ViCo) se murió?	NULL			muerteSospechoso	202	0	1	1	Variable
+c14ba13a-881d-4185-8eb1-797012e36c14	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	La fecha cuando este paciente sospechoso (no inscrito en ViCo) se murió	NULL			muerteSospechosoFecha	202	0	1	1	Variable
 390682cc-bb1f-42bc-b32f-5df64a43bb97	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente de ViCo se murió?	NULL			muerteViCo	202	0	1	1	Variable
 a4941d2a-7ebf-4e56-805f-1c832ce23ec1	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	La fecha cuando este paciente de ViCo se murió	NULL			muerteViCoFecha	202	0	1	1	Variable
 207d1020-6e48-4bae-a63b-9ee0c54450b3	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	Nombre Completo	NULL			nombreCompleto	202	0	1	1	Variable
@@ -1362,9 +1362,9 @@ e5ce4ebe-63f6-4d49-a5a4-9e61df6cf5ca	Centro de Salud	C1 Sospechosos	Consentimien
 942b4d00-b07c-4b50-b70e-99d7c6346cee	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿En que tipo de sitio colectamos la información?	NULL			siteType	202	0	1	1	Variable
 3ddbd8b7-735b-4bd3-8963-0ab650201196	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿En que tipo de sitio (número) colectamos la información?	NULL			siteTypeNumeric	202	0	1	1	Variable
 758dc69f-8aa7-4a4f-b4b1-bb5c764d2a39	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	sospechosoETI_MSP	NULL			sospechosoETI_MSP	202	0	1	1	Variable
-8f4c2de7-6eab-4472-b234-521a5fe74f4f	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente es un caso sopechoso del estudio de febril?	NULL			sospechosoFebril	202	0	1	1	Variable
+8f4c2de7-6eab-4472-b234-521a5fe74f4f	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente es un caso sospechoso del estudio de febril?	NULL			sospechosoFebril	202	0	1	1	Variable
 cdcbab8d-5a0e-47f7-bbb4-67803e2ca6af	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	sospechosoIRAG	NULL			sospechosoIRAG	202	0	1	1	Variable
-43d089aa-9a25-4abc-a1fd-a0cb055764ae	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	La temperatura documentada más alta en las primeras 24 horas de admision.	NULL			temperaturaPrimeras24HorasCombin	202	0	1	1	Variable
+43d089aa-9a25-4abc-a1fd-a0cb055764ae	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	La temperatura documentada más alta en las primeras 24 horas de admisión.	NULL			temperaturaPrimeras24HorasCombin	202	0	1	1	Variable
 187b0c1e-7d75-436b-a6b3-70cf66dd9fab	Centro de Salud	C1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente recibió ventilación mecánica?	NULL			ventilacionMecanica	202	0	1	1	Variable
 18c2e9da-bab4-4d40-8617-8a338534165b	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	1	¿Recibió consentimiento verbal del paciente o tutor?	Debe indicar si el paciente o persona responsable de éste dio el CONSENTIMIENTO VERBAL para ser incluido en el estudio.			consentimientoVerbal	302	1	1	1	Question
 5083083c-aab3-4cd6-a37c-4c36ed6d35de	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	2	Si no recibió consentimiento verbal	NULL			NULL	302	2	1	1	Checkpoint
@@ -1390,7 +1390,7 @@ dbb55c00-6d64-4bc8-9bd7-612d69d50610	Puesto de Salud	P1 Sospechosos	Común	3.9	A 
 50097dcf-2ceb-4747-a861-446059797790	Puesto de Salud	P1 Sospechosos	Común	3.1	Si paciente tiene menos de 5 años	NULL			NULL	303	16	2	1	Checkpoint
 c6dbe3fc-f239-4853-b6f0-6e538828c1ec	Puesto de Salud	P1 Sospechosos	Común	3.10.1	¿Ha tenido diarrea o asientos líquidos en los últimos 14 días?	Debe preguntarle al paciente si ha tenido diarrea o asientos en los últimos 7 días.			diarreaUltimos14Dias	303	17	3	1	Question
 6d483096-be8e-43d4-be53-d258e83e45e9	Puesto de Salud	P1 Sospechosos	Común	3.10.2	Si ha tenido diarrea en los últimos 14 días	NULL			NULL	303	18	3	1	Checkpoint
-32b88f09-083e-473a-a23b-a74054a3809f	Puesto de Salud	P1 Sospechosos	Común	3.10.2.1	¿Hace cuántos días comenzó con diarrea o asientos liquidos?	Debe ingresar en la casilla desde HACE CUÁNTOS DÍAS el paciente COMENZÓ CON DIARREA			diarreaComenzoHaceDias	303	19	4	1	Question
+32b88f09-083e-473a-a23b-a74054a3809f	Puesto de Salud	P1 Sospechosos	Común	3.10.2.1	¿Hace cuántos días comenzó con diarrea o asientos líquidos?	Debe ingresar en la casilla desde HACE CUÁNTOS DÍAS el paciente COMENZÓ CON DIARREA			diarreaComenzoHaceDias	303	19	4	1	Question
 fe6b272f-dfb0-4eea-b372-0e520234a079	Puesto de Salud	P1 Sospechosos	Común	3.10.2.2	¿En su peor día, cuántas deposiciones o asientos líquidos tuvo en un período de 24 horas (1 día)?	Debe ingresar en la casilla la cantidad MÁXIMA DE ASIENTOS que el paciente tuvo EN 1 DÍA.  Las cantidades válidas pueden ser de 1 a 50 veces.			diarreaMaximoAsientos1Dia	303	20	4	1	Question
 e334684a-5c28-4b24-8752-61194ae29380	Puesto de Salud	P1 Sospechosos	Común	3.10.2.3	¿En la semana anterior al inicio de esta enfermedad de diarrea tuvo algún otro episodio de diarrea?	Debe preguntarle al paciente si en la semana anterior al inicio de su diarrea, tuvo algún otro episodio de diarrea.			diarreaOtroEpisodioSemanaAnterior	303	21	4	1	Question
 569714a7-88b4-476e-974d-bc20d8f341c6	Puesto de Salud	P1 Sospechosos	Común	3.11	¿Ha tenido tos, dolor de garganta, dificultad para respirar  o le cuesta más trabajo respirar?	Indique si el paciente tiene una indicación sospechosa de ETI como gripe, catarro, resfriado, congestión nasal, fiebre, tos, o dolor de garganta.			sintomasRespiraTamizajeCentro	303	22	2	1	Question
@@ -1398,19 +1398,19 @@ af3229ae-5318-45a8-acf6-6b5e0acd6abf	Puesto de Salud	P1 Sospechosos	Común	3.12	S
 136b82aa-e582-4311-80ac-8fc75718f099	Puesto de Salud	P1 Sospechosos	Común	3.12.1	Tos	Debe preguntarle al paciente si ha tenido tos.			sintomasRespiraTos	303	24	3	1	Question
 39f0635f-6759-48c2-991b-188417c818e1	Puesto de Salud	P1 Sospechosos	Común	3.12.2	Si tiene tos	NULL			NULL	303	25	3	1	Checkpoint
 598da09f-cc32-4b9d-b8e6-9c13fb2ba953	Puesto de Salud	P1 Sospechosos	Común	3.12.2.1	¿Hace cuántos días empezó la tos?	NULL			sintomasRespiraTosDias	303	26	4	1	Question
-e4ad7bbf-42eb-44d5-a61e-3890b14686ef	Puesto de Salud	P1 Sospechosos	Común	3.12.2.2	Si ha tenido tos >14 dias	NULL			NULL	303	27	4	1	Checkpoint
+e4ad7bbf-42eb-44d5-a61e-3890b14686ef	Puesto de Salud	P1 Sospechosos	Común	3.12.2.2	Si ha tenido tos >14 días	NULL			NULL	303	27	4	1	Checkpoint
 086dc78a-67c6-44fe-b46f-b23c94a118b5	Puesto de Salud	P1 Sospechosos	Común	3.12.2.2.1	¿Actualmente o en los últimos 14 días, tiene o tenía tos?	NULL			sintomasRespiraTos14Dias	303	28	5	1	Question
-966c9051-8f0a-46a9-9c40-05298f2153fb	Puesto de Salud	P1 Sospechosos	Común	3.12.2.3	Si tiene o tenia tos en los últmos 14 días	NULL			NULL	303	29	4	1	Checkpoint
+966c9051-8f0a-46a9-9c40-05298f2153fb	Puesto de Salud	P1 Sospechosos	Común	3.12.2.3	Si tiene o tenia tos en los últimos 14 días	NULL			NULL	303	29	4	1	Checkpoint
 162a42fe-c225-4db5-9b9d-07009d89ede8	Puesto de Salud	P1 Sospechosos	Común	3.12.2.3.1	¿Actualmente tiene tos?	NULL			sintomasRespiraTosActual	303	30	5	1	Question
 31dc7efb-176c-4f87-98a7-a09863512997	Puesto de Salud	P1 Sospechosos	Común	3.12.2.3.2	Si tiene tos actualmente	NULL			NULL	303	31	5	1	Checkpoint
-125c3e0b-2678-4b3b-96e7-1b826aef1cc7	Puesto de Salud	P1 Sospechosos	Común	3.12.2.3.2.1	Si la tos empezó hace 7 dias o más	NULL			NULL	303	32	6	1	Checkpoint
+125c3e0b-2678-4b3b-96e7-1b826aef1cc7	Puesto de Salud	P1 Sospechosos	Común	3.12.2.3.2.1	Si la tos empezó hace 7 días o más	NULL			NULL	303	32	6	1	Checkpoint
 f3ff595d-bc52-431a-8671-b7067678f0a9	Puesto de Salud	P1 Sospechosos	Común	3.12.2.3.2.1.1	¿Durante esta enfermedad, ha tenido una tos tan fuerte que se vomitó?	NULL			pertussisVomito	303	33	7	1	Question
-28309e80-28e0-4328-8b85-398a797a8f0d	Puesto de Salud	P1 Sospechosos	Común	3.12.2.3.2.1.2	¿Ha tenido paroxismos (exacerbaciónes o ataques súbitos e intensos) de tos?	NULL			pertussisParoxismos	303	34	7	1	Question
+28309e80-28e0-4328-8b85-398a797a8f0d	Puesto de Salud	P1 Sospechosos	Común	3.12.2.3.2.1.2	¿Ha tenido paroxismos (exacerbaciones o ataques súbitos e intensos) de tos?	NULL			pertussisParoxismos	303	34	7	1	Question
 f9e68493-f632-42aa-9211-71ab6661bc25	Puesto de Salud	P1 Sospechosos	Común	3.12.2.3.2.1.3	¿Ha tenido tos con chiflido?	NULL			pertussisWhoop	303	35	7	1	Question
 8c9d4500-ef36-4572-a15a-19b98f027b1a	Puesto de Salud	P1 Sospechosos	Común	3.12.3	Dolor de garganta	Debe preguntarle al paciente si le ha dolido la garganta durante su enfermedad.			sintomasRespiraDolorGarganta	303	36	3	1	Question
 65257248-b692-479e-b0ea-dae866ef4c91	Puesto de Salud	P1 Sospechosos	Común	3.12.4	Tiene dolor de garganta	NULL			NULL	303	37	3	1	Checkpoint
 d1b88abd-e900-49a3-9f93-35222dbcce60	Puesto de Salud	P1 Sospechosos	Común	3.12.4.1	¿Hace cuántos días empezó con dolor de garganta?	NULL			sintomasRespiraGargantaDias	303	38	4	1	Question
-e61490de-9edb-4a2f-a4ed-8bee65802e87	Puesto de Salud	P1 Sospechosos	Común	3.12.4.2	Si ha tenido dolor de garganta >14 dias	NULL			NULL	303	39	4	1	Checkpoint
+e61490de-9edb-4a2f-a4ed-8bee65802e87	Puesto de Salud	P1 Sospechosos	Común	3.12.4.2	Si ha tenido dolor de garganta >14 días	NULL			NULL	303	39	4	1	Checkpoint
 d0aa281f-9528-4881-b1b9-ee7d2e58f3de	Puesto de Salud	P1 Sospechosos	Común	3.12.4.2.1	¿Actualmente o en los últimos 14 días, tiene o tenía mal de garganta?	Indique si el paciente ha tenido alguna queja de dolor de garganta en los últimos 14 días.			sintomasRespiraGarganta14Dias	303	40	5	1	Question
 ca7ecf77-4e76-4377-8d92-958463c8d366	Puesto de Salud	P1 Sospechosos	Común	3.12.5	Dificultad para respirar o le cuesta más trabajo para respirar	Debe preguntarle al paciente si ha tenido dificultad para respirar durante su enfermedad.			sintomasRespiraDificultadRespirar	303	41	3	1	Question
 36e76447-56de-4636-9ba1-9b7533d06d92	Puesto de Salud	P1 Sospechosos	Común	3.12.6	Tiene dificultad para respirar	NULL			NULL	303	42	3	1	Checkpoint
@@ -1435,7 +1435,7 @@ cd8ab609-95e1-497f-8fdc-6b8b2dc6287a	Puesto de Salud	P1 Sospechosos	Común	3.17.1
 76298fe3-2434-4a36-8b12-c50e743582f9	Puesto de Salud	P1 Sospechosos	Común	3.17.1.3	OBSERVE: ¿El niño está desmayado?	NULL			ninioDesmayoObs	303	61	4	1	Question
 c50c3408-5bc9-401a-9fb0-108e803ad138	Puesto de Salud	P1 Sospechosos	Común	3.17.1.4	OBSERVE: ¿Tiene estridor?	NULL			sintomasRespiraNinioEstridor	303	62	4	1	Question
 92e0d020-bfdc-4e51-89ca-617405a0fdc9	Puesto de Salud	P1 Sospechosos	Común	3.17.1.5	OBSERVE: ¿Se le hunden las costillas cuando respira?	NULL			sintomasRespiraNinioCostillasHundidas	303	63	4	1	Question
-f585b977-698c-4242-82c8-64e2159bf753	Puesto de Salud	P1 Sospechosos	Común	3.17.2	¿Se pudo medir la tasa de respiracion por minuto?	NULL			medidaRespiraPorMinuto	303	64	3	1	Question
+f585b977-698c-4242-82c8-64e2159bf753	Puesto de Salud	P1 Sospechosos	Común	3.17.2	¿Se pudo medir la tasa de respiración por minuto?	NULL			medidaRespiraPorMinuto	303	64	3	1	Question
 addffe7f-5905-4a7c-80b9-fca40f09f0c0	Puesto de Salud	P1 Sospechosos	Común	3.17.3	Si se pudo medir la tasa de respiración	NULL			NULL	303	65	3	1	Checkpoint
 a8499899-5857-4bc2-9210-20fb833fe631	Puesto de Salud	P1 Sospechosos	Común	3.17.3.1	Anote la tasa de respiración calculada: (Use el cronómetro de la PDA para esta medición)	NULL			respiraPorMinuto	303	66	4	1	Question
 7403e9ee-49d3-4bab-a73c-f8b075f807e3	Puesto de Salud	P1 Sospechosos	Común	3.18	¿Se puede medir la oximetría de pulso?	NULL			medirOximetroPulso	303	67	2	1	Question
@@ -1448,7 +1448,7 @@ e4ec2066-c827-4339-9fe0-6eb16c376e4e	Puesto de Salud	P1 Sospechosos	Común	3.20.1
 d9f6562c-cfdc-40b0-91ca-ca0931ad05c2	Puesto de Salud	P1 Sospechosos	Común	3.20.2.1	Especifique la otra razón	NULL			oximetroPulsoNoRazon_esp	303	74	4	1	Question
 0d2d289c-a025-4fbd-81a6-9af993bc1abb	Puesto de Salud	P1 Sospechosos	Común	4	Si el paciente no viene del área de captación de ViCo	NULL			NULL	303	75	1	1	Checkpoint
 e7ae54d6-825d-4ed6-99b6-52b999cb59bf	Puesto de Salud	P1 Sospechosos	Común	4.1	El paciente no es del área de captación de ViCo y no se va a incluir en ViCo.	NULL			NULL	303	76	2	1	Info
-ea4a7a4c-c534-4b34-9b8e-41a3458a121a	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	1	¡Despues de este punto no se pueden modificar los datos de los criterios de inclusión!	NULL			NULL	304	1	1	1	Info
+ea4a7a4c-c534-4b34-9b8e-41a3458a121a	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	1	¡Después de este punto no se pueden modificar los datos de los criterios de inclusión!	NULL			NULL	304	1	1	1	Info
 ba171750-208a-4e6b-9f01-f59fe31e8fe8	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	2	Diarrea	NULL			NULL	304	2	1	1	Checkpoint
 cccf2ffb-53f8-4ff2-aea6-1b08deeda913	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	2.1	El paciente es elegible para el estudio de Diarrea.	NULL			NULL	304	3	2	1	Info
 516817cb-afff-462c-8f21-849bb544239b	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	3	Respiratoria	NULL			NULL	304	4	1	1	Checkpoint
@@ -1458,7 +1458,7 @@ acb5b428-6901-489e-aaff-55bcaadd29d3	Puesto de Salud	P1 Sospechosos	Consentimien
 158f9f7a-3007-4f72-b8b1-31a8bc832735	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	5	Diarrea Y Respiratoria	NULL			NULL	304	8	1	1	Checkpoint
 0f691c9e-9fe6-4a84-aa57-87f5ffdbfc2f	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	5.1	El paciente es elegible para los estudios de Diarrea y Respiratorio.	NULL			NULL	304	9	2	1	Info
 21323e55-3c6b-4bd1-8cf5-bfb705130e1c	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	6	Si paciente NO es elegible para Diarrea ni Respiratoria ni Febriles	NULL			NULL	304	10	1	1	Checkpoint
-399e9e94-2273-4bcf-9d95-6fb3b9777fca	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	6.1	El paciente NO cumple con los criterios de inclusión.  Agradezca a la persona por el tiempo y la información que compartió con nosotros.  Hágale saber que afortunada- mente no tiene el tipo de enfer- medad que estamos estudiando.	NULL			NULL	304	11	2	1	Info
+399e9e94-2273-4bcf-9d95-6fb3b9777fca	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	6.1	El paciente NO cumple con los criterios de inclusión.  Agradezca a la persona por el tiempo y la información que compartió con nosotros.  Hágale saber que afortunadamente no tiene el tipo de enfermedad que estamos estudiando.	NULL			NULL	304	11	2	1	Info
 df27b09c-e087-4872-8eb8-e4370302d42f	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	7	Si el paciente es elegible para al menos uno de los estudios	NULL			NULL	304	12	1	1	Checkpoint
 120c9a82-c0aa-4c7a-a8df-cb4d81457b91	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	7.1	El paciente CUMPLE con los criterios de inclusión.  En este momento debe proporcionarle al paciente el Consentimiento (y si aplica, Asentimiento) escrito para que lo lean y lo firmen si están de acuerdo.	NULL			NULL	304	13	2	1	Info
 22ca9d39-0d32-4d0a-a4a8-09749a2b44da	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	7.2	Anote si el paciente o su padre/tutor dio su consentimiento escrito	Debe indicar si el paciente o persona responsable de éste dio el CONSENTIMIENTO para ser incluido en el estudio.			consentimientoEscrito	304	14	2	1	Question
@@ -1478,8 +1478,8 @@ ae5d49f6-30d6-419e-8a1a-a979b5e330c9	Puesto de Salud	P1 Sospechosos	Consentimien
 e5185eb9-17d1-4127-a2ff-fe976aba2122	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	7.5.2.2.1	Especifique la razón por la que NO se  inscribe	Especifique la razón por la que el paciente NO SE INSCRIBE en el estudio.			pacienteInscritoViCoNoRazon_Otra	304	28	5	1	Question
 e58dcf1d-520a-4c69-8b84-dce6f96bdb29	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	7.5.3	Si se inscribe al paciente	NULL			NULL	304	29	3	1	Checkpoint
 929044bc-bd90-4e0a-8ca8-07a282d701ca	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	7.5.3.1	Ingrese el código de la etiqueta que identificará al paciente y sus muestras	Ingrese el código de la etiqueta que identificará paciente y sus muestras.			SASubjectID	304	30	4	1	Question
-e1e67d8c-024a-4af0-a6a9-f5f35c624547	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	7.5.3.2	¿Hay un número teléfonico a donde podamos contactarle?	NULL			telefonoTiene	304	31	4	1	Question
-ad997953-d760-4ff0-a28d-99bd0563bb5c	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	7.5.3.3	Si tiene un número teléfonico:	NULL			NULL	304	32	4	1	Checkpoint
+e1e67d8c-024a-4af0-a6a9-f5f35c624547	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	7.5.3.2	¿Hay un número telefónico a donde podamos contactarle?	NULL			telefonoTiene	304	31	4	1	Question
+ad997953-d760-4ff0-a28d-99bd0563bb5c	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	7.5.3.3	Si tiene un número telefónico:	NULL			NULL	304	32	4	1	Checkpoint
 3496fa15-cdcc-4e9e-bc64-9298a4a1e357	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	7.5.3.3.1	Número de teléfono:	NULL			telefonoNumero	304	33	5	1	Question
 7a797ce4-8341-4836-8912-cb9e2a9d56b6	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	7.5.3.4	Si la enfermedad empezó hace 3 días o menos y elegibleETI_MSP es "Sí"	NULL			NULL	304	34	4	1	Checkpoint
 c3b7a3de-0748-43fd-a600-7002cc77f795	Puesto de Salud	P1 Sospechosos	Consentimiento y Enrolamiento	7.5.3.4.1	¡¡EL PACIENTE ES ELEGIBLE PARA VIGILANCIA DE INFLUENZA!!  Marque todas las etiquetas con marcador ROSADO.	NULL			NULL	304	35	5	1	Info
@@ -1494,7 +1494,7 @@ e4f2f8fa-80cb-49a8-a9c4-6c5cf9af3d3c	Puesto de Salud	P5 Muestras	Muestras de ViC
 867536f1-942e-4e57-aea9-a966a61ff39e	Puesto de Salud	P5 Muestras	Muestras de ViCo	1.3.1	¿Colectó un hisopo tipo Cary Blair?	NULL			muestraHecesHisopoCaryBlairColecta	305	8	3	1	Question
 bc5f104e-ef4d-47a1-9b79-7a57d792f731	Puesto de Salud	P5 Muestras	Muestras de ViCo	1.3.2	Si colectó hisopo tipo Cary Blair	NULL			NULL	305	9	3	1	Checkpoint
 2ab0a5f4-439f-4230-8738-9caebd78c6bf	Puesto de Salud	P5 Muestras	Muestras de ViCo	1.3.2.1	¿Cuándo obtuvo el hisopo tipo Cary Blair?	NULL			muestraHecesHisopoCaryBlairFechaHora	305	10	4	1	Question
-d4450f39-9f0c-41e8-b5ae-723ae2981002	Puesto de Salud	P5 Muestras	Muestras de ViCo	1.3.2.2	¿Cómo obtuvó el hisopo Cary Blair?	NULL			muestraHecesHisopoCaryBlairTipo	305	11	4	1	Question
+d4450f39-9f0c-41e8-b5ae-723ae2981002	Puesto de Salud	P5 Muestras	Muestras de ViCo	1.3.2.2	¿Cómo obtuvo el hisopo Cary Blair?	NULL			muestraHecesHisopoCaryBlairTipo	305	11	4	1	Question
 fd3b5524-1514-4601-a5db-0e1616dd10f5	Puesto de Salud	P5 Muestras	Muestras de ViCo	1.3.3	Si NO colectó hisopo tipo Cary Blair	NULL			NULL	305	12	3	1	Checkpoint
 3b21cd73-b72e-4940-b3c8-10e33035a5ca	Puesto de Salud	P5 Muestras	Muestras de ViCo	1.3.3.1	¿Por qué no pudo conseguir un hisopo tipo Cary Blair?	NULL			muestraHecesHisopoCaryBlairNoRazon	305	13	4	1	Question
 f6fbbfa6-6646-4165-9287-b2ba9a1b3fa3	Puesto de Salud	P5 Muestras	Muestras de ViCo	1.3.3.2	Si la razón es "Otra"	NULL			NULL	305	14	4	1	Checkpoint
@@ -1522,7 +1522,7 @@ ac64b01e-8c44-4dc3-b015-d1f38c78abe3	Puesto de Salud	P5 Muestras	Muestras de ViC
 db1eb203-bae2-4187-9d66-09bc3764ccb1	Puesto de Salud	P2 Informe del Caso	L - Hx Común	1	Vómitos	NULL			hxC_Vomitos	318	1	1	1	Question
 15615ad5-42ee-48ff-913c-6f604164c061	Puesto de Salud	P2 Informe del Caso	L - Hx Común	2	Si tiene vómitos	NULL			NULL	318	2	1	1	Checkpoint
 a8bc193f-8569-4e97-b94b-50952a990ba8	Puesto de Salud	P2 Informe del Caso	L - Hx Común	2.1	Pregunte al paciente: "¿En su peor día, cuántas veces vomitó?"	NULL			hxC_VomitosVeces	318	3	2	1	Question
-58ec9bc3-ffca-41f6-8e3a-addfadd48a42	Puesto de Salud	P2 Informe del Caso	L - Hx Común	2.2	Pregunte al paciente: "¿De los últimos ocho dias, cuántos dias tuvo vómitos?"	NULL			hxC_Vomitos8Dias	318	4	2	1	Question
+58ec9bc3-ffca-41f6-8e3a-addfadd48a42	Puesto de Salud	P2 Informe del Caso	L - Hx Común	2.2	Pregunte al paciente: "¿De los últimos ocho días, cuántos días tuvo vómitos?"	NULL			hxC_Vomitos8Dias	318	4	2	1	Question
 0fb75cf8-5a02-48a5-a647-e022cbd1a823	Puesto de Salud	P2 Informe del Caso	L - Hx Común	2.3	Pregunte al paciente: "¿Actualmente tiene vómitos?"	NULL			hxC_VomitosActual	318	5	2	1	Question
 77eda258-7855-4f66-849d-8c7731785c28	Puesto de Salud	P2 Informe del Caso	L - Hx Común	3	Escalofríos	NULL			hxC_Escalofrios	318	6	1	1	Question
 425f5f77-a03e-46c7-8707-1d55c8ded26b	Puesto de Salud	P2 Informe del Caso	L - Hx Común	4	Si tiene escalofríos	NULL			NULL	318	7	1	1	Checkpoint
@@ -1557,7 +1557,7 @@ b3998933-a358-4ba1-96c2-3be25a68c56b	Puesto de Salud	P2 Informe del Caso	C - Hx 
 906743b7-2c50-42ff-965c-e86e0e8e66d4	Puesto de Salud	P2 Informe del Caso	C - Hx Diarrea	10.1	Pregunte al padre/tutor: "¿Su hijo/a bebe ávidamente con sed mayor de lo usual?"	NULL			hxD_bebeConSed	306	13	2	1	Question
 55e52b3c-0dbe-4060-9993-5a5376cf81a8	Puesto de Salud	P2 Informe del Caso	C - Hx Diarrea	10.2	Pregunte al padre/tutor: "¿Su hijo/a es más irritable/incómodo/intranquilo de lo normal?"	NULL			hxD_irritableIncomodoIntranquilo	306	14	2	1	Question
 6af98bab-92f6-43c0-a39b-7e1976317c6b	Puesto de Salud	P2 Informe del Caso	D - Hx Respiratoria	1	Diga al paciente: "Gracias por su paciencia. Voy a hacerle algunas preguntas sobre los síntomas de su enfermedad respiratoria actual."	NULL			NULL	315	1	1	1	Info
-f3219f6e-5f71-4056-a288-532f85f736b5	Puesto de Salud	P2 Informe del Caso	D - Hx Respiratoria	2	¿Hace cuántos dias empezó el primer síntoma de su enfermedad respiratoria? (No incluya el día actual en la cuenta.)	NULL			respiraEmpezoHaceDias	315	2	1	1	Question
+f3219f6e-5f71-4056-a288-532f85f736b5	Puesto de Salud	P2 Informe del Caso	D - Hx Respiratoria	2	¿Hace cuántos días empezó el primer síntoma de su enfermedad respiratoria? (No incluya el día actual en la cuenta.)	NULL			respiraEmpezoHaceDias	315	2	1	1	Question
 2e1462cf-95c1-44b1-a8b0-c4d368f9f081	Puesto de Salud	P2 Informe del Caso	D - Hx Respiratoria	3	Esputo o flema	Debe preguntarle al paciente si ha tenido dificultad para respirar durante su enfermedad.			sintomasRespiraEsputo	315	3	1	1	Question
 272ca4e8-511e-4358-a4df-7c6066317a43	Puesto de Salud	P2 Informe del Caso	D - Hx Respiratoria	4	Esputo con sangre	NULL			sintomasRespiraHemoptisis	315	4	1	1	Question
 700692a9-6d0e-4522-baf7-4f6618c34236	Puesto de Salud	P2 Informe del Caso	D - Hx Respiratoria	5	Si el paciente es igual o mayor de 2 años	NULL			NULL	315	5	1	1	Checkpoint
@@ -1569,10 +1569,10 @@ f739177a-ddf7-4263-8f7f-83e548aa85f9	Puesto de Salud	P2 Informe del Caso	D - Hx 
 b2a4d844-7631-47b3-8b13-8ad36ac66f9a	Puesto de Salud	P2 Informe del Caso	D - Hx Respiratoria	9	Si el paciente es menor de 2 años	NULL			NULL	315	11	1	1	Checkpoint
 99383c35-afa7-4391-b231-6c67425f9137	Puesto de Salud	P2 Informe del Caso	D - Hx Respiratoria	9.1	¿Pausa repetidamente para respirar cuando esta amamantando o bebiendo?	NULL			sintomasRespiraNinioPausaRepedimente	315	12	2	1	Question
 6d0f0d49-8624-4c2e-85e8-5eb326de6cd6	Puesto de Salud	P2 Informe del Caso	D - Hx Respiratoria	9.2	¿Tiene aleteo nasal?	NULL			sintomasRespiraNinioAleteoNasal	315	13	2	1	Question
-06d5ea17-8c02-4a46-a905-e8cdd1cbe7e8	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	1	Diga al paciente: "Para las siguientes preguntas me gustaría que pensara desde el primer dia que iniciaron las molestias de esta enfermedad."	NULL			NULL	307	1	1	1	Info
+06d5ea17-8c02-4a46-a905-e8cdd1cbe7e8	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	1	Diga al paciente: "Para las siguientes preguntas me gustaría que pensara desde el primer día que iniciaron las molestias de esta enfermedad."	NULL			NULL	307	1	1	1	Info
 d793ab2e-9f49-4ccb-817d-6cd6b95d24f7	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	2	¿Buscó tratamiento para esta enfermedad en algún lugar (como centro o puesto de salud, farmacia, tienda) o con alguna persona (como médico privado, comadrona, amiga) antes de venir aquí al puesto?	NULL			buscoTratamientoAntes	307	2	1	1	Question
 77aec238-80c2-43c8-b8a6-3d4f4a6b7538	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	3	Si el paciente buscó tratamiento en algún lugar antes de venir al puesto	NULL			NULL	307	3	1	1	Checkpoint
-cd75cbf7-e0de-4b22-9fcf-a8df54cacca4	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	3.1	Cuando comenzó su enfermedad, ¿a dónde o a quién fue a buscar tratamiento? (marque todos los que aplican)	Indica qué tipo de establecimiento o persona es este.			otroTrat	307	4	2	1	Question
+cd75cbf7-e0de-4b22-9fcf-a8df54cacca4	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	3.1	Cuando comenzó su enfermedad, ¿A dónde o con  quién fue a buscar tratamiento? (marque todos los que aplican)	Indica qué tipo de establecimiento o persona es este.			otroTrat	307	4	2	1	Question
 5c41aa6b-e9b3-4250-aca9-f0eb290abc2a	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	3.2	Si es puesto de salud o centro de salud	NULL			NULL	307	5	2	1	Checkpoint
 fcfbf8b2-cd06-4114-b0fc-7b63f0207eb0	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	3.2.1	¿En qué municipio se encuentra el último servicio de salud que visitó?	NULL			otroTratMunicipio	307	6	3	1	Question
 c185baac-75e1-45c6-a09e-e46e686be70d	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	3.2.2	Si está en Nueva Santa Rosa	NULL			NULL	307	7	3	1	Checkpoint
@@ -1586,8 +1586,8 @@ dab942bb-2cea-4bbb-a226-476b4f1eeadb	Puesto de Salud	P2 Informe del Caso	B - Hx 
 6060272e-4966-49ca-a59e-ff563f0ffdd3	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	5.2.1	Especifique el hospital:	NULL			otroHospitalMesAnteriorNombreEsp	307	15	3	1	Question
 77d611b8-2ddc-4490-8939-ec56dbafc17b	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	5.3	¿Cuántas noches duró esa otra hospitalización?	NULL			otroHospitalMesAnteriorNoches	307	16	2	1	Question
 68718d6b-b244-4384-af7d-50e6e0b33807	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	5.4	¿Cuántos días antes de esta admisión pasaron desde que egresó de esa otra hospitalización?	NULL			otroHospitalMesAnteriorDiasAntes	307	17	2	1	Question
-0e99223b-cf95-4a61-b793-f2f1871df966	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	6	¿Ha tomado algún medicamento en los últimos 3 dias (72 horas)?	NULL			tomadoMedicamentoUltimas72hora	307	18	1	1	Question
-cc445b86-b869-455f-8020-4a1d1a560cf9	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	7	Si ha tomado algún medicamento en las últimos 3 dias (72 horas)	NULL			NULL	307	19	1	1	Checkpoint
+0e99223b-cf95-4a61-b793-f2f1871df966	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	6	¿Ha tomado algún medicamento en los últimos 3 días (72 horas)?	NULL			tomadoMedicamentoUltimas72hora	307	18	1	1	Question
+cc445b86-b869-455f-8020-4a1d1a560cf9	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	7	Si ha tomado algún medicamento en las últimos 3 días (72 horas)	NULL			NULL	307	19	1	1	Checkpoint
 87f82a1d-5392-45d1-863f-0996c130422b	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	7.1	Antibióticos	NULL			medUltimas72HorasAntiB	307	20	2	1	Question
 d495d575-0548-42bf-bf76-2b603c9a4d4a	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	7.2	Si en los últimos 3 días, ha tomado antibióticos	NULL			NULL	307	21	2	1	Checkpoint
 e9f351b7-8fe5-477a-9b57-9b470120371a	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	7.2.1	¿Cuál fue el último lugar donde consiguió antibióticos?	NULL			medUltimas72HorasAntiBDonde	307	22	3	1	Question
@@ -1604,7 +1604,7 @@ cbe35a93-6b3d-4abd-9821-899d18a8c225	Puesto de Salud	P2 Informe del Caso	B - Hx 
 3fa4ba01-8871-4437-84e1-7428f2d8e203	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	8.2	Si ha tomado sueros o sales	NULL			NULL	307	33	2	1	Checkpoint
 adf8d04a-c0a5-4efb-aa8d-280b45ca93f3	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	8.2.1	¿Qué clase de rehidratación oral recibió?	NULL			claseSRORecibido	307	34	3	1	Question
 43a0c271-68c0-4450-bce5-7db1e38a3753	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	8.2.2	Si en sobrecito o ambos	NULL			NULL	307	35	3	1	Checkpoint
-c66d3478-7988-4aac-b61a-66cf7f7b3a2e	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	8.2.2.1	¿De dónde obtuvó los sobrecitos?	NULL			sobrecitoDondeObtuvo	307	36	4	1	Question
+c66d3478-7988-4aac-b61a-66cf7f7b3a2e	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	8.2.2.1	¿De dónde obtuvo los sobrecitos?	NULL			sobrecitoDondeObtuvo	307	36	4	1	Question
 c1b2d375-854b-4e7a-98e6-383091e3ff76	Puesto de Salud	P2 Informe del Caso	B - Hx de Tratamiento	NULL	¿Paciente mencionó hospital como otro tratamiento?	NULL			otroTratamientoMencionoHospital	307	0	1	1	Variable
 b8a4546e-633f-45ba-bde6-68c880ddcfaa	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1	Si el paciente es menor de 5 años de edad	NULL			NULL	308	1	1	1	Checkpoint
 349a0223-ebef-456d-8052-01bb882dd5ce	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.1	Pregunte al padre/tutor: "¿Tiene con Ud. la ficha de vacunación?"	NULL			tieneFichaVacunacion	308	2	2	1	Question
@@ -1617,7 +1617,7 @@ b8a4546e-633f-45ba-bde6-68c880ddcfaa	Puesto de Salud	P2 Informe del Caso	A - Enf
 01c27d72-befb-4829-b844-fd03583d815a	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.4.1	Pregunte al paciente si ha recibido la vacuna triple (DPT).	NULL			vacunaTripleSarampionRecibido	308	9	4	1	Question
 a0a79f22-ac32-47a1-a39c-225edf7fe70f	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.4.2	Si ha recibido la triple	NULL			NULL	308	10	4	1	Checkpoint
 f22e7e4b-d26f-4a07-bd39-b88be1cda79f	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.4.2.1	¿Cuántas dosis de la triple ha recibido?	NULL			vacunaTripleSarampionDosis	308	11	5	1	Question
-e9431624-2e0f-41aa-b1a0-bfa28b57c39f	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.5	Pregunte al paciente si ha recibido la vacuna para sarampión, paperas y rubela (SPR).	NULL			vacunaSarampionPaperasRubella	308	12	3	1	Question
+e9431624-2e0f-41aa-b1a0-bfa28b57c39f	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.5	Pregunte al paciente si ha recibido la vacuna para sarampión, paperas y rubeola (SPR).	NULL			vacunaSarampionPaperasRubella	308	12	3	1	Question
 711584cc-752a-44ca-bf48-f7a723b28b0d	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.6	Pregunte al paciente si ha recibido la vacuna contra rotavirus.	NULL			vacunaRotavirusRecibido	308	13	3	1	Question
 7aacacd9-6a9f-4023-b6e5-2480abc26456	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.7	Si ha recibido vacuna contra rotavirus:	NULL			NULL	308	14	3	1	Checkpoint
 a87f13fc-58dd-45c0-94e1-0705bbbb9615	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.2.7.1	¿Cuántas dosis de la vacuna contra rotavirus ha recibido?	NULL			vacunaRotavirusDosis	308	15	4	1	Question
@@ -1629,7 +1629,7 @@ bd8b7518-3817-447f-9336-7f511390baaf	Puesto de Salud	P2 Informe del Caso	A - Enf
 511e4790-ef31-46d9-a0fb-1dc78ae4a3d7	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.3.1	Anote de la ficha si el paciente ha recibido la vacuna triple (DPT).	NULL			vacunaTripleSarampionRecibido	308	21	4	1	Question
 2663198e-e070-40c3-b807-965eca1fd935	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.3.2	Si ha recibido la triple	NULL			NULL	308	22	4	1	Checkpoint
 c757bf22-c2f0-4020-baa5-4c2933b39bab	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.3.2.1	¿Cuántas dosis de la triple ha recibido?	NULL			vacunaTripleSarampionDosis	308	23	5	1	Question
-714a20a8-52f8-41b9-9a69-31f2d1f16ad9	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.4	Anote de la ficha si el paciente ha recibido la vacuna para sarampión, paperas y rubela (SPR).	NULL			vacunaSarampionPaperasRubella	308	24	3	1	Question
+714a20a8-52f8-41b9-9a69-31f2d1f16ad9	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.4	Anote de la ficha si el paciente ha recibido la vacuna para sarampión, paperas y rubeola (SPR).	NULL			vacunaSarampionPaperasRubella	308	24	3	1	Question
 f4e61244-97b1-471d-9f44-d87905ed877b	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.5	Anote de la ficha si el paciente ha recibido la vacuna contra rotavirus.	NULL			vacunaRotavirusRecibido	308	25	3	1	Question
 c1fc558d-ae56-41d3-8c84-de5464f26a59	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.6	Si ha recibido la vacuna contra rotavirus:	NULL			NULL	308	26	3	1	Checkpoint
 4469bfe1-94fd-4be8-8b7a-23f6e7f12d97	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	1.3.6.1	¿Cuántas dosis de la vacuna contra rotavirus ha recibido?	NULL			vacunaRotavirusDosis	308	27	4	1	Question
@@ -1641,7 +1641,7 @@ fa9e3599-2779-4ff4-904a-d01e0cdf1f3c	Puesto de Salud	P2 Informe del Caso	A - Enf
 5744ae69-cfec-406c-a2de-8fe63b506cdb	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	7	Enfermedad del hígado (ej., cirrosis, hepatitis crónica)	NULL			enfermedadesCronicasEnfermHigado	308	33	1	1	Question
 7500a8aa-bac0-479f-ab74-1dbbdb270ddf	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	8	Enfermedad del riñón (ej., insuficiencia o fallo renal)	NULL			enfermedadesCronicasEnfermRinion	308	34	1	1	Question
 f82d81f0-2c40-4e1d-aa54-7ec1aef4383f	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	9	Enfermedad de los pulmones (ej. EPOC, enfisema, enfermedad crónica y obstructiva de los pulmones)	NULL			enfermedadesCronicasEnfermPulmones	308	35	1	1	Question
-bae4f7ef-befb-4d4b-b3e5-709c52a535fa	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	10	VIH/SIDA u otra imunodeficiencia	NULL			enfermedadesCronicasVIHSIDA	308	36	1	1	Question
+bae4f7ef-befb-4d4b-b3e5-709c52a535fa	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	10	VIH/SIDA u otra inmunodeficiencia	NULL			enfermedadesCronicasVIHSIDA	308	36	1	1	Question
 9c6dd8dc-5ec8-4d07-823a-8d1abb24ea8a	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	11	Si el paciente es mayor o igual a 18 años de edad	NULL			NULL	308	37	1	1	Checkpoint
 0103b1b3-cdd7-428f-ba63-b4da2899baad	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	11.1	Hipertensión	NULL			enfermedadesCronicasHipertension	308	38	2	1	Question
 2bcba743-cf79-42dd-a359-e325194b185f	Puesto de Salud	P2 Informe del Caso	A - Enfermedades Crónicas y Vacunas	12	Otras enfermedades crónicas	NULL			enfermedadesCronicasOtras	308	39	1	1	Question
@@ -1659,8 +1659,8 @@ eec77060-2761-4778-a42b-127c85f15c45	Puesto de Salud	P2 Informe del Caso	A - Enf
 2570963d-79b6-427b-9e0e-c319461a6acf	Puesto de Salud	P2 Informe del Caso	F - Factores de Riesgo	3	Si ha pasado 1 noche o más fuera de su casa	NULL			NULL	309	3	1	1	Checkpoint
 2a4e7cb1-df27-440d-86c0-8f4663073a0f	Puesto de Salud	P2 Informe del Caso	F - Factores de Riesgo	3.1	En el mes antes del que se enfermó. ¿Nos puede decir dónde estuvo? Seleccione la respuesta adecuada.	NULL			pacienteVisitoOtroLugar	309	4	2	1	Question
 56fd9bd0-7a8e-46be-a999-fb1556bfccc5	Puesto de Salud	P2 Informe del Caso	F - Factores de Riesgo	3.2	Si sabe dónde estuvo	NULL			NULL	309	5	2	1	Checkpoint
-4ad5489f-065f-4e58-9996-add0a2fd57bf	Puesto de Salud	P2 Informe del Caso	F - Factores de Riesgo	3.2.1	Si estuvo en otro pais	NULL			NULL	309	6	3	1	Checkpoint
-880730e3-77bc-40f4-b182-5386001f8947	Puesto de Salud	P2 Informe del Caso	F - Factores de Riesgo	3.2.1.1	¿Cuál otro pais?	NULL			pacienteVisitoOtroPais	309	7	4	1	Question
+4ad5489f-065f-4e58-9996-add0a2fd57bf	Puesto de Salud	P2 Informe del Caso	F - Factores de Riesgo	3.2.1	Si estuvo en otro país	NULL			NULL	309	6	3	1	Checkpoint
+880730e3-77bc-40f4-b182-5386001f8947	Puesto de Salud	P2 Informe del Caso	F - Factores de Riesgo	3.2.1.1	¿Cuál otro país?	NULL			pacienteVisitoOtroPais	309	7	4	1	Question
 56f6866e-c5c0-465b-93c0-8e3b9cf2b864	Puesto de Salud	P2 Informe del Caso	F - Factores de Riesgo	3.3	¿Hace cuántos días regresó de su viaje? (Ingrese "99" si no sabe)	NULL			pacienteVisitoRegresoDias	309	8	2	1	Question
 7bd9dc24-3403-46ad-a51d-84ca0c081790	Puesto de Salud	P2 Informe del Caso	F - Factores de Riesgo	4	En el mes antes que se enfermó ¿Lo mordió algún animal?	NULL			pacienteMordioAnimal	309	9	1	1	Question
 126a64d2-cb61-4a90-b417-f6e96efb702c	Puesto de Salud	P2 Informe del Caso	F - Factores de Riesgo	5	Si lo mordió algún animal	NULL			NULL	309	10	1	1	Checkpoint
@@ -1776,10 +1776,10 @@ a90818b7-5276-469d-a1ef-72dd4701dca3	Puesto de Salud	HCP9 Seguimiento	HCP9 Segui
 9e305dce-4777-4894-8a87-870ff02481ed	Puesto de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.6.3.1	¿Por qué enfermedad fue admitido al hospital?	NULL			seguimientoAdmitidoEnfermedad	313	18	4	1	Question
 b8cb2750-b697-45ac-9f74-a7ce15df1ae4	Puesto de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.6.3.2	Si la enfermedad es OTRA	NULL			NULL	313	19	4	1	Checkpoint
 2d500f83-4827-4a01-aa1a-fa646ec5fe86	Puesto de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.6.3.2.1	Especifique la otra enfermedad:	NULL			seguimientoAdmitidoEnfermedadEsp	313	20	5	1	Question
-01c4f7ec-80ac-4628-be06-4dd8685accd1	Puesto de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.7	¿Recibió tabletas de zinc o una receta para tomar zinc durante su reciente hospitalización o visita al servico de salud?	NULL			seguimientoZinc	313	21	2	1	Question
+01c4f7ec-80ac-4628-be06-4dd8685accd1	Puesto de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.7	¿Recibió tabletas de zinc o una receta para tomar zinc durante su reciente hospitalización o visita al servicio de salud?	NULL			seguimientoZinc	313	21	2	1	Question
 b1861b9d-3cf4-4034-af47-054728a9eacc	Puesto de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.8	Si recibió zinc	NULL			NULL	313	22	2	1	Checkpoint
 67da7041-971f-4294-a8c3-e115196de325	Puesto de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.8.1	¿Cuántas tabletas recibió?	NULL			seguimientoZincTabletas	313	23	3	1	Question
-073fe2e0-f1fe-4807-922a-7299388debca	Puesto de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.8.2	¿Cuántas tabletas le quedan al dia de hoy?	NULL			seguimientoZincTabletasQuedan	313	24	3	1	Question
+073fe2e0-f1fe-4807-922a-7299388debca	Puesto de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.8.2	¿Cuántas tabletas le quedan al día de hoy?	NULL			seguimientoZincTabletasQuedan	313	24	3	1	Question
 272bae13-48e1-429a-a81e-0bf49893873d	Puesto de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.8.3	¿Cuántas tabletas tomó, en total?	NULL			seguimientoZincTabletasTomo	313	25	3	1	Question
 ba4a7731-d93d-4b03-b3a7-5f51a0f67d05	Puesto de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.8.4	¿Cuántas tabletas tomó por día?	NULL			seguimientoZincTabletasPorDia	313	26	3	1	Question
 fce40478-b454-47b9-9e85-c6358d0c2340	Puesto de Salud	HCP9 Seguimiento	HCP9 Seguimiento	4.8.5	¿Por cuántos días tomó las tabletas?	NULL			seguimientoZincTabletasDiasTomo	313	27	3	1	Question
@@ -1812,22 +1812,22 @@ d912528c-14b9-4b23-9a90-3e9a0dda454f	Puesto de Salud	P1 Sospechosos	Consentimien
 8ae6d334-9220-4400-a2b2-c1b04e439a88	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente está elegible para el estudio de IMCI?	NULL			elegibleRespiraIMCI	302	0	1	1	Variable
 04c12310-94b0-427e-8c6e-3ce98166e4f5	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente está elegible para el estudio de respiratorio de ViCo tradicional?	NULL			elegibleRespiraViCo	302	0	1	1	Variable
 d0c93c22-cc71-42eb-b980-0a3291a5f2bf	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente está elegible para el estudio de zinc?	NULL			elegibleZinc	302	0	1	1	Variable
-0f7ff451-fc32-4264-80b2-1d10b78e92b6	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	Semana epidemiologica de admisión o presentación del paciente	NULL			epiWeekAdmision	302	0	1	1	Variable
-4352c2d1-859c-4e7d-9c9f-7198eb9772d8	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	Año epidemiologica de admisión o presentación del paciente	NULL			epiYearAdmision	302	0	1	1	Variable
-b6f5206a-896b-44fd-b4a9-43646360d186	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	El año y semana epidemiologica de admisión o presentación del paciente	NULL			epiYearWeekAdmision	302	0	1	1	Variable
+0f7ff451-fc32-4264-80b2-1d10b78e92b6	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	Semana epidemiológica de admisión o presentación del paciente	NULL			epiWeekAdmision	302	0	1	1	Variable
+4352c2d1-859c-4e7d-9c9f-7198eb9772d8	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	Año epidemiológico de admisión o presentación del paciente	NULL			epiYearAdmision	302	0	1	1	Variable
+b6f5206a-896b-44fd-b4a9-43646360d186	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	El año y semana epidemiológica de admisión o presentación del paciente	NULL			epiYearWeekAdmision	302	0	1	1	Variable
 0173e47b-4b14-49f4-8570-062e19bcaaed	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	La fecha de admisión o presentación del paciente	NULL			fechaAdmision	302	0	1	1	Variable
 35a47ca2-ab9f-4173-9ecd-ab8c6680aab1	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente tiene fiebre documentada o una historia de fiebre o calentura que empezó menos de hace 7 días?	NULL			fiebreOHistoriaFiebre	302	0	1	1	Variable
 9c7cb00f-2954-4510-92be-5c36ec312dc7	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente tiene hipoxemia?	NULL			hipoxemia	302	0	1	1	Variable
 fa964efe-3c09-49d1-bcb3-ad1ef1cbf0b9	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente encontramos en un Hospital?	NULL			hospital	302	0	1	1	Variable
 bb876b2e-2181-43f0-964d-c500ddd4d3ad	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	El mes de calendario de admisión o presentación del paciente	NULL			mesAdmision	302	0	1	1	Variable
-cfdd878a-c430-4940-81f5-20f23649f15c	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿La condición del paciente sopechoso (no inscrito en ViCo) es moribundo (al punto de morirse)?	NULL			moribundoSospechoso	302	0	1	1	Variable
-f318d35d-4dd6-40c9-a026-6371628370ab	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	La fecha cuando indicamos que este paciente sopechoso (no inscrito en ViCo) es moribundo	NULL			moribundoSospechosoFecha	302	0	1	1	Variable
+cfdd878a-c430-4940-81f5-20f23649f15c	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿La condición del paciente sospechoso (no inscrito en ViCo) es moribundo (al punto de morirse)?	NULL			moribundoSospechoso	302	0	1	1	Variable
+f318d35d-4dd6-40c9-a026-6371628370ab	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	La fecha cuando indicamos que este paciente sospechoso (no inscrito en ViCo) es moribundo	NULL			moribundoSospechosoFecha	302	0	1	1	Variable
 10736ea5-7ad7-4048-8dac-7c9974e1b8f6	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿La condición del paciente inscrito en ViCo es moribundo (al punto de morirse)?	NULL			moribundoViCo	302	0	1	1	Variable
 3a418b5b-57f5-4343-9a6d-85e3cdd8e33a	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	La fecha cuando indicamos que este paciente de ViCo es moribundo:	NULL			moribundoViCoFecha	302	0	1	1	Variable
 185102b7-0e48-4f5f-a168-ea439cb2fc51	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿En cuál paso del proceso de ViCo este paciente se murió?	NULL			muerteCualPaso	302	0	1	1	Variable
 54dffc32-45df-476b-ba50-75c94a9360ba	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿Este paciente se murió en el hospital?	NULL			muerteHospital	302	0	1	1	Variable
-9b3386db-a083-4f4e-bbda-7a8b97eaab14	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente sopechoso (no inscrito en ViCo) se murió?	NULL			muerteSospechoso	302	0	1	1	Variable
-301bd895-a814-4dbf-abf0-2b5366f27d90	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	La fecha cuando este paciente sopechoso (no inscrito en ViCo) se murió	NULL			muerteSospechosoFecha	302	0	1	1	Variable
+9b3386db-a083-4f4e-bbda-7a8b97eaab14	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente sospechoso (no inscrito en ViCo) se murió?	NULL			muerteSospechoso	302	0	1	1	Variable
+301bd895-a814-4dbf-abf0-2b5366f27d90	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	La fecha cuando este paciente sospechoso (no inscrito en ViCo) se murió	NULL			muerteSospechosoFecha	302	0	1	1	Variable
 ce928dfd-f4f2-44ae-a654-fcdb6b880a33	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente de ViCo se murió?	NULL			muerteViCo	302	0	1	1	Variable
 2709a332-d705-4e23-bac6-623fff6b115d	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	La fecha cuando este paciente de ViCo se murió	NULL			muerteViCoFecha	302	0	1	1	Variable
 390084b6-d4a0-46d3-95b3-145148af4a13	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	Nombre Completo	NULL			nombreCompleto	302	0	1	1	Variable
@@ -1842,7 +1842,7 @@ ac74028d-30e2-4b2f-a546-def6d8b11db7	Puesto de Salud	P1 Sospechosos	Consentimien
 734c67f5-362f-42cd-8d81-e7a95a648e96	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿En que tipo de sitio colectamos la información?	NULL			siteType	302	0	1	1	Variable
 f2b31b60-05b9-4ad1-9cea-431785264f71	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿En que tipo de sitio (número) colectamos la información?	NULL			siteTypeNumeric	302	0	1	1	Variable
 114fc5e3-462c-4ef6-ac49-eee33545572a	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	sospechosoETI_MSP	NULL			sospechosoETI_MSP	302	0	1	1	Variable
-9678fce1-f983-409f-88fc-5563b34031bf	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente es un caso sopechoso del estudio de febril?	NULL			sospechosoFebril	302	0	1	1	Variable
+9678fce1-f983-409f-88fc-5563b34031bf	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente es un caso sospechoso del estudio de febril?	NULL			sospechosoFebril	302	0	1	1	Variable
 ee16006a-2659-440f-8d67-92b3169c02f4	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	sospechosoIRAG	NULL			sospechosoIRAG	302	0	1	1	Variable
-ca5e6be2-19a9-470f-aaf9-a42b6e168744	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	La temperatura documentada más alta en las primeras 24 horas de admision.	NULL			temperaturaPrimeras24HorasCombin	302	0	1	1	Variable
+ca5e6be2-19a9-470f-aaf9-a42b6e168744	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	La temperatura documentada más alta en las primeras 24 horas de admisión.	NULL			temperaturaPrimeras24HorasCombin	302	0	1	1	Variable
 b7c66894-8507-4561-9c87-adeaacee4c89	Puesto de Salud	P1 Sospechosos	Consentimiento Verbal	NULL	¿El paciente recibió ventilación mecánica?	NULL			ventilacionMecanica	302	0	1	1	Variable
