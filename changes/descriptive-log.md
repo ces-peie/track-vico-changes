@@ -282,3 +282,13 @@ Third spelling revision
 Review and fix misspellings (third pass)
 
 
+
+---
+
+# Febrile Changes
+## `b153497c5d48d6af503fddab8c68dace46f733a2`
+### Juan Garcia
+#### 2015-11-02 16:36:11 -0600
+Febrile Changes
+We added new questions about how ask to the patient.
+
