@@ -82,6 +82,9 @@ dbe5777d-6333-4fe6-b223-cff54f8d593f	Hospital	H2 Inscripción	Revisión del Expedi
 	Hospital	H2 Inscripción	Revisión del Expediente Médico	12	Enfermera: Anote si está registrado que el paciente ha tenido “tos paroxística” o en “accesos”	Debe buscar en el registro medico si el paciente ha tenido “tos paroxística” o en “accesos”	addition		HistoriaParoxismos	5	23	1	1	Question
 	Hospital	H2 Inscripción	Revisión del Expediente Médico	13	Enfermera: Anote si está registrado en el expediente que el paciente presenta Estridor Inspiratorio	Debe buscar en el registro medico si el paciente ha presentado Estridor Inspiratorio	addition		HistoriaWhoop	5	24	1	1	Question
 	Hospital	H2 Inscripción	Revisión del Expediente Médico	14	Enfermera: Anote si está registrado en el expediente que el paciente presenta Vómito postusivo	Debe buscar en el registro medico si el paciente ha presentado Vómitos Postusivo	addition		historiaVomitoPostusivo	5	25	1	1	Question
+	Hospital	H2 Inscripción	Revisión del Expediente Médico	15	Si temperatura mayor a 38 grados o historia de fiebre o sospechoso febril	Hacer condición de checkpoint			NULL	5	26	1	1	Checkpoint
+	Hospital	H2 Inscripción	Revisión del Expediente Médico	15.1	Enfermera: Anote si se registro en el expediente: Hepatomegalia	(op: si, no , no esta anotado)	addition		HistoriaHepatomegalia	5	27	2	1	Question
+	Hospital	H2 Inscripción	Revisión del Expediente Médico	15.2	Enfermera: Anote si se registro en el expediente: Esplenomegalia 	(op: si, no , no esta anotado)			HistoriaEsplenomegalia	5	28	2	1	Question
 d7623536-9081-4369-a78a-e1dc212e99a5	Hospital	H2 Inscripción	Común	1	Ahora va a entrevistar al paciente, o a su padre/tutor si es menor de edad. Por favor, diga al paciente o a su padre/tutor que quiere hacerle varias preguntas que servirán para ver si es elegible para participar en este estudio.	NULL			NULL	6	1	1	1	Info
 56a4cb22-7971-4b04-a1f3-342e75fb42d2	Hospital	H2 Inscripción	Común	2	Enfermera: Verifique los primeros nombres del paciente	Debe ingresar los dos nombres del paciente si los tiene disponibles			nombres	6	2	1	1	Question
 aab11c20-46ce-4131-b32b-c33392284e78	Hospital	H2 Inscripción	Común	3	Enfermera: Verifique los apellidos del paciente	Debe ingresar los dos apellidos del paciente si los tiene disponibles.			apellidos	6	3	1	1	Question
@@ -159,7 +162,7 @@ da418d7e-145b-40fc-8aa4-f88be433e78d	Hospital	H2 Inscripción	Diarrea y Respirato
 7bcd1661-38b7-4d3f-9332-4cc1a6034aab	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.9	Si el paciente es menor de 2 años	NULL			NULL	7	31	2	1	Checkpoint
 27076f5c-8f36-4a9d-a112-231f51693c7b	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.9.1	Pregunte: ¿Su hijo/hija para de respirar cuando esta mamando o bebiendo?	NULL			sintomasRespiraNinioPausaRepedimente	7	32	3	1	Question
 3e6423e7-f901-473d-9c5d-bd720f6ebb12	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.9.2	OBSERVE: ¿Tiene aleteo nasal?	NULL			sintomasRespiraNinioAleteoNasal	7	33	3	1	Question
-77ccf0a8-11dd-4f42-928e-005ee90cc1e3	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.10	Enfermera: ¿Se pudo medir la tasa de respiración por minuto?	NULL			medidaRespiraPorMinuto	7	34	2	1	Question
+77ccf0a8-11dd-4f42-928e-005ee90cc1e3	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.1	Enfermera: ¿Se pudo medir la tasa de respiración por minuto?	NULL			medidaRespiraPorMinuto	7	34	2	1	Question
 ff32896d-a567-4e4c-84bd-f25a8cad3822	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.11	Si se pudo medir la tasa de respiración	NULL			NULL	7	35	2	1	Checkpoint
 ed4e796d-3ffc-4fa1-a340-6cc6130f49a1	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.11.1	Enfermera: Anote la tasa de respiración calculada: (Use el cronómetro de la PDA para esta medición)	NULL			respiraPorMinuto	7	36	3	1	Question
 6f9d99f6-f448-4057-9b0d-0ac37193698e	Hospital	H2 Inscripción	Diarrea y Respiratoria	3.12	Si el paciente tiene enfermedad respiratoria aguda	NULL			NULL	7	37	2	1	Checkpoint
@@ -362,55 +365,53 @@ add48411-744d-4fa1-848f-9075166965f4	Hospital	H3 Informe del Caso	K - Hx Febril	
 2db533f1-05f9-4f0f-bdb1-d7c3751016b7	Hospital	H3 Informe del Caso	K - Hx Febril	3	Si el paciente tiene 2 años o más	NULL			NULL	18	4	1	1	Checkpoint
 49e9a7f0-2a44-47b4-8118-68e4c59bb943	Hospital	H3 Informe del Caso	K - Hx Febril	3.1	Dolor detrás de los ojos	NULL			hxF_DolorDetrasOjos	18	5	2	1	Question
 81c30168-d5dd-40dc-9859-cc3b0c587ec1	Hospital	H3 Informe del Caso	K - Hx Febril	3.2	Si tiene dolor detrás de los ojos	NULL			NULL	18	6	2	1	Checkpoint
-5fe05ac9-eea1-4d8b-a05d-246d2024d063	Hospital	H3 Informe del Caso	K - Hx Febril	3.2.1	Pregunte: ¿Actualmente tiene dolor detrás de los ojos?	NULL			hxF_DolorDetrasOjosActual	18	7	3	1	Question
-f9a7326d-e78b-41e9-96d4-c713c2a4a262	Hospital	H3 Informe del Caso	K - Hx Febril	3.2.2	Pregunte: ¿Desde hace cuántos días empezó con dolor detrás de los ojos?	NULL			hxF_DolorDetrasOjosHaceDias	18	8	3	1	Question
+	Hospital	H3 Informe del Caso	K - Hx Febril	3.2.1	Pregunte: ¿Desde que día tuvo dolor detrás de los ojos?				hxF_DolorDetrasOjosDesde					
+	Hospital	H3 Informe del Caso	K - Hx Febril	3.2.2	Pregunte: ¿Hasta que día tuvo dolor detrás de los ojos?				hxF_DolorDetrasOjosHasta					
 d5eb721f-f3a6-4db5-a025-59d9e64b69b7	Hospital	H3 Informe del Caso	K - Hx Febril	3.3	Dolor en los camotes (pantorilla) 	NULL			hxF_DolorCamotes	18	9	2	1	Question
 0fb868f8-c9e9-4091-8224-c85be9f24bc8	Hospital	H3 Informe del Caso	K - Hx Febril	3.4	Si tiene dolor en los camotes	NULL			NULL	18	10	2	1	Checkpoint
-24483dfc-d651-4d9d-8936-38d005c34676	Hospital	H3 Informe del Caso	K - Hx Febril	3.4.1	¿Actualmente tiene dolor en los camotes?	NULL			hxF_DolorCamotesActual	18	11	3	1	Question
-8a98bee3-5b0e-44ea-8496-07e9e322d8d7	Hospital	H3 Informe del Caso	K - Hx Febril	3.4.2	Pregunte: ¿Desde hace cuántos días empezó con dolor en los camotes?	NULL			hxF_DolorCamotesHaceDias	18	12	3	1	Question
+	Hospital	H3 Informe del Caso	K - Hx Febril	3.4.1	Pregunte: ¿Desde que día tuvo dolor en los camotes?				hxF_DolorCamotesDesde	18	11	3	1	Question
+	Hospital	H3 Informe del Caso	K - Hx Febril	3.4.2	Pregunte: ¿Hasta que día tuvo dolor en los camotes?				hxF_DolorCamotesHasta	18	12	3	1	Question
 894bae67-0897-48aa-a769-28b3983c7d8c	Hospital	H3 Informe del Caso	K - Hx Febril	3.5	Dormido el cuerpo	NULL			hxF_DormidoCuerpo	18	13	2	1	Question
 0320d970-6952-40f6-ade6-378b039877b3	Hospital	H3 Informe del Caso	K - Hx Febril	3.6	Si tiene dormido el cuerpo	NULL			NULL	18	14	2	1	Checkpoint
-eb17f5e7-7937-4921-b122-a2e5f5a61382	Hospital	H3 Informe del Caso	K - Hx Febril	3.6.1	Pregunte: ¿Actualmente siente dormido el cuerpo?	NULL			hxF_DormidoCuerpoActual	18	15	3	1	Question
-6c1b3b1e-7f73-41b8-8c6f-4980ce321cab	Hospital	H3 Informe del Caso	K - Hx Febril	3.6.2	Pregunte: ¿Desde hace cuántos días empezó a sentir dormido el cuerpo?	NULL			hxF_DormidoCuerpoHaceDias	18	16	3	1	Question
+		H3 Informe del Caso	K - Hx Febril	3.6.1	Pregunte: ¿Desde que día tuvo dormido el cuerpo?				hxF_DormidoCuerpoDesde	18	15	3	1	Question
+		H3 Informe del Caso	K - Hx Febril	3.6.2	Pregunte: ¿Hasta que día tuvo dormido el cuerpo?				hxF_DormidoCuerpoHasta	18	16	3	1	Question
 8c537a8c-04c7-4c4e-a89e-94035f8cbdb5	Hospital	H3 Informe del Caso	K - Hx Febril	3.7	Dificultad para caminar	NULL			hxF_DificultadCaminar	18	17	2	1	Question
 d54be662-1d5f-45a2-8983-ccd1bb5e28c1	Hospital	H3 Informe del Caso	K - Hx Febril	3.8	Si tiene dificultad para caminar	NULL			NULL	18	18	2	1	Checkpoint
-6a082a39-2417-4798-b076-35ad2fa6512b	Hospital	H3 Informe del Caso	K - Hx Febril	3.8.1	Pregunte: ¿Actualmente tiene dificultad para caminar?	NULL			hxF_DificultadCaminarActual	18	19	3	1	Question
-26ffdc7f-2d3c-43e2-8a33-da8e72e7e291	Hospital	H3 Informe del Caso	K - Hx Febril	3.8.2	Pregunte: ¿Desde hace cuántos días empezó con dificultad para caminar?	NULL			hxF_DificultadCaminarHaceDias	18	20	3	1	Question
-e85cac5f-ca13-4bc7-a4d1-332c4fed2e57	Hospital	H3 Informe del Caso	K - Hx Febril	4	Pregunte: ¿En los últimos 3 días ha tenido o tiene: “rash” o “sarpullido” con picazón?	NULL			hxF_Rash	18	21	1	1	Question
+		H3 Informe del Caso	K - Hx Febril	3.8.1	Pregunte: ¿Desde que día tuvo dificultad para caminar?				hxF_DificultadCaminarDesde	18	19	3	1	Question
+		H3 Informe del Caso	K - Hx Febril	3.8.2	Pregunte: ¿Hasta que día tuvo dificultad para caminar?				hxF_DificultadCaminarHasta	18	20	3	1	Question
+e85cac5f-ca13-4bc7-a4d1-332c4fed2e57	Hospital	H3 Informe del Caso	K - Hx Febril	4	Pregunte: ¿En los últimos 3 días ha tenido o tiene: “rash” o “sarpullido”?	NULL			hxF_Rash	18	21	1	1	Question
 187902b6-9fbd-4d47-85c4-c9bea0e47e52	Hospital	H3 Informe del Caso	K - Hx Febril	5	Si tenia "rash" o "sarpullido"	NULL			NULL	18	22	1	1	Checkpoint
-372ac5f5-0dda-4476-a11b-cab97fb72103	Hospital	H3 Informe del Caso	K - Hx Febril	5.1	Pregunte: ¿Actualmente tiene “rash” o “salpullido” con picazón?	NULL			hxF_IrritacionPielActual	18	23	2	1	Question
-335ba999-5712-40c5-80a3-3c729ae120ff	Hospital	H3 Informe del Caso	K - Hx Febril	5.2	Pregunte: ¿Desde hace cuántos días empezó con “rash” o “sarpullido” con picazón?	NULL			hxF_IrritacionPielHaceDias	18	28	2	1	Question
+		H3 Informe del Caso	K - Hx Febril	5.1	Pregunte: ¿Desde que día tuvo “rash” o “sarpullido”?				hxF_RashDesde	18	23	2	1	Question
+		H3 Informe del Caso	K - Hx Febril	5.2	Pregunte: ¿Hasta que día tuvo “rash” o “sarpullido”?				hxF_RashHasta	18	28	2	1	Question
 818c6960-c469-4d43-9884-3ef677314291	Hospital	H3 Informe del Caso	K - Hx Febril	5.3	¿Dónde tiene o tenía el "rash" o "sarpullido"?	NULL			hxF_IrritacionPielDonde	18	29	2	1	Question
 cdba9021-1bd2-48dd-80e6-3f9e1c63c00b	Hospital	H3 Informe del Caso	K - Hx Febril	5.4	Enfermera: Observe el “rash” o “sarpullido” y clasificarlo , o pida la descripción al paciente y trate de clasificarlo	NULL			hxF_IrritacionPielDescripcion	18	30	2	1	Question
+	Hospital	H3 Informe del Caso	K - Hx Febril	5.5	Pregunte: ¿Le produce picazón el “rash” o “sarpullido”?				hxF_RashPicazon					
 ef77d740-0783-4781-ae3a-d5d39a0b88c7	Hospital	H3 Informe del Caso	K - Hx Febril	6	Dolor en las articulaciones	NULL			hxF_DolorArticulaciones	18	31	1	1	Question
 ffde14a0-1d2b-4bdc-8f81-d4b063e39eb6	Hospital	H3 Informe del Caso	K - Hx Febril	7	Si tiene dolor en las articulaciones	NULL			NULL	18	32	1	1	Checkpoint
-27ef60ef-72dc-489f-8bd3-b09342fa09f1	Hospital	H3 Informe del Caso	K - Hx Febril	7.1	Pregunte: ¿Actualmente tiene dolor en las articulaciones?	NULL			hxF_DolorArticulacionesActual	18	33	2	1	Question
-64f012d3-ddb7-474f-beb0-f40d998d3e81	Hospital	H3 Informe del Caso	K - Hx Febril	7.2	Pregunte: ¿Desde hace cuántos días empezó con dolor en las articulaciones?	NULL			hxF_DolorArticulacionesHaceDias	18	34	2	1	Question
+	Hospital	H3 Informe del Caso	K - Hx Febril	7.1	Pregunte: ¿Desde que día tuvo dolor en las articulaciones?				hxF_DolorArticulacionesDesde	18	33	2	1	Question
+	Hospital	H3 Informe del Caso	K - Hx Febril	7.2	Pregunte: ¿Hasta que día tuvo dolor en las articulaciones?				hxF_DolorArticulacionesHasta	18	34	2	1	Question
 bd0d6732-2c80-48cc-bd85-3bf39b55fa52	Hospital	H3 Informe del Caso	K - Hx Febril	8	Ojos rojos	NULL			hxF_OjosRojos	18	35	1	1	Question
 20ffa01b-306b-4985-a6c8-e5d4e34cd8d2	Hospital	H3 Informe del Caso	K - Hx Febril	9	Si tiene ojos rojos	NULL			NULL	18	36	1	1	Checkpoint
 6a7a7d78-2d35-46f3-bae3-29ad9009aee5	Hospital	H3 Informe del Caso	K - Hx Febril	9.1	Enfermera: Observe si el paciente actualmente tiene ojos rojos	NULL			sintomasEnfermaFebrilOjosRojosActual	18	37	2	1	Question
 a4469593-6d55-4b0a-b2eb-7c46ceda7adc	Hospital	H3 Informe del Caso	K - Hx Febril	9.2	Pregunte: ¿Desde hace cuántos días empezó con ojos rojos?	NULL			sintomasEnfermaFebrilOjosRojosHaceDias	18	38	2	1	Question
 c7b354a2-33dd-4a69-adbb-9200b9af9ee2	Hospital	H3 Informe del Caso	K - Hx Febril	10	Ojos amarillos	NULL			hxF_OjosAmarillos	18	39	1	1	Question
 b8a4f784-9041-4100-b957-69357b6e59aa	Hospital	H3 Informe del Caso	K - Hx Febril	11	Si tiene ojos amarillos	NULL			NULL	18	40	1	1	Checkpoint
-25c9c15f-1357-4983-8fcd-44b985dd7884	Hospital	H3 Informe del Caso	K - Hx Febril	11.1	Pregunte: "¿Desde hace cuántos días empezó con ojos amarillos?"	NULL			hxF_OjosAmarillosHaceDias	18	41	2	1	Question
-19e6605d-4ed3-4bec-b9fd-2aa6259d1883	Hospital	H3 Informe del Caso	K - Hx Febril	12	Enfermera: Observe si el paciente actualmente tiene ojos amarillos	NULL			hxF_OjosAmarillosActual	18	42	1	1	Question
-595fb04d-cbaf-47a6-80ed-74a2da93cb3a	Hospital	H3 Informe del Caso	K - Hx Febril	13	Sudoración profusa	NULL			hxF_SudoracionProfusa	18	43	1	1	Question
-ad96772f-1d5e-4b6f-a202-e57e3ee0efb6	Hospital	H3 Informe del Caso	K - Hx Febril	14	Si tiene sudoración profusa	NULL			NULL	18	44	1	1	Checkpoint
-4a4a2614-13c2-4357-837b-be57c6b23dbc	Hospital	H3 Informe del Caso	K - Hx Febril	14.1	Pregunte: ¿Actualmente tiene sudoración profusa?	NULL			hxF_SudoracionProfusaActual	18	45	2	1	Question
-97153d79-e014-4e26-b1dc-eaab5f8bbb91	Hospital	H3 Informe del Caso	K - Hx Febril	14.2	Pregunte: ¿Desde hace cuántos días empezó con sudoración profusa?	NULL			hxF_SudoracionProfusaHaceDias	18	46	2	1	Question
-378474dc-f51f-486b-93fe-352c033f22ca	Hospital	H3 Informe del Caso	K - Hx Febril	15	Orina oscura (como Coca Cola)	NULL			hxF_OrinaOscura	18	47	1	1	Question
-3b6f743b-0101-437a-aec9-0db0a488d8a4	Hospital	H3 Informe del Caso	K - Hx Febril	16	Si tiene orina oscura	NULL			NULL	18	48	1	1	Checkpoint
-a6a32776-d956-4fd5-bbb3-2885f3332c84	Hospital	H3 Informe del Caso	K - Hx Febril	16.1	Pregunte: ¿Actualmente tiene orina oscura?	NULL			hxF_OrinaOscuraActual	18	49	2	1	Question
-4407ebd6-c739-4b66-b963-b9bcd3e607b0	Hospital	H3 Informe del Caso	K - Hx Febril	16.2	Pregunte: ¿Desde hace cuántos días empezó con orina oscura?	NULL			hxF_OrinaOscuraHaceDias	18	50	2	1	Question
-908b597e-8f59-4135-be2f-9e5762cdf28d	Hospital	H3 Informe del Caso	K - Hx Febril	17	Costras	NULL			hxF_Costras	18	51	1	1	Question
-5d840854-0c0f-4932-b00f-73e9ce62a458	Hospital	H3 Informe del Caso	K - Hx Febril	18	Si tiene costras	NULL			NULL	18	52	1	1	Checkpoint
-75a04660-ba56-45d5-9e36-6576a7300dac	Hospital	H3 Informe del Caso	K - Hx Febril	18.1	Pregunte: ¿Actualmente tiene costras?	NULL			hxF_CostrasActual	18	53	2	1	Question
-66d7a6d6-62b7-4977-9024-3eb6678d259a	Hospital	H3 Informe del Caso	K - Hx Febril	18.2	Pregunte: ¿Desde hace cuántos días empezó con costras?	NULL			hxF_CostrasHaceDias	18	54	2	1	Question
-9d31e704-ad79-4775-bc36-386896605edd	Hospital	H3 Informe del Caso	K - Hx Febril	19	Sangrado inusual	NULL			hxF_SangradoInusual	18	55	1	1	Question
-ed397462-057b-441c-aae0-c7225ff3d0a5	Hospital	H3 Informe del Caso	K - Hx Febril	20	Si tenia sangrado inusual	NULL			NULL	18	56	1	1	Checkpoint
-f8774d28-251c-4fd8-b763-634e2b05635c	Hospital	H3 Informe del Caso	K - Hx Febril	20.1	Pregunte: ¿Actualmente tiene sangrado inusual?	NULL			hxF_SangradoInusualActual	18	57	2	1	Question
-db934f34-5167-422b-b8c8-9f3fe2047141	Hospital	H3 Informe del Caso	K - Hx Febril	20.2	Pregunte: ¿Desde hace cuántos días empezó con el sangrado?	NULL			hxF_SangradoInusualHaceDias	18	58	2	1	Question
-ca35443c-d837-4580-8ea2-d6f2a257d830	Hospital	H3 Informe del Caso	K - Hx Febril	20.3	Pregunte: ¿Podría decirnos donde estaba sangrando?	NULL			hxF_SangradoInusualDonde	18	59	2	1	Question
+	Hospital	H3 Informe del Caso	K - Hx Febril	11.1	Pregunte: ¿Desde que día tiene los ojos amarillos?	NULL			hxF_OjosAmarillosDesde	18	41	2	1	Question
+	Hospital	H3 Informe del Caso	K - Hx Febril	11.2	Pregunte: ¿Hasta que día tuvo los ojos amarillos?	NULL			hxF_OjosAmarillosHasta	18	42	2	1	Question
+19e6605d-4ed3-4bec-b9fd-2aa6259d1883	Hospital	H3 Informe del Caso	K - Hx Febril	12	Enfermera: Observe si el paciente actualmente tiene ojos amarillos	NULL			hxF_OjosAmarillosActual	18	43	1	1	Question
+595fb04d-cbaf-47a6-80ed-74a2da93cb3a	Hospital	H3 Informe del Caso	K - Hx Febril	13	Sudoración profusa	NULL			hxF_SudoracionProfusa	18	44	1	1	Question
+ad96772f-1d5e-4b6f-a202-e57e3ee0efb6	Hospital	H3 Informe del Caso	K - Hx Febril	14	Si tiene sudoración profusa	NULL			NULL	18	45	1	1	Checkpoint
+	Hospital	H3 Informe del Caso	K - Hx Febril	14.1	Pregunte: ¿Desde que día tiene sudoración profusa?	NULL			hxF_SudoracionProfusaDesde	18	46	2	1	Question
+	Hospital	H3 Informe del Caso	K - Hx Febril	14.2	Pregunte: ¿Hasta que día tuvo sudoración profusa?	NULL			hxF_SudoracionProfusaHasta	18	47	2	1	Question
+378474dc-f51f-486b-93fe-352c033f22ca	Hospital	H3 Informe del Caso	K - Hx Febril	15	Orina oscura (como Coca Cola)	NULL			hxF_OrinaOscura	18	48	1	1	Question
+3b6f743b-0101-437a-aec9-0db0a488d8a4	Hospital	H3 Informe del Caso	K - Hx Febril	16	Si tiene orina oscura	NULL			NULL	18	49	1	1	Checkpoint
+	Hospital	H3 Informe del Caso	K - Hx Febril	16.1	Pregunte: ¿Desde que día tiene orina oscura?	NULL			hxF_OrinaOscuraDesde	18	50	2	1	Question
+	Hospital	H3 Informe del Caso	K - Hx Febril	16.2	Pregunte: ¿Hasta que día tuvo orina oscura?	NULL			hxF_OrinaOscuraHasta	18	51	2	1	Question
+9d31e704-ad79-4775-bc36-386896605edd	Hospital	H3 Informe del Caso	K - Hx Febril	17	Sangrado inusual	NULL			hxF_SangradoInusual	18	52	1	1	Question
+ed397462-057b-441c-aae0-c7225ff3d0a5	Hospital	H3 Informe del Caso	K - Hx Febril	18	Si tenia sangrado inusual	NULL			NULL	18	53	1	1	Checkpoint
+f8774d28-251c-4fd8-b763-634e2b05635c	Hospital	H3 Informe del Caso	K - Hx Febril	18.1	Pregunte: ¿Actualmente tiene sangrado inusual?	NULL			hxF_SangradoInusualActual	18	54	2	1	Question
+db934f34-5167-422b-b8c8-9f3fe2047141	Hospital	H3 Informe del Caso	K - Hx Febril	18.2	Pregunte: ¿Desde hace cuántos días empezó con el sangrado?	NULL			hxF_SangradoInusualHaceDias	18	55	2	1	Question
+ca35443c-d837-4580-8ea2-d6f2a257d830	Hospital	H3 Informe del Caso	K - Hx Febril	18.3	Pregunte: ¿Podría decirnos donde estaba sangrando?	NULL			hxF_SangradoInusualDonde	18	56	2	1	Question
 72f6a4b2-20d8-4a45-9203-69f75209ffdf	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	1	Si se encontró al paciente en la emergencia	NULL			NULL	19	1	1	1	Checkpoint
 d94b7bfa-58ab-482a-a2d5-34b60a50a4c7	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	1.1	Enfermera: Verificar la fecha y hora de admisión a este hospital	Debe seleccionar la FECHA Y HORA en que el paciente fue ADMITIDO al hospital.			fechaHoraAdmision	19	2	2	1	Question
 b96cfd50-24f7-4a87-af40-ff4239ebc0b5	Hospital	H3 Informe del Caso	B - Hx de Tratamiento	1.2	Enfermera: Verificar el número de registro del hospital	NULL			registroTemporal	19	3	2	1	Question
@@ -503,7 +504,7 @@ aabe04c1-d089-4cd7-89c4-dbe65bc93c84	Hospital	H3 Informe del Caso	A - Enfermedad
 d7acc947-6a14-4169-b012-01783ecd8f30	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.7	Enfermedad del riñón (ej., insuficiencia o fallo renal)	NULL			enfermedadesCronicasEnfermRinion	20	50	2	1	Question
 	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.8	Pregunte: ¿Le ha dicho a Ud. algún médico que tiene historial de enfermedades crónicas tales como: VIH/SIDA u otra inmunodeficiencia?	NULL	addition	I do not see instructions for this section. Are they similar to the new questions?	vih	20	51	2	1	Question
 	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.9	Pregunte: “¿Algún médico le ha dicho si tiene o padece de Inmunodeficiencia?"	NULL	addition	I do not see instructions for this section. Are they similar to the new questions?	inmunodef	20	52	2	1	Question
-	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.10	Pregunte:  “¿Ha tomado algún tratamiento de esteroides por más de 7 días (esteroides son: metilprednisolona, prednisolona, prednisona)?	NULL	addition		esteroidesUso	20	53	2	1	Question
+	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.1	Pregunte:  “¿Ha tomado algún tratamiento de esteroides por más de 7 días (esteroides son: metilprednisolona, prednisolona, prednisona)?	NULL	addition		esteroidesUso	20	53	2	1	Question
 ca27db26-0d30-44a0-b484-fdc264eaf0bf	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.11	Si el paciente es mayor o igual a 18 años de edad	NULL		Should have been 2.10?	NULL	20	54	2	1	Checkpoint
 28e03753-94cb-4c42-967c-d62a8fa0f2cb	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.11.1	Enfermedad de los pulmones (ej. EPOC, enfisema, enfermedad crónica y obstructiva de los pulmones)	NULL	move	Only asked if patient > 18 years	enfermedadesCronicasEnfermPulmones	20	55	3	1	Question
 7894dfc0-747f-4a38-8ede-4bace42102ae	Hospital	H3 Informe del Caso	A - Enfermedades Crónicas y Vacunas	2.11.2	Hipertensión	NULL			enfermedadesCronicasHipertension	20	56	3	1	Question
@@ -623,7 +624,7 @@ efda3dc8-9caa-42ee-85a8-3e95ca54003c	Hospital	H3 Informe del Caso	H - Examen Res
 6e2f36ef-3290-4e39-b783-a17758807452	Hospital	H3 Informe del Caso	H - Examen Respiratoria por Dr	3.9	Si el niño es menor de 5 años	NULL			NULL	22	12	2	1	Checkpoint
 e229f7db-af3c-451d-bcea-64b2456be086	Hospital	H3 Informe del Caso	H - Examen Respiratoria por Dr	3.9.1	Enfermera: Anote si el niño tiene tiraje costal	NULL			respiraExamenFisicoMedicoTirajePecho	22	13	3	1	Question
 d680e30e-a897-439d-8d1b-d7e5fa06a4b7	Hospital	H3 Informe del Caso	H - Examen Respiratoria por Dr	3.9.2	Enfermera: Anote si el niño tiene estridor	NULL			respiraExamenFisicoMedicoEstridor	22	14	3	1	Question
-c8401940-466f-407e-9924-e48d612dd5f3	Hospital	H3 Informe del Caso	H - Examen Respiratoria por Dr	3.10	Si el niño es menor de 2 meses	NULL			NULL	22	15	2	1	Checkpoint
+c8401940-466f-407e-9924-e48d612dd5f3	Hospital	H3 Informe del Caso	H - Examen Respiratoria por Dr	3.1	Si el niño es menor de 2 meses	NULL			NULL	22	15	2	1	Checkpoint
 89b6b6b7-31f4-4c12-831f-279bd3af6c1d	Hospital	H3 Informe del Caso	H - Examen Respiratoria por Dr	3.10.1	Enfermera: Anote si el niño tiene respiración ruidoso	NULL			respiraExamenFisicoMedicoRespiraRuidoso	22	16	3	1	Question
 3f1f64ed-d34a-4b08-afcb-e3f9709a3468	Hospital	H3 Informe del Caso	H - Examen Respiratoria por Dr	3.10.2	Enfermera: Anote si el niño tiene la fontanela abombada	NULL			respiraExamenFisicoMedicoMolleraHinchada	22	17	3	1	Question
 cab98c80-1ea1-4ada-92e7-849177c50eeb	Hospital	H3 Informe del Caso	H - Examen Respiratoria por Dr	3.11	Si el paciente tiene 12 años o menos	NULL			NULL	22	18	2	1	Checkpoint
