@@ -4,6 +4,7 @@
 
 # Load used packages
 library(package = magrittr)
+library(package = tidyr)
 library(package = dplyr)
 
 
@@ -132,3 +133,160 @@ deletes <- changes_table %>%
               row.names = FALSE, sep = "\t", quote = FALSE)
 
 
+
+
+
+#------------------------------------------------------------------------------*
+# Write sql scripts to modify the questionnaire
+#------------------------------------------------------------------------------*
+
+
+# Define fields to be quoted
+quote_fields <- data_frame(
+  SectionItemGuid = TRUE, 
+  SectionID = FALSE, 
+  Ordinal = FALSE, 
+  Level = FALSE, 
+  Visible = FALSE, 
+  Type = TRUE, 
+  Number = TRUE, 
+  MainText = TRUE, 
+  GroupMember = FALSE, 
+  GroupText = TRUE, 
+  Condition = TRUE, 
+  BranchIf = TRUE, 
+  VariableName = TRUE, 
+  ScreenTemplate = TRUE, 
+  Arguments = TRUE, 
+  VariableScope = FALSE, 
+  Required = FALSE, 
+  AbsMin = FALSE, 
+  AbsMax = FALSE, 
+  PromptUnder = TRUE, 
+  PromptOver = TRUE, 
+  LegalValueTable = TRUE, 
+  CustomValidation = TRUE, 
+  CustomValidationFailMessage = TRUE, 
+  ConfirmChange = FALSE, 
+  HideNext = FALSE, 
+  HideBack = FALSE, 
+  ConfirmNext = FALSE, 
+  ConfirmBack = FALSE, 
+  MainTextColor = TRUE, 
+  HelpText = TRUE, 
+  OtherText1 = TRUE, 
+  OtherText1Color = TRUE, 
+  OtherText2 = TRUE, 
+  OtherText2Color = TRUE, 
+  OtherText3 = TRUE, 
+  OtherText3Color = TRUE, 
+  Comment = TRUE, 
+  OnLoad = TRUE, 
+  OnUnload = TRUE, 
+  OnChange = TRUE,
+  OnBranch = TRUE
+) %>% 
+  gather(key = field, value = quote, convert = TRUE)
+
+
+
+# Delete removed questions
+deletes %>%
+  with(
+    cat(
+      file = "./sql/apply_deletes.sqlce",
+      paste0("DELETE FROM SectionItem WHERE SectionItemGuid = '",
+                   SectionItemGuid, "';"),
+      sep = "\n"
+    )
+  )
+
+
+
+# Update modified questions
+
+cat("--", as.character(Sys.time()), "questionnaire updates\n\n",
+    file = "./sql/apply_updates.sqlce")
+
+updates %>%
+  select(-c(questionnaire_set_name:Comments)) %>%
+  mutate(order = seq(1, n())) %>% 
+  gather(field, value, -SectionItemGuid, -order, convert = TRUE) %>%
+  arrange(order) %>%
+  left_join(gather(changes_table, field, original_value, -SectionItemGuid,
+                   convert = TRUE)) %>%
+  filter(value != original_value) %>%
+  group_by(SectionItemGuid) %>%
+  mutate(order = min(order)) %>%
+  left_join(quote_fields) %>%
+  group_by(order, SectionItemGuid) %>%
+  do(
+    {
+      with(.,
+        cat(
+          file = "./sql/apply_updates.sqlce", append = TRUE,
+          paste0(
+            "UPDATE SectionItem\n\tSET\n",
+            paste0("\t\t", field, " = ",
+                   if(quote) "'" else "",
+                   value,
+                   if(quote) "'" else "",
+                   "\n"),
+            "\tWHERE SectionItemGuid = '", first(SectionItemGuid), "';\n"
+          ),
+          sep = "\n\n"
+        )
+      )
+      data_frame(processed = TRUE)
+    }
+  )
+
+
+
+
+
+# Insert new questions
+
+cat("--", as.character(Sys.time()), "questionnaire inserts\n\n",
+    file = "./sql/apply_inserts.sqlce")
+
+inserts %>%
+  mutate(Comment = Comments) %>%
+  select(-Comments) %>% 
+  mutate_each_(funs(ifelse(is.na(.) | . == "", "NULL", .)),
+               vars = names(.)) %>%
+  mutate(id = paste(SectionID, Ordinal, sep = "-")) %>% 
+  select(-c(questionnaire_set_name:ChangeType, SectionItemGuid)) %>%
+  mutate(order = seq(1, n())) %>% 
+  gather(field, value, -id, -order, convert = TRUE) %>%
+  arrange(order) %>%
+  group_by(id) %>%
+  mutate(order = min(order)) %>%
+  left_join(quote_fields) %>%
+  group_by(order, id) %>%
+  arrange(value == "NULL", field == "Comment") %>%
+  do(
+    {
+      with(.,
+           cat(
+             file = "./sql/apply_inserts.sqlce", append = TRUE,
+             paste0(
+               "INSERT INTO SectionItem\n\t",
+               "([SectionItemGuid], [", paste(field, collapse = "], ["), "])\n",
+               "\tVALUES\n\t\t(\n\t\t",
+               "NewId(), -- Generate GUID for new question\n\t\t",
+               paste(
+                 paste0(ifelse(quote & value != "NULL", "'", ""),
+                        value,
+                        ifelse(quote & value != "NULL", "'", ""),
+                        ", -- ", field, "\n\t\t"),
+                 collapse = ""
+               ),
+               ");\n"
+             ),
+             sep = "\n\n"
+           )
+      )
+      data_frame(processed = TRUE)
+    }
+  )

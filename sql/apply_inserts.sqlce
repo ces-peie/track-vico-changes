@@ -1,0 +1,4898 @@
+-- 2015-11-03 15:41:04 questionnaire inserts
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		5, -- SectionID
+		1, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'1', -- Number
+		'Enfermera: Anote si una temperatura fue registrada al ingreso al hospital', -- MainText
+		'tempmax_ingr_reg', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		5, -- SectionID
+		2, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Checkpoint', -- Type
+		'2', -- Number
+		'Si fue registrada una temperatura al ingreso al hospital', -- MainText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		5, -- SectionID
+		3, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'2.1', -- Number
+		'Enfermera: Anote la temperatura máxima del paciente al ingreso al hospital', -- MainText
+		'tempmax_ingr', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [HelpText], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		5, -- SectionID
+		21, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'10', -- Number
+		'Enfermera: Anote si está registrado que el paciente presento apnea', -- MainText
+		'historiaApnea', -- VariableName
+		'Debe buscar en el registro medico si el paciente tiene historia de apnea', -- HelpText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [HelpText], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		5, -- SectionID
+		22, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'11', -- Number
+		'Enfermera: Anote si está registrado que el paciente ha presentado cianosis (incluye cianosis durante un episodio de tos o tos cianotizante)', -- MainText
+		'Historiacianosis', -- VariableName
+		'Debe buscar en el registro medico si el paciente presento cianosis durante un acceso de tos', -- HelpText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [HelpText], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		5, -- SectionID
+		23, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'12', -- Number
+		'Enfermera: Anote si está registrado que el paciente ha tenido “tos paroxística” o en “accesos”', -- MainText
+		'HistoriaParoxismos', -- VariableName
+		'Debe buscar en el registro medico si el paciente ha tenido “tos paroxística” o en “accesos”', -- HelpText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [HelpText], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		5, -- SectionID
+		24, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'13', -- Number
+		'Enfermera: Anote si está registrado en el expediente que el paciente presenta Estridor Inspiratorio', -- MainText
+		'HistoriaWhoop', -- VariableName
+		'Debe buscar en el registro medico si el paciente ha presentado Estridor Inspiratorio', -- HelpText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [HelpText], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		5, -- SectionID
+		25, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'14', -- Number
+		'Enfermera: Anote si está registrado en el expediente que el paciente presenta Vómito postusivo', -- MainText
+		'historiaVomitoPostusivo', -- VariableName
+		'Debe buscar en el registro medico si el paciente ha presentado Vómitos Postusivo', -- HelpText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [HelpText], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		5, -- SectionID
+		26, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Checkpoint', -- Type
+		'15', -- Number
+		'Si temperatura mayor a 38 grados o historia de fiebre o sospechoso febril', -- MainText
+		'Hacer condición de checkpoint', -- HelpText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [HelpText], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		5, -- SectionID
+		27, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'15.1', -- Number
+		'Enfermera: Anote si se registro en el expediente: Hepatomegalia', -- MainText
+		'HistoriaHepatomegalia', -- VariableName
+		'(op: si, no , no esta anotado)', -- HelpText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [HelpText], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		5, -- SectionID
+		28, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'15.2', -- Number
+		'Enfermera: Anote si se registro en el expediente: Esplenomegalia ', -- MainText
+		'HistoriaEsplenomegalia', -- VariableName
+		'(op: si, no , no esta anotado)', -- HelpText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		6, -- SectionID
+		42, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Checkpoint', -- Type
+		'19', -- Number
+		'Si tiene temperatura registrada mayor de 38°C o historia de fiebre', -- MainText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		6, -- SectionID
+		43, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'19.1', -- Number
+		'Enfermera: Verifique el expediente y anote si el paciente tiene:  Hepatomegalia', -- MainText
+		'hepatomegalia', -- VariableName
+		'Condición:  CurrentSubject("temperaturaPrimeras24Horas") >= 38.0 Or (CurrentSubject("sintomasFiebre") = 1 ', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		6, -- SectionID
+		44, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'19.2', -- Number
+		'Enfermera: Verifique el expediente y anote si el paciente tiene:  Esplenomegalia.', -- MainText
+		'esplenomegalia', -- VariableName
+		'Condición:  CurrentSubject("temperaturaPrimeras24Horas") >= 38.0 Or (CurrentSubject("sintomasFiebre") = 1 ', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		12, -- SectionID
+		3, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Checkpoint', -- Type
+		'1.1.1', -- Number
+		'Si colectó una muestra de heces (entera, hisopo, o ambos)', -- MainText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		12, -- SectionID
+		4, -- Ordinal
+		4, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'1.1.1.1', -- Number
+		'¿Qué tipo de muestra de heces recolectó?', -- MainText
+		'muestraHecesColectaTipo', -- VariableName
+		'Opciones: Muestra de heces entera, hisopo rectal, ambos', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		12, -- SectionID
+		43, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'2.6.2', -- Number
+		'Enfermera: ¿El paciente estaba recibiendo antibióticos antes de tomar las muestras?', -- MainText
+		'abx_npop', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		16, -- SectionID
+		3, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Checkpoint', -- Type
+		'3', -- Number
+		'Si el paciente es mayor de 18 años y está en Hospital de Cuilapa o Quetzaltenango', -- MainText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		16, -- SectionID
+		4, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'3.1', -- Number
+		'Pregunte: “¿Ha tenido diarrea en los últimos 7 días?"', -- MainText
+		'diar_7d', -- VariableName
+		'Si, No', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		16, -- SectionID
+		5, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'3.2', -- Number
+		'Pregunte: “¿Usted tiene malaria ahora?"', -- MainText
+		'malar_ahora', -- VariableName
+		'Si, No, No sabe', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		16, -- SectionID
+		6, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'3.3', -- Number
+		'Enfermera: Anote si en el examen pulmonar está registrada disminución del murmullo vesicular', -- MainText
+		'murmullo', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		16, -- SectionID
+		7, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'3.4', -- Number
+		'Pregunte: “¿Ha tomado antibióticos durante 24 horas antes de su ingreso al hospital?"', -- MainText
+		'abx_24h', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		16, -- SectionID
+		8, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Checkpoint', -- Type
+		'3.4.1', -- Number
+		'Si ha tomado antibióticos', -- MainText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		16, -- SectionID
+		9, -- Ordinal
+		4, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'3.4.1.1', -- Number
+		'Pregunte: “¿Podría decirnos que antibiótico fue el que tomó?"', -- MainText
+		'abx_24hcual', -- VariableName
+		'See list of ABX?', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		7, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'3.2.1', -- Number
+		'Pregunte: ¿Desde que día tuvo dolor detrás de los ojos?', -- MainText
+		'hxF_DolorDetrasOjosDesde', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		8, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'3.2.2', -- Number
+		'Pregunte: ¿Hasta que día tuvo dolor detrás de los ojos?', -- MainText
+		'hxF_DolorDetrasOjosHasta', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		11, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'3.4.1', -- Number
+		'Pregunte: ¿Desde que día tuvo dolor en los camotes?', -- MainText
+		'hxF_DolorCamotesDesde', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		12, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'3.4.2', -- Number
+		'Pregunte: ¿Hasta que día tuvo dolor en los camotes?', -- MainText
+		'hxF_DolorCamotesHasta', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		15, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'3.6.1', -- Number
+		'Pregunte: ¿Desde que día tuvo dormido el cuerpo?', -- MainText
+		'hxF_DormidoCuerpoDesde', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		16, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'3.6.2', -- Number
+		'Pregunte: ¿Hasta que día tuvo dormido el cuerpo?', -- MainText
+		'hxF_DormidoCuerpoHasta', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		19, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'3.8.1', -- Number
+		'Pregunte: ¿Desde que día tuvo dificultad para caminar?', -- MainText
+		'hxF_DificultadCaminarDesde', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		20, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'3.8.2', -- Number
+		'Pregunte: ¿Hasta que día tuvo dificultad para caminar?', -- MainText
+		'hxF_DificultadCaminarHasta', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		23, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'5.1', -- Number
+		'Pregunte: ¿Desde que día tuvo “rash” o “sarpullido”?', -- MainText
+		'hxF_RashDesde', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		28, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'5.2', -- Number
+		'Pregunte: ¿Hasta que día tuvo “rash” o “sarpullido”?', -- MainText
+		'hxF_RashHasta', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		31, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'5.5', -- Number
+		'Pregunte: ¿Le produce picazón el “rash” o “sarpullido”?', -- MainText
+		'hxF_RashPicazon', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		34, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'7.1', -- Number
+		'Pregunte: ¿Desde que día tuvo dolor en las articulaciones?', -- MainText
+		'hxF_DolorArticulacionesDesde', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		35, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'7.2', -- Number
+		'Pregunte: ¿Hasta que día tuvo dolor en las articulaciones?', -- MainText
+		'hxF_DolorArticulacionesHasta', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		42, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'11.1', -- Number
+		'Pregunte: ¿Desde que día tiene los ojos amarillos?', -- MainText
+		'hxF_OjosAmarillosDesde', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		43, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'11.2', -- Number
+		'Pregunte: ¿Hasta que día tuvo los ojos amarillos?', -- MainText
+		'hxF_OjosAmarillosHasta', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		47, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'14.1', -- Number
+		'Pregunte: ¿Desde que día tiene sudoración profusa?', -- MainText
+		'hxF_SudoracionProfusaDesde', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		48, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'14.2', -- Number
+		'Pregunte: ¿Hasta que día tuvo sudoración profusa?', -- MainText
+		'hxF_SudoracionProfusaHasta', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		51, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'16.1', -- Number
+		'Pregunte: ¿Desde que día tiene orina oscura?', -- MainText
+		'hxF_OrinaOscuraDesde', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		18, -- SectionID
+		52, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'16.2', -- Number
+		'Pregunte: ¿Hasta que día tuvo orina oscura?', -- MainText
+		'hxF_OrinaOscuraHasta', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		20, -- SectionID
+		5, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'1.2.2', -- Number
+		'¿Ha recibido su hijo/hija la vacuna BCG?', -- MainText
+		'vacunaBcgRecibido', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		20, -- SectionID
+		6, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'1.2.3', -- Number
+		'¿Ha recibido su hijo/hija la vacuna de Polio Oral (OPV)', -- MainText
+		'vacunaPolioRecibido', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		20, -- SectionID
+		7, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Checkpoint', -- Type
+		'1.2.4', -- Number
+		'Si ha recibido Polio Oral', -- MainText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		20, -- SectionID
+		8, -- Ordinal
+		4, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'1.2.4.1', -- Number
+		'¿Cuántas dosis de la vacuna Polio Oral ha recibido su hijo/hija?', -- MainText
+		'vacunaPolioDosis', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		20, -- SectionID
+		23, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'1.3.1', -- Number
+		'Anote de la ficha o carné si el paciente ha recibido la vacuna BCG', -- MainText
+		'vacunaBcgRecibido', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		20, -- SectionID
+		24, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'1.3.2', -- Number
+		'Anote de la ficha o carné si el paciente ha recibido la vacuna Polio Oral (OPV)', -- MainText
+		'vacunaPolioRecibido', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		20, -- SectionID
+		25, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Checkpoint', -- Type
+		'1.3.3', -- Number
+		'Si ha recibido Polio Oral', -- MainText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		20, -- SectionID
+		26, -- Ordinal
+		4, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'1.3.3.1', -- Number
+		'Anote de la ficha o carné cuantas dosis de Polio Oral (OPV) ha recibido', -- MainText
+		'vacunaPolioDosis', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		20, -- SectionID
+		35, -- Ordinal
+		4, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'1.3.9.2', -- Number
+		'Anote de la ficha o carné si la vacuna contra Rotavirus que recibio fue Rotarix', -- MainText
+		'vacunaRotavirusRotarix', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		20, -- SectionID
+		36, -- Ordinal
+		4, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'1.3.9.3', -- Number
+		'Anote de la ficha o carneé si la vacuna contra Rotavirus que recibio fue Rotateq', -- MainText
+		'vacunaRotavirusRotateq', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		20, -- SectionID
+		51, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'2.8', -- Number
+		'Pregunte: ¿Le ha dicho a Ud. algún médico que tiene historial de enfermedades crónicas tales como: VIH/SIDA u otra inmunodeficiencia?', -- MainText
+		'vih', -- VariableName
+		'I do not see instructions for this section. Are they similar to the new questions?', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		20, -- SectionID
+		52, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'2.9', -- Number
+		'Pregunte: “¿Algún médico le ha dicho si tiene o padece de Inmunodeficiencia?"', -- MainText
+		'inmunodef', -- VariableName
+		'I do not see instructions for this section. Are they similar to the new questions?', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		20, -- SectionID
+		53, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'2.10', -- Number
+		'Pregunte:  “¿Ha tomado algún tratamiento de esteroides por más de 7 días (esteroides son: metilprednisolona, prednisolona, prednisona)?', -- MainText
+		'esteroidesUso', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		20, -- SectionID
+		62, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'2.14.2', -- Number
+		'Pregunte al padre/tutor: "¿El bebé recibió lactancia materna exclusiva durante los primeros 6 meses de vida?"', -- MainText
+		'lactanciaMaternaExclusiva', -- VariableName
+		'This is a very well known risk factor for gastrointestinal and respiratory disease (hmaldonado)', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		8, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'3.2.2', -- Number
+		'Si estuvo en otro departamento', -- MainText
+		'pacienteVisitoOtroDepartamento', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		9, -- Ordinal
+		4, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'3.2.2.1', -- Number
+		'Pregunte ¿Cuál departamento visitó?', -- MainText
+		'departamentoVisito', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		10, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'3.2.3', -- Number
+		'Si estuvo en otro municipio', -- MainText
+		'pacienteVisitoOtroMunicipio', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		11, -- Ordinal
+		4, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'3.2.3.1', -- Number
+		'Pregunte: ¿Cuál municipio visitó?', -- MainText
+		'municipioVisito', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		13, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'5', -- Number
+		'Pregunte: En las últimas 2 semanas ¿Lo ha picado alguna pulga?', -- MainText
+		'picoPulga', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		14, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'6', -- Number
+		'Pregunte: En las últimas 2 semanas ¿Ha visto ratones o ratas dentro de su casa?”', -- MainText
+		'ratonesCasa', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		15, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'7', -- Number
+		'Pregunte: En las últimas 2 semanas ¿Uso pabellón o mosquitero para dormir?', -- MainText
+		'usaPabellon', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		16, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'8', -- Number
+		'Pregunte: En las últimas 2 semanas ¿Tiene animales en su casa o patio?  ', -- MainText
+		'contactoAnimalesCasa', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		17, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Checkpoint', -- Type
+		'9', -- Number
+		'Si tiene animales en su casa o patio', -- MainText
+		'@contactoAnimalesCasa = 1', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		18, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'9.1', -- Number
+		'Pregunte: ¿Qué clase de animales tiene en su casa o patio?', -- MainText
+		'claseContactoAnimalesCasa', -- VariableName
+		'opciones (Cabra=1, ovejas, Perro, gato, cerdo, caballo, vaca, patos, pollos, pavos o chompipes, Hamster, Conejos, tortugas, iguanas, loros o pericas, otro=888)', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		19, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'9.2', -- Number
+		'Si animalesCasa es igual a otro:', -- MainText
+		'@claseContactoAnimalesCasa = 888', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		20, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'9.2.1', -- Number
+		'Especifique la clase de animal', -- MainText
+		'claseContactoAnimalesCasa_Esp', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		21, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'10', -- Number
+		'Pregunte: En el mes antes de que se enfermó: ¿Ha tenido contacto con animales en su trabajo?', -- MainText
+		'contactoAnimalesTrabajo', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		22, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'11', -- Number
+		'Si tiene animales en su trabajo', -- MainText
+		'@claseContactoAnimalesTrabajo = 888', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		23, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'11.1', -- Number
+		'Pregunte: ¿Qué clase de animales tiene en su trabajo?', -- MainText
+		'claseContactoAnimalesTrabajo', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		24, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'11.2', -- Number
+		'Si claseanimalestrabajo es igual a otro:', -- MainText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		25, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'11.2.1', -- Number
+		'Especifique la clase de animal', -- MainText
+		'claseContactoAnimalesTrabajo_Esp', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		35, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'15.1', -- Number
+		'Pregunte al padre/tutor: "¿El niño recibió pecho?"', -- MainText
+		'pecho', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		36, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Checkpoint', -- Type
+		'15.2', -- Number
+		'Si el niño recibió pecho', -- MainText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		37, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'15.2.1', -- Number
+		'Pregunte al padre/tutor: "¿Hasta qué edad el niño recibió pecho?” (Anotar en meses)', -- MainText
+		'pechoMeses', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		38, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'15.2.2', -- Number
+		'Pregunte al padre/tutor: "¿Hasta qué edad el niño recibió pecho de forma exclusiva?” (Anotar en meses)', -- MainText
+		'pechoExclusiva', -- VariableName
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		43, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'20', -- Number
+		'Pregunte: ¿Usa esta fuente de agua todo el año o solo por parte del año?', -- MainText
+		'UsoFuenteAgua', -- VariableName
+		'Opciones: Todo El Año , Parte Del Año, No Sabe ', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		44, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'21', -- Number
+		'Pregunte: ¿Usted trata el agua de alguna manera para hacerla  más segura para beber?', -- MainText
+		'Tx Agua', -- VariableName
+		'Opciones: Si , No , No sabe', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		45, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'22', -- Number
+		'Pregunte: ¿Generalmente qué le hace al agua para hacerla más segura para beber?', -- MainText
+		'ComoTrataAgua', -- VariableName
+		'Opciones: Hierven, Cloran, Filtro De Tela,Usa Filtro (Cerámica / Arena / Otros Filtros),Purifican ConLuz Solar,La Dejan Reposar ', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [VariableName], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		46, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'23', -- Number
+		'¿Qué tipo de facilidad de inodoro o letrina tienen en su casa, si hay, que usan más frecuentemente los miembros de su familia?', -- MainText
+		'TipoSanitario', -- VariableName
+		'Opciones: Inodoro con jalador de agua/donde se hecha el agua o letrina, letrina de hoyo mejorada con ventilación, hoyo de letrina con losa, pozo ciego/hoyo de letrina sin losa/abierto, compostaje/inodoro seco o letrina seca, inodoro o letrina colgante, servicio o letrina de cubeta (donde las heces son removidas manualmente), no hay facilidades/arbustos/bolsa plástica, otro, no sabe, se negó a responder', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		47, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Checkpoint', -- Type
+		'24', -- Number
+		'Si el tipo de facilidad es OTRO, especificar:', -- MainText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [HelpText], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		48, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'24.1', -- Number
+		'Especifique el tipo de facilidad de inodoro o letrina que tienen en su casa', -- MainText
+		'El que usan más frecuentemente', -- HelpText
+		'Texto abierto', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		49, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Checkpoint', -- Type
+		'25', -- Number
+		'Si usan “inodoro con jalador de agua/o donde se hecha el agua/letrina”', -- MainText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		50, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'25.1', -- Number
+		'Cuando se hecha agua en el inodoro o letrina, ¿a dónde va a parar el agua?', -- MainText
+		'Opciones: A un sistema de desagüe con tubería, a un tanque/fosa séptica, a un hoyo de letrina, a cualquier otro lugar, no sabe', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		51, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Checkpoint', -- Type
+		'26', -- Number
+		'Si usan “servicio o letrina de cubeta” o “no hay facilidades/arbusto/bolsa”', -- MainText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		52, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'26.1', -- Number
+		'¿A dónde se van las heces cuando son desechadas? (marque todos los que apliquen)', -- MainText
+		'Opciones: En el drenaje o una zanja, se tiran a la basura, se entierran, se dejan al descubierto en el patio, se dejan al descubierto lejos de la casa, otro, no sabe, se negó a responder', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		53, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Checkpoint', -- Type
+		'26.2', -- Number
+		'Si heces van a “otro”, especificar a dónde van las heces cuando son desechadas.', -- MainText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		54, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'26.2.1', -- Number
+		'Especifique a dónde van las heces cuando son desechadas.', -- MainText
+		'Texto abierto', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		55, -- Ordinal
+		1, -- Level
+		1, -- Visible
+		'Checkpoint', -- Type
+		'27', -- Number
+		'Si contestó algo aparte de “no sabe” o “se negó a responder” a la pregunta “¿Qué tipo de facilidad de inodoro o letrina tienen en su casa, si hay, que usen más frecuentemente los miembros de su familia?”:', -- MainText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		56, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'27.1', -- Number
+		'Pregunte: ¿En dónde está localizado el inodoro/letrina/baño o el sitio donde se va para defecar (hacer popó)?', -- MainText
+		'Opciones: adentro o junto a la vivienda, en cualquier lugar del lote, afuera del lote, no sabe, se negó a responder', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		57, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'27.2', -- Number
+		'Pregunte: ¿Comparte usted el inodoro/letrina o sitio para defecar con otras viviendas?', -- MainText
+		'Opciones: si, no, no sabe, se negó a responder', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		58, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Checkpoint', -- Type
+		'27.3', -- Number
+		'Si comparte el inodoro/letrina con otras viviendas', -- MainText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		59, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'27.3.1', -- Number
+		'Pregunte: ¿Con cuántas otras viviendas comparten el inodoro/letrina/sitio para defecar?', -- MainText
+		'campo abierto para número (valor entre 1-999) (999 puede ser no sabe)', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		60, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'27.3.2', -- Number
+		'Pregunte: ¿Puede cualquier miembro del público usar este inodoro/letrina/sitio de defecación?', -- MainText
+		'Opciones: si, no, no sabe, se negó a responder', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		61, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'27.4', -- Number
+		'Pregunte: ¿Alguna vez se limpia el inodoro/letrina?', -- MainText
+		'Opciones: si, no, no aplica (campo abierto para defecación), no sabe, se negó a responder', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		62, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Checkpoint', -- Type
+		'27.5', -- Number
+		'Si alguna vez se limpia el inodoro/letrina:', -- MainText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		63, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'27.5.1', -- Number
+		'Pregunte: ¿Cuándo fue la última vez que se limpió el inodoro/letrina?', -- MainText
+		'Opciones: hoy, ayer, hace más de un día y menos de una semana, hace 1-4 semanas, hace más de un mes, no sabe/no recuerda, se negó a responder', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		64, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'27.6', -- Number
+		'Pregunte: La última vez que el miembro más pequeño de su familia defecó, ¿qué se hizo para desechar las heces?', -- MainText
+		'Opciones: El niño usó el inodoro/letrina, se pusieron/enjuagaron en el inodoro o letrina, se pusieron adentro/enjuagaron en drenaje o zanja, no sabe, uso pañal desechable, se tiraron a la basura, se enterraron, se dejaron al descubierto en el patio, se dejaron al descubierto fuera de la propiedad, otro, se negó a responder', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch], [Comment])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		65, -- Ordinal
+		2, -- Level
+		1, -- Visible
+		'Checkpoint', -- Type
+		'27.7', -- Number
+		'Si respondió “otro”, especificar', -- MainText
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		NULL, -- Comment
+		);
+
+INSERT INTO SectionItem
+	([SectionItemGuid], [SectionID], [Ordinal], [Level], [Visible], [Type], [Number], [MainText], [Comment], [GroupMember], [GroupText], [Condition], [BranchIf], [VariableName], [ScreenTemplate], [Arguments], [VariableScope], [Required], [AbsMin], [AbsMax], [PromptUnder], [PromptOver], [LegalValueTable], [CustomValidation], [CustomValidationFailMessage], [ConfirmChange], [HideNext], [HideBack], [ConfirmNext], [ConfirmBack], [MainTextColor], [HelpText], [OtherText1], [OtherText1Color], [OtherText2], [OtherText2Color], [OtherText3], [OtherText3Color], [OnLoad], [OnUnload], [OnChange], [OnBranch])
+	VALUES
+		(
+		NewId(), -- Generate GUID for new question
+		21, -- SectionID
+		66, -- Ordinal
+		3, -- Level
+		1, -- Visible
+		'Question', -- Type
+		'27.7.1', -- Number
+		'Pregunte: ¿Qué se hizo para desechar las heces del miembro más pequeño de la familia la última vez que defecó?', -- MainText
+		'texto abierto', -- Comment
+		NULL, -- GroupMember
+		NULL, -- GroupText
+		NULL, -- Condition
+		NULL, -- BranchIf
+		NULL, -- VariableName
+		NULL, -- ScreenTemplate
+		NULL, -- Arguments
+		NULL, -- VariableScope
+		NULL, -- Required
+		NULL, -- AbsMin
+		NULL, -- AbsMax
+		NULL, -- PromptUnder
+		NULL, -- PromptOver
+		NULL, -- LegalValueTable
+		NULL, -- CustomValidation
+		NULL, -- CustomValidationFailMessage
+		NULL, -- ConfirmChange
+		NULL, -- HideNext
+		NULL, -- HideBack
+		NULL, -- ConfirmNext
+		NULL, -- ConfirmBack
+		NULL, -- MainTextColor
+		NULL, -- HelpText
+		NULL, -- OtherText1
+		NULL, -- OtherText1Color
+		NULL, -- OtherText2
+		NULL, -- OtherText2Color
+		NULL, -- OtherText3
+		NULL, -- OtherText3Color
+		NULL, -- OnLoad
+		NULL, -- OnUnload
+		NULL, -- OnChange
+		NULL, -- OnBranch
+		);
+

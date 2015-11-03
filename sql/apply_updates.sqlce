@@ -1,0 +1,5265 @@
+-- 2015-11-03 15:40:59 questionnaire updates
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote en que servicio encontró al paciente'
+	WHERE SectionItemGuid = '582226b6-236a-44a3-9c1d-2e577d6b5490';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote en que servicio encontró al paciente'
+	WHERE SectionItemGuid = 'e93e6182-dd85-4056-ae19-baa12e9fbc7c';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote en que servicio encontró al paciente'
+	WHERE SectionItemGuid = '555b113d-e86d-41b6-9a83-e20aae8e9709';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Dirección del paciente Anote el departamento del paciente'
+	WHERE SectionItemGuid = '87c120d9-81df-4e53-a563-63f71c1a67d9';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Dirección del paciente Anote el municipio del paciente'
+	WHERE SectionItemGuid = '835eb738-d061-4f44-8eb0-20f916089d4e';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote los primeros nombres del paciente'
+	WHERE SectionItemGuid = '1b506ed9-7a4b-4144-8213-0eb619f317f8';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote los apellidos del paciente'
+	WHERE SectionItemGuid = '2a8e3ca7-ba09-47ae-aef0-5bc526247c31';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote el sexo del paciente'
+	WHERE SectionItemGuid = '0d77c052-5727-4f1d-999f-b032a28ede54';
+
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe indicar el SEXO del paciente.'
+	WHERE SectionItemGuid = '0d77c052-5727-4f1d-999f-b032a28ede54';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la fecha y hora de admisión al hospital'
+	WHERE SectionItemGuid = '7cbae02f-43b5-4fe9-a3be-72f67b8b8392';
+
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe seleccionar la FECHA Y HORA en que el paciente fue ADMITIDO al hospital.'
+	WHERE SectionItemGuid = '7cbae02f-43b5-4fe9-a3be-72f67b8b8392';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote el número de registro del hospital'
+	WHERE SectionItemGuid = 'ca1caab6-5f9b-4498-ba9b-b650e0d36bc9';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la edad del paciente en años al momento de la admisión. Si es menor de 1 año, ponga 0.'
+	WHERE SectionItemGuid = '114e498a-2f72-467f-a1ab-88620ff72606';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la edad del paciente en meses al momento de la admisión. Si es menor de 1 mes, ponga 0.'
+	WHERE SectionItemGuid = 'a7d9542d-bf16-429f-90ee-0af7ef7c56e5';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la edad del paciente en días al momento de la admisión.'
+	WHERE SectionItemGuid = '8acce1d4-5f5d-4dcf-b95d-0a0130f6036c';
+
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Si el bebe tiene mas de 28 días, debe poner su edad como 1 mes.'
+	WHERE SectionItemGuid = '8acce1d4-5f5d-4dcf-b95d-0a0130f6036c';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿El paciente presenta indicaciones de enfermedad respiratoria aguda?'
+	WHERE SectionItemGuid = '2b83d1ff-ebdb-4fb9-82df-369f0adf02f5';
+
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe indicar si EL PACIENTE PRESENTÓ SÍNTOMAS RESPIRATORIOS.'
+	WHERE SectionItemGuid = '2b83d1ff-ebdb-4fb9-82df-369f0adf02f5';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si tiene indicaciones de enfermedad respiratoria aguda'
+	WHERE SectionItemGuid = 'a1e2178d-1cff-450c-9196-8651cbd4a088';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Seleccione la indicación de enfermedad respiratoria aguda'
+	WHERE SectionItemGuid = '72448c35-ab2d-4b0c-a94f-a8bbb6554b66';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si seleccionó 'otra' como una indicación de enfermedad respiratoria aguda'
+	WHERE SectionItemGuid = '575ab07d-80b1-46f4-a7f3-21c3789894a9';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Especifique qué otra indicación de enfermedad respiratoria aguda tiene el paciente'
+	WHERE SectionItemGuid = '293967d8-8913-4d7c-a034-4de4615b6742';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿El paciente presenta indicaciones de diarrea?'
+	WHERE SectionItemGuid = '1eb7c978-451c-4405-877a-cddb941f064d';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si tiene indicaciones de enfermedad diarreica aguda'
+	WHERE SectionItemGuid = 'd3f3af07-c1eb-4959-9e9f-8266eb8de978';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Seleccione la indicación de enfermedad diarreica aguda'
+	WHERE SectionItemGuid = '18343583-bc7b-4fad-8cf2-405282123a21';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si seleccionó 'otra' como una indicación de enfermedad diarreica aguda'
+	WHERE SectionItemGuid = '8382122f-985f-4388-8faa-b985f8d7f552';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Especifique qué otra indicación de enfermedad diarreica aguda tiene el paciente'
+	WHERE SectionItemGuid = '8c3efdc7-ea57-4ce9-a502-44e28a574cb7';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿El paciente presenta indicaciones de enfermedad febril aguda?'
+	WHERE SectionItemGuid = '5d860450-7024-40c0-9a03-f2858f8ee587';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si tiene indicaciones de enfermedad febril aguda'
+	WHERE SectionItemGuid = '3a4dcb8e-c673-475e-bd19-6806d13137ef';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Seleccione la indicación de enfermedad febril aguda'
+	WHERE SectionItemGuid = '8bfdd574-ba74-4d1a-bfc8-0412ecf71c22';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si seleccionó 'otra' como una indicación de enfermedad febril aguda'
+	WHERE SectionItemGuid = 'ac1a66f6-ba24-4175-971b-04347697d4fe';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Especifique qué otra indicación de enfermedad febril aguda tiene el paciente'
+	WHERE SectionItemGuid = '25adc6f6-a1b8-457b-909f-0670e3dadcd2';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 37
+	WHERE SectionItemGuid = '13776da1-b290-49e6-a1b0-546d1cc9016a';
+
+
+UPDATE SectionItem
+	SET
+		Number = 13
+	WHERE SectionItemGuid = '13776da1-b290-49e6-a1b0-546d1cc9016a';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿El paciente está actualmente admitido o el médico ha dicho que será admitido al hospital?
+	WHERE SectionItemGuid = '13776da1-b290-49e6-a1b0-546d1cc9016a';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 38
+	WHERE SectionItemGuid = '1348115c-2c4d-46d3-8f99-fe5fec71d098';
+
+
+UPDATE SectionItem
+	SET
+		Number = 14
+	WHERE SectionItemGuid = '1348115c-2c4d-46d3-8f99-fe5fec71d098';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 39
+	WHERE SectionItemGuid = 'eb21fca5-faa8-44d1-b067-2161a360f7e3';
+
+
+UPDATE SectionItem
+	SET
+		Number = 14.1
+	WHERE SectionItemGuid = 'eb21fca5-faa8-44d1-b067-2161a360f7e3';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote la fecha en que el paciente salió del hospital o se murió
+	WHERE SectionItemGuid = 'eb21fca5-faa8-44d1-b067-2161a360f7e3';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 40
+	WHERE SectionItemGuid = 'c02bb30a-3e3a-40d7-a274-799f3d97cde2';
+
+
+UPDATE SectionItem
+	SET
+		Number = 14.2
+	WHERE SectionItemGuid = 'c02bb30a-3e3a-40d7-a274-799f3d97cde2';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote el tipo de egreso del paciente
+	WHERE SectionItemGuid = 'c02bb30a-3e3a-40d7-a274-799f3d97cde2';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 41
+	WHERE SectionItemGuid = '7372a42b-47bd-430d-b348-29a7918927f1';
+
+
+UPDATE SectionItem
+	SET
+		Number = 14.3
+	WHERE SectionItemGuid = '7372a42b-47bd-430d-b348-29a7918927f1';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 42
+	WHERE SectionItemGuid = 'bcaea797-ca6f-46aa-865a-a57c71179ba4';
+
+
+UPDATE SectionItem
+	SET
+		Number = 14.3.1
+	WHERE SectionItemGuid = 'bcaea797-ca6f-46aa-865a-a57c71179ba4';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿A cuál hospital fue transferido?
+	WHERE SectionItemGuid = 'bcaea797-ca6f-46aa-865a-a57c71179ba4';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 43
+	WHERE SectionItemGuid = '6e20cd9c-e4c3-432b-a793-bafc670c14a5';
+
+
+UPDATE SectionItem
+	SET
+		Number = 14.3.2
+	WHERE SectionItemGuid = '6e20cd9c-e4c3-432b-a793-bafc670c14a5';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 44
+	WHERE SectionItemGuid = 'f4dfe9dd-e3fb-4353-adc4-0c8e88338775';
+
+
+UPDATE SectionItem
+	SET
+		Number = 14.3.2.1
+	WHERE SectionItemGuid = 'f4dfe9dd-e3fb-4353-adc4-0c8e88338775';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Especifique el hospital:
+	WHERE SectionItemGuid = 'f4dfe9dd-e3fb-4353-adc4-0c8e88338775';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 45
+	WHERE SectionItemGuid = '2c249a4e-2cc7-493f-adb9-55347f9d72cd';
+
+
+UPDATE SectionItem
+	SET
+		Number = 14.4
+	WHERE SectionItemGuid = '2c249a4e-2cc7-493f-adb9-55347f9d72cd';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 46
+	WHERE SectionItemGuid = '2950cea5-00d0-4ac1-99e4-4f381e0881ef';
+
+
+UPDATE SectionItem
+	SET
+		Number = 14.4.1
+	WHERE SectionItemGuid = '2950cea5-00d0-4ac1-99e4-4f381e0881ef';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿En qué condición estaba el paciente cuando salió del hospital?
+	WHERE SectionItemGuid = '2950cea5-00d0-4ac1-99e4-4f381e0881ef';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 47
+	WHERE SectionItemGuid = 'c20d22b8-c130-4954-bb09-2ba4a79f2f67';
+
+
+UPDATE SectionItem
+	SET
+		Number = 14.5
+	WHERE SectionItemGuid = 'c20d22b8-c130-4954-bb09-2ba4a79f2f67';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 48
+	WHERE SectionItemGuid = '8e21fc63-4bc1-43ae-b453-9a4b0706ab88';
+
+
+UPDATE SectionItem
+	SET
+		Number = 15
+	WHERE SectionItemGuid = '8e21fc63-4bc1-43ae-b453-9a4b0706ab88';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 49
+	WHERE SectionItemGuid = '168582ad-3138-46c6-b126-626176ad040c';
+
+
+UPDATE SectionItem
+	SET
+		Number = 15.1
+	WHERE SectionItemGuid = '168582ad-3138-46c6-b126-626176ad040c';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 50
+	WHERE SectionItemGuid = '85f96203-b18d-4420-8a14-fc60ad8e8694';
+
+
+UPDATE SectionItem
+	SET
+		Number = 16
+	WHERE SectionItemGuid = '85f96203-b18d-4420-8a14-fc60ad8e8694';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 51
+	WHERE SectionItemGuid = 'c26ba102-234a-4ab2-85a5-e3dd148c259e';
+
+
+UPDATE SectionItem
+	SET
+		Number = 16.1
+	WHERE SectionItemGuid = 'c26ba102-234a-4ab2-85a5-e3dd148c259e';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Recibió consentimiento verbal del paciente o tutor?'
+	WHERE SectionItemGuid = '2fd1c169-0504-4aeb-94bf-1bd9bcf8fb53';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Especifique razón(es) por la que NO se dio consentimiento'
+	WHERE SectionItemGuid = '85b0c76d-cb83-4346-9028-9813e20c9920';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si una razón por la que  no se dio consentimiento es 'Otra''
+	WHERE SectionItemGuid = 'fb14a645-9983-4349-84ab-21d64c22c67a';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Especifique la otra razón'
+	WHERE SectionItemGuid = '2180f77e-5569-4292-a152-b91bfb5438a3';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 4
+	WHERE SectionItemGuid = 'deeff627-bf53-49ba-8a5e-4c168b5e1f4a';
+
+
+UPDATE SectionItem
+	SET
+		Number = 3
+	WHERE SectionItemGuid = 'deeff627-bf53-49ba-8a5e-4c168b5e1f4a';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote si una temperatura fue registrada en las primeras 24 horas de admisión
+	WHERE SectionItemGuid = 'deeff627-bf53-49ba-8a5e-4c168b5e1f4a';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 5
+	WHERE SectionItemGuid = '8bac5c97-70fc-4728-a5ed-0e30432c3f43';
+
+
+UPDATE SectionItem
+	SET
+		Number = 4
+	WHERE SectionItemGuid = '8bac5c97-70fc-4728-a5ed-0e30432c3f43';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 6
+	WHERE SectionItemGuid = '01277398-ab7b-4b6d-aca9-adf2effccc1a';
+
+
+UPDATE SectionItem
+	SET
+		Number = 4.1
+	WHERE SectionItemGuid = '01277398-ab7b-4b6d-aca9-adf2effccc1a';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote la temperatura (ºC) más alta registrada durante las primeras 24 horas de admisión
+	WHERE SectionItemGuid = '01277398-ab7b-4b6d-aca9-adf2effccc1a';
+
+
+UPDATE SectionItem
+	SET
+		HelpText = Si la temperatura no fue registrada y no han pasado mas de 24 horas de admisión debe tomar la temperatura del paciente y anotarla en su PDA.
+	WHERE SectionItemGuid = '01277398-ab7b-4b6d-aca9-adf2effccc1a';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 7
+	WHERE SectionItemGuid = 'a8223a91-951e-4d67-80b1-44e0dcfb228c';
+
+
+UPDATE SectionItem
+	SET
+		Number = 5
+	WHERE SectionItemGuid = 'a8223a91-951e-4d67-80b1-44e0dcfb228c';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Si tiene indicación de enfermedad diarreica aguda y está en Hospital de Cuilapa o Xela
+	WHERE SectionItemGuid = 'a8223a91-951e-4d67-80b1-44e0dcfb228c';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 8
+	WHERE SectionItemGuid = '58971af3-0c7b-41fa-8708-5f0257ba155e';
+
+
+UPDATE SectionItem
+	SET
+		Number = 5.1
+	WHERE SectionItemGuid = '58971af3-0c7b-41fa-8708-5f0257ba155e';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote si el niño ingresó con Plan B (rehidratación oral o por vía nasogástrica) o Plan C (rehidratación con suero intravenoso)
+	WHERE SectionItemGuid = '58971af3-0c7b-41fa-8708-5f0257ba155e';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 9
+	WHERE SectionItemGuid = '315acb9d-a801-46f6-9435-cbefedc8905d';
+
+
+UPDATE SectionItem
+	SET
+		Number = 5.2
+	WHERE SectionItemGuid = '315acb9d-a801-46f6-9435-cbefedc8905d';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote si el grado de deshidratación del niño fue registrado
+	WHERE SectionItemGuid = '315acb9d-a801-46f6-9435-cbefedc8905d';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 10
+	WHERE SectionItemGuid = '7d7fd28e-7596-4d12-a12c-3e44d77ff510';
+
+
+UPDATE SectionItem
+	SET
+		Number = 5.3
+	WHERE SectionItemGuid = '7d7fd28e-7596-4d12-a12c-3e44d77ff510';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 11
+	WHERE SectionItemGuid = '931bc3ec-e549-4c2d-a379-319271601fbc';
+
+
+UPDATE SectionItem
+	SET
+		Number = 5.3.1
+	WHERE SectionItemGuid = '931bc3ec-e549-4c2d-a379-319271601fbc';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote el grado de deshidratación registrado en el expediente
+	WHERE SectionItemGuid = '931bc3ec-e549-4c2d-a379-319271601fbc';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 12
+	WHERE SectionItemGuid = 'f156f312-3ca2-4686-b47b-0219f846578b';
+
+
+UPDATE SectionItem
+	SET
+		Number = 6
+	WHERE SectionItemGuid = 'f156f312-3ca2-4686-b47b-0219f846578b';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote si el paciente tiene resultados de hematología
+	WHERE SectionItemGuid = 'f156f312-3ca2-4686-b47b-0219f846578b';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 13
+	WHERE SectionItemGuid = 'd63d88d8-2b38-4835-906d-72b53c3838bb';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7
+	WHERE SectionItemGuid = 'd63d88d8-2b38-4835-906d-72b53c3838bb';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 14
+	WHERE SectionItemGuid = '3afb18ce-b14a-4a41-958d-37eb66fc7680';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.1
+	WHERE SectionItemGuid = '3afb18ce-b14a-4a41-958d-37eb66fc7680';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote el primer conteo de glóbulos blancos (conteo/cm³)
+	WHERE SectionItemGuid = '3afb18ce-b14a-4a41-958d-37eb66fc7680';
+
+
+UPDATE SectionItem
+	SET
+		HelpText = Debe buscar en el registro medico o laboratorio cuál fue el primer resultado de conteo de glóbulos blancos.
+	WHERE SectionItemGuid = '3afb18ce-b14a-4a41-958d-37eb66fc7680';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 15
+	WHERE SectionItemGuid = '322239ea-1556-4b19-9a19-96d78c7233e5';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.2
+	WHERE SectionItemGuid = '322239ea-1556-4b19-9a19-96d78c7233e5';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote si hubo un diferencial anormal
+	WHERE SectionItemGuid = '322239ea-1556-4b19-9a19-96d78c7233e5';
+
+
+UPDATE SectionItem
+	SET
+		HelpText = Debe indicar si el diferencial de los glóbulos blancos reportados en la pregunte anterior es anormal.
+	WHERE SectionItemGuid = '322239ea-1556-4b19-9a19-96d78c7233e5';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 16
+	WHERE SectionItemGuid = 'dbe5777d-6333-4fe6-b223-cff54f8d593f';
+
+
+UPDATE SectionItem
+	SET
+		Number = 8
+	WHERE SectionItemGuid = 'dbe5777d-6333-4fe6-b223-cff54f8d593f';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote si se registraron en el expediente anormalidades en el examen de los pulmones, como: roncus, crepitantes, estertores, sibilancias o estridor
+	WHERE SectionItemGuid = 'dbe5777d-6333-4fe6-b223-cff54f8d593f';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 17
+	WHERE SectionItemGuid = '71892814-10a1-4169-8458-ee4a4f1a912d';
+
+
+UPDATE SectionItem
+	SET
+		Number = 9
+	WHERE SectionItemGuid = '71892814-10a1-4169-8458-ee4a4f1a912d';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 18
+	WHERE SectionItemGuid = '2051521b-2fc3-4f49-ada7-9f82b7d0878b';
+
+
+UPDATE SectionItem
+	SET
+		Number = 9.1
+	WHERE SectionItemGuid = '2051521b-2fc3-4f49-ada7-9f82b7d0878b';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote si una tasa de respiración por minuto fue registrada en las primeras 24 horas de admisión
+	WHERE SectionItemGuid = '2051521b-2fc3-4f49-ada7-9f82b7d0878b';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 19
+	WHERE SectionItemGuid = '52af0bfe-358b-4d91-9615-8a88c2b9e132';
+
+
+UPDATE SectionItem
+	SET
+		Number = 9.2
+	WHERE SectionItemGuid = '52af0bfe-358b-4d91-9615-8a88c2b9e132';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 20
+	WHERE SectionItemGuid = '2de9dfbf-eab4-4e8b-837c-71fbc3bf2637';
+
+
+UPDATE SectionItem
+	SET
+		Number = 9.2.1
+	WHERE SectionItemGuid = '2de9dfbf-eab4-4e8b-837c-71fbc3bf2637';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote la respiración por minuto más alta registrada durante las primeras 24 horas de admisión
+	WHERE SectionItemGuid = '2de9dfbf-eab4-4e8b-837c-71fbc3bf2637';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Ahora va a entrevistar al paciente, o a su padre/tutor si es menor de edad. Por favor, diga al paciente o a su padre/tutor que quiere hacerle varias preguntas que servirán para ver si es elegible para participar en este estudio.'
+	WHERE SectionItemGuid = 'd7623536-9081-4369-a78a-e1dc212e99a5';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Verifique los primeros nombres del paciente'
+	WHERE SectionItemGuid = '56a4cb22-7971-4b04-a1f3-342e75fb42d2';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Verifique los apellidos del paciente'
+	WHERE SectionItemGuid = 'aab11c20-46ce-4131-b32b-c33392284e78';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Verifique el número de afiliación al IGSS'
+	WHERE SectionItemGuid = '384a7a14-3197-4003-b349-8663becb8136';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Verificar la fecha y hora de admisión a este hospital'
+	WHERE SectionItemGuid = '298158ed-c3c4-4c2f-86c7-84a487ddb24d';
+
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe seleccionar la FECHA Y HORA en que el paciente fue ADMITIDO al hospital.'
+	WHERE SectionItemGuid = '298158ed-c3c4-4c2f-86c7-84a487ddb24d';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Verificar el número de registro del hospital'
+	WHERE SectionItemGuid = '1f077d30-4f61-4d76-9d5d-9fc0b9fb2f04';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Verifique la edad en años al momento de la admisión.'
+	WHERE SectionItemGuid = '0fbf19e3-3d9e-42a4-afcd-8b3bb810b127';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Verifique edad en meses al momento de la admisión.'
+	WHERE SectionItemGuid = 'd362689b-baa5-481b-b7c4-b76f3e740a86';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Verifique edad en días al momento de la admisión.'
+	WHERE SectionItemGuid = '24b76993-92c3-4aaf-b0ab-98560cd6e017';
+
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Si el bebe tiene mas de 28 días, debe poner su edad como 1 mes.'
+	WHERE SectionItemGuid = '24b76993-92c3-4aaf-b0ab-98560cd6e017';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Cuál es su fecha de nacimiento?'
+	WHERE SectionItemGuid = '86907563-fd8d-4663-a0cb-b72607bfdb91';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Cómo determinó la fecha de nacimiento?'
+	WHERE SectionItemGuid = 'a444c3f7-1621-4486-8d39-cbfbcda8e42c';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Verifique sexo del paciente'
+	WHERE SectionItemGuid = '33e4e527-d912-4324-b80b-1c804f0ec996';
+
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe indicar el SEXO del paciente.'
+	WHERE SectionItemGuid = '33e4e527-d912-4324-b80b-1c804f0ec996';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Verifique el departamento del paciente'
+	WHERE SectionItemGuid = '540d5699-61bb-4b20-a2c0-33e81b285129';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Verifique el municipio del paciente'
+	WHERE SectionItemGuid = '8731f205-73a8-47b1-8f1d-2a1f6854a74b';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la comunidad del paciente'
+	WHERE SectionItemGuid = 'd28a7d00-332e-485c-931e-be319b37f3bb';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la zona del paciente'
+	WHERE SectionItemGuid = '40bdb28e-bf43-4075-a28d-813b943ef7b4';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: Durante esta enfermedad ha tenido o tiene fiebre o calentura?'
+	WHERE SectionItemGuid = '854f367f-7aca-42a5-8a98-66d790304eca';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Pudo usted medir su temperatura?'
+	WHERE SectionItemGuid = '70f5135a-438c-4ef5-936b-55d1d2b3ac00';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Cuál fue su temperatura (ºC)?'
+	WHERE SectionItemGuid = '8aca3f40-dfe9-4570-9871-c9338c35a237';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿En qué fecha empezó la fiebre o calentura?'
+	WHERE SectionItemGuid = '846d2921-0f5b-4c5b-86dc-97258296ca6e';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle si el niño/niña ha tenido problemas para comer, beber, o mamar durante su enfermedad.'
+	WHERE SectionItemGuid = '37b5acb2-904a-4308-a233-da3f25004535';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Tome la temperatura (ºC) del paciente'
+	WHERE SectionItemGuid = '00611f42-441d-4a74-9e40-54962c1af32f';
+
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Si la temperatura no fue registrada y no han pasado mas de 24 horas de admisión debe tomar la temperatura del paciente y anotarla en su PDA.'
+	WHERE SectionItemGuid = '00611f42-441d-4a74-9e40-54962c1af32f';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Ha tenido diarrea o asientos líquidos en los últimos 14 días?'
+	WHERE SectionItemGuid = '2e0f799e-9515-4883-b564-fe113a2059dd';
+
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si ha tenido diarrea o asientos en los últimos 7 días.'
+	WHERE SectionItemGuid = '2e0f799e-9515-4883-b564-fe113a2059dd';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Hace cuántos días comenzó con diarrea o asientos líquidos?'
+	WHERE SectionItemGuid = '5c4a6373-275f-4c82-b026-6a08bd7b1912';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿En su peor día, cuántas deposiciones o asientos líquidos tuvo en un período de 24 horas (1 día)?'
+	WHERE SectionItemGuid = 'eb49a68d-46b7-4bb6-823b-cfd6d1e5ac0f';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿En la semana anterior al inicio de esta enfermedad de diarrea tuvo algún otro episodio de diarrea?'
+	WHERE SectionItemGuid = '7de9e42a-3601-4ed6-835d-fbdd1b0f7559';
+
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si en la semana anterior al inicio de su diarrea, tuvo algún otro episodio de diarrea.'
+	WHERE SectionItemGuid = '7de9e42a-3601-4ed6-835d-fbdd1b0f7559';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si no tiene una indicación de enfermedad respiratoria aguda'
+	WHERE SectionItemGuid = 'dd36948f-4cd6-40aa-b07d-7246f7a44493';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Ha tenido tos, dolor de garganta, dificultad para respirar  o le cuesta más trabajo respirar?'
+	WHERE SectionItemGuid = 'b9e8d670-df37-4407-8bde-3f789f68be7c';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si ha tenido tos.'
+	WHERE SectionItemGuid = '85cddba0-dd0f-41bc-97e3-f95d84b28d5f';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Hace cuántos días empezó la tos?'
+	WHERE SectionItemGuid = 'd343458e-1e19-4788-9a33-3b722ef3bf7c';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si ha tenido tos severa por más de 7 días o es menor de 6 meses'
+	WHERE SectionItemGuid = 'fb0eea68-9e62-469f-b417-19d5cf75a5bf';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Durante esta enfermedad, ha tenido una tos tan fuerte que lo hizo vomitar?'
+	WHERE SectionItemGuid = '190e38e1-0164-4060-9fb3-6b168b7f5222';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Ha tenido ataques de tos (ataques súbitos e intensos de tos)?'
+	WHERE SectionItemGuid = '85560c08-60a9-4d49-8424-0e9d2518c3a6';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Al final del ataque de tos ha tenido un gallo o silbido?'
+	WHERE SectionItemGuid = 'a3d5c587-db2c-46c3-a67d-aeca82c09cb1';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Dificultad para respirar o le cuesta más trabajo respirar?'
+	WHERE SectionItemGuid = 'b02043bf-f5b9-483b-b635-67b1c6a6f2f7';
+
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si ha tenido dificultad para respirar durante su enfermedad.'
+	WHERE SectionItemGuid = 'b02043bf-f5b9-483b-b635-67b1c6a6f2f7';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si Tiene dificultad para respirar'
+	WHERE SectionItemGuid = 'c280e02d-75d8-469e-96cf-b9a1263e874e';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Hace cuántos días empezó con dificultad para respirar?'
+	WHERE SectionItemGuid = '84d690ee-c7d2-4a77-befa-12b5ca637fd4';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si produce esputo.'
+	WHERE SectionItemGuid = 'daa9b021-5c37-4cf3-b6d0-6861ede7149f';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Esputo o flema con sangre'
+	WHERE SectionItemGuid = 'e7b44fd5-520b-4591-b67f-83cc0a40599f';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si le ha dolido la garganta durante su enfermedad.'
+	WHERE SectionItemGuid = '892a6483-e825-4cc8-864e-1739384fbb39';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si tiene dolor de garganta'
+	WHERE SectionItemGuid = '763b01d8-50b6-42af-bee8-31e8f0caf665';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Hace cuántos días empezó con dolor de garganta?'
+	WHERE SectionItemGuid = '6d376a75-74bf-4bef-b328-c722c5d6f581';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si le hay faltado el aire durante su enfermedad.'
+	WHERE SectionItemGuid = '8aec0044-7589-473c-b848-22aaa0fc53db';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si le da dolor de pecho al respirar durante su enfermedad.'
+	WHERE SectionItemGuid = 'f25f5fab-e87d-4235-9ca8-1fcd860af953';
+
+UPDATE SectionItem
+	SET
+		MainText = 'ESCUCHE: ¿Tiene estridor?'
+	WHERE SectionItemGuid = 'dada0b87-353e-4d63-a52a-6d822c6f552a';
+
+UPDATE SectionItem
+	SET
+		MainText = 'OBSERVE: ¿Se le hunden las costillas cuando respira?'
+	WHERE SectionItemGuid = 'da418d7e-145b-40fc-8aa4-f88be433e78d';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Su hijo/hija para de respirar cuando esta mamando o bebiendo?'
+	WHERE SectionItemGuid = '27076f5c-8f36-4a9d-a112-231f51693c7b';
+
+UPDATE SectionItem
+	SET
+		MainText = 'OBSERVE: ¿Tiene aleteo nasal?'
+	WHERE SectionItemGuid = '3e6423e7-f901-473d-9c5d-bd720f6ebb12';
+
+UPDATE SectionItem
+	SET
+		Number = '3.10'
+	WHERE SectionItemGuid = '77ccf0a8-11dd-4f42-928e-005ee90cc1e3';
+
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Se pudo medir la tasa de respiración por minuto?'
+	WHERE SectionItemGuid = '77ccf0a8-11dd-4f42-928e-005ee90cc1e3';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la tasa de respiración calculada: (Use el cronómetro de la PDA para esta medición)'
+	WHERE SectionItemGuid = 'ed4e796d-3ffc-4fa1-a340-6cc6130f49a1';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si el paciente tiene enfermedad respiratoria aguda'
+	WHERE SectionItemGuid = '6f9d99f6-f448-4057-9b0d-0ac37193698e';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Se puede medir la oximetría de pulso?'
+	WHERE SectionItemGuid = 'aef34af7-5aec-4524-8033-dcdd962ece91';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la saturación de oxígeno'
+	WHERE SectionItemGuid = '5f9f5e6a-28ba-473a-b8e3-ad4de5c78c40';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la la fecha y hora cuando la saturación de oxígeno fue medida'
+	WHERE SectionItemGuid = 'c65bff6b-3c33-416e-afe9-982cb7c75876';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Estuvo el paciente bajo ventilación mecánica?'
+	WHERE SectionItemGuid = 'ab15bb81-81c0-4a57-b183-a313fb3a650d';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Cuanto oxígeno estuvo recibiendo el paciente? (%)'
+	WHERE SectionItemGuid = 'dc4e2c1b-5525-4c5a-bb15-268f57f3d814';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Estuvo el paciente bajo oxígeno suplementario (cánula nasal o mascarilla)?'
+	WHERE SectionItemGuid = '0ba81a4f-77ad-4f36-8fd1-ad7f0d9fe31a';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Cuanto oxígeno estuvo recibiendo el paciente? (Litros)'
+	WHERE SectionItemGuid = 'a32b706c-ef40-45c5-85ac-1d00339ed719';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Fue posible quitar el oxígeno?'
+	WHERE SectionItemGuid = '6a422039-8a59-4230-9f97-2ec4be94bb74';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Se puede medir la oximetría de pulso sin el oxígeno suplementario?'
+	WHERE SectionItemGuid = '007b9bd0-505b-4d8d-b696-ae3fdba126d4';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la saturación de oxígeno después de haber quitado el oxígeno suplementario por 5 minutos.'
+	WHERE SectionItemGuid = '96ae69a3-4c58-4b83-b318-81c525389e97';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la fecha y hora cuando la saturación de oxígeno fue medida'
+	WHERE SectionItemGuid = '90c1716b-253c-4893-acd8-00b96c42a04f';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Por qué no se pudo medir la oximetría de pulso?'
+	WHERE SectionItemGuid = '0c2ada53-dc68-4104-9112-c62a75a48b4d';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si la razón no se pudo medir la oximetría de pulso es 'otro''
+	WHERE SectionItemGuid = '9b09d234-0dbe-40bb-b038-cdc2a896bffd';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Especifique la otra razón'
+	WHERE SectionItemGuid = '5557d653-170e-4fbd-ba05-0211392a920d';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Por qué no fue posible quitar el oxígeno?'
+	WHERE SectionItemGuid = '1262160e-e8ae-4fa1-ad50-3d16d4f85665';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si NO se pudo medir la oximetría de pulso'
+	WHERE SectionItemGuid = '83e7e8b1-ad9b-4c88-8d41-148b5bdc48bf';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Por qué no se pudo medir la oximetría de pulso?'
+	WHERE SectionItemGuid = 'b45cdc1b-9218-4764-a9dc-3410e1992a2b';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si la razón no se pudo medir la oximetría de pulso es 'otro''
+	WHERE SectionItemGuid = '88d4a8f3-29a2-41fe-aee5-73243718b560';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Especifique la otra razón'
+	WHERE SectionItemGuid = '6b1f717f-8c00-451e-903a-4228c2665851';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si sospechoso IRAG (Infección respiratoria aguda grave) es sí'
+	WHERE SectionItemGuid = '712a1ff5-5d21-483f-a99b-75ab74213698';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Hace cuántos días empezó con su enfermedad?'
+	WHERE SectionItemGuid = '2dbb15e8-6cad-4cb8-b277-6d93c26f356b';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Debe consultar con el médico para asegurar que no haya otra causa obvia de la fiebre.'
+	WHERE SectionItemGuid = 'abf8cfb6-8af4-430e-b756-61c2c141e804';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Tiene el paciente uno de los siguientes diagnósticos?'
+	WHERE SectionItemGuid = '5bb450d7-2598-4cc4-92d5-f743de430b1c';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermedad diarreica aguda solamente'
+	WHERE SectionItemGuid = 'ae2bf8f2-d05e-4e31-a7d1-af12e4a21275';
+
+UPDATE SectionItem
+	SET
+		MainText = 'El paciente es elegible para el estudio de Enfermedad diarreica aguda.'
+	WHERE SectionItemGuid = 'cb701896-c455-4f31-a88c-00fecde38f29';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermedad Respiratoria aguda solamente'
+	WHERE SectionItemGuid = 'e014bfa7-6d08-4e89-bd81-c745fddd39bc';
+
+UPDATE SectionItem
+	SET
+		MainText = 'El paciente es elegible para el estudio de Enfermedad respiratoria aguda.'
+	WHERE SectionItemGuid = '4d4c7899-065d-4db3-ae9f-630c881215ee';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 6
+	WHERE SectionItemGuid = 'e57e6680-f7d7-4176-a0b4-7e2732f57776';
+
+
+UPDATE SectionItem
+	SET
+		Number = 4
+	WHERE SectionItemGuid = 'e57e6680-f7d7-4176-a0b4-7e2732f57776';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermedad Febril aguda solamente
+	WHERE SectionItemGuid = 'e57e6680-f7d7-4176-a0b4-7e2732f57776';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 7
+	WHERE SectionItemGuid = '1203812a-fd8f-4eba-a14b-e48463c205d0';
+
+
+UPDATE SectionItem
+	SET
+		Number = 4.1
+	WHERE SectionItemGuid = '1203812a-fd8f-4eba-a14b-e48463c205d0';
+
+
+UPDATE SectionItem
+	SET
+		MainText = El paciente es elegible para el estudio de Enfermedad febril aguda.
+	WHERE SectionItemGuid = '1203812a-fd8f-4eba-a14b-e48463c205d0';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 8
+	WHERE SectionItemGuid = 'eeceb80a-61fe-4031-bfaa-d5b70f8e5fe4';
+
+
+UPDATE SectionItem
+	SET
+		Number = 5
+	WHERE SectionItemGuid = 'eeceb80a-61fe-4031-bfaa-d5b70f8e5fe4';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermedad diarreica aguda y enfermedad respiratoria aguda
+	WHERE SectionItemGuid = 'eeceb80a-61fe-4031-bfaa-d5b70f8e5fe4';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 9
+	WHERE SectionItemGuid = 'f1af1ffd-087e-4ab3-ba0f-fa8bac466fe7';
+
+
+UPDATE SectionItem
+	SET
+		Number = 5.1
+	WHERE SectionItemGuid = 'f1af1ffd-087e-4ab3-ba0f-fa8bac466fe7';
+
+
+UPDATE SectionItem
+	SET
+		MainText = El paciente es elegible para los estudios de Enfermedad diarreica y enfermedad respiratoria aguda.
+	WHERE SectionItemGuid = 'f1af1ffd-087e-4ab3-ba0f-fa8bac466fe7';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 10
+	WHERE SectionItemGuid = '4c963605-1f14-40e0-822a-fe6690d62063';
+
+
+UPDATE SectionItem
+	SET
+		Number = 6
+	WHERE SectionItemGuid = '4c963605-1f14-40e0-822a-fe6690d62063';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Si el paciente NO es elegible para el estudio de enfermedad diarreica aguda ni enfermedad respiratoria aguda ni enfermedad febril aguda
+	WHERE SectionItemGuid = '4c963605-1f14-40e0-822a-fe6690d62063';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 11
+	WHERE SectionItemGuid = '9bdfcd51-ef30-45a4-b8df-59bcd2efb70c';
+
+
+UPDATE SectionItem
+	SET
+		Number = 6.1
+	WHERE SectionItemGuid = '9bdfcd51-ef30-45a4-b8df-59bcd2efb70c';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 12
+	WHERE SectionItemGuid = '228e44d1-9e19-4e1a-8711-2f987e3097a6';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7
+	WHERE SectionItemGuid = '228e44d1-9e19-4e1a-8711-2f987e3097a6';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 13
+	WHERE SectionItemGuid = 'af4fcedd-c78c-4ff6-8b44-12e04bba8e8b';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.1
+	WHERE SectionItemGuid = 'af4fcedd-c78c-4ff6-8b44-12e04bba8e8b';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 14
+	WHERE SectionItemGuid = '1d46e4f1-3fae-41c0-ab42-f035c4176e77';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.2
+	WHERE SectionItemGuid = '1d46e4f1-3fae-41c0-ab42-f035c4176e77';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote si el paciente o su padre/tutor dio su consentimiento escrito
+	WHERE SectionItemGuid = '1d46e4f1-3fae-41c0-ab42-f035c4176e77';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 15
+	WHERE SectionItemGuid = '3af56594-9c89-4985-b66b-31c19ad09f76';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.3
+	WHERE SectionItemGuid = '3af56594-9c89-4985-b66b-31c19ad09f76';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 16
+	WHERE SectionItemGuid = '00b73e13-1ede-4a09-b848-d29470185f20';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.3.1
+	WHERE SectionItemGuid = '00b73e13-1ede-4a09-b848-d29470185f20';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote si el paciente dio su asentimiento escrito
+	WHERE SectionItemGuid = '00b73e13-1ede-4a09-b848-d29470185f20';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 17
+	WHERE SectionItemGuid = 'bb3020db-c749-42c8-afcc-e329a402a153';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.3.2
+	WHERE SectionItemGuid = 'bb3020db-c749-42c8-afcc-e329a402a153';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 18
+	WHERE SectionItemGuid = '42943d10-beaf-44b2-9e11-f18e675523c2';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.3.2.1
+	WHERE SectionItemGuid = '42943d10-beaf-44b2-9e11-f18e675523c2';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Especifique la razón por la que el asentimiento NO aplicó
+	WHERE SectionItemGuid = '42943d10-beaf-44b2-9e11-f18e675523c2';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 19
+	WHERE SectionItemGuid = 'fb9e370f-39d3-4c85-8952-add695ef76c9';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.4
+	WHERE SectionItemGuid = 'fb9e370f-39d3-4c85-8952-add695ef76c9';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 20
+	WHERE SectionItemGuid = 'b9b03e37-f852-464f-a49d-5d42754984a3';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.4.1
+	WHERE SectionItemGuid = 'b9b03e37-f852-464f-a49d-5d42754984a3';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Especifique razón(es) por la que NO dio consentimiento o asentimiento
+	WHERE SectionItemGuid = 'b9b03e37-f852-464f-a49d-5d42754984a3';
+
+
+UPDATE SectionItem
+	SET
+		HelpText = Debe especifique la razón por la que asentimiento NO no se dio consentimiento o asentimiento:
+	WHERE SectionItemGuid = 'b9b03e37-f852-464f-a49d-5d42754984a3';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 21
+	WHERE SectionItemGuid = 'dd6c8eec-e900-469e-a959-8581f4685618';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.4.2
+	WHERE SectionItemGuid = 'dd6c8eec-e900-469e-a959-8581f4685618';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 22
+	WHERE SectionItemGuid = '6605eac7-390c-4577-a832-d7dfe0f6c105';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.4.2.1
+	WHERE SectionItemGuid = '6605eac7-390c-4577-a832-d7dfe0f6c105';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Especifique la otra razón
+	WHERE SectionItemGuid = '6605eac7-390c-4577-a832-d7dfe0f6c105';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 23
+	WHERE SectionItemGuid = '90c4eb7e-3bd7-4e78-8488-25d0c511dfc3';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.5
+	WHERE SectionItemGuid = '90c4eb7e-3bd7-4e78-8488-25d0c511dfc3';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Si dio consentimiento (y asentimiento cuando aplica) escrito
+	WHERE SectionItemGuid = '90c4eb7e-3bd7-4e78-8488-25d0c511dfc3';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 24
+	WHERE SectionItemGuid = 'ffa58dfc-41f7-4594-9df5-0febc6452ba8';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.5.1
+	WHERE SectionItemGuid = 'ffa58dfc-41f7-4594-9df5-0febc6452ba8';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote si el paciente quedo inscrito en el estudio
+	WHERE SectionItemGuid = 'ffa58dfc-41f7-4594-9df5-0febc6452ba8';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 25
+	WHERE SectionItemGuid = '2ed90478-c5dd-4475-bd09-7fd68d6be718';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.5.2
+	WHERE SectionItemGuid = '2ed90478-c5dd-4475-bd09-7fd68d6be718';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 26
+	WHERE SectionItemGuid = '6dc64b03-01f7-4bbd-b5ba-bfff2b4e2c7a';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.5.2.1
+	WHERE SectionItemGuid = '6dc64b03-01f7-4bbd-b5ba-bfff2b4e2c7a';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Especifique la razón por la que NO se inscribe al paciente
+	WHERE SectionItemGuid = '6dc64b03-01f7-4bbd-b5ba-bfff2b4e2c7a';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 27
+	WHERE SectionItemGuid = 'c9374de3-4c97-47f8-a74f-de70c36da49b';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.5.2.2
+	WHERE SectionItemGuid = 'c9374de3-4c97-47f8-a74f-de70c36da49b';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 28
+	WHERE SectionItemGuid = 'bfef3016-1e17-4551-8c5b-7d90a6257421';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.5.2.2.1
+	WHERE SectionItemGuid = 'bfef3016-1e17-4551-8c5b-7d90a6257421';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Especifique la razón por la que NO se  inscribe
+	WHERE SectionItemGuid = 'bfef3016-1e17-4551-8c5b-7d90a6257421';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 29
+	WHERE SectionItemGuid = 'b1877f2f-ef3e-4073-9110-e34cbc296407';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.5.3
+	WHERE SectionItemGuid = 'b1877f2f-ef3e-4073-9110-e34cbc296407';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 30
+	WHERE SectionItemGuid = '5fccc63b-c15f-4772-be8c-3ad9b769be8d';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.5.3.1
+	WHERE SectionItemGuid = '5fccc63b-c15f-4772-be8c-3ad9b769be8d';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Ingrese el código de la etiqueta que identificará al paciente y sus muestras
+	WHERE SectionItemGuid = '5fccc63b-c15f-4772-be8c-3ad9b769be8d';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 31
+	WHERE SectionItemGuid = '39e66470-4f79-4d1f-8020-9bf3d58f00cb';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.5.3.2
+	WHERE SectionItemGuid = '39e66470-4f79-4d1f-8020-9bf3d58f00cb';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿Hay un número telefónico a donde podamos contactarle?
+	WHERE SectionItemGuid = '39e66470-4f79-4d1f-8020-9bf3d58f00cb';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 32
+	WHERE SectionItemGuid = '13a18606-4cee-4011-94e0-6c6e9ed2afe1';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.5.3.3
+	WHERE SectionItemGuid = '13a18606-4cee-4011-94e0-6c6e9ed2afe1';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Si tiene un número telefónico:
+	WHERE SectionItemGuid = '13a18606-4cee-4011-94e0-6c6e9ed2afe1';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 33
+	WHERE SectionItemGuid = '73813a83-8607-48dc-9f29-af610f2cbfb8';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.5.3.3.1
+	WHERE SectionItemGuid = '73813a83-8607-48dc-9f29-af610f2cbfb8';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Escriba el Número de teléfono:
+	WHERE SectionItemGuid = '73813a83-8607-48dc-9f29-af610f2cbfb8';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 34
+	WHERE SectionItemGuid = '223c1fae-a032-4afa-bb02-e8329fd43aa7';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.5.3.4
+	WHERE SectionItemGuid = '223c1fae-a032-4afa-bb02-e8329fd43aa7';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 35
+	WHERE SectionItemGuid = '36d3bc25-4ef4-4e02-8f0e-c1c6fdc828c6';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.5.3.4.1
+	WHERE SectionItemGuid = '36d3bc25-4ef4-4e02-8f0e-c1c6fdc828c6';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 36
+	WHERE SectionItemGuid = '31fbbd1e-6c99-45db-80da-fa39daaa8cad';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7.5.3.5
+	WHERE SectionItemGuid = '31fbbd1e-6c99-45db-80da-fa39daaa8cad';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si el paciente tiene enfermedad diarreica aguda:'
+	WHERE SectionItemGuid = '31cd0a3d-5bd1-45a3-9219-9ebc5feda582';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Colectó alguna muestra de heces?'
+	WHERE SectionItemGuid = 'b0b98026-8ad4-4c7d-983e-7e7396b90d04';
+
+
+UPDATE SectionItem
+	SET
+		HelpText = 'La muestra entera es de mayor utilidad para detectar la posible causa de enfermedad.'
+	WHERE SectionItemGuid = 'b0b98026-8ad4-4c7d-983e-7e7396b90d04';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 5
+	WHERE SectionItemGuid = 'b96a997b-2d34-4f1b-8966-46d9b8dbea59';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Si NO colectó una muestra de heces (entera, hisopo, o ambos)
+	WHERE SectionItemGuid = 'b96a997b-2d34-4f1b-8966-46d9b8dbea59';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 6
+	WHERE SectionItemGuid = '5ee171b9-ac00-4469-a52f-23e39da2c871';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Por qué no pudo colectar una muestra de heces (entera, hisopo o ambos)?
+	WHERE SectionItemGuid = '5ee171b9-ac00-4469-a52f-23e39da2c871';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 7
+	WHERE SectionItemGuid = '17ff155f-a034-4f4c-b66a-22c6cc2a4e16';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 8
+	WHERE SectionItemGuid = '5f36250a-325f-497c-82e2-173db295177c';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Especifique la otra razón
+	WHERE SectionItemGuid = '5f36250a-325f-497c-82e2-173db295177c';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 9
+	WHERE SectionItemGuid = '5f3621b2-2d4a-437b-aad8-e7d69c67cb66';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Si colectó muestra de heces (hisopo o entera o ambos)
+	WHERE SectionItemGuid = '5f3621b2-2d4a-437b-aad8-e7d69c67cb66';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 10
+	WHERE SectionItemGuid = '3e6192db-626c-4352-a3b9-e6ef8920c1be';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.1
+	WHERE SectionItemGuid = '3e6192db-626c-4352-a3b9-e6ef8920c1be';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Colectó una muestra de heces entera?
+	WHERE SectionItemGuid = '3e6192db-626c-4352-a3b9-e6ef8920c1be';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 11
+	WHERE SectionItemGuid = '82e14caa-38c3-4104-bfa2-f19c8cf29bd4';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.2
+	WHERE SectionItemGuid = '82e14caa-38c3-4104-bfa2-f19c8cf29bd4';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 12
+	WHERE SectionItemGuid = 'cacbf78d-1248-4b8d-949f-9382be537571';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.2.1
+	WHERE SectionItemGuid = 'cacbf78d-1248-4b8d-949f-9382be537571';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Por qué no pudo colectar una muestra de heces entera?
+	WHERE SectionItemGuid = 'cacbf78d-1248-4b8d-949f-9382be537571';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 13
+	WHERE SectionItemGuid = 'd9032988-4276-4e62-899a-dada10f06039';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.2.2
+	WHERE SectionItemGuid = 'd9032988-4276-4e62-899a-dada10f06039';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 14
+	WHERE SectionItemGuid = 'ecb5dc5a-cca3-4b16-925d-ebdd6e72200f';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.2.2.1
+	WHERE SectionItemGuid = 'ecb5dc5a-cca3-4b16-925d-ebdd6e72200f';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Especifique la otra razón
+	WHERE SectionItemGuid = 'ecb5dc5a-cca3-4b16-925d-ebdd6e72200f';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 15
+	WHERE SectionItemGuid = '936dbeb2-c076-45e1-bda7-8dcd1c037941';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.3
+	WHERE SectionItemGuid = '936dbeb2-c076-45e1-bda7-8dcd1c037941';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 16
+	WHERE SectionItemGuid = 'a935cdc5-6dbf-4960-89ee-1311c0cf4366';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.3.1
+	WHERE SectionItemGuid = 'a935cdc5-6dbf-4960-89ee-1311c0cf4366';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Cuándo se obtuvo esta muestra entera?
+	WHERE SectionItemGuid = 'a935cdc5-6dbf-4960-89ee-1311c0cf4366';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 17
+	WHERE SectionItemGuid = '4bffbe28-52d8-4852-ada2-0c55deda8d7e';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.3.2
+	WHERE SectionItemGuid = '4bffbe28-52d8-4852-ada2-0c55deda8d7e';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿La muestra está líquida?
+	WHERE SectionItemGuid = '4bffbe28-52d8-4852-ada2-0c55deda8d7e';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 18
+	WHERE SectionItemGuid = 'f19f33de-3f39-4c58-8005-56db9780bc8e';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.3.3
+	WHERE SectionItemGuid = 'f19f33de-3f39-4c58-8005-56db9780bc8e';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿La muestra tiene apariencia de agua de arroz?
+	WHERE SectionItemGuid = 'f19f33de-3f39-4c58-8005-56db9780bc8e';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 19
+	WHERE SectionItemGuid = '1772c0e9-f352-4c01-b22e-ccda2a7a4152';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.3.4
+	WHERE SectionItemGuid = '1772c0e9-f352-4c01-b22e-ccda2a7a4152';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿La muestra cubre el fondo del contenedor plástico?
+	WHERE SectionItemGuid = '1772c0e9-f352-4c01-b22e-ccda2a7a4152';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 20
+	WHERE SectionItemGuid = '4e727833-a275-4a24-b22a-6dee6a9fb6f5';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.4
+	WHERE SectionItemGuid = '4e727833-a275-4a24-b22a-6dee6a9fb6f5';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Colectó un hisopo tipo Cary Blair?
+	WHERE SectionItemGuid = '4e727833-a275-4a24-b22a-6dee6a9fb6f5';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 21
+	WHERE SectionItemGuid = '76a3f08f-f690-4fc8-961c-5dc61b7c13a7';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.5
+	WHERE SectionItemGuid = '76a3f08f-f690-4fc8-961c-5dc61b7c13a7';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 22
+	WHERE SectionItemGuid = '475ea24b-f931-4131-a472-36cbd1519386';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.5.1
+	WHERE SectionItemGuid = '475ea24b-f931-4131-a472-36cbd1519386';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Por qué no pudo colectar un hisopo tipo Cary Blair?
+	WHERE SectionItemGuid = '475ea24b-f931-4131-a472-36cbd1519386';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 23
+	WHERE SectionItemGuid = '3e3f92a3-a8fe-432b-abd1-e4a90f500b0b';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.5.2
+	WHERE SectionItemGuid = '3e3f92a3-a8fe-432b-abd1-e4a90f500b0b';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 24
+	WHERE SectionItemGuid = '26ea8957-d65b-4e80-8446-dfdb3061278b';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.5.2.1
+	WHERE SectionItemGuid = '26ea8957-d65b-4e80-8446-dfdb3061278b';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Especifique la otra razón
+	WHERE SectionItemGuid = '26ea8957-d65b-4e80-8446-dfdb3061278b';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 25
+	WHERE SectionItemGuid = '79658514-3747-4794-b30d-e17070013538';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.6
+	WHERE SectionItemGuid = '79658514-3747-4794-b30d-e17070013538';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 26
+	WHERE SectionItemGuid = '04495185-a46d-4ffd-a9e6-4af258bbca71';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.6.1
+	WHERE SectionItemGuid = '04495185-a46d-4ffd-a9e6-4af258bbca71';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Cuándo obtuvo el hisopo tipo Cary Blair?
+	WHERE SectionItemGuid = '04495185-a46d-4ffd-a9e6-4af258bbca71';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 27
+	WHERE SectionItemGuid = '14efa719-3c7a-4a52-b795-ef29e95bb05d';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.6.2
+	WHERE SectionItemGuid = '14efa719-3c7a-4a52-b795-ef29e95bb05d';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Cómo obtuvo el hisopo Cary Blair?
+	WHERE SectionItemGuid = '14efa719-3c7a-4a52-b795-ef29e95bb05d';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 28
+	WHERE SectionItemGuid = '0fcfc818-bf37-406f-81b6-70c70d7f7895';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Si es un paciente de enfermedad respiratoria aguda
+	WHERE SectionItemGuid = '0fcfc818-bf37-406f-81b6-70c70d7f7895';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 29
+	WHERE SectionItemGuid = '2adfdfd7-118a-4605-ae50-b2dbd9a89cd4';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Colectó un hisopo orofaríngeo (OF)?
+	WHERE SectionItemGuid = '2adfdfd7-118a-4605-ae50-b2dbd9a89cd4';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 30
+	WHERE SectionItemGuid = 'deece3da-bf56-40d8-a58a-126afa02195b';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 31
+	WHERE SectionItemGuid = 'c979910b-0f91-472a-8821-b32da0483c9d';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Por qué no se tomo un hisopo OF?
+	WHERE SectionItemGuid = 'c979910b-0f91-472a-8821-b32da0483c9d';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 32
+	WHERE SectionItemGuid = 'e7217d7f-96a7-45f9-9b4a-c0bc59870d27';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 33
+	WHERE SectionItemGuid = 'f6588dd0-578c-4309-8aba-61bae3762761';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Especifique la otra razón
+	WHERE SectionItemGuid = 'f6588dd0-578c-4309-8aba-61bae3762761';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 34
+	WHERE SectionItemGuid = '8b626d66-6580-4bf6-842a-e2917b0d86f9';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 35
+	WHERE SectionItemGuid = '32f3a363-358e-409b-836d-31b343b748a9';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Cuándo tomó el hisopo OF?
+	WHERE SectionItemGuid = '32f3a363-358e-409b-836d-31b343b748a9';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 36
+	WHERE SectionItemGuid = '85043b25-2494-4152-bdd2-187e8fbb8723';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Colectó un hisopo nasofaríngeo (NF)?
+	WHERE SectionItemGuid = '85043b25-2494-4152-bdd2-187e8fbb8723';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 37
+	WHERE SectionItemGuid = '2c81ac3d-dd1d-40e8-b713-7383e9bc5c76';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 38
+	WHERE SectionItemGuid = '468029bb-6de5-40a5-926d-1e00b57be964';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Por qué no se tomo el hisopo NF?
+	WHERE SectionItemGuid = '468029bb-6de5-40a5-926d-1e00b57be964';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 39
+	WHERE SectionItemGuid = '53f3d961-2e99-4eaf-8dc7-dd6d9832b16f';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 40
+	WHERE SectionItemGuid = 'e31b2827-a829-47e7-9387-f85afeef3862';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Especifique la otra razón
+	WHERE SectionItemGuid = 'e31b2827-a829-47e7-9387-f85afeef3862';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 41
+	WHERE SectionItemGuid = 'e54b51fc-aa27-4187-9713-07c353a60169';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 42
+	WHERE SectionItemGuid = '083428dd-df0a-460e-ab63-272d0c5d0f55';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Cuándo tomó el hisopo NF?
+	WHERE SectionItemGuid = '083428dd-df0a-460e-ab63-272d0c5d0f55';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 44
+	WHERE SectionItemGuid = '903da773-71f5-428b-8ca6-ddfa4148fd31';
+
+
+UPDATE SectionItem
+	SET
+		Number = 2.6.3
+	WHERE SectionItemGuid = '903da773-71f5-428b-8ca6-ddfa4148fd31';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 45
+	WHERE SectionItemGuid = '2a6d9c24-5a9f-4ceb-bbc9-2110305feced';
+
+
+UPDATE SectionItem
+	SET
+		Number = 2.6.3.1
+	WHERE SectionItemGuid = '2a6d9c24-5a9f-4ceb-bbc9-2110305feced';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 46
+	WHERE SectionItemGuid = '50eb5d26-0429-44aa-8146-0ef86d4f462a';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 47
+	WHERE SectionItemGuid = '585f03e4-08a3-49fb-846c-38a16326e129';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Colectó una muestra de orina?
+	WHERE SectionItemGuid = '585f03e4-08a3-49fb-846c-38a16326e129';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 48
+	WHERE SectionItemGuid = '94f11908-a821-4716-aefa-1a80105a30ac';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 49
+	WHERE SectionItemGuid = '6b01664a-ff7d-4be1-b19a-8f4bca0904a9';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Por qué no colectó una muestra de orina?
+	WHERE SectionItemGuid = '6b01664a-ff7d-4be1-b19a-8f4bca0904a9';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 50
+	WHERE SectionItemGuid = 'df1f2687-49b6-4ca3-970e-b166ac7062db';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 51
+	WHERE SectionItemGuid = 'f439f6db-9bf0-4aa4-87f9-a5c18d4197f1';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Especifique la otra razón
+	WHERE SectionItemGuid = 'f439f6db-9bf0-4aa4-87f9-a5c18d4197f1';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 52
+	WHERE SectionItemGuid = '1781f683-9547-413e-843b-975971843a73';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 53
+	WHERE SectionItemGuid = 'da5a08ea-7503-4219-9631-c3802fb0bb50';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Cuándo se obtuvo la muestra de orina?
+	WHERE SectionItemGuid = 'da5a08ea-7503-4219-9631-c3802fb0bb50';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 54
+	WHERE SectionItemGuid = 'abf5bec4-0e3a-4a23-83c0-ae13529beec0';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 55
+	WHERE SectionItemGuid = '867eed83-0413-4a49-91a8-dea5d67daeca';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Si es un paciente de enfermedad febril aguda
+	WHERE SectionItemGuid = '867eed83-0413-4a49-91a8-dea5d67daeca';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 56
+	WHERE SectionItemGuid = '0171a331-082d-4651-970a-e97eb6180712';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Consiguió una muestra de sangre entera del paciente?
+	WHERE SectionItemGuid = '0171a331-082d-4651-970a-e97eb6180712';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 57
+	WHERE SectionItemGuid = 'df77a478-a84e-45b2-ac3b-3b794755838b';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 58
+	WHERE SectionItemGuid = '1d0785ff-4e7d-4256-a1d2-38d1107ebaec';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Esta muestra de sangre entera fue tomada por usted o el hospital?
+	WHERE SectionItemGuid = '1d0785ff-4e7d-4256-a1d2-38d1107ebaec';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 59
+	WHERE SectionItemGuid = 'c16ac7f5-a94a-461b-ad04-20b5a2493a23';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 60
+	WHERE SectionItemGuid = '1b96ac32-68a4-4f94-a27a-060280b812f6';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 61
+	WHERE SectionItemGuid = 'a0238bd3-19c3-4d5f-8925-6a2be99ef45f';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Por qué no pudo conseguir una muestra de sangre entera?
+	WHERE SectionItemGuid = 'a0238bd3-19c3-4d5f-8925-6a2be99ef45f';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 62
+	WHERE SectionItemGuid = '26ca9711-fed3-4a2d-a6e6-e9292c67656a';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 63
+	WHERE SectionItemGuid = '851095c7-d1e1-42fb-8429-798f948d92b1';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Especifique la otra razón
+	WHERE SectionItemGuid = '851095c7-d1e1-42fb-8429-798f948d92b1';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 64
+	WHERE SectionItemGuid = '80c0fc4c-7fe0-4b4b-880b-ce95a1680db8';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 65
+	WHERE SectionItemGuid = 'f37c22eb-ddd6-4893-a7a6-caaead03001b';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿El paciente ha firmado consentimiento escrito para conservar sus muestras?
+	WHERE SectionItemGuid = 'f37c22eb-ddd6-4893-a7a6-caaead03001b';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿El hospital tomó una radiografía del pecho?'
+	WHERE SectionItemGuid = 'ac4912f4-436b-490d-b5b1-d0303493716a';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote el número de radiografía'
+	WHERE SectionItemGuid = '537fdea7-da73-4f59-98f7-3d8a5b17ed01';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte al paciente: "¿De los últimos ocho días cuántos días tuvo vómitos?"'
+	WHERE SectionItemGuid = '60d0c4ad-89e1-47e5-aeee-b2f83538354f';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si tiene escalofríos'
+	WHERE SectionItemGuid = 'fee42ecb-64ad-4e22-a74b-2f585c580514';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Actualmente tiene escalofríos?'
+	WHERE SectionItemGuid = 'e98f1d9b-400b-446c-893c-10ae64602495';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Desde hace cuántos días empezó con escalofríos?'
+	WHERE SectionItemGuid = '0b268be0-9fa9-42fa-8f7e-63df4fb21260';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Calambres, retortijón, o dolor abdominal o del estómago?'
+	WHERE SectionItemGuid = '980e644d-d323-4ab0-82aa-2fc42e72953b';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Actualmente tiene dolor de cabeza?'
+	WHERE SectionItemGuid = '4f715fda-8965-4018-aa42-934229d7ac2b';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Desde hace cuántos días empezó con dolor de cabeza?'
+	WHERE SectionItemGuid = 'd589de8c-766d-4707-b5ef-0710ae72b041';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Dolor de cuerpo o de músculos?'
+	WHERE SectionItemGuid = '89f7ee2c-1d91-4350-a611-f2252be7f74a';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si tiene Dolor de cuerpo o de músculos'
+	WHERE SectionItemGuid = '638c4a9a-28ef-4b88-8ca8-28450626229f';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Actualmente tiene dolor de cuerpo o de músculos?'
+	WHERE SectionItemGuid = '70a54063-fdd6-46d0-9f9c-2bee9a25956e';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Desde hace cuántos días empezó con dolor de cuerpo o de músculos?'
+	WHERE SectionItemGuid = '2f525cc7-403d-47f0-9065-9de988af5d09';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Debilidad generalizada?'
+	WHERE SectionItemGuid = 'd2034f87-1f81-492c-ad1e-53748513c985';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Malestar?'
+	WHERE SectionItemGuid = '420c234b-8f2f-4785-8939-12a42254fc0d';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Falta de apetito?'
+	WHERE SectionItemGuid = '8092da4c-6565-45fe-a5d3-54084d8adbdd';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte al paciente: "¿Actualmente tiene diarrea o asientos líquidos?"'
+	WHERE SectionItemGuid = '07599909-6816-443f-8e71-608291975dad';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Calambres, retortijón, dolor abdominal o del estómago'
+	WHERE SectionItemGuid = '9a71aaab-5f32-4c19-aad1-c77aa8cebb17';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Algún médico le ha dicho que tiene una condición intestinal crónica como:  -colitis ulcerativa  -enfermedad inflamatoria gastrointestinal  -Crohn  -enfermedad celiaca  -intolerancia lactosa  -síndrome de mala absorción?'
+	WHERE SectionItemGuid = '5f75da5d-092e-4699-865a-d2ef87d9c873';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Puede especificar que condición intestinal crónica tiene?'
+	WHERE SectionItemGuid = '16003992-8fef-4354-8954-aecbef0e77ce';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si el paciente tiene menos de 5 años'
+	WHERE SectionItemGuid = '741488e3-c898-45b5-920f-d85a9247b03e';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte al padre/tutor: "¿Su hijo/a bebe ávidamente con mayor sed  de lo usual?"'
+	WHERE SectionItemGuid = '8d18323f-7a87-4fff-879d-06f23072bc1e';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte al padre/tutor: "¿Su hijo/a está ahora más irritable/incómodo/intranquilo de lo normal?"'
+	WHERE SectionItemGuid = 'd02af4e7-1848-46f3-8d20-9fbca3e13540';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Hace cuántos días empezó el primer síntoma de su enfermedad respiratoria? (No incluya el día actual en la cuenta.)'
+	WHERE SectionItemGuid = 'dba9c4c8-0715-45ba-941c-6287cc2c79fe';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 10
+	WHERE SectionItemGuid = '937ec304-c2e4-4120-adfe-bd3bb67282b5';
+
+
+UPDATE SectionItem
+	SET
+		Number = 4
+	WHERE SectionItemGuid = '937ec304-c2e4-4120-adfe-bd3bb67282b5';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Goteo de la nariz
+	WHERE SectionItemGuid = '937ec304-c2e4-4120-adfe-bd3bb67282b5';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 11
+	WHERE SectionItemGuid = '3b30e2b6-188c-4220-9100-1373747d3892';
+
+
+UPDATE SectionItem
+	SET
+		Number = 5
+	WHERE SectionItemGuid = '3b30e2b6-188c-4220-9100-1373747d3892';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 12
+	WHERE SectionItemGuid = '742808a9-116c-4d64-9c6d-d0987271eb68';
+
+
+UPDATE SectionItem
+	SET
+		Number = 6
+	WHERE SectionItemGuid = '742808a9-116c-4d64-9c6d-d0987271eb68';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 13
+	WHERE SectionItemGuid = 'f990b873-8c06-4d5e-bc3a-c4d817062a69';
+
+
+UPDATE SectionItem
+	SET
+		Number = 7
+	WHERE SectionItemGuid = 'f990b873-8c06-4d5e-bc3a-c4d817062a69';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Durante los 30 días anteriores a esta hospitalización alguien le dijo a usted que tiene neumonía?
+	WHERE SectionItemGuid = 'f990b873-8c06-4d5e-bc3a-c4d817062a69';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 14
+	WHERE SectionItemGuid = 'a2740aa2-091f-4d52-a24d-0deeeec174e0';
+
+
+UPDATE SectionItem
+	SET
+		Number = 8
+	WHERE SectionItemGuid = 'a2740aa2-091f-4d52-a24d-0deeeec174e0';
+
+
+UPDATE SectionItem
+	SET
+		MainText = En los 30 días anteriores a esta hospitalización estuvo usted hospitalizado por cualquier razón?
+	WHERE SectionItemGuid = 'a2740aa2-091f-4d52-a24d-0deeeec174e0';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 15
+	WHERE SectionItemGuid = '18794a8e-82e6-4958-80b2-6030095770c5';
+
+
+UPDATE SectionItem
+	SET
+		Number = 9
+	WHERE SectionItemGuid = '18794a8e-82e6-4958-80b2-6030095770c5';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 16
+	WHERE SectionItemGuid = 'c1072cfc-2543-4235-8112-3f6e760c9efa';
+
+
+UPDATE SectionItem
+	SET
+		Number = 9.1
+	WHERE SectionItemGuid = 'c1072cfc-2543-4235-8112-3f6e760c9efa';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: En esa hospitalización, ¿presentó fiebre?
+	WHERE SectionItemGuid = 'c1072cfc-2543-4235-8112-3f6e760c9efa';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 17
+	WHERE SectionItemGuid = 'd6a49450-cb43-4c6d-b3e4-fa83fb530277';
+
+
+UPDATE SectionItem
+	SET
+		Number = 9.2
+	WHERE SectionItemGuid = 'd6a49450-cb43-4c6d-b3e4-fa83fb530277';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: En esa hospitalización, ¿presentó tos?
+	WHERE SectionItemGuid = 'd6a49450-cb43-4c6d-b3e4-fa83fb530277';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 18
+	WHERE SectionItemGuid = 'beec6730-ebd6-4ada-ab33-c404caeca5f4';
+
+
+UPDATE SectionItem
+	SET
+		Number = 10
+	WHERE SectionItemGuid = 'beec6730-ebd6-4ada-ab33-c404caeca5f4';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: En los 14 días anteriores a esta hospitalización ¿estuvo usted hospitalizado por cualquier razón?
+	WHERE SectionItemGuid = 'beec6730-ebd6-4ada-ab33-c404caeca5f4';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Hace cuántos días empezó el primer síntoma de su enfermedad febril? No incluya el día actual en la cuenta.'
+	WHERE SectionItemGuid = 'add48411-744d-4fa1-848f-9075166965f4';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Dolor en los camotes (pantorilla) '
+	WHERE SectionItemGuid = 'd5eb721f-f3a6-4db5-a025-59d9e64b69b7';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿En los últimos 3 días ha tenido o tiene: “rash” o “sarpullido”?'
+	WHERE SectionItemGuid = 'e85cac5f-ca13-4bc7-a4d1-332c4fed2e57';
+
+
+UPDATE SectionItem
+	SET
+		VariableName = 'hxF_Rash'
+	WHERE SectionItemGuid = 'e85cac5f-ca13-4bc7-a4d1-332c4fed2e57';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si tenia "rash" o "sarpullido"'
+	WHERE SectionItemGuid = '187902b6-9fbd-4d47-85c4-c9bea0e47e52';
+
+UPDATE SectionItem
+	SET
+		Number = '5.3'
+	WHERE SectionItemGuid = '818c6960-c469-4d43-9884-3ef677314291';
+
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Dónde tiene o tenía el "rash" o "sarpullido"?'
+	WHERE SectionItemGuid = '818c6960-c469-4d43-9884-3ef677314291';
+
+UPDATE SectionItem
+	SET
+		Number = '5.4'
+	WHERE SectionItemGuid = 'cdba9021-1bd2-48dd-80e6-3f9e1c63c00b';
+
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Observe el “rash” o “sarpullido” y clasificarlo , o pida la descripción al paciente y trate de clasificarlo'
+	WHERE SectionItemGuid = 'cdba9021-1bd2-48dd-80e6-3f9e1c63c00b';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 32
+	WHERE SectionItemGuid = 'ef77d740-0783-4781-ae3a-d5d39a0b88c7';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 33
+	WHERE SectionItemGuid = 'ffde14a0-1d2b-4bdc-8f81-d4b063e39eb6';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 36
+	WHERE SectionItemGuid = 'bd0d6732-2c80-48cc-bd85-3bf39b55fa52';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 37
+	WHERE SectionItemGuid = '20ffa01b-306b-4985-a6c8-e5d4e34cd8d2';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 38
+	WHERE SectionItemGuid = '6a7a7d78-2d35-46f3-bae3-29ad9009aee5';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Observe si el paciente actualmente tiene ojos rojos
+	WHERE SectionItemGuid = '6a7a7d78-2d35-46f3-bae3-29ad9009aee5';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 39
+	WHERE SectionItemGuid = 'a4469593-6d55-4b0a-b2eb-7c46ceda7adc';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿Desde hace cuántos días empezó con ojos rojos?
+	WHERE SectionItemGuid = 'a4469593-6d55-4b0a-b2eb-7c46ceda7adc';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 40
+	WHERE SectionItemGuid = 'c7b354a2-33dd-4a69-adbb-9200b9af9ee2';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 41
+	WHERE SectionItemGuid = 'b8a4f784-9041-4100-b957-69357b6e59aa';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 44
+	WHERE SectionItemGuid = '19e6605d-4ed3-4bec-b9fd-2aa6259d1883';
+
+
+UPDATE SectionItem
+	SET
+		Level = 1
+	WHERE SectionItemGuid = '19e6605d-4ed3-4bec-b9fd-2aa6259d1883';
+
+
+UPDATE SectionItem
+	SET
+		Number = 12
+	WHERE SectionItemGuid = '19e6605d-4ed3-4bec-b9fd-2aa6259d1883';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Observe si el paciente actualmente tiene ojos amarillos
+	WHERE SectionItemGuid = '19e6605d-4ed3-4bec-b9fd-2aa6259d1883';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 45
+	WHERE SectionItemGuid = '595fb04d-cbaf-47a6-80ed-74a2da93cb3a';
+
+
+UPDATE SectionItem
+	SET
+		Number = 13
+	WHERE SectionItemGuid = '595fb04d-cbaf-47a6-80ed-74a2da93cb3a';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 46
+	WHERE SectionItemGuid = 'ad96772f-1d5e-4b6f-a202-e57e3ee0efb6';
+
+
+UPDATE SectionItem
+	SET
+		Number = 14
+	WHERE SectionItemGuid = 'ad96772f-1d5e-4b6f-a202-e57e3ee0efb6';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 49
+	WHERE SectionItemGuid = '378474dc-f51f-486b-93fe-352c033f22ca';
+
+
+UPDATE SectionItem
+	SET
+		Number = 15
+	WHERE SectionItemGuid = '378474dc-f51f-486b-93fe-352c033f22ca';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Orina oscura (como Coca Cola)
+	WHERE SectionItemGuid = '378474dc-f51f-486b-93fe-352c033f22ca';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 50
+	WHERE SectionItemGuid = '3b6f743b-0101-437a-aec9-0db0a488d8a4';
+
+
+UPDATE SectionItem
+	SET
+		Number = 16
+	WHERE SectionItemGuid = '3b6f743b-0101-437a-aec9-0db0a488d8a4';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 53
+	WHERE SectionItemGuid = '9d31e704-ad79-4775-bc36-386896605edd';
+
+
+UPDATE SectionItem
+	SET
+		Number = 17
+	WHERE SectionItemGuid = '9d31e704-ad79-4775-bc36-386896605edd';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 54
+	WHERE SectionItemGuid = 'ed397462-057b-441c-aae0-c7225ff3d0a5';
+
+
+UPDATE SectionItem
+	SET
+		Number = 18
+	WHERE SectionItemGuid = 'ed397462-057b-441c-aae0-c7225ff3d0a5';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 55
+	WHERE SectionItemGuid = 'f8774d28-251c-4fd8-b763-634e2b05635c';
+
+
+UPDATE SectionItem
+	SET
+		Number = 18.1
+	WHERE SectionItemGuid = 'f8774d28-251c-4fd8-b763-634e2b05635c';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿Actualmente tiene sangrado inusual?
+	WHERE SectionItemGuid = 'f8774d28-251c-4fd8-b763-634e2b05635c';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 56
+	WHERE SectionItemGuid = 'db934f34-5167-422b-b8c8-9f3fe2047141';
+
+
+UPDATE SectionItem
+	SET
+		Number = 18.2
+	WHERE SectionItemGuid = 'db934f34-5167-422b-b8c8-9f3fe2047141';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿Desde hace cuántos días empezó con el sangrado?
+	WHERE SectionItemGuid = 'db934f34-5167-422b-b8c8-9f3fe2047141';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 57
+	WHERE SectionItemGuid = 'ca35443c-d837-4580-8ea2-d6f2a257d830';
+
+
+UPDATE SectionItem
+	SET
+		Number = 18.3
+	WHERE SectionItemGuid = 'ca35443c-d837-4580-8ea2-d6f2a257d830';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿Podría decirnos donde estaba sangrando?
+	WHERE SectionItemGuid = 'ca35443c-d837-4580-8ea2-d6f2a257d830';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Verificar la fecha y hora de admisión a este hospital'
+	WHERE SectionItemGuid = 'd94b7bfa-58ab-482a-a2d5-34b60a50a4c7';
+
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe seleccionar la FECHA Y HORA en que el paciente fue ADMITIDO al hospital.'
+	WHERE SectionItemGuid = 'd94b7bfa-58ab-482a-a2d5-34b60a50a4c7';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Verificar el número de registro del hospital'
+	WHERE SectionItemGuid = 'b96cfd50-24f7-4a87-af40-ff4239ebc0b5';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Diga al paciente: "Para las siguientes preguntas me gustaría que pensara desde el primer día que iniciaron las molestias de esta enfermedad."'
+	WHERE SectionItemGuid = '2f4d75e4-4fd7-4924-baca-b2d003dd0cd1';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Buscó tratamiento para esta enfermedad en algún lugar (como centro o puesto de salud, farmacia, tienda) o con alguna persona (como médico privado, comadrona, amiga) antes de venir aquí al hospital?'
+	WHERE SectionItemGuid = 'c9ee4c13-b3c6-4659-a4a6-c0be426fbc18';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Cuando comenzó su enfermedad, ¿a dónde o a quien fue a buscar tratamiento? (marque todos los que aplican)'
+	WHERE SectionItemGuid = 'b8d053e0-2dd8-4373-bc15-4b11857fb221';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si está en Concepción Chiquirichapa, Cantel, o La Esperanza'
+	WHERE SectionItemGuid = '4dd10158-3370-4631-b45a-9986731376a9';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿En el mes anterior a esta hospitalización, tuvo alguna otra hospitalización de más de una noche?'
+	WHERE SectionItemGuid = '492024b0-1026-46bf-9294-0e738693faea';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si el paciente tuvo otra hospitalización'
+	WHERE SectionItemGuid = 'a98775e1-8b6b-4ba1-9af3-f6c692c5d3aa';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿En cuál hospital estuvo ingresado?'
+	WHERE SectionItemGuid = 'cfb5fc37-334d-4c06-9e96-ec2fb1aea359';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Especifique el hospital:'
+	WHERE SectionItemGuid = '9a8d3d0c-1b75-460a-acda-bba0525c6f93';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Cuántas noches duró esa otra hospitalización?'
+	WHERE SectionItemGuid = '4e4d189e-f25a-49a5-ad06-277bcb875183';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Cuántos días pasaron antes de esta admisión desde que egresó de esa otra hospitalización?'
+	WHERE SectionItemGuid = 'c0581fcc-ac77-4813-9695-5704cd3202cd';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Fue transferido de otro hospital a este hospital?'
+	WHERE SectionItemGuid = 'ec826bf1-00fe-4ff6-a469-eb2f6da3f21d';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Ha tomado algún medicamento o tratamiento en los últimos 3 días (72 horas)?'
+	WHERE SectionItemGuid = '67562c61-992b-4d29-96a6-9ed40d73c95b';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si ha tomado algún medicamento en los últimos 3 días (72 horas)'
+	WHERE SectionItemGuid = '7b5c236b-e2ed-4dbd-ad1b-bbde46a819b3';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Qué antibiótico tomó?'
+	WHERE SectionItemGuid = 'f0317520-c468-4b5e-a36f-f0bc0d8d9bd9';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Cuándo empezó a tomarlo?'
+	WHERE SectionItemGuid = '067d4fb5-500d-4876-9828-d4211a746e33';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Cuál fue el último lugar donde consiguió antibióticos?'
+	WHERE SectionItemGuid = 'ab7c0278-8f4d-48e7-8809-02d51f004a69';
+
+UPDATE SectionItem
+	SET
+		Number = '8.3'
+	WHERE SectionItemGuid = '0c2fa902-bb73-485c-8939-6261ca18c004';
+
+UPDATE SectionItem
+	SET
+		Number = '8.4'
+	WHERE SectionItemGuid = 'd3092a90-08b1-4828-bceb-4666d14a6f87';
+
+UPDATE SectionItem
+	SET
+		Number = '8.4.1'
+	WHERE SectionItemGuid = 'e70999c8-bc07-487f-8c04-4979f33a06d4';
+
+UPDATE SectionItem
+	SET
+		Number = '8.5'
+	WHERE SectionItemGuid = 'd663d46f-f430-4103-8420-e117fdb76e28';
+
+UPDATE SectionItem
+	SET
+		Number = '8.5.1'
+	WHERE SectionItemGuid = '5fa1e12a-64a9-4b52-ae7d-dcf59b642d6d';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Qué clase de rehidratación oral recibió?'
+	WHERE SectionItemGuid = '88b90d38-82b1-4584-9fd7-c9d7c3bb7168';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿De dónde obtuvo los sobrecitos?'
+	WHERE SectionItemGuid = 'a884b6c9-1635-4f0e-b959-d7cab56bad87';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte al padre/tutor: "¿Tiene con Ud. el carnet de vacunación del niño/a?"'
+	WHERE SectionItemGuid = 'aa2d5654-9422-450c-a1b5-5d18f31e6404';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Diga al padre/tutor: Está ficha de vacunación es muy importante. ¿Podría traer la ficha de vacunación lo antes posible?'
+	WHERE SectionItemGuid = '5d74bb3e-f1aa-4f44-9094-bcf6511ecd95';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 9
+	WHERE SectionItemGuid = '48837e67-9455-43a1-bba3-99f1b6df85f9';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.2.5
+	WHERE SectionItemGuid = '48837e67-9455-43a1-bba3-99f1b6df85f9';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte al padre/tutor: ¿Ha recibido su hijo/hija la vacuna Pentavalente (DPT/Hib, Hepatitis B)?
+	WHERE SectionItemGuid = '48837e67-9455-43a1-bba3-99f1b6df85f9';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 10
+	WHERE SectionItemGuid = '3de45995-c9ae-49ba-abd7-bea9dd60104d';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.2.6
+	WHERE SectionItemGuid = '3de45995-c9ae-49ba-abd7-bea9dd60104d';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 11
+	WHERE SectionItemGuid = '4cbaa555-25dc-4b56-bf59-bdc958e40ea1';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.2.6.1
+	WHERE SectionItemGuid = '4cbaa555-25dc-4b56-bf59-bdc958e40ea1';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿Cuántas dosis de la vacuna  de la Pentavalente (DPT/Hib, Hepatitis B) ha recibido su hijo/hija?
+	WHERE SectionItemGuid = '4cbaa555-25dc-4b56-bf59-bdc958e40ea1';
+
+UPDATE SectionItem
+	SET
+		Number = '1.2.7'
+	WHERE SectionItemGuid = 'f4b883b8-144d-4cbb-a9ac-dc454162c42e';
+
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte al padre/tutor: ¿Ha recibido su hijo/hija la vacuna para sarampión, paperas y rubeola (SPR)?'
+	WHERE SectionItemGuid = 'f4b883b8-144d-4cbb-a9ac-dc454162c42e';
+
+UPDATE SectionItem
+	SET
+		Number = '1.2.8'
+	WHERE SectionItemGuid = 'fb3d4bee-6804-4773-af8f-0112a333b570';
+
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte al padre/tutor: ¿Ha recibido su hijo/hija la vacuna contra rotavirus?'
+	WHERE SectionItemGuid = 'fb3d4bee-6804-4773-af8f-0112a333b570';
+
+UPDATE SectionItem
+	SET
+		Number = '1.2.9'
+	WHERE SectionItemGuid = 'e5718962-4c7f-46d0-8cc5-9a65384dfacb';
+
+UPDATE SectionItem
+	SET
+		Number = '1.2.9.1'
+	WHERE SectionItemGuid = 'f03e2b7b-1aba-40f0-bc91-50c2436f1ef7';
+
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Cuántas dosis de la vacuna contra rotavirus ha recibido?'
+	WHERE SectionItemGuid = 'f03e2b7b-1aba-40f0-bc91-50c2436f1ef7';
+
+UPDATE SectionItem
+	SET
+		Number = '1.2.10'
+	WHERE SectionItemGuid = 'a53aed21-0d1a-4231-bc61-3cae08b64f48';
+
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte al padre/tutor: ¿Ha recibido su hijo/hija la vacuna contra neumococo (Prevenar)?'
+	WHERE SectionItemGuid = 'a53aed21-0d1a-4231-bc61-3cae08b64f48';
+
+UPDATE SectionItem
+	SET
+		Number = '1.2.11'
+	WHERE SectionItemGuid = 'ba162f10-e0e2-4b9b-8ffd-423529a39a8c';
+
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte al padre/tutor: ¿Ha recibido su hijo/hija la vacuna contra neumococo (Synflorix)?'
+	WHERE SectionItemGuid = 'ba162f10-e0e2-4b9b-8ffd-423529a39a8c';
+
+UPDATE SectionItem
+	SET
+		Number = '1.2.12'
+	WHERE SectionItemGuid = '961494a7-6240-4c4f-b287-4328ddfb91e6';
+
+UPDATE SectionItem
+	SET
+		Number = '1.2.12.1'
+	WHERE SectionItemGuid = '492eab65-7e02-4e7c-a9be-acf7008090bc';
+
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Cuántas dosis de la vacuna para neumococo recibió?'
+	WHERE SectionItemGuid = '492eab65-7e02-4e7c-a9be-acf7008090bc';
+
+UPDATE SectionItem
+	SET
+		Number = '1.2.12.2'
+	WHERE SectionItemGuid = '7e2b30f7-f686-41a1-afad-33a478f2c9eb';
+
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Cuándo recibió la primera dosis?'
+	WHERE SectionItemGuid = '7e2b30f7-f686-41a1-afad-33a478f2c9eb';
+
+UPDATE SectionItem
+	SET
+		Number = '1.2.12.3'
+	WHERE SectionItemGuid = 'cdb6d8c4-c4f5-4283-b572-272511b2cba4';
+
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Cuándo recibió la última dosis?'
+	WHERE SectionItemGuid = 'cdb6d8c4-c4f5-4283-b572-272511b2cba4';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si tiene la ficha o carnet de vacunación'
+	WHERE SectionItemGuid = '27d78635-28de-486c-978e-d79ea8abb81b';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 27
+	WHERE SectionItemGuid = 'e339ce0b-0183-4f1d-99dd-3acf3ded852a';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.4
+	WHERE SectionItemGuid = 'e339ce0b-0183-4f1d-99dd-3acf3ded852a';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote de la ficha o carne si el paciente ha recibido la vacuna Pentavalente (DPT/Hib, Hepatitis B).
+	WHERE SectionItemGuid = 'e339ce0b-0183-4f1d-99dd-3acf3ded852a';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 28
+	WHERE SectionItemGuid = 'f2a5cc19-5bd7-40f4-8076-99250fab10f0';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.5
+	WHERE SectionItemGuid = 'f2a5cc19-5bd7-40f4-8076-99250fab10f0';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 29
+	WHERE SectionItemGuid = 'e547d43d-a66c-4399-82d9-5d297f5a4c1c';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.5.1
+	WHERE SectionItemGuid = 'e547d43d-a66c-4399-82d9-5d297f5a4c1c';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Cuántas dosis de la vacuna  de la Pentavalente (DPT/Hib, Hepatitis B) ha recibido?
+	WHERE SectionItemGuid = 'e547d43d-a66c-4399-82d9-5d297f5a4c1c';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 30
+	WHERE SectionItemGuid = '9f6d1954-6002-4a14-99b2-cde8d405fb9d';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.6
+	WHERE SectionItemGuid = '9f6d1954-6002-4a14-99b2-cde8d405fb9d';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 31
+	WHERE SectionItemGuid = 'b7e98ea4-079f-4a26-b809-30ad1bbe11f9';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.7
+	WHERE SectionItemGuid = 'b7e98ea4-079f-4a26-b809-30ad1bbe11f9';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote de la ficha o carnet si el paciente ha recibido la vacuna para sarampión, paperas y rubeola (SPR).
+	WHERE SectionItemGuid = 'b7e98ea4-079f-4a26-b809-30ad1bbe11f9';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 32
+	WHERE SectionItemGuid = 'bc1478b2-7bd2-4688-b33b-35ad89c8da05';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.8
+	WHERE SectionItemGuid = 'bc1478b2-7bd2-4688-b33b-35ad89c8da05';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote de la ficha o carnet si el paciente ha recibido la vacuna contra rotavirus.
+	WHERE SectionItemGuid = 'bc1478b2-7bd2-4688-b33b-35ad89c8da05';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 33
+	WHERE SectionItemGuid = '99a4b978-40a7-486a-9aac-898824009e5e';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.9
+	WHERE SectionItemGuid = '99a4b978-40a7-486a-9aac-898824009e5e';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 34
+	WHERE SectionItemGuid = '2c01b056-b02c-4a7a-89e1-2b035fb4cfe9';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.9.1
+	WHERE SectionItemGuid = '2c01b056-b02c-4a7a-89e1-2b035fb4cfe9';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Cuántas dosis de la vacuna contra rotavirus ha recibido?
+	WHERE SectionItemGuid = '2c01b056-b02c-4a7a-89e1-2b035fb4cfe9';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 37
+	WHERE SectionItemGuid = 'fa14c54c-fc6c-480d-9e55-50db6d318176';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.10
+	WHERE SectionItemGuid = 'fa14c54c-fc6c-480d-9e55-50db6d318176';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote de la ficha o carneé si el paciente ha recibido la vacuna contra neumococo (Prevenar)
+	WHERE SectionItemGuid = 'fa14c54c-fc6c-480d-9e55-50db6d318176';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 38
+	WHERE SectionItemGuid = 'da840411-0ec4-481a-ab89-ea0db08f6f6f';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.11
+	WHERE SectionItemGuid = 'da840411-0ec4-481a-ab89-ea0db08f6f6f';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Anote de la ficha o carneé si el paciente ha recibido la vacuna contra neumococo (Synflorix)
+	WHERE SectionItemGuid = 'da840411-0ec4-481a-ab89-ea0db08f6f6f';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 39
+	WHERE SectionItemGuid = '14bf8607-b6d5-4054-b055-49970fb5bb87';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.12
+	WHERE SectionItemGuid = '14bf8607-b6d5-4054-b055-49970fb5bb87';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 40
+	WHERE SectionItemGuid = '444050d7-c238-4730-b10f-9cb5bea0c701';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.12.1
+	WHERE SectionItemGuid = '444050d7-c238-4730-b10f-9cb5bea0c701';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Cuantas dosis de la vacuna para neumococo recibió?
+	WHERE SectionItemGuid = '444050d7-c238-4730-b10f-9cb5bea0c701';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 41
+	WHERE SectionItemGuid = '84d82f15-8b80-4fce-beaf-9defdbc141a0';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.12.2
+	WHERE SectionItemGuid = '84d82f15-8b80-4fce-beaf-9defdbc141a0';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Cuando recibió la primera dosis?
+	WHERE SectionItemGuid = '84d82f15-8b80-4fce-beaf-9defdbc141a0';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 42
+	WHERE SectionItemGuid = 'e5cde10a-7d1e-4bc3-843f-bf1163a06f28';
+
+
+UPDATE SectionItem
+	SET
+		Number = 1.3.12.3
+	WHERE SectionItemGuid = 'e5cde10a-7d1e-4bc3-843f-bf1163a06f28';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿Cuando recibió la última dosis?
+	WHERE SectionItemGuid = 'e5cde10a-7d1e-4bc3-843f-bf1163a06f28';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 43
+	WHERE SectionItemGuid = '556235cc-8bd1-49f1-9af5-db9f746b260a';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 44
+	WHERE SectionItemGuid = '5fd12e2c-2266-4cac-9dc1-dd8c8908f89d';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿El paciente ha recibido la vacuna para influenza estacional en los últimos 6 meses?
+	WHERE SectionItemGuid = '5fd12e2c-2266-4cac-9dc1-dd8c8908f89d';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 45
+	WHERE SectionItemGuid = '3f6914f2-634d-44b9-a62f-7720a9232f7b';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 46
+	WHERE SectionItemGuid = 'a6504427-fd5d-4625-9865-d936d71a9e71';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 47
+	WHERE SectionItemGuid = '17e608e2-d1f4-4e52-84bc-dcc5a63cf425';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 48
+	WHERE SectionItemGuid = '80976c97-df97-4275-984a-2a8c44d83668';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 49
+	WHERE SectionItemGuid = 'aabe04c1-d089-4cd7-89c4-dbe65bc93c84';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 50
+	WHERE SectionItemGuid = 'd7acc947-6a14-4169-b012-01783ecd8f30';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 54
+	WHERE SectionItemGuid = 'ca27db26-0d30-44a0-b484-fdc264eaf0bf';
+
+
+UPDATE SectionItem
+	SET
+		Number = 2.11
+	WHERE SectionItemGuid = 'ca27db26-0d30-44a0-b484-fdc264eaf0bf';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 55
+	WHERE SectionItemGuid = '28e03753-94cb-4c42-967c-d62a8fa0f2cb';
+
+
+UPDATE SectionItem
+	SET
+		Level = 3
+	WHERE SectionItemGuid = '28e03753-94cb-4c42-967c-d62a8fa0f2cb';
+
+
+UPDATE SectionItem
+	SET
+		Number = 2.11.1
+	WHERE SectionItemGuid = '28e03753-94cb-4c42-967c-d62a8fa0f2cb';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 56
+	WHERE SectionItemGuid = '7894dfc0-747f-4a38-8ede-4bace42102ae';
+
+
+UPDATE SectionItem
+	SET
+		Number = 2.11.2
+	WHERE SectionItemGuid = '7894dfc0-747f-4a38-8ede-4bace42102ae';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 57
+	WHERE SectionItemGuid = '7df5a835-5c32-41cf-815a-1a1d395c9f19';
+
+
+UPDATE SectionItem
+	SET
+		Number = 2.12
+	WHERE SectionItemGuid = '7df5a835-5c32-41cf-815a-1a1d395c9f19';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 58
+	WHERE SectionItemGuid = 'cad66797-1a0f-4568-8afe-89cb9cd6e158';
+
+
+UPDATE SectionItem
+	SET
+		Number = 2.13
+	WHERE SectionItemGuid = 'cad66797-1a0f-4568-8afe-89cb9cd6e158';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 59
+	WHERE SectionItemGuid = '7ff1b75b-5c61-4323-ba60-37947c6369a2';
+
+
+UPDATE SectionItem
+	SET
+		Number = 2.13.1
+	WHERE SectionItemGuid = '7ff1b75b-5c61-4323-ba60-37947c6369a2';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Proporcione información adicional sobre la enfermedad crónica del paciente
+	WHERE SectionItemGuid = '7ff1b75b-5c61-4323-ba60-37947c6369a2';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 60
+	WHERE SectionItemGuid = '566d2717-8207-4848-9e68-e3a7c33994d6';
+
+
+UPDATE SectionItem
+	SET
+		Number = 2.14
+	WHERE SectionItemGuid = '566d2717-8207-4848-9e68-e3a7c33994d6';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 61
+	WHERE SectionItemGuid = '5b660701-1fdf-4eeb-83d7-fff390a45a5d';
+
+
+UPDATE SectionItem
+	SET
+		Number = 2.14.1
+	WHERE SectionItemGuid = '5b660701-1fdf-4eeb-83d7-fff390a45a5d';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte al padre/tutor: "¿Su bebé fue prematuro (nació antes de tiempo)?"
+	WHERE SectionItemGuid = '5b660701-1fdf-4eeb-83d7-fff390a45a5d';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 63
+	WHERE SectionItemGuid = '57197664-e00e-40a2-a14e-8c97d9a07b7e';
+
+
+UPDATE SectionItem
+	SET
+		Number = 2.15
+	WHERE SectionItemGuid = '57197664-e00e-40a2-a14e-8c97d9a07b7e';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 64
+	WHERE SectionItemGuid = '917cead0-f7aa-4909-889b-0c7d894f8b47';
+
+
+UPDATE SectionItem
+	SET
+		Number = 2.15.1
+	WHERE SectionItemGuid = '917cead0-f7aa-4909-889b-0c7d894f8b47';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿Está usted embarazada?
+	WHERE SectionItemGuid = '917cead0-f7aa-4909-889b-0c7d894f8b47';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 65
+	WHERE SectionItemGuid = 'c392d6e2-1059-47a3-b4ba-b38ebf41515c';
+
+
+UPDATE SectionItem
+	SET
+		Number = 2.15.2
+	WHERE SectionItemGuid = 'c392d6e2-1059-47a3-b4ba-b38ebf41515c';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 66
+	WHERE SectionItemGuid = 'a0c6a351-2ce8-4500-93b0-0e8bd0209fa8';
+
+
+UPDATE SectionItem
+	SET
+		Number = 2.15.2.1
+	WHERE SectionItemGuid = 'a0c6a351-2ce8-4500-93b0-0e8bd0209fa8';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿Cuántos meses tiene usted de embarazo?
+	WHERE SectionItemGuid = 'a0c6a351-2ce8-4500-93b0-0e8bd0209fa8';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿En el mes pasado antes que se enfermara, usted viajó a otro lugar?'
+	WHERE SectionItemGuid = '88e30432-a9b6-4fac-83aa-05e71d74c4ce';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si en el mes pasado antes que se enfermara viajó a otro lugar'
+	WHERE SectionItemGuid = '64995bca-28ad-4096-aa6d-a6a54b3b5abf';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: En el mes antes de que se enfermó. ¿Nos pude decir dónde estuvo? Seleccione la respuesta adecuada'
+	WHERE SectionItemGuid = 'cf66d9de-698b-4ad8-a060-143eb4aa9b2d';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si estuvo en otro país'
+	WHERE SectionItemGuid = 'bfe26aff-d0d7-4116-a1f7-81b68de1ccb5';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: ¿Cuál país visitó?'
+	WHERE SectionItemGuid = '95c5f8fa-fb7d-443a-bd4c-f2855c2219b1';
+
+
+UPDATE SectionItem
+	SET
+		VariableName = 'paisVisito'
+	WHERE SectionItemGuid = '95c5f8fa-fb7d-443a-bd4c-f2855c2219b1';
+
+UPDATE SectionItem
+	SET
+		Number = '4'
+	WHERE SectionItemGuid = 'b770e87b-3cf1-4c0b-8d72-31bd1f332d77';
+
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte: En las últimas 2 semanas ¿Lo ha picado alguna garrapata?'
+	WHERE SectionItemGuid = 'b770e87b-3cf1-4c0b-8d72-31bd1f332d77';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 26
+	WHERE SectionItemGuid = 'af241e49-409d-443f-b7c4-bb4af6ee3daf';
+
+
+UPDATE SectionItem
+	SET
+		Number = 12
+	WHERE SectionItemGuid = 'af241e49-409d-443f-b7c4-bb4af6ee3daf';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 27
+	WHERE SectionItemGuid = '7d1b6abf-6010-4022-af8b-c1e8ee1c2bea';
+
+
+UPDATE SectionItem
+	SET
+		Number = 12.1
+	WHERE SectionItemGuid = '7d1b6abf-6010-4022-af8b-c1e8ee1c2bea';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 28
+	WHERE SectionItemGuid = '1905e912-29ed-4d9b-9708-31cf25dbd5d6';
+
+
+UPDATE SectionItem
+	SET
+		Number = 13
+	WHERE SectionItemGuid = '1905e912-29ed-4d9b-9708-31cf25dbd5d6';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 29
+	WHERE SectionItemGuid = '79c71ad1-da2f-40d0-98fa-660b2fb1b010';
+
+
+UPDATE SectionItem
+	SET
+		Number = 13.1
+	WHERE SectionItemGuid = '79c71ad1-da2f-40d0-98fa-660b2fb1b010';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 30
+	WHERE SectionItemGuid = 'b1bf002d-045f-4832-8e31-99234cb92d45';
+
+
+UPDATE SectionItem
+	SET
+		Number = 14
+	WHERE SectionItemGuid = 'b1bf002d-045f-4832-8e31-99234cb92d45';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Inscrito en neumonía
+	WHERE SectionItemGuid = 'b1bf002d-045f-4832-8e31-99234cb92d45';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 31
+	WHERE SectionItemGuid = '276c8a87-ab41-44fe-abc2-78b39b96828d';
+
+
+UPDATE SectionItem
+	SET
+		Number = 14.1
+	WHERE SectionItemGuid = '276c8a87-ab41-44fe-abc2-78b39b96828d';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 32
+	WHERE SectionItemGuid = '92dc756a-63cf-4e47-9697-05b63feb245d';
+
+
+UPDATE SectionItem
+	SET
+		Number = 14.1.1
+	WHERE SectionItemGuid = '92dc756a-63cf-4e47-9697-05b63feb245d';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿Usted fuma?
+	WHERE SectionItemGuid = '92dc756a-63cf-4e47-9697-05b63feb245d';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 33
+	WHERE SectionItemGuid = '5c1319a1-7edc-4e35-b65c-23978473d6e8';
+
+
+UPDATE SectionItem
+	SET
+		Level = 3
+	WHERE SectionItemGuid = '5c1319a1-7edc-4e35-b65c-23978473d6e8';
+
+
+UPDATE SectionItem
+	SET
+		Number = 14.1.2
+	WHERE SectionItemGuid = '5c1319a1-7edc-4e35-b65c-23978473d6e8';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿Aparte de usted (el paciente), alguien en su casa fuma?
+	WHERE SectionItemGuid = '5c1319a1-7edc-4e35-b65c-23978473d6e8';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 34
+	WHERE SectionItemGuid = 'a72a822f-8836-45b2-9ce9-39fbbe65c455';
+
+
+UPDATE SectionItem
+	SET
+		Number = 15
+	WHERE SectionItemGuid = 'a72a822f-8836-45b2-9ce9-39fbbe65c455';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Si tiene menos de 2 años
+	WHERE SectionItemGuid = 'a72a822f-8836-45b2-9ce9-39fbbe65c455';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 39
+	WHERE SectionItemGuid = '1518641b-eec2-4879-84cf-7e09ace3adde';
+
+
+UPDATE SectionItem
+	SET
+		Number = 16
+	WHERE SectionItemGuid = '1518641b-eec2-4879-84cf-7e09ace3adde';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 40
+	WHERE SectionItemGuid = 'eacd63a4-3f90-47a6-9cba-36ceed1616c8';
+
+
+UPDATE SectionItem
+	SET
+		Number = 17
+	WHERE SectionItemGuid = 'eacd63a4-3f90-47a6-9cba-36ceed1616c8';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: En su casa, ¿Cuántos cuartos hay para dormir?
+	WHERE SectionItemGuid = 'eacd63a4-3f90-47a6-9cba-36ceed1616c8';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 41
+	WHERE SectionItemGuid = '6e48836a-a531-4359-9fd9-18e70bef37f3';
+
+
+UPDATE SectionItem
+	SET
+		Number = 18
+	WHERE SectionItemGuid = '6e48836a-a531-4359-9fd9-18e70bef37f3';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿Cuántas personas viven en su casa?
+	WHERE SectionItemGuid = '6e48836a-a531-4359-9fd9-18e70bef37f3';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 42
+	WHERE SectionItemGuid = 'afb9fdce-7c77-4216-ba75-c91525dd8cff';
+
+
+UPDATE SectionItem
+	SET
+		Number = 19
+	WHERE SectionItemGuid = 'afb9fdce-7c77-4216-ba75-c91525dd8cff';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿En su casa, de dónde sacan el agua para beber? No lea las opciones; marque todas las que apliquen.
+	WHERE SectionItemGuid = 'afb9fdce-7c77-4216-ba75-c91525dd8cff';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 67
+	WHERE SectionItemGuid = 'b2db5d57-eb53-4607-b34d-56d9fbb0bbad';
+
+
+UPDATE SectionItem
+	SET
+		Number = 28
+	WHERE SectionItemGuid = 'b2db5d57-eb53-4607-b34d-56d9fbb0bbad';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿De qué material está hecho el techo (la parte de arriba) de su casa?
+	WHERE SectionItemGuid = 'b2db5d57-eb53-4607-b34d-56d9fbb0bbad';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 68
+	WHERE SectionItemGuid = '2814abb0-6bf4-4883-909f-1458fa5ef0f7';
+
+
+UPDATE SectionItem
+	SET
+		Number = 29
+	WHERE SectionItemGuid = '2814abb0-6bf4-4883-909f-1458fa5ef0f7';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿Qué tipo de piso tienen en su casa?
+	WHERE SectionItemGuid = '2814abb0-6bf4-4883-909f-1458fa5ef0f7';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 69
+	WHERE SectionItemGuid = 'a1bda73d-7007-4192-96f2-8617f506f3a6';
+
+
+UPDATE SectionItem
+	SET
+		Number = 30
+	WHERE SectionItemGuid = 'a1bda73d-7007-4192-96f2-8617f506f3a6';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿Qué tipo de combustibles usa para cocinar (marque todo lo que aplica)?
+	WHERE SectionItemGuid = 'a1bda73d-7007-4192-96f2-8617f506f3a6';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 70
+	WHERE SectionItemGuid = '30c684e7-525d-4077-a410-3bb6087cb728';
+
+
+UPDATE SectionItem
+	SET
+		Number = 31
+	WHERE SectionItemGuid = '30c684e7-525d-4077-a410-3bb6087cb728';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 71
+	WHERE SectionItemGuid = 'a81c0ac1-6c62-48cd-b6dd-79efddbbb596';
+
+
+UPDATE SectionItem
+	SET
+		Number = 31.1
+	WHERE SectionItemGuid = 'a81c0ac1-6c62-48cd-b6dd-79efddbbb596';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿Que tipo de estufa utiliza usualmente para cocinar cuando usa leña, residuos de la cosecha o carbón?
+	WHERE SectionItemGuid = 'a81c0ac1-6c62-48cd-b6dd-79efddbbb596';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 72
+	WHERE SectionItemGuid = '7cda3351-2d09-4c7d-bbc4-d594b30299b9';
+
+
+UPDATE SectionItem
+	SET
+		Number = 31.2
+	WHERE SectionItemGuid = '7cda3351-2d09-4c7d-bbc4-d594b30299b9';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 73
+	WHERE SectionItemGuid = '3c74f472-38e4-4069-b929-91796b9612b5';
+
+
+UPDATE SectionItem
+	SET
+		Number = 31.2.1
+	WHERE SectionItemGuid = '3c74f472-38e4-4069-b929-91796b9612b5';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 74
+	WHERE SectionItemGuid = 'b6083195-e1bf-41ba-98a8-a1822a778754';
+
+
+UPDATE SectionItem
+	SET
+		Number = 31.3
+	WHERE SectionItemGuid = 'b6083195-e1bf-41ba-98a8-a1822a778754';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿En que lugar de la casa cocina usualmente cuando usa leña, residuos de la cosecha o carbón?
+	WHERE SectionItemGuid = 'b6083195-e1bf-41ba-98a8-a1822a778754';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 75
+	WHERE SectionItemGuid = 'b321ce42-91a6-43b7-b8d0-78973ff7f827';
+
+
+UPDATE SectionItem
+	SET
+		Number = 31.4
+	WHERE SectionItemGuid = 'b321ce42-91a6-43b7-b8d0-78973ff7f827';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 76
+	WHERE SectionItemGuid = '81d1f248-556a-4158-b4e5-58dcdad4a4f6';
+
+
+UPDATE SectionItem
+	SET
+		Number = 31.4.1
+	WHERE SectionItemGuid = '81d1f248-556a-4158-b4e5-58dcdad4a4f6';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 77
+	WHERE SectionItemGuid = 'a1ccc3e3-0597-49dc-96fd-90d5d94a0d57';
+
+
+UPDATE SectionItem
+	SET
+		Number = 31.5
+	WHERE SectionItemGuid = 'a1ccc3e3-0597-49dc-96fd-90d5d94a0d57';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿Qué tan seguido cocinan en su casa con leña, residuos de la cosecha o carbón?
+	WHERE SectionItemGuid = 'a1ccc3e3-0597-49dc-96fd-90d5d94a0d57';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 78
+	WHERE SectionItemGuid = '1e57ea39-c8a4-4dc0-b6db-9622e21197ee';
+
+
+UPDATE SectionItem
+	SET
+		Number = 32
+	WHERE SectionItemGuid = '1e57ea39-c8a4-4dc0-b6db-9622e21197ee';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 79
+	WHERE SectionItemGuid = '7f5d2fe3-cbfd-44e2-a712-37c713bb6aa8';
+
+
+UPDATE SectionItem
+	SET
+		Number = 33
+	WHERE SectionItemGuid = '7f5d2fe3-cbfd-44e2-a712-37c713bb6aa8';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 80
+	WHERE SectionItemGuid = '47da7e26-ff55-45dc-9d08-23b252edcfe0';
+
+
+UPDATE SectionItem
+	SET
+		Number = 33.1
+	WHERE SectionItemGuid = '47da7e26-ff55-45dc-9d08-23b252edcfe0';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿Cuántas bombillas hay en su casa al día de hoy?
+	WHERE SectionItemGuid = '47da7e26-ff55-45dc-9d08-23b252edcfe0';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 81
+	WHERE SectionItemGuid = '89b9e2d4-4104-4535-a2f6-5e483a66a557';
+
+
+UPDATE SectionItem
+	SET
+		Number = 34
+	WHERE SectionItemGuid = '89b9e2d4-4104-4535-a2f6-5e483a66a557';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 82
+	WHERE SectionItemGuid = 'b6109f13-053f-4aa4-8488-9693d9d157ad';
+
+
+UPDATE SectionItem
+	SET
+		Number = 35
+	WHERE SectionItemGuid = 'b6109f13-053f-4aa4-8488-9693d9d157ad';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 83
+	WHERE SectionItemGuid = '6946aec3-d0bb-4135-9d7e-9095b5805cbb';
+
+
+UPDATE SectionItem
+	SET
+		Number = 36
+	WHERE SectionItemGuid = '6946aec3-d0bb-4135-9d7e-9095b5805cbb';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 84
+	WHERE SectionItemGuid = '6ac12c0b-cb10-4048-98c0-db7b0aaefab9';
+
+
+UPDATE SectionItem
+	SET
+		Number = 37
+	WHERE SectionItemGuid = '6ac12c0b-cb10-4048-98c0-db7b0aaefab9';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 85
+	WHERE SectionItemGuid = 'b5ecf2eb-fc7e-403a-8d29-8987abe1cf2b';
+
+
+UPDATE SectionItem
+	SET
+		Number = 38
+	WHERE SectionItemGuid = 'b5ecf2eb-fc7e-403a-8d29-8987abe1cf2b';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 86
+	WHERE SectionItemGuid = '19f620ce-d22f-484c-af75-8d032a5aebf6';
+
+
+UPDATE SectionItem
+	SET
+		Number = 39
+	WHERE SectionItemGuid = '19f620ce-d22f-484c-af75-8d032a5aebf6';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 87
+	WHERE SectionItemGuid = '532ba108-7e53-415a-a27f-5ff5e66b9b57';
+
+
+UPDATE SectionItem
+	SET
+		Number = 40
+	WHERE SectionItemGuid = '532ba108-7e53-415a-a27f-5ff5e66b9b57';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 88
+	WHERE SectionItemGuid = '1c6116c7-6107-4eec-86ad-2e442c0c608a';
+
+
+UPDATE SectionItem
+	SET
+		Number = 41
+	WHERE SectionItemGuid = '1c6116c7-6107-4eec-86ad-2e442c0c608a';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 89
+	WHERE SectionItemGuid = '34f32882-8a8f-492c-9e51-1534f6a68c3d';
+
+
+UPDATE SectionItem
+	SET
+		Number = 42
+	WHERE SectionItemGuid = '34f32882-8a8f-492c-9e51-1534f6a68c3d';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Pregunte: ¿Cuáles son los ingresos mensuales de la familia?
+	WHERE SectionItemGuid = '34f32882-8a8f-492c-9e51-1534f6a68c3d';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 90
+	WHERE SectionItemGuid = 'c8b38c13-d14f-46c0-b59f-d0ab8c8de459';
+
+
+UPDATE SectionItem
+	SET
+		Number = 43
+	WHERE SectionItemGuid = 'c8b38c13-d14f-46c0-b59f-d0ab8c8de459';
+
+UPDATE SectionItem
+	SET
+		Ordinal = 91
+	WHERE SectionItemGuid = '2451416c-b2ef-4b80-9d0a-8118fe5658fb';
+
+
+UPDATE SectionItem
+	SET
+		Number = 44
+	WHERE SectionItemGuid = '2451416c-b2ef-4b80-9d0a-8118fe5658fb';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿El médico pudo completar el examen?'
+	WHERE SectionItemGuid = 'f160059f-3cf7-445e-8643-fae868a5bbf4';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Qué médico completó el examen?'
+	WHERE SectionItemGuid = '8ec298f7-d11b-49db-8739-bd2bb0867f45';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Fecha de examen físico'
+	WHERE SectionItemGuid = 'e7593958-79ef-45b0-af46-e9f3d9fd7bcf';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote si el niño tiene tiraje costal'
+	WHERE SectionItemGuid = 'e229f7db-af3c-451d-bcea-64b2456be086';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote si el niño tiene estridor'
+	WHERE SectionItemGuid = 'd680e30e-a897-439d-8d1b-d7e5fa06a4b7';
+
+UPDATE SectionItem
+	SET
+		Number = '3.10'
+	WHERE SectionItemGuid = 'c8401940-466f-407e-9924-e48d612dd5f3';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote si el niño tiene respiración ruidoso'
+	WHERE SectionItemGuid = '89b6b6b7-31f4-4c12-831f-279bd3af6c1d';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote si el niño tiene la fontanela abombada'
+	WHERE SectionItemGuid = '3f1f64ed-d34a-4b08-afcb-e3f9709a3468';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Observe si el paciente tiene aleteo nasal'
+	WHERE SectionItemGuid = '692589fa-a8c1-40fe-b8c6-830f1d1ef668';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Observe si el paciente usa músculos del tórax para respirar'
+	WHERE SectionItemGuid = '49031fe4-c9a5-465e-9256-96acf10c7d09';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la puntuación de Downes desde el expediente'
+	WHERE SectionItemGuid = 'fd5a21af-3c5c-41ff-8f3a-7acb2e62d65b';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Fecha de examen físico'
+	WHERE SectionItemGuid = '6ca56c2b-05fc-4eb0-b5fa-cf8328d43dc5';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la condición de los ojos'
+	WHERE SectionItemGuid = 'bf86c6ae-fdad-4faa-80eb-360627eb9c09';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la condición de la mucosa oral.'
+	WHERE SectionItemGuid = '9ccc3f69-d8be-43bc-b0d4-d9d2d5cfaba1';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote el tiempo de llenado capilar.'
+	WHERE SectionItemGuid = '5c5643de-5c87-45c3-bb12-db705534638e';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote el tiempo del pellizco de piel.'
+	WHERE SectionItemGuid = '7dfb403f-1f01-4d22-b41a-ccf3598fa932';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote el estado de la mollera.'
+	WHERE SectionItemGuid = '9d2dc87f-614d-4ba2-af36-c31636fc2ccb';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote el estado mental del paciente.'
+	WHERE SectionItemGuid = '2445b785-da45-466c-ada5-1f6bfef9adcf';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Pudo medir la talla del paciente?'
+	WHERE SectionItemGuid = '3111ea13-109e-43ef-bb64-2c1d0dbbf4fb';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Mida la talla del paciente en centímetros'
+	WHERE SectionItemGuid = 'db2f5189-e60a-478f-8697-235102ead7fb';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Mida la talla del paciente en centímetros otra vez'
+	WHERE SectionItemGuid = 'f94ab835-ad55-437e-94e8-c91d5f168984';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Mida la talla del paciente en centímetros otra vez'
+	WHERE SectionItemGuid = '938e6e6c-820d-4bdc-8f08-5c4305454b85';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Cómo midió la talla?'
+	WHERE SectionItemGuid = 'bb1bc390-28a8-4350-8451-1288bb608495';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Por qué no pudo medir la talla?'
+	WHERE SectionItemGuid = '68245c19-c827-46ee-b1c1-df51a319f281';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Especifique'
+	WHERE SectionItemGuid = '4b87c453-de24-46ed-a85c-890dee995b01';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Pudo pesar al paciente?'
+	WHERE SectionItemGuid = '6c9f4b9b-b9f9-483c-96e1-49074074f12f';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Mida el peso del paciente en libras'
+	WHERE SectionItemGuid = '10c89401-2f99-45d6-97b6-5452a0010f18';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Mida el peso del paciente en libras otra vez'
+	WHERE SectionItemGuid = '1be8910f-740d-4d29-a235-260e801cf4e1';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Mida el peso del paciente en libras otra vez'
+	WHERE SectionItemGuid = '1101c358-ad20-4aec-bda5-ffddec4db897';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Por qué no pudo pesar al paciente?'
+	WHERE SectionItemGuid = '46d34868-cf55-4539-b90f-c760e367a99b';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Especifique'
+	WHERE SectionItemGuid = '2f2cb0b1-5b76-4ff9-949c-4f3bda48ba8c';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Pudo encontrar la placa de rayos-X del tórax de este paciente?'
+	WHERE SectionItemGuid = 'f14a315d-1176-4ea8-81db-855fc822bb76';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote el número de la placa:'
+	WHERE SectionItemGuid = '508211c5-14b4-4c15-ad43-c8e621381f68';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la fecha cuando tomaron la placa:'
+	WHERE SectionItemGuid = '5e54b74f-ef10-42b3-b39c-88b8f61c9b6b';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Tomó una foto digital de la placa?'
+	WHERE SectionItemGuid = 'b72851a9-1330-4eab-b557-9fd062018cf9';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote el Número de la foto:'
+	WHERE SectionItemGuid = '4739c610-8411-48ff-91c2-9f5e593b5ee4';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Por qué no se tomó la foto de la placa?'
+	WHERE SectionItemGuid = '1477b227-b3ad-480c-b2ba-3ae1b6672feb';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Fecha de la última actualización del informe'
+	WHERE SectionItemGuid = '0a56d7a4-9b90-4e50-b6a6-0a8e9e50e8f3';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Fecha de egreso o muerte del paciente'
+	WHERE SectionItemGuid = '3d485994-98e1-44b0-94a1-b2df13db8562';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Tipo de egreso'
+	WHERE SectionItemGuid = 'cc1b5952-8e08-49a2-afb9-21297a331a6e';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Especifique'
+	WHERE SectionItemGuid = '25ec8d1a-6c49-4c6e-99fe-bf5c995fb1df';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Ha recibido el paciente suero o sales de rehidratación oral durante la admisión?'
+	WHERE SectionItemGuid = '5cea9125-348a-4c1b-948a-0298a4dccd29';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Ha recibido el paciente líquidos intravenosos durante la admisión?'
+	WHERE SectionItemGuid = 'f7f57cc9-d0bf-443d-aec2-008e4fda697c';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Ha recibido tratamiento con zinc durante su hospitalización?'
+	WHERE SectionItemGuid = 'd9361f2d-5090-4c50-9400-93f857216767';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote el resultados de la prueba de VIH/SIDA'
+	WHERE SectionItemGuid = 'c7113641-8406-4682-9881-c6eee444dbf2';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote el resultado de la gota gruesa'
+	WHERE SectionItemGuid = '05f64ef0-4f8d-44c3-ba08-30285520b4a3';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote el resultado de la prueba Immunocomb (Dengue) IgM'
+	WHERE SectionItemGuid = 'adc99447-44e7-42f4-b00c-e0167cefe529';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote el resultado de la prueba Immunocomb (Dengue) IgG'
+	WHERE SectionItemGuid = '87263e45-99b3-460b-a8a6-1eb447fff97f';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Cuál hospital?'
+	WHERE SectionItemGuid = '97828915-f45c-433f-8f0b-4f53130c529f';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Especifique el hospital:'
+	WHERE SectionItemGuid = 'c1dd852f-685d-40bc-b92d-a80c2e65de0c';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: En qué condición estaba el paciente cuando el hospital lo dio de alta'
+	WHERE SectionItemGuid = '4ef228fc-c480-4bf5-af81-64cfad4d1a6a';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote el número de días con ventilación mecánica'
+	WHERE SectionItemGuid = '9d79a7d2-de8e-4100-af08-a035be05d08b';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote el número de días en cuidados intensivos'
+	WHERE SectionItemGuid = '09e53e2f-bad1-404a-a895-fa190453a072';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la primera presión arterial registrada durante las primeras 24 horas de admisión - Sistólica:'
+	WHERE SectionItemGuid = 'a8ceb87d-1b9f-4df4-a4c2-4a0ea446ec82';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la primera presión arterial registrada durante las primeras 24 horas de admisión - Diastólica:'
+	WHERE SectionItemGuid = '28cadaf4-4e7d-4709-b9b0-fed4ae6b1994';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la primera frecuencia cardíaca registrada durante las primeras 24 horas de admisión'
+	WHERE SectionItemGuid = 'b71cb245-2eea-425d-bf49-5200a6653819';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Anote la temperatura más alta registrada durante las primeras 24 horas de su admisión:'
+	WHERE SectionItemGuid = '8a80cf2f-090d-47d1-a5d6-f0bc3a599321';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Diagnóstico al declararlo de alta #1'
+	WHERE SectionItemGuid = 'd1dbdb8f-be02-4819-b2c7-3e276989d1c2';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Especifique'
+	WHERE SectionItemGuid = '53355026-c648-46ab-9177-c43579aaffc3';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Diagnóstico al declararlo de alta #2'
+	WHERE SectionItemGuid = '7660ed1a-5083-4f71-8410-b8c63148ad78';
+
+UPDATE SectionItem
+	SET
+		SectionID = 31
+	WHERE SectionItemGuid = 'aa4d2d00-b49d-4468-a9b8-95a34d59022b';
+
+
+UPDATE SectionItem
+	SET
+		Ordinal = 30
+	WHERE SectionItemGuid = 'aa4d2d00-b49d-4468-a9b8-95a34d59022b';
+
+
+UPDATE SectionItem
+	SET
+		Number = 22
+	WHERE SectionItemGuid = 'aa4d2d00-b49d-4468-a9b8-95a34d59022b';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: ¿El hospital tomó un hemocultivo al paciente?
+	WHERE SectionItemGuid = 'aa4d2d00-b49d-4468-a9b8-95a34d59022b';
+
+UPDATE SectionItem
+	SET
+		SectionID = 31
+	WHERE SectionItemGuid = '164f2991-236c-43fd-b0b4-4c3d4b72e0fe';
+
+
+UPDATE SectionItem
+	SET
+		Ordinal = 31
+	WHERE SectionItemGuid = '164f2991-236c-43fd-b0b4-4c3d4b72e0fe';
+
+
+UPDATE SectionItem
+	SET
+		Number = 23
+	WHERE SectionItemGuid = '164f2991-236c-43fd-b0b4-4c3d4b72e0fe';
+
+UPDATE SectionItem
+	SET
+		SectionID = 31
+	WHERE SectionItemGuid = 'a14f3e56-c5b3-45c2-81ca-8a4bfceff9f2';
+
+
+UPDATE SectionItem
+	SET
+		Ordinal = 32
+	WHERE SectionItemGuid = 'a14f3e56-c5b3-45c2-81ca-8a4bfceff9f2';
+
+
+UPDATE SectionItem
+	SET
+		Number = 23.1
+	WHERE SectionItemGuid = 'a14f3e56-c5b3-45c2-81ca-8a4bfceff9f2';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Fecha de toma de Muestra
+	WHERE SectionItemGuid = 'a14f3e56-c5b3-45c2-81ca-8a4bfceff9f2';
+
+UPDATE SectionItem
+	SET
+		SectionID = 31
+	WHERE SectionItemGuid = '072661b6-0a6c-4be1-8f26-18cfae369594';
+
+
+UPDATE SectionItem
+	SET
+		Ordinal = 33
+	WHERE SectionItemGuid = '072661b6-0a6c-4be1-8f26-18cfae369594';
+
+
+UPDATE SectionItem
+	SET
+		Number = 23.2
+	WHERE SectionItemGuid = '072661b6-0a6c-4be1-8f26-18cfae369594';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Número de kit de hemocultivo (1)
+	WHERE SectionItemGuid = '072661b6-0a6c-4be1-8f26-18cfae369594';
+
+UPDATE SectionItem
+	SET
+		SectionID = 31
+	WHERE SectionItemGuid = 'd2a6a3ac-1150-4373-ab68-4c49a0a71093';
+
+
+UPDATE SectionItem
+	SET
+		Ordinal = 34
+	WHERE SectionItemGuid = 'd2a6a3ac-1150-4373-ab68-4c49a0a71093';
+
+
+UPDATE SectionItem
+	SET
+		Number = 23.3
+	WHERE SectionItemGuid = 'd2a6a3ac-1150-4373-ab68-4c49a0a71093';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Número de Registro de Laboratorio (1)
+	WHERE SectionItemGuid = 'd2a6a3ac-1150-4373-ab68-4c49a0a71093';
+
+UPDATE SectionItem
+	SET
+		SectionID = 31
+	WHERE SectionItemGuid = 'c89c8586-2948-42cd-ad64-a07d67d079fd';
+
+
+UPDATE SectionItem
+	SET
+		Ordinal = 35
+	WHERE SectionItemGuid = 'c89c8586-2948-42cd-ad64-a07d67d079fd';
+
+
+UPDATE SectionItem
+	SET
+		Number = 23.4
+	WHERE SectionItemGuid = 'c89c8586-2948-42cd-ad64-a07d67d079fd';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Número de kit de hemocultivo (2)
+	WHERE SectionItemGuid = 'c89c8586-2948-42cd-ad64-a07d67d079fd';
+
+UPDATE SectionItem
+	SET
+		SectionID = 31
+	WHERE SectionItemGuid = '980bd482-4e99-4055-b731-18be56b1d69b';
+
+
+UPDATE SectionItem
+	SET
+		Ordinal = 36
+	WHERE SectionItemGuid = '980bd482-4e99-4055-b731-18be56b1d69b';
+
+
+UPDATE SectionItem
+	SET
+		Number = 23.5
+	WHERE SectionItemGuid = '980bd482-4e99-4055-b731-18be56b1d69b';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Número de Registro de Laboratorio (2)
+	WHERE SectionItemGuid = '980bd482-4e99-4055-b731-18be56b1d69b';
+
+UPDATE SectionItem
+	SET
+		SectionID = 31
+	WHERE SectionItemGuid = 'dd25382f-2957-427b-8be4-420eaf451bd0';
+
+
+UPDATE SectionItem
+	SET
+		Ordinal = 37
+	WHERE SectionItemGuid = 'dd25382f-2957-427b-8be4-420eaf451bd0';
+
+
+UPDATE SectionItem
+	SET
+		Number = 23.6
+	WHERE SectionItemGuid = 'dd25382f-2957-427b-8be4-420eaf451bd0';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Resultado de hemocultivo
+	WHERE SectionItemGuid = 'dd25382f-2957-427b-8be4-420eaf451bd0';
+
+UPDATE SectionItem
+	SET
+		SectionID = 31
+	WHERE SectionItemGuid = '7309c593-49c8-434e-9bea-debd33148b94';
+
+
+UPDATE SectionItem
+	SET
+		Ordinal = 38
+	WHERE SectionItemGuid = '7309c593-49c8-434e-9bea-debd33148b94';
+
+
+UPDATE SectionItem
+	SET
+		Number = 23.7
+	WHERE SectionItemGuid = '7309c593-49c8-434e-9bea-debd33148b94';
+
+UPDATE SectionItem
+	SET
+		SectionID = 31
+	WHERE SectionItemGuid = '88f92fb4-60cb-415a-a8e5-c05a567a55c6';
+
+
+UPDATE SectionItem
+	SET
+		Ordinal = 39
+	WHERE SectionItemGuid = '88f92fb4-60cb-415a-a8e5-c05a567a55c6';
+
+
+UPDATE SectionItem
+	SET
+		Number = 23.7.1
+	WHERE SectionItemGuid = '88f92fb4-60cb-415a-a8e5-c05a567a55c6';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Resultado de Kit #1 Aeróbica o pediatría
+	WHERE SectionItemGuid = '88f92fb4-60cb-415a-a8e5-c05a567a55c6';
+
+UPDATE SectionItem
+	SET
+		SectionID = 31
+	WHERE SectionItemGuid = '4f7930b9-9e46-4130-bfe1-f8af26d25e20';
+
+
+UPDATE SectionItem
+	SET
+		Ordinal = 40
+	WHERE SectionItemGuid = '4f7930b9-9e46-4130-bfe1-f8af26d25e20';
+
+
+UPDATE SectionItem
+	SET
+		Number = 23.7.2
+	WHERE SectionItemGuid = '4f7930b9-9e46-4130-bfe1-f8af26d25e20';
+
+UPDATE SectionItem
+	SET
+		SectionID = 31
+	WHERE SectionItemGuid = '5bc5ca7b-c94d-44fb-aa2f-d41e5ccf6f29';
+
+
+UPDATE SectionItem
+	SET
+		Ordinal = 41
+	WHERE SectionItemGuid = '5bc5ca7b-c94d-44fb-aa2f-d41e5ccf6f29';
+
+
+UPDATE SectionItem
+	SET
+		Number = 23.7.2.1
+	WHERE SectionItemGuid = '5bc5ca7b-c94d-44fb-aa2f-d41e5ccf6f29';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Kit #1 Aerobica o pediatría
+	WHERE SectionItemGuid = '5bc5ca7b-c94d-44fb-aa2f-d41e5ccf6f29';
+
+UPDATE SectionItem
+	SET
+		SectionID = 31
+	WHERE SectionItemGuid = '0ef2954a-8265-4a9b-b232-b0f5411e8be3';
+
+
+UPDATE SectionItem
+	SET
+		Ordinal = 42
+	WHERE SectionItemGuid = '0ef2954a-8265-4a9b-b232-b0f5411e8be3';
+
+
+UPDATE SectionItem
+	SET
+		Number = 23.7.3
+	WHERE SectionItemGuid = '0ef2954a-8265-4a9b-b232-b0f5411e8be3';
+
+UPDATE SectionItem
+	SET
+		SectionID = 31
+	WHERE SectionItemGuid = '74e57252-fdbe-4c23-ae96-d96c14caf807';
+
+
+UPDATE SectionItem
+	SET
+		Ordinal = 43
+	WHERE SectionItemGuid = '74e57252-fdbe-4c23-ae96-d96c14caf807';
+
+
+UPDATE SectionItem
+	SET
+		Number = 23.7.3.1
+	WHERE SectionItemGuid = '74e57252-fdbe-4c23-ae96-d96c14caf807';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Resultado de Kit #2 Aeróbica o pediátrica
+	WHERE SectionItemGuid = '74e57252-fdbe-4c23-ae96-d96c14caf807';
+
+UPDATE SectionItem
+	SET
+		SectionID = 31
+	WHERE SectionItemGuid = '39be8e2b-b275-4eff-819f-a1ea6610d913';
+
+
+UPDATE SectionItem
+	SET
+		Ordinal = 44
+	WHERE SectionItemGuid = '39be8e2b-b275-4eff-819f-a1ea6610d913';
+
+
+UPDATE SectionItem
+	SET
+		Number = 23.7.3.2
+	WHERE SectionItemGuid = '39be8e2b-b275-4eff-819f-a1ea6610d913';
+
+UPDATE SectionItem
+	SET
+		SectionID = 31
+	WHERE SectionItemGuid = 'ce23f3b9-2f7f-4d37-91db-da195ff6cf0d';
+
+
+UPDATE SectionItem
+	SET
+		Ordinal = 45
+	WHERE SectionItemGuid = 'ce23f3b9-2f7f-4d37-91db-da195ff6cf0d';
+
+
+UPDATE SectionItem
+	SET
+		Number = 23.7.3.2.1
+	WHERE SectionItemGuid = 'ce23f3b9-2f7f-4d37-91db-da195ff6cf0d';
+
+
+UPDATE SectionItem
+	SET
+		MainText = Enfermera: Kit #2 Aeróbica
+	WHERE SectionItemGuid = 'ce23f3b9-2f7f-4d37-91db-da195ff6cf0d';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Fecha de terminación del proyecto (fecha de defunción, si es aplicable)'
+	WHERE SectionItemGuid = 'abfc073e-b1ce-495b-9403-398f28642edf';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿Cómo terminó? (Marque solamente una opción)'
+	WHERE SectionItemGuid = '739d59e2-1270-4f93-9af1-7bd0625b4da7';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Explique el otro evento'
+	WHERE SectionItemGuid = '4da74520-7b3a-42ac-a660-ad0bbfa33bc6';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: ¿En qué punto del estudio se salió el paciente? (Por ejemplo durante o después de la entrevista)'
+	WHERE SectionItemGuid = '89d074d3-4434-4154-ac00-f37a36474915';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermera: Observaciones'
+	WHERE SectionItemGuid = 'c0e77db4-4915-4d90-b7a4-f8cac8cb36c3';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Semana epidemiológica de admisión o presentación del paciente'
+	WHERE SectionItemGuid = '51317b6a-7f05-459d-a687-983d811e227b';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Año epidemiológica de admisión o presentación del paciente'
+	WHERE SectionItemGuid = 'a4abe068-f15c-4fb9-b65f-bde3c846686b';
+
+UPDATE SectionItem
+	SET
+		MainText = 'El año y semana epidemiológica de admisión o presentación del paciente'
+	WHERE SectionItemGuid = 'd3a49c88-5cdf-49ab-b0a0-b40726507d4f';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿La condición del paciente sospechoso (no inscrito en ViCo) es moribundo (al punto de morirse)?'
+	WHERE SectionItemGuid = '0c734e40-ed06-45b4-a4e9-ede627e64340';
+
+UPDATE SectionItem
+	SET
+		MainText = 'La fecha cuando indicamos que este paciente sospechoso (no inscrito en ViCo) es moribundo'
+	WHERE SectionItemGuid = '582d2a19-dc68-4348-9ab8-17c2ef3e0b17';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿El paciente sospechoso (no inscrito en ViCo) se murió?'
+	WHERE SectionItemGuid = 'a4eca30d-0f93-47a6-afbd-9bdbc39855bb';
+
+UPDATE SectionItem
+	SET
+		MainText = 'La fecha cuando este paciente sospechoso (no inscrito en ViCo) se murió'
+	WHERE SectionItemGuid = '987d332d-7fbe-482e-98b1-a3ea36d13510';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿El paciente tiene conteo glóbulos blancos anormal?'
+	WHERE SectionItemGuid = '6e75684e-767e-43e9-af10-148dfeed1333';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿El paciente es un caso sospechoso del estudio de febril?'
+	WHERE SectionItemGuid = 'b6bacbe6-ea73-418a-8033-146e27626678';
+
+UPDATE SectionItem
+	SET
+		MainText = 'La temperatura documentada más alta en las primeras 24 horas de admisión.'
+	WHERE SectionItemGuid = '94c89955-b44d-407a-8e5b-b8687479a27e';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe indicar el SEXO del paciente.'
+	WHERE SectionItemGuid = '8b02d79b-d079-4967-8f19-760955928c44';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Si el bebe tiene mas de 28 días, debe poner su edad como 1 mes.'
+	WHERE SectionItemGuid = '57bc5db8-7eda-419c-a109-beb36e6b4631';
+
+UPDATE SectionItem
+	SET
+		Number = '3.10'
+	WHERE SectionItemGuid = 'aa27e152-f2d2-47bb-832c-67b1905add4b';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si ha tenido diarrea o asientos en los últimos 7 días.'
+	WHERE SectionItemGuid = '86b74ecd-e64e-4b31-9da9-c18fba7cd77e';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Hace cuántos días comenzó con diarrea o asientos líquidos?'
+	WHERE SectionItemGuid = '1f045e9c-1456-43da-aa08-d4538c552d87';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si en la semana anterior al inicio de su diarrea, tuvo algún otro episodio de diarrea.'
+	WHERE SectionItemGuid = '41ad570d-696d-4222-8055-9dd274c525cb';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Indique si el paciente tiene una indicación sospechosa de ETI como gripe, catarro, resfriado, congestión nasal, fiebre, tos, o dolor de garganta.'
+	WHERE SectionItemGuid = '8650e4a5-69e2-4b7a-ab16-f29195fdb778';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si ha tenido tos.'
+	WHERE SectionItemGuid = '9c61ce3e-5759-4568-8c85-1d0b307f6314';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si ha tenido tos >14 días'
+	WHERE SectionItemGuid = 'f3f7aa8d-4c30-476d-a690-c5df16d4b337';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si tiene o tenia tos en los últimos 14 días'
+	WHERE SectionItemGuid = '0005ff0e-b291-4cf6-a741-5d3f0105ee2e';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si tos empezó igual o mas que 7 días'
+	WHERE SectionItemGuid = '0c0e42e5-2706-4062-a5dc-0f7eb3c4202f';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Ha tenido paroxismos (exacerbaciones o ataques súbito e intenso) de tos?'
+	WHERE SectionItemGuid = '5ed5ea75-f3f6-43d2-b162-59a11e00d99f';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si le ha dolido la garganta durante su enfermedad.'
+	WHERE SectionItemGuid = '62fab1e9-00fc-4017-b4e1-bc6a00e8d629';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si ha tenido dolor de garganta >14 días'
+	WHERE SectionItemGuid = 'cdf73e94-1a43-4cd7-a646-76d7b95d1445';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Indique si el paciente ha tenido alguna queja de dolor de garganta en los últimos 14 días.'
+	WHERE SectionItemGuid = '95d4e9b1-1743-4ba1-89c8-4d6e2322a396';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si ha tenido dificultad para respirar durante su enfermedad.'
+	WHERE SectionItemGuid = 'ccf52177-a8c1-41df-b286-b2cad8058b65';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Anote la temperatura documentada en el registro del paciente. Si no le han tomado la temperatura al paciente tómesela usted y anótela aquí.'
+	WHERE SectionItemGuid = '5b2e2c6d-b583-4616-bf57-300b8910c7ed';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle si el niño/niña ha tenido problemas para comer, beber, o mamar durante su enfermedad.'
+	WHERE SectionItemGuid = '9f343766-c2d8-4011-93ca-41f7a6ddcb9e';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Se pudo medir la tasa de respiración por minuto?'
+	WHERE SectionItemGuid = '570cb26f-271e-4d60-bd6a-9b8509ad3535';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Se puede medir la oximetría de pulso?'
+	WHERE SectionItemGuid = 'b792944d-432d-4d8d-9b82-2969f599c8ae';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si se pudo medir la oximetría de pulso'
+	WHERE SectionItemGuid = '2fadd714-82af-4a3e-8c3c-4e7e62f2694c';
+
+UPDATE SectionItem
+	SET
+		Number = '3.20'
+	WHERE SectionItemGuid = 'e24e849c-046a-4411-8523-aeddc93cf11b';
+
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si no se pudo medir la oximetría de pulso'
+	WHERE SectionItemGuid = 'e24e849c-046a-4411-8523-aeddc93cf11b';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Por qué no se pudo medir la oximetría de pulso?'
+	WHERE SectionItemGuid = '7bb35b77-49fc-492b-8ab8-1b9b9c5c657f';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si la razón por la cual no se pudo medir la oximetría de pulso es 'otro''
+	WHERE SectionItemGuid = 'dd94ebb4-fe9d-4662-8c1e-e6fc35206511';
+
+UPDATE SectionItem
+	SET
+		MainText = '¡Después de este punto no se pueden modificar los datos de los criterios de inclusión!'
+	WHERE SectionItemGuid = 'f3ea4bf9-4274-4829-986a-5c4d673d02dd';
+
+UPDATE SectionItem
+	SET
+		MainText = 'El paciente NO cumple con los criterios de inclusión.  Agradezca a la persona por el tiempo y la información que compartió con nosotros.  Hágale saber que afortunada- mente no tiene el tipo de enfermedad que estamos estudiando.'
+	WHERE SectionItemGuid = 'a1725020-2835-4da5-b7ae-fe1a6dcd35b1';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si no dio consentimiento o asentimiento escrito'
+	WHERE SectionItemGuid = 'fa56ed94-f1a8-4eaf-8679-c3868d5c8a3a';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe especifique la razón por la que asentimiento NO no se dio consentimiento o asentimiento:'
+	WHERE SectionItemGuid = '1250ca84-b159-44f6-a4cc-d71e523b827a';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si dio consentimiento (y asentimiento cuando aplica) escrito'
+	WHERE SectionItemGuid = 'f2928d2e-b65e-4457-890d-e2ca8df22329';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Hay un número telefónico a donde podamos contactarle?'
+	WHERE SectionItemGuid = '2acb4ed7-235d-42dc-84c3-37f5f80f8c2e';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si la enfermedad empezó hace 3 días o menos, y elegibleETI_MSP es "Sí" y la PDA está en Santa Rosa'
+	WHERE SectionItemGuid = '4e3631d0-2a4f-46d7-9adf-20f565258bad';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Cómo obtuvo el hisopo Cary Blair?'
+	WHERE SectionItemGuid = 'd331c3d6-9b6e-47c2-99d1-dc2ea94d2b36';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿La muestra cubre el fondo del contenedor plástico?'
+	WHERE SectionItemGuid = 'd25d01ee-aa96-4ab8-a050-6b1a5375dea3';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte al paciente: "¿De los últimos ocho días cuántos días tuvo vómitos?"'
+	WHERE SectionItemGuid = '379f7b2b-e9fc-42d2-a2b8-3ba6f817cc25';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Hace cuántos días empezó el primer síntoma de su enfermedad respiratoria? (No incluya el día actual en la cuenta.)'
+	WHERE SectionItemGuid = '88bc6e4e-2041-461d-9562-c93dd89c8362';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si produce esputo.'
+	WHERE SectionItemGuid = '89874610-f82f-402d-adb1-834c1646ae8c';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si le hay faltado el aire durante su enfermedad.'
+	WHERE SectionItemGuid = '172f8608-3123-45f9-ac9f-c789c0be7e0f';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si le da dolor de pecho al respirar durante su enfermedad.'
+	WHERE SectionItemGuid = '06b773eb-15d4-4e01-b7c1-34d32e54d3dd';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Hace cuántos días empezó el primer síntoma de su enfermedad febril? No incluya el día actual en la cuenta.'
+	WHERE SectionItemGuid = '694b8211-b24c-4e10-86d8-9a0bce2ec42e';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Dolor en los camotes (pantorilla)'
+	WHERE SectionItemGuid = '6842f4c4-fc4d-4bb5-b42a-d2520a35c444';
+
+UPDATE SectionItem
+	SET
+		Number = '3.10'
+	WHERE SectionItemGuid = '76addcca-71d5-445f-8cd2-bb859bc9cbb1';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si actualmente tiene la irritación'
+	WHERE SectionItemGuid = '4007cfde-2c43-4278-a283-cf7662955499';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Diga al paciente: "Para las siguientes preguntas me gustaría que pensara desde el primer día que iniciaron las molestias de esta enfermedad."'
+	WHERE SectionItemGuid = '08528c0f-36d1-4607-b35e-42b420e10d65';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Buscó tratamiento para esta enfermedad en algún lugar (como centro o puesto de salud, farmacia, tienda) o con alguna persona (como médico privado, comadrona, amiga) antes de venir aquí al centro?'
+	WHERE SectionItemGuid = '08d79f5f-2c6c-471a-9652-e0b3299bab13';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Ha tomado algún medicamento en los últimos 3 días (72 horas)?'
+	WHERE SectionItemGuid = 'aba8858d-56b6-47d3-bcd5-045c9dbebdaf';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si ha tomado algún medicamento en las últimas 3 días (72 horas)'
+	WHERE SectionItemGuid = 'c3c1b93a-20d3-47f1-b764-29defb2358f1';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte al paciente si ha recibido la vacuna para sarampión, paperas y rebela (SPR).'
+	WHERE SectionItemGuid = 'd80b5454-e207-43cc-9a21-6aaa0b6ce3d5';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Anote de la ficha si el paciente ha recibido la vacuna para sarampión, paperas y rubeola (SPR).'
+	WHERE SectionItemGuid = '5f61a397-8015-4ff8-ab8a-1704401314ba';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿El paciente ha recibido la vacuna para influenza estacional en los últimos 6 meses?'
+	WHERE SectionItemGuid = '1b77f98b-a208-4d9d-99d3-9c4c6d2cb4b3';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Enfermedad del hígado (ej., cirrosis, hepatitis crónica)'
+	WHERE SectionItemGuid = 'eb171898-5cb6-4fc0-a3d6-18bcca6cbb9d';
+
+UPDATE SectionItem
+	SET
+		MainText = 'VIH/SIDA u otra inmunodeficiencia'
+	WHERE SectionItemGuid = 'b939b85f-3e66-46fb-ba83-cf1c04efef5f';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Cuántos meses tiene usted de embarazo?'
+	WHERE SectionItemGuid = '0cea717f-b5ae-4064-a759-80fdc1f71c5a';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si estuvo en otro país'
+	WHERE SectionItemGuid = '91fb654f-b328-4fca-a90d-b9887f397bb3';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Cuál otro país?'
+	WHERE SectionItemGuid = '311e6a5a-db0c-4c33-95e5-4e9f19f98d70';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si lo mordió algún animal'
+	WHERE SectionItemGuid = 'f4f33840-cc05-442e-bc99-5771a12ef8eb';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Recibió tabletas de zinc o una receta para tomar zinc durante su reciente hospitalización o visita al servio de salud?'
+	WHERE SectionItemGuid = '2612e1cf-ccb7-4da1-92e5-33ae0c55b648';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Cuántas tabletas le quedan al día de hoy?'
+	WHERE SectionItemGuid = 'af57836d-c0e0-4430-ae7c-fd5c7a47969a';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Por qué no se tomó una muestra de sangre?'
+	WHERE SectionItemGuid = '372b3171-b5c9-464c-991b-a24a33b1804d';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿La condición del paciente sospechoso (no inscrito en ViCo) es moribundo (al punto de morirse)?'
+	WHERE SectionItemGuid = '140acbe1-ff89-476d-8197-4241c2e1cb59';
+
+UPDATE SectionItem
+	SET
+		MainText = 'La fecha cuando indicamos que este paciente sospechoso (no inscrito en ViCo) es moribundo'
+	WHERE SectionItemGuid = '67446440-8280-4c3b-b94c-12128368b40a';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿El paciente sospechoso (no inscrito en ViCo) se murió?'
+	WHERE SectionItemGuid = '6390649b-e837-4cbe-9e26-17a894a0ec95';
+
+UPDATE SectionItem
+	SET
+		MainText = 'La fecha cuando este paciente sospechoso (no inscrito en ViCo) se murió'
+	WHERE SectionItemGuid = 'c14ba13a-881d-4185-8eb1-797012e36c14';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿El paciente es un caso sospechoso del estudio de febril?'
+	WHERE SectionItemGuid = '8f4c2de7-6eab-4472-b234-521a5fe74f4f';
+
+UPDATE SectionItem
+	SET
+		MainText = 'La temperatura documentada más alta en las primeras 24 horas de admisión.'
+	WHERE SectionItemGuid = '43d089aa-9a25-4abc-a1fd-a0cb055764ae';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe indicar el SEXO del paciente.'
+	WHERE SectionItemGuid = '1dfda411-0722-44f6-a516-68679d6d10b8';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Si el bebe tiene mas de 28 días, debe poner su edad como 1 mes.'
+	WHERE SectionItemGuid = 'd3aeea4a-5067-4d0b-b44a-b54bffd7ba41';
+
+UPDATE SectionItem
+	SET
+		Number = '3.10'
+	WHERE SectionItemGuid = '50097dcf-2ceb-4747-a861-446059797790';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si ha tenido diarrea o asientos en los últimos 7 días.'
+	WHERE SectionItemGuid = 'c6dbe3fc-f239-4853-b6f0-6e538828c1ec';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Hace cuántos días comenzó con diarrea o asientos líquidos?'
+	WHERE SectionItemGuid = '32b88f09-083e-473a-a23b-a74054a3809f';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si en la semana anterior al inicio de su diarrea, tuvo algún otro episodio de diarrea.'
+	WHERE SectionItemGuid = 'e334684a-5c28-4b24-8752-61194ae29380';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Indique si el paciente tiene una indicación sospechosa de ETI como gripe, catarro, resfriado, congestión nasal, fiebre, tos, o dolor de garganta.'
+	WHERE SectionItemGuid = '569714a7-88b4-476e-974d-bc20d8f341c6';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si ha tenido tos.'
+	WHERE SectionItemGuid = '136b82aa-e582-4311-80ac-8fc75718f099';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si ha tenido tos >14 días'
+	WHERE SectionItemGuid = 'e4ad7bbf-42eb-44d5-a61e-3890b14686ef';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si tiene o tenia tos en los últimos 14 días'
+	WHERE SectionItemGuid = '966c9051-8f0a-46a9-9c40-05298f2153fb';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si la tos empezó hace 7 días o más'
+	WHERE SectionItemGuid = '125c3e0b-2678-4b3b-96e7-1b826aef1cc7';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Ha tenido paroxismos (exacerbaciones o ataques súbitos e intensos) de tos?'
+	WHERE SectionItemGuid = '28309e80-28e0-4328-8b85-398a797a8f0d';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si le ha dolido la garganta durante su enfermedad.'
+	WHERE SectionItemGuid = '8c9d4500-ef36-4572-a15a-19b98f027b1a';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si ha tenido dolor de garganta >14 días'
+	WHERE SectionItemGuid = 'e61490de-9edb-4a2f-a4ed-8bee65802e87';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Indique si el paciente ha tenido alguna queja de dolor de garganta en los últimos 14 días.'
+	WHERE SectionItemGuid = 'd0aa281f-9528-4881-b1b9-ee7d2e58f3de';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si ha tenido dificultad para respirar durante su enfermedad.'
+	WHERE SectionItemGuid = 'ca7ecf77-4e76-4377-8d92-958463c8d366';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle si el niño/niña ha tenido problemas para comer, beber, o mamar durante su enfermedad.'
+	WHERE SectionItemGuid = '9890f6a5-4436-4932-bf7e-681787076704';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Se pudo medir la tasa de respiración por minuto?'
+	WHERE SectionItemGuid = 'f585b977-698c-4242-82c8-64e2159bf753';
+
+UPDATE SectionItem
+	SET
+		Number = '3.20'
+	WHERE SectionItemGuid = 'c7321bb4-3f3b-4e4f-bb57-3384617b0822';
+
+UPDATE SectionItem
+	SET
+		MainText = '¡Después de este punto no se pueden modificar los datos de los criterios de inclusión!'
+	WHERE SectionItemGuid = 'ea4a7a4c-c534-4b34-9b8e-41a3458a121a';
+
+UPDATE SectionItem
+	SET
+		MainText = 'El paciente NO cumple con los criterios de inclusión.  Agradezca a la persona por el tiempo y la información que compartió con nosotros.  Hágale saber que afortunadamente no tiene el tipo de enfermedad que estamos estudiando.'
+	WHERE SectionItemGuid = '399e9e94-2273-4bcf-9d95-6fb3b9777fca';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe especifique la razón por la que asentimiento NO no se dio consentimiento o asentimiento:'
+	WHERE SectionItemGuid = 'f37398e7-2335-494b-ae87-f7e777357054';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Hay un número telefónico a donde podamos contactarle?'
+	WHERE SectionItemGuid = 'e1e67d8c-024a-4af0-a6a9-f5f35c624547';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si tiene un número telefónico:'
+	WHERE SectionItemGuid = 'ad997953-d760-4ff0-a28d-99bd0563bb5c';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Cómo obtuvo el hisopo Cary Blair?'
+	WHERE SectionItemGuid = 'd4450f39-9f0c-41e8-b5ae-723ae2981002';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte al paciente: "¿De los últimos ocho días, cuántos días tuvo vómitos?"'
+	WHERE SectionItemGuid = '58ec9bc3-ffca-41f6-8e3a-addfadd48a42';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Hace cuántos días empezó el primer síntoma de su enfermedad respiratoria? (No incluya el día actual en la cuenta.)'
+	WHERE SectionItemGuid = 'f3219f6e-5f71-4056-a288-532f85f736b5';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si ha tenido dificultad para respirar durante su enfermedad.'
+	WHERE SectionItemGuid = '2e1462cf-95c1-44b1-a8b0-c4d368f9f081';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si le hay faltado el aire durante su enfermedad.'
+	WHERE SectionItemGuid = 'c365980c-6379-4d77-992f-23ef704bfa1d';
+
+UPDATE SectionItem
+	SET
+		HelpText = 'Debe preguntarle al paciente si le da dolor de pecho al respirar durante su enfermedad.'
+	WHERE SectionItemGuid = 'b31cca7a-59e5-4f01-a78d-c592b1ef140a';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Diga al paciente: "Para las siguientes preguntas me gustaría que pensara desde el primer día que iniciaron las molestias de esta enfermedad."'
+	WHERE SectionItemGuid = '06d5ea17-8c02-4a46-a905-e8cdd1cbe7e8';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Cuando comenzó su enfermedad, ¿A dónde o con  quién fue a buscar tratamiento? (marque todos los que aplican)'
+	WHERE SectionItemGuid = 'cd75cbf7-e0de-4b22-9fcf-a8df54cacca4';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Ha tomado algún medicamento en los últimos 3 días (72 horas)?'
+	WHERE SectionItemGuid = '0e99223b-cf95-4a61-b793-f2f1871df966';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si ha tomado algún medicamento en las últimos 3 días (72 horas)'
+	WHERE SectionItemGuid = 'cc445b86-b869-455f-8020-4a1d1a560cf9';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿De dónde obtuvo los sobrecitos?'
+	WHERE SectionItemGuid = 'c66d3478-7988-4aac-b61a-66cf7f7b3a2e';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Pregunte al paciente si ha recibido la vacuna para sarampión, paperas y rubeola (SPR).'
+	WHERE SectionItemGuid = 'e9431624-2e0f-41aa-b1a0-bfa28b57c39f';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Anote de la ficha si el paciente ha recibido la vacuna para sarampión, paperas y rubeola (SPR).'
+	WHERE SectionItemGuid = '714a20a8-52f8-41b9-9a69-31f2d1f16ad9';
+
+UPDATE SectionItem
+	SET
+		MainText = 'VIH/SIDA u otra inmunodeficiencia'
+	WHERE SectionItemGuid = 'bae4f7ef-befb-4d4b-b3e5-709c52a535fa';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Si estuvo en otro país'
+	WHERE SectionItemGuid = '4ad5489f-065f-4e58-9996-add0a2fd57bf';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Cuál otro país?'
+	WHERE SectionItemGuid = '880730e3-77bc-40f4-b182-5386001f8947';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Recibió tabletas de zinc o una receta para tomar zinc durante su reciente hospitalización o visita al servicio de salud?'
+	WHERE SectionItemGuid = '01c4f7ec-80ac-4628-be06-4dd8685accd1';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿Cuántas tabletas le quedan al día de hoy?'
+	WHERE SectionItemGuid = '073fe2e0-f1fe-4807-922a-7299388debca';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Semana epidemiológica de admisión o presentación del paciente'
+	WHERE SectionItemGuid = '0f7ff451-fc32-4264-80b2-1d10b78e92b6';
+
+UPDATE SectionItem
+	SET
+		MainText = 'Año epidemiológico de admisión o presentación del paciente'
+	WHERE SectionItemGuid = '4352c2d1-859c-4e7d-9c9f-7198eb9772d8';
+
+UPDATE SectionItem
+	SET
+		MainText = 'El año y semana epidemiológica de admisión o presentación del paciente'
+	WHERE SectionItemGuid = 'b6f5206a-896b-44fd-b4a9-43646360d186';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿La condición del paciente sospechoso (no inscrito en ViCo) es moribundo (al punto de morirse)?'
+	WHERE SectionItemGuid = 'cfdd878a-c430-4940-81f5-20f23649f15c';
+
+UPDATE SectionItem
+	SET
+		MainText = 'La fecha cuando indicamos que este paciente sospechoso (no inscrito en ViCo) es moribundo'
+	WHERE SectionItemGuid = 'f318d35d-4dd6-40c9-a026-6371628370ab';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿El paciente sospechoso (no inscrito en ViCo) se murió?'
+	WHERE SectionItemGuid = '9b3386db-a083-4f4e-bbda-7a8b97eaab14';
+
+UPDATE SectionItem
+	SET
+		MainText = 'La fecha cuando este paciente sospechoso (no inscrito en ViCo) se murió'
+	WHERE SectionItemGuid = '301bd895-a814-4dbf-abf0-2b5366f27d90';
+
+UPDATE SectionItem
+	SET
+		MainText = '¿El paciente es un caso sospechoso del estudio de febril?'
+	WHERE SectionItemGuid = '9678fce1-f983-409f-88fc-5563b34031bf';
+
+UPDATE SectionItem
+	SET
+		MainText = 'La temperatura documentada más alta en las primeras 24 horas de admisión.'
+	WHERE SectionItemGuid = 'ca5e6be2-19a9-470f-aaf9-a42b6e168744';
+
