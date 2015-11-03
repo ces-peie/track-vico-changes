@@ -1,4 +1,4 @@
-Ôªø> # Descriptive log of changes to the qm ViCo questionnaire
+> # Descriptive log of changes to the qm ViCo questionnaire
 
 # Questions added for TAC adult pneumonia etiology study
 ## `272770f818311c3a523eaae62b70ab97acda61d4`
@@ -33,7 +33,7 @@ Improve log management
 #### 2015-06-16 09:21:17 -0600
 
 
-Changes to questionarie Beatriz L?pez  Date June 16 2015
+Changes to questionarie Beatriz LÛpez  Date June 16 2015
 
 The following question were deleted because we had never found any insects in patients during the 8 years of the study
 
@@ -179,7 +179,7 @@ Remove questions for neurological syndromes
 Questions removed from the sections:
 
 - H1 Sospechosos
-- Revisi√≥n del expediente m√©dico
+- RevisiÛn del expediente mÈdico
 - H2 Inscripci√≥n
 - H7 Egreso
 
@@ -214,4 +214,81 @@ Update risk-factors section
 - Added question about using bed nets (pabellones)
 - Expanded questions on breastfeeding
 - Removed question about having clothes dryer
+
+
+---
+
+# Update instructions in the question texts
+## `0a18f3debaf413816ca456a57e10e916c22b003d`
+### Juan Garcia
+#### 2015-10-27 09:55:22 -0600
+Update instructions in the question texts
+
+Update instructions in the questions througout the questionnaire to more clearly state what is expected from the interviewer (ask something to the patient, observe the patient, check the expedient, etc)
+
+
+---
+
+# Update messages
+## `35a3661445257844c50c1507dfb0aa6ed84634dc`
+### Juan Garcia
+#### 2015-10-27 14:19:00 -0600
+Update messages
+
+Update messages.   
+
+---
+
+# First spelling revision
+## `99f6090b96405c7c928a00318977625b7387e48a`
+### Juan Garcia
+#### 2015-10-27 16:37:26 -0600
+First spelling revision
+
+Review and fix misspellings
+
+
+---
+
+# Second spelling revision
+## `6c7d6d6d40129eeea6c924a3915045de7743e243`
+### odeleongt
+#### 2015-10-28 09:42:52 -0600
+Second spelling revision
+
+Review and fix misspellings (second pass)
+
+
+
+---
+
+# Fix question order, level and number
+## `072bfd567cd4e712a2b55b121816cfb007856146`
+### odeleongt
+#### 2015-10-28 11:43:50 -0600
+Fix question order, level and number
+
+Specifications for order and level of questions was fixed (fbdc165b3d8e78850e75611a2dae3fcfd27828cb), and code was added to automatically update question numbers based on this information.
+
+
+---
+
+# Third spelling revision
+## `597684b296f63476b8b51bd4d93a2be8ddd8ef87`
+### blopez
+#### 2015-10-29 07:28:25 -0600
+Third spelling revision
+
+Review and fix misspellings (third pass)
+
+
+
+---
+
+# Febrile Changes
+## `b153497c5d48d6af503fddab8c68dace46f733a2`
+### Juan Garcia
+#### 2015-11-02 16:36:11 -0600
+Febrile Changes
+We added new questions about how ask to the patient.
 
